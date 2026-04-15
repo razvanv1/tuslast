@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ScrollReveal from "@/components/ScrollReveal";
 
 interface CTASectionProps {
   title: string;
