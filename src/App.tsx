@@ -1,11 +1,13 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
+import PageTransition from "@/components/PageTransition";
 import Index from "./pages/Index";
 import ForOperations from "./pages/ForOperations";
 import ForHR from "./pages/ForHR";
@@ -17,6 +19,24 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageTransition><Index /></PageTransition>} />
+        <Route path="/for-operations" element={<PageTransition><ForOperations /></PageTransition>} />
+        <Route path="/for-hr" element={<PageTransition><ForHR /></PageTransition>} />
+        <Route path="/for-it" element={<PageTransition><ForIT /></PageTransition>} />
+        <Route path="/programmes" element={<PageTransition><Programmes /></PageTransition>} />
+        <Route path="/about" element={<PageTransition><About /></PageTransition>} />
+        <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
+        <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -26,16 +46,7 @@ const App = () => (
         <ScrollToTop />
         <Navbar />
         <main className="min-h-screen">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/for-operations" element={<ForOperations />} />
-            <Route path="/for-hr" element={<ForHR />} />
-            <Route path="/for-it" element={<ForIT />} />
-            <Route path="/programmes" element={<Programmes />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/assessment" element={<Assessment />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <AnimatedRoutes />
         </main>
         <Footer />
       </BrowserRouter>
