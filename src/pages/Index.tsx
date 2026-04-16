@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import HeroCardDeck from "@/components/HeroCardDeck";
+import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import IssueCard from "@/components/IssueCard";
 import Marquee from "@/components/Marquee";
@@ -88,16 +88,16 @@ const Index = () => {
               <span className="hidden md:inline text-red">The AI Adoption Issue</span>
             </div>
 
-            {/* Card deck */}
-            <HeroCardDeck />
-
-            {/* Massive headline */}
-            <div className="relative -mt-6 md:-mt-12 z-10">
-              <h1 className="font-display text-[64px] md:text-[140px] lg:text-[180px] leading-[0.85] text-paper text-center tracking-tighter">
+            {/* Headline */}
+            <div className="relative z-10 mb-10 md:mb-14">
+              <h1 className="font-display text-[56px] md:text-[120px] lg:text-[160px] leading-[0.85] text-paper text-center tracking-tighter">
                 AI of a<br />
                 <em className="text-red">thousand</em> faces.
               </h1>
             </div>
+
+            {/* Interactive shuffle deck */}
+            <ShuffleDeck />
 
             <div className="max-w-2xl mx-auto text-center mt-10 mb-16">
               <p className="font-display italic text-xl md:text-2xl text-paper/85 leading-snug mb-8">
@@ -185,6 +185,11 @@ const Index = () => {
           {stories.map((s) => (
             <IssueCard key={s.number} {...s} className="border-0" />
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link to="/story/the-unfreeze" className="inline-flex items-center font-mono text-[11px] uppercase tracking-[0.3em] text-red hover:text-paper transition-colors">
+            Read the cover story: The Unfreeze →
+          </Link>
         </div>
       </Section>
 
