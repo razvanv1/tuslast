@@ -15,6 +15,7 @@ import ForIT from "./pages/ForIT";
 import Programmes from "./pages/Programmes";
 import About from "./pages/About";
 import Assessment from "./pages/Assessment";
+import FeaturedStory from "./pages/FeaturedStory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,8 @@ const AnimatedRoutes = () => {
         <Route path="/programmes" element={<PageTransition><Programmes /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
+        <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
+        <Route path="/story/the-unfreeze" element={<PageTransition><FeaturedStory /></PageTransition>} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
       </Routes>
     </AnimatePresence>
