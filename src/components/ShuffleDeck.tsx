@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import cardTool from "@/assets/card-tool.png";
 import cardBrain from "@/assets/card-brain.png";
 import cardWorkers from "@/assets/card-workers.png";
@@ -9,38 +10,50 @@ import cardGears from "@/assets/card-gears.png";
 import cardKey from "@/assets/card-key.png";
 
 const DECK = [
-  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 30 min" },
-  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day" },
-  { image: cardGears, label: "Rapid Prototyping Sprint", caption: "1 day · 1 process" },
-  { image: cardBrain, label: "AI Adoption Sprint", caption: "2 days · multi-team" },
-  { image: cardEye, label: "Unfreeze the habit", caption: "The mechanism" },
-  { image: cardKey, label: "Redesign the workflow", caption: "Embed AI in it" },
-  { image: cardBubble, label: "Refreeze as template", caption: "Team-owned"},
+  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 30 min", href: "/assessment" },
+  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day", href: "/programmes" },
+  { image: cardGears, label: "Rapid Prototyping Sprint", caption: "1 day · 1 process", href: "/programmes" },
+  { image: cardBrain, label: "AI Adoption Sprint", caption: "2 days · multi-team", href: "/programmes" },
+  { image: cardEye, label: "Unfreeze the habit", caption: "The mechanism", href: "/programmes" },
+  { image: cardKey, label: "Redesign the workflow", caption: "Embed AI in it", href: "/programmes" },
+  { image: cardBubble, label: "Refreeze as template", caption: "Team-owned", href: "/programmes" },
 ];
 
 interface DeckCardProps {
   image: string;
   label: string;
   caption: string;
-  index: number;          // 0 = top of stack
+  href: string;
+  index: number;
   total: number;
   onSwipe: () => void;
 }
 
-const DeckCard = ({ image, label, caption, index, total, onSwipe }: DeckCardProps) => {
+const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCardProps) => {
+  const navigate = useNavigate();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotate = useTransform(x, [-300, 0, 300], [-25, 0, 25]);
   const opacity = useTransform(x, [-320, -180, 0, 180, 320], [0, 1, 1, 1, 0]);
+  const draggedRef = useRef(false);
 
-  // Stack offset behind the top card
   const stackOffset = index * 6;
   const stackRotate = index === 0 ? 0 : (index % 2 === 0 ? -2 : 2) * (index * 0.6);
   const scale = 1 - index * 0.03;
   const isTop = index === 0;
 
+  const handleDragStart = () => {
+    draggedRef.current = false;
+  };
+
+  const handleDrag = (_: unknown, info: { offset: { x: number; y: number } }) => {
+    if (Math.abs(info.offset.x) > 6 || Math.abs(info.offset.y) > 6) {
+      draggedRef.current = true;
+    }
+  };
+
   const handleDragEnd = (_: unknown, info: { offset: { x: number; y: number }; velocity: { x: number; y: number } }) => {
-    const swipe = Math.abs(info.offset.x) > 140 || Math.abs(info.velocity.x) > 500;
+    const swipe = Math.abs(info.offset.x) > 80 || Math.abs(info.velocity.x) > 300;
     if (swipe && isTop) {
       const dir = info.offset.x > 0 ? 1 : -1;
       animate(x, dir * 600, { duration: 0.35, ease: "easeOut" });
@@ -52,12 +65,21 @@ const DeckCard = ({ image, label, caption, index, total, onSwipe }: DeckCardProp
     }
   };
 
+  const handleTap = () => {
+    if (!isTop) return;
+    if (draggedRef.current) return;
+    navigate(href);
+  };
+
   return (
     <motion.figure
-      drag={isTop ? "x" : false}
-      dragElastic={0.5}
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      drag={isTop ? true : false}
+      dragElastic={0.6}
+      dragMomentum={false}
+      onDragStart={handleDragStart}
+      onDrag={handleDrag}
       onDragEnd={handleDragEnd}
+      onClick={handleTap}
       style={{
         x,
         y,
@@ -65,12 +87,13 @@ const DeckCard = ({ image, label, caption, index, total, onSwipe }: DeckCardProp
         opacity: isTop ? opacity : 1,
         zIndex: total - index,
         cursor: isTop ? "grab" : "default",
+        touchAction: isTop ? "none" : "auto",
       }}
       whileDrag={{ cursor: "grabbing", scale: 1.04 }}
       initial={{ scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
       animate={{ scale, y: stackOffset, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="absolute top-0 left-1/2 -translate-x-1/2 bg-paper p-3 pb-12 card-shadow select-none w-[260px] md:w-[300px] lg:w-[320px]"
+      className="absolute top-0 left-1/2 -translate-x-1/2 bg-paper p-3 pb-12 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
     >
       <div className="aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
         <img
@@ -84,7 +107,7 @@ const DeckCard = ({ image, label, caption, index, total, onSwipe }: DeckCardProp
         />
       </div>
       <figcaption className="absolute bottom-3 left-3 right-3 text-center pointer-events-none">
-        <p className="font-display text-ink text-xl md:text-2xl leading-none uppercase tracking-tight">{label}</p>
+        <p className="font-display text-ink text-lg sm:text-xl md:text-2xl leading-none uppercase tracking-tight">{label}</p>
         <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/50 mt-1">{caption}</p>
       </figcaption>
     </motion.figure>
@@ -100,10 +123,9 @@ const ShuffleDeck = () => {
 
   return (
     <div className="relative w-full flex flex-col items-center">
-      <div className="relative w-[260px] md:w-[300px] lg:w-[320px] h-[420px] md:h-[480px] lg:h-[510px]">
+      <div className="relative w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] h-[360px] sm:h-[420px] md:h-[480px] lg:h-[510px] max-w-full">
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
-          // Only render top 4 for performance
           if (position > 3) return null;
           return (
             <DeckCard
@@ -111,6 +133,7 @@ const ShuffleDeck = () => {
               image={card.image}
               label={card.label}
               caption={card.caption}
+              href={card.href}
               index={position}
               total={4}
               onSwipe={cycle}
@@ -119,14 +142,17 @@ const ShuffleDeck = () => {
         })}
       </div>
 
-      {/* Controls */}
-      <div className="flex items-center gap-6 mt-8">
+      <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-paper/45 mt-6 text-center">
+        Tap to open · Swipe to shuffle
+      </p>
+
+      <div className="flex items-center gap-4 sm:gap-6 mt-3">
         <button
           onClick={cycle}
           className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 hover:text-red transition-colors flex items-center gap-2"
           aria-label="Previous card"
         >
-          <span aria-hidden>←</span> Drag or tap
+          <span aria-hidden>←</span> Prev
         </button>
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red tabular-nums">
           {String(order.indexOf(topIdx) + 1).padStart(2, "0")} / {String(DECK.length).padStart(2, "0")}
@@ -136,12 +162,11 @@ const ShuffleDeck = () => {
           className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 hover:text-red transition-colors flex items-center gap-2"
           aria-label="Next card"
         >
-          Next card <span aria-hidden>→</span>
+          Next <span aria-hidden>→</span>
         </button>
       </div>
 
-      {/* Live caption */}
-      <p className="font-display italic text-paper/70 text-lg md:text-xl mt-4 text-center max-w-md">
+      <p className="font-display italic text-paper/70 text-lg md:text-xl mt-4 text-center max-w-md px-4">
         Now drawing: <span className="text-red not-italic">{top.label}</span>
       </p>
     </div>

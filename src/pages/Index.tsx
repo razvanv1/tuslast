@@ -63,7 +63,7 @@ const Index = () => {
   return (
     <>
       {/* HERO */}
-      <section className="relative bg-background border-b-2 border-paper/10 overflow-hidden">
+      <section className="relative bg-background border-b-2 border-paper/10 overflow-x-clip">
         <div className="bg-halftone">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-10 md:pt-14">
             <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-8">
