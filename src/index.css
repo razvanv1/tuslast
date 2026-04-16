@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,64 +6,132 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 0 0% 5%;
+    /* Wired editorial palette — black bg, paper accents, red/blue duotone */
+    --background: 0 0% 6%;          /* near black */
+    --foreground: 40 30% 94%;       /* paper */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card: 40 30% 94%;
+    --card-foreground: 0 0% 6%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 40 30% 94%;
 
-    --primary: 14 74% 52%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 78% 47%;           /* wired red */
+    --primary-foreground: 40 30% 94%;
 
-    --secondary: 40 33% 97%;
-    --secondary-foreground: 0 0% 5%;
+    --secondary: 222 70% 32%;       /* wired blue */
+    --secondary-foreground: 40 30% 94%;
 
-    --muted: 40 20% 94%;
-    --muted-foreground: 0 0% 29%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 70%;
 
-    --accent: 40 33% 97%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 0 78% 47%;
+    --accent-foreground: 40 30% 94%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 30% 94%;
 
-    --border: 37 18% 87%;
-    --input: 37 18% 87%;
-    --ring: 14 74% 52%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 78% 47%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --ink: 0 0% 5%;
-    --mid: 0 0% 29%;
-    --dark: 235 37% 14%;
-    --off-white: 40 33% 97%;
-    --orange: 14 74% 52%;
+    /* Custom semantic */
+    --paper: 40 30% 94%;
+    --paper-dim: 40 20% 82%;
+    --ink: 0 0% 6%;
+    --mid: 40 8% 60%;
+    --red: 0 78% 47%;
+    --blue: 222 70% 32%;
+    --off-white: 40 30% 94%;
+    --orange: 0 78% 47%;            /* alias for compat */
+    --dark: 0 0% 6%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 40 30% 94%;
+    --sidebar-primary: 0 78% 47%;
+    --sidebar-primary-foreground: 40 30% 94%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 40 30% 94%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 0 78% 47%;
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+  * { @apply border-border; }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--paper));
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: 'DM Serif Display', serif; }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Paper texture */
+  .bg-paper-tex {
+    background-color: hsl(var(--paper));
+    background-image:
+      radial-gradient(hsl(0 0% 0% / 0.04) 1px, transparent 1px),
+      radial-gradient(hsl(0 0% 0% / 0.03) 1px, transparent 1px);
+    background-size: 6px 6px, 14px 14px;
+    background-position: 0 0, 3px 3px;
+  }
+
+  /* Halftone dots overlay for dark sections */
+  .bg-halftone {
+    background-image: radial-gradient(hsl(var(--paper) / 0.06) 1px, transparent 1px);
+    background-size: 8px 8px;
+  }
+
+  /* Display text outline (used for stacked headlines) */
+  .text-stroke {
+    -webkit-text-stroke: 1px hsl(var(--paper));
+    color: transparent;
+  }
+
+  /* Card tilt utilities */
+  .tilt-l1 { transform: rotate(-6deg); }
+  .tilt-l2 { transform: rotate(-3deg); }
+  .tilt-r1 { transform: rotate(4deg); }
+  .tilt-r2 { transform: rotate(7deg); }
+
+  /* Polaroid card shadow */
+  .card-shadow {
+    box-shadow:
+      0 20px 40px -12px rgba(0,0,0,0.6),
+      0 8px 16px -8px rgba(0,0,0,0.5);
+  }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation: marquee 40s linear infinite; }
+
+  /* Subtle grain */
+  .grain::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity: 0.08;
+    pointer-events: none;
+    mix-blend-mode: overlay;
   }
 }

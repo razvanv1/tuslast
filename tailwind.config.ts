@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        display: ['"DM Serif Display"', 'serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -25,6 +27,10 @@ export default {
         ink: "hsl(var(--ink))",
         mid: "hsl(var(--mid))",
         dark: "hsl(var(--dark))",
+        paper: "hsl(var(--paper))",
+        "paper-dim": "hsl(var(--paper-dim))",
+        red: "hsl(var(--red))",
+        blue: "hsl(var(--blue))",
         "off-white": "hsl(var(--off-white))",
         orange: "hsl(var(--orange))",
         primary: {
