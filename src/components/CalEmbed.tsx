@@ -1,63 +1,69 @@
 import { useEffect } from "react";
 
-// Cal.com inline embed loader.
-// To wire this to your real Cal account, replace CAL_LINK with "yourname/30min".
+// Cal.com inline embed.
+// Replace CAL_LINK with your real Cal.com event link, e.g. "yourname/30min".
 const CAL_LINK = "razvan-valceanu/assessment";
 
 declare global {
   interface Window {
-    Cal?: ((command: string, ...args: unknown[]) => void) & { ns?: Record<string, unknown> };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    Cal?: any;
   }
 }
 
 const CalEmbed = () => {
   useEffect(() => {
-    if (window.Cal) return;
-    // Official Cal embed snippet (vanilla)
-    (function (C: Window, A: string, L: string) {
-      const p = function (a: ((command: string, ...args: unknown[]) => void) & { q?: unknown[] }, ar: unknown[]) {
-        a.q = a.q || [];
-        a.q.push(ar);
-      };
-      const d = C.document;
-      C.Cal =
-        C.Cal ||
-        function (...args: unknown[]) {
-          const cal = C.Cal!;
-          const ar = args;
-          if (!(cal as unknown as { loaded?: boolean }).loaded) {
-            (cal as unknown as { ns: Record<string, unknown> }).ns = {};
-            (cal as unknown as { q: unknown[] }).q = (cal as unknown as { q?: unknown[] }).q || [];
-            d.head.appendChild(d.createElement("script")).src = A;
-            (cal as unknown as { loaded: boolean }).loaded = true;
-          }
-          if (ar[0] === L) {
-            const api = function (...iargs: unknown[]) {
-              p(api as unknown as ((command: string, ...args: unknown[]) => void) & { q?: unknown[] }, iargs);
-            };
-            const namespace = ar[1] as string;
-            (api as unknown as { q: unknown[] }).q = (api as unknown as { q?: unknown[] }).q || [];
-            if (typeof namespace === "string") {
-              (cal as unknown as { ns: Record<string, unknown> }).ns[namespace] = (cal as unknown as { ns: Record<string, unknown> }).ns[namespace] || api;
-              p((cal as unknown as { ns: Record<string, ((command: string, ...args: unknown[]) => void) & { q?: unknown[] } }>).ns[namespace], ar);
-              p(cal as unknown as ((command: string, ...args: unknown[]) => void) & { q?: unknown[] }, ["initNamespace", namespace]);
-            } else {
-              p(cal as unknown as ((command: string, ...args: unknown[]) => void) & { q?: unknown[] }, ar);
-            }
-            return;
-          }
-          p(cal as unknown as ((command: string, ...args: unknown[]) => void) & { q?: unknown[] }, ar);
+    // Inject Cal embed script once
+    if (!window.Cal) {
+      // Vanilla loader (adapted from Cal.com docs)
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (function (C: any, A: string, L: string) {
+        const p = function (a: any, ar: any) {
+          a.q = a.q || [];
+          a.q.push(ar);
         };
-    })(window, "https://app.cal.com/embed/embed.js", "init");
+        const d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            // eslint-disable-next-line prefer-rest-params
+            const cal = C.Cal;
+            // eslint-disable-next-line prefer-rest-params
+            const ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api: any = function () {
+                // eslint-disable-next-line prefer-rest-params
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else {
+                p(cal, ar);
+              }
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+    }
 
-    window.Cal!("init", "assessment", { origin: "https://cal.com" });
-    window.Cal!.ns!.assessment &&
-      (window.Cal!.ns!.assessment as (command: string, ...args: unknown[]) => void)("inline", {
-        elementOrSelector: "#cal-embed-target",
-        config: { layout: "month_view", theme: "light" },
-        calLink: CAL_LINK,
-      });
-    (window.Cal!.ns!.assessment as (command: string, ...args: unknown[]) => void)("ui", {
+    window.Cal("init", "assessment", { origin: "https://cal.com" });
+    window.Cal.ns.assessment("inline", {
+      elementOrSelector: "#cal-embed-target",
+      config: { layout: "month_view", theme: "light" },
+      calLink: CAL_LINK,
+    });
+    window.Cal.ns.assessment("ui", {
       hideEventTypeDetails: false,
       layout: "month_view",
       theme: "light",
