@@ -8,13 +8,13 @@ import cardGears from "@/assets/card-gears.png";
 import cardKey from "@/assets/card-key.png";
 
 const cards = [
-  { image: cardTool, label: "AI as Weapon", caption: "Card I", rotate: -14, top: "top-2", left: "left-[2%]" },
-  { image: cardWorkers, label: "AI as Worker", caption: "Card II", rotate: -7, top: "top-12", left: "left-[16%]" },
-  { image: cardBrain, label: "AI as Teacher", caption: "Card III", rotate: -2, top: "top-0", left: "left-[31%]" },
-  { image: cardEye, label: "AI as Witness", caption: "Card IV", rotate: 4, top: "top-16", left: "left-[46%]" },
-  { image: cardGears, label: "AI as Process", caption: "Card V", rotate: 9, top: "top-4", left: "left-[60%]" },
-  { image: cardBubble, label: "AI as Bubble", caption: "Card VI", rotate: 14, top: "top-20", left: "left-[74%]" },
-  { image: cardKey, label: "AI as Unlock", caption: "Card VII", rotate: 19, top: "top-2", left: "left-[86%]" },
+  { image: cardTool, label: "Assessment", caption: "Free · 30 min", rotate: -14, top: "top-2", left: "left-[2%]" },
+  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day", rotate: -7, top: "top-12", left: "left-[16%]" },
+  { image: cardGears, label: "Prototyping Sprint", caption: "1 day · 1 process", rotate: -2, top: "top-0", left: "left-[31%]" },
+  { image: cardBrain, label: "Adoption Sprint", caption: "2 days · multi-team", rotate: 4, top: "top-16", left: "left-[46%]" },
+  { image: cardEye, label: "Unfreeze", caption: "The mechanism", rotate: 9, top: "top-4", left: "left-[60%]" },
+  { image: cardKey, label: "Redesign", caption: "Embed AI", rotate: 14, top: "top-20", left: "left-[74%]" },
+  { image: cardBubble, label: "Refreeze", caption: "Team-owned", rotate: 19, top: "top-2", left: "left-[86%]" },
 ];
 
 const HeroCardDeck = () => (
