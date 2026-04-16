@@ -186,6 +186,11 @@ const Index = () => {
             <IssueCard key={s.number} {...s} className="border-0" />
           ))}
         </div>
+        <div className="mt-10 text-center">
+          <Link to="/story/the-unfreeze" className="inline-flex items-center font-mono text-[11px] uppercase tracking-[0.3em] text-red hover:text-paper transition-colors">
+            Read the cover story: The Unfreeze →
+          </Link>
+        </div>
       </Section>
 
       {/* WHO THIS IS FOR — editorial table */}
