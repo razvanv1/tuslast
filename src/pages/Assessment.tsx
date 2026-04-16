@@ -7,8 +7,8 @@ import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Edit
 
 const personas = [
   { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
-  { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like — and which teams need it most urgently." },
-  { num: "03", tag: "CIO / Digital", title: "Dashboard says on track. Reality does not.", desc: "You want a second measurement layer — one that tracks process output, not licence activation." },
+  { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like in your organisation — and which teams need it most urgently." },
+  { num: "03", tag: "CIO / Digital", title: "The dashboard says on track. Reality does not.", desc: "You want a second measurement layer — one that tracks process output, not licence activation." },
 ];
 
 const Assessment = () => {
@@ -18,21 +18,20 @@ const Assessment = () => {
     <>
       <PageHero
         tag="FREE · 30 MIN · 1-PAGE OUTPUT"
-        title="The AI Adoption Gap Assessment."
+        title="AI Adoption Gap Assessment."
         subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
         ctaText="Jump to booking ↓"
         ctaTo="#book"
         note="No pitch · No commitment · No pricing document"
       />
 
-      {/* What it covers */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <Sidebar byline="A structured diagnosis" read="3 min" filed="Assessment · Method" />
+          <Sidebar byline="The 30 minutes" read="3 min" filed="Assessment · Method" />
           <div className="md:col-span-9">
             <SectionHeading
-              kicker="The 30 Minutes"
-              title={<>What the call <em className="text-red">covers.</em></>}
+              kicker="What the call covers"
+              title={<>Three questions, <em className="text-red">in order.</em></>}
             />
             <NumberedStep num={1} title="What AI tools are currently deployed">
               Which tools, which teams, whether deployment is recent or established. Establishes the baseline — what is available versus what is actually being used in daily work.
@@ -51,7 +50,7 @@ const Assessment = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— The Deliverable</Kicker>
+            <Kicker>— What you receive</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
               One page. <em className="text-red">Yours to keep.</em>
             </h2>
@@ -73,7 +72,7 @@ const Assessment = () => {
               ))}
             </ul>
             <p className="font-display italic text-xl text-ink/75 leading-snug">
-              This document is written to be shared inside your organisation. It is not a proposal. It contains no pricing. <span className="text-red not-italic">Many clients use it to align operations, HR, and IT leads before any internal budget conversation starts.</span>
+              This document is written to be shared inside your organisation. It is not a proposal. It contains no pricing. <span className="text-red not-italic">Many clients use it to align operations, HR, and IT leads before any internal budget discussion starts.</span>
             </p>
           </div>
         </div>
@@ -82,7 +81,7 @@ const Assessment = () => {
       {/* Who books this */}
       <Section>
         <SectionHeading
-          kicker="Who Books This"
+          kicker="Who books this"
           title={<>Three readers. <em className="text-red">Three diagnoses.</em></>}
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
@@ -99,23 +98,25 @@ const Assessment = () => {
         </div>
       </Section>
 
-      {/* BOOKING — Cal.com embed */}
+      {/* BOOKING */}
       <Section variant="paper" bordered={false}>
         <div id="book" className="scroll-mt-20">
-          <div className="flex justify-between items-end font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 border-b border-ink/15 pb-4 mb-10">
-            <span>Book Your Slot</span>
-            <span className="text-red">Live calendar</span>
-          </div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Book your slot</p>
           <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-4 max-w-3xl">
             Pick a time. <em className="text-red">We'll do the rest.</em>
           </h2>
           <p className="font-display italic text-lg md:text-xl text-ink/65 mb-10 max-w-2xl">
-            You'll receive 3 short pre-call questions by email so the 30 minutes goes straight to your situation, not to gathering context.
+            Select a time below. You will receive 3 short pre-call questions by email to keep the 30 minutes focused on your specific situation rather than gathering context.
           </p>
 
           <CalEmbed />
 
-          <p className="text-sm text-ink/60 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
+            <p><strong className="text-ink">Before the call:</strong> 3 short questions by email. 5 minutes to answer. The session goes straight to your situation, not to gathering context.</p>
+            <p><strong className="text-ink">After the call:</strong> 1-page written summary within 24 hours. No follow-up pitch unless you request one.</p>
+          </div>
+
+          <p className="text-sm text-ink/60 mt-8">
             Or email: <a href="mailto:contact@unlearning.ro" className="text-red font-medium hover:underline">contact@unlearning.ro</a>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 ml-3">Subject: Assessment · Reply within 1 business day</span>
           </p>

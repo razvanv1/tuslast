@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
-import IssueCard from "@/components/IssueCard";
-import Marquee from "@/components/Marquee";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -12,45 +10,6 @@ const stats = [
   { value: "64%", label: "of employees with Copilot access do not actively use it" },
   { value: "1,000+", label: "professionals trained across the EU" },
   { value: "1 day", label: "to redesign one process with AI embedded" },
-];
-
-const stories = [
-  {
-    number: "I.",
-    title: "AI as Weapon",
-    body: "When the only metric is speed, the team learns to fear the tool. Adoption stalls because the tool feels like surveillance, not assistance.",
-    variant: "default" as const,
-  },
-  {
-    number: "II.",
-    title: "AI as Assistant",
-    body: "The dream sold by the vendor. Helpful, frictionless, instantly productive. Reality: the assistant only works inside processes redesigned to receive it.",
-    variant: "red" as const,
-  },
-  {
-    number: "III.",
-    title: "AI as Bottleneck",
-    body: "Three months in: licences active, dashboards green, behaviour unchanged. The new tool is layered on top of the old workflow. Nothing moves faster.",
-    variant: "default" as const,
-  },
-  {
-    number: "IV.",
-    title: "AI as Theatre",
-    body: "Leadership announces the rollout. The team performs adoption for one week. The press release is filed. The processes remain identical.",
-    variant: "blue" as const,
-  },
-  {
-    number: "V.",
-    title: "AI as Unlock",
-    body: "When teams unfreeze the old habit first, AI stops being an add-on and becomes the workflow. This is the only adoption pattern that holds.",
-    variant: "default" as const,
-  },
-  {
-    number: "VI.",
-    title: "AI as Ours",
-    body: "The redesigned process belongs to the team that built it — not to the consultant, not to the vendor. Templates they own. Habits they keep.",
-    variant: "paper" as const,
-  },
 ];
 
 const audience = [
@@ -71,54 +30,78 @@ const audience = [
   },
 ];
 
+const ladder = [
+  {
+    tag: "Start here · Free",
+    title: "AI Adoption Gap Assessment",
+    body: "30-minute structured call. We identify where usage is stalling and which 3–5 processes are highest priority. You receive a 1-page written summary within 24 hours.",
+    href: "/assessment",
+    cta: "Book the Assessment",
+    highlight: true,
+  },
+  {
+    tag: "Core engagement",
+    title: "AI for Non-Techies / Rapid Prototyping Sprint",
+    body: "Half-day or full-day on-site. Your team redesigns one real process with AI embedded. No code. No IT dependency. Measurable output by end of day.",
+    href: "/programmes",
+    cta: "See programmes",
+  },
+  {
+    tag: "Full engagement",
+    title: "AI Adoption Sprint",
+    body: "Two-day engagement. Day 1: diagnostic + written gap report. Day 2: sprint on highest-priority process. 90-day roadmap included.",
+    href: "/programmes",
+    cta: "See programmes",
+  },
+];
+
 const Index = () => {
   useEffect(() => {
-    document.title = "The Unlearning School — AI Adoption Training · EU";
+    document.title = "The Unlearning School — AI adoption training for non-technical teams";
   }, []);
 
   return (
     <>
-      {/* HERO — Wired-style scattered tarot deck */}
+      {/* HERO */}
       <section className="relative bg-background border-b-2 border-paper/10 overflow-hidden">
         <div className="bg-halftone">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-10 md:pt-14">
-            {/* Masthead bar */}
             <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-8">
-              <span>Vol. 01 / Issue 04 — Autumn {new Date().getFullYear()}</span>
-              <span className="hidden md:inline text-red">The AI Adoption Issue</span>
+              <span>AI Adoption Training · EU</span>
+              <span className="hidden md:inline text-red">The Unlearning School</span>
             </div>
 
-            {/* Headline */}
             <div className="relative z-10 mb-10 md:mb-14">
-              <h1 className="font-display text-[56px] md:text-[120px] lg:text-[160px] leading-[0.85] text-paper text-center tracking-tighter">
-                AI of a<br />
-                <em className="text-red">thousand</em> faces.
+              <h1 className="font-display text-[44px] md:text-[88px] lg:text-[112px] leading-[0.9] text-paper tracking-tighter max-w-6xl">
+                Your organisation bought AI capability.{" "}
+                <em className="text-red">What you are paying for is unused potential.</em>
               </h1>
             </div>
 
-            {/* Interactive shuffle deck */}
             <ShuffleDeck />
 
-            <div className="max-w-2xl mx-auto text-center mt-10 mb-16">
+            <div className="max-w-3xl mt-10 mb-16">
               <p className="font-display italic text-xl md:text-2xl text-paper/85 leading-snug mb-8">
-                Your organisation bought the capability. What you are paying for is unused potential. The tools are deployed. The licences are active. <span className="text-red not-italic">The workflows have not changed.</span>
+                The tools are deployed. The licences are active.{" "}
+                <span className="text-red not-italic">The workflows have not changed.</span>{" "}
+                That is the problem we fix.
               </p>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-3">
                 <Link
                   to="/assessment"
                   className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Book Free Assessment →
+                  Book a free AI Adoption Assessment →
                 </Link>
                 <Link
                   to="/programmes"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  See Programmes
+                  See our programmes
                 </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                30-min call · 1-page summary in 24h · No proposal attached
+                30-minute structured call · 1-page written output within 24 hours · No proposal attached
               </p>
             </div>
           </div>
@@ -137,70 +120,48 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Editorial intro */}
+      {/* Why adoption stalls */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The Thesis</p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">By Răzvan Vâlceanu</p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-1">8 min read</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The Pattern</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">Across every sector we observe</p>
           </div>
           <div className="md:col-span-9">
             <h2 className="font-display text-4xl md:text-6xl text-paper leading-[1] mb-8 max-w-3xl">
-              Hundreds of millions use AI. Almost no organisation has changed because of it.
+              Why AI adoption stalls after the rollout.
             </h2>
-            <div className="md:columns-2 gap-10 text-paper/80 leading-relaxed text-[15px]">
-              <p className="mb-4 first-letter:font-display first-letter:text-7xl first-letter:float-left first-letter:mr-3 first-letter:leading-[0.85] first-letter:text-red">
-                The conversation around AI in 2025 turned from what it could be to what it is. Large language models are now everywhere — in our schools, our homes, on therapist couches and government computers. Yet the office, the place we promised would be transformed, looks structurally identical to how it did three years ago.
-              </p>
-              <p className="mb-4">
-                The pattern repeats across every sector we observe. Week one, enthusiastic early adopters use the new tool daily and the rollout looks healthy. Week three, the middle majority try it once or twice on familiar tasks. By week five, usage plateaus. The dashboard still shows "active licences" — but the processes have not changed.
-              </p>
-              <p>
-                We are not running a tool problem. We are running a process problem. Adding a tool to an unchanged workflow does not change the workflow. You have to redesign the work first — and clear the old habit before the new one can form. <em className="text-red not-italic">That is the step most deployments skip.</em>
-              </p>
+            <p className="text-paper/80 text-[15px] leading-relaxed max-w-2xl mb-10">
+              Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process — which was never redesigned to use AI.
+            </p>
+
+            <div className="border-t border-paper/15">
+              {[
+                { week: "Week 1–2", text: "Enthusiastic early adopters use the tool daily. Visible momentum." },
+                { week: "Week 3–4", text: "Middle majority try it once or twice on familiar tasks. Irregular usage." },
+                { week: "Week 5+", text: "Usage plateaus. Most employees return to previous workflows. Dashboard shows \"active licences.\" Processes have not changed." },
+              ].map((row) => (
+                <div key={row.week} className="grid grid-cols-12 gap-4 py-5 border-b border-paper/15">
+                  <div className="col-span-3 md:col-span-2 font-mono text-[11px] uppercase tracking-[0.2em] text-red">{row.week}</div>
+                  <div className="col-span-9 md:col-span-10 text-paper/80 text-[15px] leading-relaxed">{row.text}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </Section>
 
-      {/* MARQUEE breaker */}
-      <Marquee items={["Unfreeze the habit", "Redesign the process", "Embed the tool", "Rebuild the team", "Repeat the work"]} />
-
-      {/* SIX STORIES — the card grid (Wired-inspired) */}
-      <Section>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Six Readings From The Field</p>
-            <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] max-w-2xl">
-              How AI <em className="text-red">actually</em> shows up at work.
-            </h2>
-          </div>
-          <p className="text-paper/60 text-sm max-w-sm leading-relaxed">
-            We've trained over a thousand professionals. These are the six patterns we keep seeing — and the only one that works.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10">
-          {stories.map((s) => (
-            <IssueCard key={s.number} {...s} className="border-0" />
-          ))}
-        </div>
-        <div className="mt-10 text-center">
-          <Link to="/story/the-unfreeze" className="inline-flex items-center font-mono text-[11px] uppercase tracking-[0.3em] text-red hover:text-paper transition-colors">
-            Read the cover story: The Unfreeze →
-          </Link>
-        </div>
+      <Section bordered={false}>
+        <Blockquote attribution="The premise behind every Unlearning School engagement">
+          Adding a tool to an unchanged process does not change the process. You need to redesign the workflow first — and clear the old habit before the new one can form. That is the step most deployments skip.
+        </Blockquote>
       </Section>
 
       {/* WHO THIS IS FOR — editorial table */}
       <Section variant="paper">
-        <div className="flex justify-between items-end font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 border-b border-ink/15 pb-4 mb-10">
-          <span>Subjects</span>
-          <span className="text-red">Pp. 12 — 14</span>
-        </div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Who this is for</p>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-3xl">
-          Three readers. <em>Three diagnoses.</em>
+          Three roles. <em>Three diagnoses.</em>
         </h2>
 
         <div className="space-y-0 border-t border-ink/15">
@@ -233,17 +194,75 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* PULL QUOTE */}
+      {/* HOW IT WORKS — three stages */}
       <Section>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— How it works</p>
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
+          Three stages, <em className="text-red">not a menu.</em>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
+          {ladder.map((l) => (
+            <article
+              key={l.title}
+              className={`p-8 md:p-10 flex flex-col ${l.highlight ? "bg-red text-paper" : "bg-background text-paper"}`}
+            >
+              <p className={`font-mono text-[10px] uppercase tracking-[0.25em] mb-4 ${l.highlight ? "text-paper/80" : "text-red"}`}>
+                {l.tag}
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl leading-tight mb-4">{l.title}</h3>
+              <p className={`text-[14px] leading-relaxed flex-1 mb-6 ${l.highlight ? "text-paper/90" : "text-paper/75"}`}>
+                {l.body}
+              </p>
+              <Link
+                to={l.href}
+                className={`font-mono text-[10px] uppercase tracking-[0.25em] inline-flex items-center gap-2 hover:gap-3 transition-all ${l.highlight ? "text-paper" : "text-red"}`}
+              >
+                {l.cta} →
+              </Link>
+            </article>
+          ))}
+        </div>
+      </Section>
+
+      {/* The mechanism */}
+      <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <div className="md:col-span-2">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red">— Pull Quote</p>
+          <div className="md:col-span-4">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The mechanism</p>
+            <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
+              Unfreeze, <em className="text-red">then change.</em>
+            </h2>
           </div>
-          <div className="md:col-span-10">
-            <Blockquote attribution="Lewin's Unfreeze–Change–Refreeze model (1947), applied to AI workflow adoption">
-              Before a team can build new working habits, they must consciously let go of the old ones. Most AI adoption programmes start at "change" and skip "unfreeze" entirely. That is why behaviour does not stick.
-            </Blockquote>
+          <div className="md:col-span-8">
+            <p className="text-ink/80 text-[16px] leading-relaxed mb-5">
+              Before a team can build new working habits, they must consciously let go of the old ones. Most AI adoption programmes start at "change" and skip "unfreeze" entirely. That is why behaviour does not stick. Our sprints are built around the unfreeze step first.
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40">
+              Based on Lewin's Unfreeze–Change–Refreeze model (1947), applied to AI workflow adoption in non-technical teams.
+            </p>
           </div>
+        </div>
+      </Section>
+
+      {/* Credibility */}
+      <Section>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Credibility, briefly</p>
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
+          The receipts.
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
+          {[
+            { tag: "Track record", title: "1,000+ professionals trained", body: "Across finance, retail, manufacturing, and professional services — Romania and EU." },
+            { tag: "Founder", title: "Răzvan Vâlceanu", body: "Former GM at Bitdefender. Former Entrepreneurship Director at USV Timișoara. 15 years at the intersection of technology and organisational change." },
+            { tag: "Proof format", title: "Before / after workflows", body: "Anonymised sector examples available on request during the Assessment call. No client names published on this site." },
+          ].map((c) => (
+            <article key={c.tag} className="bg-background p-8 md:p-10">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-4">{c.tag}</p>
+              <h3 className="font-display text-2xl text-paper leading-tight mb-3">{c.title}</h3>
+              <p className="text-paper/70 text-sm leading-relaxed">{c.body}</p>
+            </article>
+          ))}
         </div>
       </Section>
 
@@ -251,7 +270,7 @@ const Index = () => {
       <CTASection
         title="Not sure which programme fits?"
         subtitle="Start with the Assessment. 30 minutes. Written output you can share internally. No proposal attached."
-        ctaText="Book the Assessment →"
+        ctaText="Book the AI Adoption Gap Assessment →"
         ctaTo="/assessment"
         note="Free · No pitch · 1-page summary within 24 hours"
       />
