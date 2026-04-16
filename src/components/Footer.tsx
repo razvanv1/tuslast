@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
         <div className="md:col-span-5">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">Vol. 01 — The AI Unlearning Issue</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">The Unlearning School · Romania &amp; EU</p>
           <h3 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mb-4">
             Stop training. <em className="text-red">Start unlearning.</em>
           </h3>

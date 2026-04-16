@@ -12,7 +12,7 @@ interface PageHeroProps {
   issue?: string;
 }
 
-const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "Vol. 01 — Issue 04" }: PageHeroProps) => (
+const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School" }: PageHeroProps) => (
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
     <div className="bg-halftone">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-12 pb-16 md:pt-20 md:pb-24">

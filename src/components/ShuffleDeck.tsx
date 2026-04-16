@@ -9,13 +9,13 @@ import cardGears from "@/assets/card-gears.png";
 import cardKey from "@/assets/card-key.png";
 
 const DECK = [
-  { image: cardTool, label: "AI as Weapon", caption: "Card I" },
-  { image: cardWorkers, label: "AI as Worker", caption: "Card II" },
-  { image: cardBrain, label: "AI as Teacher", caption: "Card III" },
-  { image: cardEye, label: "AI as Witness", caption: "Card IV" },
-  { image: cardGears, label: "AI as Process", caption: "Card V" },
-  { image: cardBubble, label: "AI as Bubble", caption: "Card VI" },
-  { image: cardKey, label: "AI as Unlock", caption: "Card VII" },
+  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 30 min" },
+  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day" },
+  { image: cardGears, label: "Rapid Prototyping Sprint", caption: "1 day · 1 process" },
+  { image: cardBrain, label: "AI Adoption Sprint", caption: "2 days · multi-team" },
+  { image: cardEye, label: "Unfreeze the habit", caption: "The mechanism" },
+  { image: cardKey, label: "Redesign the workflow", caption: "Embed AI in it" },
+  { image: cardBubble, label: "Refreeze as template", caption: "Team-owned"},
 ];
 
 interface DeckCardProps {
