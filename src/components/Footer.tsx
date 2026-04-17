@@ -49,25 +49,40 @@ const Footer = () => (
     <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16">
       {/* Newsletter band */}
       <div className="border-2 border-paper/15 p-8 md:p-12 mb-16">
-        <div className="grid md:grid-cols-12 gap-8 items-end">
-          <div className="md:col-span-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The Unlearning Pill</p>
+        <form
+          action="https://unlearning.us8.list-manage.com/subscribe/post"
+          method="post"
+          target="_blank"
+          noValidate
+          className="grid md:grid-cols-12 gap-8 items-end"
+        >
+          <div className="md:col-span-7">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
             <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
               Signal, <em className="text-red">not noise.</em>
             </h3>
             <p className="text-paper/70 text-sm max-w-xl leading-relaxed">
-              Selected updates on funding intelligence, AI at work, execution friction, academy building, and the future of work.
+              Monthly dispatch on funding intelligence, AI at work, execution friction, academy building, and the future of work. No spam, unsubscribe anytime.
             </p>
           </div>
-          <div className="md:col-span-4 md:text-right">
-            <Link
-              to="/assessment"
-              className="inline-flex items-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+          <div className="md:col-span-5 flex flex-col sm:flex-row gap-3">
+            <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+            <input
+              id="newsletter-email"
+              type="email"
+              name="EMAIL"
+              required
+              placeholder="your@email.com"
+              className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/40 font-mono text-sm focus:outline-none focus:border-red transition-colors"
+            />
+            <button
+              type="submit"
+              className="inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
             >
-              Book Assessment →
-            </Link>
+              Subscribe →
+            </button>
           </div>
-        </div>
+        </form>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
