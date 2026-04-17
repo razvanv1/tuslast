@@ -115,7 +115,7 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="absolute top-0 inset-x-0 mx-auto bg-paper p-3 pb-20 card-shadow select-none w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] max-w-full"
     >
-      <div className="aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
+      <div className="w-full aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
         <img
           src={image}
           alt={label}
