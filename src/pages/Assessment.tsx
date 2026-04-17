@@ -139,9 +139,6 @@ const Assessment = () => {
             >
               Free audit · Open calendar →
             </a>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50 mt-6">
-              meet.brevo.com/razvan-valceanu
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
