@@ -22,7 +22,7 @@ export const ProseParagraph = ({
   </p>
 );
 
-/** Magazine "byline / kicker" label */
+/** Magazine "byline / kicker" label — red filled badge with paper text */
 export const Kicker = ({
   children,
   variant = "red",
@@ -30,13 +30,17 @@ export const Kicker = ({
   children: React.ReactNode;
   variant?: "red" | "muted";
 }) => (
-  <p
-    className={cn(
-      "font-mono text-[10px] uppercase tracking-[0.3em] mb-3",
-      variant === "red" ? "text-red" : "text-paper/40",
-    )}
-  >
-    {children}
+  <p className="mb-3">
+    <span
+      className={cn(
+        "inline-block font-mono text-[10px] uppercase tracking-[0.3em] px-3 py-1.5 border",
+        variant === "red"
+          ? "bg-red text-paper border-red"
+          : "bg-transparent text-current/40 border-current/20",
+      )}
+    >
+      {children}
+    </span>
   </p>
 );
 
