@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import cardWorkers from "@/assets/card-workers.png";
 import cardEvents from "@/assets/card-events.png";
@@ -35,6 +35,15 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
   const stackRotate = index === 0 ? 0 : (index % 2 === 0 ? -2 : 2) * (index * 0.6);
   const scale = 1 - index * 0.03;
   const isTop = index === 0;
+
+  // When card position in stack changes (after a swipe cycles the deck),
+  // snap x/y back to 0 so a previously-swiped card reappears in the stack.
+  useEffect(() => {
+    if (!isTop) {
+      x.set(0);
+      y.set(0);
+    }
+  }, [index, isTop, x, y]);
 
   const handleDragStart = () => {
     draggedRef.current = false;

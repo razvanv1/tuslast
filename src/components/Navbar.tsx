@@ -21,7 +21,7 @@ const Navbar = () => {
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mt-1">School</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-6 lg:gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-10 ml-auto pl-12 lg:pl-20">
           {navLinks.map((link) => (
             <Link
               key={link.to}

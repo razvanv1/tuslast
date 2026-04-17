@@ -18,9 +18,8 @@ const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, seconda
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
     <div className="bg-halftone">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-12 pb-16 md:pt-20 md:pb-24">
-        <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-10">
+        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-10">
           <span>{issue}</span>
-          {tag && <span className="text-red">{tag}</span>}
         </div>
 
         {tag && (
