@@ -105,7 +105,7 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-2">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Masthead</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Company</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             {masthead.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
