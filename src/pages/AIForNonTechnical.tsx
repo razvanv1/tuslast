@@ -552,7 +552,7 @@ const AIForNonTechnical = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Credentials</p>
+                <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Credentials</span></p>
                 <ul className="space-y-1 text-paper/85">
                   <li>→ Lovable Ambassador</li>
                   <li>→ Google Generative AI for Leaders (certification in progress)</li>
