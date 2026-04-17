@@ -47,10 +47,10 @@
     --paper-dim: 40 20% 82%;
     --ink: 0 0% 6%;
     --mid: 40 8% 60%;
-    --red: 0 78% 47%;
+    --red: 0 84% 62%;
     --blue: 222 70% 32%;
     --off-white: 40 30% 94%;
-    --orange: 0 78% 47%;            /* alias for compat */
+    --orange: 0 84% 62%;            /* alias for compat */
     --dark: 0 0% 6%;
 
     --sidebar-background: 0 0% 6%;
