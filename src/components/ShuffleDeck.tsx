@@ -95,7 +95,7 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
         contain: "layout paint",
       }}
       whileDrag={{ cursor: "grabbing", scale: 1.04 }}
-      initial={{ scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
+      initial={isTop ? { scale, y: stackOffset, opacity: 1 } : { scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
       animate={{ scale, y: stackOffset, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="absolute top-0 inset-x-0 mx-auto bg-paper p-3 pb-20 card-shadow select-none w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] max-w-full"
