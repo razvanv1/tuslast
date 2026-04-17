@@ -97,8 +97,8 @@ const Hermes = () => {
         subtitle="ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call."
         ctaText="Buy Hermes · from €497 →"
         ctaTo="#pricing"
-        secondaryText="Free audit"
-        secondaryTo="/assessment"
+        secondaryText="Call now · +40 722 598 346"
+        secondaryTo="tel:+40722598346"
         note="Open source · MIT · Built by Nous Research"
       />
 
