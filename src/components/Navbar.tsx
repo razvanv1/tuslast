@@ -44,9 +44,15 @@ const Navbar = () => {
           ))}
           <Link
             to="/assessment"
-            className="ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            className="ml-2 inline-flex items-center px-4 py-2.5 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
           >
-            Assessment →
+            Assessment
+          </Link>
+          <Link
+            to="/programmes/ai-for-non-technical-people#pricing"
+            className="inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+          >
+            Buy now →
           </Link>
         </div>
 
@@ -68,11 +74,18 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
+            to="/programmes/ai-for-non-technical-people#pricing"
+            onClick={() => setOpen(false)}
+            className="mt-4 mr-2 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
+          >
+            Buy now →
+          </Link>
+          <Link
             to="/assessment"
             onClick={() => setOpen(false)}
-            className="mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
+            className="mt-4 inline-flex items-center px-5 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
           >
-            Assessment →
+            Assessment
           </Link>
         </div>
       )}

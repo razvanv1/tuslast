@@ -111,20 +111,20 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  to="/assessment"
+                  to="/programmes/ai-for-non-technical-people#pricing"
                   className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Book a free AI Adoption Assessment →
+                  Buy AI for Work · from €3,000 →
                 </Link>
                 <Link
-                  to="/programmes"
+                  to="/assessment"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  See our programmes
+                  Book a free Assessment
                 </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                One working session · Written report within 5 business days · No proposal attached
+                Pay & enrol your cohort · or start with a free working session and a written report
               </p>
             </div>
           </div>
@@ -290,11 +290,13 @@ const Index = () => {
 
       {/* CTA */}
       <CTASection
-        title="Not sure which programme fits?"
-        subtitle="Start with the Assessment. One working session. Written report you can share internally. No proposal attached."
-        ctaText="Book the AI Adoption Gap Assessment →"
-        ctaTo="/assessment"
-        note="Free · No pitch · Written report within 5 business days"
+        title="Ready to put AI to work?"
+        subtitle="Buy the core programme and enrol your cohort, or start with a free Assessment if you want a written diagnostic first."
+        ctaText="Buy AI for Work · from €3,000 →"
+        ctaTo="/programmes/ai-for-non-technical-people#pricing"
+        secondaryText="Book a free Assessment"
+        secondaryTo="/assessment"
+        note="Pay & enrol · or get a written report within 5 business days"
       />
     </>
   );
