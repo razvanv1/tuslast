@@ -181,6 +181,21 @@
       linear-gradient(180deg, hsl(220 8% 19%) 0%, hsl(220 8% 16%) 100%);
   }
 
+  /* Auto-rhythm: every even dark section gets the graphite tone for variety */
+  section.bg-background:nth-of-type(even) {
+    background-color: hsl(220 7% 17%);
+    background-image:
+      radial-gradient(ellipse at 30% 20%, hsl(220 10% 24% / 0.5), transparent 55%),
+      radial-gradient(ellipse at 80% 90%, hsl(220 12% 13% / 0.5), transparent 55%),
+      linear-gradient(180deg, hsl(220 8% 18%) 0%, hsl(220 8% 15%) 100%);
+  }
+  section.bg-background:nth-of-type(3n) {
+    background-color: hsl(220 9% 11%);
+    background-image:
+      radial-gradient(ellipse at 70% 0%, hsl(220 12% 19% / 0.55), transparent 55%),
+      linear-gradient(180deg, hsl(220 9% 12%) 0%, hsl(220 9% 9%) 100%);
+  }
+
   /* Paper texture */
   .bg-paper-tex {
     background-color: hsl(var(--paper));
