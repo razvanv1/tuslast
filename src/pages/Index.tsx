@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
@@ -62,6 +63,33 @@ const Index = () => {
 
   return (
     <>
+      <SEO
+        title="The Unlearning School, AI adoption training for non-technical teams"
+        description="Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU."
+        keywords="AI adoption, AI training, EU AI Act Article 4, Copilot adoption, AI for non-technical teams, workflow redesign, change management, Romania, EU"
+        faq={[
+          {
+            question: "What does The Unlearning School do?",
+            answer:
+              "We help organisations turn deployed AI tools (Copilot, ChatGPT, Gemini) into actually-used workflows by redesigning processes and training non-technical teams. The focus is behaviour change, not tool demos.",
+          },
+          {
+            question: "Who is this for?",
+            answer:
+              "COOs, HR/L&D leads, and CIOs in EU companies that already pay for AI licences but see flat adoption metrics and unchanged process times.",
+          },
+          {
+            question: "Does this help with EU AI Act Article 4 compliance?",
+            answer:
+              "Yes. Our role-adapted programmes provide the AI literacy training required by EU AI Act Article 4, with auditable participation and behaviour-change outcomes.",
+          },
+          {
+            question: "How do I start?",
+            answer:
+              "Book a free AI Adoption Gap Assessment. One working session, written report within 5 business days, no proposal attached.",
+          },
+        ]}
+      />
       {/* HERO */}
       <section className="relative bg-background border-b-2 border-paper/10 overflow-x-clip">
         <div className="bg-halftone">
