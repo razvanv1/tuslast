@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo@2x.webp";
 
 const programmes = [
   { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
@@ -143,11 +143,11 @@ const Footer = () => (
         <img
           src={logo}
           alt="The Unlearning School"
-          width={406}
-          height={203}
+          width={1624}
+          height={812}
           loading="lazy"
           decoding="async"
-          className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none"
+          className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none [image-rendering:crisp-edges]"
           aria-hidden="true"
         />
         <div className="space-y-6">
