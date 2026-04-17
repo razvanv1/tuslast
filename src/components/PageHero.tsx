@@ -103,7 +103,17 @@ const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, seconda
         </div>
 
         {note && (
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">{note}</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
+            {note.split(/(\S+@\S+\.\S+|\+?\d[\d\s().-]{6,}\d)/g).map((part, i) => {
+              if (/^\S+@\S+\.\S+$/.test(part)) {
+                return <a key={i} href={`mailto:${part}`} className="text-red hover:text-paper hover:underline">{part}</a>;
+              }
+              if (/^\+?\d[\d\s().-]{6,}\d$/.test(part)) {
+                return <a key={i} href={`tel:${part.replace(/[^\d+]/g, "")}`} className="text-red hover:text-paper hover:underline">{part}</a>;
+              }
+              return <span key={i}>{part}</span>;
+            })}
+          </p>
         )}
       </div>
     </div>
