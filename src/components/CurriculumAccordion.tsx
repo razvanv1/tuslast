@@ -112,17 +112,19 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
               >
                 <div className="overflow-hidden">
                   <div className="px-6 md:px-8 pb-8 md:pb-10 pt-2">
-                    <p className="text-paper/80 text-[15px] md:text-base leading-relaxed mb-8 max-w-3xl">
-                      {s.body}
-                    </p>
+                    {s.body && (
+                      <p className="text-paper/80 text-[15px] md:text-base leading-relaxed mb-8 max-w-3xl">
+                        {s.body}
+                      </p>
+                    )}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                    <div className={`grid grid-cols-1 ${s.practice && s.practice.length > 0 ? "md:grid-cols-2" : ""} gap-5 mb-6`}>
                       {/* Topics */}
                       <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <BookOpen size={14} className="text-red" />
                           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            Topics covered
+                            What's covered
                           </p>
                         </div>
                         <ul className="space-y-2">
@@ -139,27 +141,29 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                       </div>
 
                       {/* Practice */}
-                      <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
-                        <div className="flex items-center gap-2 mb-4">
-                          <Wrench size={14} className="text-red" />
-                          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            Hands-on practice
-                          </p>
+                      {s.practice && s.practice.length > 0 && (
+                        <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
+                          <div className="flex items-center gap-2 mb-4">
+                            <Wrench size={14} className="text-red" />
+                            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
+                              Hands-on practice
+                            </p>
+                          </div>
+                          <ul className="space-y-3">
+                            {s.practice.map((p) => (
+                              <li key={p.h} className="text-paper/85 text-[14px] leading-relaxed">
+                                <span className="font-semibold text-paper block mb-0.5">
+                                  {p.h}
+                                </span>
+                                <span className="text-paper/65">{p.body}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                        <ul className="space-y-3">
-                          {s.practice.map((p) => (
-                            <li key={p.h} className="text-paper/85 text-[14px] leading-relaxed">
-                              <span className="font-semibold text-paper block mb-0.5">
-                                {p.h}
-                              </span>
-                              <span className="text-paper/65">{p.body}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      )}
                     </div>
 
-                    {s.useCases.length > 0 && (
+                    {s.useCases && s.useCases.length > 0 && (
                       <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6 mb-6">
                         <div className="flex items-center gap-2 mb-4">
                           <Target size={14} className="text-red" />
