@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerFunding from "@/assets/banner-funding.png";
 import Section from "@/components/Section";
@@ -32,6 +33,19 @@ const Funding = () => {
 
   return (
     <>
+      <SEO
+        title="Funding Structuring — vendor MDF, AWS co-sell & EU digital grants"
+        description="Structure your AI adoption programme to qualify for Microsoft MDF, AWS co-sell, or EU digital grants. We draft the application and align delivery so reimbursement actually happens."
+        keywords="Microsoft MDF, AWS co-sell, EU digital grants, AI funding, Digital Europe Programme, AI grant Romania, vendor credits"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          serviceType: "Funding structuring for AI adoption programmes",
+          provider: { "@type": "Organization", name: "The Unlearning School" },
+          areaServed: ["RO", "EU"],
+          description: "Microsoft MDF, AWS partner co-sell, and EU digital grant structuring for AI adoption work.",
+        }}
+      />
       <PageHero
         tag="MDF, Funding & Grants"
         banner={bannerFunding}

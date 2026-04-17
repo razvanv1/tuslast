@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 
 const sections = [
   { h: "1. Introduction", body: <p>The Unlearning School ("we", "us", "our") is committed to protecting the privacy of visitors and users of our website. This Privacy Policy explains how we collect, use, store and protect your personal data in accordance with the General Data Protection Regulation (GDPR) and applicable Romanian data protection laws.</p> },
@@ -17,6 +18,7 @@ const PrivacyPolicy = () => {
   useEffect(() => { document.title = "Privacy Policy, The Unlearning School"; }, []);
   return (
     <>
+      <SEO title="Privacy Policy" description="GDPR-compliant privacy policy for The Unlearning School." noindex />
       <section className="bg-background text-paper border-b-2 border-paper/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-16 pb-12 md:pt-24 md:pb-16">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4"> Legal</p>

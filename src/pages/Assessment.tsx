@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerAssessment from "@/assets/banner-assessment.png";
 import Section from "@/components/Section";
@@ -17,6 +18,19 @@ const Assessment = () => {
 
   return (
     <>
+      <SEO
+        title="AI Adoption Gap Assessment — free 30-minute working call"
+        description="Free 30-minute working call that maps where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
+        keywords="AI adoption assessment, AI gap analysis, free AI consultation, Copilot adoption audit, EU AI Act readiness"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "AI Adoption Gap Assessment",
+          description: "Book a free 30-minute working call.",
+          url: "https://tuslast.lovable.app/assessment",
+          provider: { "@type": "Organization", name: "The Unlearning School" },
+        }}
+      />
       <PageHero
         tag="AI Adoption Gap Assessment"
         banner={bannerAssessment}

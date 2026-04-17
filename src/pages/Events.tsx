@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerEvents from "@/assets/banner-events.png";
 import Section from "@/components/Section";
@@ -41,6 +42,18 @@ const Events = () => {
 
   return (
     <>
+      <SEO
+        title="Events & Keynotes — AI adoption workshops, hackathons, keynotes"
+        description="Sector-adapted AI workshops, internal hackathons and keynotes. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples."
+        keywords="AI keynote, AI workshop, AI hackathon, corporate AI event, AI speaker EU, Copilot workshop"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          serviceType: "AI keynote, workshop and hackathon facilitation",
+          provider: { "@type": "Organization", name: "The Unlearning School" },
+          areaServed: ["RO", "EU"],
+        }}
+      />
       <PageHero
         tag="Events & Keynotes"
         banner={bannerEvents}

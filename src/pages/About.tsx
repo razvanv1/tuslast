@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
@@ -11,6 +12,20 @@ const About = () => {
 
   return (
     <>
+      <SEO
+        title="About — a behaviour change practice for AI adoption"
+        description="The Unlearning School is a behaviour change practice founded by Răzvan Vâlceanu. We redesign workflows so AI tools actually get used in non-technical teams across the EU."
+        keywords="The Unlearning School, Răzvan Vâlceanu, AI adoption consultancy, behaviour change AI, change management AI, EU"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: "The Unlearning School",
+          founder: { "@type": "Person", name: "Răzvan Vâlceanu" },
+          description: "Behaviour change practice for AI adoption in non-technical teams.",
+          areaServed: ["RO", "EU"],
+          url: "https://tuslast.lovable.app/about",
+        }}
+      />
       <PageHero
         tag="ABOUT"
         title="A behaviour change practice, not a training company."

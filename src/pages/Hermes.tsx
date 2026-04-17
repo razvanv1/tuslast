@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
@@ -54,6 +55,22 @@ const Hermes = () => {
   useEffect(() => { document.title = "Hermes Agent, The Unlearning School"; }, []);
   return (
     <>
+      <SEO
+        title="Hermes Agent — your self-improving AI operations agent"
+        description="Open-source AI agent with persistent memory, 40+ tools, multi-platform gateway. Runs on your server. Telegram, Slack, Email. 4 weeks to full autonomy."
+        keywords="AI agent, self-improving agent, Hermes agent, open source AI agent, Telegram AI agent, autonomous agent, persistent memory agent"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "Hermes Agent",
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Linux, macOS, Windows",
+          offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+          license: "https://opensource.org/licenses/MIT",
+          description:
+            "Self-improving AI operations agent with persistent memory and 40+ built-in tools. Runs on your server.",
+        }}
+      />
       <PageHero
         tag="HERMES AGENT · INTERNAL AGENTIC SOLUTION"
         title="Stop prompting. Start delegating."
