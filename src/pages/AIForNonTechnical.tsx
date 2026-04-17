@@ -182,7 +182,7 @@ const tools = [
   "Lovable",
   "Manus",
   "Microsoft Copilot",
-  "NotebookLM",
+  "Google NotebookLM",
   "Perplexity",
 ];
 
