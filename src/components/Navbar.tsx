@@ -20,10 +20,10 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center group">
-          <img src={logo} alt="The Unlearning School" className="h-12 md:h-14 w-auto object-contain invert brightness-200" />
+          <img src={logo} alt="The Unlearning School" className="h-[58px] md:h-[67px] w-auto object-contain invert brightness-200" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-5 lg:gap-7 ml-auto pl-10 lg:pl-16">
+        <div className="hidden md:flex items-center gap-5 lg:gap-6 ml-auto">
           {navLinks.map((link) => (
             <Link
               key={link.to}
