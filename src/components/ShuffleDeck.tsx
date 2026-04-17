@@ -36,6 +36,15 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
   const scale = 1 - index * 0.03;
   const isTop = index === 0;
 
+  // When card position in stack changes (after a swipe cycles the deck),
+  // snap x/y back to 0 so a previously-swiped card reappears in the stack.
+  useEffect(() => {
+    if (!isTop) {
+      x.set(0);
+      y.set(0);
+    }
+  }, [index, isTop, x, y]);
+
   const handleDragStart = () => {
     draggedRef.current = false;
   };
