@@ -7,6 +7,7 @@ import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import { Kicker, SectionHeading, Sidebar, TwoColumnGrid } from "@/components/Editorial";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
