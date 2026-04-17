@@ -4,11 +4,13 @@ import { ChevronDown, BookOpen, Wrench, Target, CheckCircle2 } from "lucide-reac
 export interface CurriculumSession {
   num: string;
   title: string;
-  body: string;
+  body?: string;
   topics: string[];
-  practice: { h: string; body: string }[];
-  useCases: string[];
-  outcome: string;
+  practice?: { h: string; body: string }[];
+  useCases?: string[];
+  outcome?: string;
+  /** Optional override for the small label above the title (e.g. "Week 01 · Build sprint"). */
+  kicker?: string;
 }
 
 interface CurriculumAccordionProps {
