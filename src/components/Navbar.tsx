@@ -16,6 +16,16 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const onAssessment = location.pathname === "/assessment";
+
+  const scrollToBook = () => {
+    document.getElementById("book")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const desktopBookingClass =
+    "ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors";
+  const mobileBookingClass =
+    "mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]";
 
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
@@ -43,12 +53,15 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to={BOOKING_URL}
-            className="ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
-          >
-            {BOOKING_LABEL} →
-          </Link>
+          {onAssessment ? (
+            <button type="button" onClick={scrollToBook} className={desktopBookingClass}>
+              {BOOKING_LABEL} →
+            </button>
+          ) : (
+            <Link to={BOOKING_URL} className={desktopBookingClass}>
+              {BOOKING_LABEL} →
+            </Link>
+          )}
         </div>
 
         <button className="md:hidden p-2 text-paper" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -68,13 +81,23 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to={BOOKING_URL}
-            onClick={() => setOpen(false)}
-            className="mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
-          >
-            {BOOKING_LABEL} →
-          </Link>
+          {onAssessment ? (
+            <button
+              type="button"
+              onClick={() => { setOpen(false); setTimeout(scrollToBook, 50); }}
+              className={mobileBookingClass}
+            >
+              {BOOKING_LABEL} →
+            </button>
+          ) : (
+            <Link
+              to={BOOKING_URL}
+              onClick={() => setOpen(false)}
+              className={mobileBookingClass}
+            >
+              {BOOKING_LABEL} →
+            </Link>
+          )}
         </div>
       )}
     </nav>
