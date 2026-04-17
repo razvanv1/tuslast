@@ -474,7 +474,7 @@ const AIForNonTechnical = () => {
           </div>
 
           <div className="mt-10 border-l-4 border-red pl-5 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Confidence clause</p>
+            <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Confidence clause</span></p>
             <p className="text-paper/85 text-[15px] leading-relaxed">
               If, after Session 1, your team concludes the program is not the right fit, the remaining sessions can be stopped and not invoiced.
             </p>
