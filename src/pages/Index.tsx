@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import lcpCard from "@/assets/card-workers.webp";
 
 const stats = [
   { value: "64%", label: "of employees with Copilot access do not actively use it" },
@@ -63,6 +65,9 @@ const Index = () => {
 
   return (
     <>
+      <Helmet>
+        <link rel="preload" as="image" href={lcpCard} fetchpriority="high" />
+      </Helmet>
       <SEO
         title="The Unlearning School, AI adoption training for non-technical teams"
         description="Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU."
