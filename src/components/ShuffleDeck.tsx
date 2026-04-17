@@ -38,10 +38,19 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
 
   // When card position in stack changes (after a swipe cycles the deck),
   // snap x/y back to 0 so a previously-swiped card reappears in the stack.
+  // Skip on first mount and defer to next frame to avoid forced reflow during commit.
+  const mountedRef = useRef(false);
   useEffect(() => {
+    if (!mountedRef.current) {
+      mountedRef.current = true;
+      return;
+    }
     if (!isTop) {
-      x.set(0);
-      y.set(0);
+      const raf = requestAnimationFrame(() => {
+        x.set(0);
+        y.set(0);
+      });
+      return () => cancelAnimationFrame(raf);
     }
   }, [index, isTop, x, y]);
 
