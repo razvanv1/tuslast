@@ -58,7 +58,7 @@
 @layer base {
   :root {
     /* Wired editorial palette, black bg, paper accents, red/blue duotone */
-    --background: 0 0% 6%;          /* near black */
+    --background: 220 8% 13%;       /* shiny dark grey */
     --foreground: 40 30% 94%;       /* paper */
 
     --card: 40 30% 94%;
