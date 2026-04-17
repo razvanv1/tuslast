@@ -40,20 +40,20 @@ const CookieConsent = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => close("declined")}
-            className="px-5 py-2.5 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            className="px-5 py-2.5 border border-ink/40 text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors"
           >
             Essential only
           </button>
           <button
             onClick={() => close("accepted")}
-            className="px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            className="px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors"
           >
             Accept all
           </button>
           <button
             onClick={() => close("declined")}
             aria-label="Close"
-            className="p-2 text-paper/50 hover:text-paper transition-colors"
+            className="p-2 text-ink/50 hover:text-ink transition-colors"
           >
             <X size={18} />
           </button>
