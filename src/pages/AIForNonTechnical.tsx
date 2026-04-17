@@ -552,7 +552,7 @@ const AIForNonTechnical = () => {
                 <ul className="space-y-1 text-paper/85">
                   <li>→ AI adoption for non-technical teams</li>
                   <li>→ Practical training for cross-functional business teams</li>
-                  <li>→ Workflow redesign and execution support</li>
+                  <li>→ Workshops, hackathons, and keynotes for fast proof and leadership buy-in</li>
                   <li>→ Rapid prototyping and AI-enabled experimentation</li>
                 </ul>
               </div>
