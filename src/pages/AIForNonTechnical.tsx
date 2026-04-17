@@ -514,7 +514,7 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> How success is measured</p>
+        <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">How success is measured</span></p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-10 max-w-3xl">
           Evaluated by operational adoption. <em className="text-red">Not attendance.</em>
         </h2>
