@@ -160,7 +160,7 @@ const Hermes = () => {
         }}
       />
       <PageHero
-        tag="HERMES AGENT · INTERNAL AGENTIC SOLUTION"
+        tag="Hermes Agent · Internal Agentic Solution"
         title="Stop prompting. Start delegating."
         subtitle="ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call."
         ctaText="Buy Agent →"
