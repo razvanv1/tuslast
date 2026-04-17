@@ -14,6 +14,35 @@ interface PageHeroProps {
   bannerAlt?: string;
 }
 
+const isExternal = (to?: string) => !!to && /^https?:\/\//i.test(to);
+
+const HeroCTA = ({
+  to,
+  children,
+  variant,
+}: {
+  to: string;
+  children: React.ReactNode;
+  variant: "primary" | "secondary";
+}) => {
+  const cls =
+    variant === "primary"
+      ? "inline-flex items-center px-6 py-3.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+      : "inline-flex items-center px-6 py-3.5 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors";
+  if (isExternal(to)) {
+    return (
+      <a href={to} target="_blank" rel="noopener noreferrer" className={cls}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link to={to} className={cls}>
+      {children}
+    </Link>
+  );
+};
+
 const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School", banner, bannerAlt }: PageHeroProps) => (
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
     <div className="bg-halftone">
@@ -49,20 +78,10 @@ const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, seconda
 
         <div className="flex flex-wrap items-center gap-3">
           {ctaText && ctaTo && (
-            <Link
-              to={ctaTo}
-              className="inline-flex items-center px-6 py-3.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
-            >
-              {ctaText}
-            </Link>
+            <HeroCTA to={ctaTo} variant="primary">{ctaText}</HeroCTA>
           )}
           {secondaryText && secondaryTo && (
-            <Link
-              to={secondaryTo}
-              className="inline-flex items-center px-6 py-3.5 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
-            >
-              {secondaryText}
-            </Link>
+            <HeroCTA to={secondaryTo} variant="secondary">{secondaryText}</HeroCTA>
           )}
         </div>
 
