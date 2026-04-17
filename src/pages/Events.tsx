@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PageHero from "@/components/PageHero";
+import bannerEvents from "@/assets/banner-events.png";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
@@ -41,7 +42,9 @@ const Events = () => {
   return (
     <>
       <PageHero
-        tag="ACCELERATOR · STEP 3 OF 4"
+        tag="Events & Keynotes"
+        banner={bannerEvents}
+        bannerAlt="Speaker on stage in front of large audience"
         title="They leave with something they built."
         subtitle="Workshops, hackathons, and keynotes for companies that need fast proof, internal momentum, or a way to show leadership what AI actually looks like in practice."
         ctaText="Tell me about your event →"
