@@ -120,7 +120,7 @@ const Assessment = () => {
           </div>
 
           <p className="text-sm text-ink/60 mt-8">
-            Or email: <a href="mailto:contact@unlearning.ro" className="text-red font-medium hover:underline">contact@unlearning.ro</a>
+            Or email: <a href="mailto:hello@unlearning.ro" className="text-red font-medium hover:underline">hello@unlearning.ro</a>
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 ml-3">Subject: Assessment · Reply within 1 business day</span>
           </p>
         </div>
