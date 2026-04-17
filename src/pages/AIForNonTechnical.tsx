@@ -562,7 +562,7 @@ const AIForNonTechnical = () => {
               </div>
             </TwoColumnGrid>
             <div className="pt-4 border-t border-paper/15">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">Tools used every day</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Tools used every day</span></p>
               <div className="flex flex-wrap gap-2">
                 {tools.map((t) => (
                   <span key={t} className="font-mono text-[11px] uppercase tracking-[0.15em] text-paper/80 border border-paper/25 px-2 py-1">{t}</span>
