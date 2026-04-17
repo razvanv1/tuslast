@@ -1,11 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.webp";
 
 const navLinks = [
   { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
-  { label: "Events & Keynotes", to: "/events" },
+  { label: "Hermes Agent", to: "/hermes" },
+  { label: "Events", to: "/events" },
   { label: "Funding", to: "/funding" },
+  { label: "Resources", to: "/resources" },
   { label: "About", to: "/about" },
 ];
 
@@ -16,12 +19,12 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
-        <Link to="/" className="flex items-baseline gap-2 group">
-          <span className="font-display text-2xl text-paper leading-none italic">Unlearning</span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mt-1">School</span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src={logo} alt="The Unlearning School" className="h-7 w-auto invert brightness-200" />
+          <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-[0.3em] text-red mt-1">School</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-6 lg:gap-10 ml-auto pl-12 lg:pl-20">
+        <div className="hidden md:flex items-center gap-5 lg:gap-7 ml-auto pl-10 lg:pl-16">
           {navLinks.map((link) => (
             <Link
               key={link.to}
