@@ -27,11 +27,11 @@ const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-background border-t-2 border-paper/15">
+    <div className="fixed bottom-0 left-0 right-0 z-[100] bg-paper border-t-2 border-ink/15">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-5 flex flex-col md:flex-row md:items-center gap-5">
         <div className="flex-1">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-2"> Cookies</p>
-          <p className="text-paper/80 text-sm leading-relaxed max-w-3xl">
+          <p className="text-ink/80 text-sm leading-relaxed max-w-3xl">
             We use essential cookies to make this site work and analytics cookies to understand how it is used. See our{" "}
             <Link to="/cookie-policy" className="text-red hover:underline">Cookie Policy</Link> and{" "}
             <Link to="/privacy-policy" className="text-red hover:underline">Privacy Policy</Link>.
