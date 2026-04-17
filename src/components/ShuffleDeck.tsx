@@ -1,22 +1,16 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import cardTool from "@/assets/card-tool.png";
-import cardBrain from "@/assets/card-brain.png";
 import cardWorkers from "@/assets/card-workers.png";
-import cardBubble from "@/assets/card-bubble.png";
-import cardEye from "@/assets/card-eye.png";
-import cardGears from "@/assets/card-gears.png";
-import cardKey from "@/assets/card-key.png";
+import cardEvents from "@/assets/card-events.png";
+import cardFunding from "@/assets/card-funding.png";
+import cardAssessment from "@/assets/card-assessment.png";
 
 const DECK = [
-  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 1 session", href: "/assessment" },
   { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people" },
-  { image: cardGears, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events" },
-  { image: cardBrain, label: "Funding Structuring", caption: "MDF · grants", href: "/funding" },
-  { image: cardEye, label: "Unfreeze the habit", caption: "The mechanism", href: "/programmes" },
-  { image: cardKey, label: "Redesign the workflow", caption: "Embed AI in it", href: "/programmes" },
-  { image: cardBubble, label: "Refreeze as template", caption: "Team-owned", href: "/programmes" },
+  { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events" },
+  { image: cardFunding, label: "Funding Structuring", caption: "MDF · grants", href: "/funding" },
+  { image: cardAssessment, label: "AI Adoption Gap Assessment", caption: "Free · 1 session", href: "/assessment" },
 ];
 
 interface DeckCardProps {
