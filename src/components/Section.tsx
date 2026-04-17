@@ -4,8 +4,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  /** dark = on-brand black; paper = inverted cream/paper section */
-  variant?: "dark" | "paper";
+  /** dark = base grey; darker = deeper recessed grey; graphite = lighter cool grey with sheen; paper = inverted cream */
+  variant?: "dark" | "darker" | "graphite" | "paper";
   bordered?: boolean;
 }
 
@@ -13,6 +13,10 @@ const Section = ({ children, className, variant = "dark", bordered = true }: Sec
   const variantClasses =
     variant === "paper"
       ? "bg-paper text-ink"
+      : variant === "darker"
+      ? "bg-section-darker text-paper"
+      : variant === "graphite"
+      ? "bg-section-graphite text-paper"
       : "bg-background text-paper";
   return (
     <section className={cn(variantClasses, bordered && "border-b-2 border-paper/10", className)}>
@@ -24,3 +28,4 @@ const Section = ({ children, className, variant = "dark", bordered = true }: Sec
 };
 
 export default Section;
+
