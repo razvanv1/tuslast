@@ -53,6 +53,81 @@ const Resources = () => {
         secondaryTo="/assessment"
       />
 
+      {/* FEATURED FREE RESOURCE */}
+      <Section bordered={false}>
+        <div className="grid md:grid-cols-12 gap-10 items-center">
+          <div className="md:col-span-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">Featured · Free download</p>
+            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mb-5">
+              The AI Literacy <em className="text-red">Compliance Playbook.</em>
+            </h2>
+            <p className="text-paper/75 text-[15px] leading-relaxed mb-6 max-w-lg">
+              How to solve the EU AI Act Article 4 mandate. A practical guide to AI Literacy training for your employees, written for HR, L&amp;D, Operations and exec teams in SMEs.
+            </p>
+            <ul className="text-paper/70 text-sm space-y-2 mb-8 border-t border-paper/15 pt-5">
+              <li className="border-b border-paper/15 pb-2">→ Why Article 4 already applies to your team today</li>
+              <li className="border-b border-paper/15 pb-2">→ The "Shadow AI" risk and how to surface it</li>
+              <li className="border-b border-paper/15 pb-2">→ A 4-step rollout plan for AI Literacy</li>
+              <li className="pb-2">→ How to turn compliance into a competitive advantage</li>
+            </ul>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="/resources/ai-literacy-playbook.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+              >
+                Read the playbook →
+              </a>
+              <a
+                href="/resources/ai-literacy-playbook.html"
+                download
+                className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+              >
+                Download HTML
+              </a>
+            </div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-5">
+              Free · No email required · 2026 edition
+            </p>
+          </div>
+
+          {/* Tarot-style card, matching homepage deck */}
+          <div className="md:col-span-7 flex justify-center md:justify-end">
+            <a
+              href="/resources/ai-literacy-playbook.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative block bg-paper p-3 pb-16 card-shadow w-[280px] sm:w-[340px] md:w-[400px] max-w-full transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
+            >
+              <div className="aspect-[3/4] overflow-hidden bg-paper-dim relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-red/10 via-transparent to-ink/20" aria-hidden />
+                <div className="relative z-10 p-6 flex flex-col h-full text-ink">
+                  <div className="flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.25em] text-red">
+                    <span className="w-1.5 h-1.5 bg-red rounded-full" />
+                    The Article 4 Mandate
+                  </div>
+                  <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-ink/50 mt-1">2026 edition</p>
+                  <div className="mt-auto">
+                    <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-ink/40 mb-3">Playbook 01</p>
+                    <h3 className="font-display text-3xl md:text-4xl leading-[0.95] text-ink">
+                      The AI Literacy <em className="text-red">Compliance Playbook</em>
+                    </h3>
+                    <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-ink/50 mt-4">
+                      For SMEs · HR · L&amp;D · Ops
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-3 right-3 bg-ink text-paper px-3 py-3 text-center">
+                <p className="font-display text-paper text-base md:text-lg leading-tight">Read the playbook</p>
+                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">Free · No signup</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </Section>
+
       <Section>
         <SectionHeading
           kicker="Start here"
