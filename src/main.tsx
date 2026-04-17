@@ -3,6 +3,8 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
 import cardWorkersUrl from "@/assets/card-workers.webp";
+import interLatinUrl from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
+import dmSerifLatinUrl from "@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url";
 
 // Inject LCP preload as early as possible so the hashed asset URL is
 // discoverable in the initial document, before React mounts.
@@ -13,6 +15,19 @@ preloadLink.href = cardWorkersUrl;
 preloadLink.type = "image/webp";
 preloadLink.fetchPriority = "high";
 document.head.appendChild(preloadLink);
+
+// Preload above-the-fold fonts so the browser fetches them in parallel with
+// the render-blocking CSS rather than waiting for CSS parse. Shortens the
+// critical chain and improves FCP.
+[interLatinUrl, dmSerifLatinUrl].forEach((href) => {
+  const l = document.createElement("link");
+  l.rel = "preload";
+  l.as = "font";
+  l.type = "font/woff2";
+  l.href = href;
+  l.crossOrigin = "anonymous";
+  document.head.appendChild(l);
+});
 
 createRoot(document.getElementById("root")!).render(
   <HelmetProvider>
