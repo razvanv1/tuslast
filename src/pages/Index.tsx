@@ -23,35 +23,37 @@ const audience = [
     situation: "You need a credible AI upskilling programme. EU AI Act Article 4 is in force. No plan that demonstrably changes behaviour.",
     result: "Role-adapted workshops. Participants leave with 3–5 AI workflows ready the next morning.",
   },
-  {
-    role: "CIO / Digital Transformation",
-    situation: "Deployment data says adoption on track. Business unit leads say otherwise. Cannot distinguish licence activation from real usage.",
-    result: "Written gap report identifying where usage stalls in real processes. Redesigned process on Day 2.",
-  },
 ];
 
 const ladder = [
   {
-    tag: "Start here · Free",
+    tag: "Step 1 · Free",
     title: "AI Adoption Gap Assessment",
-    body: "30-minute structured call. We identify where usage is stalling and which 3–5 processes are highest priority. You receive a 1-page written summary within 24 hours.",
+    body: "One working session. We map what your company actually does with the AI tools it already pays for, and where the gaps create real risk. Written report in 5 business days.",
     href: "/assessment",
     cta: "Book the Assessment",
     highlight: true,
   },
   {
-    tag: "Core engagement",
-    title: "AI for Non-Techies / Rapid Prototyping Sprint",
-    body: "Half-day or full-day on-site. Your team redesigns one real process with AI embedded. No code. No IT dependency. Measurable output by end of day.",
-    href: "/programmes",
-    cta: "See programmes",
+    tag: "Step 2 · Core",
+    title: "AI for Non-Technical People",
+    body: "Structured adoption program for non-technical business teams. Modular: Discovery (1×2h), Short Sprint (2–3 sessions), or Full Program (4+ sessions). Built on the AI tools you already pay for.",
+    href: "/programmes/ai-for-non-technical-people",
+    cta: "See the program",
   },
   {
-    tag: "Full engagement",
-    title: "AI Adoption Sprint",
-    body: "Two-day engagement. Day 1: diagnostic + written gap report. Day 2: sprint on highest-priority process. 90-day roadmap included.",
-    href: "/programmes",
-    cta: "See programmes",
+    tag: "Step 3 · Accelerator",
+    title: "Events & Keynotes",
+    body: "Workshops, hackathons, and keynotes for fast proof and internal momentum. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples.",
+    href: "/events",
+    cta: "See event formats",
+  },
+  {
+    tag: "Step 4 · Deal closer",
+    title: "Funding Structuring",
+    body: "Vendor MDF, AWS partner co-sell, or EU digital grants. We structure the program to qualify, draft the application, and align delivery so reimbursement actually happens.",
+    href: "/funding",
+    cta: "See funding options",
   },
 ];
 
@@ -101,7 +103,7 @@ const Index = () => {
                 </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                30-minute structured call · 1-page written output within 24 hours · No proposal attached
+                One working session · Written report within 5 business days · No proposal attached
               </p>
             </div>
           </div>
@@ -161,7 +163,7 @@ const Index = () => {
       <Section variant="paper">
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Who this is for</p>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-3xl">
-          Three roles. <em>Three diagnoses.</em>
+          Two roles. <em>Two diagnoses.</em>
         </h2>
 
         <div className="space-y-0 border-t border-ink/15">
@@ -190,18 +192,17 @@ const Index = () => {
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/for-operations" className="text-ink hover:text-red transition-colors">→ I run operations</Link>
           <Link to="/for-hr" className="text-ink hover:text-red transition-colors">→ I lead HR / L&D</Link>
-          <Link to="/for-it" className="text-ink hover:text-red transition-colors">→ I lead IT / Digital</Link>
         </div>
       </Section>
 
-      {/* HOW IT WORKS — three stages */}
+      {/* THE FOUR STEPS */}
       <Section>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— How it works</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The catalogue</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
-          Three stages, <em className="text-red">not a menu.</em>
+          Four programmes, <em className="text-red">designed to be used in order.</em>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10">
           {ladder.map((l) => (
             <article
               key={l.title}
@@ -254,7 +255,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
           {[
             { tag: "Track record", title: "1,000+ professionals trained", body: "Across finance, retail, manufacturing, and professional services — Romania and EU." },
-            { tag: "Founder", title: "Răzvan Vâlceanu", body: "Former GM at Bitdefender. Former Entrepreneurship Director at USV Timișoara. 15 years at the intersection of technology and organisational change." },
+            { tag: "Founder", title: "Răzvan Vâlceanu", body: "20+ years across innovation, digital transformation, executive education, and entrepreneurship. Delivered in partnership with IT Assist." },
             { tag: "Proof format", title: "Before / after workflows", body: "Anonymised sector examples available on request during the Assessment call. No client names published on this site." },
           ].map((c) => (
             <article key={c.tag} className="bg-background p-8 md:p-10">
@@ -269,10 +270,10 @@ const Index = () => {
       {/* CTA */}
       <CTASection
         title="Not sure which programme fits?"
-        subtitle="Start with the Assessment. 30 minutes. Written output you can share internally. No proposal attached."
+        subtitle="Start with the Assessment. One working session. Written report you can share internally. No proposal attached."
         ctaText="Book the AI Adoption Gap Assessment →"
         ctaTo="/assessment"
-        note="Free · No pitch · 1-page summary within 24 hours"
+        note="Free · No pitch · Written report within 5 business days"
       />
     </>
   );

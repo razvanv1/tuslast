@@ -10,10 +10,10 @@ import cardGears from "@/assets/card-gears.png";
 import cardKey from "@/assets/card-key.png";
 
 const DECK = [
-  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 30 min", href: "/assessment" },
-  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day", href: "/programmes" },
-  { image: cardGears, label: "Rapid Prototyping Sprint", caption: "1 day · 1 process", href: "/programmes" },
-  { image: cardBrain, label: "AI Adoption Sprint", caption: "2 days · multi-team", href: "/programmes" },
+  { image: cardTool, label: "AI Adoption Gap Assessment", caption: "Free · 1 session", href: "/assessment" },
+  { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people" },
+  { image: cardGears, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events" },
+  { image: cardBrain, label: "Funding Structuring", caption: "MDF · grants", href: "/funding" },
   { image: cardEye, label: "Unfreeze the habit", caption: "The mechanism", href: "/programmes" },
   { image: cardKey, label: "Redesign the workflow", caption: "Embed AI in it", href: "/programmes" },
   { image: cardBubble, label: "Refreeze as template", caption: "Team-owned", href: "/programmes" },
