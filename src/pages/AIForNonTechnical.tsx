@@ -495,7 +495,7 @@ const AIForNonTechnical = () => {
             { h: "Customisation", body: "Everything is tailored. Prompt kit, exercises, and workflows are adapted to your actual context, and built on the AI tools and licenses you already use. Initial meeting used to tailor use cases and expected outcomes." },
           ].map((c) => (
             <article key={c.h} className="bg-paper p-8">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.h}</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{c.h}</span></p>
               <p className="text-ink/80 text-[15px] leading-relaxed">{c.body}</p>
             </article>
           ))}
