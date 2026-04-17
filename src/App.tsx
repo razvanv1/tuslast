@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import CookieConsent from "@/components/CookieConsent";
+import { BauhausDefs } from "@/components/bauhaus/BauhausShapes";
 import Index from "./pages/Index";
 
 // Non-critical routes are code-split to keep the initial bundle small.
