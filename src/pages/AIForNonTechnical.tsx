@@ -492,20 +492,20 @@ const AIForNonTechnical = () => {
                     >
                       {loadingKey === t.productKey ? "Loading…" : "Pay & enrol →"}
                     </button>
-                    <a
-                      href="/assessment"
+                    <Link
+                      to="/assessment"
                       className={`block text-center font-mono text-[10px] uppercase tracking-[0.2em] hover:underline ${t.featured ? "text-paper/90" : "text-paper/60"}`}
                     >
                       Or book the free audit first
-                    </a>
+                    </Link>
                   </div>
                 ) : (
-                  <a
-                    href="/assessment"
+                  <Link
+                    to="/assessment"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
                     Free audit →
-                  </a>
+                  </Link>
                 )}
               </article>
             ))}
