@@ -108,6 +108,18 @@
     --sidebar-accent-foreground: 40 30% 94%;
     --sidebar-border: 0 0% 18%;
     --sidebar-ring: 11 76% 44%;
+
+    /* Bauhaus / Kandinsky popsicle palette — DECORATIVE SHAPES ONLY.
+       Do not use for text, buttons, or UI surfaces. Brand colors stay intact. */
+    --bau-red: 0 85% 55%;
+    --bau-yellow: 48 100% 58%;
+    --bau-blue: 220 90% 52%;
+    --bau-cyan: 190 85% 55%;
+    --bau-pink: 330 85% 65%;
+    --bau-orange: 22 95% 58%;
+    --bau-green: 150 70% 48%;
+    --bau-purple: 270 70% 60%;
+    --bau-black: 0 0% 8%;
   }
 }
 
