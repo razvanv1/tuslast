@@ -163,7 +163,6 @@ const AIForNonTechnical = () => {
           kicker="Program structure (full program)"
           title={<>Modular sessions. <em className="text-red">Designed for real work.</em></>}
           intro="Each session builds on the previous one, creating a progressive learning journey that translates directly into day-to-day execution."
-          variant="paper"
         />
         <div className="space-y-px bg-ink/10 mt-8">
           {sessions.map((s) => (

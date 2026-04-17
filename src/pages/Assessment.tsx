@@ -8,7 +8,7 @@ import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Edit
 const personas = [
   { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
   { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like in your organisation — and which teams need it most urgently." },
-  { num: "03", tag: "CIO / Digital", title: "The dashboard says on track. Reality does not.", desc: "You want a second measurement layer — one that tracks process output, not licence activation." },
+  { num: "03", tag: "Business unit lead", title: "Your team uses AI. You don't control how.", desc: "You need a structured map of who uses what, where the gaps create real risk, and which workflows would benefit first from redesign." },
 ];
 
 const Assessment = () => {
