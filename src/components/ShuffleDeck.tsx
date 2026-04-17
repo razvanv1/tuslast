@@ -162,7 +162,7 @@ const ShuffleDeck = () => {
         </button>
         <div className="flex items-baseline gap-1">
           <span className="font-display text-3xl md:text-4xl text-red tabular-nums leading-none">
-            {String(order.indexOf(topIdx) + 1).padStart(2, "0")}
+            {String(topIdx + 1).padStart(2, "0")}
           </span>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-paper/50 tabular-nums">
             / {String(DECK.length).padStart(2, "0")}
@@ -181,7 +181,7 @@ const ShuffleDeck = () => {
         {DECK.map((_, i) => (
           <span
             key={i}
-            className={`h-1 w-8 transition-colors ${i === order.indexOf(topIdx) ? "bg-red" : "bg-paper/15"}`}
+            className={`h-1 w-8 transition-colors ${i === topIdx ? "bg-red" : "bg-paper/15"}`}
           />
         ))}
       </div>
