@@ -108,9 +108,8 @@ const About = () => {
                 Founder
               </div>
             </div>
-            <Kicker> The founder</Kicker>
-            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mt-2">
-              Răzvan <em className="text-red">Vâlceanu.</em>
+            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mt-6">
+              Răzvan <em className="text-red">Vâlceanu</em>
             </h2>
           </div>
           <div className="md:col-span-8 space-y-4 text-paper/80 text-[15px] leading-relaxed">
