@@ -257,7 +257,7 @@ const Hermes = () => {
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution="Dez Vâlceanu · Founder, The Unlearning School · Former GM Bitdefender Romania · 1,400+ professionals trained">
+        <Blockquote attribution="Răzvan Vâlceanu · Founder, The Unlearning School · Former GM Bitdefender Romania · 1,400+ professionals trained">
           The difference between people who use AI well and those who fall behind is not intelligence. It is knowing which tool solves which problem. Most people are using the wrong tool.
         </Blockquote>
       </Section>
