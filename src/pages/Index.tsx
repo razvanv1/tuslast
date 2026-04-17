@@ -212,7 +212,7 @@ const Index = () => {
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <a href="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free audit</a>
+          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free audit</Link>
         </div>
       </Section>
 
