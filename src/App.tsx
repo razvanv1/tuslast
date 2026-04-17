@@ -25,6 +25,8 @@ const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/legal/CookiePolicy"));
 const TermsAndConditions = lazy(() => import("./pages/legal/TermsAndConditions"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const PaymentSuccess = lazy(() => import("./pages/PaymentSuccess"));
+const PaymentCanceled = lazy(() => import("./pages/PaymentCanceled"));
 
 const queryClient = new QueryClient();
 
@@ -52,6 +54,8 @@ const AnimatedRoutes = () => {
           <Route path="/privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
           <Route path="/terms-and-conditions" element={<PageTransition><TermsAndConditions /></PageTransition>} />
+          <Route path="/payment-success" element={<PageTransition><PaymentSuccess /></PageTransition>} />
+          <Route path="/payment-canceled" element={<PageTransition><PaymentCanceled /></PageTransition>} />
           <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
         </Routes>
       </Suspense>
