@@ -115,7 +115,7 @@ const About = () => {
           </div>
           <div className="md:col-span-8 space-y-4 text-paper/80 text-[15px] leading-relaxed">
             <p><strong className="text-paper">Răzvan Vâlceanu</strong> is the founder and lead trainer at The Unlearning School. He brings 15 years of experience at the intersection of technology and organisational change.</p>
-            <p>Former General Manager at <strong className="text-paper">Bitdefender</strong>, where he ran a technology business unit and led product and go-to-market teams. Former Entrepreneurship Director at <strong className="text-paper">Universitatea de Vest Timișoara</strong>, where he built programmes connecting academic institutions with the startup and corporate ecosystem.</p>
+            <p>Former General Manager at <strong className="text-paper">Bitdefender</strong>, where he ran a technology business unit and led product and go-to-market teams. Former Entrepreneurship Director at <strong className="text-paper">University of Life Sciences Timisoara</strong>, where he built programmes connecting academic institutions with the startup and corporate ecosystem.</p>
             <p>The Unlearning School was built on the observation, made repeatedly across both roles, that the limiting factor in organisational change is almost never the technology, <span className="text-red">it is the existing habit that the technology is supposed to replace.</span></p>
             <a
               href="https://www.linkedin.com/in/razvanvalceanu/"
