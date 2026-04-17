@@ -133,6 +133,26 @@
 @layer utilities {
   .font-display { font-family: 'DM Serif Display', serif; }
   .font-mono { font-family: 'JetBrains Mono', monospace; }
+}
+
+/* Global typography normalization: no all-caps decoration, no italic.
+   Reserved <abbr>, <acronym> and explicit `.keep-uppercase` / `.keep-italic` opt-ins. */
+@layer base {
+  .uppercase:not(abbr):not(acronym):not(.keep-uppercase) {
+    text-transform: none;
+  }
+  .italic:not(.keep-italic),
+  em:not(.keep-italic),
+  i:not(.keep-italic) {
+    font-style: normal;
+  }
+  /* Pill buttons: any link/button styled as a CTA gets fully rounded ends */
+  a, button {
+    border-radius: 9999px;
+  }
+}
+
+@layer utilities {
 
   /* Paper texture */
   .bg-paper-tex {
