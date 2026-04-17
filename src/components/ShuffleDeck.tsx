@@ -9,7 +9,7 @@ import cardAssessment from "@/assets/card-assessment.png";
 const DECK = [
   { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people" },
   { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events" },
-  { image: cardFunding, label: "Funding Structuring", caption: "MDF · grants", href: "/funding" },
+  { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding" },
   { image: cardAssessment, label: "AI Adoption Gap Assessment", caption: "Free · 1 session", href: "/assessment" },
 ];
 
