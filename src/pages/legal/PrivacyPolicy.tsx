@@ -14,12 +14,12 @@ const sections = [
 ];
 
 const PrivacyPolicy = () => {
-  useEffect(() => { document.title = "Privacy Policy — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Privacy Policy, The Unlearning School"; }, []);
   return (
     <>
       <section className="bg-background text-paper border-b-2 border-paper/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-16 pb-12 md:pt-24 md:pb-16">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">— Legal</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4"> Legal</p>
           <h1 className="font-display text-5xl md:text-7xl text-paper leading-[0.95] mb-4">Privacy Policy.</h1>
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-paper/50">Last updated: March 2026</p>
         </div>

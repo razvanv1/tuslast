@@ -57,7 +57,7 @@ const ladder = [
 
 const Index = () => {
   useEffect(() => {
-    document.title = "The Unlearning School — AI adoption training for non-technical teams";
+    document.title = "The Unlearning School, AI adoption training for non-technical teams";
   }, []);
 
   return (
@@ -119,7 +119,7 @@ const Index = () => {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The Pattern</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The Pattern</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">Across every sector we observe</p>
           </div>
           <div className="md:col-span-9">
@@ -127,7 +127,7 @@ const Index = () => {
               Why AI adoption stalls after the rollout.
             </h2>
             <p className="text-paper/80 text-[15px] leading-relaxed max-w-2xl mb-10">
-              Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process — which was never redesigned to use AI.
+              Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process, which was never redesigned to use AI.
             </p>
 
             <div className="border-t border-paper/15">
@@ -148,13 +148,13 @@ const Index = () => {
 
       <Section bordered={false}>
         <Blockquote attribution="The premise behind every Unlearning School engagement">
-          Adding a tool to an unchanged process does not change the process. You need to redesign the workflow first — and clear the old habit before the new one can form. That is the step most deployments skip.
+          Adding a tool to an unchanged process does not change the process. You need to redesign the workflow first, and clear the old habit before the new one can form. That is the step most deployments skip.
         </Blockquote>
       </Section>
 
-      {/* WHO THIS IS FOR — editorial table */}
+      {/* WHO THIS IS FOR, editorial table */}
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Who this is for</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Who this is for</p>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Three roles. <em>Three diagnoses.</em>
         </h2>
@@ -190,7 +190,7 @@ const Index = () => {
 
       {/* THE PROGRAMS */}
       <Section>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The catalogue</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The catalogue</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
           Three programmes, <em className="text-red">scoped from one free Assessment.</em>
         </h2>
@@ -223,7 +223,7 @@ const Index = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The mechanism</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The mechanism</p>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
               Unfreeze, <em className="text-red">then change.</em>
             </h2>
@@ -241,13 +241,13 @@ const Index = () => {
 
       {/* Credibility */}
       <Section>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Credibility, briefly</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Credibility, briefly</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
           The receipts.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
           {[
-            { tag: "Track record", title: "1,000+ professionals trained", body: "Across finance, retail, manufacturing, and professional services — Romania and EU." },
+            { tag: "Track record", title: "1,400+ professionals trained", body: "Across finance, retail, manufacturing, and professional services, Romania and EU." },
             { tag: "Founder", title: "Răzvan Vâlceanu", body: "20+ years across innovation, digital transformation, executive education, and entrepreneurship. Delivered in partnership with IT Assist." },
             { tag: "Proof format", title: "Before / after workflows", body: "Anonymised sector examples available on request during the Assessment call. No client names published on this site." },
           ].map((c) => (

@@ -7,7 +7,7 @@ const Blockquote = ({ children, attribution }: { children: React.ReactNode; attr
     </blockquote>
     {attribution && (
       <figcaption className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 mt-6 border-t border-paper/15 pt-4">
-        — {attribution}
+       , {attribution}
       </figcaption>
     )}
   </figure>

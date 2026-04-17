@@ -8,12 +8,12 @@ import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Edit
 
 const personas = [
   { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
-  { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like in your organisation — and which teams need it most urgently." },
+  { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like in your organisation, and which teams need it most urgently." },
   { num: "03", tag: "Business unit lead", title: "Your team uses AI. You don't control how.", desc: "You need a structured map of who uses what, where the gaps create real risk, and which workflows would benefit first from redesign." },
 ];
 
 const Assessment = () => {
-  useEffect(() => { document.title = "AI Adoption Gap Assessment — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "AI Adoption Gap Assessment, The Unlearning School"; }, []);
 
   return (
     <>
@@ -37,13 +37,13 @@ const Assessment = () => {
               title={<>Three questions, <em className="text-red">in order.</em></>}
             />
             <NumberedStep num={1} title="What AI tools are currently deployed">
-              Which tools, which teams, whether deployment is recent or established. Establishes the baseline — what is available versus what is actually being used in daily work.
+              Which tools, which teams, whether deployment is recent or established. Establishes the baseline, what is available versus what is actually being used in daily work.
             </NumberedStep>
-            <NumberedStep num={2} title="Where usage is measurably low — or unmeasurable">
+            <NumberedStep num={2} title="Where usage is measurably low, or unmeasurable">
               The gap between tool access and actual workflow change. Specific processes, not general impressions. This is usually where the most actionable information surfaces.
             </NumberedStep>
             <NumberedStep num={3} title="The highest-priority process for redesign">
-              A concrete identification of the one process where a one-day sprint would produce a visible result. A specific, named workflow — not a general capability recommendation.
+              A concrete identification of the one process where a one-day sprint would produce a visible result. A specific, named workflow, not a general capability recommendation.
             </NumberedStep>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Assessment = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— What you receive</Kicker>
+            <Kicker> What you receive</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
               One page. <em className="text-red">Yours to keep.</em>
             </h2>
@@ -104,7 +104,7 @@ const Assessment = () => {
       {/* BOOKING */}
       <Section variant="paper" bordered={false}>
         <div id="book" className="scroll-mt-20">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Book your slot</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Book your slot</p>
           <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-4 max-w-3xl">
             Pick a time. <em className="text-red">We'll do the rest.</em>
           </h2>

@@ -51,7 +51,7 @@ const faqs = [
 ];
 
 const Hermes = () => {
-  useEffect(() => { document.title = "Hermes Agent — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Hermes Agent, The Unlearning School"; }, []);
   return (
     <>
       <PageHero
@@ -96,7 +96,7 @@ const Hermes = () => {
       <Section>
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <Kicker>— What this actually is</Kicker>
+            <Kicker> What this actually is</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95]">
               The <em className="text-red">short answer.</em>
             </h2>
@@ -104,7 +104,7 @@ const Hermes = () => {
           <div className="md:col-span-7 space-y-5 text-paper/80 text-[15px] leading-relaxed">
             <p>Every chatbot you have used starts from zero each time. It has no memory of what you decided last week, what your clients look like, or how you handled a similar situation six months ago.</p>
             <p>Hermes is different in one specific way: <span className="text-red">it compounds</span>. When it solves a problem, it writes a reusable procedure. Next time, it is faster and better. The longer it runs, the more useful it becomes.</p>
-            <p>It also acts. Not just answering. Sending emails, scheduling reports, researching companies, updating spreadsheets, monitoring competitors — all while you are elsewhere.</p>
+            <p>It also acts. Not just answering. Sending emails, scheduling reports, researching companies, updating spreadsheets, monitoring competitors, all while you are elsewhere.</p>
             <p>It runs on a €5/month server, lives in your Telegram, and belongs entirely to you. No subscription to a platform. No vendor lock-in. No data leaving your infrastructure.</p>
           </div>
         </div>
@@ -136,7 +136,7 @@ const Hermes = () => {
       {/* Use cases */}
       <Section variant="paper">
         <div id="use-cases" className="scroll-mt-20">
-          <Kicker>— What your agent does</Kicker>
+          <Kicker> What your agent does</Kicker>
           <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-6 max-w-3xl">
             Real workflows, <em className="text-red">built for your business.</em>
           </h2>
@@ -192,21 +192,21 @@ const Hermes = () => {
               <p className="mb-1">hermes cron "morning briefing at 7:30 every weekday"</p>
               <p className="text-red">✓ Scheduled. First briefing tomorrow 07:30.</p>
             </div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50 mt-4">— We do this together, live, in week 1.</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50 mt-4"> We do this together, live, in week 1.</p>
           </div>
         </div>
       </Section>
 
       {/* Coaching weeks */}
       <Section variant="paper">
-        <Kicker>— The coaching program</Kicker>
+        <Kicker> The coaching program</Kicker>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-4xl">
           4 weeks. One agent built <em className="text-red">around your workflows.</em>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-ink/10">
           {weeks.map((w) => (
             <article key={w.num} className="bg-paper p-8 border-2 border-ink/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Week {w.num}</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Week {w.num}</p>
               <h3 className="font-display text-2xl text-ink leading-tight mb-5">{w.h}</h3>
               <ul className="space-y-2 text-ink/75 text-sm">
                 {w.items.map((i) => <li key={i} className="border-b border-ink/10 pb-2">→ {i}</li>)}
@@ -223,13 +223,13 @@ const Hermes = () => {
 
       {/* Pricing */}
       <Section>
-        <Kicker>— Investment</Kicker>
+        <Kicker> Investment</Kicker>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
           Two ways <em className="text-red">to engage.</em>
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <article className="border-2 border-paper/20 p-8 md:p-10 bg-background">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 mb-2">— Self-directed</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 mb-2"> Self-directed</p>
             <p className="font-display text-6xl text-paper mb-1">€497</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50 mb-6">one-time · no recurring fees</p>
             
@@ -242,7 +242,7 @@ const Hermes = () => {
           </article>
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
             <span className="absolute -top-3 left-8 bg-paper text-ink font-mono text-[10px] uppercase tracking-[0.25em] px-3 py-1">Most popular</span>
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/80 mb-2">— Full build</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/80 mb-2"> Full build</p>
             <p className="font-display text-6xl text-paper mb-1">€997</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/80 mb-6">one-time · no recurring fees</p>
             <ul className="space-y-2 text-paper text-sm border-t border-paper/30 pt-5 mb-8">
@@ -257,7 +257,7 @@ const Hermes = () => {
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution="Dez Vâlceanu · Founder, The Unlearning School · Former GM Bitdefender Romania · 1,000+ professionals trained">
+        <Blockquote attribution="Dez Vâlceanu · Founder, The Unlearning School · Former GM Bitdefender Romania · 1,400+ professionals trained">
           The difference between people who use AI well and those who fall behind is not intelligence. It is knowing which tool solves which problem. Most people are using the wrong tool.
         </Blockquote>
       </Section>

@@ -7,7 +7,7 @@ import { Kicker, NumberedStep, SectionHeading, Sidebar, TwoColumnGrid } from "@/
 import razvanPhoto from "@/assets/razvan-valceanu.jpg";
 
 const About = () => {
-  useEffect(() => { document.title = "About — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "About, The Unlearning School"; }, []);
 
   return (
     <>
@@ -29,7 +29,7 @@ const About = () => {
             />
             <TwoColumnGrid>
               <p>In 2023, organisations across Europe began deploying AI tools at scale. Microsoft 365 Copilot. ChatGPT Enterprise. Custom AI assistants. In most cases, usage after the first month was below expectations.</p>
-              <p>The standard response was to run another training session. The results were the same. The issue was not knowledge — it was that the surrounding workflow had never been changed to require the tool. A team that has always run its weekly report in a specific way will continue to run it that way, regardless of what tools are available. Not from resistance. Because changing a workflow is harder than adding a tool to an unchanged one.</p>
+              <p>The standard response was to run another training session. The results were the same. The issue was not knowledge, it was that the surrounding workflow had never been changed to require the tool. A team that has always run its weekly report in a specific way will continue to run it that way, regardless of what tools are available. Not from resistance. Because changing a workflow is harder than adding a tool to an unchanged one.</p>
             </TwoColumnGrid>
           </div>
         </div>
@@ -51,7 +51,7 @@ const About = () => {
           Participants explicitly surface the current habit: how they run the process today, what assumptions are embedded in it, and why those assumptions exist. This step is non-negotiable. Without it, new behaviours do not stick.
         </NumberedStep>
         <NumberedStep num={2} title="Change">
-          Participants redesign the workflow with AI embedded — in the session, not as homework. The new version is tested, adjusted, and completed before anyone leaves.
+          Participants redesign the workflow with AI embedded, in the session, not as homework. The new version is tested, adjusted, and completed before anyone leaves.
         </NumberedStep>
         <NumberedStep num={3} title="Refreeze">
           The new workflow is documented as a team-owned template. Participants who built it are the ones who run it next week. That ownership is why it sticks.
@@ -59,7 +59,7 @@ const About = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— A redesign in practice</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> A redesign in practice</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-6 max-w-3xl">
           Weekly supplier invoice reconciliation.
         </h2>
@@ -69,7 +69,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-ink/10">
           <article className="bg-paper p-8 md:p-10">
-            <Kicker variant="muted">— Before the sprint</Kicker>
+            <Kicker variant="muted"> Before the sprint</Kicker>
             <h3 className="font-display text-2xl text-ink mb-5">The old workflow</h3>
             <ul className="space-y-2 text-ink/75 text-[15px]">
               <li className="border-b border-ink/10 pb-2">→ Manual download of invoice data from ERP</li>
@@ -80,10 +80,10 @@ const About = () => {
             </ul>
           </article>
           <article className="bg-red text-paper p-8 md:p-10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/80 mb-3">— After the sprint</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/80 mb-3"> After the sprint</p>
             <h3 className="font-display text-2xl mb-5">The redesigned workflow</h3>
             <ul className="space-y-2 text-paper/90 text-[15px]">
-              <li className="border-b border-paper/20 pb-2">→ Same ERP export — process unchanged here</li>
+              <li className="border-b border-paper/20 pb-2">→ Same ERP export, process unchanged here</li>
               <li className="border-b border-paper/20 pb-2">→ AI-assisted comparison with pattern flagging</li>
               <li className="border-b border-paper/20 pb-2">→ AI-drafted summary of discrepancies for review</li>
               <li className="border-b border-paper/20 pb-2">→ One-click report generation</li>
@@ -93,7 +93,7 @@ const About = () => {
         </div>
 
         <p className="text-ink/75 text-[15px] leading-relaxed max-w-3xl mt-8">
-          The team built this version themselves during the sprint. Two weeks later, all four team members were running the new workflow without prompting. <span className="text-red font-medium">The template they created is what drove adoption — not the tool.</span>
+          The team built this version themselves during the sprint. Two weeks later, all four team members were running the new workflow without prompting. <span className="text-red font-medium">The template they created is what drove adoption, not the tool.</span>
         </p>
       </Section>
 
@@ -108,7 +108,7 @@ const About = () => {
                 Founder
               </div>
             </div>
-            <Kicker>— The founder</Kicker>
+            <Kicker> The founder</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mt-2">
               Răzvan <em className="text-red">Vâlceanu.</em>
             </h2>
@@ -116,7 +116,7 @@ const About = () => {
           <div className="md:col-span-8 space-y-4 text-paper/80 text-[15px] leading-relaxed">
             <p><strong className="text-paper">Răzvan Vâlceanu</strong> is the founder and lead trainer at The Unlearning School. He brings 15 years of experience at the intersection of technology and organisational change.</p>
             <p>Former General Manager at <strong className="text-paper">Bitdefender</strong>, where he ran a technology business unit and led product and go-to-market teams. Former Entrepreneurship Director at <strong className="text-paper">Universitatea de Vest Timișoara</strong>, where he built programmes connecting academic institutions with the startup and corporate ecosystem.</p>
-            <p>The Unlearning School was built on the observation, made repeatedly across both roles, that the limiting factor in organisational change is almost never the technology — <span className="text-red">it is the existing habit that the technology is supposed to replace.</span></p>
+            <p>The Unlearning School was built on the observation, made repeatedly across both roles, that the limiting factor in organisational change is almost never the technology, <span className="text-red">it is the existing habit that the technology is supposed to replace.</span></p>
             <a
               href="https://www.linkedin.com/in/razvanvalceanu/"
               target="_blank"
@@ -130,13 +130,13 @@ const About = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Track record</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Track record</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Briefly stated.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10">
           {[
-            { tag: "Scale", title: "1,000+ professionals trained", body: "Across finance, retail, manufacturing, and professional services. Romania and EU. Programmes delivered in English and Romanian." },
+            { tag: "Scale", title: "1,400+ professionals trained", body: "Across finance, retail, manufacturing, and professional services. Romania and EU. Programmes delivered in English and Romanian." },
             { tag: "Proof", title: "Before / after workflow examples", body: "Anonymised examples from relevant sectors are available during the Assessment call. No client names are published on this site." },
             { tag: "Context", title: "Corporate, academic, startup", body: "Programmes have been delivered inside large enterprises, academic institutions, and growth-stage companies. The method adapts to the context; the mechanism does not change." },
           ].map((c) => (
