@@ -334,58 +334,13 @@ const AIForNonTechnical = () => {
         <p className="text-paper/65 text-[15px] mt-6 italic font-display">Book the free audit. Scope the right format together. No commitment until you see the fit.</p>
       </Section>
 
-      <Section variant="paper">
+      <Section variant="darker">
         <SectionHeading
           kicker="Program structure (full program)"
           title={<>Modular sessions. <em className="text-red">Designed for real work.</em></>}
-          intro="Each session builds on the previous one, creating a progressive learning journey that translates directly into day-to-day execution."
+          intro="Each session builds on the previous one, creating a progressive learning journey that translates directly into day-to-day execution. Click any module to expand."
         />
-        <div className="space-y-px bg-ink/10 mt-8">
-          {sessions.map((s) => (
-            <article key={s.num} className="bg-paper p-8 md:p-10">
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div className="md:col-span-2">
-                  <span className="font-display text-6xl text-red leading-none">{s.num}</span>
-                </div>
-                <div className="md:col-span-10">
-                  <h3 className="font-display text-2xl md:text-3xl text-ink mb-3 leading-tight">{s.title}</h3>
-                  <p className="text-ink/75 text-[15px] leading-relaxed mb-5">{s.body}</p>
-
-                  <div className="border-t border-ink/10 pt-4 mb-5">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">Topics include</p>
-                    <ul className="grid md:grid-cols-2 gap-x-6 gap-y-1 text-ink/80 text-[14px]">
-                      {s.topics.map((t) => (
-                        <li key={t} className="flex gap-2"><span className="text-red">→</span><span>{t}</span></li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="border-t border-ink/10 pt-4 mb-5">
-                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">What you'll practice</p>
-                    <ul className="space-y-2 text-ink/80 text-[14px]">
-                      {s.practice.map((p) => (
-                        <li key={p.h} className="leading-relaxed"><span className="font-semibold text-ink">{p.h}</span> — {p.body}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {s.useCases.length > 0 && (
-                    <div className="border-t border-ink/10 pt-4 mb-5">
-                      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">Real use cases participants work on</p>
-                      <div className="flex flex-wrap gap-2">
-                        {s.useCases.map((u) => (
-                          <span key={u} className="font-mono text-[11px] uppercase tracking-[0.15em] text-ink/70 border border-ink/20 px-2 py-1">{u}</span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  <p className="font-display italic text-[15px] text-ink/75 border-t border-ink/10 pt-4">{s.outcome}</p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+        <CurriculumAccordion sessions={sessions} />
       </Section>
 
       <Section>
