@@ -5,10 +5,10 @@ import logo from "@/assets/logo.webp";
 
 const navLinks = [
   { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
-  { label: "Hermes Agent", to: "/hermes" },
   { label: "Events", to: "/events" },
   { label: "Funding", to: "/funding" },
   { label: "Resources", to: "/resources" },
+  { label: "Hermes Agent", to: "/hermes" },
   { label: "About", to: "/about" },
 ];
 
