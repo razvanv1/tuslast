@@ -15,6 +15,7 @@ interface PageHeroProps {
 }
 
 const isExternal = (to?: string) => !!to && /^https?:\/\//i.test(to);
+const isAnchor = (to?: string) => !!to && to.startsWith("#");
 
 const HeroCTA = ({
   to,
@@ -29,6 +30,17 @@ const HeroCTA = ({
     variant === "primary"
       ? "inline-flex items-center px-6 py-3.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
       : "inline-flex items-center px-6 py-3.5 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors";
+  if (isAnchor(to)) {
+    return (
+      <button
+        type="button"
+        onClick={() => document.getElementById(to.slice(1))?.scrollIntoView({ behavior: "smooth", block: "start" })}
+        className={cls}
+      >
+        {children}
+      </button>
+    );
+  }
   if (isExternal(to)) {
     return (
       <a href={to} target="_blank" rel="noopener noreferrer" className={cls}>
