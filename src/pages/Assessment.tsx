@@ -4,8 +4,8 @@ import PageHero from "@/components/PageHero";
 import bannerAssessment from "@/assets/banner-assessment.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
-import CalEmbed from "@/components/CalEmbed";
 import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Editorial";
+import { BOOKING_URL } from "@/lib/booking";
 
 const personas = [
   { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
@@ -14,37 +14,37 @@ const personas = [
 ];
 
 const Assessment = () => {
-  useEffect(() => { document.title = "AI Adoption Gap Assessment, The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Free audit, The Unlearning School"; }, []);
 
   return (
     <>
       <SEO
-        title="AI Adoption Gap Assessment — free 30-minute working call"
+        title="Free audit — 30-minute working call with Răzvan"
         description="Free 30-minute working call that maps where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
-        keywords="AI adoption assessment, AI gap analysis, free AI consultation, Copilot adoption audit, EU AI Act readiness"
+        keywords="free AI audit, AI adoption assessment, AI gap analysis, free AI consultation, Copilot adoption audit, EU AI Act readiness"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          name: "AI Adoption Gap Assessment",
+          name: "Free audit",
           description: "Book a free 30-minute working call.",
           url: "https://tuslast.lovable.app/assessment",
           provider: { "@type": "Organization", name: "The Unlearning School" },
         }}
       />
       <PageHero
-        tag="AI Adoption Gap Assessment"
+        tag="Free audit"
         banner={bannerAssessment}
         bannerAlt="Team filling out assessment forms around a table"
-        title="AI Adoption Gap Assessment."
+        title="Free audit. 30 minutes with Răzvan."
         subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
-        ctaText="Jump to booking ↓"
-        ctaTo="#book"
+        ctaText="Free audit →"
+        ctaTo={BOOKING_URL}
         note="No pitch · No commitment · No pricing document"
       />
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <Sidebar byline="The 30 minutes" read="3 min" filed="Assessment · Method" />
+          <Sidebar byline="The 30 minutes" read="3 min" filed="Free audit · Method" />
           <div className="md:col-span-9">
             <SectionHeading
               kicker="What the call covers"
@@ -126,7 +126,29 @@ const Assessment = () => {
             Select a time below. You will receive 3 short pre-call questions by email to keep the 30 minutes focused on your specific situation rather than gathering context.
           </p>
 
-          <CalEmbed />
+          <div className="border-2 border-ink/15 bg-paper overflow-hidden">
+            <iframe
+              src={BOOKING_URL}
+              title="Book your free audit with Răzvan"
+              className="w-full"
+              style={{ height: "780px", border: "0" }}
+              loading="lazy"
+              allow="clipboard-write; microphone; camera"
+            />
+          </div>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
+            >
+              Open booking in new tab →
+            </a>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50">
+              meet.brevo.com/razvan-valceanu
+            </span>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
             <p><strong className="text-ink">Before the call:</strong> 3 short questions by email. 5 minutes to answer. The session goes straight to your situation, not to gathering context.</p>
@@ -135,13 +157,13 @@ const Assessment = () => {
 
           <p className="text-sm text-ink/60 mt-8">
             Or email: <a href="mailto:hello@unlearning.ro" className="text-red font-medium hover:underline">hello@unlearning.ro</a>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 ml-3">Subject: Assessment · Reply within 1 business day</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 ml-3">Subject: Free audit · Reply within 1 business day</span>
           </p>
         </div>
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution="Standard practice, every Assessment">
+        <Blockquote attribution="Standard practice, every audit">
           No proposal is attached to this call. If there is no problem worth solving, we say so. If there is, we describe what fixing it would look like. You decide what to do next.
         </Blockquote>
       </Section>
