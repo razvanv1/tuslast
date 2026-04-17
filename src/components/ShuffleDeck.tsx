@@ -87,7 +87,7 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
       initial={{ scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
       animate={{ scale, y: stackOffset, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="absolute top-0 left-1/2 -translate-x-1/2 bg-paper p-3 pb-12 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
+      className="absolute top-0 left-1/2 -translate-x-1/2 bg-paper p-3 pb-20 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
     >
       <div className="aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
         <img
@@ -100,9 +100,9 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
           draggable={false}
         />
       </div>
-      <figcaption className="absolute bottom-3 left-3 right-3 text-center pointer-events-none">
-        <p className="font-display text-ink text-lg sm:text-xl md:text-2xl leading-none uppercase tracking-tight">{label}</p>
-        <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/50 mt-1">{caption}</p>
+      <figcaption className="absolute bottom-0 left-0 right-0 bg-ink text-paper px-3 py-3 text-center pointer-events-none">
+        <p className="font-display text-paper text-base sm:text-lg md:text-xl leading-tight">{label}</p>
+        <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">{caption}</p>
       </figcaption>
     </motion.figure>
   );
