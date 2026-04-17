@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
@@ -283,7 +284,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_self" ? "Loading…" : "Pay & enrol →"}
               </button>
-              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book the free audit</a>
+              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book the free audit</Link>
             </div>
           </article>
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
@@ -304,7 +305,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_full" ? "Loading…" : "Pay & secure your spot →"}
               </button>
-              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</a>
+              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</Link>
             </div>
           </article>
         </div>

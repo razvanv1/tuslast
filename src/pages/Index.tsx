@@ -116,12 +116,12 @@ const Index = () => {
                 >
                   Buy AI for Work · from €3,000 →
                 </Link>
-                <a
-                  href="/assessment"
+                <Link
+                  to="/assessment"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
                   Free audit
-                </a>
+                </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
                 Pay & enrol your cohort · or book a free 30-min audit with Răzvan
@@ -212,7 +212,7 @@ const Index = () => {
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <a href="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free audit</a>
+          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free audit</Link>
         </div>
       </Section>
 
