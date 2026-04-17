@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import ScrollReveal from "@/components/ScrollReveal";
+import lcpCard from "@/assets/card-workers.webp";
 
 const stats = [
   { value: "64%", label: "of employees with Copilot access do not actively use it" },
