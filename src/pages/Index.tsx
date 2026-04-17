@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const stats = [
   { value: "64%", label: "of employees with Copilot access do not actively use it" },
-  { value: "1,000+", label: "professionals trained across the EU" },
+  { value: "1,400+", label: "professionals trained across the EU" },
   { value: "1 day", label: "to redesign one process with AI embedded" },
 ];
 
