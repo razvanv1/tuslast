@@ -117,7 +117,7 @@ const Index = () => {
                   Buy AI for Work · from €3,000 →
                 </Link>
                 <a
-                  href="https://meet.brevo.com/razvan-valceanu"
+                  href="/assessment"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
@@ -214,7 +214,7 @@ const Index = () => {
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <a href="https://meet.brevo.com/razvan-valceanu" target="_blank" rel="noopener noreferrer" className="text-ink hover:text-red transition-colors">→ Book the free audit</a>
+          <a href="/assessment" target="_blank" rel="noopener noreferrer" className="text-ink hover:text-red transition-colors">→ Book the free audit</a>
         </div>
       </Section>
 
@@ -297,7 +297,7 @@ const Index = () => {
         ctaText="Buy AI for Work · from €3,000 →"
         ctaTo="/programmes/ai-for-non-technical-people#pricing"
         secondaryText="Free audit"
-        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        secondaryTo="/assessment"
         note="Pay & enrol · or get a written report after your free audit"
       />
     </>
