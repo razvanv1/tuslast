@@ -5,6 +5,7 @@ import "./index.css";
 import cardWorkersUrl from "@/assets/card-workers.webp";
 import interLatinUrl from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
 import dmSerifLatinUrl from "@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url";
+import jetbrainsMonoUrl from "@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2?url";
 
 // Inject LCP preload as early as possible so the hashed asset URL is
 // discoverable in the initial document, before React mounts.
@@ -39,11 +40,9 @@ createRoot(document.getElementById("root")!).render(
 // @font-face rule directly with the woff2 URL to skip the intermediate CSS file
 // that would otherwise extend the critical request chain (document → JS → CSS → woff2).
 const loadDeferredFonts = () => {
-  import("@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2?url").then(({ default: href }) => {
-    const style = document.createElement("style");
-    style.textContent = `@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('${href}') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}`;
-    document.head.appendChild(style);
-  });
+  const style = document.createElement("style");
+  style.textContent = `@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('${jetbrainsMonoUrl}') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}`;
+  document.head.appendChild(style);
 };
 
 if ("requestIdleCallback" in window) {
