@@ -106,7 +106,7 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
         cursor: isTop ? "grab" : "default",
         touchAction: isTop ? "none" : "auto",
         willChange: isTop ? "transform" : "auto",
-        contain: "layout paint size style",
+        contain: "layout paint style",
         backfaceVisibility: "hidden",
       }}
       whileDrag={{ cursor: "grabbing", scale: 1.04 }}
