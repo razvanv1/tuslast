@@ -68,11 +68,6 @@ const Index = () => {
       <section className="relative bg-background border-b-2 border-paper/10 overflow-x-clip">
         <div className="bg-halftone">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-10 md:pt-14">
-            <div className="flex justify-between items-center font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-8">
-              <span>AI Adoption Training · EU</span>
-              <span className="hidden md:inline text-red">The Unlearning School</span>
-            </div>
-
             <div className="relative z-10 mb-10 md:mb-14">
               <h1 className="font-display text-[44px] md:text-[88px] lg:text-[112px] leading-[0.9] text-paper tracking-tighter max-w-6xl">
                 Your organisation bought AI capability.{" "}
