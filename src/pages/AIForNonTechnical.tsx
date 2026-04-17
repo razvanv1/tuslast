@@ -251,11 +251,11 @@ const AIForNonTechnical = () => {
         bannerAlt="Modern office workers learning AI tools"
         title="Your team is already using AI. You just don't control how."
         subtitle="A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular: 1 session to full program."
-        ctaText="See pricing ↓"
+        ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
-        secondaryText="Book a meeting"
+        secondaryText="Book a free meeting"
         secondaryTo="/assessment"
-        note="Modular · Cross-functional teams · In-person, hybrid, or online"
+        note="Pay & enrol your cohort · or start with a free working session"
       />
 
       <Section>
@@ -629,9 +629,11 @@ const AIForNonTechnical = () => {
 
       <CTASection
         title="A program designed to fit your team. Not the other way around."
-        subtitle="Book a meeting. See if there's a fit. No commitment, no pitch deck, no generic workshop. Just a working conversation about where AI can make a difference in your operations."
-        ctaText="Book a meeting →"
-        ctaTo="/assessment"
+        subtitle="Pay and enrol your cohort, or book a free working meeting first. No pitch deck, no generic workshop."
+        ctaText="Buy now · from €3,000 →"
+        ctaTo="#pricing"
+        secondaryText="Book a free meeting"
+        secondaryTo="/assessment"
         note="Modular delivery · Built on your existing tools · Certificate of completion"
       />
     </>

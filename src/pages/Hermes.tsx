@@ -94,10 +94,10 @@ const Hermes = () => {
         tag="HERMES AGENT · INTERNAL AGENTIC SOLUTION"
         title="Stop prompting. Start delegating."
         subtitle="ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call."
-        ctaText="Book a free call →"
-        ctaTo="/assessment"
-        secondaryText="See what it does"
-        secondaryTo="#use-cases"
+        ctaText="Buy Hermes · from €497 →"
+        ctaTo="#pricing"
+        secondaryText="Book a free call"
+        secondaryTo="/assessment"
         note="Open source · MIT · Built by Nous Research"
       />
 
@@ -259,6 +259,7 @@ const Hermes = () => {
 
       {/* Pricing */}
       <Section>
+        <div id="pricing" className="scroll-mt-20" />
         <Kicker> Investment</Kicker>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
           Two ways <em className="text-red">to engage.</em>
@@ -334,10 +335,12 @@ const Hermes = () => {
 
       <CTASection
         title="One agent. Built around your workflows."
-        subtitle="Book the free 30-minute discovery call. No pitch deck. One honest conversation about whether this makes sense for you."
-        ctaText="Book the discovery call →"
-        ctaTo="/assessment"
-        note="Free · hello@unlearning.ro"
+        subtitle="Pay and secure your spot, or book a free 30-minute discovery call first if you want to talk it through."
+        ctaText="Buy Hermes · from €497 →"
+        ctaTo="#pricing"
+        secondaryText="Book the discovery call"
+        secondaryTo="/assessment"
+        note="No pitch deck · hello@unlearning.ro"
       />
     </>
   );
