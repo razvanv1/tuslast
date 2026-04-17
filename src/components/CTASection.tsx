@@ -55,7 +55,17 @@ const CTASection = ({ title, subtitle, ctaText, ctaTo, secondaryText, secondaryT
           )}
         </div>
         {note && (
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50 mt-6">{note}</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50 mt-6">
+            {note.split(/(\S+@\S+\.\S+|\+?\d[\d\s().-]{6,}\d)/g).map((part, i) => {
+              if (/^\S+@\S+\.\S+$/.test(part)) {
+                return <a key={i} href={`mailto:${part}`} className="text-red hover:underline">{part}</a>;
+              }
+              if (/^\+?\d[\d\s().-]{6,}\d$/.test(part)) {
+                return <a key={i} href={`tel:${part.replace(/[^\d+]/g, "")}`} className="text-red hover:underline">{part}</a>;
+              }
+              return <span key={i}>{part}</span>;
+            })}
+          </p>
         )}
       </ScrollReveal>
     </div>
