@@ -145,7 +145,7 @@ const Events = () => {
 
       <CTASection
         title="Tell me about your event."
-        subtitle="A 20-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran."
+        subtitle="A 30-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran."
         ctaText="Free audit →"
         ctaTo="/assessment"
         note="Free · No commitment · Proposal within 48 hours"
