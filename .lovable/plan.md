@@ -1,50 +1,62 @@
 
-**Goal**: Remove "The Diagnosis" kicker from the homepage hero, then make the ShuffleDeck interaction controls dramatically more visible and engaging — the deck becomes the clear hero focal point.
+**Goal**: Transform `/resources` into a functional editorial hub. Posts come from your WordPress.com site (you write there, site auto-displays). Newsletter signup saves emails to Lovable Cloud.
 
-**Files to edit**
-- `src/pages/Index.tsx` — remove the `<p>The Diagnosis</p>` kicker above the H1.
-- `src/components/ShuffleDeck.tsx` — redesign the controls under the deck.
+**Architecture**
 
-**Changes**
+1. **WordPress.com → Lovable Cloud → Site**
+   - You publish on WordPress.com (familiar editor).
+   - Edge function `wp-posts` proxies WordPress.com REST API via the connector gateway (`/rest/v1.1/sites/{site_id}/posts`).
+   - Site fetches via Supabase function — no exposed credentials, automatic OAuth refresh.
+   - Site ID hardcoded in the edge function (you give it to me, or we read it from `/me/sites`).
 
-1. **Hero cleanup (`Index.tsx`)**
-   - Delete the "The Diagnosis" mono kicker line. Keep the H1 as-is below it.
+2. **Newsletter → Lovable Cloud table**
+   - Table `newsletter_subscribers` (email unique, source, subscribed_at).
+   - Edge function `subscribe-newsletter` with Zod validation + simple in-memory rate limit.
+   - RLS: only insert allowed (no public reads).
 
-2. **ShuffleDeck control redesign — make it feel like a game**
+**Setup steps**
+1. Enable Lovable Cloud.
+2. Connect WordPress.com connector → I read your site ID via `/me/sites`.
+3. Create `newsletter_subscribers` table + RLS.
+4. Create edge functions `wp-posts` and `subscribe-newsletter`.
 
-   Replace the current tiny faded row with a bold, editorial control panel:
+**Frontend rebuild — `/resources` (Hub editorial)**
 
-   - **Hint line** ("Tap to open · Swipe to shuffle"):
-     - Bigger: from `text-[9px]` → `text-xs md:text-sm`
-     - Brighter: from `text-paper/45` → `text-paper/85`
-     - Add a subtle pulsing arrow/finger cue (animate-pulse on a `↔` glyph) to invite swipe.
-     - Wrap in a thin red-bordered pill so it reads as an instruction badge.
+Replace current static page with:
 
-   - **Prev / Counter / Next row**:
-     - Make Prev/Next real buttons with a paper-bordered chip style: `border border-paper/40 px-4 py-2 hover:bg-red hover:text-paper hover:border-red`
-     - Larger label: `text-xs md:text-sm`, tracking preserved.
-     - Counter in the middle becomes a large display element: `font-display text-3xl md:text-4xl text-red tabular-nums` with the "/ 04" in smaller paper/50.
-     - Add a thin progress bar under the row showing deck position (e.g. 4 segments, current one filled red, others paper/15).
+- **A. Featured playbook card** (KEEP existing AI Literacy Playbook tarot card at top) — already works.
+- **B. Featured article** — top-most fresh WordPress post, large editorial layout (cover image, title, excerpt, "Read article →"). Click → `/resources/[slug]`.
+- **C. Latest articles grid** — 6 most recent posts in 3-col grid (cover, category chip, title, excerpt, date).
+- **D. Browse by topic** — KEEP the 8 topic chips, but each becomes a real link to `/resources?topic=ai-at-work` filtering posts by WP category/tag.
+- **E. Six formats hub** — KEEP the 6 format cards (Articles, Podcast, Guides, Studies, Tools, Frameworks), each linking to filtered list.
+- **F. Newsletter signup** — REPLACE mailto with real form (email input + submit), success toast, error handling.
 
-   - **"Now drawing" line**:
-     - Promote to `text-2xl md:text-3xl` italic display (already display, just bigger), and put a red dot `•` glyph in front that pulses, signaling live state.
+**New routes**
+- `/resources` — hub (above).
+- `/resources/[slug]` — single article page (fetches one WP post by slug, renders title/cover/HTML content with editorial styling).
+- `/resources/topic/[slug]` — filtered list by topic.
 
-   - **Spacing**: Increase `mt-6` → `mt-8`, give the whole control block its own visual rhythm so it feels like a card-game HUD rather than utility text.
+**Files to create**
+- `supabase/functions/wp-posts/index.ts` — list/get posts (params: `slug?`, `category?`, `per_page`, `page`).
+- `supabase/functions/subscribe-newsletter/index.ts` — Zod validation, insert into table.
+- `src/pages/Resources.tsx` — refactor to fetch + display real posts.
+- `src/pages/ResourceArticle.tsx` — single-post page.
+- `src/components/NewsletterForm.tsx` — reusable form.
+- `src/components/ArticleCard.tsx` — reusable card.
+- `src/lib/wp.ts` — typed client for the wp-posts function.
+- `src/App.tsx` — add routes.
 
-3. **No new components, no new assets** — purely Tailwind/markup changes within the existing two files. Tokens stay semantic (`text-red`, `text-paper`, `border-paper/40`).
+**Migration**
+- Table `public.newsletter_subscribers` with RLS allowing public INSERT only (no SELECT/UPDATE/DELETE from anon).
 
-**Visual outcome**
-```text
-       [ deck of 4 cards — large, dominant ]
+**What I need from you to finish wiring**
+1. Click "Connect" when WordPress.com prompt appears.
+2. After connect, I'll fetch your sites and confirm which one to use (or you tell me the URL like `unlearning.ro` or `unlearning.wordpress.com`).
+3. On WordPress.com, ensure you have at least one published post + recommended categories matching your 8 topics (Funding intelligence, AI at work, Execution friction, Future of work, Academies & learning systems, Tools & frameworks, Podcast & insights, Hermes Agent). Posts without categories still show in the main feed.
 
-   ┌────────────────────────────────┐
-   │  ↔  Tap to open · Swipe to shuffle │   ← pill, pulsing arrow
-   └────────────────────────────────┘
+**What stays unchanged**
+- AI Literacy Playbook featured card (already works).
+- Page hero, footer, CTA section, design tokens.
+- Homepage and other pages.
 
-   [← Prev]      01 / 04      [Next →]      ← real chip buttons + big counter
-   ▰▰▱▱▱▱▱▱                                  ← progress segments
-
-       •  Now drawing: AI for Non-Technical People
-```
-
-Result: deck remains the centerpiece, but the interaction affordances are now obvious and inviting on first glance — especially on the 390px mobile viewport the user is on.
+After you approve, I'll execute in this order: enable Cloud → connect WordPress.com → create table + functions → rebuild frontend → test fetch end-to-end.
