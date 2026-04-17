@@ -560,9 +560,9 @@ const AIForNonTechnical = () => {
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Credentials</p>
                 <ul className="space-y-1 text-paper/85">
                   <li>→ Lovable Ambassador</li>
-                  <li>→ Google Certification</li>
-                  <li>→ Microsoft Certification</li>
-                  <li>→ GAIL Certification</li>
+                  <li>→ Google Generative AI for Leaders (certification in progress)</li>
+                  <li>→ Microsoft AI Certification</li>
+                  <li>→ EU Accredited Trainer</li>
                 </ul>
               </div>
             </TwoColumnGrid>
