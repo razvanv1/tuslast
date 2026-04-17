@@ -10,7 +10,7 @@ const DECK = [
   { image: cardWorkers, label: "AI for Work", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people", external: false },
   { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events", external: false },
   { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding", external: false },
-  { image: cardAssessment, label: "Free audit", caption: "Free · 30 min with Răzvan", href: "https://meet.brevo.com/razvan-valceanu", external: true },
+  { image: cardAssessment, label: "Free audit", caption: "Free · 30 min with Răzvan", href: "/assessment", external: false },
 ];
 
 interface DeckCardProps {

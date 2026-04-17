@@ -5,7 +5,7 @@ import bannerAssessment from "@/assets/banner-assessment.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Editorial";
-import { BOOKING_URL } from "@/lib/booking";
+import { BOOKING_URL, CALENDAR_URL } from "@/lib/booking";
 
 const personas = [
   { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
@@ -132,7 +132,7 @@ const Assessment = () => {
               Click below to open the calendar and pick a 30-minute slot that works for you.
             </p>
             <a
-              href={BOOKING_URL}
+              href={CALENDAR_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"

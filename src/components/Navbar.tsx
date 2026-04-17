@@ -43,14 +43,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to={BOOKING_URL}
             className="ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
           >
             {BOOKING_LABEL} →
-          </a>
+          </Link>
         </div>
 
         <button className="md:hidden p-2 text-paper" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -70,15 +68,13 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to={BOOKING_URL}
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
           >
             {BOOKING_LABEL} →
-          </a>
+          </Link>
         </div>
       )}
     </nav>
