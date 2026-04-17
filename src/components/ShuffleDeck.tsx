@@ -1,10 +1,10 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import cardWorkers from "@/assets/card-workers.png";
-import cardEvents from "@/assets/card-events.png";
-import cardFunding from "@/assets/card-funding.png";
-import cardAssessment from "@/assets/card-assessment.png";
+import cardWorkers from "@/assets/card-workers.webp";
+import cardEvents from "@/assets/card-events.webp";
+import cardFunding from "@/assets/card-funding.webp";
+import cardAssessment from "@/assets/card-assessment.webp";
 
 const DECK = [
   { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people" },
@@ -102,7 +102,9 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
         <img
           src={image}
           alt={label}
-          loading="lazy"
+          loading={index === 0 ? "eager" : "lazy"}
+          fetchPriority={index === 0 ? "high" : "auto"}
+          decoding="async"
           width={512}
           height={704}
           className="w-full h-full object-cover"
