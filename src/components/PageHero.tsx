@@ -14,7 +14,7 @@ interface PageHeroProps {
   bannerAlt?: string;
 }
 
-const isExternal = (to?: string) => !!to && /^https?:\/\//i.test(to);
+const isExternal = (to?: string) => !!to && /^(https?:|tel:|mailto:)/i.test(to);
 const isAnchor = (to?: string) => !!to && to.startsWith("#");
 
 const HeroCTA = ({
