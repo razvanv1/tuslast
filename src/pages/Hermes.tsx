@@ -264,26 +264,21 @@ const Hermes = () => {
       </Section>
 
       {/* Coaching weeks */}
-      <Section variant="paper">
+      <Section variant="darker">
         <Kicker> The coaching program</Kicker>
-        <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-4xl">
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-6 max-w-4xl">
           4 weeks. One agent built <em className="text-red">around your workflows.</em>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-ink/10">
-          {weeks.map((w) => (
-            <article key={w.num} className="bg-paper p-8 border-2 border-ink/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Week {w.num}</p>
-              <h3 className="font-display text-2xl text-ink leading-tight mb-5">{w.h}</h3>
-              <ul className="space-y-2 text-ink/75 text-sm">
-                {w.items.map((i) => <li key={i} className="border-b border-ink/10 pb-2">→ {i}</li>)}
-              </ul>
-            </article>
-          ))}
-        </div>
-        <div className="grid md:grid-cols-3 gap-6 mt-10 text-ink/75 text-sm">
-          <p><strong className="text-ink">Included:</strong> 4 × 90-min 1:1 sessions, recorded. Async Telegram support. Custom playbook for every workflow.</p>
-          <p><strong className="text-ink">Yours after:</strong> The agent is fully yours. MIT license. No subscription. 3 months of light support after the program ends.</p>
-          <p><strong className="text-ink">Maximum 4 clients/month.</strong> 1:1 program. Spots typically booked 2-3 weeks out.</p>
+        <p className="text-paper/70 text-base md:text-lg max-w-3xl mb-2">
+          Modular weeks. Each week ships something live you can use immediately. Click a week to expand.
+        </p>
+
+        <CurriculumAccordion sessions={weeks} />
+
+        <div className="grid md:grid-cols-3 gap-6 mt-12 text-paper/75 text-sm">
+          <p><strong className="text-paper">Included:</strong> 4 × 90-min 1:1 sessions, recorded. Async Telegram support. Custom playbook for every workflow.</p>
+          <p><strong className="text-paper">Yours after:</strong> The agent is fully yours. MIT license. No subscription. 3 months of light support after the program ends.</p>
+          <p><strong className="text-paper">Maximum 4 clients/month.</strong> 1:1 program. Spots typically booked 2-3 weeks out.</p>
         </div>
       </Section>
 
