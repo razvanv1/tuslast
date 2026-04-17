@@ -56,12 +56,12 @@ const Footer = () => (
           className="grid md:grid-cols-12 gap-8 items-end"
         >
           <div className="md:col-span-7">
-            <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
+            <p className="inline-block bg-red text-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] mb-3">Dispatch · The Unlearning Pill</p>
             <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
-              Signal, <em className="text-red">not noise.</em>
+              One email a month. <em className="text-red">Worth opening.</em>
             </h3>
             <p className="text-paper/70 text-sm max-w-xl leading-relaxed">
-              Monthly dispatch on funding intelligence, AI at work, execution friction, academy building, and the future of work. No spam, unsubscribe anytime.
+              Field notes from inside the work — what's actually moving funding decisions, where AI is quietly rewriting jobs, and the unglamorous mechanics of building teams that ship. Written by humans who'd rather under-send than waste your inbox.
             </p>
           </div>
           <div className="md:col-span-5 flex flex-col sm:flex-row gap-3">
@@ -71,14 +71,14 @@ const Footer = () => (
               type="email"
               name="EMAIL"
               required
-              placeholder="your@email.com"
+              placeholder="name@company.com"
               className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/65 font-mono text-sm focus:outline-none focus:border-red transition-colors"
             />
             <button
               type="submit"
               className="inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
             >
-              Subscribe →
+              Get the dispatch →
             </button>
           </div>
         </form>
