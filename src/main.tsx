@@ -20,11 +20,18 @@ createRoot(document.getElementById("root")!).render(
   </HelmetProvider>
 );
 
-// Defer-load only the non-critical font weights actually used after first paint.
-// Inter 400/700 + DM Serif 400 are inlined in index.css. Italic is disabled globally,
-// and shadcn's font-medium/semibold gracefully falls back to 400/700 with font-display:swap.
+// Defer-load JetBrains Mono (used only for small uppercase labels) via injected
+// <link> rather than an ES import. An ES `import` of a CSS file gets bundled by
+// Vite into the render-blocking critical CSS chain even when called inside
+// requestIdleCallback. Injecting a <link> at idle keeps it fully off the critical path.
 const loadDeferredFonts = () => {
-  void import("@fontsource/jetbrains-mono/400.css");
+  // Resolve the hashed URL via Vite's asset pipeline without making it render-blocking.
+  import("@fontsource/jetbrains-mono/400.css?url").then(({ default: href }) => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+  });
 };
 
 if ("requestIdleCallback" in window) {
