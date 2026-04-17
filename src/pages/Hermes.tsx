@@ -243,7 +243,7 @@ const Hermes = () => {
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
             <span className="absolute -top-3 left-8 bg-paper text-ink font-mono text-[10px] uppercase tracking-[0.25em] px-3 py-1">Most popular</span>
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/80 mb-2"> Full build</p>
-            <p className="font-display text-6xl text-paper mb-1">€997</p>
+            <p className="font-display text-6xl text-paper mb-1">€997<span className="font-mono text-base align-top text-paper/80"> /person</span></p>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/80 mb-6">one-time · no recurring fees</p>
             <ul className="space-y-2 text-paper text-sm border-t border-paper/30 pt-5 mb-8">
               {["4 × 90-min 1:1 sessions", "Complete agent setup + 6+ workflows", "Full tool integrations", "Async Telegram support · 4 weeks", "Custom playbook + session recordings", "3 months light support after"].map((i) => (
