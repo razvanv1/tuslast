@@ -57,7 +57,7 @@ const Footer = () => (
           className="grid md:grid-cols-12 gap-8 items-end"
         >
           <div className="md:col-span-7">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
+            <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
             <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
               Signal, <em className="text-red">not noise.</em>
             </h3>
