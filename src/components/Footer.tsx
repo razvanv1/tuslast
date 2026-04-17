@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logo@2x.webp";
 
 const programmes = [
   { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
