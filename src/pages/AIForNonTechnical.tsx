@@ -254,9 +254,9 @@ const AIForNonTechnical = () => {
         subtitle="A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular: 1 session to full program."
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
-        secondaryText="Free audit"
-        secondaryTo="/assessment"
-        note="Pay & enrol your cohort · or book a free 30-min audit with Răzvan"
+        secondaryText="Call now · +40 722 598 346"
+        secondaryTo="tel:+40722598346"
+        note="Pay & enrol your cohort · or call Răzvan directly"
       />
 
       <Section>
