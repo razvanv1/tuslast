@@ -95,7 +95,7 @@ const Hermes = () => {
         tag="HERMES AGENT · INTERNAL AGENTIC SOLUTION"
         title="Stop prompting. Start delegating."
         subtitle="ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call."
-        ctaText="Buy Hermes · from €497 →"
+        ctaText="Buy Agent →"
         ctaTo="#pricing"
         secondaryText="Call now"
         secondaryTo="tel:+40722598346"
