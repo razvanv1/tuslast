@@ -33,6 +33,17 @@ export default {
         blue: "hsl(var(--blue))",
         "off-white": "hsl(var(--off-white))",
         orange: "hsl(var(--orange))",
+        bau: {
+          red: "hsl(var(--bau-red))",
+          yellow: "hsl(var(--bau-yellow))",
+          blue: "hsl(var(--bau-blue))",
+          cyan: "hsl(var(--bau-cyan))",
+          pink: "hsl(var(--bau-pink))",
+          orange: "hsl(var(--bau-orange))",
+          green: "hsl(var(--bau-green))",
+          purple: "hsl(var(--bau-purple))",
+          black: "hsl(var(--bau-black))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
