@@ -64,8 +64,10 @@ const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, seconda
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 pb-16 md:pt-12 md:pb-24">
 
         {tag && (
-          <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-red mb-6">
-            {tag}
+          <p className="mb-6">
+            <span className="inline-block font-mono text-xs md:text-sm uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">
+              {tag}
+            </span>
           </p>
         )}
 
