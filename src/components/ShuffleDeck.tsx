@@ -96,7 +96,7 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
       initial={{ scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
       animate={{ scale, y: stackOffset, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="absolute top-0 inset-x-0 mx-auto bg-paper p-3 pb-20 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
+      className="absolute top-0 inset-x-0 mx-auto bg-paper p-3 pb-20 card-shadow select-none w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] max-w-full"
     >
       <div className="aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
         <img
@@ -126,7 +126,7 @@ const ShuffleDeck = () => {
 
   return (
     <div className="relative w-full flex flex-col items-center mx-auto">
-      <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] h-[360px] sm:h-[420px] md:h-[480px] lg:h-[510px] max-w-full">
+      <div className="relative mx-auto w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] h-[460px] sm:h-[540px] md:h-[640px] lg:h-[700px] max-w-full">
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
           if (position > 3) return null;

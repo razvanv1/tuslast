@@ -65,11 +65,12 @@ const Index = () => {
       {/* HERO */}
       <section className="relative bg-background border-b-2 border-paper/10 overflow-x-clip">
         <div className="bg-halftone">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-10 md:pt-14">
-            <div className="relative z-10 mb-10 md:mb-14">
-              <h1 className="font-display text-[44px] md:text-[88px] lg:text-[112px] leading-[0.9] text-paper tracking-tighter max-w-6xl">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 md:pt-10">
+            <div className="relative z-10 mb-6 md:mb-8 max-w-4xl">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">The Diagnosis</p>
+              <h1 className="font-display text-2xl md:text-[34px] lg:text-[40px] leading-[1.15] text-paper/85 tracking-tight">
                 Your organisation bought AI capability.{" "}
-                <em className="text-red">What you are paying for is unused potential.</em>
+                <em className="text-red not-italic font-normal">What you are paying for is unused potential.</em>
               </h1>
             </div>
 
