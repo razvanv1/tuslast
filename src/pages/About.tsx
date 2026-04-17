@@ -154,7 +154,7 @@ const About = () => {
         subtitle="30 minutes. A structured conversation about where adoption is stalling in your organisation. Written 1-page output within 24 hours. No proposal attached."
         ctaText="Book the AI Adoption Gap Assessment →"
         ctaTo="/assessment"
-        note="Free · contact@unlearning.ro"
+        note="Free · hello@unlearning.ro"
       />
     </>
   );
