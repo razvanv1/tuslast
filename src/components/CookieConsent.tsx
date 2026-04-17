@@ -33,8 +33,8 @@ const CookieConsent = () => {
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-2"> Cookies</p>
           <p className="text-ink/80 text-sm leading-relaxed max-w-3xl">
             We use essential cookies to make this site work and analytics cookies to understand how it is used. See our{" "}
-            <Link to="/cookie-policy" className="text-red hover:underline">Cookie Policy</Link> and{" "}
-            <Link to="/privacy-policy" className="text-red hover:underline">Privacy Policy</Link>.
+            <Link to="/cookie-policy" className="text-red underline">Cookie Policy</Link> and{" "}
+            <Link to="/privacy-policy" className="text-red underline">Privacy Policy</Link>.
           </p>
         </div>
         <div className="flex items-center gap-3">
