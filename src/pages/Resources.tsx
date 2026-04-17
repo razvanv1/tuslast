@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
@@ -43,6 +44,20 @@ const Resources = () => {
   useEffect(() => { document.title = "Resources, The Unlearning School"; }, []);
   return (
     <>
+      <SEO
+        title="Resources — AI adoption insights, frameworks & playbooks"
+        description="Selected articles, podcast episodes, working frameworks and tools on AI adoption, funding intelligence, execution friction, and the future of work."
+        keywords="AI adoption resources, AI playbook, EU AI Act guide, funding intelligence, AI frameworks, podcast AI work"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "The Unlearning Pill — Resources",
+          description:
+            "Editorial hub: articles, podcast, frameworks, and tools on AI adoption and the future of work.",
+          inLanguage: "en",
+          isPartOf: { "@type": "WebSite", name: "The Unlearning School", url: "https://tuslast.lovable.app/" },
+        }}
+      />
       <PageHero
         tag="RESOURCES"
         title="Useful material for teams working through AI, funding, execution, and change."

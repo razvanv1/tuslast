@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerAi from "@/assets/banner-ai.png";
 import Section from "@/components/Section";
@@ -77,6 +78,43 @@ const AIForNonTechnical = () => {
 
   return (
     <>
+      <SEO
+        title="AI for Non-Technical People, structured AI adoption programme"
+        description="Role-adapted AI training for operations, HR, finance, and customer support teams. EU AI Act Article 4 ready. Built on the AI tools you already pay for."
+        keywords="AI training non-technical, EU AI Act Article 4, Copilot training, ChatGPT training, AI literacy programme, AI workflow design, role-based AI"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Course",
+          name: "AI for Non-Technical People",
+          description: "Modular AI adoption programme for non-technical business teams. Discovery, Short Sprint, or Full Programme.",
+          provider: { "@type": "Organization", name: "The Unlearning School", url: "https://tuslast.lovable.app/" },
+          inLanguage: ["en", "ro"],
+          educationalLevel: "Professional",
+          teaches: ["AI workflow design", "Prompting", "EU AI Act Article 4 literacy", "Responsible AI use"],
+          hasCourseInstance: {
+            "@type": "CourseInstance",
+            courseMode: ["Onsite", "Online"],
+            courseWorkload: "PT2H/PT4D",
+          },
+        }}
+        faq={[
+          {
+            question: "Who is this programme for?",
+            answer:
+              "Operations, finance, HR, customer support, and engineering teams that have access to AI tools but inconsistent or low usage.",
+          },
+          {
+            question: "Does it satisfy EU AI Act Article 4?",
+            answer:
+              "Yes. The programme is designed to deliver auditable AI literacy required by EU AI Act Article 4, in force since February 2025.",
+          },
+          {
+            question: "Which AI tools do we use?",
+            answer:
+              "The tools your organisation already pays for, typically Microsoft 365 Copilot, ChatGPT Enterprise, Gemini, or your internal assistants.",
+          },
+        ]}
+      />
       <PageHero
         tag="AI for Non-Technical People"
         banner={bannerAi}
