@@ -65,6 +65,9 @@ const Index = () => {
 
   return (
     <>
+      <Helmet>
+        <link rel="preload" as="image" href={lcpCard} fetchpriority="high" />
+      </Helmet>
       <SEO
         title="The Unlearning School, AI adoption training for non-technical teams"
         description="Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU."
