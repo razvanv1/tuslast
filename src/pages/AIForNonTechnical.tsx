@@ -173,7 +173,18 @@ const tiers = [
   },
 ];
 
-const tools = ["ChatGPT", "Claude", "Gemini", "AI Studio", "NotebookLM", "Perplexity", "Copilot", "Lovable", "Manus", "OpenClaw"];
+const tools = [
+  "Google AI Studio",
+  "ChatGPT",
+  "Claude",
+  "GitHub Copilot",
+  "Google Gemini",
+  "Hermes Agent",
+  "Lovable",
+  "Manus",
+  "NotebookLM",
+  "Perplexity",
+];
 
 const successMetrics = [
   "Number of real use cases adopted by the teams",
