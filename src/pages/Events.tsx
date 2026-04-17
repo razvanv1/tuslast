@@ -60,8 +60,8 @@ const Events = () => {
         bannerAlt="Speaker on stage in front of large audience"
         title="They leave with something they built."
         subtitle="Workshops, hackathons, and keynotes for companies that need fast proof, internal momentum, or a way to show leadership what AI actually looks like in practice."
-        ctaText="Tell me about your event →"
-        ctaTo="/assessment"
+        ctaText="Free audit →"
+        ctaTo="https://meet.brevo.com/razvan-valceanu"
         secondaryText="See all programmes"
         secondaryTo="/programmes"
         note="90 min – 2 days · 15 to 500 people · Sector-adapted"
@@ -146,8 +146,8 @@ const Events = () => {
       <CTASection
         title="Tell me about your event."
         subtitle="A 20-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran."
-        ctaText="Book the scoping call →"
-        ctaTo="/assessment"
+        ctaText="Free audit →"
+        ctaTo="https://meet.brevo.com/razvan-valceanu"
         note="Free · No commitment · Proposal within 48 hours"
       />
     </>

@@ -63,9 +63,9 @@ const Resources = () => {
         title="Useful material for teams working through AI, funding, execution, and change."
         subtitle="Articles, podcast episodes, studies, working notes, frameworks, and practical tools for teams dealing with opportunity overload, uneven AI adoption, execution drag, academy building, and the future of work."
         ctaText="Join The Unlearning Pill →"
-        ctaTo="/assessment"
-        secondaryText="Book a call"
-        secondaryTo="/assessment"
+        ctaTo="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
       />
 
       {/* FEATURED FREE RESOURCE */}
@@ -210,10 +210,10 @@ const Resources = () => {
       </Section>
 
       <CTASection
-        title="Start with the free Assessment."
+        title="Start with the free audit."
         subtitle="30 minutes. A structured conversation about where adoption is stalling. Written 1-page output within 24 hours."
-        ctaText="Book the Assessment →"
-        ctaTo="/assessment"
+        ctaText="Free audit →"
+        ctaTo="https://meet.brevo.com/razvan-valceanu"
         note="Free · hello@unlearning.ro"
       />
     </>

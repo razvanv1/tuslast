@@ -183,7 +183,7 @@ const successMetrics = [
 ];
 
 const nextSteps = [
-  { num: "1", h: "Book a meeting", body: "A 30-minute working conversation to understand where AI fits in your workflows, what's blocking adoption, and which format makes sense. No commitment." },
+  { num: "1", h: "Book the free audit", body: "A 30-minute working conversation to understand where AI fits in your workflows, what's blocking adoption, and which format makes sense. No commitment." },
   { num: "2", h: "We scope the right format together", body: "Based on the meeting, we agree on the right entry point: a single session, a short sprint, or the full program. Everything is adapted to your team's tools and context." },
   { num: "3", h: "Delivery starts", body: "The program begins on your timeline. Modular delivery means you control the pace. From this initial engagement, we grow the number of trained participants together." },
 ];
@@ -253,9 +253,9 @@ const AIForNonTechnical = () => {
         subtitle="A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular: 1 session to full program."
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
-        secondaryText="Book a free meeting"
-        secondaryTo="/assessment"
-        note="Pay & enrol your cohort · or start with a free working session"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        note="Pay & enrol your cohort · or book a free 30-min audit with Răzvan"
       />
 
       <Section>
@@ -330,7 +330,7 @@ const AIForNonTechnical = () => {
             </article>
           ))}
         </div>
-        <p className="text-paper/65 text-[15px] mt-6 italic font-display">Book a meeting. Scope the right format together. No commitment until you see the fit.</p>
+        <p className="text-paper/65 text-[15px] mt-6 italic font-display">Book the free audit. Scope the right format together. No commitment until you see the fit.</p>
       </Section>
 
       <Section variant="paper">
@@ -492,18 +492,22 @@ const AIForNonTechnical = () => {
                       {loadingKey === t.productKey ? "Loading…" : "Pay & enrol →"}
                     </button>
                     <a
-                      href="/assessment"
+                      href="https://meet.brevo.com/razvan-valceanu"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`block text-center font-mono text-[10px] uppercase tracking-[0.2em] hover:underline ${t.featured ? "text-paper/90" : "text-paper/60"}`}
                     >
-                      Or book a meeting first
+                      Or book the free audit first
                     </a>
                   </div>
                 ) : (
                   <a
-                    href="/assessment"
+                    href="https://meet.brevo.com/razvan-valceanu"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
-                    Let's talk →
+                    Free audit →
                   </a>
                 )}
               </article>
@@ -629,11 +633,11 @@ const AIForNonTechnical = () => {
 
       <CTASection
         title="A program designed to fit your team. Not the other way around."
-        subtitle="Pay and enrol your cohort, or book a free working meeting first. No pitch deck, no generic workshop."
+        subtitle="Pay and enrol your cohort, or book the free audit first. No pitch deck, no generic workshop."
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
-        secondaryText="Book a free meeting"
-        secondaryTo="/assessment"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
         note="Modular delivery · Built on your existing tools · Certificate of completion"
       />
     </>

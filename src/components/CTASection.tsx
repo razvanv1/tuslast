@@ -12,6 +12,28 @@ interface CTASectionProps {
   dark?: boolean;
 }
 
+const isExternal = (to: string) => /^https?:\/\//i.test(to);
+
+const PrimaryCTA = ({ to, children }: { to: string; children: React.ReactNode }) => {
+  const cls =
+    "inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors";
+  return isExternal(to) ? (
+    <a href={to} target="_blank" rel="noopener noreferrer" className={cls}>{children}</a>
+  ) : (
+    <Link to={to} className={cls}>{children}</Link>
+  );
+};
+
+const SecondaryCTA = ({ to, children }: { to: string; children: React.ReactNode }) => {
+  const cls =
+    "inline-flex items-center px-7 py-4 border border-ink/40 text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors";
+  return isExternal(to) ? (
+    <a href={to} target="_blank" rel="noopener noreferrer" className={cls}>{children}</a>
+  ) : (
+    <Link to={to} className={cls}>{children}</Link>
+  );
+};
+
 const CTASection = ({ title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note }: CTASectionProps) => (
   <section className="relative bg-paper text-ink border-y-2 border-ink/10 overflow-hidden">
     <div className="absolute inset-0 bg-paper-tex opacity-60 pointer-events-none" />
@@ -27,19 +49,9 @@ const CTASection = ({ title, subtitle, ctaText, ctaTo, secondaryText, secondaryT
           </p>
         )}
         <div className="flex flex-wrap items-center gap-3">
-          <Link
-            to={ctaTo}
-            className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
-          >
-            {ctaText}
-          </Link>
+          <PrimaryCTA to={ctaTo}>{ctaText}</PrimaryCTA>
           {secondaryText && secondaryTo && (
-            <Link
-              to={secondaryTo}
-              className="inline-flex items-center px-7 py-4 border border-ink/40 text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors"
-            >
-              {secondaryText}
-            </Link>
+            <SecondaryCTA to={secondaryTo}>{secondaryText}</SecondaryCTA>
           )}
         </div>
         {note && (
