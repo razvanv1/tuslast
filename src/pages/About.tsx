@@ -27,7 +27,7 @@ const About = () => {
         }}
       />
       <PageHero
-        tag="ABOUT"
+        tag="About"
         title="A behaviour change practice, not a training company."
         subtitle="The difference matters. Training companies teach tools. We change the processes around the tools so the tools get used."
         ctaText="Free audit →"

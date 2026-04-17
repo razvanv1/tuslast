@@ -59,7 +59,7 @@ const Resources = () => {
         }}
       />
       <PageHero
-        tag="RESOURCES"
+        tag="Resources"
         title="Useful material for teams working through AI, funding, execution, and change."
         subtitle="Articles, podcast episodes, studies, working notes, frameworks, and practical tools for teams dealing with opportunity overload, uneven AI adoption, execution drag, academy building, and the future of work."
         ctaText="Join The Unlearning Pill →"
