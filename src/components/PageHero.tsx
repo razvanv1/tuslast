@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import BauhausBackdrop from "@/components/bauhaus/BauhausBackdrop";
 
 interface PageHeroProps {
   tag?: string;
