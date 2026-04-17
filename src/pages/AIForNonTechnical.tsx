@@ -299,7 +299,7 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Who this program is for</p>
+        <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">Who this program is for</span></p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Any team that makes decisions <em>and gets work done.</em>
         </h2>
