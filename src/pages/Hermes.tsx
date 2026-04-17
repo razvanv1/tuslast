@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
-import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
+import { Kicker, SectionHeading } from "@/components/Editorial";
 
 const stats = [
   { v: "40+", l: "built-in tools" },
