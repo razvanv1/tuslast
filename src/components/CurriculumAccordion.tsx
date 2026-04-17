@@ -90,7 +90,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                 </span>
                 <div className="flex-1 min-w-0">
                   <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red/80 mb-1">
-                    Module {s.num} · Live session
+                    {s.kicker ?? `Module ${s.num} · Live session`}
                   </p>
                   <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-paper leading-tight">
                     {s.title}
