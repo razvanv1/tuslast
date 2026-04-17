@@ -87,7 +87,6 @@ const Footer = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
         <div className="col-span-2 md:col-span-4">
-          <img src={logo} alt="The Unlearning School" className="w-32 h-auto mb-6 invert brightness-200" />
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Contact</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             <li><a href="mailto:hello@unlearning.ro" className="hover:text-red transition-colors">hello@unlearning.ro</a></li>
@@ -106,7 +105,7 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-2">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Masthead</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Company</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             {masthead.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
