@@ -11,8 +11,10 @@ import PageTransition from "@/components/PageTransition";
 import Index from "./pages/Index";
 import ForOperations from "./pages/ForOperations";
 import ForHR from "./pages/ForHR";
-import ForIT from "./pages/ForIT";
 import Programmes from "./pages/Programmes";
+import AIForNonTechnical from "./pages/AIForNonTechnical";
+import Events from "./pages/Events";
+import Funding from "./pages/Funding";
 import About from "./pages/About";
 import Assessment from "./pages/Assessment";
 import NotFound from "./pages/NotFound";
@@ -29,8 +31,11 @@ const AnimatedRoutes = () => {
         <Route path="/index.html" element={<Navigate to="/" replace />} />
         <Route path="/for-operations" element={<PageTransition><ForOperations /></PageTransition>} />
         <Route path="/for-hr" element={<PageTransition><ForHR /></PageTransition>} />
-        <Route path="/for-it" element={<PageTransition><ForIT /></PageTransition>} />
+        <Route path="/for-it" element={<Navigate to="/programmes" replace />} />
         <Route path="/programmes" element={<PageTransition><Programmes /></PageTransition>} />
+        <Route path="/programmes/ai-for-non-technical-people" element={<PageTransition><AIForNonTechnical /></PageTransition>} />
+        <Route path="/events" element={<PageTransition><Events /></PageTransition>} />
+        <Route path="/funding" element={<PageTransition><Funding /></PageTransition>} />
         <Route path="/about" element={<PageTransition><About /></PageTransition>} />
         <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
         <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />

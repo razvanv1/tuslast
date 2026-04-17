@@ -7,66 +7,57 @@ import CTASection from "@/components/CTASection";
 
 const programmes = [
   {
-    tag: "Start here · Free",
+    tag: "Step 1 · Free · Entry point",
     title: "AI Adoption Gap Assessment",
-    meta: ["30 minutes", "Remote or on-site", "Free"],
+    meta: ["Free", "1 working session", "Report in 5 business days"],
     body: [
-      "A structured diagnostic conversation covering which AI tools are deployed, where usage is measurably low, and which 3–5 processes are highest priority for redesign.",
-      "You receive a 1-page written summary within 24 hours. Designed to be shared internally. No pricing document attached.",
+      "One working session. We map what your company actually does with the AI tools it already pays for, and where the gaps create real risk.",
+      "Includes a license & vendor audit, usage gap map per team, EU AI Act risk flags (Article 4), and 3–5 specific workflows worth fixing now — prioritised by impact. Delivered as a written report formatted for leadership, not IT.",
     ],
-    output: "Written 1-page summary: adoption gap location, prioritised process list, recommended next step (if any).",
+    output: "Written report (5 business days): license audit, usage gap map, AI Act risk flags, 3–5 prioritised use cases, one clear next step.",
     cta: { label: "Book the Assessment →", to: "/assessment" },
     highlight: true,
   },
   {
-    tag: "Core engagement",
-    title: "AI for Non-Techies",
-    meta: ["Half-day or full day", "On-site", "Up to 20 participants"],
+    tag: "Step 2 · Core program",
+    title: "AI for Non-Technical People",
+    meta: ["Modular: 1 session → full program", "Cross-functional teams", "In-person, hybrid, or online"],
     body: [
-      "Role-adapted sessions where participants use AI tools on their own real tasks. Adapted for operations, HR, finance, marketing, and legal teams. No AI background required. No technical setup needed before the session.",
+      "A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular delivery: Discovery (1×2h), Short Sprint (2–3 sessions), or Full Program (4+ sessions).",
+      "Covers adoption infrastructure, workflow integration, internal champions, and a 30-day action plan. Evaluated by operational adoption, not attendance.",
     ],
-    bullets: [
-      "Each participant identifies 3 tasks from their actual work",
-      "Learns to redesign each task using AI — in the session, not as homework",
-      "Leaves with 3–5 AI-assisted workflows ready for the next working day",
-    ],
-    output: "3–5 AI-assisted workflows per participant. Personal usage map. Replication template.",
+    output: "First trained cohort, validated prompt frameworks, tested workflows, 2–3 internal champions, manager-facing 30-day adoption roadmap.",
+    cta: { label: "See the full program →", to: "/programmes/ai-for-non-technical-people" },
   },
   {
-    tag: "Core engagement",
-    title: "Rapid Prototyping Sprint",
-    meta: ["1 day", "On-site", "1 team, 1 process"],
+    tag: "Step 3 · Accelerator",
+    title: "Events & Keynotes",
+    meta: ["90 min – 2 days", "15 to 500 people", "Sector-adapted"],
     body: [
-      "One cross-functional team. One real, named process selected before the session arrives. By end of day: a working AI-assisted version of that process — built by the team, not demonstrated by a trainer.",
+      "Workshops, hackathons, and keynotes for companies that need fast proof, internal momentum, or a way to show leadership what AI actually looks like in practice.",
+      "Three formats: Keynote + Q&A (90 min, up to 500), Hands-on workshop (½ or full day, 15–50 participants), Internal hackathon (1–2 days). Every demo is built around your workflows, not generic productivity examples.",
     ],
-    bullets: [
-      "Pre-session: process is mapped and scoped in advance",
-      "In-session: team redesigns the workflow with AI embedded at each bottleneck",
-      "Output: working process template, measurable time baseline, replication guide",
-    ],
-    output: "Working AI-assisted process version. Process time delta (before vs. after). Replication template owned by the team.",
+    output: "Copy-paste prompt sheets every participant takes out of the room. Post-session resource pack. Optional scoped proposal for follow-up adoption work.",
+    cta: { label: "See event formats →", to: "/events" },
   },
   {
-    tag: "Full engagement",
-    title: "AI Adoption Sprint",
-    meta: ["2 days", "On-site", "Multi-team"],
+    tag: "Step 4 · Deal closer",
+    title: "Funding Structuring",
+    meta: ["Custom", "Per qualifying instrument", "Romania & EU"],
     body: [
-      "The most comprehensive engagement. Day 1 is a structured diagnostic. Day 2 is a sprint on the highest-priority process identified in Day 1. Includes a 90-day roadmap for extending adoption across the organisation.",
+      'Your AI program might already be funded. Vendor MDF programs, co-sell budgets, and EU digital grants exist specifically to fund this kind of work. Most companies qualify for at least one. Most have never claimed it.',
+      "We turn your AI adoption program into something that qualifies. We handle the structuring, support the application, and align delivery with documentation requirements so reimbursement actually happens.",
     ],
-    bullets: [
-      "Day 1: 5–8 structured interviews, usage map, written gap report",
-      "Day 2: sprint on highest-priority process (full team, real task)",
-      "Post-sprint: written 90-day roadmap for additional processes and teams",
-    ],
-    output: "Written gap report. Redesigned process. Process time delta. 90-day adoption roadmap.",
+    output: "A fully funded or significantly reduced cost adoption program. Microsoft MDF / co-sell, AWS partner programs, or EU Digital Europe grants — whichever fits.",
+    cta: { label: "See funding options →", to: "/funding" },
   },
 ];
 
 const faqs = [
-  { q: "How do we know which programme fits our situation?", a: "The Assessment produces a 1-page written output that makes this clear. There is no guesswork. The right programme is the one that matches what the Assessment finds — not what sounds most comprehensive on paper." },
-  { q: "Our teams have no AI background. Are these programmes appropriate?", a: "Yes. All programmes are designed specifically for non-technical teams. The entry condition is not AI experience — it is access to at least one AI tool (Copilot, ChatGPT, etc.) and a real process to improve. That is sufficient." },
-  { q: "What if we have multiple teams or departments?", a: "The AI Adoption Sprint includes a 90-day roadmap for extension across teams and processes. Larger rollouts are scoped after the Assessment identifies where to start. We do not recommend running multiple teams simultaneously before validating the first process redesign." },
-  { q: "Can costs be partially offset through vendor programmes?", a: "For organisations running Microsoft or AWS environments, programme costs can often be partially structured through vendor partner frameworks. This is discussed during the Assessment if relevant. We do not mention specific figures on this page because availability varies by organisation type and region." },
+  { q: "How do we know which programme fits our situation?", a: "Start with the Assessment. The 1-page written output makes it specific. The right programme is the one that matches what the Assessment finds — not what sounds most comprehensive on paper." },
+  { q: "Our teams have no AI background. Is that a problem?", a: 'That is exactly the condition all our programmes are designed for. The entry question is not "are they ready?" — it is "which one process should we fix first?"' },
+  { q: '"We don\'t have budget for this right now."', a: "In most cases, that's not accurate — it means the budget hasn't been identified or structured correctly. Microsoft, AWS, and Google allocate Market Development Funds every quarter to support adoption programmes. Most companies qualify. Most don't know it. The Funding Structuring track exists for exactly this." },
+  { q: "Are we required to do this under the EU AI Act?", a: "Since February 2025, the EU AI Act (Article 4) requires organisations to ensure AI literacy across employees. It is a legal obligation, not a recommendation. A programme that demonstrably changes daily working behaviour satisfies it. A one-hour awareness webinar does not." },
 ];
 
 const Programmes = () => {
@@ -75,16 +66,16 @@ const Programmes = () => {
   return (
     <>
       <PageHero
-        tag="THE CATALOGUE"
-        title="From a free 30-minute diagnosis to a two-day full engagement."
-        subtitle="All programmes are designed for non-technical teams. No coding. No AI background required. The entry point is the free Assessment — everything else follows from what it finds."
+        tag="THE CATALOGUE · 4 STEPS"
+        title="From a free diagnostic to a fully funded adoption program."
+        subtitle="Four programmes, designed to be used in order. Start with the Assessment. Everything else is scoped from what it finds."
         ctaText="Book the Assessment →"
         ctaTo="/assessment"
       />
 
       <Section bordered={false}>
         <Blockquote attribution="How to use this page">
-          The right programme for your organisation depends on what the Assessment finds. Every engagement listed below can be scoped after that call — not before. If you are not sure which level applies, start with the Assessment.
+          The right programme depends on what the Assessment finds. Every engagement listed below can be scoped after that call — not before. If you are not sure which step applies, start with the Assessment.
         </Blockquote>
       </Section>
 
@@ -122,16 +113,6 @@ const Programmes = () => {
                       {para}
                     </p>
                   ))}
-                  {p.bullets && (
-                    <ul className={`space-y-2 text-[15px] ${p.highlight ? "text-paper/90" : "text-paper/80"}`}>
-                      {p.bullets.map((b) => (
-                        <li key={b} className="flex gap-3">
-                          <span className={p.highlight ? "text-paper" : "text-red"}>→</span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                   <div className={`mt-6 border-t pt-4 ${p.highlight ? "border-paper/30" : "border-paper/15"}`}>
                     <p className={`font-mono text-[10px] uppercase tracking-[0.25em] mb-2 ${p.highlight ? "text-paper/80" : "text-red"}`}>
                       Output
@@ -170,10 +151,10 @@ const Programmes = () => {
 
       <CTASection
         title="Not sure where to start?"
-        subtitle="The Assessment takes 30 minutes and produces a written output you can use internally. The right programme becomes obvious from what it finds."
+        subtitle="The Assessment takes one working session and produces a written report you can use internally. The right programme becomes obvious from what it finds."
         ctaText="Book the free AI Adoption Gap Assessment →"
         ctaTo="/assessment"
-        note="Free · No pitch · 1-page written output within 24 hours"
+        note="Free · No pitch · Written report within 5 business days"
       />
     </>
   );

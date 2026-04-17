@@ -8,10 +8,10 @@ import cardGears from "@/assets/card-gears.png";
 import cardKey from "@/assets/card-key.png";
 
 const cards = [
-  { image: cardTool, label: "Assessment", caption: "Free · 30 min", rotate: -14, top: "top-2", left: "left-[2%]" },
-  { image: cardWorkers, label: "AI for Non-Techies", caption: "Half / full day", rotate: -7, top: "top-12", left: "left-[16%]" },
-  { image: cardGears, label: "Prototyping Sprint", caption: "1 day · 1 process", rotate: -2, top: "top-0", left: "left-[31%]" },
-  { image: cardBrain, label: "Adoption Sprint", caption: "2 days · multi-team", rotate: 4, top: "top-16", left: "left-[46%]" },
+  { image: cardTool, label: "Assessment", caption: "Free · 1 session", rotate: -14, top: "top-2", left: "left-[2%]" },
+  { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", rotate: -7, top: "top-12", left: "left-[16%]" },
+  { image: cardGears, label: "Events & Keynotes", caption: "90 min – 2 days", rotate: -2, top: "top-0", left: "left-[31%]" },
+  { image: cardBrain, label: "Funding Structuring", caption: "MDF · grants", rotate: 4, top: "top-16", left: "left-[46%]" },
   { image: cardEye, label: "Unfreeze", caption: "The mechanism", rotate: 9, top: "top-4", left: "left-[60%]" },
   { image: cardKey, label: "Redesign", caption: "Embed AI", rotate: 14, top: "top-20", left: "left-[74%]" },
   { image: cardBubble, label: "Refreeze", caption: "Team-owned", rotate: 19, top: "top-2", left: "left-[86%]" },

@@ -5,8 +5,9 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Operations", to: "/for-operations" },
   { label: "HR & L&D", to: "/for-hr" },
-  { label: "IT & Digital", to: "/for-it" },
   { label: "Programmes", to: "/programmes" },
+  { label: "Events", to: "/events" },
+  { label: "Funding", to: "/funding" },
   { label: "About", to: "/about" },
 ];
 
@@ -22,7 +23,7 @@ const Navbar = () => {
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mt-1">School</span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -36,9 +37,9 @@ const Navbar = () => {
           ))}
           <Link
             to="/assessment"
-            className="ml-4 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            className="ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
           >
-            Subscribe →
+            Assessment →
           </Link>
         </div>
 
@@ -64,7 +65,7 @@ const Navbar = () => {
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
           >
-            Subscribe →
+            Assessment →
           </Link>
         </div>
       )}
