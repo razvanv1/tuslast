@@ -332,7 +332,7 @@ const AIForNonTechnical = () => {
             { name: "Full Program", meta: "4+ sessions, modular", body: "Covers adoption infrastructure, workflow integration, internal champions, and a 30-day action plan." },
           ].map((e) => (
             <article key={e.name} className="bg-background p-8 md:p-10 border border-paper/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">{e.meta}</p>
+              <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{e.meta}</span></p>
               <h3 className="font-display text-2xl text-paper mb-3">{e.name}</h3>
               <p className="text-paper/75 text-[15px] leading-relaxed">{e.body}</p>
             </article>
