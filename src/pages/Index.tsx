@@ -156,7 +156,7 @@ const Index = () => {
       <Section variant="paper">
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Who this is for</p>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-3xl">
-          Two roles. <em>Two diagnoses.</em>
+          Three roles. <em>Three diagnoses.</em>
         </h2>
 
         <div className="space-y-0 border-t border-ink/15">
