@@ -306,7 +306,7 @@ const AIForNonTechnical = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10">
           {audience.map((a) => (
             <article key={a.tag} className="bg-paper p-8 md:p-10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-4">{a.tag}</p>
+              <p className="mb-4"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{a.tag}</span></p>
               <ul className="space-y-2 text-ink/80 text-[15px]">
                 {a.items.map((it) => (
                   <li key={it} className="flex gap-3 border-b border-ink/10 pb-2 last:border-0">
