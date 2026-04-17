@@ -23,6 +23,11 @@ const audience = [
     situation: "You need a credible AI upskilling programme. EU AI Act Article 4 is in force. No plan that demonstrably changes behaviour.",
     result: "Role-adapted workshops. Participants leave with 3–5 AI workflows ready the next morning.",
   },
+  {
+    role: "CIO / IT & Digital Lead",
+    situation: "Tools are deployed and licensed. Adoption metrics are flat. Business teams blame IT for tools they never asked for.",
+    result: "A cross-functional adoption layer on top of your stack. Internal champions, governance, and EU AI Act audit trail.",
+  },
 ];
 
 const ladder = [
