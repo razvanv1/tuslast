@@ -268,7 +268,7 @@ const AIForNonTechnical = () => {
         ctaTo="#pricing"
         secondaryText="Call now"
         secondaryTo="tel:+40722598346"
-        note="Pay & enrol your cohort · or call Răzvan directly"
+        
       />
 
       <Section>
