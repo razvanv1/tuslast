@@ -281,7 +281,7 @@ const AIForNonTechnical = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
           {challenges.map((c) => (
             <article key={c.tag} className="bg-background p-6 md:p-8 border border-paper/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.tag}</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{c.tag}</span></p>
               <p className="text-paper/80 text-[15px] leading-relaxed">{c.body}</p>
             </article>
           ))}
