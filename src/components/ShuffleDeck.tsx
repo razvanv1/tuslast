@@ -116,8 +116,8 @@ const ShuffleDeck = () => {
   const top = DECK[topIdx];
 
   return (
-    <div className="relative w-full flex flex-col items-center">
-      <div className="relative w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] h-[360px] sm:h-[420px] md:h-[480px] lg:h-[510px] max-w-full">
+    <div className="relative w-full flex flex-col items-center mx-auto">
+      <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] h-[360px] sm:h-[420px] md:h-[480px] lg:h-[510px] max-w-full">
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
           if (position > 3) return null;
