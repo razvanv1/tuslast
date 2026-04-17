@@ -57,7 +57,7 @@ const Footer = () => (
           className="grid md:grid-cols-12 gap-8 items-end"
         >
           <div className="md:col-span-7">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
+            <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">The Unlearning Pill, Newsletter</p>
             <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
               Signal, <em className="text-red">not noise.</em>
             </h3>
@@ -87,7 +87,7 @@ const Footer = () => (
 
       <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
         <div className="col-span-2 md:col-span-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Contact</p>
+          <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Contact</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             <li><a href="mailto:hello@unlearning.ro" className="hover:text-red transition-colors">hello@unlearning.ro</a></li>
             <li><a href="tel:+40722598346" className="hover:text-red transition-colors">+40 722 598 346</a></li>

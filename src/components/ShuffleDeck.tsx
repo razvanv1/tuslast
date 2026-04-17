@@ -124,7 +124,7 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
       </div>
       <figcaption className="absolute bottom-0 left-0 right-0 bg-ink text-paper px-3 py-3 text-center pointer-events-none">
         <p className="font-display text-paper text-base sm:text-lg md:text-xl leading-tight">{label}</p>
-        <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">{caption}</p>
+        <p className="inline-block bg-paper px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">{caption}</p>
       </figcaption>
     </motion.figure>
   );

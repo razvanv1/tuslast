@@ -129,7 +129,7 @@ const Resources = () => {
               </div>
               <div className="absolute bottom-0 left-3 right-3 bg-ink text-paper px-3 py-3 text-center">
                 <p className="font-display text-paper text-base md:text-lg leading-tight">Read the playbook</p>
-                <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">Free · No signup</p>
+                <p className="inline-block bg-paper px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.2em] text-red mt-1">Free · No signup</p>
               </div>
             </a>
           </div>
