@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PageHero from "@/components/PageHero";
+import bannerAssessment from "@/assets/banner-assessment.png";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CalEmbed from "@/components/CalEmbed";
@@ -17,7 +18,9 @@ const Assessment = () => {
   return (
     <>
       <PageHero
-        tag="FREE · 30 MIN · 1-PAGE OUTPUT"
+        tag="AI Adoption Gap Assessment"
+        banner={bannerAssessment}
+        bannerAlt="Team filling out assessment forms around a table"
         title="AI Adoption Gap Assessment."
         subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
         ctaText="Jump to booking ↓"

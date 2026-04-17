@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PageHero from "@/components/PageHero";
+import bannerFunding from "@/assets/banner-funding.png";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
@@ -32,7 +33,9 @@ const Funding = () => {
   return (
     <>
       <PageHero
-        tag="DEAL CLOSER · STEP 4 OF 4"
+        tag="MDF, Funding & Grants"
+        banner={bannerFunding}
+        bannerAlt="Modern team reviewing funding documents"
         title="Your AI program might already be funded."
         subtitle="Vendor MDF programs, co-sell budgets, and EU digital grants exist specifically to fund this kind of work. Most companies qualify for at least one. Most have never claimed it."
         ctaText="Check what you qualify for →"

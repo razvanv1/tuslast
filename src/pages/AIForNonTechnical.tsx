@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PageHero from "@/components/PageHero";
+import bannerAi from "@/assets/banner-ai.png";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
@@ -77,7 +78,9 @@ const AIForNonTechnical = () => {
   return (
     <>
       <PageHero
-        tag="CORE PROGRAM · STEP 2 OF 4"
+        tag="AI for Non-Technical People"
+        banner={bannerAi}
+        bannerAlt="Modern office workers learning AI tools"
         title="Your team is already using AI. You just don't control how."
         subtitle="A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular: 1 session to full program. Delivered in partnership with IT Assist."
         ctaText="Book a meeting →"
