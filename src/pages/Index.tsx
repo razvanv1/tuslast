@@ -276,7 +276,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
           {[
             { tag: "Track record", title: "1,400+ professionals trained", body: "Across finance, retail, manufacturing, and professional services, Romania and EU." },
-            { tag: "Founder", title: "Răzvan Vâlceanu", body: "20+ years across innovation, digital transformation, executive education, and entrepreneurship. Delivered in partnership with IT Assist." },
+            { tag: "Founder", title: "Răzvan Vâlceanu", body: "20+ years across innovation, digital transformation, executive education, and entrepreneurship." },
             { tag: "Proof format", title: "Before / after workflows", body: "Anonymised sector examples available on request during the Assessment call. No client names published on this site." },
           ].map((c) => (
             <article key={c.tag} className="bg-background p-8 md:p-10">
