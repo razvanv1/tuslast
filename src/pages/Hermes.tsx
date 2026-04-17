@@ -232,7 +232,7 @@ const Hermes = () => {
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 mb-2">— Self-directed</p>
             <p className="font-display text-6xl text-paper mb-1">€497</p>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50 mb-6">one-time · no recurring fees</p>
-            <NumberedStep num={1} title=""><></></NumberedStep>
+            
             <ul className="space-y-2 text-paper/80 text-sm border-t border-paper/15 pt-5 mb-8">
               {["2 × 90-min 1:1 sessions", "Agent setup + 2 core workflows", "Written playbook", "Email support for 30 days", "Hermes fully yours at end"].map((i) => (
                 <li key={i} className="border-b border-paper/10 pb-2">→ {i}</li>
