@@ -73,7 +73,7 @@ const Footer = () => (
               name="EMAIL"
               required
               placeholder="your@email.com"
-              className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/40 font-mono text-sm focus:outline-none focus:border-red transition-colors"
+              className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/65 font-mono text-sm focus:outline-none focus:border-red transition-colors"
             />
             <button
               type="submit"
@@ -96,7 +96,7 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Programmes</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Programmes</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             {programmes.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
@@ -105,7 +105,7 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-2">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Company</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Company</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             {masthead.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
@@ -114,13 +114,13 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Legal</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Legal</p>
           <ul className="space-y-2 text-paper/80 text-sm mb-6">
             {legal.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
             ))}
           </ul>
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-3">Follow</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-3">Follow</p>
           <div className="flex gap-3">
             {socials.map((s) => (
               <a
@@ -161,7 +161,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-12 border-t border-paper/10 pt-8 text-center">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">
+        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/65">
           © {new Date().getFullYear()} The Unlearning School. All rights reserved.
         </p>
       </div>
