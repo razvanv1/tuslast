@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import Index from "./pages/Index";
-import Programmes from "./pages/Programmes";
+
 import AIForNonTechnical from "./pages/AIForNonTechnical";
 import Events from "./pages/Events";
 import Funding from "./pages/Funding";
