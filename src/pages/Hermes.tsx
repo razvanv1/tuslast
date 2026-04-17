@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import CurriculumAccordion, { type CurriculumSession } from "@/components/CurriculumAccordion";
+import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -76,11 +77,49 @@ const weeks: CurriculumSession[] = [
   },
 ];
 
-const faqs = [
-  { q: "Do I need to know how to code?", a: "No. Hermes uses natural language for most configuration. The technical setup is handled with you step by step, not handed off as homework." },
-  { q: "What does \"on my server\" mean?", a: "Hermes runs on a small cloud instance around €5-8/month. You keep full control. Nothing goes through third-party platforms. We set this up together in week one." },
-  { q: "I already use Zapier and Make. Why this?", a: "Zapier automates fixed rules. Hermes handles ambiguous decisions. It can read a situation, decide what to do, and ask you when uncertain. Rule-based tools cannot do that." },
-  { q: "Is my data secure?", a: "All data stays on your server. No tracking, no telemetry, no third-party cloud lock-in. Hermes includes command approval flows and asks before acting outside its defined scope." },
+const faqs: FAQItem[] = [
+  // ── Pricing & guarantees ──────────────────────────────────────────
+  { category: "Pricing & guarantees", q: "How much does Hermes cost?", a: "Two tiers, both one-time payments with no recurring fees. Self-directed: €497 (2 × 90-min sessions, agent setup + 2 core workflows, 30 days email support). Full build: €997 (4 × 90-min sessions, complete setup + 6 or more workflows, full integrations, 4 weeks async Telegram support, recordings, 3 months of light support after). The agent itself is yours forever under MIT license." },
+  { category: "Pricing & guarantees", q: "Are there any recurring fees or subscriptions?", a: "No. Both tiers are strictly one-time. Once the program ends, you owe nothing — not to us, not to a SaaS vendor. The only ongoing cost is the small cloud server Hermes runs on (around €5–8/month, billed by the cloud provider directly to you)." },
+  { category: "Pricing & guarantees", q: "What is the satisfaction guarantee?", a: "If after the first 90-minute session you decide Hermes is not for you, we refund the full amount with no questions and no paperwork. After session one we are past the point where a refund is fair to either side, but if something goes wrong we always work it out — we have never had a client leave unhappy." },
+  { category: "Pricing & guarantees", q: "What is the price-lock guarantee?", a: "The price you pay at enrolment is locked. Any future increases (we adjust pricing roughly twice a year) do not apply to you, including for any follow-up engagements within 12 months. Spots are capped at 4 per month, so the price reflects scarcity, not artificial urgency." },
+  { category: "Pricing & guarantees", q: "Do you offer payment plans or invoicing?", a: "Yes. For the Full build (€997) we offer a 2-instalment plan at no extra cost (€499 + €498). Company invoicing in EUR or RON is available — we issue a proper invoice from a Romanian SRL with VAT. Just mention it before checkout and we send a payment link with terms." },
+  { category: "Pricing & guarantees", q: "Is there a discount for teams or multiple seats?", a: "Yes. Two seats: 10% off. Three or more: custom quote. Each person gets their own agent on their own server — we don't share infrastructure between team members because permissions and memory are personal." },
+
+  // ── Technical & setup ─────────────────────────────────────────────
+  { category: "Technical & setup", q: "Do I need to know how to code?", a: "No. Hermes uses natural language for almost all configuration. The technical setup (server, gateway, integrations) is done with you live in session one — not handed off as homework. By end of week one you'll be talking to a working agent from your phone." },
+  { category: "Technical & setup", q: "What does \"on my server\" actually mean?", a: "Hermes runs on a small Linux cloud instance — typically a €5–8/month VPS on Hetzner, DigitalOcean, or Scaleway. You own the server, the API keys, the data, and the agent. Nothing is routed through our infrastructure. We help you provision it in session one and you keep full root access." },
+  { category: "Technical & setup", q: "Which AI models does Hermes use?", a: "By default, Hermes uses your own API keys for OpenAI, Anthropic (Claude), or Google (Gemini) — whichever you prefer. You pay the model provider directly at cost (typically €5–30/month depending on usage). We help you pick the right model for each workflow during the program." },
+  { category: "Technical & setup", q: "What if I don't already have a cloud server?", a: "We provision one with you in session one — it takes about 15 minutes. We walk you through Hetzner or DigitalOcean signup, install Hermes, and configure SSH access. No prior server experience needed." },
+  { category: "Technical & setup", q: "Which tools and platforms does Hermes integrate with?", a: "Out of the box: Telegram, Gmail, Google Calendar, Slack, Notion, Airtable, Linear, GitHub, HubSpot, Pipedrive, plus 30+ others via webhook and HTTP. New integrations can be added by describing them in plain English — Hermes writes its own connector and you approve it." },
+  { category: "Technical & setup", q: "Can Hermes work offline or on-premise?", a: "Yes, for advanced clients. We can deploy Hermes against a local LLM (Ollama, LM Studio) on your own hardware, with zero outbound API calls. Setup is more involved and only included in the Full build with prior agreement — mention it before enrolling." },
+
+  // ── How Hermes works ──────────────────────────────────────────────
+  { category: "How Hermes works", q: "How is this different from Zapier or Make?", a: "Zapier and Make automate fixed if-this-then-that rules. Hermes handles ambiguous decisions — it can read a situation, weigh options, decide what to do, and ask you when uncertain. Rule-based tools cannot do that. The two are complementary: many clients keep their Zapier flows and use Hermes for the judgement-heavy parts." },
+  { category: "How Hermes works", q: "How is this different from ChatGPT or Claude?", a: "ChatGPT is a chat interface — it forgets after the tab closes and cannot take actions in your tools. Hermes is a persistent agent: it remembers your clients and decisions across months, sends real emails, books real meetings, runs scheduled tasks while you sleep, and writes its own reusable skills when it solves a hard problem." },
+  { category: "How Hermes works", q: "What does \"self-improving\" mean exactly?", a: "When Hermes successfully solves a non-trivial task, it writes a small Markdown skill file describing how it did it. Next time a similar task appears, it loads that skill instead of reasoning from scratch — faster, cheaper, more consistent. You can read every skill in plain English and edit or delete any of them." },
+  { category: "How Hermes works", q: "How does memory work?", a: "Hermes has multi-level memory: short-term (current conversation), session memory (last few days of activity), and long-term knowledge (clients, projects, decisions, preferences). It searches its own history before acting, so a pricing decision from week 4 can inform a quote in week 12. All memory is stored in a local SQLite file on your server — you can inspect, export, or wipe it at any time." },
+  { category: "How Hermes works", q: "Can Hermes act without my approval?", a: "Only on workflows you have explicitly marked as autonomous (e.g. morning briefing, scheduled reports). Anything that touches the outside world — sending an email, booking a meeting, posting in Slack — requires explicit approval by default, until you tell Hermes you trust it for that specific action type." },
+
+  // ── Privacy, security & ownership ─────────────────────────────────
+  { category: "Privacy & ownership", q: "Is my data secure?", a: "Yes. All data lives on your server. No telemetry, no analytics, no third-party cloud lock-in, no data shared with us. Hermes is open source under MIT license — you can audit every line of code. The only outbound calls are to the AI model provider you chose (OpenAI/Anthropic/Google) and to the integrations you explicitly connect." },
+  { category: "Privacy & ownership", q: "Who owns Hermes after the program?", a: "You do. Fully. The code is MIT licensed, the server is yours, the API keys are yours, the memory is yours. We do not retain any access. If we vanish tomorrow, your agent keeps running indefinitely." },
+  { category: "Privacy & ownership", q: "Can I modify or extend Hermes myself?", a: "Yes — that is the point. The codebase is small (around 8,000 lines of Python) and well documented. The handoff in week 4 includes a walkthrough of the architecture so you (or a developer you hire) can extend it without us." },
+  { category: "Privacy & ownership", q: "Is Hermes GDPR compliant?", a: "Yes. Because all data stays on your server in the EU region of your choice, you remain the sole data controller. We provide a one-page DPA template if your legal team needs one. Hermes never logs personally identifiable information to external services unless you explicitly configure it to." },
+
+  // ── Program logistics ─────────────────────────────────────────────
+  { category: "Program logistics", q: "How long is the program?", a: "Full build is 4 weeks: one 90-minute session per week, plus async Telegram support between sessions. Self-directed is 2 weeks with two sessions. Both timelines are flexible — clients with travel or busy weeks can stretch to 6–8 weeks at no extra cost." },
+  { category: "Program logistics", q: "When can I start?", a: "Maximum 4 clients per month. The current waiting list is typically 2–3 weeks. The free 30-minute discovery call can usually happen within 48 hours — that's where we confirm fit and lock your start date." },
+  { category: "Program logistics", q: "Is the program 1:1 or group?", a: "Strictly 1:1. Every session is built around your specific workflows — no slides, no curriculum applied to a cohort. The 4-clients-per-month cap is what makes this possible." },
+  { category: "Program logistics", q: "What if I need to reschedule a session?", a: "No problem. As long as you give 24h notice we move it to the next available slot. We work in CET but accommodate clients from EST to GMT+8 regularly." },
+  { category: "Program logistics", q: "What happens after the 4 weeks?", a: "You get 3 months of light support included — async Telegram messages for questions, small fixes, model updates. After that, optional retainer (€200/month) or one-off sessions (€250/90 min) if you want help adding new workflows. Most clients don't need it." },
+  { category: "Program logistics", q: "Do you record the sessions?", a: "Yes. Every session is recorded and shared with you within 24 hours, indexed by topic. The recordings plus the written playbook mean you can always go back and see exactly how a workflow was built." },
+
+  // ── Fit & decision ────────────────────────────────────────────────
+  { category: "Fit & decision", q: "Who is Hermes NOT for?", a: "Three groups: (1) People who want a no-code drag-and-drop tool — Hermes is configured by talking to it, not by clicking. (2) Teams that need a polished SaaS UI for non-technical end users — Hermes is a personal operations agent, not a product. (3) Anyone expecting magic without effort — the program requires 4 hours of live work plus your real workflows to build against." },
+  { category: "Fit & decision", q: "Who gets the most value from Hermes?", a: "Solo founders, agency owners, consultants, and operators who: spend 5+ hours a week on email/research/coordination, already know their workflows by heart, and want to own the tool rather than rent another SaaS. Typical client recovers 8–15 hours per week within 60 days." },
+  { category: "Fit & decision", q: "What if I'm not sure Hermes fits my workflows?", a: "Book the free 30-minute audit. We look at 2–3 of your actual recurring tasks and tell you honestly whether Hermes will help, will not help, or whether a simpler tool would do the job. About 30% of audit calls end with us recommending something else." },
+  { category: "Fit & decision", q: "Can I see Hermes running before I commit?", a: "Yes. The discovery call includes a 5-minute live demo of a real client workflow (with permission and anonymised data). You can also see the open-source repository on GitHub before talking to us." },
 ];
 
 const Hermes = () => {
@@ -343,19 +382,20 @@ const Hermes = () => {
       </Section>
 
       {/* FAQ */}
-      <Section variant="paper">
-        <SectionHeading
-          kicker="Before you apply"
-          title={<>Common <em className="text-red">questions.</em></>}
-        />
-        <div className="grid md:grid-cols-2 gap-px bg-ink/10">
-          {faqs.map((f) => (
-            <article key={f.q} className="bg-paper p-8 border-2 border-ink/10">
-              <h3 className="font-display text-xl text-ink mb-3">{f.q}</h3>
-              <p className="text-ink/75 text-sm leading-relaxed">{f.a}</p>
-            </article>
-          ))}
-        </div>
+      <Section variant="darker">
+        <div id="faq" className="scroll-mt-20" />
+        <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-red mb-4">
+          FAQ · Frequently asked questions
+        </p>
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-6 max-w-4xl">
+          Everything you'd ask <em className="text-red">before enrolling.</em>
+        </h2>
+        <p className="text-paper/70 text-base md:text-lg max-w-3xl">
+          {faqs.length} questions covering pricing, guarantees, technical setup, ownership, and fit.
+          Click any question to expand the answer.
+        </p>
+
+        <FAQAccordion items={faqs} grouped />
       </Section>
 
       <CTASection
