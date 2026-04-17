@@ -124,9 +124,28 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-paper/10 pt-6 flex flex-col md:flex-row justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">
-        <span>© {new Date().getFullYear()} The Unlearning School · hello@unlearning.ro</span>
-        <span>Issue 04 · Printed on the open web</span>
+      {/* Massive brand block */}
+      <div className="mt-16 overflow-hidden text-center flex flex-col items-center gap-8">
+        <img
+          src={logo}
+          alt="The Unlearning School"
+          className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none"
+          aria-hidden="true"
+        />
+        <div className="space-y-6">
+          <p className="font-display text-2xl md:text-4xl text-red italic">
+            What is learned can be unlearned.
+          </p>
+          <p className="text-paper/70 max-w-2xl mx-auto leading-relaxed md:text-lg">
+            The Unlearning School builds programs, systems and useful ways of working for teams dealing with projects funding pressure, AI adoption, digital change and the future of work.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-12 border-t border-paper/10 pt-8 text-center">
+        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">
+          © {new Date().getFullYear()} The Unlearning School. All rights reserved.
+        </p>
       </div>
     </div>
   </footer>
