@@ -2,6 +2,17 @@ import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
+import cardWorkersUrl from "@/assets/card-workers.webp";
+
+// Inject LCP preload as early as possible so the hashed asset URL is
+// discoverable in the initial document, before React mounts.
+const preloadLink = document.createElement("link");
+preloadLink.rel = "preload";
+preloadLink.as = "image";
+preloadLink.href = cardWorkersUrl;
+preloadLink.type = "image/webp";
+preloadLink.fetchPriority = "high";
+document.head.appendChild(preloadLink);
 
 createRoot(document.getElementById("root")!).render(
   <HelmetProvider>
