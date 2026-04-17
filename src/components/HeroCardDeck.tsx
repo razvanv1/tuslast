@@ -29,6 +29,7 @@ const HeroCardDeck = () => (
             caption={c.caption}
             rotate={c.rotate}
             delay={0.08 * i}
+            priority={i === 1}
           />
         </div>
       ))}
@@ -43,6 +44,7 @@ const HeroCardDeck = () => (
             caption={c.caption}
             rotate={i % 2 === 0 ? -3 : 3}
             delay={0.05 * i}
+            priority={i === 1}
           />
         </div>
       ))}
