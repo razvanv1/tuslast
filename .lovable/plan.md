@@ -1,62 +1,60 @@
 
-**Goal**: Transform `/resources` into a functional editorial hub. Posts come from your WordPress.com site (you write there, site auto-displays). Newsletter signup saves emails to Lovable Cloud.
+User wants Buy Now CTAs added across the site since Stripe products & links exist. Buy Now = primary, Assessment = secondary.
 
-**Architecture**
+Need to identify where pricing/products are shown and where CTAs are missing or wrongly prioritized.
 
-1. **WordPress.com → Lovable Cloud → Site**
-   - You publish on WordPress.com (familiar editor).
-   - Edge function `wp-posts` proxies WordPress.com REST API via the connector gateway (`/rest/v1.1/sites/{site_id}/posts`).
-   - Site fetches via Supabase function — no exposed credentials, automatic OAuth refresh.
-   - Site ID hardcoded in the edge function (you give it to me, or we read it from `/me/sites`).
+Known products:
+- AI Small Team (€3,000) — `ai_small_team`
+- AI Standard (€5,000) — `ai_standard`
+- Hermes Self-directed (€497) — `hermes_self`
+- Hermes Full Build (€997) — `hermes_full`
 
-2. **Newsletter → Lovable Cloud table**
-   - Table `newsletter_subscribers` (email unique, source, subscribed_at).
-   - Edge function `subscribe-newsletter` with Zod validation + simple in-memory rate limit.
-   - RLS: only insert allowed (no public reads).
+Pages already have checkout wired:
+- `/programmes/ai-for-non-technical-people` — has Pay & enrol on tier cards
+- `/hermes` — has Pay buttons on tiers
 
-**Setup steps**
-1. Enable Lovable Cloud.
-2. Connect WordPress.com connector → I read your site ID via `/me/sites`.
-3. Create `newsletter_subscribers` table + RLS.
-4. Create edge functions `wp-posts` and `subscribe-newsletter`.
+Pages where Buy Now is missing or where CTA hierarchy is wrong (Assessment is currently primary):
+- Homepage hero — currently primary = Assessment, secondary = Programmes. No Buy Now.
+- Homepage CTA bottom — only Assessment.
+- PageHero on AI for Work & Hermes — primary is likely Assessment, no Buy Now jump-to-pricing.
+- Navbar — primary CTA is Assessment (red).
 
-**Frontend rebuild — `/resources` (Hub editorial)**
+## Plan
 
-Replace current static page with:
+**1. Homepage (`src/pages/Index.tsx`)**
+- Hero: Make **Buy Now (AI for Work €3,000)** the primary red CTA → links to `/programmes/ai-for-non-technical-people#pricing`. Move "Book Assessment" to secondary (outline). Keep "See programmes" removed or as tertiary text link.
+- Bottom CTASection: Add a primary "Buy AI for Work →" button alongside the existing Assessment (now secondary).
+- Programs catalogue cards: Add a "Buy now →" link next to each program's existing "See the program" link where a Stripe product exists (Core program → pricing anchor; Hermes card if added).
 
-- **A. Featured playbook card** (KEEP existing AI Literacy Playbook tarot card at top) — already works.
-- **B. Featured article** — top-most fresh WordPress post, large editorial layout (cover image, title, excerpt, "Read article →"). Click → `/resources/[slug]`.
-- **C. Latest articles grid** — 6 most recent posts in 3-col grid (cover, category chip, title, excerpt, date).
-- **D. Browse by topic** — KEEP the 8 topic chips, but each becomes a real link to `/resources?topic=ai-at-work` filtering posts by WP category/tag.
-- **E. Six formats hub** — KEEP the 6 format cards (Articles, Podcast, Guides, Studies, Tools, Frameworks), each linking to filtered list.
-- **F. Newsletter signup** — REPLACE mailto with real form (email input + submit), success toast, error handling.
+**2. AI for Work page (`src/pages/AIForNonTechnical.tsx`)**
+- PageHero: Add primary "Buy now →" button (jumps to `#pricing` section) + secondary "Book free Assessment".
+- Add an `id="pricing"` anchor on the pricing/tiers block (likely already there — verify).
+- Add a sticky/inline mid-page CTA strip after curriculum: "Ready? Pick your tier →" jumping to pricing.
 
-**New routes**
-- `/resources` — hub (above).
-- `/resources/[slug]` — single article page (fetches one WP post by slug, renders title/cover/HTML content with editorial styling).
-- `/resources/topic/[slug]` — filtered list by topic.
+**3. Hermes page (`src/pages/Hermes.tsx`)**
+- PageHero: primary "Buy Hermes →" (jumps to `#pricing`), secondary "Book Assessment".
+- Verify pricing anchor exists.
 
-**Files to create**
-- `supabase/functions/wp-posts/index.ts` — list/get posts (params: `slug?`, `category?`, `per_page`, `page`).
-- `supabase/functions/subscribe-newsletter/index.ts` — Zod validation, insert into table.
-- `src/pages/Resources.tsx` — refactor to fetch + display real posts.
-- `src/pages/ResourceArticle.tsx` — single-post page.
-- `src/components/NewsletterForm.tsx` — reusable form.
-- `src/components/ArticleCard.tsx` — reusable card.
-- `src/lib/wp.ts` — typed client for the wp-posts function.
-- `src/App.tsx` — add routes.
+**4. Navbar (`src/components/Navbar.tsx`)**
+- Keep "Assessment →" as the persistent secondary CTA (outline style instead of solid red), and add a solid red "Buy →" button linking to `/programmes/ai-for-non-technical-people#pricing`. On mobile, stack both.
+- Alternative: keep navbar as-is to avoid clutter — only update page-level CTAs. **Recommended: keep navbar simple, just swap Assessment to outline and add Buy.**
 
-**Migration**
-- Table `public.newsletter_subscribers` with RLS allowing public INSERT only (no SELECT/UPDATE/DELETE from anon).
+**5. PageHero component (`src/components/PageHero.tsx`)**
+- Already supports `ctaText`/`secondaryText`. No structural change needed — just pass new props from each page. Primary stays red, secondary stays outline. ✓
 
-**What I need from you to finish wiring**
-1. Click "Connect" when WordPress.com prompt appears.
-2. After connect, I'll fetch your sites and confirm which one to use (or you tell me the URL like `unlearning.ro` or `unlearning.wordpress.com`).
-3. On WordPress.com, ensure you have at least one published post + recommended categories matching your 8 topics (Funding intelligence, AI at work, Execution friction, Future of work, Academies & learning systems, Tools & frameworks, Podcast & insights, Hermes Agent). Posts without categories still show in the main feed.
+**6. CTASection component (`src/components/CTASection.tsx`)**
+- Extend to optionally accept a secondary CTA, so the bottom homepage band can show **Buy Now (primary) + Assessment (secondary)**.
 
-**What stays unchanged**
-- AI Literacy Playbook featured card (already works).
-- Page hero, footer, CTA section, design tokens.
-- Homepage and other pages.
+## CTA hierarchy rule going forward
+- **Primary (solid red)**: Buy Now / Pay & enrol
+- **Secondary (outline paper)**: Book free Assessment
+- **Tertiary (text link)**: See details / programmes
 
-After you approve, I'll execute in this order: enable Cloud → connect WordPress.com → create table + functions → rebuild frontend → test fetch end-to-end.
+## Files to edit
+- `src/components/CTASection.tsx` — add optional secondary CTA props
+- `src/components/Navbar.tsx` — add Buy button, demote Assessment to outline
+- `src/pages/Index.tsx` — hero CTAs swap, bottom CTA swap, ladder cards add Buy link
+- `src/pages/AIForNonTechnical.tsx` — hero CTAs, ensure `#pricing` anchor, mid-page CTA strip
+- `src/pages/Hermes.tsx` — hero CTAs, ensure `#pricing` anchor
+
+No backend changes. No new Stripe products. Pure UI/CTA reordering.
