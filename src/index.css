@@ -166,6 +166,21 @@
 
 @layer utilities {
 
+  /* Section grey variants — give the page rhythm with multiple grey tones */
+  .bg-section-darker {
+    background-color: hsl(220 9% 9%);
+    background-image:
+      radial-gradient(ellipse at 50% 0%, hsl(220 10% 14% / 0.6), transparent 60%),
+      linear-gradient(180deg, hsl(220 9% 10%) 0%, hsl(220 8% 8%) 100%);
+  }
+  .bg-section-graphite {
+    background-color: hsl(220 7% 18%);
+    background-image:
+      radial-gradient(ellipse at 30% 20%, hsl(220 10% 26% / 0.55), transparent 55%),
+      radial-gradient(ellipse at 80% 90%, hsl(220 12% 14% / 0.5), transparent 55%),
+      linear-gradient(180deg, hsl(220 8% 19%) 0%, hsl(220 8% 16%) 100%);
+  }
+
   /* Paper texture */
   .bg-paper-tex {
     background-color: hsl(var(--paper));
