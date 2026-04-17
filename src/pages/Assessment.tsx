@@ -126,28 +126,22 @@ const Assessment = () => {
             Select a time below. You will receive 3 short pre-call questions by email to keep the 30 minutes focused on your specific situation rather than gathering context.
           </p>
 
-          <div className="border-2 border-ink/15 bg-paper overflow-hidden">
-            <iframe
-              src={BOOKING_URL}
-              title="Book your free audit with Răzvan"
-              className="w-full"
-              style={{ height: "780px", border: "0" }}
-              loading="lazy"
-              allow="clipboard-write; microphone; camera"
-            />
-          </div>
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="border-2 border-ink/15 bg-paper p-10 md:p-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">Direct booking</p>
+            <p className="font-display text-2xl md:text-3xl text-ink leading-snug mb-8 max-w-xl mx-auto">
+              Click below to open the calendar and pick a 30-minute slot that works for you.
+            </p>
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
             >
-              Open booking in new tab →
+              Free audit · Open calendar →
             </a>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50 mt-6">
               meet.brevo.com/razvan-valceanu
-            </span>
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
