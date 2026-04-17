@@ -93,7 +93,7 @@
     --paper-dim: 40 20% 82%;
     --ink: 0 0% 6%;
     --mid: 40 8% 60%;
-    --red: 11 76% 44%;
+    --red: 11 85% 60%;              /* lifted for AA contrast on dark bg */
     --blue: 222 70% 32%;
     --off-white: 40 30% 94%;
     --orange: 11 76% 44%;           /* alias for compat */
