@@ -272,29 +272,24 @@ const AIForNonTechnical = () => {
       />
 
       <Section>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <Sidebar byline="The current challenge" read="6 min" filed="Program · AI Literacy" />
-          <div className="md:col-span-9">
-            <SectionHeading
-              kicker="The current challenge"
-              title={<>AI adoption without structure creates gaps in <em className="text-red">performance, compliance, and security.</em></>}
-              intro="Across business teams, AI adoption often starts before leadership has a clear model for how it should be used. Some employees rely on it daily, others avoid it. No standards. No visibility. No accountability. With AI regulation tightening across Romania and Europe, this is no longer just inefficiency, it is legal and operational risk."
-            />
+        <SectionHeading
+          kicker="The current challenge"
+          title={<>AI adoption without structure creates gaps in <em className="text-red">performance, compliance, and security.</em></>}
+          intro="Across business teams, AI adoption often starts before leadership has a clear model for how it should be used. Some employees rely on it daily, others avoid it. No standards. No visibility. No accountability. With AI regulation tightening across Romania and Europe, this is no longer just inefficiency, it is legal and operational risk."
+        />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
-              {challenges.map((c) => (
-                <article key={c.tag} className="bg-background p-6 md:p-8 border border-paper/10">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.tag}</p>
-                  <p className="text-paper/80 text-[15px] leading-relaxed">{c.body}</p>
-                </article>
-              ))}
-            </div>
-
-            <p className="text-paper/70 text-[15px] mt-8 leading-relaxed">
-              Teams lose time on research, preparation, reporting, and repetitive tasks that AI could handle. Managers know the shift is happening, but often lack a structured framework for guiding adoption, setting expectations, and measuring progress. <span className="text-red">The cost of unstructured AI adoption is not just productivity loss. It is legal, operational, and reputational risk.</span>
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
+          {challenges.map((c) => (
+            <article key={c.tag} className="bg-background p-6 md:p-8 border border-paper/10">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.tag}</p>
+              <p className="text-paper/80 text-[15px] leading-relaxed">{c.body}</p>
+            </article>
+          ))}
         </div>
+
+        <p className="text-paper/70 text-[15px] mt-8 leading-relaxed">
+          Teams lose time on research, preparation, reporting, and repetitive tasks that AI could handle. Managers know the shift is happening, but often lack a structured framework for guiding adoption, setting expectations, and measuring progress. <span className="text-red">The cost of unstructured AI adoption is not just productivity loss. It is legal, operational, and reputational risk.</span>
+        </p>
       </Section>
 
       <Section bordered={false}>
