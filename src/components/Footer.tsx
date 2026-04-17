@@ -71,14 +71,14 @@ const Footer = () => (
               type="email"
               name="EMAIL"
               required
-              placeholder="your@email.com"
+              placeholder="name@company.com"
               className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/65 font-mono text-sm focus:outline-none focus:border-red transition-colors"
             />
             <button
               type="submit"
               className="inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
             >
-              Subscribe →
+              Get the dispatch →
             </button>
           </div>
         </form>
