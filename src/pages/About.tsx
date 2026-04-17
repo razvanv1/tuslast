@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import { Kicker, NumberedStep, SectionHeading, Sidebar, TwoColumnGrid } from "@/components/Editorial";
+import razvanPhoto from "@/assets/razvan-valceanu.jpg";
 
 const About = () => {
   useEffect(() => { document.title = "About — The Unlearning School"; }, []);
@@ -99,8 +100,16 @@ const About = () => {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
+            <div className="relative max-w-[280px]">
+              <div className="overflow-hidden border-2 border-paper/20 bg-paper">
+                <img src={razvanPhoto} alt="Răzvan Vâlceanu" loading="lazy" width={600} height={800} className="w-full aspect-[3/4] object-cover object-top" />
+              </div>
+              <div className="absolute -bottom-3 -right-3 bg-red text-paper px-4 py-2 font-mono text-[10px] uppercase tracking-[0.25em]">
+                Founder
+              </div>
+            </div>
             <Kicker>— The founder</Kicker>
-            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95]">
+            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mt-2">
               Răzvan <em className="text-red">Vâlceanu.</em>
             </h2>
           </div>
@@ -108,6 +117,14 @@ const About = () => {
             <p><strong className="text-paper">Răzvan Vâlceanu</strong> is the founder and lead trainer at The Unlearning School. He brings 15 years of experience at the intersection of technology and organisational change.</p>
             <p>Former General Manager at <strong className="text-paper">Bitdefender</strong>, where he ran a technology business unit and led product and go-to-market teams. Former Entrepreneurship Director at <strong className="text-paper">Universitatea de Vest Timișoara</strong>, where he built programmes connecting academic institutions with the startup and corporate ecosystem.</p>
             <p>The Unlearning School was built on the observation, made repeatedly across both roles, that the limiting factor in organisational change is almost never the technology — <span className="text-red">it is the existing habit that the technology is supposed to replace.</span></p>
+            <a
+              href="https://www.linkedin.com/in/razvanvalceanu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 px-5 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-red hover:border-red transition-colors"
+            >
+              Răzvan on LinkedIn →
+            </a>
           </div>
         </div>
       </Section>
