@@ -305,7 +305,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_full" ? "Loading…" : "Pay & secure your spot →"}
               </button>
-              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</a>
+              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</Link>
             </div>
           </article>
         </div>
