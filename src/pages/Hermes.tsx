@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import { Kicker, SectionHeading } from "@/components/Editorial";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const stats = [
   { v: "40+", l: "built-in tools" },
@@ -52,7 +54,24 @@ const faqs = [
 ];
 
 const Hermes = () => {
+  const { toast } = useToast();
+  const [loadingKey, setLoadingKey] = useState<string | null>(null);
   useEffect(() => { document.title = "Hermes Agent, The Unlearning School"; }, []);
+
+  const handleCheckout = async (productKey: string) => {
+    setLoadingKey(productKey);
+    try {
+      const { data, error } = await supabase.functions.invoke("create-payment", { body: { product: productKey } });
+      if (error) throw error;
+      if (data?.url) window.open(data.url, "_blank");
+      else throw new Error("No checkout URL returned");
+    } catch (err: any) {
+      toast({ title: "Checkout error", description: err.message ?? "Could not start checkout", variant: "destructive" });
+    } finally {
+      setLoadingKey(null);
+    }
+  };
+
   return (
     <>
       <SEO
