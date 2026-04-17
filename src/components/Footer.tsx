@@ -8,10 +8,10 @@ const programmes = [
   { label: "Funding", to: "/funding" },
 ];
 
-const masthead = [
+const masthead: Array<{ label: string; to: string; external?: boolean }> = [
   { label: "About", to: "/about" },
   { label: "Resources", to: "/resources" },
-  { label: "Contact", to: "/contact" },
+  { label: "Free audit", to: "https://meet.brevo.com/razvan-valceanu", external: true },
 ];
 
 const legal = [
@@ -107,7 +107,13 @@ const Footer = () => (
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Company</p>
           <ul className="space-y-2 text-paper/80 text-sm">
             {masthead.map((l) => (
-              <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
+              <li key={l.to}>
+                {l.external ? (
+                  <a href={l.to} target="_blank" rel="noopener noreferrer" className="hover:text-red transition-colors">{l.label}</a>
+                ) : (
+                  <Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link>
+                )}
+              </li>
             ))}
           </ul>
         </div>
