@@ -100,8 +100,9 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
         zIndex: total - index,
         cursor: isTop ? "grab" : "default",
         touchAction: isTop ? "none" : "auto",
-        willChange: "transform",
-        contain: "layout paint",
+        willChange: isTop ? "transform" : "auto",
+        contain: "layout paint size style",
+        backfaceVisibility: "hidden",
       }}
       whileDrag={{ cursor: "grabbing", scale: 1.04 }}
       initial={isTop ? { scale, y: stackOffset, opacity: 1 } : { scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
@@ -139,10 +140,13 @@ const ShuffleDeck = () => {
 
   return (
     <div className="relative w-full flex flex-col items-center mx-auto">
-      <div className="relative mx-auto w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] h-[460px] sm:h-[540px] md:h-[640px] lg:h-[700px] max-w-full">
+      <div
+        className="relative mx-auto w-[280px] sm:w-[340px] md:w-[400px] lg:w-[440px] h-[460px] sm:h-[540px] md:h-[640px] lg:h-[700px] max-w-full"
+        style={{ contain: "layout paint size style" }}
+      >
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
-          if (position > 3) return null;
+          if (position > 2) return null;
           return (
             <DeckCard
               key={cardIdx}
@@ -151,7 +155,7 @@ const ShuffleDeck = () => {
               caption={card.caption}
               href={card.href}
               index={position}
-              total={4}
+              total={3}
               onSwipe={cycle}
             />
           );
