@@ -177,11 +177,11 @@ const tools = [
   "Google AI Studio",
   "ChatGPT",
   "Claude",
-  "GitHub Copilot",
   "Google Gemini",
   "Hermes Agent",
   "Lovable",
   "Manus",
+  "Microsoft Copilot",
   "NotebookLM",
   "Perplexity",
 ];
