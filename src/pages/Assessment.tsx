@@ -38,7 +38,7 @@ const Assessment = () => {
         title="Free audit. 30 minutes with Răzvan."
         subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
         ctaText="Free audit →"
-        ctaTo={BOOKING_URL}
+        ctaTo="#book"
         note="No pitch · No commitment · No pricing document"
       />
 
