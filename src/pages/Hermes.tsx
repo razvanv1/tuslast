@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import CurriculumAccordion, { type CurriculumSession } from "@/components/CurriculumAccordion";
+import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
