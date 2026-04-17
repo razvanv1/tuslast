@@ -8,7 +8,7 @@ import { Kicker, SectionHeading, Sidebar, TwoColumnGrid } from "@/components/Edi
 const programmes = [
   {
     num: "I",
-    tag: "AI for Non-Techies",
+    tag: "AI for Non-Technical People",
     title: "Role-adapted workshops for any team",
     desc: "Half-day or full-day on-site sessions. Participants use AI tools on their own real tasks — not demonstration scenarios. Adapted for operations, HR, marketing, finance, and legal. No technical prerequisites.",
     output: "3–5 AI-assisted workflows per participant, ready to run the next morning.",
