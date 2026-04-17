@@ -31,9 +31,7 @@ const PaymentCanceled = () => {
               Back to programme →
             </Link>
             <a
-              href="https://meet.brevo.com/razvan-valceanu"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/assessment"
               className="inline-flex items-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
             >
               Free audit instead

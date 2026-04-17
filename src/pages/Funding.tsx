@@ -53,7 +53,7 @@ const Funding = () => {
         title="Your AI program might already be funded."
         subtitle="Vendor MDF programs, co-sell budgets, and EU digital grants exist specifically to fund this kind of work. Most companies qualify for at least one. Most have never claimed it."
         ctaText="Free audit →"
-        ctaTo="https://meet.brevo.com/razvan-valceanu"
+        ctaTo="/assessment"
         secondaryText="See all programmes"
         secondaryTo="/programmes"
         note="We handle the structuring · You run the program · You get the cost back"
@@ -144,7 +144,7 @@ const Funding = () => {
         title="Check what you qualify for."
         subtitle="A 30-minute call to map your vendor relationships and confirm which instruments fit. We come back with a written shortlist within 5 business days. No commitment until you see the numbers."
         ctaText="Free audit →"
-        ctaTo="https://meet.brevo.com/razvan-valceanu"
+        ctaTo="/assessment"
         note="Free · No commitment · Written shortlist within 5 business days"
       />
     </>

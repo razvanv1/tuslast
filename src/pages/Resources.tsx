@@ -65,7 +65,7 @@ const Resources = () => {
         ctaText="Join The Unlearning Pill →"
         ctaTo="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
         secondaryText="Free audit"
-        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        secondaryTo="/assessment"
       />
 
       {/* FEATURED FREE RESOURCE */}
@@ -213,7 +213,7 @@ const Resources = () => {
         title="Start with the free audit."
         subtitle="30 minutes. A structured conversation about where adoption is stalling. Written 1-page output within 24 hours."
         ctaText="Free audit →"
-        ctaTo="https://meet.brevo.com/razvan-valceanu"
+        ctaTo="/assessment"
         note="Free · hello@unlearning.ro"
       />
     </>

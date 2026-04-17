@@ -254,7 +254,7 @@ const AIForNonTechnical = () => {
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
         secondaryText="Free audit"
-        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        secondaryTo="/assessment"
         note="Pay & enrol your cohort · or book a free 30-min audit with Răzvan"
       />
 
@@ -492,9 +492,7 @@ const AIForNonTechnical = () => {
                       {loadingKey === t.productKey ? "Loading…" : "Pay & enrol →"}
                     </button>
                     <a
-                      href="https://meet.brevo.com/razvan-valceanu"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/assessment"
                       className={`block text-center font-mono text-[10px] uppercase tracking-[0.2em] hover:underline ${t.featured ? "text-paper/90" : "text-paper/60"}`}
                     >
                       Or book the free audit first
@@ -502,9 +500,7 @@ const AIForNonTechnical = () => {
                   </div>
                 ) : (
                   <a
-                    href="https://meet.brevo.com/razvan-valceanu"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/assessment"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
                     Free audit →
@@ -637,7 +633,7 @@ const AIForNonTechnical = () => {
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
         secondaryText="Free audit"
-        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        secondaryTo="/assessment"
         note="Modular delivery · Built on your existing tools · Certificate of completion"
       />
     </>
