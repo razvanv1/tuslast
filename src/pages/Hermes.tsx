@@ -382,19 +382,20 @@ const Hermes = () => {
       </Section>
 
       {/* FAQ */}
-      <Section variant="paper">
-        <SectionHeading
-          kicker="Before you apply"
-          title={<>Common <em className="text-red">questions.</em></>}
-        />
-        <div className="grid md:grid-cols-2 gap-px bg-ink/10">
-          {faqs.map((f) => (
-            <article key={f.q} className="bg-paper p-8 border-2 border-ink/10">
-              <h3 className="font-display text-xl text-ink mb-3">{f.q}</h3>
-              <p className="text-ink/75 text-sm leading-relaxed">{f.a}</p>
-            </article>
-          ))}
-        </div>
+      <Section variant="darker">
+        <div id="faq" className="scroll-mt-20" />
+        <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-red mb-4">
+          FAQ · Frequently asked questions
+        </p>
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-6 max-w-4xl">
+          Everything you'd ask <em className="text-red">before enrolling.</em>
+        </h2>
+        <p className="text-paper/70 text-base md:text-lg max-w-3xl">
+          {faqs.length} questions covering pricing, guarantees, technical setup, ownership, and fit.
+          Click any question to expand the answer.
+        </p>
+
+        <FAQAccordion items={faqs} grouped />
       </Section>
 
       <CTASection
