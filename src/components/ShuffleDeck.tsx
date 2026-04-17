@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import cardWorkers from "@/assets/card-workers.png";
 import cardEvents from "@/assets/card-events.png";
