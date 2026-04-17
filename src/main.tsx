@@ -35,17 +35,14 @@ createRoot(document.getElementById("root")!).render(
   </HelmetProvider>
 );
 
-// Defer-load JetBrains Mono (used only for small uppercase labels) via injected
-// <link> rather than an ES import. An ES `import` of a CSS file gets bundled by
-// Vite into the render-blocking critical CSS chain even when called inside
-// requestIdleCallback. Injecting a <link> at idle keeps it fully off the critical path.
+// Defer-load JetBrains Mono (used only for small uppercase labels). Inject the
+// @font-face rule directly with the woff2 URL to skip the intermediate CSS file
+// that would otherwise extend the critical request chain (document → JS → CSS → woff2).
 const loadDeferredFonts = () => {
-  // Resolve the hashed URL via Vite's asset pipeline without making it render-blocking.
-  import("@fontsource/jetbrains-mono/400.css?url").then(({ default: href }) => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = href;
-    document.head.appendChild(link);
+  import("@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2?url").then(({ default: href }) => {
+    const style = document.createElement("style");
+    style.textContent = `@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('${href}') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}`;
+    document.head.appendChild(style);
   });
 };
 
