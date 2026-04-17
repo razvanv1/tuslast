@@ -493,8 +493,6 @@ const AIForNonTechnical = () => {
                     </button>
                     <a
                       href="/assessment"
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className={`block text-center font-mono text-[10px] uppercase tracking-[0.2em] hover:underline ${t.featured ? "text-paper/90" : "text-paper/60"}`}
                     >
                       Or book the free audit first
@@ -503,8 +501,6 @@ const AIForNonTechnical = () => {
                 ) : (
                   <a
                     href="/assessment"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
                     Free audit →
