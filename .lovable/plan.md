@@ -1,40 +1,56 @@
 
 
-## Problema
+## Update: Bauhaus shapes = vivid Kandinsky popsicle palette
 
-Pe `/assessment`:
-1. **Butonul "Free audit" din navbar** = `<Link to="/assessment">` → click pe pagina curentă = React Router nu re-navighează, butonul pare mort.
-2. **Butonul "Free audit" din hero-ul paginii Assessment** = `ctaTo={BOOKING_URL}` = `/assessment` → același lucru, navigare către pagina curentă = nimic vizibil se întâmplă.
+User vrea ca toate formele geometrice Bauhaus să fie în culori vii, saturate, "popsicle shiny" — stil Kandinsky autentic, nu doar red + blue din paleta existentă.
 
-Tehnic linkurile sunt corecte, dar UX-ul este rupt: pe pagina Free audit, butoanele Free audit nu fac nimic.
+## Paletă extinsă (doar pentru forme decorative)
 
-## Soluția
+Adaug în `index.css` un set de tokens noi `--bau-*` (folosite EXCLUSIV de SVG-urile Bauhaus, nu intră în UI/text/butoane — păstrăm contrast și brand intact):
 
-Două schimbări țintite:
+- `--bau-red`: `0 85% 55%` (popsicle red)
+- `--bau-yellow`: `48 100% 58%` (Kandinsky yellow)
+- `--bau-blue`: `220 90% 52%` (vivid cobalt)
+- `--bau-cyan`: `190 85% 55%` (ice pop cyan)
+- `--bau-pink`: `330 85% 65%` (hot pink)
+- `--bau-orange`: `22 95% 58%` (popsicle orange)
+- `--bau-green`: `150 70% 48%` (mint pop)
+- `--bau-purple`: `270 70% 60%` (Itten violet)
+- `--bau-black`: `0 0% 8%` (Bauhaus pure black accent)
 
-### 1. `src/components/Navbar.tsx`
-Când utilizatorul este deja pe `/assessment` și dă click pe butonul "Free audit" din navbar → fă smooth scroll către secțiunea `#book` (zona cu butonul "Open calendar"), în loc de `<Link>`.
+Tailwind: extind `colors.bau.{red,yellow,blue,cyan,pink,orange,green,purple,black}` în `tailwind.config.ts` ca să le pot folosi `fill-bau-yellow text-bau-pink` etc.
 
-Logică:
-- Dacă `location.pathname !== "/assessment"` → `<Link to="/assessment">` (comportament actual).
-- Dacă `location.pathname === "/assessment"` → `<button onClick={() => document.getElementById("book")?.scrollIntoView({ behavior: "smooth" })}>`.
-- Același tratament și pentru meniul mobil.
+## Aplicare în `BauhausShapes.tsx`
 
-### 2. `src/pages/Assessment.tsx` (hero CTA)
-În hero-ul paginii Assessment, butonul "Free audit →" actual duce la `/assessment` (adică nicăieri). Îl schimb să facă scroll către `#book`.
+Fiecare primitivă primește o paletă rotativă în loc de mono `currentColor`:
+- `<CircleStack/>` — 3 cercuri: yellow + pink + cobalt
+- `<TriangleGrid/>` — triunghiuri alternând red/yellow/blue (Itten classic)
+- `<HalfMoon/>` — orange sau cyan
+- `<DotGrid/>` — puncte multicolore aleatorii (seeded)
+- `<DiagonalLines/>` — linii alternând purple/cyan/yellow
+- `<ArcSweep/>` — arc gros yellow sau pink
+- `<SquareStack/>` — Albers: blue + orange + pink suprapuse
+- `<CrossHair/>` — cruce red + cerc yellow
+- `<WaveLines/>` — gradient cyan→pink
+- `<CompositionA/B/C>` — compoziții complete Kandinsky-style cu 4-5 culori per compoziție
 
-Cea mai curată cale: trec `ctaTo="#book"` în `PageHero` și actualizez `PageHero.tsx` să trateze ancorele care încep cu `#` ca smooth scroll către elementul respectiv (în loc de `<Link to="#book">` care se comportă ciudat).
+Toate formele primesc:
+- `opacity` ridicat (60-90% în loc de 10-20%) ca să se vadă culorile vii
+- `mix-blend-mode: screen` pe dark sections (culorile pop pe gri)
+- `mix-blend-mode: multiply` pe paper sections
+- Filtru SVG `<feGaussianBlur>` foarte subtil + `drop-shadow` pentru efectul "shiny popsicle" (glow ușor în jurul fiecărei forme)
 
-### 3. `src/components/PageHero.tsx`
-Adaug suport pentru ancore: dacă `to` începe cu `#`, randez un `<button>` care face `scrollIntoView` pe elementul cu acel ID. Restul logicii (extern vs intern) rămâne neschimbată.
+## Fișiere atinse
 
-## Fișiere modificate
-- `src/components/Navbar.tsx` — buton Free audit context-aware (Link sau scroll).
-- `src/components/PageHero.tsx` — suport pentru CTA cu ancoră `#book`.
-- `src/pages/Assessment.tsx` — `ctaTo="#book"` în loc de `BOOKING_URL`.
+**Edit**: 
+- `src/index.css` — adaug 9 tokens `--bau-*` în `:root`
+- `tailwind.config.ts` — extind `colors.bau.*`
+- `src/components/bauhaus/BauhausShapes.tsx` — refactor toate primitivele cu paleta vie + filtru shiny
+- `src/components/bauhaus/BauhausBackdrop.tsx` — crește opacity default de la 10-20% la 60-80%
+
+**Memorie**: update `mem://design/bauhaus-system` cu noua paletă popsicle.
 
 ## Rezultat
-- Pe orice altă pagină: "Free audit" navighează la `/assessment` (neschimbat).
-- Pe `/assessment`: "Free audit" (din navbar ȘI din hero) face scroll smooth la secțiunea cu butonul "Open calendar" → user vede imediat unde să apese pentru Brevo.
-- "Open calendar" rămâne singurul buton care deschide link-ul Brevo extern (neschimbat).
+
+Site-ul capătă explozii de culoare Kandinsky autentice — galben, cyan, pink, orange, violet — pe fundalul gri închis, cu un glow subtil "popsicle shiny". Brandul (red `#c03a1e` + blue + paper) rămâne neschimbat pentru text, butoane, headings; doar formele decorative devin vii.
 
