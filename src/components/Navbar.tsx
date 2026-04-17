@@ -3,10 +3,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Operations", to: "/for-operations" },
-  { label: "HR & L&D", to: "/for-hr" },
-  { label: "Programmes", to: "/programmes" },
-  { label: "Events", to: "/events" },
+  { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
+  { label: "Events & Keynotes", to: "/events" },
   { label: "Funding", to: "/funding" },
   { label: "About", to: "/about" },
 ];

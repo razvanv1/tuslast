@@ -9,9 +9,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import Index from "./pages/Index";
-import ForOperations from "./pages/ForOperations";
-import ForHR from "./pages/ForHR";
-import Programmes from "./pages/Programmes";
+
 import AIForNonTechnical from "./pages/AIForNonTechnical";
 import Events from "./pages/Events";
 import Funding from "./pages/Funding";
@@ -29,10 +27,10 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageTransition><Index /></PageTransition>} />
         <Route path="/index" element={<Navigate to="/" replace />} />
         <Route path="/index.html" element={<Navigate to="/" replace />} />
-        <Route path="/for-operations" element={<PageTransition><ForOperations /></PageTransition>} />
-        <Route path="/for-hr" element={<PageTransition><ForHR /></PageTransition>} />
-        <Route path="/for-it" element={<Navigate to="/programmes" replace />} />
-        <Route path="/programmes" element={<PageTransition><Programmes /></PageTransition>} />
+        <Route path="/for-operations" element={<Navigate to="/" replace />} />
+        <Route path="/for-hr" element={<Navigate to="/" replace />} />
+        <Route path="/for-it" element={<Navigate to="/" replace />} />
+        <Route path="/programmes" element={<Navigate to="/programmes/ai-for-non-technical-people" replace />} />
         <Route path="/programmes/ai-for-non-technical-people" element={<PageTransition><AIForNonTechnical /></PageTransition>} />
         <Route path="/events" element={<PageTransition><Events /></PageTransition>} />
         <Route path="/funding" element={<PageTransition><Funding /></PageTransition>} />

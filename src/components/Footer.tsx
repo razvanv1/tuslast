@@ -15,11 +15,9 @@ const Footer = () => (
         </div>
 
         <div className="md:col-span-3 md:col-start-7">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Sections</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/40 mb-4">Programmes</p>
           <ul className="space-y-2 text-paper/80 text-sm">
-            <li><Link to="/for-operations" className="hover:text-red transition-colors">For Operations</Link></li>
-            <li><Link to="/for-hr" className="hover:text-red transition-colors">For HR &amp; L&amp;D</Link></li>
-            <li><Link to="/programmes" className="hover:text-red transition-colors">Programmes</Link></li>
+            <li><Link to="/programmes/ai-for-non-technical-people" className="hover:text-red transition-colors">AI for Non-Technical People</Link></li>
             <li><Link to="/events" className="hover:text-red transition-colors">Events &amp; Keynotes</Link></li>
             <li><Link to="/funding" className="hover:text-red transition-colors">Funding</Link></li>
           </ul>

@@ -27,29 +27,22 @@ const audience = [
 
 const ladder = [
   {
-    tag: "Step 1 · Free",
-    title: "AI Adoption Gap Assessment",
-    body: "One working session. We map what your company actually does with the AI tools it already pays for, and where the gaps create real risk. Written report in 5 business days.",
-    href: "/assessment",
-    cta: "Book the Assessment",
-    highlight: true,
-  },
-  {
-    tag: "Step 2 · Core",
+    tag: "Program 1 · Core",
     title: "AI for Non-Technical People",
     body: "Structured adoption program for non-technical business teams. Modular: Discovery (1×2h), Short Sprint (2–3 sessions), or Full Program (4+ sessions). Built on the AI tools you already pay for.",
     href: "/programmes/ai-for-non-technical-people",
     cta: "See the program",
+    highlight: true,
   },
   {
-    tag: "Step 3 · Accelerator",
+    tag: "Program 2 · Accelerator",
     title: "Events & Keynotes",
     body: "Workshops, hackathons, and keynotes for fast proof and internal momentum. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples.",
     href: "/events",
     cta: "See event formats",
   },
   {
-    tag: "Step 4 · Deal closer",
+    tag: "Program 3 · Deal closer",
     title: "Funding Structuring",
     body: "Vendor MDF, AWS partner co-sell, or EU digital grants. We structure the program to qualify, draft the application, and align delivery so reimbursement actually happens.",
     href: "/funding",
@@ -185,19 +178,19 @@ const Index = () => {
         </div>
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
-          <Link to="/for-operations" className="text-ink hover:text-red transition-colors">→ I run operations</Link>
-          <Link to="/for-hr" className="text-ink hover:text-red transition-colors">→ I lead HR / L&D</Link>
+          <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
+          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free Assessment</Link>
         </div>
       </Section>
 
-      {/* THE FOUR STEPS */}
+      {/* THE PROGRAMS */}
       <Section>
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— The catalogue</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
-          Four programmes, <em className="text-red">designed to be used in order.</em>
+          Three programmes, <em className="text-red">scoped from one free Assessment.</em>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
           {ladder.map((l) => (
             <article
               key={l.title}
