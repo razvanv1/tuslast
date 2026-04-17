@@ -281,7 +281,7 @@ const AIForNonTechnical = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
           {challenges.map((c) => (
             <article key={c.tag} className="bg-background p-6 md:p-8 border border-paper/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.tag}</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{c.tag}</span></p>
               <p className="text-paper/80 text-[15px] leading-relaxed">{c.body}</p>
             </article>
           ))}
@@ -299,14 +299,14 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Who this program is for</p>
+        <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">Who this program is for</span></p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Any team that makes decisions <em>and gets work done.</em>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10">
           {audience.map((a) => (
             <article key={a.tag} className="bg-paper p-8 md:p-10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-4">{a.tag}</p>
+              <p className="mb-4"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{a.tag}</span></p>
               <ul className="space-y-2 text-ink/80 text-[15px]">
                 {a.items.map((it) => (
                   <li key={it} className="flex gap-3 border-b border-ink/10 pb-2 last:border-0">
@@ -332,7 +332,7 @@ const AIForNonTechnical = () => {
             { name: "Full Program", meta: "4+ sessions, modular", body: "Covers adoption infrastructure, workflow integration, internal champions, and a 30-day action plan." },
           ].map((e) => (
             <article key={e.name} className="bg-background p-8 md:p-10 border border-paper/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">{e.meta}</p>
+              <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{e.meta}</span></p>
               <h3 className="font-display text-2xl text-paper mb-3">{e.name}</h3>
               <p className="text-paper/75 text-[15px] leading-relaxed">{e.body}</p>
             </article>
@@ -400,7 +400,7 @@ const AIForNonTechnical = () => {
       {/* PRICING */}
       <Section>
         <div id="pricing" className="scroll-mt-20">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Investment</p>
+          <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">Investment</span></p>
           <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-4 max-w-3xl">
             Simple pricing. <em className="text-red">Per cohort.</em>
           </h2>
@@ -474,7 +474,7 @@ const AIForNonTechnical = () => {
           </div>
 
           <div className="mt-10 border-l-4 border-red pl-5 max-w-3xl">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Confidence clause</p>
+            <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Confidence clause</span></p>
             <p className="text-paper/85 text-[15px] leading-relaxed">
               If, after Session 1, your team concludes the program is not the right fit, the remaining sessions can be stopped and not invoiced.
             </p>
@@ -495,7 +495,7 @@ const AIForNonTechnical = () => {
             { h: "Customisation", body: "Everything is tailored. Prompt kit, exercises, and workflows are adapted to your actual context, and built on the AI tools and licenses you already use. Initial meeting used to tailor use cases and expected outcomes." },
           ].map((c) => (
             <article key={c.h} className="bg-paper p-8">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{c.h}</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">{c.h}</span></p>
               <p className="text-ink/80 text-[15px] leading-relaxed">{c.body}</p>
             </article>
           ))}
@@ -514,7 +514,7 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> How success is measured</p>
+        <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">How success is measured</span></p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-10 max-w-3xl">
           Evaluated by operational adoption. <em className="text-red">Not attendance.</em>
         </h2>
@@ -543,7 +543,7 @@ const AIForNonTechnical = () => {
             <p>Worked across corporate, academic, public-sector, and entrepreneurial environments, designing and delivering learning experiences that translate into execution, not just awareness.</p>
             <TwoColumnGrid>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Current focus</p>
+                <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Current focus</span></p>
                 <ul className="space-y-1 text-paper/85">
                   <li>→ AI adoption for non-technical teams</li>
                   <li>→ Practical training for cross-functional business teams</li>
@@ -552,7 +552,7 @@ const AIForNonTechnical = () => {
                 </ul>
               </div>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Credentials</p>
+                <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Credentials</span></p>
                 <ul className="space-y-1 text-paper/85">
                   <li>→ Lovable Ambassador</li>
                   <li>→ Google Generative AI for Leaders (certification in progress)</li>
@@ -562,7 +562,7 @@ const AIForNonTechnical = () => {
               </div>
             </TwoColumnGrid>
             <div className="pt-4 border-t border-paper/15">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">Tools used every day</p>
+              <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Tools used every day</span></p>
               <div className="flex flex-wrap gap-2">
                 {tools.map((t) => (
                   <span key={t} className="font-mono text-[11px] uppercase tracking-[0.15em] text-paper/80 border border-paper/25 px-2 py-1">{t}</span>
