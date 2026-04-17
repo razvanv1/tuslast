@@ -6,8 +6,10 @@ const Blockquote = ({ children, attribution }: { children: React.ReactNode; attr
       <span className="text-red text-6xl leading-none ml-1 align-top">"</span>
     </blockquote>
     {attribution && (
-      <figcaption className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 mt-6 border-t border-paper/15 pt-4">
-       , {attribution}
+      <figcaption className="mt-6 border-t border-paper/15 pt-4">
+        <span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">
+          {attribution}
+        </span>
       </figcaption>
     )}
   </figure>
