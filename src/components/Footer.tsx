@@ -143,6 +143,10 @@ const Footer = () => (
         <img
           src={logo}
           alt="The Unlearning School"
+          width={406}
+          height={203}
+          loading="lazy"
+          decoding="async"
           className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none"
           aria-hidden="true"
         />
