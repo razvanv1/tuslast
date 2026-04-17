@@ -128,7 +128,7 @@ const Events = () => {
           </div>
           <div className="md:col-span-7">
             <p className="text-ink/80 text-[16px] leading-relaxed mb-5">
-              A 20-minute call is enough to confirm the format, the audience, and the right scope. From there we send a specific proposal within 48 hours.
+              A 30-minute call is enough to confirm the format, the audience, and the right scope. From there we send a specific proposal within 48 hours.
             </p>
             <p className="font-display italic text-lg text-ink/70">
               No catalogue pricing. Every event is built around the room it is delivered in.
