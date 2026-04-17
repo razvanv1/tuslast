@@ -87,7 +87,7 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
       initial={{ scale: scale * 0.92, y: stackOffset + 20, opacity: 0 }}
       animate={{ scale, y: stackOffset, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="absolute top-0 left-1/2 -translate-x-1/2 bg-paper p-3 pb-20 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
+      className="absolute top-0 inset-x-0 mx-auto bg-paper p-3 pb-20 card-shadow select-none w-[220px] sm:w-[260px] md:w-[300px] lg:w-[320px] max-w-full"
     >
       <div className="aspect-[3/4] overflow-hidden bg-paper-dim pointer-events-none">
         <img
