@@ -21,7 +21,7 @@
     --popover: 0 0% 6%;
     --popover-foreground: 40 30% 94%;
 
-    --primary: 0 84% 62%;           /* wired red (AA on dark) */
+    --primary: 11 76% 44%;          /* brand red #c03a1e */
     --primary-foreground: 40 30% 94%;
 
     --secondary: 222 70% 32%;       /* wired blue */
@@ -30,7 +30,7 @@
     --muted: 0 0% 12%;
     --muted-foreground: 40 10% 70%;
 
-    --accent: 0 78% 47%;
+    --accent: 11 76% 44%;
     --accent-foreground: 40 30% 94%;
 
     --destructive: 0 84% 60%;
@@ -38,7 +38,7 @@
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 0 78% 47%;
+    --ring: 11 76% 44%;
 
     --radius: 0.25rem;
 
@@ -47,20 +47,20 @@
     --paper-dim: 40 20% 82%;
     --ink: 0 0% 6%;
     --mid: 40 8% 60%;
-    --red: 0 84% 62%;
+    --red: 11 76% 44%;
     --blue: 222 70% 32%;
     --off-white: 40 30% 94%;
-    --orange: 0 84% 62%;            /* alias for compat */
+    --orange: 11 76% 44%;           /* alias for compat */
     --dark: 0 0% 6%;
 
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 40 30% 94%;
-    --sidebar-primary: 0 78% 47%;
+    --sidebar-primary: 11 76% 44%;
     --sidebar-primary-foreground: 40 30% 94%;
     --sidebar-accent: 0 0% 12%;
     --sidebar-accent-foreground: 40 30% 94%;
     --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 0 78% 47%;
+    --sidebar-ring: 11 76% 44%;
   }
 }
 
