@@ -8,11 +8,12 @@ interface TarotCardProps {
   rotate?: number;
   className?: string;
   delay?: number;
+  priority?: boolean;
 }
 
-const TarotCard = ({ image, label, caption, rotate = 0, className, delay = 0 }: TarotCardProps) => (
+const TarotCard = ({ image, label, caption, rotate = 0, className, delay = 0, priority = false }: TarotCardProps) => (
   <motion.figure
-    initial={{ opacity: 0, y: 40, rotate: rotate - 10 }}
+    initial={priority ? false : { opacity: 0, y: 40, rotate: rotate - 10 }}
     animate={{ opacity: 1, y: 0, rotate }}
     transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
     whileHover={{ rotate: 0, y: -12, scale: 1.04, zIndex: 50, transition: { duration: 0.4 } }}
@@ -27,7 +28,9 @@ const TarotCard = ({ image, label, caption, rotate = 0, className, delay = 0 }: 
       <img
         src={image}
         alt={label}
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        {...(priority ? { fetchPriority: "high" as const } : {})}
+        decoding="async"
         width={512}
         height={704}
         className="w-full h-full object-cover"
