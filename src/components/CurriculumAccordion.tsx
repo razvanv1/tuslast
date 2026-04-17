@@ -185,15 +185,17 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                     )}
 
                     {/* Outcome */}
-                    <div className="flex gap-4 items-start border-l-2 border-red bg-red/5 px-5 py-4 rounded-r-md">
-                      <CheckCircle2
-                        size={18}
-                        className="text-red flex-shrink-0 mt-0.5"
-                      />
-                      <p className="font-display italic text-[15px] md:text-base text-paper/90 leading-snug">
-                        {s.outcome}
-                      </p>
-                    </div>
+                    {s.outcome && (
+                      <div className="flex gap-4 items-start border-l-2 border-red bg-red/5 px-5 py-4 rounded-r-md">
+                        <CheckCircle2
+                          size={18}
+                          className="text-red flex-shrink-0 mt-0.5"
+                        />
+                        <p className="font-display italic text-[15px] md:text-base text-paper/90 leading-snug">
+                          {s.outcome}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
