@@ -146,8 +146,13 @@
   i:not(.keep-italic) {
     font-style: normal;
   }
-  /* Pill buttons: any link/button styled as a CTA gets fully rounded ends */
-  a, button {
+  /* Pill buttons: only elements that look like CTAs (have inline-flex + bg/border)
+     get fully rounded ends. Plain text links are untouched. */
+  a.inline-flex, button.inline-flex,
+  a[class*="bg-red"], a[class*="bg-ink"], a[class*="bg-paper"],
+  button[class*="bg-red"], button[class*="bg-ink"], button[class*="bg-paper"],
+  a[class*="border-paper"], button[class*="border-paper"],
+  a[class*="border-ink"], button[class*="border-ink"] {
     border-radius: 9999px;
   }
 }
