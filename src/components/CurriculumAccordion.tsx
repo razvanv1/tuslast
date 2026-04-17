@@ -4,11 +4,13 @@ import { ChevronDown, BookOpen, Wrench, Target, CheckCircle2 } from "lucide-reac
 export interface CurriculumSession {
   num: string;
   title: string;
-  body: string;
+  body?: string;
   topics: string[];
-  practice: { h: string; body: string }[];
-  useCases: string[];
-  outcome: string;
+  practice?: { h: string; body: string }[];
+  useCases?: string[];
+  outcome?: string;
+  /** Optional override for the small label above the title (e.g. "Week 01 · Build sprint"). */
+  kicker?: string;
 }
 
 interface CurriculumAccordionProps {
@@ -88,7 +90,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                 </span>
                 <div className="flex-1 min-w-0">
                   <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red/80 mb-1">
-                    Module {s.num} · Live session
+                    {s.kicker ?? `Module ${s.num} · Live session`}
                   </p>
                   <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-paper leading-tight">
                     {s.title}
@@ -110,17 +112,19 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
               >
                 <div className="overflow-hidden">
                   <div className="px-6 md:px-8 pb-8 md:pb-10 pt-2">
-                    <p className="text-paper/80 text-[15px] md:text-base leading-relaxed mb-8 max-w-3xl">
-                      {s.body}
-                    </p>
+                    {s.body && (
+                      <p className="text-paper/80 text-[15px] md:text-base leading-relaxed mb-8 max-w-3xl">
+                        {s.body}
+                      </p>
+                    )}
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+                    <div className={`grid grid-cols-1 ${s.practice && s.practice.length > 0 ? "md:grid-cols-2" : ""} gap-5 mb-6`}>
                       {/* Topics */}
                       <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <BookOpen size={14} className="text-red" />
                           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            Topics covered
+                            What's covered
                           </p>
                         </div>
                         <ul className="space-y-2">
@@ -137,27 +141,29 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                       </div>
 
                       {/* Practice */}
-                      <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
-                        <div className="flex items-center gap-2 mb-4">
-                          <Wrench size={14} className="text-red" />
-                          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            Hands-on practice
-                          </p>
+                      {s.practice && s.practice.length > 0 && (
+                        <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6">
+                          <div className="flex items-center gap-2 mb-4">
+                            <Wrench size={14} className="text-red" />
+                            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
+                              Hands-on practice
+                            </p>
+                          </div>
+                          <ul className="space-y-3">
+                            {s.practice.map((p) => (
+                              <li key={p.h} className="text-paper/85 text-[14px] leading-relaxed">
+                                <span className="font-semibold text-paper block mb-0.5">
+                                  {p.h}
+                                </span>
+                                <span className="text-paper/65">{p.body}</span>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
-                        <ul className="space-y-3">
-                          {s.practice.map((p) => (
-                            <li key={p.h} className="text-paper/85 text-[14px] leading-relaxed">
-                              <span className="font-semibold text-paper block mb-0.5">
-                                {p.h}
-                              </span>
-                              <span className="text-paper/65">{p.body}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      )}
                     </div>
 
-                    {s.useCases.length > 0 && (
+                    {s.useCases && s.useCases.length > 0 && (
                       <div className="bg-background/60 backdrop-blur-sm border border-paper/10 rounded-md p-5 md:p-6 mb-6">
                         <div className="flex items-center gap-2 mb-4">
                           <Target size={14} className="text-red" />
@@ -179,15 +185,17 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                     )}
 
                     {/* Outcome */}
-                    <div className="flex gap-4 items-start border-l-2 border-red bg-red/5 px-5 py-4 rounded-r-md">
-                      <CheckCircle2
-                        size={18}
-                        className="text-red flex-shrink-0 mt-0.5"
-                      />
-                      <p className="font-display italic text-[15px] md:text-base text-paper/90 leading-snug">
-                        {s.outcome}
-                      </p>
-                    </div>
+                    {s.outcome && (
+                      <div className="flex gap-4 items-start border-l-2 border-red bg-red/5 px-5 py-4 rounded-r-md">
+                        <CheckCircle2
+                          size={18}
+                          className="text-red flex-shrink-0 mt-0.5"
+                        />
+                        <p className="font-display italic text-[15px] md:text-base text-paper/90 leading-snug">
+                          {s.outcome}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

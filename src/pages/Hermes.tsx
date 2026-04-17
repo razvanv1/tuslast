@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import CurriculumAccordion, { type CurriculumSession } from "@/components/CurriculumAccordion";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -40,11 +41,39 @@ const techList = [
   { h: "40+ built-in tools", body: "Web search, browser automation, file operations, code execution, email, calendar, CRM, image generation, voice." },
 ];
 
-const weeks = [
-  { num: "01", h: "Foundation", items: ["Agent installed on your server", "Telegram gateway connected", "Gmail + Calendar integration", "First workflow: morning briefing", "Memory configured for your context"] },
-  { num: "02", h: "Business workflows", items: ["3 custom automations built with you", "Prospect research workflow", "Scheduled reporting setup", "Competitor monitoring live", "Meeting follow-up protocol"] },
-  { num: "03", h: "Tool connections", items: ["Connect to your existing stack", "Slack / Notion / CRM basics", "Content pipeline setup", "Approval flows (agent asks first)", "Security and permissions review"] },
-  { num: "04", h: "Autonomous mode", items: ["Agent runs without daily input", "Exception handling rules", "Weekly digest design", "Teaching Hermes new skills live", "Handoff and documentation"] },
+const weeks: CurriculumSession[] = [
+  {
+    num: "01",
+    title: "Foundation",
+    kicker: "Week 01 · Install & connect",
+    body: "We get Hermes running on your infrastructure and connected to the channels you already live in. By end of week, the agent is sending you a useful morning briefing every day.",
+    topics: ["Agent installed on your server", "Telegram gateway connected", "Gmail + Calendar integration", "First workflow: morning briefing", "Memory configured for your context"],
+    outcome: "A live agent on your server, reachable from Telegram, with one daily workflow already running.",
+  },
+  {
+    num: "02",
+    title: "Business workflows",
+    kicker: "Week 02 · Build sprint",
+    body: "We build three custom automations together — the ones you actually need. You watch how they're wired so you can edit and extend them yourself later.",
+    topics: ["3 custom automations built with you", "Prospect research workflow", "Scheduled reporting setup", "Competitor monitoring live", "Meeting follow-up protocol"],
+    outcome: "Three production workflows running on autopilot, each saving you hours per week.",
+  },
+  {
+    num: "03",
+    title: "Tool connections",
+    kicker: "Week 03 · Integration",
+    body: "Hermes plugs into the rest of your stack — Slack, Notion, your CRM, content pipeline. Approval flows mean it always asks before doing anything sensitive.",
+    topics: ["Connect to your existing stack", "Slack / Notion / CRM basics", "Content pipeline setup", "Approval flows (agent asks first)", "Security and permissions review"],
+    outcome: "Hermes lives inside your tools, with clear permissions and a human-in-the-loop on anything that matters.",
+  },
+  {
+    num: "04",
+    title: "Autonomous mode",
+    kicker: "Week 04 · Handoff",
+    body: "We move from supervised to autonomous. Hermes runs on its own, handles exceptions by the rules you set, and you learn how to teach it new skills without us.",
+    topics: ["Agent runs without daily input", "Exception handling rules", "Weekly digest design", "Teaching Hermes new skills live", "Handoff and documentation"],
+    outcome: "A self-running agent you fully own, with the documentation and skills to extend it on your own.",
+  },
 ];
 
 const faqs = [
@@ -235,26 +264,21 @@ const Hermes = () => {
       </Section>
 
       {/* Coaching weeks */}
-      <Section variant="paper">
+      <Section variant="darker">
         <Kicker> The coaching program</Kicker>
-        <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-4xl">
+        <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-6 max-w-4xl">
           4 weeks. One agent built <em className="text-red">around your workflows.</em>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-ink/10">
-          {weeks.map((w) => (
-            <article key={w.num} className="bg-paper p-8 border-2 border-ink/10">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Week {w.num}</p>
-              <h3 className="font-display text-2xl text-ink leading-tight mb-5">{w.h}</h3>
-              <ul className="space-y-2 text-ink/75 text-sm">
-                {w.items.map((i) => <li key={i} className="border-b border-ink/10 pb-2">→ {i}</li>)}
-              </ul>
-            </article>
-          ))}
-        </div>
-        <div className="grid md:grid-cols-3 gap-6 mt-10 text-ink/75 text-sm">
-          <p><strong className="text-ink">Included:</strong> 4 × 90-min 1:1 sessions, recorded. Async Telegram support. Custom playbook for every workflow.</p>
-          <p><strong className="text-ink">Yours after:</strong> The agent is fully yours. MIT license. No subscription. 3 months of light support after the program ends.</p>
-          <p><strong className="text-ink">Maximum 4 clients/month.</strong> 1:1 program. Spots typically booked 2-3 weeks out.</p>
+        <p className="text-paper/70 text-base md:text-lg max-w-3xl mb-2">
+          Modular weeks. Each week ships something live you can use immediately. Click a week to expand.
+        </p>
+
+        <CurriculumAccordion sessions={weeks} />
+
+        <div className="grid md:grid-cols-3 gap-6 mt-12 text-paper/75 text-sm">
+          <p><strong className="text-paper">Included:</strong> 4 × 90-min 1:1 sessions, recorded. Async Telegram support. Custom playbook for every workflow.</p>
+          <p><strong className="text-paper">Yours after:</strong> The agent is fully yours. MIT license. No subscription. 3 months of light support after the program ends.</p>
+          <p><strong className="text-paper">Maximum 4 clients/month.</strong> 1:1 program. Spots typically booked 2-3 weeks out.</p>
         </div>
       </Section>
 
