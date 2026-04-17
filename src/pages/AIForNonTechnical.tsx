@@ -400,7 +400,7 @@ const AIForNonTechnical = () => {
       {/* PRICING */}
       <Section>
         <div id="pricing" className="scroll-mt-20">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Investment</p>
+          <p className="mb-3"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.3em] bg-red text-paper px-3 py-1.5">Investment</span></p>
           <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-4 max-w-3xl">
             Simple pricing. <em className="text-red">Per cohort.</em>
           </h2>
