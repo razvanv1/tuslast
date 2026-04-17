@@ -2,11 +2,10 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo@2x.webp";
 
 const programmes = [
-  { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
+  { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
   { label: "Hermes Agent", to: "/hermes" },
   { label: "Events & Keynotes", to: "/events" },
   { label: "Funding", to: "/funding" },
-  { label: "Assessment", to: "/assessment" },
 ];
 
 const masthead = [

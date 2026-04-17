@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.webp";
+import { BOOKING_URL, BOOKING_LABEL } from "@/lib/booking";
 
 const navLinks = [
   { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
@@ -42,12 +43,14 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/assessment"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 inline-flex items-center px-5 py-2.5 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
           >
-            Assessment →
-          </Link>
+            {BOOKING_LABEL} →
+          </a>
         </div>
 
         <button className="md:hidden p-2 text-paper" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -67,13 +70,15 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/assessment"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]"
           >
-            Assessment →
-          </Link>
+            {BOOKING_LABEL} →
+          </a>
         </div>
       )}
     </nav>
