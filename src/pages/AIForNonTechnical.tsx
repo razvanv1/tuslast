@@ -252,7 +252,7 @@ const AIForNonTechnical = () => {
         bannerAlt="Modern office workers learning AI tools"
         title="Your team is already using AI. You just don't control how."
         subtitle="A structured adoption program for non-technical business teams, built entirely on the AI tools and licenses you already pay for. Modular: 1 session to full program."
-        ctaText="Buy now · from €3,000 →"
+        ctaText="Buy now →"
         ctaTo="#pricing"
         secondaryText="Call now"
         secondaryTo="tel:+40722598346"
