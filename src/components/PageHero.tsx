@@ -10,9 +10,11 @@ interface PageHeroProps {
   secondaryTo?: string;
   note?: string;
   issue?: string;
+  banner?: string;
+  bannerAlt?: string;
 }
 
-const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School" }: PageHeroProps) => (
+const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School", banner, bannerAlt }: PageHeroProps) => (
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
     <div className="bg-halftone">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-12 pb-16 md:pt-20 md:pb-24">
@@ -20,6 +22,24 @@ const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, seconda
           <span>{issue}</span>
           {tag && <span className="text-red">{tag}</span>}
         </div>
+
+        {tag && (
+          <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-red mb-6">
+            {tag}
+          </p>
+        )}
+
+        {banner && (
+          <div className="mb-10 md:mb-12 -mx-6 md:mx-0 overflow-hidden border-y-2 md:border-2 border-paper/15 bg-paper">
+            <img
+              src={banner}
+              alt={bannerAlt || title}
+              width={1344}
+              height={576}
+              className="w-full h-auto block"
+            />
+          </div>
+        )}
 
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-paper leading-[0.92] max-w-5xl mb-8">
           {title}
