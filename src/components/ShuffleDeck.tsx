@@ -104,8 +104,8 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
         <img
           src={image}
           alt={label}
-          loading={index === 0 ? "eager" : "lazy"}
-          fetchPriority={index === 0 ? "high" : "auto"}
+          loading={index <= 1 ? "eager" : "lazy"}
+          fetchPriority={index === 0 ? "high" : index === 1 ? "high" : "auto"}
           decoding="async"
           width={512}
           height={704}
