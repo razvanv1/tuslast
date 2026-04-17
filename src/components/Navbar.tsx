@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.webp";
 
 const navLinks = [
-  { label: "AI for Non-Technical People", to: "/programmes/ai-for-non-technical-people" },
+  { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
   { label: "Events", to: "/events" },
   { label: "Funding", to: "/funding" },
   { label: "Resources", to: "/resources" },
