@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import { Kicker, SectionHeading } from "@/components/Editorial";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const stats = [
   { v: "40+", l: "built-in tools" },
@@ -52,7 +54,24 @@ const faqs = [
 ];
 
 const Hermes = () => {
+  const { toast } = useToast();
+  const [loadingKey, setLoadingKey] = useState<string | null>(null);
   useEffect(() => { document.title = "Hermes Agent, The Unlearning School"; }, []);
+
+  const handleCheckout = async (productKey: string) => {
+    setLoadingKey(productKey);
+    try {
+      const { data, error } = await supabase.functions.invoke("create-payment", { body: { product: productKey } });
+      if (error) throw error;
+      if (data?.url) window.open(data.url, "_blank");
+      else throw new Error("No checkout URL returned");
+    } catch (err: any) {
+      toast({ title: "Checkout error", description: err.message ?? "Could not start checkout", variant: "destructive" });
+    } finally {
+      setLoadingKey(null);
+    }
+  };
+
   return (
     <>
       <SEO
@@ -255,7 +274,16 @@ const Hermes = () => {
                 <li key={i} className="border-b border-paper/10 pb-2">→ {i}</li>
               ))}
             </ul>
-            <a href="/assessment" className="inline-flex items-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors">Apply →</a>
+            <div className="space-y-2">
+              <button
+                onClick={() => handleCheckout("hermes_self")}
+                disabled={loadingKey === "hermes_self"}
+                className="w-full inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors disabled:opacity-50"
+              >
+                {loadingKey === "hermes_self" ? "Loading…" : "Pay & enrol →"}
+              </button>
+              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book a discovery call</a>
+            </div>
           </article>
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
             <span className="absolute -top-3 left-8 bg-paper text-ink font-mono text-[10px] uppercase tracking-[0.25em] px-3 py-1">Most popular</span>
@@ -267,7 +295,16 @@ const Hermes = () => {
                 <li key={i} className="border-b border-paper/20 pb-2">→ {i}</li>
               ))}
             </ul>
-            <a href="/assessment" className="inline-flex items-center px-6 py-3 bg-paper text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors">Apply for a spot →</a>
+            <div className="space-y-2">
+              <button
+                onClick={() => handleCheckout("hermes_full")}
+                disabled={loadingKey === "hermes_full"}
+                className="w-full inline-flex items-center justify-center px-6 py-3 bg-paper text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors disabled:opacity-50"
+              >
+                {loadingKey === "hermes_full" ? "Loading…" : "Pay & secure your spot →"}
+              </button>
+              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book a discovery call first</a>
+            </div>
           </article>
         </div>
         <p className="text-paper/60 text-sm mt-6 max-w-2xl">Both include a 30-minute discovery call before any commitment. No pitch deck. One honest conversation about whether this makes sense for you.</p>
