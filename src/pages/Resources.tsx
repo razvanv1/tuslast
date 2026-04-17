@@ -79,13 +79,6 @@ const Resources = () => {
               >
                 Read the playbook →
               </a>
-              <a
-                href="/resources/ai-literacy-playbook.html"
-                download
-                className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
-              >
-                Download HTML
-              </a>
             </div>
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-5">
               Free · No email required · 2026 edition
