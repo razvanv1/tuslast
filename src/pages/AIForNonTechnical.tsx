@@ -543,7 +543,7 @@ const AIForNonTechnical = () => {
             <p>Worked across corporate, academic, public-sector, and entrepreneurial environments, designing and delivering learning experiences that translate into execution, not just awareness.</p>
             <TwoColumnGrid>
               <div>
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Current focus</p>
+                <p className="mb-2"><span className="inline-block font-mono text-[10px] uppercase tracking-[0.25em] bg-red text-paper px-3 py-1.5">Current focus</span></p>
                 <ul className="space-y-1 text-paper/85">
                   <li>→ AI adoption for non-technical teams</li>
                   <li>→ Practical training for cross-functional business teams</li>
