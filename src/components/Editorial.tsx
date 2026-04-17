@@ -59,11 +59,11 @@ export const SectionHeading = ({
     )}
   >
     {kicker && <Kicker> {kicker}</Kicker>}
-    <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] max-w-4xl">
+    <h2 className="font-display text-4xl md:text-6xl text-current leading-[0.95] max-w-4xl">
       {title}
     </h2>
     {intro && (
-      <p className="font-display italic text-lg md:text-xl text-paper/70 mt-6 max-w-2xl leading-snug">
+      <p className="font-display italic text-lg md:text-xl text-current/70 mt-6 max-w-2xl leading-snug">
         {intro}
       </p>
     )}
