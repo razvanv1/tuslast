@@ -96,8 +96,8 @@ const Hermes = () => {
         subtitle="ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call."
         ctaText="Buy Hermes · from €497 →"
         ctaTo="#pricing"
-        secondaryText="Book a free call"
-        secondaryTo="/assessment"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
         note="Open source · MIT · Built by Nous Research"
       />
 
@@ -283,7 +283,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_self" ? "Loading…" : "Pay & enrol →"}
               </button>
-              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book a discovery call</a>
+              <a href="https://meet.brevo.com/razvan-valceanu" target="_blank" rel="noopener noreferrer" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book the free audit</a>
             </div>
           </article>
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
@@ -304,7 +304,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_full" ? "Loading…" : "Pay & secure your spot →"}
               </button>
-              <a href="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book a discovery call first</a>
+              <a href="https://meet.brevo.com/razvan-valceanu" target="_blank" rel="noopener noreferrer" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</a>
             </div>
           </article>
         </div>
@@ -335,11 +335,11 @@ const Hermes = () => {
 
       <CTASection
         title="One agent. Built around your workflows."
-        subtitle="Pay and secure your spot, or book a free 30-minute discovery call first if you want to talk it through."
+        subtitle="Pay and secure your spot, or book the free 30-minute audit first if you want to talk it through."
         ctaText="Buy Hermes · from €497 →"
         ctaTo="#pricing"
-        secondaryText="Book the discovery call"
-        secondaryTo="/assessment"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
         note="No pitch deck · hello@unlearning.ro"
       />
     </>

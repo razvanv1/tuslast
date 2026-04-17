@@ -30,8 +30,8 @@ const About = () => {
         tag="ABOUT"
         title="A behaviour change practice, not a training company."
         subtitle="The difference matters. Training companies teach tools. We change the processes around the tools so the tools get used."
-        ctaText="Book the Assessment →"
-        ctaTo="/assessment"
+        ctaText="Free audit →"
+        ctaTo="https://meet.brevo.com/razvan-valceanu"
       />
 
       <Section>
@@ -164,10 +164,10 @@ const About = () => {
       </Section>
 
       <CTASection
-        title="Start with the free Assessment."
+        title="Start with the free audit."
         subtitle="30 minutes. A structured conversation about where adoption is stalling in your organisation. Written 1-page output within 24 hours. No proposal attached."
-        ctaText="Book the AI Adoption Gap Assessment →"
-        ctaTo="/assessment"
+        ctaText="Free audit →"
+        ctaTo="https://meet.brevo.com/razvan-valceanu"
         note="Free · hello@unlearning.ro"
       />
     </>

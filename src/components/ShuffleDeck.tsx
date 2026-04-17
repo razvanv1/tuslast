@@ -7,10 +7,10 @@ import cardFunding from "@/assets/card-funding.webp";
 import cardAssessment from "@/assets/card-assessment.webp";
 
 const DECK = [
-  { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people" },
-  { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events" },
-  { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding" },
-  { image: cardAssessment, label: "AI Adoption Gap Assessment", caption: "Free · 1 session", href: "/assessment" },
+  { image: cardWorkers, label: "AI for Work", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people", external: false },
+  { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events", external: false },
+  { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding", external: false },
+  { image: cardAssessment, label: "Free audit", caption: "Free · 30 min with Răzvan", href: "https://meet.brevo.com/razvan-valceanu", external: true },
 ];
 
 interface DeckCardProps {
@@ -18,12 +18,13 @@ interface DeckCardProps {
   label: string;
   caption: string;
   href: string;
+  external?: boolean;
   index: number;
   total: number;
   onSwipe: () => void;
 }
 
-const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCardProps) => {
+const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe }: DeckCardProps) => {
   const navigate = useNavigate();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -80,7 +81,11 @@ const DeckCard = ({ image, label, caption, href, index, total, onSwipe }: DeckCa
   const handleTap = () => {
     if (!isTop) return;
     if (draggedRef.current) return;
-    navigate(href);
+    if (external) {
+      window.open(href, "_blank", "noopener,noreferrer");
+    } else {
+      navigate(href);
+    }
   };
 
   return (
@@ -154,6 +159,7 @@ const ShuffleDeck = () => {
               label={card.label}
               caption={card.caption}
               href={card.href}
+              external={card.external}
               index={position}
               total={3}
               onSwipe={cycle}

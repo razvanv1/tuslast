@@ -116,15 +116,17 @@ const Index = () => {
                 >
                   Buy AI for Work · from €3,000 →
                 </Link>
-                <Link
-                  to="/assessment"
+                <a
+                  href="https://meet.brevo.com/razvan-valceanu"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Book a free Assessment
-                </Link>
+                  Free audit
+                </a>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                Pay & enrol your cohort · or start with a free working session and a written report
+                Pay & enrol your cohort · or book a free 30-min audit with Răzvan
               </p>
             </div>
           </div>
@@ -212,7 +214,7 @@ const Index = () => {
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free Assessment</Link>
+          <a href="https://meet.brevo.com/razvan-valceanu" target="_blank" rel="noopener noreferrer" className="text-ink hover:text-red transition-colors">→ Book the free audit</a>
         </div>
       </Section>
 
@@ -291,12 +293,12 @@ const Index = () => {
       {/* CTA */}
       <CTASection
         title="Ready to put AI to work?"
-        subtitle="Buy the core programme and enrol your cohort, or start with a free Assessment if you want a written diagnostic first."
+        subtitle="Buy the core programme and enrol your cohort, or book a free 30-min audit if you want a written diagnostic first."
         ctaText="Buy AI for Work · from €3,000 →"
         ctaTo="/programmes/ai-for-non-technical-people#pricing"
-        secondaryText="Book a free Assessment"
-        secondaryTo="/assessment"
-        note="Pay & enrol · or get a written report within 5 business days"
+        secondaryText="Free audit"
+        secondaryTo="https://meet.brevo.com/razvan-valceanu"
+        note="Pay & enrol · or get a written report after your free audit"
       />
     </>
   );
