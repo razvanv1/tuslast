@@ -147,8 +147,16 @@ const Assessment = () => {
           </div>
 
           <p className="text-sm text-ink/60 mt-8">
-            Or email: <a href="mailto:hello@unlearning.ro" className="text-red font-medium hover:underline">hello@unlearning.ro</a>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 ml-3">Subject: Free audit · Reply within 1 business day</span>
+            Or email:{" "}
+            <a
+              href="mailto:hello@unlearning.ro?subject=Free%20audit"
+              className="text-red font-medium hover:underline"
+            >
+              hello@unlearning.ro
+            </a>
+            <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 mt-2">
+              Subject: Free audit · Reply within 1 business day
+            </span>
           </p>
         </div>
       </Section>
