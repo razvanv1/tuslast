@@ -67,7 +67,6 @@ const Index = () => {
         <div className="bg-halftone">
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 md:pt-10">
             <div className="relative z-10 mb-6 md:mb-8 max-w-4xl">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">The Diagnosis</p>
               <h1 className="font-display text-2xl md:text-[34px] lg:text-[40px] leading-[1.15] text-paper/85 tracking-tight">
                 Your organisation bought AI capability.{" "}
                 <em className="text-red not-italic font-normal">What you are paying for is unused potential.</em>

@@ -145,31 +145,49 @@ const ShuffleDeck = () => {
         })}
       </div>
 
-      <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-paper/45 mt-6 text-center">
-        Tap to open · Swipe to shuffle
-      </p>
+      <div className="mt-8 inline-flex items-center gap-2 border border-red/60 px-4 py-2 rounded-full">
+        <span aria-hidden className="text-red animate-pulse text-base leading-none">↔</span>
+        <p className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper/85">
+          Tap to open · Swipe to shuffle
+        </p>
+      </div>
 
-      <div className="flex items-center gap-4 sm:gap-6 mt-3">
+      <div className="flex items-center gap-4 sm:gap-8 mt-6">
         <button
           onClick={cycle}
-          className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 hover:text-red transition-colors flex items-center gap-2"
+          className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper border border-paper/40 px-4 py-2 hover:bg-red hover:text-paper hover:border-red transition-colors flex items-center gap-2"
           aria-label="Previous card"
         >
           <span aria-hidden>←</span> Prev
         </button>
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red tabular-nums">
-          {String(order.indexOf(topIdx) + 1).padStart(2, "0")} / {String(DECK.length).padStart(2, "0")}
-        </span>
+        <div className="flex items-baseline gap-1">
+          <span className="font-display text-3xl md:text-4xl text-red tabular-nums leading-none">
+            {String(order.indexOf(topIdx) + 1).padStart(2, "0")}
+          </span>
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-paper/50 tabular-nums">
+            / {String(DECK.length).padStart(2, "0")}
+          </span>
+        </div>
         <button
           onClick={cycle}
-          className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 hover:text-red transition-colors flex items-center gap-2"
+          className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper border border-paper/40 px-4 py-2 hover:bg-red hover:text-paper hover:border-red transition-colors flex items-center gap-2"
           aria-label="Next card"
         >
           Next <span aria-hidden>→</span>
         </button>
       </div>
 
-      <p className="font-display italic text-paper/70 text-lg md:text-xl mt-4 text-center max-w-md px-4">
+      <div className="flex gap-1.5 mt-4" aria-hidden>
+        {DECK.map((_, i) => (
+          <span
+            key={i}
+            className={`h-1 w-8 transition-colors ${i === order.indexOf(topIdx) ? "bg-red" : "bg-paper/15"}`}
+          />
+        ))}
+      </div>
+
+      <p className="font-display italic text-paper/85 text-2xl md:text-3xl mt-6 text-center max-w-md px-4 flex items-center justify-center gap-3">
+        <span className="text-red animate-pulse not-italic" aria-hidden>•</span>
         Now drawing: <span className="text-red not-italic">{top.label}</span>
       </p>
     </div>
