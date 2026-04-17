@@ -15,7 +15,7 @@ const CTASection = ({ title, subtitle, ctaText, ctaTo, note }: CTASectionProps) 
     <div className="absolute inset-0 bg-paper-tex opacity-60 pointer-events-none" />
     <div className="relative max-w-[1400px] mx-auto px-6 md:px-10 py-20 md:py-28">
       <ScrollReveal>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-6">— The Final Word</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-6"> The Final Word</p>
         <h2 className="font-display text-4xl md:text-6xl lg:text-7xl text-ink leading-[0.95] max-w-4xl mb-6">
           {title}
         </h2>

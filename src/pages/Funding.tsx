@@ -10,7 +10,7 @@ const instruments = [
   {
     title: "Microsoft MDF & co-sell",
     audience: "For Microsoft partners and Copilot rollouts",
-    body: "Market Development Funds allocated to Microsoft partners to support adoption of Copilot, Azure AI, and Microsoft 365. Qualifying programs must be structured around specific adoption outcomes — not generic training.",
+    body: "Market Development Funds allocated to Microsoft partners to support adoption of Copilot, Azure AI, and Microsoft 365. Qualifying programs must be structured around specific adoption outcomes, not generic training.",
     tag: "Partner tier dependent",
   },
   {
@@ -22,13 +22,13 @@ const instruments = [
   {
     title: "EU digital competitiveness grants",
     audience: "Digital Europe Programme and related instruments",
-    body: "EU programs that fund AI literacy and digital skills development inside organisations. Applications must be framed as qualifying projects with measurable adoption outcomes — not internal training budgets.",
+    body: "EU programs that fund AI literacy and digital skills development inside organisations. Applications must be framed as qualifying projects with measurable adoption outcomes, not internal training budgets.",
     tag: "Romania-eligible",
   },
 ];
 
 const Funding = () => {
-  useEffect(() => { document.title = "Funding Structuring — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Funding Structuring, The Unlearning School"; }, []);
 
   return (
     <>
@@ -53,7 +53,7 @@ const Funding = () => {
         />
         <div className="space-y-5 text-paper/80 text-[15px] leading-relaxed max-w-3xl mt-6">
           <p>Every quarter, Microsoft, AWS, and Google allocate Market Development Funds to partners who drive platform adoption. These budgets exist specifically to support AI skills programs inside organisations.</p>
-          <p>Most of them go unused — not because companies don't qualify, but because nobody structured the program in a way that meets the funding criteria.</p>
+          <p>Most of them go unused, not because companies don't qualify, but because nobody structured the program in a way that meets the funding criteria.</p>
           <p>The same is true for EU digital competitiveness grants under Digital Europe and related programs. The applications fail not because the work isn't fundable, but because they're submitted as internal training plans instead of qualifying projects.</p>
           <p className="font-display italic text-xl md:text-2xl text-paper">
             We turn your AI adoption program into something that qualifies. <span className="text-red">You run the program. You get the cost back.</span>
@@ -62,7 +62,7 @@ const Funding = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Available funding instruments</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Available funding instruments</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Three sources. <em className="text-red">Most companies have access to at least one.</em>
         </h2>
@@ -89,7 +89,7 @@ const Funding = () => {
           We review your current Microsoft Partner status, AWS tier, and any existing vendor agreements to identify which funding programs you qualify for right now.
         </NumberedStep>
         <NumberedStep num={2} title="Identify eligible instruments">
-          Based on the audit, we map the specific MDF programs, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list — a specific set of options with qualification criteria confirmed.
+          Based on the audit, we map the specific MDF programs, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list, a specific set of options with qualification criteria confirmed.
         </NumberedStep>
         <NumberedStep num={3} title="Structure the program to qualify">
           We redesign the scope and documentation of your AI adoption program to meet the funding criteria. This is the step most companies miss. The program content stays the same. The way it's framed and documented changes.
@@ -98,16 +98,16 @@ const Funding = () => {
           We write or co-author the MDF proposal or grant application. Vendor fund applications require specific language and metrics. We know what those are.
         </NumberedStep>
         <NumberedStep num={5} title="Coordinate delivery and reimbursement">
-          Delivery documentation is aligned with program requirements from the start — not retrofitted at the end. Reimbursement doesn't get stuck because the paperwork doesn't match the application.
+          Delivery documentation is aligned with program requirements from the start, not retrofitted at the end. Reimbursement doesn't get stuck because the paperwork doesn't match the application.
         </NumberedStep>
       </Section>
 
       <Section variant="paper" bordered={false}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— Result</Kicker>
+            <Kicker> Result</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
-              A fully funded — or significantly reduced cost — <em className="text-red">adoption program.</em>
+              A fully funded, or significantly reduced cost, <em className="text-red">adoption program.</em>
             </h2>
           </div>
           <div className="md:col-span-8 space-y-5 text-ink/80 text-[15px] leading-relaxed">
@@ -122,7 +122,7 @@ const Funding = () => {
 
       <Section bordered={false}>
         <Blockquote attribution="On qualification">
-          Most companies qualify for at least one instrument. The question is not whether the funding exists — it does. The question is whether your program is structured in a way that the funding body will recognise.
+          Most companies qualify for at least one instrument. The question is not whether the funding exists, it does. The question is whether your program is structured in a way that the funding body will recognise.
         </Blockquote>
       </Section>
 

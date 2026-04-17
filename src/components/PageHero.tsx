@@ -17,10 +17,7 @@ interface PageHeroProps {
 const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School", banner, bannerAlt }: PageHeroProps) => (
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
     <div className="bg-halftone">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-12 pb-16 md:pt-20 md:pb-24">
-        <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/50 border-b border-paper/15 pb-4 mb-10">
-          <span>{issue}</span>
-        </div>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 pb-16 md:pt-12 md:pb-24">
 
         {tag && (
           <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-red mb-6">

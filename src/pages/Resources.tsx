@@ -7,12 +7,12 @@ import { Kicker, SectionHeading } from "@/components/Editorial";
 const entryPaths = [
   { tag: "Funding noise", desc: "Read the pieces on funding intelligence, opportunity selection, vendor credits, public and private routes, and diversification of funding sources." },
   { tag: "AI in the team", desc: "Start with AI at work, role-based use, habits, judgment, and what responsible adoption looks like inside real teams." },
-  { tag: "Weak traction", desc: "Go to execution friction — weak-fit initiatives, adoption drag, decision bottlenecks, work that keeps moving without progress." },
+  { tag: "Weak traction", desc: "Go to execution friction, weak-fit initiatives, adoption drag, decision bottlenecks, work that keeps moving without progress." },
   { tag: "Expertise → product", desc: "Use the academy and learning systems section for academy design, learning products, partner academies, customer education." },
 ];
 
 const contentTypes = [
-  { name: "Articles & analysis", desc: "Sharp pieces on funding, AI, execution, and the future of work — usable thinking, not recycled summaries." },
+  { name: "Articles & analysis", desc: "Sharp pieces on funding, AI, execution, and the future of work, usable thinking, not recycled summaries." },
   { name: "Podcast episodes", desc: "Conversations and solo episodes that turn messy themes into something easier to challenge, use, and apply." },
   { name: "Guides & working notes", desc: "Practical material for teams that need a starting point, stronger framing, or a way to move from idea to action." },
   { name: "Studies & case notes", desc: "Selected research, examples, observations, and supporting material for situations beyond surface-level content." },
@@ -40,7 +40,7 @@ const newsletterBullets = [
 ];
 
 const Resources = () => {
-  useEffect(() => { document.title = "Resources — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Resources, The Unlearning School"; }, []);
   return (
     <>
       <PageHero
@@ -61,7 +61,7 @@ const Resources = () => {
         <div className="grid md:grid-cols-2 gap-px bg-paper/10">
           {entryPaths.map((s) => (
             <article key={s.tag} className="bg-background p-8 md:p-10 border-2 border-paper/15">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— If: {s.tag}</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> If: {s.tag}</p>
               <p className="text-paper/80 text-[15px] leading-relaxed">{s.desc}</p>
             </article>
           ))}
@@ -71,7 +71,7 @@ const Resources = () => {
       <Section variant="paper">
         <div className="grid md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
-            <Kicker>— What you will find</Kicker>
+            <Kicker> What you will find</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
               Six formats. <em className="text-red">One library.</em>
             </h2>
@@ -93,7 +93,7 @@ const Resources = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-paper/10">
           {topics.map((t) => (
             <div key={t} className="bg-background border-2 border-paper/15 p-6 hover:border-red transition-colors">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">— Topic</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2"> Topic</p>
               <p className="font-display text-lg text-paper leading-tight">{t}</p>
             </div>
           ))}
@@ -102,7 +102,7 @@ const Resources = () => {
 
       <Section variant="paper" bordered={false}>
         <div className="max-w-3xl mx-auto text-center">
-          <Kicker>— The Unlearning Pill</Kicker>
+          <Kicker> The Unlearning Pill</Kicker>
           <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-6">
             Signal, <em className="text-red">not noise.</em>
           </h2>

@@ -9,7 +9,7 @@ interface IssueCardProps {
   className?: string;
 }
 
-/** Editorial article card — like a magazine "story tile" */
+/** Editorial article card, like a magazine "story tile" */
 const IssueCard = ({ number, title, body, href, variant = "default", className }: IssueCardProps) => {
   const variants = {
     default: "bg-background text-paper border-paper/15 hover:border-red",

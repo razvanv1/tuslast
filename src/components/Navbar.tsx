@@ -18,10 +18,9 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
-        <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="The Unlearning School" className="h-7 w-auto invert brightness-200" />
-          <span className="hidden sm:inline font-mono text-[10px] uppercase tracking-[0.3em] text-red mt-1">School</span>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-20">
+        <Link to="/" className="flex items-center group">
+          <img src={logo} alt="The Unlearning School" className="h-[52px] w-auto invert brightness-200" />
         </Link>
 
         <div className="hidden md:flex items-center gap-5 lg:gap-7 ml-auto pl-10 lg:pl-16">

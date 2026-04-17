@@ -25,14 +25,14 @@ const sessions = [
   {
     num: "01",
     title: "Where AI Fits in Your Operations",
-    body: "This session maps your team's actual workflows and identifies where AI creates value vs. where it doesn't. What AI can do beyond chatbot prompting. AI vs automation vs agents — without jargon. Where human judgment remains critical.",
+    body: "This session maps your team's actual workflows and identifies where AI creates value vs. where it doesn't. What AI can do beyond chatbot prompting. AI vs automation vs agents, without jargon. Where human judgment remains critical.",
     practice: "Personalised AI configuration · Memory management · Data privacy controls · Model selection guide · AI tool selection framework. Each participant defines 1–2 real use cases to work on during the program.",
   },
   {
     num: "02",
     title: "Building Your First AI Workflows",
     body: "Participants take their identified use cases and build the first working version of each, inside the AI tools they already have access to. Workflow automation, internal reporting, research and analysis, document drafting, process documentation.",
-    practice: "Live exercises on real tasks. Each workflow tested, adjusted, and committed before the session ends. Failures are part of the demo — that is where teams build trust in the tool.",
+    practice: "Live exercises on real tasks. Each workflow tested, adjusted, and committed before the session ends. Failures are part of the demo, that is where teams build trust in the tool.",
   },
   {
     num: "03",
@@ -73,7 +73,7 @@ const included = [
 ];
 
 const AIForNonTechnical = () => {
-  useEffect(() => { document.title = "AI for Non-Technical People — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "AI for Non-Technical People, The Unlearning School"; }, []);
 
   return (
     <>
@@ -97,7 +97,7 @@ const AIForNonTechnical = () => {
             <SectionHeading
               kicker="The current challenge"
               title={<>AI adoption without structure creates gaps in <em className="text-red">performance, compliance, and security.</em></>}
-              intro="Across business teams, AI adoption often starts before leadership has a clear model for how it should be used. Some employees rely on it daily, others avoid it. No standards. No visibility. No accountability. With AI regulation tightening across Romania and Europe, this is no longer just inefficiency — it is legal and operational risk."
+              intro="Across business teams, AI adoption often starts before leadership has a clear model for how it should be used. Some employees rely on it daily, others avoid it. No standards. No visibility. No accountability. With AI regulation tightening across Romania and Europe, this is no longer just inefficiency, it is legal and operational risk."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
@@ -119,7 +119,7 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Who this program is for</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Who this program is for</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Any team that makes decisions <em>and gets work done.</em>
         </h2>
@@ -191,7 +191,7 @@ const AIForNonTechnical = () => {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— After the program</Kicker>
+            <Kicker> After the program</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95]">
               What your team <em className="text-red">gets.</em>
             </h2>
@@ -213,14 +213,14 @@ const AIForNonTechnical = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <Kicker>— What is included</Kicker>
+            <Kicker> What is included</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-5">
               Everything you need. <em className="text-red">Nothing you don't.</em>
             </h2>
             <div className="bg-red text-paper p-6 mt-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/80 mb-3">— Included in the price</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/80 mb-3"> Included in the price</p>
               <h3 className="font-display text-2xl mb-3">AI Vendor & License Audit</h3>
-              <p className="text-paper/90 text-[14px] leading-relaxed">Before delivery, we audit the AI tools and licenses your team already uses. All exercises, prompt kits, and workflows are built on your existing vendor stack — so participants work with tools they already have access to. No new licenses required, no wasted budget.</p>
+              <p className="text-paper/90 text-[14px] leading-relaxed">Before delivery, we audit the AI tools and licenses your team already uses. All exercises, prompt kits, and workflows are built on your existing vendor stack, so participants work with tools they already have access to. No new licenses required, no wasted budget.</p>
             </div>
           </div>
           <div className="md:col-span-7">
@@ -247,7 +247,7 @@ const AIForNonTechnical = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— How success is measured</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> How success is measured</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-10 max-w-3xl">
           Evaluated by operational adoption. <em className="text-red">Not attendance.</em>
         </h2>
@@ -265,13 +265,13 @@ const AIForNonTechnical = () => {
             </li>
           ))}
         </ul>
-        <p className="text-ink/70 text-[15px] mt-6 italic font-display max-w-3xl">ROI can also be calibrated using your team's real data during the diagnostic stage, so the business case reflects actual workflows, time use, and internal realities — not only generic benchmarks.</p>
+        <p className="text-ink/70 text-[15px] mt-6 italic font-display max-w-3xl">ROI can also be calibrated using your team's real data during the diagnostic stage, so the business case reflects actual workflows, time use, and internal realities, not only generic benchmarks.</p>
       </Section>
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— Program leadership</Kicker>
+            <Kicker> Program leadership</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95]">
               Răzvan <em className="text-red">Vâlceanu.</em>
             </h2>
@@ -279,7 +279,7 @@ const AIForNonTechnical = () => {
           </div>
           <div className="md:col-span-8 space-y-4 text-paper/80 text-[15px] leading-relaxed">
             <p>20+ years across innovation, digital transformation, executive education, entrepreneurship, and practical workforce training.</p>
-            <p>Worked across corporate, academic, public-sector, and entrepreneurial environments — designing and delivering learning experiences that translate into execution, not just awareness.</p>
+            <p>Worked across corporate, academic, public-sector, and entrepreneurial environments, designing and delivering learning experiences that translate into execution, not just awareness.</p>
             <TwoColumnGrid>
               <div>
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">Current focus</p>

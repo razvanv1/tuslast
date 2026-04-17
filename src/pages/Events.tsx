@@ -11,7 +11,7 @@ const formats = [
     num: "01",
     title: "Keynote + Q&A",
     meta: "90 minutes · Up to 500 people",
-    body: "Built for conferences and large corporate events. Topics include AI literacy, EU AI Act readiness, rapid prototyping, and future of work. Content is adapted to your audience and sector — not recycled from the previous event.",
+    body: "Built for conferences and large corporate events. Topics include AI literacy, EU AI Act readiness, rapid prototyping, and future of work. Content is adapted to your audience and sector, not recycled from the previous event.",
   },
   {
     num: "02",
@@ -23,7 +23,7 @@ const formats = [
     num: "03",
     title: "Internal hackathon",
     meta: "1 to 2 days · Custom scope",
-    body: "Full design and facilitation of an internal AI hackathon. Includes brief design, team coaching, judging criteria, and an output showcase. Teams build working prototypes on real company problems — not presentations about prototypes.",
+    body: "Full design and facilitation of an internal AI hackathon. Includes brief design, team coaching, judging criteria, and an output showcase. Teams build working prototypes on real company problems, not presentations about prototypes.",
   },
 ];
 
@@ -37,7 +37,7 @@ const included = [
 ];
 
 const Events = () => {
-  useEffect(() => { document.title = "Events & Keynotes — The Unlearning School"; }, []);
+  useEffect(() => { document.title = "Events & Keynotes, The Unlearning School"; }, []);
 
   return (
     <>
@@ -58,7 +58,7 @@ const Events = () => {
         <SectionHeading
           kicker="Why most AI events don't work"
           title={<>They show what AI can do. <em className="text-red">Not what it does inside your company.</em></>}
-          intro="People watch a demo. Maybe try something once. Then go back to old workflows by Tuesday morning. The reason isn't the tool — it's that nothing in the session connected to their actual work. Their reports. Their client calls. Their weekly prep. When AI doesn't map to a specific task someone does every day, it stays a curiosity."
+          intro="People watch a demo. Maybe try something once. Then go back to old workflows by Tuesday morning. The reason isn't the tool, it's that nothing in the session connected to their actual work. Their reports. Their client calls. Their weekly prep. When AI doesn't map to a specific task someone does every day, it stays a curiosity."
         />
         <p className="font-display italic text-xl md:text-2xl text-paper/80 leading-snug max-w-3xl mt-6">
           Before every session, I research the company, the sector, and the teams in the room. <span className="text-red not-italic">The demos are built around their workflows, not generic productivity examples.</span> Everyone leaves with prompt sheets they can copy-paste on Monday morning.
@@ -66,7 +66,7 @@ const Events = () => {
       </Section>
 
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">— Formats</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Formats</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           Three formats. <em className="text-red">One standard:</em> real outputs, not slides about outputs.
         </h2>
@@ -87,7 +87,7 @@ const Events = () => {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <Kicker>— What's included in every engagement</Kicker>
+            <Kicker> What's included in every engagement</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95]">
               No generic deck. <em className="text-red">No recycled content.</em>
             </h2>
@@ -108,7 +108,7 @@ const Events = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
-            <Kicker>— Pricing</Kicker>
+            <Kicker> Pricing</Kicker>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
               Scoped per <em className="text-red">engagement.</em>
             </h2>
@@ -132,7 +132,7 @@ const Events = () => {
 
       <CTASection
         title="Tell me about your event."
-        subtitle="A 20-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room — not the previous event we ran."
+        subtitle="A 20-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran."
         ctaText="Book the scoping call →"
         ctaTo="/assessment"
         note="Free · No commitment · Proposal within 48 hours"

@@ -58,7 +58,7 @@ export const SectionHeading = ({
       align === "center" && "text-center mx-auto max-w-3xl",
     )}
   >
-    {kicker && <Kicker>— {kicker}</Kicker>}
+    {kicker && <Kicker> {kicker}</Kicker>}
     <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] max-w-4xl">
       {title}
     </h2>
@@ -104,7 +104,7 @@ export const TwoColumnGrid = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-/** Sidebar — used to flank an article on desktop */
+/** Sidebar, used to flank an article on desktop */
 export const Sidebar = ({
   byline,
   read,
