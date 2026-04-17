@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
-import bannerFunding from "@/assets/banner-funding.png";
+import bannerFunding from "@/assets/banner-funding.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";

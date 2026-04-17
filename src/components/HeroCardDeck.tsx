@@ -1,11 +1,11 @@
 import TarotCard from "./TarotCard";
-import cardTool from "@/assets/card-tool.png";
-import cardBrain from "@/assets/card-brain.png";
-import cardWorkers from "@/assets/card-workers.png";
-import cardBubble from "@/assets/card-bubble.png";
-import cardEye from "@/assets/card-eye.png";
-import cardGears from "@/assets/card-gears.png";
-import cardKey from "@/assets/card-key.png";
+import cardTool from "@/assets/card-tool.webp";
+import cardBrain from "@/assets/card-brain.webp";
+import cardWorkers from "@/assets/card-workers.webp";
+import cardBubble from "@/assets/card-bubble.webp";
+import cardEye from "@/assets/card-eye.webp";
+import cardGears from "@/assets/card-gears.webp";
+import cardKey from "@/assets/card-key.webp";
 
 const cards = [
   { image: cardTool, label: "Assessment", caption: "Free · 1 session", rotate: -14, top: "top-2", left: "left-[2%]" },
