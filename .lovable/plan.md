@@ -1,62 +1,62 @@
 
-## Pagina Events & Keynotes — refactor pentru a vinde evenimentele
+## Pagina Funding — refactor pentru a vinde structurarea de finanțare
 
-### Diagnoză rapidă
+### Diagnoză
 
-Pagina actuală (`src/pages/Events.tsx`) e bine structurată editorial, dar nu vinde. Problemele:
+Pagina actuală (`src/pages/Funding.tsx` + `funding.json`) are 2 probleme mari:
 
-1. **Hook-ul lipsește în prima secțiune vizibilă.** Titlul "They leave with something they built" e bun, dar subtitle-ul nu spune CE construiesc. Vizitatorul nu înțelege în 5 secunde ce primește dacă te aduce la evenimentul lui.
-2. **"Live prototyping" nu apare nicăieri** — deși ăsta e diferențiatorul real. Oamenii ies din sală cu un prototip funcțional pe problema lor, nu cu slide-uri.
-3. **Formatele (01/02/03) descriu generic.** Nu există un "iată cum arată o sesiune live de prototipare, minut cu minut".
-4. **CTA-urile sunt slabe.** "AI Adoption Call" e generic și nu spune că e despre evenimente. Trebuie "Book a 30-min call to scope your event".
-5. **Lipsește dovadă socială / context concret** — câte evenimente livrate, ce sectoare, ce companii (chiar și anonimizate: "bancă top 5 RO", "fond de investiții EU").
-6. **Nu există un "what happens in the room" walkthrough** — fluxul real al unei sesiuni live.
+1. **Nu e legată narativ de Programmes.** Vizitatorul nu înțelege că Funding e *continuarea logică* a training-ului: în programe câștigi knowledge și prototipuri → ca să le implementezi în producție (agenți, tooling, integrări, licențe) ai nevoie de bani → aici structurăm banii ăia. Acum pagina pare un serviciu standalone, deconectat.
+
+2. **CTA-urile sunt generice și greșite.** Peste tot scrie "AI Adoption Call →" cu link spre `/assessment`. Asta e CTA-ul pentru maturity assessment, nu pentru funding. Pe pagina de finanțare oamenii vor să sune ca să afle: *"pentru ce mă calific eu concret și cât pot lua?"* — ăsta e hook-ul, nu un assessment generic.
 
 ### Ce schimbăm
 
-**1. Hero — refocusare pe live prototyping ca hook principal**
-- Title nou: "Live AI prototyping. On your workflows. In the room."
-- Subtitle care explică în 2 fraze: ei aduc o problemă reală → ies cu un prototip funcțional + prompt sheet
-- CTA primary: "Book your event call →" (nu "AI Adoption Call")
-- CTA secondary: "See how a session runs ↓" (anchor către secțiunea nouă "Inside the room")
-- Note rămâne tehnic (durată, capacitate, sector-adapted)
+**1. Hero — refocusare pe puntea Training → Implementation**
+- Tag rămâne "MDF, Funding & Grants"
+- Title nou: "You learned what to build. Now fund building it."
+- Subtitle care explică explicit puntea: programele dau knowledge + prototipuri; producția (agenți, integrări, licențe Copilot/Azure, dev work) costă bani reali → MDF-urile vendor și granturile UE există tocmai pentru asta, majoritatea companiilor se califică, puțini știu cum să aplice
+- CTA primary: **"Book a funding call →"** → link nou `/funding` form sau direct mailto/calendar
+- CTA secondary: **"See funding instruments ↓"** → anchor către secțiunea instruments
+- Note: "Free 30-min scoping call · Written shortlist in 5 business days · No commitment"
 
-**2. Secțiune nouă: "Inside the room" — walkthrough live prototyping**
-Inserată după intro, înainte de Formats. Layout: timeline pe verticală cu 4-5 etape ale unei sesiuni de 4 ore (workshop standard):
-- `00:00` Intake — echipele aduc 1 problemă reală pe care o au săptămâna asta
-- `00:30` Demo live — construiesc primul prototip pe problema unei echipe, cu eșecuri reale incluse
-- `01:30` Hands-on — fiecare echipă construiește pe problema lor, eu trec pe la mese
-- `03:00` Showcase — fiecare echipă arată ce a construit, primesc feedback
-- `04:00` Plecăm cu — prompt sheet copy-paste + prototipul funcțional + plan de continuare
+**2. Secțiune nouă: "From training to production" (puntea explicită)**
+Inserată imediat după Hero, înainte de Intro. Layout: 3 carduri orizontale care arată fluxul:
+- `01 Training` → "Your team learns to prototype with AI on real workflows" (link spre /programmes)
+- `02 The gap` → "Prototypes need budget to become production: agents, integrations, Copilot/Azure licenses, dev work, change management"
+- `03 Funding` → "Vendor MDF, AWS co-sell and EU grants exist to fund exactly this. We structure your program to qualify."
 
-Asta e secțiunea care vinde. Oamenii înțeleg exact ce primesc.
+Asta e secțiunea care leagă tot. Fără ea, pagina pare random.
 
-**3. Formats — adăugăm "what you walk out with" la fiecare card**
-Sub `body`, adăugăm o linie nouă `outcome` (ex: "Walk out with: prompt sheet + 1 working prototype per team"). Asta închide vânzarea pe fiecare format.
+**3. Intro — păstrăm structura, ajustăm o frază**
+Adăugăm o propoziție în intro care spune explicit: *"This is the step that comes after the training. The knowledge is yours; the implementation needs budget."*
 
-**4. CTA-uri reformulate peste tot**
-- Hero primary: "Book your event call →"
-- Final CTA: păstrăm structura dar titlu mai direct: "Bring this to your team."
-- Toate spun explicit "event" / "session", nu "AI adoption call" generic.
+**4. Instruments — păstrăm cardurile, adăugăm `coverage` la fiecare**
+Sub `body`, adăugăm o linie nouă `coverage` (ex: "Typically covers: Copilot licenses, Azure AI consumption, partner-led adoption work"). Concret, nu generic.
 
-**5. Mini-bloc de social proof / track record**
-Bandă scurtă între "Inside the room" și "Formats": 3 numere statice (ex: "40+ sessions delivered · 8 sectors · 2,500+ people in rooms"). Dacă cifrele reale sunt diferite, le pun la întrebare înainte de implementare.
+**5. CTA-uri reformulate complet**
+Toate CTA-urile actuale spun "AI Adoption Call → /assessment". Le schimbăm în:
+- Hero primary + Final CTA: **"Book a funding call →"**
+- Toate cu același target: rămâne `/assessment` ca fallback (acolo se face oricum scoping call), DAR label-ul e explicit despre funding, nu despre AI adoption generic
+- Note-urile vorbesc despre "shortlist scris în 5 zile", "verificăm pentru ce te califici", nu despre "maturity score"
 
-**6. Secțiunea "Included" — păstrăm dar mutăm "live facilitation by Răzvan" pe primul loc**
-Și adăugăm explicit: "Real prototypes built on your problems, not slideware."
+**6. Eliminare AIScoreCTA de pe pagină**
+Acum apare `<AIScoreCTA />` înainte de CTA-ul final. Pe pagina de funding NU are ce căuta — vizitatorul e aici pentru bani, nu pentru un quiz de maturitate. Îl scoatem.
+
+**7. Final CTA — reformulare**
+- Title: "Find out what you qualify for."
+- Subtitle: "30-min call to map your vendor relationships and EU eligibility. Written shortlist of instruments + estimated coverage within 5 business days."
+- Note: "Free · No commitment · Shortlist in 5 business days"
 
 ### Fișiere modificate
 
-- `src/i18n/locales/en/events.json` — rescriere hero, adăugare secțiune `inside`, adăugare `outcome` pe fiecare format, reformulare CTA-uri, adăugare bloc `proof`
-- `src/i18n/locales/ro/events.json` — același set de modificări, traduse natural în RO
-- `src/pages/Events.tsx` — adăugare secțiune nouă "Inside the room" (timeline), adăugare bandă de proof, adăugare outcome pe carduri, schimbare CTA labels
+- `src/i18n/locales/en/funding.json` — rescriere hero, adăugare secțiune `bridge` (3 pași), ajustare intro, adăugare `coverage` pe instruments, reformulare CTA-uri
+- `src/i18n/locales/ro/funding.json` — același set, RO natural
+- `src/pages/Funding.tsx` — adăugare secțiune nouă "From training to production" după Hero, adăugare `coverage` pe carduri, eliminare `<AIScoreCTA />`, ajustare CTA labels
 
 ### Detaliu tehnic
 
-Secțiunea "Inside the room" va fi un `<Section variant="paper">` cu un layout grid pe 2 coloane pe desktop (col-span-4 pentru titlu/kicker, col-span-8 pentru timeline). Timeline-ul: fiecare etapă e un rând cu `font-mono` pentru timestamp în roșu, titlu display mediu și body. Border-bottom subtle între ele, în stilul existent al secțiunii "Included".
+Secțiunea "From training to production" va fi un `<Section>` (dark, default) cu grid 3 coloane (md:grid-cols-3, gap-px, bg-paper/10) — același pattern ca grid-ul de Instruments dar pe variant dark. Fiecare card: număr mare în display (`01`, `02`, `03`) în roșu pentru pași 1+3, în paper/60 pentru pasul 2 (the gap), titlu display, body. Cardul 1 are link spre `/programmes` în footer (mono uppercase, hover red). Cardul 2 e neutral — descrie problema. Cardul 3 e activ — descrie soluția.
 
-Banda de proof: rând simplu cu 3 coloane, numerele mari în display, label-urile în mono uppercase — pattern deja folosit pe site.
+Coverage line pe instruments: sub `body`, înainte de `border-t`, o linie `font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50` cu prefix "Covers:" în roșu.
 
-### O singură întrebare blocantă
-
-Înainte să scriu textele, am nevoie să confirmi cifrele pentru banda de social proof — altfel scot blocul complet și pagina merge fără el.
+Restul layout-ului rămâne neschimbat.
