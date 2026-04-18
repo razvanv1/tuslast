@@ -149,6 +149,14 @@ const Events = () => {
         </div>
       </Section>
 
+      <Section>
+        <SectionHeading
+          kicker={t("faq.kicker")}
+          title={<>{t("faq.titleStart")} <em className="text-red">{t("faq.titleEm")}</em></>}
+        />
+        <FAQAccordion items={faqItems} />
+      </Section>
+
       <Section bordered={false}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-8">
