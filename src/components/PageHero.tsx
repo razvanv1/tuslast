@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@/components/LocalizedLink";
 import BauhausBackdrop from "@/components/bauhaus/BauhausBackdrop";
 
 interface PageHeroProps {

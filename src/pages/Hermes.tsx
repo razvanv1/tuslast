@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/components/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";

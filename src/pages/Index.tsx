@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/components/LocalizedLink";
 import { Trans, useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
