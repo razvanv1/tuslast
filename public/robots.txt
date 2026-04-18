@@ -1,9 +1,32 @@
+# The Unlearning School — fully permissive for search engines, AI crawlers, and chatbots.
+# Updated: 2026-04-18
+
+# --- Search engines ---
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# --- Social previews ---
 User-agent: Twitterbot
 Allow: /
 
@@ -19,19 +42,85 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+# --- AI assistants & answer engines (training + live retrieval) ---
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DiffBot
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Kagibot
+Allow: /
+
+# --- Catch-all ---
 User-agent: *
 Allow: /
 
 Sitemap: https://tuslast.lovable.app/sitemap.xml
+Host: https://tuslast.lovable.app
