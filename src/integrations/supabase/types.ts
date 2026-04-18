@@ -14,7 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      ai_score_submissions: {
+        Row: {
+          category_scores: Json
+          consent_marketing: boolean
+          created_at: string
+          email: string
+          id: string
+          rank: string
+          score: number
+          weakest_category: string
+        }
+        Insert: {
+          category_scores: Json
+          consent_marketing?: boolean
+          created_at?: string
+          email: string
+          id?: string
+          rank: string
+          score: number
+          weakest_category: string
+        }
+        Update: {
+          category_scores?: Json
+          consent_marketing?: boolean
+          created_at?: string
+          email?: string
+          id?: string
+          rank?: string
+          score?: number
+          weakest_category?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
