@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 
 const entryPaths = [
@@ -67,6 +68,9 @@ const Resources = () => {
         secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
       />
+
+      {/* AI Adoption Score lead magnet */}
+      <AIScoreCTA />
 
       {/* FEATURED FREE RESOURCE */}
       <Section bordered={false}>

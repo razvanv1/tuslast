@@ -8,6 +8,7 @@
   <url><loc>https://tuslast.lovable.app/resources</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tuslast.lovable.app/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tuslast.lovable.app/assessment</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tuslast.lovable.app/ai-adoption-score</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
   <url><loc>https://tuslast.lovable.app/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://tuslast.lovable.app/cookie-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://tuslast.lovable.app/terms-and-conditions</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>

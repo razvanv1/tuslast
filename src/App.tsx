@@ -22,6 +22,7 @@ const About = lazy(() => import("./pages/About"));
 const Assessment = lazy(() => import("./pages/Assessment"));
 const Resources = lazy(() => import("./pages/Resources"));
 const Hermes = lazy(() => import("./pages/Hermes"));
+const AIAdoptionScore = lazy(() => import("./pages/AIAdoptionScore"));
 const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy"));
 const CookiePolicy = lazy(() => import("./pages/legal/CookiePolicy"));
 const TermsAndConditions = lazy(() => import("./pages/legal/TermsAndConditions"));
@@ -51,6 +52,7 @@ const AnimatedRoutes = () => {
           <Route path="/resources" element={<PageTransition><Resources /></PageTransition>} />
           <Route path="/about" element={<PageTransition><About /></PageTransition>} />
           <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
+          <Route path="/ai-adoption-score" element={<PageTransition><AIAdoptionScore /></PageTransition>} />
           <Route path="/contact" element={<Navigate to="/assessment" replace />} />
           <Route path="/privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
           <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />

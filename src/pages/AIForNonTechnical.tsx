@@ -6,6 +6,7 @@ import bannerAi from "@/assets/ai-for-non-technical-hero.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, SectionHeading, Sidebar, TwoColumnGrid } from "@/components/Editorial";
 import CurriculumAccordion from "@/components/CurriculumAccordion";
 import { supabase } from "@/integrations/supabase/client";
@@ -480,6 +481,11 @@ const AIForNonTechnical = () => {
             </p>
           </div>
         </div>
+      </Section>
+
+      {/* Self-test teaser */}
+      <Section variant="darker" decor="edge-right">
+        <AIScoreCTA variant="inline" eyebrow="Not sure if you need this?" />
       </Section>
 
       {/* Commercial terms */}

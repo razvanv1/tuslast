@@ -5,6 +5,7 @@ import bannerAssessment from "@/assets/banner-assessment.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Editorial";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import { CALENDAR_URL } from "@/lib/booking";
 
 const personas = [
@@ -41,6 +42,11 @@ const Assessment = () => {
         ctaTo="#book"
         note="Free · 30 min · Maturity score in 24h"
       />
+
+      {/* Self-serve teaser before the manual call */}
+      <Section variant="darker" decor="edge-left">
+        <AIScoreCTA variant="inline" eyebrow="Prefer a self-test first?" />
+      </Section>
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
