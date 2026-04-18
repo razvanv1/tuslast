@@ -86,7 +86,7 @@ const SEO = ({
       <link rel="alternate" hrefLang="en" href={enUrl} />
       <link rel="alternate" hrefLang="ro" href={roUrl} />
       <link rel="alternate" hrefLang="x-default" href={enUrl} />
-      <html lang={lang} />Once
+      <html lang={lang} />
 
       {/* Open Graph (Facebook, LinkedIn) */}
       <meta property="og:type" content={type} />

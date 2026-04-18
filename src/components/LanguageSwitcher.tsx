@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getAlternates } from "@/lib/routes";
 
 interface LanguageSwitcherProps {
   /** "dark" = light text on dark bg (navbar). "light" = dark text on light bg. */
@@ -8,11 +10,17 @@ interface LanguageSwitcherProps {
 
 const LanguageSwitcher = ({ variant = "dark", className = "" }: LanguageSwitcherProps) => {
   const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
   const current = i18n.language?.startsWith("ro") ? "ro" : "en";
 
   const change = (lng: "en" | "ro") => {
     if (lng === current) return;
+    const { en, ro } = getAlternates(window.location.pathname);
+    const target = lng === "ro" ? ro : en;
+    // Strip origin to use react-router navigation
+    const path = target.replace(/^https?:\/\/[^/]+/, "");
     void i18n.changeLanguage(lng);
+    navigate(path || "/");
   };
 
   const base =
