@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "Last updated: March 2026",
+  "lastUpdated": "Last updated: April 2026",
   "tag": "Legal",
   "privacy": {
     "docTitle": "Privacy Policy, The Unlearning School",
@@ -25,7 +25,7 @@
     "seoDescription": "Cookies used on The Unlearning School website.",
     "title": "Cookie Policy.",
     "intro": "This Cookie Policy was last updated on 18.04.2026 and applies to citizens and permanent residents of the European Economic Area and Switzerland.",
-    "s1": { "h": "1. Introduction", "body": "Our website, https://tuslast.lovable.app (hereinafter: \"the website\"), uses cookies and other related technologies (for convenience all technologies are referred to as \"cookies\"). Cookies are also placed by us and by the third parties we work with for essential functionality (payment processing, form hosting). In the document below we inform you about how we use cookies on our website." },
+    "s1": { "h": "1. Introduction", "body": "Our website, https://www.unlearning.ro (hereinafter: \"the website\"), uses cookies and other related technologies (for convenience all technologies are referred to as \"cookies\"). Cookies are also placed by us and by the third parties we work with for essential functionality (payment processing, form hosting). In the document below we inform you about how we use cookies on our website." },
     "s2": { "h": "2. What are cookies?", "body": "A cookie is a small simple file sent along with the pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored there may be sent back to our servers or to the servers of the relevant third parties during a subsequent visit." },
     "s3": { "h": "3. What are scripts?", "body": "A script is a piece of program code used to make our website function properly and interactively. This code is executed on our server or on your device." },
     "s4": { "h": "4. What is a web beacon?", "body": "A web beacon (or pixel tag) is a small, invisible piece of text or image on a website used to monitor traffic on a website. In order to do this, various data about you is stored using web beacons. Currently our website does NOT use web beacons or social-network tracking pixels (e.g. Facebook Pixel, LinkedIn Insight Tag)." },
@@ -60,7 +60,7 @@
     "s10intro": "For questions or comments about our Cookie Policy and this statement, please contact us using the following information:",
     "s10company": "Carbon Smart Europa SRL",
     "s10address": "Aleea Pasărea în Văzduh, no. 1, Bl. C1.11, Bucharest, District 6, Romania",
-    "s10website": "Website: https://tuslast.lovable.app",
+    "s10website": "Website: https://www.unlearning.ro",
     "s10email": "Email: hello@unlearning.ro",
     "s10phone": "Phone: +40 722 598 346",
     "s10sync": "This Cookie Policy was synchronised with cookiedatabase.org on 18.04.2026."
@@ -71,7 +71,7 @@
     "seoDescription": "Terms and conditions for The Unlearning School services and website.",
     "title": "Terms & Conditions.",
     "sections": {
-      "s1": { "h": "1. Acceptance of terms", "body": "By accessing The Unlearning School website (tuslast.lovable.app) and our services, you confirm that you have read, understood and agree to these Terms & Conditions. If you do not agree with any of these provisions, please do not use the website or our services. These terms apply to all visitors, users and clients." },
+      "s1": { "h": "1. Acceptance of terms", "body": "By accessing The Unlearning School website (www.unlearning.ro) and our services, you confirm that you have read, understood and agree to these Terms & Conditions. If you do not agree with any of these provisions, please do not use the website or our services. These terms apply to all visitors, users and clients." },
       "s2": { "h": "2. What we offer and how to use the site", "body": "The Unlearning School provides consulting, training, programme design and support services around AI adoption, funding intelligence, execution readiness and corporate academy design. The content published on the site (articles, guides, maturity scores, resources) is offered for informational and educational purposes only. Accessing the platform does not create a contractual or individual advisory relationship unless we sign a separate agreement (e.g. commercial proposal, B2B contract, scope of work for a tailored programme)." },
       "s3": { "h": "3. Intellectual property and fair use", "body": "All content on this site — texts, images, logos, diagrams, programme structures, guides, assessment scores, downloadable files — is the property of The Unlearning School (or of our collaborators, with their consent) and is protected by copyright and intellectual property law. You are allowed to access, read and save the content for personal, non-commercial use. You are not allowed to: (a) copy, redistribute, edit or sell the content without our written consent; (b) use our materials on behalf of other brands, products or services; (c) reproduce the structure of our programmes, our methodology or our assessment scores in your own commercial offerings." },
       "s4": { "h": "4. Conduct on the site", "items": ["Do not send spam, do not attempt to compromise site security and do not post offensive, discriminatory or unlawful messages", "Do not distribute materials that may harm the site, its users or The Unlearning School brand reputation", "Do not impersonate others, do not submit false information when registering and do not use temporary email addresses to access gated resources", "Provide accurate and complete information when submitting forms or enrolling in programmes", "Respect the intellectual property rights of The Unlearning School and our collaborators"] },
