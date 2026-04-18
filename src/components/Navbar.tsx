@@ -1,23 +1,28 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.webp";
-import { BOOKING_URL, BOOKING_LABEL } from "@/lib/booking";
-
-const navLinks = [
-  { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
-  { label: "Events", to: "/events" },
-  { label: "Funding", to: "/funding" },
-  { label: "AI Score", to: "/ai-adoption-score" },
-  { label: "Resources", to: "/resources" },
-  { label: "Hermes Agent", to: "/hermes" },
-  { label: "About", to: "/about" },
-];
+import { BOOKING_URL } from "@/lib/booking";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
   const onAssessment = location.pathname === "/assessment";
+
+  const navLinks = [
+    { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
+    { label: t("nav.events"), to: "/events" },
+    { label: t("nav.funding"), to: "/funding" },
+    { label: t("nav.aiScore"), to: "/ai-adoption-score" },
+    { label: t("nav.resources"), to: "/resources" },
+    { label: t("nav.hermes"), to: "/hermes" },
+    { label: t("nav.about"), to: "/about" },
+  ];
+
+  const bookingLabel = t("booking.label");
 
   const scrollToBook = () => {
     document.getElementById("book")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -54,24 +59,32 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <LanguageSwitcher variant="dark" className="ml-1" />
           {onAssessment ? (
             <button type="button" onClick={scrollToBook} className={desktopBookingClass}>
-              {BOOKING_LABEL} →
+              {bookingLabel} →
             </button>
           ) : (
             <Link to={BOOKING_URL} className={desktopBookingClass}>
-              {BOOKING_LABEL} →
+              {bookingLabel} →
             </Link>
           )}
         </div>
 
-        <button className="md:hidden p-2 text-paper" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button
+          className="md:hidden p-2 text-paper"
+          onClick={() => setOpen(!open)}
+          aria-label={t("nav.toggleMenu")}
+        >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
       {open && (
         <div className="md:hidden border-t border-paper/10 bg-background px-6 pb-6 pt-2">
+          <div className="py-3 border-b border-paper/5">
+            <LanguageSwitcher variant="dark" />
+          </div>
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -88,7 +101,7 @@ const Navbar = () => {
               onClick={() => { setOpen(false); setTimeout(scrollToBook, 50); }}
               className={mobileBookingClass}
             >
-              {BOOKING_LABEL} →
+              {bookingLabel} →
             </button>
           ) : (
             <Link
@@ -96,7 +109,7 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className={mobileBookingClass}
             >
-              {BOOKING_LABEL} →
+              {bookingLabel} →
             </Link>
           )}
         </div>
