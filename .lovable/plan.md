@@ -1,62 +1,57 @@
 
-## Pagina Funding — refactor pentru a vinde structurarea de finanțare
+## Funding page — extinderea Instruments + bridge invers spre Events
 
-### Diagnoză
+### Ce se schimbă
 
-Pagina actuală (`src/pages/Funding.tsx` + `funding.json`) are 2 probleme mari:
+**1. De la 3 la 4 instrumente — adăugare Google Cloud**
+Card nou între AWS și EU grants:
+- **Google Cloud partner programs & startup credits**
+- Audience: "For Google Cloud partners, Workspace rollouts, and AI-first scaleups"
+- Body: Google alocă fonduri prin Google Cloud Partner Advantage și programe de co-marketing pentru adopția Vertex AI, Gemini Enterprise și Workspace. Pentru startup-uri și scaleup-uri, Google for Startups Cloud Program oferă până la $200k credits Google Cloud + acces Gemini.
+- Coverage: "Vertex AI & Gemini API consumption, Workspace + Gemini Enterprise licenses, partner-led delivery, MVP build credits"
+- Tag: "Partner or startup track"
 
-1. **Nu e legată narativ de Programmes.** Vizitatorul nu înțelege că Funding e *continuarea logică* a training-ului: în programe câștigi knowledge și prototipuri → ca să le implementezi în producție (agenți, tooling, integrări, licențe) ai nevoie de bani → aici structurăm banii ăia. Acum pagina pare un serviciu standalone, deconectat.
+**2. Refactor toate cele 4 carduri — info mai completă, mai vandabilă**
 
-2. **CTA-urile sunt generice și greșite.** Peste tot scrie "AI Adoption Call →" cu link spre `/assessment`. Asta e CTA-ul pentru maturity assessment, nu pentru funding. Pe pagina de finanțare oamenii vor să sune ca să afle: *"pentru ce mă calific eu concret și cât pot lua?"* — ăsta e hook-ul, nu un assessment generic.
+- **Microsoft MDF & co-sell** — adăugăm mențiune Microsoft for Startups Founders Hub ($150k Azure credits + Copilot/GitHub access pentru startup-uri/scaleup-uri eligibile). Body devine: parteneri = MDF; startup/scaleup = Founders Hub credits. Le facilităm accesul la ambele.
+- **AWS partner programs** — adăugăm AWS Activate (până la $100k credits pentru startup-uri prin VC/accelerator/standalone). Body: parteneri APN = co-sell; startup/scaleup = Activate credits + Bedrock access. Le facilităm accesul la ambele.
+- **Google Cloud** — descris mai sus, include și partner track și startup track.
+- **EU digital grants** — adăugăm explicit **Erasmus+** (skills, mobility, training cohorts) ca instrument complementar Digital Europe Programme. Coverage extins cu "MVP build & validation, upskilling cohorts under Erasmus+, Digital Europe AI projects".
 
-### Ce schimbăm
+**3. CTA per card — buton "Book a call" pe fiecare instrument**
+Acum cardurile sunt statice. Adăugăm pe fiecare card, în footer, un buton mic stilat (font-mono, uppercase, hover red) care duce la `/assessment` cu label-ul "Book a call about this →" (RO: "Programează un call pentru asta →"). 4 carduri × 4 butoane = 4 entry points.
 
-**1. Hero — refocusare pe puntea Training → Implementation**
-- Tag rămâne "MDF, Funding & Grants"
-- Title nou: "You learned what to build. Now fund building it."
-- Subtitle care explică explicit puntea: programele dau knowledge + prototipuri; producția (agenți, integrări, licențe Copilot/Azure, dev work) costă bani reali → MDF-urile vendor și granturile UE există tocmai pentru asta, majoritatea companiilor se califică, puțini știu cum să aplice
-- CTA primary: **"Book a funding call →"** → link nou `/funding` form sau direct mailto/calendar
-- CTA secondary: **"See funding instruments ↓"** → anchor către secțiunea instruments
-- Note: "Free 30-min scoping call · Written shortlist in 5 business days · No commitment"
+**4. Bridge invers spre Events (după secțiunea Result, înainte de Quote)**
+Bloc nou, mirror al celui de pe pagina Events care duce la Funding. Layout 8/4:
+- Kicker: "Before you fund it"
+- Title: "Want to see what a live session looks like before you fund one?"
+- Body: Vino într-o sesiune live de prototipare ca să vezi exact ce primești înainte să structurezi finanțarea.
+- CTA buton spre `/events`: "See live sessions →"
 
-**2. Secțiune nouă: "From training to production" (puntea explicită)**
-Inserată imediat după Hero, înainte de Intro. Layout: 3 carduri orizontale care arată fluxul:
-- `01 Training` → "Your team learns to prototype with AI on real workflows" (link spre /programmes)
-- `02 The gap` → "Prototypes need budget to become production: agents, integrations, Copilot/Azure licenses, dev work, change management"
-- `03 Funding` → "Vendor MDF, AWS co-sell and EU grants exist to fund exactly this. We structure your program to qualify."
-
-Asta e secțiunea care leagă tot. Fără ea, pagina pare random.
-
-**3. Intro — păstrăm structura, ajustăm o frază**
-Adăugăm o propoziție în intro care spune explicit: *"This is the step that comes after the training. The knowledge is yours; the implementation needs budget."*
-
-**4. Instruments — păstrăm cardurile, adăugăm `coverage` la fiecare**
-Sub `body`, adăugăm o linie nouă `coverage` (ex: "Typically covers: Copilot licenses, Azure AI consumption, partner-led adoption work"). Concret, nu generic.
-
-**5. CTA-uri reformulate complet**
-Toate CTA-urile actuale spun "AI Adoption Call → /assessment". Le schimbăm în:
-- Hero primary + Final CTA: **"Book a funding call →"**
-- Toate cu același target: rămâne `/assessment` ca fallback (acolo se face oricum scoping call), DAR label-ul e explicit despre funding, nu despre AI adoption generic
-- Note-urile vorbesc despre "shortlist scris în 5 zile", "verificăm pentru ce te califici", nu despre "maturity score"
-
-**6. Eliminare AIScoreCTA de pe pagină**
-Acum apare `<AIScoreCTA />` înainte de CTA-ul final. Pe pagina de funding NU are ce căuta — vizitatorul e aici pentru bani, nu pentru un quiz de maturitate. Îl scoatem.
-
-**7. Final CTA — reformulare**
-- Title: "Find out what you qualify for."
-- Subtitle: "30-min call to map your vendor relationships and EU eligibility. Written shortlist of instruments + estimated coverage within 5 business days."
-- Note: "Free · No commitment · Shortlist in 5 business days"
+**5. Update intro/instruments titles**
+- "Three sources" → **"Four sources"** în titlul secțiunii instruments
+- Subtitle rămâne: "Most companies have access to at least one."
 
 ### Fișiere modificate
 
-- `src/i18n/locales/en/funding.json` — rescriere hero, adăugare secțiune `bridge` (3 pași), ajustare intro, adăugare `coverage` pe instruments, reformulare CTA-uri
+- `src/i18n/locales/en/funding.json` — adăugare item 4 (Google) în `instruments.items`, refactor body+coverage pentru toate 4, schimbare title "Three" → "Four", adăugare `instruments.cardCta`, adăugare bloc nou `eventsBridge`
 - `src/i18n/locales/ro/funding.json` — același set, RO natural
-- `src/pages/Funding.tsx` — adăugare secțiune nouă "From training to production" după Hero, adăugare `coverage` pe carduri, eliminare `<AIScoreCTA />`, ajustare CTA labels
+- `src/pages/Funding.tsx` — adăugare buton CTA în footer-ul fiecărui card de instrument, adăugare secțiune `eventsBridge` între Result și Quote
 
 ### Detaliu tehnic
 
-Secțiunea "From training to production" va fi un `<Section>` (dark, default) cu grid 3 coloane (md:grid-cols-3, gap-px, bg-paper/10) — același pattern ca grid-ul de Instruments dar pe variant dark. Fiecare card: număr mare în display (`01`, `02`, `03`) în roșu pentru pași 1+3, în paper/60 pentru pasul 2 (the gap), titlu display, body. Cardul 1 are link spre `/programmes` în footer (mono uppercase, hover red). Cardul 2 e neutral — descrie problema. Cardul 3 e activ — descrie soluția.
+**Buton card instrument**: în footer-ul fiecărui card (după coverage, înainte/lângă tag), un `<Link to="/assessment">` stilat ca buton mic — `inline-flex items-center font-mono text-[10px] uppercase tracking-[0.25em] text-red hover:text-ink border-t border-ink/15 pt-4 mt-4 w-full`. Tag-ul existent rămâne dar mutat sus, lângă audience, ca badge.
 
-Coverage line pe instruments: sub `body`, înainte de `border-t`, o linie `font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50` cu prefix "Covers:" în roșu.
+**Grid instruments**: rămâne `md:grid-cols-3` actual? Cu 4 carduri trecem la `md:grid-cols-2 lg:grid-cols-4` ca toate să încapă pe rând pe desktop, 2x2 pe tablet, stack pe mobile.
 
-Restul layout-ului rămâne neschimbat.
+**Bridge Events section**: copy-paste pattern din `Events.tsx` (secțiunea funding bridge), inversat — link spre `/events` în loc de `/funding`. Stil identic pentru consistență vizuală.
+
+### Texte cheie (draft)
+
+EN:
+- Google card body: "Google allocates funds through Google Cloud Partner Advantage for Vertex AI, Gemini Enterprise and Workspace adoption. For startups and scaleups, Google for Startups Cloud Program offers up to $200k in Google Cloud credits plus Gemini access. We facilitate access to both tracks."
+- Microsoft addendum: "...For startups and scaleups, Microsoft for Startups Founders Hub provides up to $150k in Azure credits plus Copilot and GitHub access. We facilitate access to both partner and startup tracks."
+- AWS addendum: "...For startups and scaleups, AWS Activate provides up to $100k in credits plus Bedrock access. We facilitate access to both APN and Activate tracks."
+- EU addendum: "Includes Digital Europe Programme, Horizon Europe digital pillars, and Erasmus+ for upskilling cohorts and mobility. Coverage extends to MVP build & validation work."
+
+RO: traduceri naturale păstrând termenii proprii (Founders Hub, Activate, Vertex AI, Gemini, Erasmus+).
