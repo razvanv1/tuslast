@@ -9,6 +9,8 @@ import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
+import partnerLovable from "@/assets/partner-lovable.png";
+import partnerHermes from "@/assets/partner-hermes.png";
 
 const Index = () => {
   const { t } = useTranslation("home");
@@ -200,6 +202,65 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* PRICING — 2 entry points */}
+      <Section variant="darker">
+        <div id="pricing" className="scroll-mt-20" />
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+          <div className="md:col-span-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("pricing.eyebrow")}</p>
+            <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95]">
+              {t("pricing.title")} <em className="text-red">{t("pricing.titleEm")}</em>
+            </h2>
+          </div>
+          <div className="md:col-span-7 flex items-end">
+            <p className="text-paper/75 text-[15px] leading-relaxed max-w-xl">{t("pricing.body")}</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/15 border border-paper/15">
+          {(["training", "hermes"] as const).map((key) => {
+            const card = t(`pricing.${key}`, { returnObjects: true }) as {
+              tag: string; from: string; price: string; unit: string; title: string;
+              bullets: string[]; footnote: string; cta: string; secondary: string;
+            };
+            const primaryHref = key === "training" ? "/programmes/ai-for-non-technical-people#pricing" : "/hermes#install";
+            const secondaryHref = key === "training" ? "/programmes/ai-for-non-technical-people" : "/hermes";
+            return (
+              <article key={key} className="bg-background p-8 md:p-10 flex flex-col">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-6">{card.tag}</p>
+                <div className="mb-6">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-1">{card.from}</p>
+                  <p className="font-display text-5xl md:text-6xl text-paper leading-none">{card.price}</p>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/50 mt-2">{card.unit}</p>
+                </div>
+                <h3 className="font-display text-2xl md:text-3xl text-paper leading-tight mb-6">{card.title}</h3>
+                <ul className="border-t border-paper/10 mb-6">
+                  {card.bullets.map((b) => (
+                    <li key={b} className="border-b border-paper/10 py-3 text-paper/80 text-[14px] leading-relaxed">{b}</li>
+                  ))}
+                </ul>
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mb-6 flex-1">{card.footnote}</p>
+                <div className="flex flex-wrap items-center gap-4">
+                  <Link
+                    to={primaryHref}
+                    className="inline-flex items-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+                  >
+                    {card.cta}
+                  </Link>
+                  <Link to={secondaryHref} className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/70 hover:text-red transition-colors">
+                    {card.secondary}
+                  </Link>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <p className="text-center font-mono text-[10px] uppercase tracking-[0.25em] text-paper/60 mt-8">
+          <Link to="/assessment" className="hover:text-red transition-colors">{t("pricing.scope")}</Link>
+        </p>
+      </Section>
+
       {/* The mechanism */}
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
@@ -235,6 +296,34 @@ const Index = () => {
             </article>
           ))}
         </div>
+      </Section>
+
+      {/* PARTNERS — external endorsement */}
+      <Section variant="paper">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("partners.eyebrow")}</p>
+          <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-6">
+            {t("partners.title")} <em className="text-red">{t("partners.titleEm")}</em>
+          </h2>
+          <p className="text-ink/75 text-[15px] leading-relaxed">{t("partners.body")}</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-ink/10 border border-ink/10 max-w-4xl mx-auto">
+          <div className="bg-paper p-10 flex flex-col items-center justify-center text-center">
+            <img src={partnerLovable} alt="Lovable" loading="lazy" decoding="async" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70">{t("partners.lovableRole")}</p>
+          </div>
+          <div className="bg-paper p-10 flex flex-col items-center justify-center text-center">
+            <img src={partnerHermes} alt="Hermes Agent" loading="lazy" decoding="async" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70">{t("partners.hermesRole")}</p>
+          </div>
+        </div>
+
+        <p className="text-center mt-8">
+          <Link to="/events#partners" className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 hover:text-red transition-colors">
+            {t("partners.link")}
+          </Link>
+        </p>
       </Section>
 
       <Affiliations variant="paper" />

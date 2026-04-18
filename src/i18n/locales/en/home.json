@@ -114,6 +114,52 @@
       { "tag": "Proof format", "title": "Before / after workflows", "body": "Anonymised sector examples available on request during the Assessment call. No client names published on this site." }
     ]
   },
+  "pricing": {
+    "eyebrow": "Start now · Two entry points",
+    "title": "Skip the call.",
+    "titleEm": "Start today.",
+    "body": "Two productized entry points with public pricing. Pay, get scheduled, start. Everything else still routes through the free AI Adoption Call.",
+    "training": {
+      "tag": "Training · Per person",
+      "from": "from",
+      "price": "€600",
+      "unit": "/ participant",
+      "title": "AI for Non-Technical People",
+      "bullets": [
+        "Modular: Discovery / Sprint / Full",
+        "Built on tools you already pay for",
+        "EU AI Act Article 4 ready"
+      ],
+      "footnote": "Cohort minimum applies. Volume pricing on request.",
+      "cta": "Buy AI for Work →",
+      "secondary": "See programme details →"
+    },
+    "hermes": {
+      "tag": "Personal AI assistant · Per install",
+      "from": "from",
+      "price": "€497",
+      "unit": "/ install",
+      "title": "Hermes Agent — personal install",
+      "bullets": [
+        "Autonomous AI assistant configured for your workflow",
+        "Setup, training, handover",
+        "Official Hermes Agent Partner"
+      ],
+      "footnote": "Includes setup, configuration, and 1 handover session.",
+      "cta": "Install Hermes →",
+      "secondary": "See what Hermes does →"
+    },
+    "scope": "Need to scope first? → AI Adoption Call (free, 30 min)"
+  },
+  "partners": {
+    "eyebrow": "Official partners · External endorsement",
+    "title": "Backed by the platforms",
+    "titleEm": "we teach.",
+    "body": "We are official Lovable Ambassador and Hermes Agent Partner. The platforms we train teams on, we partner with directly — which means perks, free credits, and access for the people we train.",
+    "lovableRole": "Lovable Ambassador",
+    "hermesRole": "Hermes Agent Partner",
+    "link": "See partner perks at our events →"
+  },
   "finalCta": {
     "title": "Ready to put AI to work?",
     "subtitle": "Buy the core programme and enrol your cohort, or book a free 30-min AI Adoption Call if you want a maturity score and roadmap first.",

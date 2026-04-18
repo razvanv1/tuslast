@@ -114,6 +114,52 @@
       { "tag": "Format de dovadă", "title": "Fluxuri înainte / după", "body": "Exemple anonimizate pe sector, disponibile la cerere în timpul Discuției. Nu publicăm pe site numele clienților." }
     ]
   },
+  "pricing": {
+    "eyebrow": "Începe acum · Două puncte de intrare",
+    "title": "Sari peste call.",
+    "titleEm": "Începe azi.",
+    "body": "Două intrări cu preț public. Plătești, te programezi, începi. Restul rămâne pe Discuția AI Adoption (gratuită).",
+    "training": {
+      "tag": "Training · Per persoană",
+      "from": "de la",
+      "price": "600 €",
+      "unit": "/ participant",
+      "title": "AI pentru oameni non-tehnici",
+      "bullets": [
+        "Modular: Discovery / Sprint / Complet",
+        "Construit pe instrumentele pe care deja le plătești",
+        "Pregătit pentru EU AI Act Articolul 4"
+      ],
+      "footnote": "Minim de cohortă aplicabil. Preț de volum la cerere.",
+      "cta": "Cumpără AI pentru Muncă →",
+      "secondary": "Vezi detaliile programului →"
+    },
+    "hermes": {
+      "tag": "Asistent AI personal · Per instalare",
+      "from": "de la",
+      "price": "497 €",
+      "unit": "/ instalare",
+      "title": "Hermes Agent — instalare personală",
+      "bullets": [
+        "Asistent AI autonom configurat pentru fluxul tău",
+        "Setup, training, handover",
+        "Hermes Agent Partner oficial"
+      ],
+      "footnote": "Include setup, configurare și 1 sesiune de handover.",
+      "cta": "Instalează Hermes →",
+      "secondary": "Vezi ce face Hermes →"
+    },
+    "scope": "Vrei să faci mai întâi scoping? → Discuție AI Adoption (gratuit, 30 min)"
+  },
+  "partners": {
+    "eyebrow": "Parteneri oficiali · Validare externă",
+    "title": "Susținut de platformele",
+    "titleEm": "pe care le predăm.",
+    "body": "Suntem Lovable Ambassador oficial și Hermes Agent Partner. Platformele pe care formăm echipele sunt și partenerii noștri direcți — ceea ce înseamnă perks, credits gratuite și acces pentru oamenii pe care îi pregătim.",
+    "lovableRole": "Lovable Ambassador",
+    "hermesRole": "Hermes Agent Partner",
+    "link": "Vezi perks-urile la evenimentele noastre →"
+  },
   "finalCta": {
     "title": "Gata să pui AI la treabă?",
     "subtitle": "Cumpără programul principal și înscrie-ți cohorta, sau programează o Discuție AI Adoption gratuită de 30 min dacă vrei mai întâi un scor de maturitate și o foaie de parcurs.",
