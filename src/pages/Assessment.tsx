@@ -8,6 +8,7 @@ import Blockquote from "@/components/Blockquote";
 import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Editorial";
 import AIScoreCTA from "@/components/AIScoreCTA";
 import { CALENDAR_URL } from "@/lib/booking";
+import { Link } from "@/components/LocalizedLink";
 
 const Assessment = () => {
   const { t } = useTranslation("assessment");
