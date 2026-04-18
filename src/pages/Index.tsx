@@ -115,7 +115,7 @@ const Index = () => {
                   to="/programmes/ai-for-non-technical-people#pricing"
                   className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Buy AI for Work · from €3,000 →
+                  Buy AI for Work →
                 </Link>
                 <Link
                   to="/assessment"
@@ -296,7 +296,7 @@ const Index = () => {
       <CTASection
         title="Ready to put AI to work?"
         subtitle="Buy the core programme and enrol your cohort, or book a free 30-min AI Adoption Call if you want a maturity score and roadmap first."
-        ctaText="Buy AI for Work · from €3,000 →"
+        ctaText="Buy AI for Work →"
         ctaTo="/programmes/ai-for-non-technical-people#pricing"
         secondaryText="AI Adoption Call"
         secondaryTo="/assessment"

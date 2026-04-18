@@ -599,7 +599,7 @@ const AIForNonTechnical = () => {
       <CTASection
         title="A program designed to fit your team. Not the other way around."
         subtitle="Pay and enrol your cohort, or book the AI Adoption Call first to score your maturity and get a ranked roadmap. No pitch deck, no generic workshop."
-        ctaText="Buy now · from €3,000 →"
+        ctaText="Buy AI for Work →"
         ctaTo="#pricing"
         secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
