@@ -1,0 +1,301 @@
+{
+  "seo": {
+    "title": "AI pentru Echipe Non-Tehnice, program structurat de adopție AI",
+    "description": "Formare AI adaptată pe rol pentru echipe de operațiuni, HR, financiar și suport clienți. Pregătit pentru EU AI Act Articolul 4. Construit pe instrumentele AI pe care deja le plătești. De la 3.000 EUR pe cohortă.",
+    "keywords": "formare AI non-tehnic, EU AI Act Articolul 4, training Copilot, training ChatGPT, program de alfabetizare AI, design fluxuri AI, AI pe rol",
+    "courseName": "AI pentru Echipe Non-Tehnice",
+    "courseDescription": "Program modular de adopție AI pentru echipe non-tehnice de business. Discovery, Short Sprint sau Programul Complet.",
+    "docTitle": "AI pentru Echipe Non-Tehnice, The Unlearning School"
+  },
+  "hero": {
+    "tag": "AI pentru Echipe Non-Tehnice",
+    "bannerAlt": "Angajați dintr-un birou modern învață să folosească instrumente AI",
+    "title": "Echipa ta deja folosește AI. Doar că nu controlezi cum.",
+    "subtitle": "Un program structurat de adopție pentru echipe non-tehnice de business, construit integral pe instrumentele și licențele AI pe care deja le plătești. Modular: de la o singură sesiune la programul complet.",
+    "ctaText": "Cumpără acum →",
+    "secondaryText": "Sună acum"
+  },
+  "challenges": {
+    "kicker": "Provocarea actuală",
+    "title1": "Adopția AI fără structură creează lacune în ",
+    "titleEm": "performanță, conformitate și securitate.",
+    "intro": "În echipele de business, adopția AI începe adesea înainte ca direcția companiei să aibă un model clar despre cum ar trebui folosit. Unii angajați se bazează pe el zilnic, alții îl evită. Fără standarde. Fără vizibilitate. Fără responsabilizare. Cu reglementarea AI care se strânge în România și Europa, asta nu mai este doar ineficiență — este risc legal și operațional.",
+    "items": [
+      { "tag": "Conformitate EU AI Act", "body": "Din februarie 2025, EU AI Act obligă organizațiile să asigure alfabetizarea AI a angajaților. Articolul 4 este o obligație legală, nu o recomandare." },
+      { "tag": "Adopție inconsecventă", "body": "Unii oameni folosesc AI zilnic, alții aproape deloc. Calitatea rezultatelor variază de la persoană la persoană." },
+      { "tag": "Economii de timp izolate", "body": "Echipele economisesc timp în mod izolat, dar nu la nivel de echipă. Managerii au prea puțină vizibilitate asupra a ceea ce se schimbă cu adevărat." },
+      { "tag": "Experimentare personală", "body": "AI devine experimentare personală, nu o capabilitate operațională." },
+      { "tag": "Risc de scurgeri de date", "body": "Folosirea nereglementată a AI riscă scurgeri de date prin intrări și ieșiri nesupravegheate." },
+      { "tag": "Lacune la auditele de conformitate", "body": "Folosirea inconsecventă a instrumentelor face auditele de conformitate mai greu de trecut." }
+    ],
+    "footer1": "Echipele pierd timp pe documentare, pregătire, raportare și sarcini repetitive pe care AI le-ar putea prelua. Managerii știu că schimbarea se întâmplă, dar le lipsește adesea un cadru structurat pentru a ghida adopția, a stabili așteptări și a măsura progresul. ",
+    "footerEm": "Costul adopției AI nestructurate nu este doar pierdere de productivitate. Este risc legal, operațional și de reputație."
+  },
+  "objective": {
+    "attribution": "Obiectivul programului",
+    "body": "Să ajutăm echipa ta să nu mai experimenteze cu AI și să înceapă să-l folosească. Să construim o primă cohortă funcțională de profesioniști activați pe AI, sprijinită de manageri care pot ghida adopția, reduce inconsecvența și transforma experimentarea împrăștiată în execuție structurată."
+  },
+  "audience": {
+    "kicker": "Pentru cine este acest program",
+    "title1": "Orice echipă care ia decizii ",
+    "titleEm": "și duce munca la capăt.",
+    "items": [
+      { "tag": "Participanți principali", "items": ["Echipe de operațiuni", "Echipe financiare", "Echipe HR", "Suport clienți", "Echipe de inginerie", "Lideri de echipă și manageri"] },
+      { "tag": "Sponsori interni", "items": ["HR", "L&D", "Conducerea unităților de business"] },
+      { "tag": "Mărimea cohortei", "items": ["Până la 5 participanți", "Până la 10 participanți", "Peste 10 (la cerere)"] }
+    ],
+    "footer": "Orice combinație de departamente. Cohortele cross-funcționale sunt binevenite."
+  },
+  "entry": {
+    "kicker": "Puncte de intrare",
+    "title1": "Livrare modulară. ",
+    "titleEm": "Scop flexibil.",
+    "items": [
+      { "name": "Sesiune Discovery", "meta": "1 sesiune · 2 ore", "body": "Înțelegi unde se potrivește AI, unde nu și ce blochează adopția." },
+      { "name": "Sprint scurt", "meta": "2–3 sesiuni în 2–3 săptămâni", "body": "Alegi un blocaj operațional, construiești și testezi un flux AI pentru el." },
+      { "name": "Programul complet", "meta": "4+ sesiuni, modular", "body": "Acoperă infrastructura de adopție, integrarea în fluxuri, campionii interni și un plan de acțiune pe 30 de zile." }
+    ],
+    "footer": "Programezi Discuția AI Adoption. Primești scorul de maturitate și foaia de parcurs. Stabilim împreună formatul potrivit. Fără angajament până nu vezi că se potrivește."
+  },
+  "structure": {
+    "kicker": "Structura programului (programul complet)",
+    "title1": "Sesiuni modulare. ",
+    "titleEm": "Construite pentru muncă reală.",
+    "intro": "Fiecare sesiune o construiește pe cea anterioară, formând un parcurs progresiv care se traduce direct în execuția zilnică. Apasă pe orice modul pentru a-l deschide."
+  },
+  "sessions": [
+    {
+      "title": "Unde se potrivește AI în operațiunile tale",
+      "body": "Această sesiune cartografiază fluxurile reale ale echipei tale și identifică unde creează AI valoare și unde nu.",
+      "topics": [
+        "Ce poate face AI dincolo de prompt-ul de tip chatbot",
+        "Fundamentele care contează cu adevărat pentru echipele de business",
+        "AI vs automatizare vs agenți, fără jargon inutil",
+        "Cum arată folosirea bună a AI în diferite roluri",
+        "Unde rămâne critic discernământul uman",
+        "Cum va decurge programul și ce așteptări sunt între sesiuni"
+      ],
+      "practice": [
+        { "h": "Configurare AI personalizată", "body": "setarea regulilor permanente despre cum răspunde asistentul tău AI (ton, format, context)" },
+        { "h": "Gestionarea memoriei", "body": "controlul a ceea ce ține minte AI între conversații" },
+        { "h": "Controale de confidențialitate a datelor", "body": "dezactivarea antrenării modelelor pe conversațiile tale; granițele de date enterprise" },
+        { "h": "Ghid de selecție a modelelor", "body": "când folosești modele rapide/instant vs modele de gândire profundă vs modele specializate" },
+        { "h": "Cadru de selecție a instrumentelor AI", "body": "potrivirea instrumentului AI corect cu sarcina corectă, pe baza capabilității, nu a brandului" }
+      ],
+      "useCases": ["Automatizare de fluxuri", "Raportare internă", "Cercetare și analiză", "Redactare de documente", "Documentarea proceselor", "Sinteză de date", "Comunicare cu stakeholderii"],
+      "outcome": "La finalul Sesiunii 1, cohorta are un limbaj comun, un scop realist și scenarii concrete de lucru. Fiecare participant își definește 1–2 cazuri reale de utilizare la care va lucra în timpul programului."
+    },
+    {
+      "title": "Construirea primelor tale fluxuri AI",
+      "body": "Această sesiune se concentrează pe folosirea practică a AI în fluxuri reale de business.",
+      "topics": [
+        "Cum alegi instrumentul potrivit pentru sarcina potrivită",
+        "ChatGPT vs Claude vs Gemini vs Copilot în contexte reale de business",
+        "Fluxuri de cercetare pentru analiză internă și externă",
+        "Folosirea AI pentru redactare de documente, sumarizare și revizuire",
+        "Structurarea mai rapidă a rapoartelor și materialelor operaționale",
+        "Reducerea timpului petrecut pe sarcini repetitive de pregătire"
+      ],
+      "practice": [
+        { "h": "Mod Deep Research", "body": "folosirea capabilităților extinse de cercetare pentru a genera rapoarte cuprinzătoare cu surse citate, în peste 10 minute" },
+        { "h": "4 strategii de prompting", "body": "Idee Clară, Abordare Secvențială, Reverse Engineering, Cloning" },
+        { "h": "Controlul temperaturii și creativității", "body": "ajustarea preciziei rezultatelor (mică pentru conformitate/financiar) vs libertății creative (mare pentru ideație)" },
+        { "h": "Interogarea unei baze de cunoștințe private", "body": "încărcarea propriilor documente și interogarea lor fără scurgeri de date externe" },
+        { "h": "Cercetare cu surse citate", "body": "căutare conversațională care întoarce răspunsuri cu referințe verificabile" }
+      ],
+      "useCases": [],
+      "outcome": "La finalul Sesiunii 2, participanții au testat fluxuri practice și și-au construit cadre de prompt pe care le pot folosi imediat în rolul lor."
+    },
+    {
+      "title": "Adopție în echipă, fluxuri și campioni",
+      "body": "Această sesiune se concentrează pe fluxurile operaționale și pe stratul intern de adopție.",
+      "topics": [
+        "Folosirea AI pentru documentarea proceselor, analiză și planificare operațională",
+        "Scanarea concurenței și sinteza pieței",
+        "Primele drafturi mai rapide, fără a coborî standardele de calitate",
+        "Cum stabilesc managerii standarde minime pentru folosirea AI",
+        "Identificarea a 2–3 Campioni AI interni",
+        "Cum măsori adopția dincolo de indicatorii de vanitate",
+        "Cum reduci diferența dintre primii utilizatori și restul echipei"
+      ],
+      "practice": [
+        { "h": "Blocajul adopției", "body": "managerii de mijloc, prinși între juniori fluenți în AI și seniori orientați pe rezultate" },
+        { "h": "De la prompting la orchestrare", "body": "trecerea de la a-i cere AI-ului să scrie conținut, la a avea agenți AI care execută autonom fluxuri în mai mulți pași" },
+        { "h": "Avantajul cohortei", "body": "învățarea în grup livrează peste 85% rată de finalizare, față de 10–15% pentru cursurile self-paced" },
+        { "h": "Campioni AI interni", "body": "identificarea a 2–3 membri ai echipei care devin reperul pentru adopția AI" },
+        { "h": "Măsurarea impactului: ore economisite", "body": "măsurarea succesului prin timpul recuperat, nu prin module finalizate" }
+      ],
+      "useCases": [],
+      "outcome": "La finalul Sesiunii 3, echipa are atât fluxuri practice, cât și o structură internă mai clară pentru o adopție susținută."
+    },
+    {
+      "title": "Rezultate, rafinare și plan de acțiune pe 30 de zile",
+      "body": "Această ultimă sesiune transformă învățarea în decizii de business vizibile.",
+      "topics": [
+        "Prezentarea cazurilor de utilizare testate",
+        "Analiza a ceea ce a funcționat și a ceea ce nu",
+        "Feedback și rafinare",
+        "Identificarea fluxurilor repetabile care merită păstrate",
+        "Decizia despre ce ar trebui scalat după prima cohortă",
+        "Definirea responsabilităților, așteptărilor și pașilor următori",
+        "Construirea unei foi de parcurs de 30 de zile pentru adopție continuă"
+      ],
+      "practice": [
+        { "h": "Ieșiri AI non-deterministe", "body": "înțelegerea faptului că același prompt generează rezultate diferite și cum iterezi eficient" },
+        { "h": "Prototipare rapidă fără cod", "body": "construirea de aplicații web și instrumente funcționale folosind platforme de dezvoltare asistate de AI" },
+        { "h": "Strategia Reverse Engineering", "body": "oferirea unui produs existent ca referință și cererea AI-ului să-i analizeze modelul de business, audiența și structura" },
+        { "h": "Strategia Cloning", "body": "replicarea structurii și stilului unui produs existent ca punct de plecare pentru un proiect nou" },
+        { "h": "Sprint de adopție de 30 de zile", "body": "plan de acțiune post-program, cu responsabilități clare, milestone-uri și răspundere bazată pe orele economisite" }
+      ],
+      "useCases": [],
+      "outcome": "La finalul Sesiunii 4, echipa ta are o primă cohortă formată, exemple vizibile de implementare și un plan practic pentru pașii următori."
+    }
+  ],
+  "deliverables": {
+    "kicker": "După program",
+    "title1": "Ce primește ",
+    "titleEm": "echipa ta.",
+    "intro": "Nu doar formare. O primă desfășurare structurată a adopției AI în funcțiile tale de business.",
+    "items": [
+      "O primă cohortă formată din echipele tale",
+      "Cadre de prompt validate pe cazuri reale de utilizare",
+      "Fluxuri AI testate pentru cercetare, raportare, operațiuni și suport decizional",
+      "2–3 campioni interni identificați",
+      "O foaie de parcurs de adopție de 30 de zile, pentru manageri",
+      "Un standard mai clar despre cum ar trebui și cum nu ar trebui folosit AI în echipele tale",
+      "Responsabilități clare pentru pașii următori de extindere"
+    ]
+  },
+  "included": {
+    "kicker": "Ce este inclus",
+    "title1": "Tot ce ai nevoie. ",
+    "titleEm": "Nimic în plus.",
+    "auditTag": "Inclus în preț",
+    "auditTitle": "Audit de furnizori și licențe AI",
+    "auditBody": "Înainte de livrare, auditem instrumentele și licențele AI pe care echipa ta le folosește deja. Toate exercițiile, kit-urile de prompt și fluxurile sunt construite pe stack-ul tău existent de furnizori, astfel încât participanții lucrează cu instrumente la care au deja acces. Fără licențe noi, fără buget irosit.",
+    "items": [
+      "Audit de furnizori și licențe AI pentru stack-ul tău actual",
+      "Sesiuni live (scopul agreat după întâlnirea inițială)",
+      "Design cross-funcțional pentru orice combinație de departamente",
+      "Exerciții practice live, construite pe instrumentele AI pe care le ai",
+      "Cadre de prompt relevante pe rol pentru echipa ta",
+      "Un kit de prompt-uri personalizat, adaptat fluxurilor tale",
+      "Exemple de fluxuri testate, adaptate contextului tău",
+      "Identificarea campionilor interni",
+      "O foaie de parcurs de adopție AI pentru manageri",
+      "O sesiune de follow-up la 30 de zile după livrare",
+      "Certificat oficial de absolvire de la The Unlearning School"
+    ]
+  },
+  "pricing": {
+    "kicker": "Investiție",
+    "title1": "Prețuri simple. ",
+    "titleEm": "Per cohortă.",
+    "subtitle": "Totul este personalizat complet pe contextul, instrumentele și licențele AI existente ale echipei tale. Prețul scalează cu mărimea grupului. Personalizare completă inclusă în fiecare pachet.",
+    "mostPopular": "Cel mai ales",
+    "bestFor": "Potrivit pentru",
+    "includes": "Include toate sesiunile, auditul de furnizori AI, sesiunea de follow-up și certificatul.",
+    "loading": "Se încarcă…",
+    "payCta": "Plătește și înscrie →",
+    "altCta": "Sau programează mai întâi Discuția AI Adoption",
+    "callCta": "Discuție AI Adoption →",
+    "checkoutErrorTitle": "Eroare la plată",
+    "checkoutErrorBody": "Nu am putut deschide pagina de plată",
+    "confidence": {
+      "tag": "Clauza de încredere",
+      "body": "Dacă, după Sesiunea 1, echipa ta concluzionează că programul nu este potrivit, sesiunile rămase pot fi oprite și nu vor fi facturate."
+    },
+    "tiers": [
+      { "tag": "Echipă mică", "cohort": "Până la 5 participanți", "price": "3.000", "perPerson": "600 EUR per participant", "bestForItems": ["Pilot focusat pe o echipă sau departament", "Validare rapidă a potrivirii AI", "Cohortă mică, foarte aplicată"] },
+      { "tag": "Standard", "cohort": "Până la 10 participanți", "price": "5.000", "perPerson": "500 EUR per participant", "bestForItems": ["Lansare cross-funcțională în echipă", "Mărime echilibrată pentru exerciții", "Cel mai bun raport preț-impact"] },
+      { "tag": "Enterprise", "cohort": "Peste 10 participanți", "price": "La cerere", "perPerson": "Preț personalizat la cerere", "bestForItems": ["Lansare în mai multe departamente", "Scop și plan de livrare personalizate", "Preț de volum agreat după întâlnirea inițială"] }
+    ],
+    "customLabel": "La cerere"
+  },
+  "selfTestEyebrow": "Nu ești sigur dacă ai nevoie de asta?",
+  "commercial": {
+    "kicker": "Termeni comerciali",
+    "title1": "Livrare flexibilă. ",
+    "titleEm": "Adaptată contextului tău.",
+    "items": [
+      { "h": "Livrare", "body": "Online, hibrid sau în persoană." },
+      { "h": "Programare", "body": "Sesiuni modulare. Datele se agreează din timp cu echipa ta." },
+      { "h": "Personalizare", "body": "Totul este personalizat. Kit-ul de prompt, exercițiile și fluxurile sunt adaptate contextului tău real și construite pe instrumentele și licențele AI pe care deja le folosești. Întâlnirea inițială servește la adaptarea cazurilor de utilizare și a rezultatelor așteptate." }
+    ]
+  },
+  "why": {
+    "kicker": "De ce acest format",
+    "title1": "Construit să schimbe felul în care se face munca ",
+    "titleEm": "după ce ieși din sală.",
+    "intro": "Programul este livrat ca sesiuni modulare, nu ca un intensiv de 2 zile. Mai puțină perturbare operațională. Spațiu pentru a aplica învățarea între sesiuni. Mai bună reținere, feedback și rafinare bazată pe folosirea reală.",
+    "footer1": "Programul nu este construit să impresioneze în sală. ",
+    "footerEm": "Este construit să schimbe felul în care se face munca după ce ieși din sală."
+  },
+  "success": {
+    "kicker": "Cum se măsoară succesul",
+    "title1": "Evaluat după adopția operațională. ",
+    "titleEm": "Nu după prezență.",
+    "items": [
+      "Numărul de cazuri reale de utilizare adoptate de echipe",
+      "Numărul de fluxuri testate și păstrate",
+      "Consecvența folosirii AI între participanți",
+      "Vizibilitatea managerilor asupra adopției și calității rezultatelor",
+      "Existența unui plan practic de 30 de zile, asumat intern",
+      "Identificarea campionilor interni care pot duce adopția mai departe"
+    ],
+    "footer": "ROI-ul poate fi calibrat și pe datele reale ale echipei tale, în etapa de diagnostic, astfel încât justificarea de business să reflecte fluxurile reale, modul de folosire a timpului și realitățile interne, nu doar repere generice."
+  },
+  "leadership": {
+    "kicker": "Conducerea programului",
+    "name1": "Răzvan ",
+    "nameEm": "Vâlceanu.",
+    "role": "Fondator, The Unlearning School",
+    "bio1": "Peste 20 de ani în inovație, transformare digitală, executive education, antreprenoriat și formare practică a forței de muncă.",
+    "bio2": "A lucrat în medii corporate, academice, din sectorul public și antreprenoriale, proiectând și livrând experiențe de învățare care se traduc în execuție, nu doar în conștientizare.",
+    "focusTag": "Focus actual",
+    "focusItems": [
+      "Adopția AI pentru echipe non-tehnice",
+      "Formare practică pentru echipe cross-funcționale de business",
+      "Workshopuri, hackathoane și keynote-uri pentru validare rapidă și buy-in din partea conducerii",
+      "Prototipare rapidă și experimentare activată de AI"
+    ],
+    "credentialsTag": "Acreditări",
+    "credentialsItems": [
+      "Lovable Ambassador",
+      "Google Generative AI for Leaders (certificare în curs)",
+      "Microsoft AI Certification",
+      "Formator acreditat la nivel european"
+    ],
+    "toolsTag": "Instrumente folosite zi de zi"
+  },
+  "next": {
+    "kicker": "Ce urmează",
+    "title1": "Trei pași ",
+    "titleEm": "pentru a începe.",
+    "items": [
+      { "num": "1", "h": "Programezi Discuția AI Adoption", "body": "O discuție gratuită de 30 de minute care îți evaluează maturitatea adopției AI, scoate la suprafață lacunele și produce o foaie de parcurs prioritizată. Fără angajament." },
+      { "num": "2", "h": "Stabilim împreună formatul potrivit", "body": "Pe baza întâlnirii, agreăm punctul de intrare potrivit: o singură sesiune, un sprint scurt sau programul complet. Totul este adaptat instrumentelor și contextului echipei tale." },
+      { "num": "3", "h": "Începe livrarea", "body": "Programul începe pe calendarul tău. Livrarea modulară înseamnă că tu controlezi ritmul. De la acest prim angajament, creștem împreună numărul de participanți formați." }
+    ]
+  },
+  "cta": {
+    "title": "Un program construit să se potrivească echipei tale. Nu invers.",
+    "subtitle": "Plătești și îți înscrii cohorta sau programezi mai întâi Discuția AI Adoption ca să-ți evaluezi maturitatea și să primești o foaie de parcurs prioritizată. Fără pitch deck, fără workshop generic.",
+    "primary": "Cumpără AI pentru Muncă →",
+    "secondary": "Discuție AI Adoption",
+    "note": "Livrare modulară · Construit pe instrumentele tale · Certificat de absolvire"
+  },
+  "faqList": [
+    { "question": "Pentru cine este acest program?", "answer": "Echipe de operațiuni, financiar, HR, suport clienți și inginerie care au acces la instrumente AI, dar le folosesc inconsecvent sau puțin." },
+    { "question": "Îndeplinește cerințele Articolului 4 din EU AI Act?", "answer": "Da. Programul este construit să livreze alfabetizarea AI auditabilă cerută de Articolul 4 din EU AI Act, în vigoare din februarie 2025." },
+    { "question": "Ce instrumente AI folosim?", "answer": "Instrumentele pe care organizația ta deja le plătește, de obicei Microsoft 365 Copilot, ChatGPT Enterprise, Gemini sau asistenții voștri interni." },
+    { "question": "Cât costă?", "answer": "3.000 EUR pentru până la 5 participanți, 5.000 EUR pentru până la 10 participanți. Preț la cerere pentru peste 10. Toate pachetele includ același conținut, audit și certificat." }
+  ],
+  "curriculumLabels": {
+    "moduleKicker": "Modulul {{num}} · Sesiune live",
+    "module": "Modulul {{num}}",
+    "topics": "Ce se acoperă",
+    "practice": "Practică aplicată",
+    "useCases": "Cazuri reale de utilizare la care lucrează participanții"
+  }
+}
