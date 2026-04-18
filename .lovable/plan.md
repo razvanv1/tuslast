@@ -1,57 +1,85 @@
 
-## Funding page — extinderea Instruments + bridge invers spre Events
 
-### Ce se schimbă
+## Partnerships block on Events + Hermes — credibility & magnetism
 
-**1. De la 3 la 4 instrumente — adăugare Google Cloud**
-Card nou între AWS și EU grants:
-- **Google Cloud partner programs & startup credits**
-- Audience: "For Google Cloud partners, Workspace rollouts, and AI-first scaleups"
-- Body: Google alocă fonduri prin Google Cloud Partner Advantage și programe de co-marketing pentru adopția Vertex AI, Gemini Enterprise și Workspace. Pentru startup-uri și scaleup-uri, Google for Startups Cloud Program oferă până la $200k credits Google Cloud + acces Gemini.
-- Coverage: "Vertex AI & Gemini API consumption, Workspace + Gemini Enterprise licenses, partner-led delivery, MVP build credits"
-- Tag: "Partner or startup track"
+### Goal
+Anchor Events page on two trust signals (Lovable Ambassador + Hermes Agent partner) and explicitly tell the audience these events are **free, practical, no-PowerPoint, with merch + free credits + perks**. Cross-link Events ↔ Hermes. Add Hermes logo and yellow banner to Hermes page hero.
 
-**2. Refactor toate cele 4 carduri — info mai completă, mai vandabilă**
+### Assets to copy from uploads to project
+- `user-uploads://Lovable_Logo_Wordmark_Black.png` → `src/assets/partner-lovable.png`
+- `user-uploads://images.png` (Hermes Agent logo) → `src/assets/partner-hermes.png`
+- `user-uploads://hermes-agent-banner.avif` → `src/assets/banner-hermes.avif`
 
-- **Microsoft MDF & co-sell** — adăugăm mențiune Microsoft for Startups Founders Hub ($150k Azure credits + Copilot/GitHub access pentru startup-uri/scaleup-uri eligibile). Body devine: parteneri = MDF; startup/scaleup = Founders Hub credits. Le facilităm accesul la ambele.
-- **AWS partner programs** — adăugăm AWS Activate (până la $100k credits pentru startup-uri prin VC/accelerator/standalone). Body: parteneri APN = co-sell; startup/scaleup = Activate credits + Bedrock access. Le facilităm accesul la ambele.
-- **Google Cloud** — descris mai sus, include și partner track și startup track.
-- **EU digital grants** — adăugăm explicit **Erasmus+** (skills, mobility, training cohorts) ca instrument complementar Digital Europe Programme. Coverage extins cu "MVP build & validation, upskilling cohorts under Erasmus+, Digital Europe AI projects".
+### Changes per file
 
-**3. CTA per card — buton "Book a call" pe fiecare instrument**
-Acum cardurile sunt statice. Adăugăm pe fiecare card, în footer, un buton mic stilat (font-mono, uppercase, hover red) care duce la `/assessment` cu label-ul "Book a call about this →" (RO: "Programează un call pentru asta →"). 4 carduri × 4 butoane = 4 entry points.
+**1. `src/pages/Events.tsx` — new central "Partners & what attendees get" section**
+Inserted right after the Hero (before `intro` Section), so it's the second thing visitors see. Layout:
+- Top row: kicker "In partnership with" centered, then the **two logos side-by-side, large and central** (Lovable wordmark + Hermes Agent), white card on dark bg, with subtle separator. Below each logo: one-line role ("Lovable Ambassador" / "Hermes Agent Partner").
+- Bottom row: 4-column grid of perks for attendees, each with a number and short label:
+  - `01 Free for participants` — "All public events are free. No tickets, no upsell."
+  - `02 Practical, no slides` — "Live builds on real workflows. Zero generic decks, zero PowerPoint."
+  - `03 Merch & free credits` — "Lovable + Hermes Agent perks: free platform credits, merch, swag."
+  - `04 International, local` — "We bring international speakers and standards into local rooms."
+- Anchor id `#partners` so we can link to it from Hermes.
 
-**4. Bridge invers spre Events (după secțiunea Result, înainte de Quote)**
-Bloc nou, mirror al celui de pe pagina Events care duce la Funding. Layout 8/4:
-- Kicker: "Before you fund it"
-- Title: "Want to see what a live session looks like before you fund one?"
-- Body: Vino într-o sesiune live de prototipare ca să vezi exact ce primești înainte să structurezi finanțarea.
-- CTA buton spre `/events`: "See live sessions →"
+**2. `src/pages/Hermes.tsx` — banner + partnership section + back-link to Events**
+- Add `banner` prop on `PageHero` using `banner-hermes.avif` (yellow Hermes Agent banner).
+- New section right after the terminal/stats block: small kicker "We host Hermes events", title "See Hermes Agent live in person.", short body explaining we run free, practical Hermes Agent demos & build sessions inside our Events programme, with a CTA button → `/events#partners` "See live events →".
+- Show Hermes logo (small, paper card) inside this section header for brand recognition.
 
-**5. Update intro/instruments titles**
-- "Three sources" → **"Four sources"** în titlul secțiunii instruments
-- Subtitle rămâne: "Most companies have access to at least one."
+**3. `src/i18n/locales/en/events.json` + `src/i18n/locales/ro/events.json`**
+Add a new top-level `partners` block:
+```
+partners: {
+  kicker, titleStart, titleEm,
+  lovable: { role, name },
+  hermes: { role, name },
+  perks: [4 items with num/title/body],
+  hermesLinkText, hermesLinkTo
+}
+```
 
-### Fișiere modificate
+**4. `src/i18n/locales/en/hermes.json` + `src/i18n/locales/ro/hermes.json`**
+Add `eventsBridge` block: `{ kicker, titleStart, titleEm, body, cta }` for the new "See Hermes live at our events" section, plus `hero.bannerAlt` for the new yellow banner.
 
-- `src/i18n/locales/en/funding.json` — adăugare item 4 (Google) în `instruments.items`, refactor body+coverage pentru toate 4, schimbare title "Three" → "Four", adăugare `instruments.cardCta`, adăugare bloc nou `eventsBridge`
-- `src/i18n/locales/ro/funding.json` — același set, RO natural
-- `src/pages/Funding.tsx` — adăugare buton CTA în footer-ul fiecărui card de instrument, adăugare secțiune `eventsBridge` între Result și Quote
+### Copy direction (concise, credibility-first)
 
-### Detaliu tehnic
+EN Events partners section:
+- Kicker: "In partnership with"
+- Title: "International standards. *Local rooms.*"
+- Lovable role: "Lovable Ambassador — official partner for AI app prototyping"
+- Hermes role: "Hermes Agent Partner — official partner for autonomous AI agents"
+- Subline under perks grid: "Public events are free. The condition is simple: practical only — no generic talks, no slideware, no theory."
 
-**Buton card instrument**: în footer-ul fiecărui card (după coverage, înainte/lângă tag), un `<Link to="/assessment">` stilat ca buton mic — `inline-flex items-center font-mono text-[10px] uppercase tracking-[0.25em] text-red hover:text-ink border-t border-ink/15 pt-4 mt-4 w-full`. Tag-ul existent rămâne dar mutat sus, lângă audience, ca badge.
+RO Events:
+- Kicker: "În parteneriat cu"
+- Title: "Standarde internaționale. *Săli locale.*"
+- Lovable rol: "Lovable Ambassador — partener oficial pentru prototipare AI"
+- Hermes rol: "Hermes Agent Partner — partener oficial pentru agenți AI autonomi"
+- Subline: "Evenimentele publice sunt gratuite. Condiția: doar practic — fără prezentări generale, fără slide-uri, fără teorie."
 
-**Grid instruments**: rămâne `md:grid-cols-3` actual? Cu 4 carduri trecem la `md:grid-cols-2 lg:grid-cols-4` ca toate să încapă pe rând pe desktop, 2x2 pe tablet, stack pe mobile.
+EN Hermes bridge:
+- "See Hermes Agent *live at our events.*"
+- Body: "We bring Hermes Agent into our public events — free, practical, no slides. Watch a live build, ask questions, and walk out with a working prototype and free credits."
+- CTA: "See live events →" → `/events#partners`
 
-**Bridge Events section**: copy-paste pattern din `Events.tsx` (secțiunea funding bridge), inversat — link spre `/events` în loc de `/funding`. Stil identic pentru consistență vizuală.
+RO Hermes bridge:
+- "Vezi Hermes Agent *live la evenimentele noastre.*"
+- Body: "Aducem Hermes Agent în evenimentele noastre publice — gratuite, practice, fără slide-uri. Vezi un build live, pune întrebări, pleci cu un prototip și credits gratuite."
+- CTA: "Vezi evenimentele live →"
 
-### Texte cheie (draft)
+### Visual / layout notes
+- Logos rendered on a `bg-paper` card (the logos are dark on white) inside the dark Events section, so they pop. Side-by-side on desktop (`md:grid-cols-2`), stacked on mobile, separated by a vertical paper/15 divider.
+- Logos use `<img>` with explicit width/height for CLS, `loading="lazy"` (below fold ok for partners block? It's near hero — use `eager`).
+- Hermes hero banner: same `PageHero banner` pattern already used on Events/Funding/etc — full-width, paper bg. The yellow banner becomes the visual anchor.
+- Hermes logo small inline in the bridge section header (h-8) for instant recognition.
 
-EN:
-- Google card body: "Google allocates funds through Google Cloud Partner Advantage for Vertex AI, Gemini Enterprise and Workspace adoption. For startups and scaleups, Google for Startups Cloud Program offers up to $200k in Google Cloud credits plus Gemini access. We facilitate access to both tracks."
-- Microsoft addendum: "...For startups and scaleups, Microsoft for Startups Founders Hub provides up to $150k in Azure credits plus Copilot and GitHub access. We facilitate access to both partner and startup tracks."
-- AWS addendum: "...For startups and scaleups, AWS Activate provides up to $100k in credits plus Bedrock access. We facilitate access to both APN and Activate tracks."
-- EU addendum: "Includes Digital Europe Programme, Horizon Europe digital pillars, and Erasmus+ for upskilling cohorts and mobility. Coverage extends to MVP build & validation work."
+### Files modified
+- `src/pages/Events.tsx`
+- `src/pages/Hermes.tsx`
+- `src/i18n/locales/en/events.json`
+- `src/i18n/locales/ro/events.json`
+- `src/i18n/locales/en/hermes.json`
+- `src/i18n/locales/ro/hermes.json`
+- 3 new assets copied into `src/assets/`
 
-RO: traduceri naturale păstrând termenii proprii (Founders Hub, Activate, Vertex AI, Gemini, Erasmus+).
