@@ -19,7 +19,7 @@ const TarotCard = ({ image, label, caption, rotate = 0, className, delay = 0, pr
     whileHover={{ rotate: 0, y: -12, scale: 1.04, zIndex: 50, transition: { duration: 0.4 } }}
     className={cn(
       "relative bg-paper p-3 pb-12 card-shadow cursor-pointer select-none",
-      "w-[180px] md:w-[220px] lg:w-[240px]",
+      "w-[216px] md:w-[264px] lg:w-[288px]",
       className,
     )}
     style={{ transformOrigin: "center bottom" }}
