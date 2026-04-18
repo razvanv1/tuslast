@@ -6,6 +6,7 @@ import bannerFunding from "@/assets/banner-funding.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Link } from "@/components/LocalizedLink";
 import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
 
@@ -22,6 +23,7 @@ const Funding = () => {
   const introParagraphs = t("intro.paragraphs", { returnObjects: true }) as string[];
   const resultParagraphs = t("result.paragraphs", { returnObjects: true }) as string[];
   const bridgeSteps = t("bridge.steps", { returnObjects: true }) as BridgeStep[];
+  const faqItems = t("faq.items", { returnObjects: true }) as FAQItem[];
 
   return (
     <>
@@ -153,6 +155,14 @@ const Funding = () => {
         <Blockquote attribution={t("quote.attribution")}>
           {t("quote.body")}
         </Blockquote>
+      </Section>
+
+      <Section variant="darker">
+        <SectionHeading
+          kicker={t("faq.kicker")}
+          title={<>{t("faq.titleStart")} <em className="text-red">{t("faq.titleEm")}</em></>}
+        />
+        <FAQAccordion items={faqItems} />
       </Section>
 
       <CTASection

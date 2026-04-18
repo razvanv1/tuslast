@@ -473,6 +473,26 @@ const AIForNonTechnical = () => {
         </div>
       </Section>
 
+      <Section bordered={false}>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div className="md:col-span-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("fundingBridge.kicker")}</p>
+            <h2 className="font-display text-3xl md:text-4xl text-paper leading-[1.05] mb-4">
+              {t("fundingBridge.titleStart")} <em className="text-red">{t("fundingBridge.titleEm")}</em>
+            </h2>
+            <p className="text-paper/75 text-[15px] leading-relaxed max-w-2xl">{t("fundingBridge.body")}</p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <Link
+              to="/funding"
+              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            >
+              {t("fundingBridge.cta")}
+            </Link>
+          </div>
+        </div>
+      </Section>
+
       <CTASection
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}

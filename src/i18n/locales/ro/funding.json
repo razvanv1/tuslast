@@ -109,6 +109,19 @@
     "attribution": "Despre calificare",
     "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
   },
+  "faq": {
+    "kicker": "Întrebări frecvente",
+    "titleStart": "Înainte de",
+    "titleEm": "call-ul de scoping.",
+    "items": [
+      { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie, tipic 3–5 săptămâni: 1 săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă tipic 2–6 săptămâni." },
+      { "q": "Dacă nu suntem partener Microsoft / AWS?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft și AWS în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel — majoritatea companiilor care deja plătesc Copilot sau AWS se califică pentru un tier de intrare în câteva săptămâni." },
+      { "q": "Cum se face efectiv rambursarea?", "a": "Depinde de instrument. MDF vendor se plătește de obicei pe milestone-uri aprobate — structurăm livrarea ca documentația să se potrivească cu aplicația din ziua unu. Granturile UE merg tipic pe tranșe contra livrabile verificate. În ambele cazuri programul rulează prima dată; banii vin după fiecare milestone verificat." },
+      { "q": "Ce documente cerem de la voi?", "a": "Pentru audit: acordurile actuale cu vendor-ii (statusul de partener Microsoft, tier-ul AWS), facturi recente pentru cheltuiala AI/cloud și un brief scurt despre programul pe care vrei să-l rulezi. Pentru aplicația în sine: detalii despre organizație, headcount, rezultate țintă. Restul scriem noi." },
+      { "q": "Cât ne costă?", "a": "Call-ul de scoping de 30 de minute și shortlist-ul scris de instrumente sunt gratuite. Dacă mergem mai departe, munca de structurare și aplicație are scope per program — de obicei un fee fix plus o componentă de succes legată de finanțarea aprobată efectiv. Confirmăm cifrele înainte de orice angajament." },
+      { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem în shortlist, în scris, în 5 zile lucrătoare. Fără fee, fără angajament. Majoritatea companiilor se califică pentru cel puțin un instrument, dar dacă structura chiar nu se potrivește, nu fabricăm o aplicație." }
+    ]
+  },
   "cta": {
     "title": "Află pentru ce te califici.",
     "subtitle": "Un apel de 30 de minute pentru a mapa relațiile tale cu furnizorii și eligibilitatea UE. Revenim cu un shortlist scris de instrumente și acoperire estimată în 5 zile lucrătoare. Fără angajament până nu vezi cifrele.",

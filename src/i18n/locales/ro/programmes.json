@@ -278,6 +278,13 @@
       { "num": "3", "h": "Începe livrarea", "body": "Programul începe pe calendarul tău. Livrarea modulară înseamnă că tu controlezi ritmul. De la acest prim angajament, creștem împreună numărul de participanți formați." }
     ]
   },
+  "fundingBridge": {
+    "kicker": "După training",
+    "titleStart": "Acum știi ce vrei să construiești.",
+    "titleEm": "Finanțează construcția.",
+    "body": "Prototipurile construite în program devin producție cu buget — agenți, integrări, licențe Copilot și Azure, dev work. MDF vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică.",
+    "cta": "Vezi opțiuni de finanțare →"
+  },
   "cta": {
     "title": "Un program construit să se potrivească echipei tale. Nu invers.",
     "subtitle": "Plătești și îți înscrii cohorta sau programezi mai întâi Discuția AI Adoption ca să-ți evaluezi maturitatea și să primești o foaie de parcurs prioritizată. Fără pitch deck, fără workshop generic.",

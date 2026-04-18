@@ -109,6 +109,19 @@
     "attribution": "On qualification",
     "body": "Most companies qualify for at least one instrument. The question is not whether the funding exists, it does. The question is whether your program is structured in a way that the funding body will recognise."
   },
+  "faq": {
+    "kicker": "Frequently asked",
+    "titleStart": "Before the",
+    "titleEm": "scoping call.",
+    "items": [
+      { "q": "How long does an MDF application take?", "a": "From kick-off to submission, typically 3 to 5 weeks: 1 week of audit and instrument mapping, 1–2 weeks of program structuring, 1–2 weeks of drafting and partner sign-off. The vendor's own decision window is usually another 2–6 weeks on top." },
+      { "q": "What if we are not a Microsoft / AWS partner yet?", "a": "We still have options. EU digital grants don't require partner status. For Microsoft and AWS specifically, we either route through one of our partner relationships, or help you set up partner status in parallel — most companies that already pay for Copilot or AWS qualify for an entry tier within weeks." },
+      { "q": "How does the reimbursement actually work?", "a": "It depends on the instrument. Vendor MDF is usually paid against approved milestones — we structure delivery so the documentation matches the application from day one. EU grants are typically tranche-based against verified deliverables. In both cases the program runs first; the money lands after each verified milestone." },
+      { "q": "What documents do you need from us?", "a": "For the audit: your current vendor agreements (Microsoft Partner status, AWS tier), recent invoices for AI/cloud spend, and a short brief on the program you want to run. For the application itself: org details, headcount, target outcomes. We draft everything else." },
+      { "q": "What does this cost us?", "a": "The 30-minute scoping call and the written shortlist of instruments are free. If we move forward, structuring and application work is scoped per program — usually a fixed fee plus a success component tied to funding actually approved. We confirm the numbers before any commitment." },
+      { "q": "What if we don't qualify for anything?", "a": "Then we tell you in the shortlist, in writing, within 5 business days. No fee, no engagement. Most companies qualify for at least one instrument, but if the structure genuinely doesn't fit, we don't manufacture an application." }
+    ]
+  },
   "cta": {
     "title": "Find out what you qualify for.",
     "subtitle": "A 30-minute call to map your vendor relationships and EU eligibility. We come back with a written shortlist of instruments and estimated coverage within 5 business days. No commitment until you see the numbers.",
