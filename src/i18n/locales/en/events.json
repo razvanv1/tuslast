@@ -107,6 +107,19 @@
     "body": "A 30-minute call is enough to confirm the format, the audience, and the right scope. From there we send a specific proposal within 48 hours.",
     "italic": "No catalogue pricing. Every event is built around the room it is delivered in."
   },
+  "faq": {
+    "kicker": "Frequently asked",
+    "titleStart": "Before you",
+    "titleEm": "book the call.",
+    "items": [
+      { "q": "How long do you need before the event?", "a": "Two to three weeks is ideal — that gives me time to research your company, your sector, and the teams in the room. Tighter timelines work too; we just narrow the prep scope." },
+      { "q": "What if our teams don't already use AI tools?", "a": "It's not a blocker. We work in whatever you have access to — Copilot, ChatGPT, Gemini, Claude — and if there's no access at all, I bring a working setup to demo on. Live prototyping still happens." },
+      { "q": "Do participants need to bring laptops or prep anything?", "a": "Yes — laptops, and one real problem each team has this week. That's the only prep. The sharper the problem, the sharper the prototype we build on it." },
+      { "q": "Can you deliver in English and Romanian?", "a": "Both. Sessions are delivered in the language of the room. Most prompt sheets and post-session materials ship bilingually by default." },
+      { "q": "Do you sign NDAs and handle confidential context?", "a": "Always. NDA signed before any pre-event research starts. Nothing built on real client problems leaves the room without your approval." },
+      { "q": "What happens after the session?", "a": "Every participant leaves with a copy-paste prompt sheet and a one-page next-week plan. Optional: a scoped proposal for follow-up adoption work, based on what surfaced in the room." }
+    ]
+  },
   "funding": {
     "kicker": "When budget is the objection",
     "titleStart": "Your AI program might",

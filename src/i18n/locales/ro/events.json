@@ -107,6 +107,19 @@
     "body": "Un apel de 30 de minute e suficient pentru a confirma formatul, audiența și scope-ul potrivit. De acolo, trimitem o propunere specifică în 48 de ore.",
     "italic": "Fără pricing de catalog. Fiecare eveniment e construit pe sala în care e livrat."
   },
+  "faq": {
+    "kicker": "Întrebări frecvente",
+    "titleStart": "Înainte să",
+    "titleEm": "programezi discuția.",
+    "items": [
+      { "q": "De cât timp aveți nevoie înainte de eveniment?", "a": "Două-trei săptămâni e ideal — îmi dă timp să cercetez compania, sectorul și echipele care vor fi în sală. Termenele scurte funcționează și ele; doar restrângem scope-ul de pregătire." },
+      { "q": "Dacă echipele noastre nu folosesc deja instrumente AI?", "a": "Nu e un blocaj. Lucrăm cu ce aveți acces — Copilot, ChatGPT, Gemini, Claude — iar dacă nu există deloc acces, aduc eu un setup funcțional pe care construim live. Prototiparea tot se întâmplă." },
+      { "q": "Participanții trebuie să aducă laptop-uri sau să pregătească ceva?", "a": "Da — laptop-uri și o problemă reală pe care fiecare echipă o are săptămâna asta. Asta e singura pregătire. Cu cât e mai clară problema, cu atât e mai clar prototipul construit pe ea." },
+      { "q": "Puteți livra în engleză și română?", "a": "Ambele. Sesiunile se livrează în limba sălii. Majoritatea fișelor de prompturi și materialelor post-sesiune ajung bilingv din start." },
+      { "q": "Semnați NDA-uri și lucrați cu context confidențial?", "a": "Întotdeauna. NDA semnat înainte de orice research pre-eveniment. Nimic construit pe probleme reale de client nu iese din sală fără aprobarea voastră." },
+      { "q": "Ce se întâmplă după sesiune?", "a": "Fiecare participant pleacă cu o fișă de prompturi copy-paste și un plan de o pagină pentru săptămâna următoare. Opțional: o propunere de scope pentru continuarea muncii de adopție, pe baza a ceea ce iese la suprafață în sală." }
+    ]
+  },
   "funding": {
     "kicker": "Când bugetul e obiecția",
     "titleStart": "Programul tău AI ar putea fi",

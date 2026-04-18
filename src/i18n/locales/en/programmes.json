@@ -278,6 +278,13 @@
       { "num": "3", "h": "Delivery starts", "body": "The program begins on your timeline. Modular delivery means you control the pace. From this initial engagement, we grow the number of trained participants together." }
     ]
   },
+  "fundingBridge": {
+    "kicker": "After the training",
+    "titleStart": "Now you know what to build.",
+    "titleEm": "Fund building it.",
+    "body": "Prototypes built in the programme become production with budget — agents, integrations, Copilot and Azure licences, dev work. Vendor MDF, AWS co-sell and EU digital grants exist exactly for this. Most companies qualify.",
+    "cta": "See funding options →"
+  },
   "cta": {
     "title": "A program designed to fit your team. Not the other way around.",
     "subtitle": "Pay and enrol your cohort, or book the AI Adoption Call first to score your maturity and get a ranked roadmap. No pitch deck, no generic workshop.",
