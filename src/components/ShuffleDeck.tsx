@@ -1,17 +1,18 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import cardWorkers from "@/assets/card-ai-non-technical.webp";
 import cardEvents from "@/assets/card-events.webp";
 import cardFunding from "@/assets/card-funding.webp";
 import cardAssessment from "@/assets/card-assessment.webp";
 
-const DECK = [
-  { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people", external: false },
-  { image: cardAssessment, label: "AI Adoption Score", caption: "2 min · Instant maturity test", href: "/ai-adoption-score", external: false },
-  { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events", external: false },
-  { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding", external: false },
-  { image: cardAssessment, label: "AI Adoption Call", caption: "Free · 30 min · Talk to us", href: "/assessment", external: false },
+const DECK_KEYS = [
+  { key: "aiForWork", image: cardWorkers, href: "/programmes/ai-for-non-technical-people", external: false },
+  { key: "aiScore", image: cardAssessment, href: "/ai-adoption-score", external: false },
+  { key: "events", image: cardEvents, href: "/events", external: false },
+  { key: "funding", image: cardFunding, href: "/funding", external: false },
+  { key: "assessment", image: cardAssessment, href: "/assessment", external: false },
 ];
 
 interface DeckCardProps {
@@ -145,9 +146,16 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
 };
 
 const ShuffleDeck = () => {
+  const { t } = useTranslation("home");
+  const DECK = DECK_KEYS.map((c) => ({
+    image: c.image,
+    label: t(`shuffle.deck.${c.key}.label`),
+    caption: t(`shuffle.deck.${c.key}.caption`),
+    href: c.href,
+    external: c.external,
+  }));
+
   const [order, setOrder] = useState<number[]>(DECK.map((_, i) => i));
-  // Mount only the top card initially; reveal stack cards after first paint
-  // to avoid framer-motion measuring 3 cards' layout during hydration (forced reflow).
   const [stackReady, setStackReady] = useState(false);
   useEffect(() => {
     const id = window.setTimeout(() => setStackReady(true), 0);
@@ -187,7 +195,7 @@ const ShuffleDeck = () => {
       <div className="mt-8 inline-flex items-center gap-2 border border-red/60 px-4 py-2 rounded-full">
         <span aria-hidden className="text-red animate-pulse text-base leading-none">↔</span>
         <p className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper/85">
-          Tap to open · Swipe to shuffle
+          {t("shuffle.tapHint")}
         </p>
       </div>
 
@@ -195,9 +203,9 @@ const ShuffleDeck = () => {
         <button
           onClick={cycle}
           className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper border border-paper/40 px-4 py-2 hover:bg-red hover:text-paper hover:border-red transition-colors flex items-center gap-2"
-          aria-label="Previous card"
+          aria-label={t("shuffle.prev")}
         >
-          <span aria-hidden>←</span> Prev
+          <span aria-hidden>←</span> {t("shuffle.prev")}
         </button>
         <div className="flex items-baseline gap-1">
           <span className="font-display text-3xl md:text-4xl text-red tabular-nums leading-none">
@@ -210,9 +218,9 @@ const ShuffleDeck = () => {
         <button
           onClick={cycle}
           className="font-mono text-xs md:text-sm uppercase tracking-[0.25em] text-paper border border-paper/40 px-4 py-2 hover:bg-red hover:text-paper hover:border-red transition-colors flex items-center gap-2"
-          aria-label="Next card"
+          aria-label={t("shuffle.next")}
         >
-          Next <span aria-hidden>→</span>
+          {t("shuffle.next")} <span aria-hidden>→</span>
         </button>
       </div>
 
@@ -227,7 +235,7 @@ const ShuffleDeck = () => {
 
       <p className="font-display italic text-paper/85 text-2xl md:text-3xl mt-6 text-center max-w-md px-4 flex items-center justify-center gap-3">
         <span className="text-red animate-pulse not-italic" aria-hidden>•</span>
-        Now drawing: <span className="text-red not-italic">{top.label}</span>
+        {t("shuffle.drawing")} <span className="text-red not-italic">{top.label}</span>
       </p>
     </div>
   );
