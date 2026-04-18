@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "aiForWork": "AI for Work",
+    "events": "Events",
+    "funding": "Funding",
+    "aiScore": "AI Score",
+    "resources": "Resources",
+    "hermes": "Hermes Agent",
+    "about": "About",
+    "toggleMenu": "Toggle menu"
+  },
+  "booking": {
+    "label": "AI Adoption Call",
+    "note": "Free · 30 min · Maturity score in 24h"
+  },
+  "footer": {
+    "newsletter": {
+      "tag": "Dispatch · The Unlearning Pill",
+      "title": "One email a month.",
+      "titleEm": "Worth opening.",
+      "body": "Field notes from inside the work — what's actually moving funding decisions, where AI is quietly rewriting jobs, and the unglamorous mechanics of building teams that ship. Written by humans who'd rather under-send than waste your inbox.",
+      "emailPlaceholder": "name@company.com",
+      "emailLabel": "Email address",
+      "submit": "Get the dispatch →"
+    },
+    "headings": {
+      "contact": "Contact",
+      "programmes": "Programmes",
+      "company": "Company",
+      "legal": "Legal",
+      "follow": "Follow"
+    },
+    "address": "1, Aleea Pasărea în Văzduh, Bucharest, RO",
+    "programmes": {
+      "aiForWork": "AI for Work",
+      "hermes": "Hermes Agent",
+      "events": "Events & Keynotes",
+      "funding": "Funding"
+    },
+    "company": {
+      "about": "About",
+      "resources": "Resources",
+      "aiScore": "AI Adoption Score",
+      "assessment": "AI Adoption Call"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
+      "terms": "Terms & Conditions"
+    },
+    "tagline": "What is learned can be unlearned.",
+    "description": "The Unlearning School builds programs, systems and useful ways of working for teams dealing with projects funding pressure, AI adoption, digital change and the future of work.",
+    "copyright": "© {{year}} The Unlearning School. All rights reserved."
+  },
+  "cookies": {
+    "tag": "Cookies",
+    "body": "We use essential cookies to make this site work and analytics cookies to understand how it is used. See our",
+    "and": "and",
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Privacy Policy",
+    "essentialOnly": "Essential only",
+    "acceptAll": "Accept all",
+    "close": "Close"
+  },
+  "cta": {
+    "eyebrow": "The Final Word"
+  },
+  "aiScoreCta": {
+    "eyebrow": "AI Adoption Score",
+    "inline": {
+      "title": "Prefer a 2-minute self-test?",
+      "titleEm": "Get your score now.",
+      "body": "10 questions across strategy, tools, adoption and impact. Instant maturity score, gap analysis, and the next move that matters.",
+      "button": "Take the score →"
+    },
+    "band": {
+      "title": "2 minutes. 10 questions.",
+      "titleEm": "Know exactly where you stand.",
+      "body": "A weighted maturity model. Instant score, gap analysis across four dimensions, and a ranked next-step roadmap.",
+      "button": "Take the AI Adoption Score →",
+      "note": "Free · 2 min · Instant result"
+    }
+  },
+  "language": {
+    "switchTo": "Switch to {{lang}}",
+    "en": "EN",
+    "ro": "RO"
+  }
+}

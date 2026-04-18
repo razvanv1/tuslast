@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "The Unlearning School, AI adoption training for non-technical teams",
+    "description": "Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU.",
+    "keywords": "AI adoption, AI training, EU AI Act Article 4, Copilot adoption, AI for non-technical teams, workflow redesign, change management, Romania, EU"
+  },
+  "hero": {
+    "headlinePart1": "Your organisation bought AI capability.",
+    "headlineEm": "What you are paying for is unused potential.",
+    "subPart1": "The tools are deployed. The licences are active.",
+    "subEm": "The workflows have not changed.",
+    "subPart2": "That is the problem we fix.",
+    "primaryCta": "Buy AI for Work →",
+    "secondaryCta": "AI Adoption Call",
+    "note": "Pay & enrol your cohort · or book a free 30-min AI Adoption Call to score your maturity"
+  },
+  "shuffle": {
+    "tapHint": "Tap to open · Swipe to shuffle",
+    "prev": "Prev",
+    "next": "Next",
+    "drawing": "Now drawing:",
+    "deck": {
+      "aiForWork": { "label": "AI for Non-Technical People", "caption": "Modular · cohort" },
+      "aiScore": { "label": "AI Adoption Score", "caption": "2 min · Instant maturity test" },
+      "events": { "label": "Events & Keynotes", "caption": "90 min – 2 days" },
+      "funding": { "label": "MDF, Funding & Grants", "caption": "Vendor MDF · EU grants" },
+      "assessment": { "label": "AI Adoption Call", "caption": "Free · 30 min · Talk to us" }
+    }
+  },
+  "stats": {
+    "s1": { "value": "64%", "label": "of employees with Copilot access do not actively use it" },
+    "s2": { "value": "1,400+", "label": "professionals trained across the EU" },
+    "s3": { "value": "1 day", "label": "to redesign one process with AI embedded" }
+  },
+  "pattern": {
+    "eyebrow": "The Pattern",
+    "subEyebrow": "Across every sector we observe",
+    "title": "Why AI adoption stalls after the rollout.",
+    "body": "Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process, which was never redesigned to use AI.",
+    "rows": [
+      { "week": "Week 1–2", "text": "Enthusiastic early adopters use the tool daily. Visible momentum." },
+      { "week": "Week 3–4", "text": "Middle majority try it once or twice on familiar tasks. Irregular usage." },
+      { "week": "Week 5+", "text": "Usage plateaus. Most employees return to previous workflows. Dashboard shows \"active licences.\" Processes have not changed." }
+    ]
+  },
+  "premise": {
+    "attribution": "The premise behind every Unlearning School engagement",
+    "quote": "Adding a tool to an unchanged process does not change the process. You need to redesign the workflow first, and clear the old habit before the new one can form. That is the step most deployments skip."
+  },
+  "audience": {
+    "eyebrow": "Who this is for",
+    "title": "Three roles.",
+    "titleEm": "Three diagnoses.",
+    "situationLabel": "The Situation",
+    "resultLabel": "What You Get",
+    "items": [
+      {
+        "role": "COO / Operations Director",
+        "situation": "Copilot deployed. Licence spend is real. Process times have not improved. Board is asking for results.",
+        "result": "One process rebuilt in one day. Measurable output. Template your team built themselves."
+      },
+      {
+        "role": "HR / L&D Lead",
+        "situation": "You need a credible AI upskilling programme. EU AI Act Article 4 is in force. No plan that demonstrably changes behaviour.",
+        "result": "Role-adapted workshops. Participants leave with 3–5 AI workflows ready the next morning."
+      },
+      {
+        "role": "CIO / IT & Digital Lead",
+        "situation": "Tools are deployed and licensed. Adoption metrics are flat. Business teams blame IT for tools they never asked for.",
+        "result": "A cross-functional adoption layer on top of your stack. Internal champions, governance, and EU AI Act audit trail."
+      }
+    ],
+    "linkProgramme": "→ See the core program",
+    "linkAssessment": "→ Book the AI Adoption Call"
+  },
+  "ladder": {
+    "eyebrow": "The catalogue",
+    "title": "Three programmes,",
+    "titleEm": "scoped from one free Assessment.",
+    "items": [
+      {
+        "tag": "Program 1 · Core",
+        "title": "AI for Non-Technical People",
+        "body": "Structured adoption program for non-technical business teams. Modular: Discovery (1×2h), Short Sprint (2–3 sessions), or Full Program (4+ sessions). Built on the AI tools you already pay for.",
+        "cta": "See the program"
+      },
+      {
+        "tag": "Program 2 · Accelerator",
+        "title": "Events & Keynotes",
+        "body": "Workshops, hackathons, and keynotes for fast proof and internal momentum. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples.",
+        "cta": "See event formats"
+      },
+      {
+        "tag": "Program 3 · Deal closer",
+        "title": "Funding Structuring",
+        "body": "Vendor MDF, AWS partner co-sell, or EU digital grants. We structure the program to qualify, draft the application, and align delivery so reimbursement actually happens.",
+        "cta": "See funding options"
+      }
+    ]
+  },
+  "mechanism": {
+    "eyebrow": "The mechanism",
+    "title": "Unfreeze,",
+    "titleEm": "then change.",
+    "body": "Before a team can build new working habits, they must consciously let go of the old ones. Most AI adoption programmes start at \"change\" and skip \"unfreeze\" entirely. That is why behaviour does not stick. Our sprints are built around the unfreeze step first.",
+    "footnote": "Based on Lewin's Unfreeze–Change–Refreeze model (1947), applied to AI workflow adoption in non-technical teams."
+  },
+  "credibility": {
+    "eyebrow": "Credibility, briefly",
+    "title": "The receipts.",
+    "items": [
+      { "tag": "Track record", "title": "1,400+ professionals trained", "body": "Across finance, retail, manufacturing, and professional services, Romania and EU." },
+      { "tag": "Founder", "title": "Răzvan Vâlceanu", "body": "20+ years across innovation, digital transformation, executive education, and entrepreneurship." },
+      { "tag": "Proof format", "title": "Before / after workflows", "body": "Anonymised sector examples available on request during the Assessment call. No client names published on this site." }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to put AI to work?",
+    "subtitle": "Buy the core programme and enrol your cohort, or book a free 30-min AI Adoption Call if you want a maturity score and roadmap first.",
+    "cta": "Buy AI for Work →",
+    "secondary": "AI Adoption Call",
+    "note": "Pay & enrol · or get a maturity score + roadmap from the AI Adoption Call"
+  },
+  "faq": [
+    {
+      "question": "What does The Unlearning School do?",
+      "answer": "We help organisations turn deployed AI tools (Copilot, ChatGPT, Gemini) into actually-used workflows by redesigning processes and training non-technical teams. The focus is behaviour change, not tool demos."
+    },
+    {
+      "question": "Who is this for?",
+      "answer": "COOs, HR/L&D leads, and CIOs in EU companies that already pay for AI licences but see flat adoption metrics and unchanged process times."
+    },
+    {
+      "question": "Does this help with EU AI Act Article 4 compliance?",
+      "answer": "Yes. Our role-adapted programmes provide the AI literacy training required by EU AI Act Article 4, with auditable participation and behaviour-change outcomes."
+    },
+    {
+      "question": "How do I start?",
+      "answer": "Book a free AI Adoption Gap Assessment. One working session, written report within 5 business days, no proposal attached."
+    }
+  ]
+}

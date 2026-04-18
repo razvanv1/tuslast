@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "aiForWork": "AI pentru Muncă",
+    "events": "Evenimente",
+    "funding": "Finanțare",
+    "aiScore": "Diagnostic AI",
+    "resources": "Resurse",
+    "hermes": "Agentul Hermes",
+    "about": "Despre",
+    "toggleMenu": "Deschide meniul"
+  },
+  "booking": {
+    "label": "Discuție AI Adoption",
+    "note": "Gratuit · 30 min · Scor de maturitate în 24h"
+  },
+  "footer": {
+    "newsletter": {
+      "tag": "Newsletter · The Unlearning Pill",
+      "title": "Un email pe lună.",
+      "titleEm": "Care merită deschis.",
+      "body": "Notițe de teren din interiorul muncii — ce mișcă efectiv deciziile de finanțare, unde rescrie AI joburile pe tăcute, și mecanica deloc glamour a construirii unor echipe care livrează. Scris de oameni care preferă să trimită mai puțin decât să-ți irosească inbox-ul.",
+      "emailPlaceholder": "nume@companie.ro",
+      "emailLabel": "Adresă de email",
+      "submit": "Mă abonez →"
+    },
+    "headings": {
+      "contact": "Contact",
+      "programmes": "Programe",
+      "company": "Companie",
+      "legal": "Legal",
+      "follow": "Urmărește-ne"
+    },
+    "address": "Aleea Pasărea în Văzduh nr. 1, București, RO",
+    "programmes": {
+      "aiForWork": "AI pentru Muncă",
+      "hermes": "Agentul Hermes",
+      "events": "Evenimente & Keynote-uri",
+      "funding": "Finanțare"
+    },
+    "company": {
+      "about": "Despre noi",
+      "resources": "Resurse",
+      "aiScore": "Diagnostic AI Adoption",
+      "assessment": "Discuție AI Adoption"
+    },
+    "legal": {
+      "privacy": "Politica de Confidențialitate",
+      "cookies": "Politica de Cookie-uri",
+      "terms": "Termeni și Condiții"
+    },
+    "tagline": "Ce s-a învățat poate fi dezvățat.",
+    "description": "The Unlearning School construiește programe, sisteme și moduri utile de lucru pentru echipele care se confruntă cu presiunea finanțării, adopția AI, schimbarea digitală și viitorul muncii.",
+    "copyright": "© {{year}} The Unlearning School. Toate drepturile rezervate."
+  },
+  "cookies": {
+    "tag": "Cookie-uri",
+    "body": "Folosim cookie-uri esențiale pentru ca site-ul să funcționeze și cookie-uri de analiză pentru a înțelege cum este folosit. Vezi",
+    "and": "și",
+    "cookiePolicy": "Politica de Cookie-uri",
+    "privacyPolicy": "Politica de Confidențialitate",
+    "essentialOnly": "Doar esențiale",
+    "acceptAll": "Accept toate",
+    "close": "Închide"
+  },
+  "cta": {
+    "eyebrow": "Cuvântul de final"
+  },
+  "aiScoreCta": {
+    "eyebrow": "Diagnostic AI Adoption",
+    "inline": {
+      "title": "Preferi un auto-test de 2 minute?",
+      "titleEm": "Află scorul acum.",
+      "body": "10 întrebări despre strategie, instrumente, adopție și impact. Scor de maturitate instant, analiză a lacunelor și următorul pas care contează.",
+      "button": "Fă diagnosticul →"
+    },
+    "band": {
+      "title": "2 minute. 10 întrebări.",
+      "titleEm": "Vezi exact unde ești.",
+      "body": "Un model de maturitate ponderat. Scor instant, analiza lacunelor pe patru dimensiuni și o foaie de parcurs cu pași prioritizați.",
+      "button": "Fă Diagnosticul AI Adoption →",
+      "note": "Gratuit · 2 min · Rezultat instant"
+    }
+  },
+  "language": {
+    "switchTo": "Schimbă în {{lang}}",
+    "en": "EN",
+    "ro": "RO"
+  }
+}
