@@ -36,7 +36,7 @@ const baseCorsHeaders = {
 
 const corsFor = (req: Request) => {
   const reqOrigin = req.headers.get("origin");
-  const allowed = reqOrigin && ALLOWED_ORIGINS.has(reqOrigin) ? reqOrigin : DEFAULT_ORIGIN;
+  const allowed = isAllowedOrigin(reqOrigin) ? reqOrigin : DEFAULT_ORIGIN;
   return { ...baseCorsHeaders, "Access-Control-Allow-Origin": allowed };
 };
 
