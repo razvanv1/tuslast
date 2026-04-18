@@ -1,0 +1,95 @@
+{
+  "seo": {
+    "title": "About — a behaviour change practice for AI adoption",
+    "description": "The Unlearning School is a behaviour change practice founded by Răzvan Vâlceanu. We redesign workflows so AI tools actually get used in non-technical teams across the EU.",
+    "keywords": "The Unlearning School, Răzvan Vâlceanu, AI adoption consultancy, behaviour change AI, change management AI, EU"
+  },
+  "docTitle": "About, The Unlearning School",
+  "hero": {
+    "tag": "About",
+    "title": "A behaviour change practice, not a training company.",
+    "subtitle": "The difference matters. Training companies teach tools. We change the processes around the tools so the tools get used.",
+    "cta": "AI Adoption Call →"
+  },
+  "founding": {
+    "byline": "The founding observation",
+    "read": "7 min",
+    "filed": "About · Method",
+    "kicker": "The problem we were founded to solve",
+    "titlePre": "Another training session ",
+    "titleEm": "was not the answer.",
+    "p1": "In 2023, organisations across Europe began deploying AI tools at scale. Microsoft 365 Copilot. ChatGPT Enterprise. Custom AI assistants. In most cases, usage after the first month was below expectations.",
+    "p2": "The standard response was to run another training session. The results were the same. The issue was not knowledge, it was that the surrounding workflow had never been changed to require the tool. A team that has always run its weekly report in a specific way will continue to run it that way, regardless of what tools are available. Not from resistance. Because changing a workflow is harder than adding a tool to an unchanged one."
+  },
+  "blockquote": {
+    "attribution": "The founding premise",
+    "body": "You cannot change behaviour by adding a new option to an old process. You have to remove the old path first. That is the unlearning step most programmes skip entirely."
+  },
+  "mechanism": {
+    "kicker": "The mechanism",
+    "titlePre": "Unfreeze, change, ",
+    "titleEm": "refreeze.",
+    "intro": "All The Unlearning School programmes are built on the same sequence, adapted from Kurt Lewin's change model (1947) and applied to AI workflow adoption.",
+    "steps": [
+      { "title": "Unfreeze", "body": "Participants explicitly surface the current habit: how they run the process today, what assumptions are embedded in it, and why those assumptions exist. This step is non-negotiable. Without it, new behaviours do not stick." },
+      { "title": "Change", "body": "Participants redesign the workflow with AI embedded, in the session, not as homework. The new version is tested, adjusted, and completed before anyone leaves." },
+      { "title": "Refreeze", "body": "The new workflow is documented as a team-owned template. Participants who built it are the ones who run it next week. That ownership is why it sticks." }
+    ]
+  },
+  "redesign": {
+    "tag": "A redesign in practice",
+    "title": "Weekly supplier invoice reconciliation.",
+    "intro": "Anonymised example from a finance operations team that ran a Rapid Prototyping Sprint. The process selected was weekly supplier invoice reconciliation.",
+    "before": {
+      "tag": "Before the sprint",
+      "title": "The old workflow",
+      "items": [
+        "→ Manual download of invoice data from ERP",
+        "→ Spreadsheet comparison against purchase orders",
+        "→ Email thread to flag discrepancies",
+        "→ Manual summary report for approval"
+      ],
+      "time": "Average time: 4.5 hours per week"
+    },
+    "after": {
+      "tag": "After the sprint",
+      "title": "The redesigned workflow",
+      "items": [
+        "→ Same ERP export, process unchanged here",
+        "→ AI-assisted comparison with pattern flagging",
+        "→ AI-drafted summary of discrepancies for review",
+        "→ One-click report generation"
+      ],
+      "time": "Average time: 1.5 hours per week"
+    },
+    "outroPre": "The team built this version themselves during the sprint. Two weeks later, all four team members were running the new workflow without prompting. ",
+    "outroEm": "The template they created is what drove adoption, not the tool."
+  },
+  "founder": {
+    "label": "Founder",
+    "namePre": "Răzvan ",
+    "nameEm": "Vâlceanu",
+    "p1Pre": "is the founder and lead trainer at The Unlearning School. He brings 15 years of experience at the intersection of technology and organisational change.",
+    "p2Pre": "Former General Manager at ",
+    "p2Mid": ", where he ran a technology business unit and led product and go-to-market teams. Former Entrepreneurship Director at ",
+    "p2End": ", where he built programmes connecting academic institutions with the startup and corporate ecosystem.",
+    "p3Pre": "The Unlearning School was built on the observation, made repeatedly across both roles, that the limiting factor in organisational change is almost never the technology, ",
+    "p3Em": "it is the existing habit that the technology is supposed to replace.",
+    "linkedin": "Răzvan on LinkedIn →"
+  },
+  "track": {
+    "tag": "Track record",
+    "title": "Briefly stated.",
+    "items": [
+      { "tag": "Scale", "title": "1,400+ professionals trained", "body": "Across finance, retail, manufacturing, and professional services. Romania and EU. Programmes delivered in English and Romanian." },
+      { "tag": "Proof", "title": "Before / after workflow examples", "body": "Anonymised examples from relevant sectors are available during the Assessment call. No client names are published on this site." },
+      { "tag": "Context", "title": "Corporate, academic, startup", "body": "Programmes have been delivered inside large enterprises, academic institutions, and growth-stage companies. The method adapts to the context; the mechanism does not change." }
+    ]
+  },
+  "cta": {
+    "title": "Start with the AI Adoption Call.",
+    "subtitle": "A free 30-minute call that scores your AI adoption maturity, surfaces the gaps, and gives you a ranked next-step roadmap. 1-page written summary within 24 hours. No proposal attached.",
+    "ctaText": "AI Adoption Call →",
+    "note": "Free · hello@unlearning.ro"
+  }
+}

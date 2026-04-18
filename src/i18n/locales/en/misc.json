@@ -1,0 +1,32 @@
+{
+  "paymentSuccess": {
+    "docTitle": "Payment received, The Unlearning School",
+    "seoTitle": "Payment received — The Unlearning School",
+    "seoDescription": "Your enrolment is confirmed. We'll be in touch shortly to schedule the first session.",
+    "tag": "Payment received",
+    "titlePre": "You're ",
+    "titleEm": "in.",
+    "p1": "Thank you. Your payment has been confirmed and a receipt has been sent to your email.",
+    "p2": "We'll reach out within 1 business day at the email you used at checkout to schedule the kick-off conversation and align on dates, participants, and tools.",
+    "ctaHome": "Back to home →",
+    "ctaEmail": "Email us"
+  },
+  "paymentCanceled": {
+    "docTitle": "Payment canceled, The Unlearning School",
+    "seoTitle": "Payment canceled — The Unlearning School",
+    "seoDescription": "Your checkout was canceled. No charge was made. You can resume any time.",
+    "tag": "Payment canceled",
+    "titlePre": "Nothing ",
+    "titleEm": "charged.",
+    "body": "Your checkout was canceled. No payment was processed. If something blocked you or you'd like to talk first, we're happy to.",
+    "ctaProgramme": "Back to programme →",
+    "ctaAssessment": "AI Adoption Call instead"
+  },
+  "notFound": {
+    "seoTitle": "Page not found (404)",
+    "seoDescription": "The page you are looking for does not exist.",
+    "title": "404",
+    "subtitle": "Oops! Page not found",
+    "back": "Return to Home"
+  }
+}

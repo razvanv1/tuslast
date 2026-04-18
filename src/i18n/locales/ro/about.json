@@ -1,0 +1,95 @@
+{
+  "seo": {
+    "title": "Despre — o practică de schimbare comportamentală pentru adopția AI",
+    "description": "The Unlearning School este o practică de schimbare comportamentală fondată de Răzvan Vâlceanu. Reproiectăm fluxurile de lucru ca instrumentele AI să fie efectiv folosite în echipele non-tehnice din UE.",
+    "keywords": "The Unlearning School, Răzvan Vâlceanu, consultanță adopție AI, schimbare comportamentală AI, change management AI, UE"
+  },
+  "docTitle": "Despre, The Unlearning School",
+  "hero": {
+    "tag": "Despre",
+    "title": "O practică de schimbare comportamentală, nu o companie de training.",
+    "subtitle": "Diferența contează. Companiile de training te învață instrumente. Noi schimbăm procesele din jurul instrumentelor astfel încât instrumentele să fie folosite.",
+    "cta": "Discuție AI Adoption →"
+  },
+  "founding": {
+    "byline": "Observația fondatoare",
+    "read": "7 min",
+    "filed": "Despre · Metodă",
+    "kicker": "Problema pentru care am fost fondați",
+    "titlePre": "Încă o sesiune de training ",
+    "titleEm": "nu era răspunsul.",
+    "p1": "În 2023, organizațiile din Europa au început să implementeze instrumente AI la scară. Microsoft 365 Copilot. ChatGPT Enterprise. Asistenți AI personalizați. În majoritatea cazurilor, utilizarea după prima lună era sub așteptări.",
+    "p2": "Răspunsul standard a fost să se ruleze încă o sesiune de training. Rezultatele au fost aceleași. Problema nu era cunoașterea, ci că fluxul de lucru din jur nu fusese niciodată schimbat ca să ceară instrumentul. O echipă care a făcut mereu raportul săptămânal într-un anumit fel va continua să-l facă așa, indiferent de instrumentele disponibile. Nu din rezistență. Pentru că schimbarea unui flux e mai grea decât adăugarea unui instrument la unul nemodificat."
+  },
+  "blockquote": {
+    "attribution": "Premisa fondatoare",
+    "body": "Nu poți schimba comportamentul adăugând o opțiune nouă la un proces vechi. Trebuie să elimini întâi calea veche. Acesta este pasul de dezvățare pe care majoritatea programelor îl sar complet."
+  },
+  "mechanism": {
+    "kicker": "Mecanismul",
+    "titlePre": "Dezgheață, schimbă, ",
+    "titleEm": "reîngheață.",
+    "intro": "Toate programele The Unlearning School sunt construite pe aceeași secvență, adaptată din modelul de schimbare al lui Kurt Lewin (1947) și aplicată la adopția fluxurilor AI.",
+    "steps": [
+      { "title": "Dezgheață", "body": "Participanții scot la suprafață obiceiul curent: cum rulează procesul azi, ce presupuneri sunt încorporate în el și de ce există acele presupuneri. Acest pas nu se negociază. Fără el, comportamentele noi nu se lipesc." },
+      { "title": "Schimbă", "body": "Participanții reproiectează fluxul cu AI încorporat, în sesiune, nu ca temă. Versiunea nouă e testată, ajustată și finalizată înainte ca cineva să plece." },
+      { "title": "Reîngheață", "body": "Fluxul nou este documentat ca șablon deținut de echipă. Participanții care l-au construit sunt cei care îl rulează săptămâna viitoare. Acea proprietate e motivul pentru care se lipește." }
+    ]
+  },
+  "redesign": {
+    "tag": "O reproiectare în practică",
+    "title": "Reconcilierea săptămânală a facturilor de la furnizori.",
+    "intro": "Exemplu anonimizat dintr-o echipă de finance operations care a rulat un Rapid Prototyping Sprint. Procesul ales a fost reconcilierea săptămânală a facturilor de la furnizori.",
+    "before": {
+      "tag": "Înainte de sprint",
+      "title": "Fluxul vechi",
+      "items": [
+        "→ Descărcare manuală a datelor de facturare din ERP",
+        "→ Comparare în spreadsheet cu comenzile de achiziție",
+        "→ Fir de email pentru semnalarea discrepanțelor",
+        "→ Raport de sumar manual pentru aprobare"
+      ],
+      "time": "Timp mediu: 4.5 ore pe săptămână"
+    },
+    "after": {
+      "tag": "După sprint",
+      "title": "Fluxul reproiectat",
+      "items": [
+        "→ Același export ERP, proces neschimbat aici",
+        "→ Comparare asistată de AI cu semnalarea tiparelor",
+        "→ Sumar de discrepanțe redactat de AI pentru revizuire",
+        "→ Generare raport cu un singur clic"
+      ],
+      "time": "Timp mediu: 1.5 ore pe săptămână"
+    },
+    "outroPre": "Echipa a construit această versiune singură în timpul sprintului. Două săptămâni mai târziu, toți cei patru membri rulau fluxul nou fără să fie împinși. ",
+    "outroEm": "Șablonul pe care l-au creat e ce a stimulat adopția, nu instrumentul."
+  },
+  "founder": {
+    "label": "Fondator",
+    "namePre": "Răzvan ",
+    "nameEm": "Vâlceanu",
+    "p1Pre": "este fondatorul și trainer-ul principal la The Unlearning School. Aduce 15 ani de experiență la intersecția dintre tehnologie și schimbare organizațională.",
+    "p2Pre": "Fost General Manager la ",
+    "p2Mid": ", unde a condus o unitate de business tehnologică și echipele de produs și go-to-market. Fost Director de Antreprenoriat la ",
+    "p2End": ", unde a construit programe care conectează instituțiile academice cu ecosistemul de startup-uri și corporații.",
+    "p3Pre": "The Unlearning School a fost construit pe observația, făcută repetat în ambele roluri, că factorul limitativ în schimbarea organizațională nu este aproape niciodată tehnologia, ",
+    "p3Em": "ci obiceiul existent pe care tehnologia ar trebui să-l înlocuiască.",
+    "linkedin": "Răzvan pe LinkedIn →"
+  },
+  "track": {
+    "tag": "Istoric",
+    "title": "Pe scurt.",
+    "items": [
+      { "tag": "Scară", "title": "1.400+ profesioniști instruiți", "body": "În finance, retail, producție și servicii profesionale. România și UE. Programe livrate în engleză și română." },
+      { "tag": "Dovadă", "title": "Exemple de fluxuri înainte/după", "body": "Exemple anonimizate din sectoare relevante sunt disponibile în Discuția AI Adoption. Niciun nume de client nu este publicat pe acest site." },
+      { "tag": "Context", "title": "Corporate, academic, startup", "body": "Programele au fost livrate în corporații mari, instituții academice și companii în creștere. Metoda se adaptează la context; mecanismul nu se schimbă." }
+    ]
+  },
+  "cta": {
+    "title": "Începe cu Discuția AI Adoption.",
+    "subtitle": "O discuție gratuită de 30 de minute care îți evaluează maturitatea adopției AI, scoate la suprafață lacunele și îți dă o foaie de parcurs cu pași prioritizați. Sumar scris de 1 pagină în 24 de ore. Fără propunere comercială atașată.",
+    "ctaText": "Discuție AI Adoption →",
+    "note": "Gratuit · hello@unlearning.ro"
+  }
+}
