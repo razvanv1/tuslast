@@ -50,7 +50,7 @@ const Assessment = () => {
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <Sidebar byline="The 30 minutes" read="3 min" filed="AI Adoption Call · Method" />
+          <Sidebar />
           <div className="md:col-span-9">
             <SectionHeading
               kicker="What the call covers"
