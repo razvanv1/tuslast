@@ -52,7 +52,7 @@ const Funding = () => {
         bannerAlt="Modern team reviewing funding documents"
         title="Your AI program might already be funded."
         subtitle="Vendor MDF programs, co-sell budgets, and EU digital grants exist specifically to fund this kind of work. Most companies qualify for at least one. Most have never claimed it."
-        ctaText="Free audit →"
+        ctaText="AI Adoption Call →"
         ctaTo="/assessment"
         secondaryText="See all programmes"
         secondaryTo="/programmes"
@@ -143,7 +143,7 @@ const Funding = () => {
       <CTASection
         title="Check what you qualify for."
         subtitle="A 30-minute call to map your vendor relationships and confirm which instruments fit. We come back with a written shortlist within 5 business days. No commitment until you see the numbers."
-        ctaText="Free audit →"
+        ctaText="AI Adoption Call →"
         ctaTo="/assessment"
         note="Free · No commitment · Written shortlist within 5 business days"
       />

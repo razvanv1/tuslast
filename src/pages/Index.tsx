@@ -120,11 +120,11 @@ const Index = () => {
                   to="/assessment"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Free audit
+                  AI Adoption Call
                 </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                Pay & enrol your cohort · or book a free 30-min audit with Răzvan
+                Pay & enrol your cohort · or book a free 30-min AI Adoption Call to score your maturity
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ const Index = () => {
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
           <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the free audit</Link>
+          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the AI Adoption Call</Link>
         </div>
       </Section>
 
@@ -291,12 +291,12 @@ const Index = () => {
       {/* CTA */}
       <CTASection
         title="Ready to put AI to work?"
-        subtitle="Buy the core programme and enrol your cohort, or book a free 30-min audit if you want a written diagnostic first."
+        subtitle="Buy the core programme and enrol your cohort, or book a free 30-min AI Adoption Call if you want a maturity score and roadmap first."
         ctaText="Buy AI for Work · from €3,000 →"
         ctaTo="/programmes/ai-for-non-technical-people#pricing"
-        secondaryText="Free audit"
+        secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
-        note="Pay & enrol · or get a written report after your free audit"
+        note="Pay & enrol · or get a maturity score + roadmap from the AI Adoption Call"
       />
     </>
   );

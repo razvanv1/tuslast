@@ -196,7 +196,7 @@ const successMetrics = [
 ];
 
 const nextSteps = [
-  { num: "1", h: "Book the free audit", body: "A 30-minute working conversation to understand where AI fits in your workflows, what's blocking adoption, and which format makes sense. No commitment." },
+  { num: "1", h: "Book the AI Adoption Call", body: "A free 30-minute call that scores your AI adoption maturity, surfaces the gaps, and produces a ranked next-step roadmap. No commitment." },
   { num: "2", h: "We scope the right format together", body: "Based on the meeting, we agree on the right entry point: a single session, a short sprint, or the full program. Everything is adapted to your team's tools and context." },
   { num: "3", h: "Delivery starts", body: "The program begins on your timeline. Modular delivery means you control the pace. From this initial engagement, we grow the number of trained participants together." },
 ];
@@ -338,7 +338,7 @@ const AIForNonTechnical = () => {
             </article>
           ))}
         </div>
-        <p className="text-paper/65 text-[15px] mt-6 italic font-display">Book the free audit. Scope the right format together. No commitment until you see the fit.</p>
+        <p className="text-paper/65 text-[15px] mt-6 italic font-display">Book the AI Adoption Call. Get your maturity score and roadmap. Scope the right format together. No commitment until you see the fit.</p>
       </Section>
 
       <Section variant="darker">
@@ -458,7 +458,7 @@ const AIForNonTechnical = () => {
                       to="/assessment"
                       className={`block text-center font-mono text-[10px] uppercase tracking-[0.2em] hover:underline ${t.featured ? "text-paper/90" : "text-paper/60"}`}
                     >
-                      Or book the free audit first
+                      Or book the AI Adoption Call first
                     </Link>
                   </div>
                 ) : (
@@ -466,7 +466,7 @@ const AIForNonTechnical = () => {
                     to="/assessment"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
-                    Free audit →
+                    AI Adoption Call →
                   </Link>
                 )}
               </article>
@@ -592,10 +592,10 @@ const AIForNonTechnical = () => {
 
       <CTASection
         title="A program designed to fit your team. Not the other way around."
-        subtitle="Pay and enrol your cohort, or book the free audit first. No pitch deck, no generic workshop."
+        subtitle="Pay and enrol your cohort, or book the AI Adoption Call first to score your maturity and get a ranked roadmap. No pitch deck, no generic workshop."
         ctaText="Buy now · from €3,000 →"
         ctaTo="#pricing"
-        secondaryText="Free audit"
+        secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
         note="Modular delivery · Built on your existing tools · Certificate of completion"
       />
