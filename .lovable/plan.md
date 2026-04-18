@@ -1,36 +1,105 @@
 
-Plan: înlocuiesc tonurile shiny/uniform-black cu o paletă matte black + dark grey (mai multă variație tonală între secțiuni) și măresc accentele Kandinsky/Bauhaus care apar prea mici în backdrop-uri.
+## Plan: Language switcher EN ↔ RO cu traducere completă
 
-## Ce schimb
+Default = engleză. Switcher în Navbar (desktop + mobile). Traducere completă RO pentru tot conținutul vizibil — titluri, butoane, etichete mono, microcopy, formulare, legal. Excepții (rămân în EN/original): nume proprii (Microsoft, Google, OpenAI, Hermes), acronime (AI, EU, GDPR, CRM), termeni legali consacrați (EU AI Act, Article 4), copyright, adrese email/telefon.
 
-### 1. Paletă — matte black + dark grey (în `src/index.css`)
-Trec de la negru shiny uniform la un set de tonuri matte cu contrast subtil între secțiuni:
-- `--background` (matte black de bază): `0 0% 6%` → `0 0% 8%` (mai puțin "deep black", mai mult charcoal mat)
-- `--section-darker`: ajustat la `0 0% 5%` (matte deep, fără luciu)
-- `--section-graphite`: ajustat la `220 4% 14%` (dark grey cu nuanță rece subtilă, înlocuiește "graphite cu sheen")
-- Elimin / reduc gradientele și sheen-urile pe `.bg-section-graphite` (dacă există un `background-image` cu gradient — îl scot, las culoare plată mată)
-- Adaug un al patrulea ton: `--section-slate` (`220 3% 11%`) pentru și mai multă variație între secțiuni consecutive
+## Stack & arhitectură
 
-### 2. Variantă nouă în `Section.tsx`
-Adaug `variant="slate"` ca opțiune, ca să pot alterna 4 tonuri (dark / darker / graphite / slate) în loc de 3 — rupe monotonia fără să schimb structura paginii.
+**Librărie**: `react-i18next` + `i18next` + `i18next-browser-languagedetector`
+- Standard de facto, SSR-safe, suportă namespaces, interpolare, plurals, lazy loading.
+- `Trans` component pentru text cu markup inline (italic, `<em>`, link-uri).
 
-### 3. Accente Kandinsky mai mari (în `src/components/bauhaus/BauhausBackdrop.tsx`)
-Accentele secundare apar la `w-20`–`w-28` și sunt aproape invizibile. Le măresc cu ~40–60%:
-- Compoziții principale: `w-48 md:w-64` → `w-64 md:w-80` (corner-tl, corner-bl)
-- Compoziții corner-tr / corner-br: `w-52 md:w-72` → `w-72 md:w-96`
-- Accente secundare (DotGrid, DiagonalLines, CrossHair, SquareStack, WaveLines): `w-20`–`w-28` → `w-32`–`w-44`
-- Center-burst: `w-72 md:w-96` → `w-96 md:w-[32rem]`
-- Cresc ușor opacitatea accentelor secundare (`0.5–0.6` → `0.65–0.75`) ca să fie vizibile peste matte black
+**Storage limbă**: `localStorage` key `tus-lang` + `<html lang="...">` actualizat dinamic (important pentru SEO + screen readers + crawlere AI).
 
-### 4. Verificare contrast
-Mă asigur că `mix-blend-screen` rămâne lizibil pe noile tonuri matte (nu mai e negru pur, deci shape-urile vor avea ușor mai puțin contrast — compensez prin opacitate crescută la pasul 3).
+**Default**: forțat `en` la prima vizită (ignor `navigator.language` ca să respect cerința). Schimbarea persistă.
 
-## Fișiere atinse
-- `src/index.css` — tokens de culoare + eliminare sheen
-- `src/components/Section.tsx` — adaug `variant="slate"`
-- `src/components/bauhaus/BauhausBackdrop.tsx` — măresc shape-urile
+## Structură fișiere
+
+```text
+src/i18n/
+  config.ts                    // init i18next
+  locales/
+    en/
+      common.json              // navbar, footer, CTA-uri globale, cookie banner
+      home.json                // pagina Index
+      assessment.json          // AI Adoption Call
+      ai-score.json            // AI Adoption Score (questions + results)
+      programmes.json          // AI for Non-Technical
+      events.json
+      funding.json
+      hermes.json
+      resources.json
+      about.json
+      legal.json               // Privacy, Cookies, Terms
+      payment.json             // Success/Canceled
+    ro/
+      (același set, traduceri RO)
+src/components/
+  LanguageSwitcher.tsx         // EN | RO toggle, mono-style
+  LanguageProvider.tsx         // wrapper cu i18next + sync <html lang>
+```
+
+## Componente noi
+
+**`LanguageSwitcher.tsx`** — toggle minimalist editorial:
+```text
+[ EN | RO ]  ← font-mono uppercase tracking-[0.2em], red underline pe activ
+```
+Plasat în Navbar înainte de butonul "Book a call" (desktop) și sus în mobile menu.
+
+**`LanguageProvider.tsx`** — la mount setează `i18n.language = localStorage.tus-lang ?? 'en'`, ascultă `languageChanged` și actualizează `document.documentElement.lang`.
+
+## Refactor pagini
+
+Fiecare pagină / componentă cu text vizibil înlocuiește string-uri hardcodate cu `t('key')`. Pattern:
+```tsx
+const { t } = useTranslation('home');
+<h1>{t('hero.title')}</h1>
+<Trans i18nKey="hero.subtitle" components={{ em: <em className="text-red" /> }} />
+```
+
+Listă fișiere atinse (toate paginile + componentele cu copy):
+- `Navbar.tsx`, `Footer.tsx`, `CookieConsent.tsx`, `CTASection.tsx`, `AIScoreCTA.tsx`, `Affiliations.tsx`, `Marquee.tsx`, `FAQAccordion.tsx`, `CurriculumAccordion.tsx`, `HeroCardDeck.tsx`, `IssueCard.tsx`, `PageHero.tsx`, `Editorial.tsx`, `Blockquote.tsx`
+- Toate `src/pages/*` (12 pagini)
+- `src/lib/aiScoreData.ts` — questions/answers mutate în JSON-uri locale (sau wrapper care returnează versiunea tradusă).
+
+## Calitate traducere RO
+
+**Principii**:
+- Ton editorial, decis, fără calcuri din EN ("livrăm valoare" = NU; "construim programe care funcționează" = DA).
+- Termeni-cheie consistenți: *unlearning* → "dezvățare" (cu mențiune EN la prima apariție pe Home: "Dezvățare. (Unlearning.)"), *AI adoption* → "adopția AI", *workflow* → "flux de lucru", *funding* → "finanțare", *behaviour-change* → "schimbare comportamentală".
+- Butoane scurte și directe: "Book a call" → "Programează o discuție", "Get the dispatch" → "Primește newsletter-ul", "Take the score" → "Fă diagnosticul".
+- Etichete mono uppercase rămân uppercase și în RO.
+- Păstrez italicele și accentele tipografice pe red.
+
+**Nu se traduc**: Microsoft, Google, OpenAI, Anthropic, EU AI Act, Article 4, GDPR, Hermes, "The Unlearning School" (brand), email-uri, numere de telefon, "© 2026 The Unlearning School. All rights reserved." (păstrez EN ca standard internațional).
+
+## SEO impact
+
+- `<html lang>` se schimbă dinamic (important pentru Google + AI crawlere).
+- `SEO.tsx` primește `t()` pentru title/description per limbă.
+- **NU** adaug rute `/ro/*` separate (out of scope, ar dubla sitemap-ul). Limba e client-side preference; default EN rămâne canonical pentru indexare.
+- Adaug `<link rel="alternate" hreflang="en">` și `<link rel="alternate" hreflang="ro">` cu același URL (acceptabil pentru SPA cu language toggle).
+
+## Rollout (un singur PR mare)
+
+1. Install deps: `i18next`, `react-i18next`, `i18next-browser-languagedetector`.
+2. Setup `src/i18n/config.ts` + provider în `main.tsx`.
+3. Creez toate JSON-urile EN (extract din codul actual — sursa de adevăr).
+4. Traduc fiecare JSON în RO, manual, atent la ton.
+5. Refactor componentele globale (Navbar, Footer, CTA-uri).
+6. Refactor pagină cu pagină.
+7. Adaug `LanguageSwitcher` în Navbar.
+8. Update `SEO.tsx` și `<html lang>`.
+9. Test vizual EN ↔ RO pe toate paginile.
 
 ## Ce NU schimb
-- Paleta `--bau-*` (culorile Kandinsky rămân identice)
-- Tipografia, layout-ul, structura paginilor
-- Variantele `paper` (cream-ul rămâne neatins)
+
+- Layout, design tokens, paleta matte, Bauhaus shapes.
+- Rutele URL (rămân în EN: `/funding`, `/about` etc.).
+- Conținut tehnic în cod (variabile, comentarii).
+- `llms.txt`, `sitemap.xml`, `robots.txt` (rămân EN — limba canonical pentru crawlere).
+
+## Risc / scope
+
+Volum mare de copy (~12 pagini + componente). Voi face traducerea într-o singură rundă completă, nu pe bucăți. Estimare: ~2000 string-uri RO de scris cu grijă editorială.
