@@ -45,8 +45,18 @@ const loadDeferredFonts = () => {
   document.head.appendChild(style);
 };
 
-if ("requestIdleCallback" in window) {
-  (window as unknown as { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => void }).requestIdleCallback(loadDeferredFonts, { timeout: 2000 });
+// Wait for the window load event before scheduling the font fetch so it falls
+// outside the critical request chain that Lighthouse measures for FCP/LCP.
+const scheduleDeferredFonts = () => {
+  if ("requestIdleCallback" in window) {
+    (window as unknown as { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => void }).requestIdleCallback(loadDeferredFonts, { timeout: 4000 });
+  } else {
+    setTimeout(loadDeferredFonts, 3000);
+  }
+};
+
+if (document.readyState === "complete") {
+  scheduleDeferredFonts();
 } else {
-  setTimeout(loadDeferredFonts, 1500);
+  window.addEventListener("load", scheduleDeferredFonts, { once: true });
 }
