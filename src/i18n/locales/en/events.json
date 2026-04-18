@@ -15,6 +15,21 @@
     "secondaryTo": "#inside",
     "note": "90 min – 2 days · 15 to 500 people · Sector-adapted · Proposal in 48h"
   },
+  "partners": {
+    "kicker": "In partnership with",
+    "titleStart": "International standards.",
+    "titleEm": "Local rooms.",
+    "lovable": { "name": "Lovable", "role": "Lovable Ambassador — official partner for AI app prototyping" },
+    "hermes": { "name": "Hermes Agent", "role": "Hermes Agent Partner — official partner for autonomous AI agents" },
+    "subline": "Public events are free. The condition is simple: practical only — no generic talks, no slideware, no theory.",
+    "perks": [
+      { "num": "01", "title": "Free for participants", "body": "All public events are free. No tickets, no upsell." },
+      { "num": "02", "title": "Practical, no slides", "body": "Live builds on real workflows. Zero generic decks, zero PowerPoint." },
+      { "num": "03", "title": "Merch & free credits", "body": "Lovable + Hermes Agent perks: free platform credits, merch and swag for participants." },
+      { "num": "04", "title": "International, local", "body": "We bring international speakers and standards into local rooms." }
+    ],
+    "hermesLinkText": "See Hermes Agent →"
+  },
   "intro": {
     "kicker": "Why most AI events don't work",
     "titleStart": "They show what AI can do.",

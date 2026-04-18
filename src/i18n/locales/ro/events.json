@@ -15,6 +15,21 @@
     "secondaryTo": "#inside",
     "note": "90 min – 2 zile · 15 până la 500 de persoane · Adaptat pe sector · Propunere în 48h"
   },
+  "partners": {
+    "kicker": "În parteneriat cu",
+    "titleStart": "Standarde internaționale.",
+    "titleEm": "Săli locale.",
+    "lovable": { "name": "Lovable", "role": "Lovable Ambassador — partener oficial pentru prototipare AI" },
+    "hermes": { "name": "Hermes Agent", "role": "Hermes Agent Partner — partener oficial pentru agenți AI autonomi" },
+    "subline": "Evenimentele publice sunt gratuite. Condiția e simplă: doar practic — fără prezentări generale, fără slide-uri, fără teorie.",
+    "perks": [
+      { "num": "01", "title": "Gratuit pentru participanți", "body": "Toate evenimentele publice sunt gratuite. Fără bilete, fără upsell." },
+      { "num": "02", "title": "Practic, fără slide-uri", "body": "Build-uri live pe fluxuri reale. Zero deck-uri generice, zero PowerPoint." },
+      { "num": "03", "title": "Merch & free credits", "body": "Beneficii Lovable + Hermes Agent: credits gratuite pe platforme, merch și swag pentru participanți." },
+      { "num": "04", "title": "Internațional, local", "body": "Aducem speakeri și standarde internaționale în săli locale." }
+    ],
+    "hermesLinkText": "Vezi Hermes Agent →"
+  },
   "intro": {
     "kicker": "De ce majoritatea evenimentelor AI nu funcționează",
     "titleStart": "Arată ce poate face AI.",
