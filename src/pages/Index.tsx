@@ -1,16 +1,22 @@
 import { useEffect } from "react";
 import { Link } from "@/components/LocalizedLink";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
+import AIScoreStrip from "@/components/AIScoreStrip";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
+import BeforeAfterWorkflow from "@/components/BeforeAfterWorkflow";
+import CaseStudyTiles from "@/components/CaseStudyTiles";
+import FounderBio from "@/components/FounderBio";
+import Testimonials from "@/components/Testimonials";
 import partnerLovable from "@/assets/partner-lovable.png";
 import partnerHermes from "@/assets/partner-hermes.png";
+import { trackEvent } from "@/lib/analytics";
 
 const Index = () => {
   const { t } = useTranslation("home");
@@ -66,12 +72,14 @@ const Index = () => {
               <div className="flex flex-wrap gap-3">
                 <Link
                   to="/programmes/ai-for-non-technical-people#pricing"
+                  onClick={() => trackEvent("cta_buy_training", { location: "hero" })}
                   className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
                   {t("hero.primaryCta")}
                 </Link>
                 <Link
                   to="/assessment"
+                  onClick={() => trackEvent("cta_book_call", { location: "hero" })}
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
                   {t("hero.secondaryCta")}
@@ -85,7 +93,8 @@ const Index = () => {
         </div>
       </section>
 
-      <AIScoreCTA />
+      {/* Thin AI Score promo strip directly under hero */}
+      <AIScoreStrip />
 
       {/* STATS strip */}
       <section className="bg-background border-b-2 border-paper/10">
@@ -131,6 +140,9 @@ const Index = () => {
           {t("premise.quote")}
         </Blockquote>
       </Section>
+
+      {/* NEW — Before / After workflow infographic */}
+      <BeforeAfterWorkflow variant="paper" />
 
       {/* WHO THIS IS FOR */}
       <Section variant="paper">
@@ -202,7 +214,7 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* PRICING - 2 entry points */}
+      {/* PRICING - 2 entry points with "what you get" tables */}
       <Section variant="darker">
         <div id="pricing" className="scroll-mt-20" />
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
@@ -221,10 +233,13 @@ const Index = () => {
           {(["training", "hermes"] as const).map((key) => {
             const card = t(`pricing.${key}`, { returnObjects: true }) as {
               tag: string; from: string; price: string; unit: string; title: string;
-              bullets: string[]; footnote: string; cta: string; secondary: string;
+              tableHeader: { col1: string; col2: string };
+              rows: Array<{ label: string; value: string }>;
+              footnote: string; cta: string; secondary: string;
             };
             const primaryHref = key === "training" ? "/programmes/ai-for-non-technical-people#pricing" : "/hermes#install";
             const secondaryHref = key === "training" ? "/programmes/ai-for-non-technical-people" : "/hermes";
+            const event = key === "training" ? "cta_buy_training" : "cta_install_hermes";
             return (
               <article key={key} className="bg-background p-8 md:p-10 flex flex-col">
                 <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-6">{card.tag}</p>
@@ -234,15 +249,30 @@ const Index = () => {
                   <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/50 mt-2">{card.unit}</p>
                 </div>
                 <h3 className="font-display text-2xl md:text-3xl text-paper leading-tight mb-6">{card.title}</h3>
-                <ul className="border-t border-paper/10 mb-6">
-                  {card.bullets.map((b) => (
-                    <li key={b} className="border-b border-paper/10 py-3 text-paper/80 text-[14px] leading-relaxed">{b}</li>
-                  ))}
-                </ul>
+
+                {/* "What you get" mini-table */}
+                <table className="w-full mb-6 border-t border-paper/15">
+                  <thead>
+                    <tr>
+                      <th className="text-left font-mono text-[9px] uppercase tracking-[0.25em] text-paper/45 py-2.5 pr-3 border-b border-paper/15">{card.tableHeader.col1}</th>
+                      <th className="text-left font-mono text-[9px] uppercase tracking-[0.25em] text-paper/45 py-2.5 border-b border-paper/15">{card.tableHeader.col2}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {card.rows.map((r) => (
+                      <tr key={r.label} className="border-b border-paper/10 last:border-b-0">
+                        <td className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/65 py-2.5 pr-3 align-top w-[42%]">{r.label}</td>
+                        <td className="text-paper text-[13px] leading-snug py-2.5 align-top">{r.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+
                 <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mb-6 flex-1">{card.footnote}</p>
                 <div className="flex flex-wrap items-center gap-4">
                   <Link
                     to={primaryHref}
+                    onClick={() => trackEvent(event, { location: "home_pricing" })}
                     className="inline-flex items-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                   >
                     {card.cta}
@@ -298,6 +328,15 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* NEW — Anonymised case-study tiles */}
+      <CaseStudyTiles />
+
+      {/* NEW — Founder mini-bio */}
+      <FounderBio />
+
+      {/* NEW — Testimonials */}
+      <Testimonials />
+
       {/* PARTNERS - external endorsement */}
       <Section variant="paper">
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -327,6 +366,8 @@ const Index = () => {
       </Section>
 
       <Affiliations variant="paper" />
+
+      <AIScoreCTA />
 
       <CTASection
         title={t("finalCta.title")}
