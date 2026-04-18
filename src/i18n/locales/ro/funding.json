@@ -117,6 +117,13 @@
     "attribution": "Despre calificare",
     "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
   },
+  "eventsBridge": {
+    "kicker": "Înainte să o finanțezi",
+    "titleStart": "Vrei să vezi cum arată o sesiune live",
+    "titleEm": "înainte să o finanțezi?",
+    "body": "Vino într-o sesiune live de prototipare și vezi exact ce produce programul — prototipuri funcționale, capabilitate de echipă, livrabile — înainte să structurezi finanțarea în jurul lui.",
+    "cta": "Vezi sesiuni live →"
+  },
   "faq": {
     "kicker": "Întrebări frecvente",
     "titleStart": "Înainte de",
