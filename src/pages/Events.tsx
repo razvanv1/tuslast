@@ -64,11 +64,11 @@ const Events = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/15 border border-paper/15 mb-12">
           <div className="bg-paper p-10 md:p-12 flex flex-col items-center justify-center text-center">
-            <img src={partnerLovable} alt="Lovable" width={240} height={60} loading="eager" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <img src={partnerLovable} alt="Lovable" width={480} height={120} loading="eager" className="h-24 md:h-28 w-auto object-contain mb-6" />
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 max-w-xs">{t("partners.lovable.role")}</p>
           </div>
           <div className="bg-paper p-10 md:p-12 flex flex-col items-center justify-center text-center">
-            <img src={partnerHermes} alt="Hermes Agent" width={240} height={60} loading="eager" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <img src={partnerHermes} alt="Hermes Agent" width={480} height={120} loading="eager" className="h-24 md:h-28 w-auto object-contain mb-6" />
             <Link to="/hermes" className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 hover:text-red max-w-xs">
               {t("partners.hermes.role")}
             </Link>

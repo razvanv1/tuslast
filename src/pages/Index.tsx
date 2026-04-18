@@ -310,11 +310,11 @@ const Index = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-ink/10 border border-ink/10 max-w-4xl mx-auto">
           <div className="bg-paper p-10 flex flex-col items-center justify-center text-center">
-            <img src={partnerLovable} alt="Lovable" loading="lazy" decoding="async" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <img src={partnerLovable} alt="Lovable" loading="lazy" decoding="async" className="h-24 md:h-28 w-auto object-contain mb-6" />
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70">{t("partners.lovableRole")}</p>
           </div>
           <div className="bg-paper p-10 flex flex-col items-center justify-center text-center">
-            <img src={partnerHermes} alt="Hermes Agent" loading="lazy" decoding="async" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <img src={partnerHermes} alt="Hermes Agent" loading="lazy" decoding="async" className="h-24 md:h-28 w-auto object-contain mb-6" />
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70">{t("partners.hermesRole")}</p>
           </div>
         </div>
