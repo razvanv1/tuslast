@@ -5,6 +5,7 @@ import bannerEvents from "@/assets/banner-events.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 
 const formats = [
@@ -142,6 +143,8 @@ const Events = () => {
           Your AI program might already be funded. You just haven't structured it that way. Microsoft, AWS, and Google allocate co-sell and Market Development Funds every quarter to support exactly this kind of adoption work. Most companies qualify. Most don't know it.
         </Blockquote>
       </Section>
+
+      <AIScoreCTA />
 
       <CTASection
         title="Tell me about your event."

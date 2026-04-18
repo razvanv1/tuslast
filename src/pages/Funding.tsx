@@ -5,6 +5,7 @@ import bannerFunding from "@/assets/banner-funding.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
 
 const instruments = [
@@ -139,6 +140,8 @@ const Funding = () => {
           Most companies qualify for at least one instrument. The question is not whether the funding exists, it does. The question is whether your program is structured in a way that the funding body will recognise.
         </Blockquote>
       </Section>
+
+      <AIScoreCTA />
 
       <CTASection
         title="Check what you qualify for."

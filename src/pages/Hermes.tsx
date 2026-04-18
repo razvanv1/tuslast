@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import CurriculumAccordion, { type CurriculumSession } from "@/components/CurriculumAccordion";
 import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Kicker, SectionHeading } from "@/components/Editorial";
@@ -397,6 +398,8 @@ const Hermes = () => {
 
         <FAQAccordion items={faqs} grouped />
       </Section>
+
+      <AIScoreCTA />
 
       <CTASection
         title="One agent. Built around your workflows."

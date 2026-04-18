@@ -170,6 +170,10 @@ const Assessment = () => {
         </div>
       </Section>
 
+      <Section variant="darker" decor="edge-left">
+        <AIScoreCTA variant="inline" eyebrow="Want a preview before the call?" />
+      </Section>
+
       <Section bordered={false}>
         <Blockquote attribution="Standard practice, every AI Adoption Call">
           No proposal is attached to this call. If the score shows there is no problem worth solving, we say so. If there is, the roadmap describes what fixing it would look like. You decide what to do next.

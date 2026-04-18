@@ -356,12 +356,23 @@ const AIAdoptionScore = () => {
                             See the AI for Work cohort →
                           </Link>
                         </div>
-                        <button
-                          onClick={handleRetake}
-                          className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 hover:text-red transition-colors"
-                        >
-                          ↺ Retake assessment
-                        </button>
+                        <p className="mt-6 text-sm text-ink/60 leading-relaxed max-w-2xl">
+                          Automated email reports are coming soon — for now, save this page or screenshot your score. If you want to discuss the results, book a free call below.
+                        </p>
+                        <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 items-center">
+                          <a
+                            href={`mailto:?subject=${encodeURIComponent(`My AI Adoption Score: ${score}/100 — ${rankInfo.rank}`)}&body=${encodeURIComponent(`I just took the AI Adoption Score from The Unlearning School and got ${score}/100 (${rankInfo.rank}).\n\nTake yours here (2 minutes): https://tuslast.lovable.app/ai-adoption-score`)}`}
+                            className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/60 hover:text-red transition-colors"
+                          >
+                            ✉ Share score with a colleague
+                          </a>
+                          <button
+                            onClick={handleRetake}
+                            className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 hover:text-red transition-colors"
+                          >
+                            ↺ Retake assessment
+                          </button>
+                        </div>
                       </div>
                     </>
                   );
