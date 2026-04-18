@@ -10,6 +10,9 @@ import enEvents from "./locales/en/events.json";
 import enFunding from "./locales/en/funding.json";
 import enHermes from "./locales/en/hermes.json";
 import enResources from "./locales/en/resources.json";
+import enAbout from "./locales/en/about.json";
+import enLegal from "./locales/en/legal.json";
+import enMisc from "./locales/en/misc.json";
 import roCommon from "./locales/ro/common.json";
 import roHome from "./locales/ro/home.json";
 import roAssessment from "./locales/ro/assessment.json";
@@ -19,6 +22,9 @@ import roEvents from "./locales/ro/events.json";
 import roFunding from "./locales/ro/funding.json";
 import roHermes from "./locales/ro/hermes.json";
 import roResources from "./locales/ro/resources.json";
+import roAbout from "./locales/ro/about.json";
+import roLegal from "./locales/ro/legal.json";
+import roMisc from "./locales/ro/misc.json";
 
 const STORAGE_KEY = "tus-lang";
 
@@ -38,6 +44,9 @@ void i18n.use(initReactI18next).init({
       funding: enFunding,
       hermes: enHermes,
       resources: enResources,
+      about: enAbout,
+      legal: enLegal,
+      misc: enMisc,
     },
     ro: {
       common: roCommon,
@@ -49,12 +58,15 @@ void i18n.use(initReactI18next).init({
       funding: roFunding,
       hermes: roHermes,
       resources: roResources,
+      about: roAbout,
+      legal: roLegal,
+      misc: roMisc,
     },
   },
   lng: initial,
   fallbackLng: "en",
   defaultNS: "common",
-  ns: ["common", "home", "assessment", "score", "programmes", "events", "funding", "hermes", "resources"],
+  ns: ["common", "home", "assessment", "score", "programmes", "events", "funding", "hermes", "resources", "about", "legal", "misc"],
   interpolation: { escapeValue: false },
   returnNull: false,
   returnObjects: true,
