@@ -31,6 +31,14 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const PaymentSuccess = lazy(() => import("./pages/PaymentSuccess"));
 const PaymentCanceled = lazy(() => import("./pages/PaymentCanceled"));
 
+// Resource articles
+const EUAIActArticle4 = lazy(() => import("./pages/resources/EUAIActArticle4"));
+const CopilotRollout = lazy(() => import("./pages/resources/CopilotRollout"));
+const LewinAdoption = lazy(() => import("./pages/resources/LewinAdoption"));
+const ProcurementWorkflows = lazy(() => import("./pages/resources/ProcurementWorkflows"));
+const VendorMDF = lazy(() => import("./pages/resources/VendorMDF"));
+const HermesVsChatGPT = lazy(() => import("./pages/resources/HermesVsChatGPT"));
+
 const queryClient = new QueryClient();
 
 const wrap = (lang: "en" | "ro", node: JSX.Element) => (
@@ -58,6 +66,12 @@ const AnimatedRoutes = () => {
           <Route path="/funding" element={wrap("en", <Funding />)} />
           <Route path="/hermes" element={wrap("en", <Hermes />)} />
           <Route path="/resources" element={wrap("en", <Resources />)} />
+          <Route path="/resources/eu-ai-act-article-4" element={wrap("en", <EUAIActArticle4 />)} />
+          <Route path="/resources/copilot-rollout-stalls" element={wrap("en", <CopilotRollout />)} />
+          <Route path="/resources/lewin-model-ai-adoption" element={wrap("en", <LewinAdoption />)} />
+          <Route path="/resources/ai-procurement-workflows" element={wrap("en", <ProcurementWorkflows />)} />
+          <Route path="/resources/vendor-mdf-ai-training" element={wrap("en", <VendorMDF />)} />
+          <Route path="/resources/hermes-vs-chatgpt" element={wrap("en", <HermesVsChatGPT />)} />
           <Route path="/about" element={wrap("en", <About />)} />
           <Route path="/assessment" element={wrap("en", <Assessment />)} />
           <Route path="/ai-adoption-score" element={wrap("en", <AIAdoptionScore />)} />
@@ -76,6 +90,12 @@ const AnimatedRoutes = () => {
           <Route path="/ro/funding" element={wrap("ro", <Funding />)} />
           <Route path="/ro/hermes" element={wrap("ro", <Hermes />)} />
           <Route path="/ro/resources" element={wrap("ro", <Resources />)} />
+          <Route path="/ro/resources/eu-ai-act-article-4" element={wrap("ro", <EUAIActArticle4 />)} />
+          <Route path="/ro/resources/copilot-rollout-stalls" element={wrap("ro", <CopilotRollout />)} />
+          <Route path="/ro/resources/lewin-model-ai-adoption" element={wrap("ro", <LewinAdoption />)} />
+          <Route path="/ro/resources/ai-procurement-workflows" element={wrap("ro", <ProcurementWorkflows />)} />
+          <Route path="/ro/resources/vendor-mdf-ai-training" element={wrap("ro", <VendorMDF />)} />
+          <Route path="/ro/resources/hermes-vs-chatgpt" element={wrap("ro", <HermesVsChatGPT />)} />
           <Route path="/ro/about" element={wrap("ro", <About />)} />
           <Route path="/ro/assessment" element={wrap("ro", <Assessment />)} />
           <Route path="/ro/ai-adoption-score" element={wrap("ro", <AIAdoptionScore />)} />
