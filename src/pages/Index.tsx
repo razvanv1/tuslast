@@ -5,6 +5,7 @@ import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
+import AIScoreCTA from "@/components/AIScoreCTA";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const stats = [
@@ -130,6 +131,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* AI ADOPTION SCORE — lead magnet */}
+      <AIScoreCTA />
 
       {/* STATS strip */}
       <section className="bg-background border-b-2 border-paper/10">
