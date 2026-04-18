@@ -124,7 +124,7 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
           decoding="async"
           width={512}
           height={704}
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${label === "Events & Keynotes" ? "scale-[1.08]" : ""}`}
           draggable={false}
         />
       </div>
