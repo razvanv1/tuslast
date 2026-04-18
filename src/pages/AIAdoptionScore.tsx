@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { z } from "zod";
 import SEO from "@/components/SEO";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
-import ScrollReveal from "@/components/ScrollReveal";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import {
-  questions,
+  questionMeta,
+  optionValues,
   weights,
-  categoryLabels,
-  priorityActions,
-  getRank,
+  getRankKey,
+  rankToneClass,
   computeScores,
   type CategoryKey,
 } from "@/lib/aiScoreData";
@@ -21,16 +21,9 @@ import {
 type Stage = "quiz" | "gate" | "results";
 
 const emailSchema = z.object({
-  email: z.string().trim().email("Please enter a valid email").max(255),
+  email: z.string().trim().email().max(255),
   consent: z.boolean(),
 });
-
-const stats = [
-  { value: "92%", label: "of companies invest in AI" },
-  { value: "1%", label: "feel mature in AI adoption" },
-  { value: "75%", label: "of AI projects stall in pilot" },
-  { value: "57%", label: "of employees hide AI usage" },
-];
 
 const categoryAccent: Record<CategoryKey, string> = {
   strategy: "bg-red",
@@ -39,7 +32,10 @@ const categoryAccent: Record<CategoryKey, string> = {
   impact: "bg-emerald-700",
 };
 
+type LocalizedQuestion = { text: string; options: string[] };
+
 const AIAdoptionScore = () => {
+  const { t, i18n } = useTranslation("score");
   const { toast } = useToast();
   const [stage, setStage] = useState<Stage>("quiz");
   const [currentQ, setCurrentQ] = useState(0);
@@ -56,18 +52,24 @@ const AIAdoptionScore = () => {
   const [computed, setComputed] = useState<ReturnType<typeof computeScores> | null>(null);
 
   useEffect(() => {
-    document.title = "AI Adoption Score, The Unlearning School";
+    document.title = t("seo.docTitle");
     window.scrollTo({ top: 0, behavior: "auto" });
-  }, []);
+  }, [t, i18n.language]);
 
-  const total = questions.length;
+  const localizedQuestions = t("questions", { returnObjects: true }) as LocalizedQuestion[];
+  const localizedStats = t("stats", { returnObjects: true }) as { value: string; label: string }[];
+  const categoryNames = t("categoryNames", { returnObjects: true }) as Record<CategoryKey, string>;
+  const shortCategoryNames = t("categories", { returnObjects: true }) as Record<CategoryKey, string>;
+  const priorityActionsByKey = t("priorityActions", { returnObjects: true }) as Record<CategoryKey, string[]>;
+
+  const total = questionMeta.length;
   const progress = stage === "quiz" ? (currentQ / total) * 100 : 100;
 
   const handleSelect = (value: number) => {
-    const q = questions[currentQ];
-    const newAnswers = { ...answers, [q.categoryKey]: [...answers[q.categoryKey], value] };
+    const meta = questionMeta[currentQ];
+    const newAnswers = { ...answers, [meta.categoryKey]: [...answers[meta.categoryKey], value] };
     setAnswers(newAnswers);
-    setHistory([...history, { key: q.categoryKey, value }]);
+    setHistory([...history, { key: meta.categoryKey, value }]);
     if (currentQ + 1 < total) {
       setTimeout(() => setCurrentQ((c) => c + 1), 250);
     } else {
@@ -90,24 +92,25 @@ const AIAdoptionScore = () => {
     e.preventDefault();
     const parsed = emailSchema.safeParse({ email, consent });
     if (!parsed.success) {
-      toast({ title: "Invalid email", description: parsed.error.errors[0].message, variant: "destructive" });
+      toast({ title: t("gate.invalidEmailTitle"), description: t("gate.invalidEmail"), variant: "destructive" });
       return;
     }
     if (!computed) return;
     setSubmitting(true);
     const { catScores, total: score, weakest } = computed;
-    const rankInfo = getRank(score);
+    const rankKey = getRankKey(score);
+    const rankName = t(`ranks.${rankKey}.name`);
     const { error } = await supabase.from("ai_score_submissions").insert({
       email: parsed.data.email,
       score,
-      rank: rankInfo.rank,
+      rank: rankName,
       category_scores: catScores,
       weakest_category: weakest,
       consent_marketing: parsed.data.consent,
     });
     setSubmitting(false);
     if (error) {
-      toast({ title: "Couldn't save your result", description: "Please try again.", variant: "destructive" });
+      toast({ title: t("gate.saveErrorTitle"), description: t("gate.saveErrorBody"), variant: "destructive" });
       return;
     }
     setStage("results");
@@ -125,28 +128,29 @@ const AIAdoptionScore = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const q = questions[currentQ];
+  const meta = questionMeta[currentQ];
+  const q = localizedQuestions[currentQ];
 
   return (
     <>
       <SEO
-        title="AI Adoption Score — Free 2-minute AI maturity test"
-        description="Measure your team's AI maturity in 2 minutes. 10 weighted questions across strategy, tools, adoption and impact. Instant score, gap analysis, and a ranked next-step roadmap."
-        keywords="AI maturity assessment, AI adoption score, AI readiness test, AI maturity model, free AI audit, EU AI Act readiness"
+        title={t("seo.title")}
+        description={t("seo.description")}
+        keywords={t("seo.keywords")}
       />
 
       {/* HERO */}
       <section className="relative bg-background text-paper overflow-hidden border-b-2 border-paper/10">
         <div className="relative max-w-[1400px] mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-12 md:pb-16">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-6">AI Adoption Score · 2 min</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-6">{t("hero.kicker")}</p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-paper leading-[0.95] max-w-5xl mb-6">
-            How AI-ready is your team, <em className="text-red">really?</em>
+            {t("hero.title1")}<em className="text-red">{t("hero.titleEm")}</em>
           </h1>
           <p className="font-display italic text-xl md:text-2xl text-paper/70 max-w-3xl leading-snug mb-10">
-            92% of companies invest in AI. Only 1% feel mature. Drop the self-narrative and get your maturity score, a gap analysis across four dimensions, and the next move that actually matters.
+            {t("hero.subtitle")}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 border-t border-paper/10 pt-8">
-            {stats.map((s) => (
+            {localizedStats.map((s) => (
               <div key={s.label}>
                 <p className="font-display text-3xl md:text-5xl text-red mb-1">{s.value}</p>
                 <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 leading-relaxed">{s.label}</p>
@@ -156,15 +160,16 @@ const AIAdoptionScore = () => {
         </div>
       </section>
 
-      {/* CALCULATOR — paper variant */}
+      {/* CALCULATOR */}
       <section className="relative bg-paper text-ink border-b-2 border-ink/10 overflow-hidden">
         <div className="absolute inset-0 bg-paper-tex opacity-60 pointer-events-none" />
         <div className="relative max-w-[900px] mx-auto px-6 md:px-10 py-16 md:py-24">
-          {/* Progress */}
           <div className="mb-12">
             <div className="flex items-center justify-between mb-3">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/60">
-                {stage === "results" ? "Your result" : `Question ${Math.min(currentQ + 1, total)} of ${total}`}
+                {stage === "results"
+                  ? t("quiz.yourResult")
+                  : t("quiz.questionOf", { current: Math.min(currentQ + 1, total), total })}
               </p>
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/60">
                 {Math.round(progress)}%
@@ -181,7 +186,7 @@ const AIAdoptionScore = () => {
           </div>
 
           <AnimatePresence mode="wait">
-            {stage === "quiz" && q && (
+            {stage === "quiz" && q && meta && (
               <motion.div
                 key={`q-${currentQ}`}
                 initial={{ opacity: 0, y: 16 }}
@@ -189,21 +194,23 @@ const AIAdoptionScore = () => {
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{q.category}</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">
+                  {shortCategoryNames[meta.categoryKey]}
+                </p>
                 <h2 className="font-display text-3xl md:text-5xl text-ink leading-tight mb-10">
                   {q.text}
                 </h2>
                 <div className="grid gap-3">
-                  {q.options.map((opt, i) => (
+                  {q.options.map((optText, i) => (
                     <button
                       key={i}
-                      onClick={() => handleSelect(opt.value)}
+                      onClick={() => handleSelect(optionValues[i])}
                       className="text-left border-2 border-ink/15 px-5 py-4 md:px-7 md:py-5 hover:border-red hover:bg-ink hover:text-paper transition-colors group"
                     >
                       <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/40 group-hover:text-paper/60 mr-3">
                         {String.fromCharCode(65 + i)}
                       </span>
-                      <span className="text-base md:text-lg">{opt.text}</span>
+                      <span className="text-base md:text-lg">{optText}</span>
                     </button>
                   ))}
                 </div>
@@ -212,7 +219,7 @@ const AIAdoptionScore = () => {
                     onClick={handleBack}
                     className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 hover:text-red transition-colors"
                   >
-                    ← Previous question
+                    {t("quiz.previous")}
                   </button>
                 )}
               </motion.div>
@@ -226,12 +233,12 @@ const AIAdoptionScore = () => {
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">Your score is ready</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("gate.kicker")}</p>
                 <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-5">
-                  Drop your email <em className="text-red">to see it.</em>
+                  {t("gate.title1")}<em className="text-red">{t("gate.titleEm")}</em>
                 </h2>
                 <p className="font-display italic text-lg md:text-xl text-ink/70 max-w-2xl mb-10 leading-snug">
-                  We'll show your maturity score, the gap analysis across all four dimensions, and the priority actions for your weakest area.
+                  {t("gate.subtitle")}
                 </p>
                 <form onSubmit={handleEmailSubmit} className="max-w-xl space-y-5">
                   <div>
@@ -255,8 +262,8 @@ const AIAdoptionScore = () => {
                       className="mt-1 w-4 h-4 accent-red"
                     />
                     <span className="text-xs text-ink/60 leading-relaxed">
-                      I agree to receive my score by email and occasional insights from The Unlearning School. Unsubscribe anytime. See our{" "}
-                      <Link to="/privacy-policy" className="text-red hover:underline">Privacy Policy</Link>.
+                      {t("gate.consent")}
+                      <Link to="/privacy-policy" className="text-red hover:underline">{t("gate.privacyPolicy")}</Link>.
                     </span>
                   </label>
                   <button
@@ -264,7 +271,7 @@ const AIAdoptionScore = () => {
                     disabled={submitting}
                     className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors disabled:opacity-50"
                   >
-                    {submitting ? "Saving..." : "See my score →"}
+                    {submitting ? t("gate.saving") : t("gate.submit")}
                   </button>
                 </form>
               </motion.div>
@@ -279,25 +286,28 @@ const AIAdoptionScore = () => {
               >
                 {(() => {
                   const { catScores, total: score, weakest } = computed;
-                  const rankInfo = getRank(score);
+                  const rankKey = getRankKey(score);
+                  const rankName = t(`ranks.${rankKey}.name`);
+                  const rankDesc = t(`ranks.${rankKey}.desc`);
+                  const rankFormat = t(`ranks.${rankKey}.format`);
                   return (
                     <>
                       <div className="text-center border-2 border-ink/15 p-10 md:p-14 mb-12 bg-paper">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 mb-4">Your AI Adoption Score</p>
+                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 mb-4">{t("results.scoreLabel")}</p>
                         <p className="font-display text-7xl md:text-9xl text-ink leading-none mb-3">{score}</p>
-                        <p className={`font-display text-2xl md:text-4xl ${rankInfo.toneClass} mb-2`}>{rankInfo.rank}</p>
-                        <p className="font-display italic text-base md:text-lg text-ink/70 max-w-xl mx-auto">{rankInfo.desc}</p>
+                        <p className={`font-display text-2xl md:text-4xl ${rankToneClass[rankKey]} mb-2`}>{rankName}</p>
+                        <p className="font-display italic text-base md:text-lg text-ink/70 max-w-xl mx-auto">{rankDesc}</p>
                       </div>
 
-                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">Gap Analysis</p>
-                      <h3 className="font-display text-3xl md:text-4xl text-ink mb-8">Where you score across the four dimensions</h3>
+                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("results.gapKicker")}</p>
+                      <h3 className="font-display text-3xl md:text-4xl text-ink mb-8">{t("results.gapTitle")}</h3>
                       <div className="grid sm:grid-cols-2 gap-5 mb-12">
                         {(Object.entries(catScores) as [CategoryKey, number][]).map(([key, val]) => (
                           <div key={key} className="border-2 border-ink/15 p-5">
                             <div className="flex items-baseline justify-between mb-3">
-                              <p className="font-display text-xl text-ink">{categoryLabels[key]}</p>
+                              <p className="font-display text-xl text-ink">{categoryNames[key]}</p>
                               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/50">
-                                Weight {weights[key] * 100}%
+                                {t("results.weight", { value: weights[key] * 100 })}
                               </p>
                             </div>
                             <div className="h-2 bg-ink/10 overflow-hidden mb-2">
@@ -315,13 +325,13 @@ const AIAdoptionScore = () => {
                         ))}
                       </div>
 
-                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">Priority Actions</p>
+                      <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("results.actionsKicker")}</p>
                       <h3 className="font-display text-3xl md:text-4xl text-ink mb-2">
-                        Start here: <em className="text-red">{categoryLabels[weakest]}</em>
+                        {t("results.startHere")}<em className="text-red">{categoryNames[weakest]}</em>
                       </h3>
-                      <p className="text-ink/60 mb-6">Your weakest area. Move on these first.</p>
+                      <p className="text-ink/60 mb-6">{t("results.weakestSubtitle")}</p>
                       <ul className="space-y-3 mb-10">
-                        {priorityActions[weakest].map((action) => (
+                        {priorityActionsByKey[weakest].map((action) => (
                           <li key={action} className="border-l-2 border-red pl-5 py-2">
                             <p className="text-lg text-ink">{action}</p>
                           </li>
@@ -329,48 +339,47 @@ const AIAdoptionScore = () => {
                       </ul>
 
                       <div className="border-2 border-ink/15 p-6 mb-12 bg-ink text-paper">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-2">Recommended format</p>
-                        <p className="font-display text-2xl md:text-3xl text-paper">{rankInfo.format}</p>
+                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-2">{t("results.recommendedFormat")}</p>
+                        <p className="font-display text-2xl md:text-3xl text-paper">{rankFormat}</p>
                       </div>
 
-                      {/* Dual CTA */}
                       <div className="border-t-2 border-ink/15 pt-10">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">What's next</p>
+                        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("results.nextKicker")}</p>
                         <h3 className="font-display text-3xl md:text-4xl text-ink leading-tight mb-3">
-                          Want help <em className="text-red">closing the gaps?</em>
+                          {t("results.nextTitle1")}<em className="text-red">{t("results.nextTitleEm")}</em>
                         </h3>
                         <p className="font-display italic text-lg text-ink/70 max-w-2xl mb-8">
-                          Walk through your results live with us, or jump straight into the cohort built for non-technical teams.
+                          {t("results.nextBody")}
                         </p>
                         <div className="flex flex-wrap gap-3">
                           <Link
                             to="/assessment#book"
                             className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
                           >
-                            Book a free call to discuss results →
+                            {t("results.bookCall")}
                           </Link>
                           <Link
                             to="/programmes/ai-for-non-technical-people"
                             className="inline-flex items-center px-7 py-4 border-2 border-ink/40 text-ink font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors"
                           >
-                            See the AI for Work cohort →
+                            {t("results.seeCohort")}
                           </Link>
                         </div>
                         <p className="mt-6 text-sm text-ink/60 leading-relaxed max-w-2xl">
-                          Automated email reports are coming soon — for now, save this page or screenshot your score. If you want to discuss the results, book a free call below.
+                          {t("results.savedNote")}
                         </p>
                         <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 items-center">
                           <a
-                            href={`mailto:?subject=${encodeURIComponent(`My AI Adoption Score: ${score}/100 — ${rankInfo.rank}`)}&body=${encodeURIComponent(`I just took the AI Adoption Score from The Unlearning School and got ${score}/100 (${rankInfo.rank}).\n\nTake yours here (2 minutes): https://tuslast.lovable.app/ai-adoption-score`)}`}
+                            href={`mailto:?subject=${encodeURIComponent(t("results.shareSubject", { score, rank: rankName }))}&body=${encodeURIComponent(t("results.shareBody", { score, rank: rankName }))}`}
                             className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/60 hover:text-red transition-colors"
                           >
-                            ✉ Share score with a colleague
+                            {t("results.share")}
                           </a>
                           <button
                             onClick={handleRetake}
                             className="font-mono text-[10px] uppercase tracking-[0.3em] text-ink/50 hover:text-red transition-colors"
                           >
-                            ↺ Retake assessment
+                            {t("results.retake")}
                           </button>
                         </div>
                       </div>
@@ -385,37 +394,37 @@ const AIAdoptionScore = () => {
 
       {/* METHODOLOGY */}
       <Section variant="dark" decor="edge-right">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">Methodology</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("method.kicker")}</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-6 max-w-3xl">
-          A weighted model. <em className="text-red">Not a vibe-check.</em>
+          {t("method.title1")}<em className="text-red">{t("method.titleEm")}</em>
         </h2>
         <p className="text-paper/70 text-lg max-w-2xl mb-12 leading-relaxed">
-          Not all aspects of AI readiness are equal. Adoption and strategy weigh more because they have the biggest impact on real outcomes.
+          {t("method.subtitle")}
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-4">Weight per dimension</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-4">{t("method.weights")}</p>
             <ul className="divide-y divide-paper/10 border-y border-paper/10">
               {(Object.entries(weights) as [CategoryKey, number][]).map(([key, w]) => (
                 <li key={key} className="flex items-center justify-between py-4">
-                  <span className="font-display text-2xl text-paper">{categoryLabels[key]}</span>
+                  <span className="font-display text-2xl text-paper">{categoryNames[key]}</span>
                   <span className="font-mono text-sm uppercase tracking-[0.2em] text-red">{w * 100}%</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-4">Rank bands</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/60 mb-4">{t("method.ranks")}</p>
             <ul className="divide-y divide-paper/10 border-y border-paper/10">
               {[
-                { range: "80–100", rank: "AI Leader" },
-                { range: "60–79", rank: "AI Advanced" },
-                { range: "40–59", rank: "AI Builder" },
-                { range: "0–39", rank: "AI Starter" },
+                { range: "80–100", key: "leader" as const },
+                { range: "60–79", key: "advanced" as const },
+                { range: "40–59", key: "builder" as const },
+                { range: "0–39", key: "starter" as const },
               ].map((b) => (
-                <li key={b.rank} className="flex items-center justify-between py-4">
-                  <span className="font-display text-2xl text-paper">{b.rank}</span>
+                <li key={b.key} className="flex items-center justify-between py-4">
+                  <span className="font-display text-2xl text-paper">{t(`ranks.${b.key}.name`)}</span>
                   <span className="font-mono text-sm uppercase tracking-[0.2em] text-red">{b.range}</span>
                 </li>
               ))}
@@ -425,13 +434,13 @@ const AIAdoptionScore = () => {
       </Section>
 
       <CTASection
-        title="Score in hand. Now what?"
-        subtitle="A 30-minute call to walk through your gaps and decide the first move that actually moves the number."
-        ctaText="Book the AI Adoption Call →"
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        ctaText={t("cta.primary")}
         ctaTo="/assessment"
-        secondaryText="See AI for Work →"
+        secondaryText={t("cta.secondary")}
         secondaryTo="/programmes/ai-for-non-technical-people"
-        note="Free · 30 min · No pricing pitch"
+        note={t("cta.note")}
       />
     </>
   );
