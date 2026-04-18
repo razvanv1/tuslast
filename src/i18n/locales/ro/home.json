@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "The Unlearning School — formare în adopția AI pentru echipe non-tehnice",
+    "description": "Practică de schimbare comportamentală pentru adopția AI. Reproiectăm fluxurile de lucru ca echipele non-tehnice să folosească real instrumentele AI pe care le-ai cumpărat. România și UE.",
+    "keywords": "adopție AI, formare AI, EU AI Act Articolul 4, adopție Copilot, AI pentru echipe non-tehnice, reproiectare flux de lucru, change management, România, UE"
+  },
+  "hero": {
+    "headlinePart1": "Organizația ta a cumpărat capacitate AI.",
+    "headlineEm": "Ce plătești de fapt este potențial nefolosit.",
+    "subPart1": "Instrumentele sunt instalate. Licențele sunt active.",
+    "subEm": "Fluxurile de lucru nu s-au schimbat.",
+    "subPart2": "Asta e problema pe care o rezolvăm.",
+    "primaryCta": "Cumpără AI pentru Muncă →",
+    "secondaryCta": "Discuție AI Adoption",
+    "note": "Plătește și înscrie-ți cohorta · sau programează o Discuție AI Adoption gratuită de 30 min pentru un scor de maturitate"
+  },
+  "shuffle": {
+    "tapHint": "Tap pentru a deschide · Glisează pentru a amesteca",
+    "prev": "Înapoi",
+    "next": "Înainte",
+    "drawing": "Acum extrag:",
+    "deck": {
+      "aiForWork": { "label": "AI pentru oameni non-tehnici", "caption": "Modular · cohortă" },
+      "aiScore": { "label": "Diagnostic AI Adoption", "caption": "2 min · Test de maturitate instant" },
+      "events": { "label": "Evenimente & Keynote-uri", "caption": "90 min – 2 zile" },
+      "funding": { "label": "MDF, finanțare & granturi", "caption": "MDF de la furnizori · granturi UE" },
+      "assessment": { "label": "Discuție AI Adoption", "caption": "Gratuit · 30 min · Vorbim direct" }
+    }
+  },
+  "stats": {
+    "s1": { "value": "64%", "label": "dintre angajații cu acces la Copilot nu îl folosesc activ" },
+    "s2": { "value": "1.400+", "label": "profesioniști formați în UE" },
+    "s3": { "value": "1 zi", "label": "ca să reproiectezi un proces cu AI integrat" }
+  },
+  "pattern": {
+    "eyebrow": "Tiparul",
+    "subEyebrow": "Pe care îl observăm în fiecare sector",
+    "title": "De ce se blochează adopția AI după lansare.",
+    "body": "Majoritatea organizațiilor răspund la utilizarea scăzută a instrumentelor AI cu încă o sesiune de training. Același rezultat. Problema nu e instrumentul și nu e echipa. E procesul, care n-a fost niciodată reproiectat să folosească AI.",
+    "rows": [
+      { "week": "Săpt. 1–2", "text": "Adoptanții timpurii folosesc instrumentul zilnic. Avânt vizibil." },
+      { "week": "Săpt. 3–4", "text": "Majoritatea încearcă o dată sau de două ori pe sarcini familiare. Folosire neregulată." },
+      { "week": "Săpt. 5+", "text": "Utilizarea stagnează. Majoritatea revin la fluxurile vechi. Dashboard-ul arată „licențe active”. Procesele n-au fost schimbate." }
+    ]
+  },
+  "premise": {
+    "attribution": "Premisa din spatele fiecărui proiect The Unlearning School",
+    "quote": "Adăugarea unui instrument peste un proces neschimbat nu schimbă procesul. Trebuie întâi reproiectat fluxul de lucru și deconectat vechiul obicei înainte ca cel nou să se formeze. Acesta este pasul pe care majoritatea implementărilor îl sar."
+  },
+  "audience": {
+    "eyebrow": "Pentru cine este",
+    "title": "Trei roluri.",
+    "titleEm": "Trei diagnostice.",
+    "situationLabel": "Situația",
+    "resultLabel": "Ce primești",
+    "items": [
+      {
+        "role": "COO / Director de Operațiuni",
+        "situation": "Copilot e implementat. Cheltuiala cu licențele e reală. Timpii de proces nu s-au îmbunătățit. Board-ul cere rezultate.",
+        "result": "Un proces reconstruit într-o singură zi. Rezultat măsurabil. Un șablon construit chiar de echipa ta."
+      },
+      {
+        "role": "Lead HR / L&D",
+        "situation": "Ai nevoie de un program credibil de upskilling AI. EU AI Act Articolul 4 e deja în vigoare. Nu există un plan care să schimbe demonstrabil comportamentul.",
+        "result": "Workshop-uri adaptate pe roluri. Participanții pleacă cu 3–5 fluxuri AI gata de folosit a doua zi."
+      },
+      {
+        "role": "CIO / Lead IT & Digital",
+        "situation": "Instrumentele sunt instalate și licențiate. Metricile de adopție sunt plate. Echipele de business dau vina pe IT pentru instrumente pe care nu le-au cerut.",
+        "result": "Un strat de adopție cross-funcțional peste stack-ul tău. Campioni interni, guvernanță și pistă de audit pentru EU AI Act."
+      }
+    ],
+    "linkProgramme": "→ Vezi programul principal",
+    "linkAssessment": "→ Programează Discuția AI Adoption"
+  },
+  "ladder": {
+    "eyebrow": "Catalogul",
+    "title": "Trei programe,",
+    "titleEm": "configurate dintr-un singur Diagnostic gratuit.",
+    "items": [
+      {
+        "tag": "Program 1 · Bază",
+        "title": "AI pentru oameni non-tehnici",
+        "body": "Program structurat de adopție pentru echipe de business non-tehnice. Modular: Discovery (1×2h), Sprint scurt (2–3 sesiuni) sau Program complet (4+ sesiuni). Construit pe instrumentele AI pe care deja le plătești.",
+        "cta": "Vezi programul"
+      },
+      {
+        "tag": "Program 2 · Accelerator",
+        "title": "Evenimente & Keynote-uri",
+        "body": "Workshop-uri, hackathons și keynote-uri pentru dovadă rapidă și avânt intern. 90 min – 2 zile. De la 15 la 500 de oameni. Fiecare demo construit pe fluxurile tale, nu pe exemple generice de productivitate.",
+        "cta": "Vezi formatele de eveniment"
+      },
+      {
+        "tag": "Program 3 · Deal closer",
+        "title": "Structurare de finanțare",
+        "body": "MDF de la furnizori, co-sell ca partener AWS sau granturi digitale UE. Structurăm programul ca să se califice, redactăm aplicația și aliniem livrarea ca rambursarea să se întâmple efectiv.",
+        "cta": "Vezi opțiunile de finanțare"
+      }
+    ]
+  },
+  "mechanism": {
+    "eyebrow": "Mecanismul",
+    "title": "Dezgheață,",
+    "titleEm": "apoi schimbă.",
+    "body": "Înainte ca o echipă să-și construiască obiceiuri noi de lucru, trebuie să le lase conștient pe cele vechi. Majoritatea programelor de adopție AI încep direct cu „schimbarea” și sar complet peste „dezgheț”. De aceea comportamentul nu se fixează. Sprint-urile noastre încep cu pasul de dezgheț.",
+    "footnote": "Bazat pe modelul Unfreeze–Change–Refreeze al lui Lewin (1947), aplicat pe adopția fluxurilor AI în echipe non-tehnice."
+  },
+  "credibility": {
+    "eyebrow": "Pe scurt, credibilitatea",
+    "title": "Dovezile.",
+    "items": [
+      { "tag": "Track record", "title": "1.400+ profesioniști formați", "body": "În finanțe, retail, producție și servicii profesionale, în România și UE." },
+      { "tag": "Fondator", "title": "Răzvan Vâlceanu", "body": "Peste 20 de ani în inovație, transformare digitală, educație executivă și antreprenoriat." },
+      { "tag": "Format de dovadă", "title": "Fluxuri înainte / după", "body": "Exemple anonimizate pe sector, disponibile la cerere în timpul Discuției. Nu publicăm pe site numele clienților." }
+    ]
+  },
+  "finalCta": {
+    "title": "Gata să pui AI la treabă?",
+    "subtitle": "Cumpără programul principal și înscrie-ți cohorta, sau programează o Discuție AI Adoption gratuită de 30 min dacă vrei mai întâi un scor de maturitate și o foaie de parcurs.",
+    "cta": "Cumpără AI pentru Muncă →",
+    "secondary": "Discuție AI Adoption",
+    "note": "Plătește și înscrie-te · sau primește un scor de maturitate + foaie de parcurs din Discuția AI Adoption"
+  },
+  "faq": [
+    {
+      "question": "Ce face The Unlearning School?",
+      "answer": "Ajutăm organizațiile să transforme instrumentele AI deja instalate (Copilot, ChatGPT, Gemini) în fluxuri de lucru folosite efectiv, prin reproiectarea proceselor și formarea echipelor non-tehnice. Accentul e pe schimbarea comportamentală, nu pe demo-uri de instrumente."
+    },
+    {
+      "question": "Pentru cine este?",
+      "answer": "Pentru COO, lead-uri HR/L&D și CIO din companii UE care plătesc deja licențe AI, dar văd metrici de adopție plate și timpi de proces neschimbați."
+    },
+    {
+      "question": "Ajută la conformitatea cu EU AI Act Articolul 4?",
+      "answer": "Da. Programele noastre adaptate pe roluri oferă formarea de literație AI cerută de EU AI Act Articolul 4, cu participare auditabilă și rezultate de schimbare comportamentală."
+    },
+    {
+      "question": "Cum încep?",
+      "answer": "Programează un Diagnostic gratuit. O sesiune de lucru, raport scris în maximum 5 zile lucrătoare, fără propunere atașată."
+    }
+  ]
+}

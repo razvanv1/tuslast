@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
+import "./i18n/config";
 import lcpCardUrl from "@/assets/card-ai-non-technical.webp";
 import interLatinUrl from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
 import dmSerifLatinUrl from "@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url";

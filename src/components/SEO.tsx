@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const SITE_URL = "https://tuslast.lovable.app";
 const SITE_NAME = "The Unlearning School";
@@ -39,6 +40,8 @@ const SEO = ({
   jsonLd,
 }: SEOProps) => {
   const { pathname } = useLocation();
+  const { i18n } = useTranslation();
+  const lang = i18n.language?.startsWith("ro") ? "ro" : "en";
   const url = `${SITE_URL}${pathname}`;
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
 
@@ -76,13 +79,18 @@ const SEO = ({
       <meta name="geo.region" content="RO" />
       <meta name="geo.placename" content="Bucharest" />
       <meta name="ICBM" content="44.4268,26.1025" />
-      <meta httpEquiv="content-language" content="en" />
-      <meta name="language" content="English" />
+      <meta httpEquiv="content-language" content={lang} />
+      <meta name="language" content={lang === "ro" ? "Romanian" : "English"} />
+      <link rel="alternate" hrefLang="en" href={url} />
+      <link rel="alternate" hrefLang="ro" href={url} />
+      <link rel="alternate" hrefLang="x-default" href={url} />
+      <html lang={lang} />
 
       {/* Open Graph (Facebook, LinkedIn) */}
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:locale" content="en_GB" />
+      <meta property="og:locale" content={lang === "ro" ? "ro_RO" : "en_GB"} />
+      <meta property="og:locale:alternate" content={lang === "ro" ? "en_GB" : "ro_RO"} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

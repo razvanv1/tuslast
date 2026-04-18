@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import ShuffleDeck from "@/components/ShuffleDeck";
 import Section from "@/components/Section";
@@ -9,88 +10,37 @@ import AIScoreCTA from "@/components/AIScoreCTA";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const stats = [
-  { value: "64%", label: "of employees with Copilot access do not actively use it" },
-  { value: "1,400+", label: "professionals trained across the EU" },
-  { value: "1 day", label: "to redesign one process with AI embedded" },
-];
-
-const audience = [
-  {
-    role: "COO / Operations Director",
-    situation: "Copilot deployed. Licence spend is real. Process times have not improved. Board is asking for results.",
-    result: "One process rebuilt in one day. Measurable output. Template your team built themselves.",
-  },
-  {
-    role: "HR / L&D Lead",
-    situation: "You need a credible AI upskilling programme. EU AI Act Article 4 is in force. No plan that demonstrably changes behaviour.",
-    result: "Role-adapted workshops. Participants leave with 3–5 AI workflows ready the next morning.",
-  },
-  {
-    role: "CIO / IT & Digital Lead",
-    situation: "Tools are deployed and licensed. Adoption metrics are flat. Business teams blame IT for tools they never asked for.",
-    result: "A cross-functional adoption layer on top of your stack. Internal champions, governance, and EU AI Act audit trail.",
-  },
-];
-
-const ladder = [
-  {
-    tag: "Program 1 · Core",
-    title: "AI for Non-Technical People",
-    body: "Structured adoption program for non-technical business teams. Modular: Discovery (1×2h), Short Sprint (2–3 sessions), or Full Program (4+ sessions). Built on the AI tools you already pay for.",
-    href: "/programmes/ai-for-non-technical-people",
-    cta: "See the program",
-    highlight: true,
-  },
-  {
-    tag: "Program 2 · Accelerator",
-    title: "Events & Keynotes",
-    body: "Workshops, hackathons, and keynotes for fast proof and internal momentum. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples.",
-    href: "/events",
-    cta: "See event formats",
-  },
-  {
-    tag: "Program 3 · Deal closer",
-    title: "Funding Structuring",
-    body: "Vendor MDF, AWS partner co-sell, or EU digital grants. We structure the program to qualify, draft the application, and align delivery so reimbursement actually happens.",
-    href: "/funding",
-    cta: "See funding options",
-  },
-];
-
 const Index = () => {
+  const { t } = useTranslation("home");
+
+  const stats = [
+    { value: t("stats.s1.value"), label: t("stats.s1.label") },
+    { value: t("stats.s2.value"), label: t("stats.s2.label") },
+    { value: t("stats.s3.value"), label: t("stats.s3.label") },
+  ];
+
+  const patternRows = t("pattern.rows", { returnObjects: true }) as Array<{ week: string; text: string }>;
+  const audience = t("audience.items", { returnObjects: true }) as Array<{ role: string; situation: string; result: string }>;
+  const ladderItems = t("ladder.items", { returnObjects: true }) as Array<{ tag: string; title: string; body: string; cta: string }>;
+  const ladderHrefs = [
+    "/programmes/ai-for-non-technical-people",
+    "/events",
+    "/funding",
+  ];
+  const credibility = t("credibility.items", { returnObjects: true }) as Array<{ tag: string; title: string; body: string }>;
+  const faq = t("faq", { returnObjects: true }) as Array<{ question: string; answer: string }>;
+
   useEffect(() => {
-    document.title = "The Unlearning School, AI adoption training for non-technical teams";
-  }, []);
+    document.title = t("meta.title");
+  }, [t]);
 
   return (
     <>
       <SEO
-        title="The Unlearning School, AI adoption training for non-technical teams"
-        description="Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU."
-        keywords="AI adoption, AI training, EU AI Act Article 4, Copilot adoption, AI for non-technical teams, workflow redesign, change management, Romania, EU"
-        faq={[
-          {
-            question: "What does The Unlearning School do?",
-            answer:
-              "We help organisations turn deployed AI tools (Copilot, ChatGPT, Gemini) into actually-used workflows by redesigning processes and training non-technical teams. The focus is behaviour change, not tool demos.",
-          },
-          {
-            question: "Who is this for?",
-            answer:
-              "COOs, HR/L&D leads, and CIOs in EU companies that already pay for AI licences but see flat adoption metrics and unchanged process times.",
-          },
-          {
-            question: "Does this help with EU AI Act Article 4 compliance?",
-            answer:
-              "Yes. Our role-adapted programmes provide the AI literacy training required by EU AI Act Article 4, with auditable participation and behaviour-change outcomes.",
-          },
-          {
-            question: "How do I start?",
-            answer:
-              "Book a free AI Adoption Gap Assessment. One working session, written report within 5 business days, no proposal attached.",
-          },
-        ]}
+        title={t("meta.title")}
+        description={t("meta.description")}
+        keywords={t("meta.keywords")}
+        faq={faq}
       />
       {/* HERO */}
       <section className="relative bg-background border-b-2 border-paper/10 overflow-x-clip">
@@ -98,8 +48,8 @@ const Index = () => {
           <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 md:pt-10">
             <div className="relative z-10 mb-6 md:mb-8 max-w-4xl">
               <h1 className="font-display text-2xl md:text-[34px] lg:text-[40px] leading-[1.15] text-paper/85 tracking-tight">
-                Your organisation bought AI capability.{" "}
-                <em className="text-red not-italic font-normal">What you are paying for is unused potential.</em>
+                {t("hero.headlinePart1")}{" "}
+                <em className="text-red not-italic font-normal">{t("hero.headlineEm")}</em>
               </h1>
             </div>
 
@@ -107,33 +57,32 @@ const Index = () => {
 
             <div className="max-w-3xl mt-10 mb-16">
               <p className="font-display italic text-xl md:text-2xl text-paper/85 leading-snug mb-8">
-                The tools are deployed. The licences are active.{" "}
-                <span className="text-red not-italic">The workflows have not changed.</span>{" "}
-                That is the problem we fix.
+                {t("hero.subPart1")}{" "}
+                <span className="text-red not-italic">{t("hero.subEm")}</span>{" "}
+                {t("hero.subPart2")}
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
                   to="/programmes/ai-for-non-technical-people#pricing"
                   className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  Buy AI for Work →
+                  {t("hero.primaryCta")}
                 </Link>
                 <Link
                   to="/assessment"
                   className="inline-flex items-center px-7 py-4 border border-paper/40 text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
                 >
-                  AI Adoption Call
+                  {t("hero.secondaryCta")}
                 </Link>
               </div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 mt-6">
-                Pay & enrol your cohort · or book a free 30-min AI Adoption Call to score your maturity
+                {t("hero.note")}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* AI ADOPTION SCORE — lead magnet, top placement right after hero */}
       <AIScoreCTA />
 
       {/* STATS strip */}
@@ -152,23 +101,19 @@ const Index = () => {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The Pattern</p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">Across every sector we observe</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("pattern.eyebrow")}</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40">{t("pattern.subEyebrow")}</p>
           </div>
           <div className="md:col-span-9">
             <h2 className="font-display text-4xl md:text-6xl text-paper leading-[1] mb-8 max-w-3xl">
-              Why AI adoption stalls after the rollout.
+              {t("pattern.title")}
             </h2>
             <p className="text-paper/80 text-[15px] leading-relaxed max-w-2xl mb-10">
-              Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process, which was never redesigned to use AI.
+              {t("pattern.body")}
             </p>
 
             <div className="border-t border-paper/15">
-              {[
-                { week: "Week 1–2", text: "Enthusiastic early adopters use the tool daily. Visible momentum." },
-                { week: "Week 3–4", text: "Middle majority try it once or twice on familiar tasks. Irregular usage." },
-                { week: "Week 5+", text: "Usage plateaus. Most employees return to previous workflows. Dashboard shows \"active licences.\" Processes have not changed." },
-              ].map((row) => (
+              {patternRows.map((row) => (
                 <div key={row.week} className="grid grid-cols-12 gap-4 py-5 border-b border-paper/15">
                   <div className="col-span-3 md:col-span-2 font-mono text-[11px] uppercase tracking-[0.2em] text-red">{row.week}</div>
                   <div className="col-span-9 md:col-span-10 text-paper/80 text-[15px] leading-relaxed">{row.text}</div>
@@ -180,16 +125,16 @@ const Index = () => {
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution="The premise behind every Unlearning School engagement">
-          Adding a tool to an unchanged process does not change the process. You need to redesign the workflow first, and clear the old habit before the new one can form. That is the step most deployments skip.
+        <Blockquote attribution={t("premise.attribution")}>
+          {t("premise.quote")}
         </Blockquote>
       </Section>
 
-      {/* WHO THIS IS FOR, editorial table */}
+      {/* WHO THIS IS FOR */}
       <Section variant="paper">
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Who this is for</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("audience.eyebrow")}</p>
         <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-12 max-w-3xl">
-          Three roles. <em>Three diagnoses.</em>
+          {t("audience.title")} <em>{t("audience.titleEm")}</em>
         </h2>
 
         <div className="space-y-0 border-t border-ink/15">
@@ -203,11 +148,11 @@ const Index = () => {
                   <h3 className="font-display text-2xl text-ink leading-tight">{a.role}</h3>
                 </div>
                 <div className="md:col-span-4 text-ink/70 text-[15px] leading-relaxed">
-                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/40 mb-2">The Situation</p>
+                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-ink/40 mb-2">{t("audience.situationLabel")}</p>
                   {a.situation}
                 </div>
                 <div className="md:col-span-4 text-ink text-[15px] leading-relaxed">
-                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mb-2">What You Get</p>
+                  <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-red mb-2">{t("audience.resultLabel")}</p>
                   {a.result}
                 </div>
               </div>
@@ -216,39 +161,42 @@ const Index = () => {
         </div>
 
         <div className="flex flex-wrap gap-6 mt-10 font-mono text-[11px] uppercase tracking-[0.2em]">
-          <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">→ See the core program</Link>
-          <Link to="/assessment" className="text-ink hover:text-red transition-colors">→ Book the AI Adoption Call</Link>
+          <Link to="/programmes/ai-for-non-technical-people" className="text-ink hover:text-red transition-colors">{t("audience.linkProgramme")}</Link>
+          <Link to="/assessment" className="text-ink hover:text-red transition-colors">{t("audience.linkAssessment")}</Link>
         </div>
       </Section>
 
       {/* THE PROGRAMS */}
       <Section>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The catalogue</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("ladder.eyebrow")}</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
-          Three programmes, <em className="text-red">scoped from one free Assessment.</em>
+          {t("ladder.title")} <em className="text-red">{t("ladder.titleEm")}</em>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
-          {ladder.map((l) => (
-            <article
-              key={l.title}
-              className={`p-8 md:p-10 flex flex-col ${l.highlight ? "bg-red text-paper" : "bg-background text-paper"}`}
-            >
-              <p className={`font-mono text-[10px] uppercase tracking-[0.25em] mb-4 ${l.highlight ? "text-paper/80" : "text-red"}`}>
-                {l.tag}
-              </p>
-              <h3 className="font-display text-2xl md:text-3xl leading-tight mb-4">{l.title}</h3>
-              <p className={`text-[14px] leading-relaxed flex-1 mb-6 ${l.highlight ? "text-paper/90" : "text-paper/75"}`}>
-                {l.body}
-              </p>
-              <Link
-                to={l.href}
-                className={`font-mono text-[10px] uppercase tracking-[0.25em] inline-flex items-center gap-2 hover:gap-3 transition-all ${l.highlight ? "text-paper" : "text-red"}`}
+          {ladderItems.map((l, i) => {
+            const highlight = i === 0;
+            return (
+              <article
+                key={l.title}
+                className={`p-8 md:p-10 flex flex-col ${highlight ? "bg-red text-paper" : "bg-background text-paper"}`}
               >
-                {l.cta} →
-              </Link>
-            </article>
-          ))}
+                <p className={`font-mono text-[10px] uppercase tracking-[0.25em] mb-4 ${highlight ? "text-paper/80" : "text-red"}`}>
+                  {l.tag}
+                </p>
+                <h3 className="font-display text-2xl md:text-3xl leading-tight mb-4">{l.title}</h3>
+                <p className={`text-[14px] leading-relaxed flex-1 mb-6 ${highlight ? "text-paper/90" : "text-paper/75"}`}>
+                  {l.body}
+                </p>
+                <Link
+                  to={ladderHrefs[i]}
+                  className={`font-mono text-[10px] uppercase tracking-[0.25em] inline-flex items-center gap-2 hover:gap-3 transition-all ${highlight ? "text-paper" : "text-red"}`}
+                >
+                  {l.cta} →
+                </Link>
+              </article>
+            );
+          })}
         </div>
       </Section>
 
@@ -256,17 +204,17 @@ const Index = () => {
       <Section variant="paper">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> The mechanism</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("mechanism.eyebrow")}</p>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
-              Unfreeze, <em className="text-red">then change.</em>
+              {t("mechanism.title")} <em className="text-red">{t("mechanism.titleEm")}</em>
             </h2>
           </div>
           <div className="md:col-span-8">
             <p className="text-ink/80 text-[16px] leading-relaxed mb-5">
-              Before a team can build new working habits, they must consciously let go of the old ones. Most AI adoption programmes start at "change" and skip "unfreeze" entirely. That is why behaviour does not stick. Our sprints are built around the unfreeze step first.
+              {t("mechanism.body")}
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40">
-              Based on Lewin's Unfreeze–Change–Refreeze model (1947), applied to AI workflow adoption in non-technical teams.
+              {t("mechanism.footnote")}
             </p>
           </div>
         </div>
@@ -274,16 +222,12 @@ const Index = () => {
 
       {/* Credibility */}
       <Section>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Credibility, briefly</p>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("credibility.eyebrow")}</p>
         <h2 className="font-display text-4xl md:text-6xl text-paper leading-[0.95] mb-12 max-w-3xl">
-          The receipts.
+          {t("credibility.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
-          {[
-            { tag: "Track record", title: "1,400+ professionals trained", body: "Across finance, retail, manufacturing, and professional services, Romania and EU." },
-            { tag: "Founder", title: "Răzvan Vâlceanu", body: "20+ years across innovation, digital transformation, executive education, and entrepreneurship." },
-            { tag: "Proof format", title: "Before / after workflows", body: "Anonymised sector examples available on request during the Assessment call. No client names published on this site." },
-          ].map((c) => (
+          {credibility.map((c) => (
             <article key={c.tag} className="bg-background p-8 md:p-10">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-4">{c.tag}</p>
               <h3 className="font-display text-2xl text-paper leading-tight mb-3">{c.title}</h3>
@@ -293,18 +237,16 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* AFFILIATIONS — authority & credibility */}
       <Affiliations variant="paper" />
 
-      {/* CTA */}
       <CTASection
-        title="Ready to put AI to work?"
-        subtitle="Buy the core programme and enrol your cohort, or book a free 30-min AI Adoption Call if you want a maturity score and roadmap first."
-        ctaText="Buy AI for Work →"
+        title={t("finalCta.title")}
+        subtitle={t("finalCta.subtitle")}
+        ctaText={t("finalCta.cta")}
         ctaTo="/programmes/ai-for-non-technical-people#pricing"
-        secondaryText="AI Adoption Call"
+        secondaryText={t("finalCta.secondary")}
         secondaryTo="/assessment"
-        note="Pay & enrol · or get a maturity score + roadmap from the AI Adoption Call"
+        note={t("finalCta.note")}
       />
     </>
   );

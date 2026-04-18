@@ -1,25 +1,6 @@
 import { Link } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 import logo from "@/assets/logo@2x.webp";
-
-const programmes = [
-  { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
-  { label: "Hermes Agent", to: "/hermes" },
-  { label: "Events & Keynotes", to: "/events" },
-  { label: "Funding", to: "/funding" },
-];
-
-const masthead: Array<{ label: string; to: string; external?: boolean }> = [
-  { label: "About", to: "/about" },
-  { label: "Resources", to: "/resources" },
-  { label: "AI Adoption Score", to: "/ai-adoption-score" },
-  { label: "AI Adoption Call", to: "/assessment" },
-];
-
-const legal = [
-  { label: "Privacy Policy", to: "/privacy-policy" },
-  { label: "Cookie Policy", to: "/cookie-policy" },
-  { label: "Terms & Conditions", to: "/terms-and-conditions" },
-];
 
 const socials = [
   {
@@ -44,135 +25,155 @@ const socials = [
   },
 ];
 
-const Footer = () => (
-  <footer className="bg-background border-t-2 border-paper/10">
-    <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16">
-      {/* Newsletter band */}
-      <div className="border-2 border-paper/15 p-8 md:p-12 mb-16">
-        <form
-          action="https://unlearning.us8.list-manage.com/subscribe/post"
-          method="post"
-          target="_blank"
-          noValidate
-          className="grid md:grid-cols-12 gap-8 items-end"
-        >
-          <div className="md:col-span-7">
-            <p className="inline-block bg-red text-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] mb-3">Dispatch · The Unlearning Pill</p>
-            <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
-              One email a month. <em className="text-red">Worth opening.</em>
-            </h3>
-            <p className="text-paper/70 text-sm max-w-xl leading-relaxed">
-              Field notes from inside the work — what's actually moving funding decisions, where AI is quietly rewriting jobs, and the unglamorous mechanics of building teams that ship. Written by humans who'd rather under-send than waste your inbox.
+const Footer = () => {
+  const { t } = useTranslation();
+
+  const programmes = [
+    { label: t("footer.programmes.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
+    { label: t("footer.programmes.hermes"), to: "/hermes" },
+    { label: t("footer.programmes.events"), to: "/events" },
+    { label: t("footer.programmes.funding"), to: "/funding" },
+  ];
+  const company = [
+    { label: t("footer.company.about"), to: "/about" },
+    { label: t("footer.company.resources"), to: "/resources" },
+    { label: t("footer.company.aiScore"), to: "/ai-adoption-score" },
+    { label: t("footer.company.assessment"), to: "/assessment" },
+  ];
+  const legal = [
+    { label: t("footer.legal.privacy"), to: "/privacy-policy" },
+    { label: t("footer.legal.cookies"), to: "/cookie-policy" },
+    { label: t("footer.legal.terms"), to: "/terms-and-conditions" },
+  ];
+
+  return (
+    <footer className="bg-background border-t-2 border-paper/10">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 py-16">
+        {/* Newsletter band */}
+        <div className="border-2 border-paper/15 p-8 md:p-12 mb-16">
+          <form
+            action="https://unlearning.us8.list-manage.com/subscribe/post"
+            method="post"
+            target="_blank"
+            noValidate
+            className="grid md:grid-cols-12 gap-8 items-end"
+          >
+            <div className="md:col-span-7">
+              <p className="inline-block bg-red text-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] mb-3">
+                {t("footer.newsletter.tag")}
+              </p>
+              <h3 className="font-display text-3xl md:text-5xl text-paper leading-[0.95] mb-3">
+                {t("footer.newsletter.title")} <em className="text-red">{t("footer.newsletter.titleEm")}</em>
+              </h3>
+              <p className="text-paper/70 text-sm max-w-xl leading-relaxed">
+                {t("footer.newsletter.body")}
+              </p>
+            </div>
+            <div className="md:col-span-5 flex flex-col sm:flex-row gap-3">
+              <label htmlFor="newsletter-email" className="sr-only">{t("footer.newsletter.emailLabel")}</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                name="EMAIL"
+                required
+                placeholder={t("footer.newsletter.emailPlaceholder")}
+                className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/65 font-mono text-sm focus:outline-none focus:border-red transition-colors"
+              />
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
+              >
+                {t("footer.newsletter.submit")}
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
+          <div className="col-span-2 md:col-span-4">
+            <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("footer.headings.contact")}</p>
+            <ul className="space-y-2 text-paper/80 text-sm">
+              <li><a href="mailto:hello@unlearning.ro" className="hover:text-red transition-colors">hello@unlearning.ro</a></li>
+              <li><a href="tel:+40722598346" className="hover:text-red transition-colors">+40 722 598 346</a></li>
+              <li className="text-paper/60">{t("footer.address")}</li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">{t("footer.headings.programmes")}</p>
+            <ul className="space-y-2 text-paper/80 text-sm">
+              {programmes.map((l) => (
+                <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-2">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">{t("footer.headings.company")}</p>
+            <ul className="space-y-2 text-paper/80 text-sm">
+              {company.map((l) => (
+                <li key={l.to}>
+                  <Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="md:col-span-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">{t("footer.headings.legal")}</p>
+            <ul className="space-y-2 text-paper/80 text-sm mb-6">
+              {legal.map((l) => (
+                <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
+              ))}
+            </ul>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-3">{t("footer.headings.follow")}</p>
+            <div className="flex gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="w-9 h-9 flex items-center justify-center border border-paper/20 text-paper/60 hover:text-red hover:border-red transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={s.path} /></svg>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Massive brand block */}
+        <div className="mt-16 overflow-hidden text-center flex flex-col items-center gap-8">
+          <img
+            src={logo}
+            alt="The Unlearning School"
+            width={1624}
+            height={812}
+            loading="lazy"
+            decoding="async"
+            className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none [image-rendering:crisp-edges]"
+            aria-hidden="true"
+          />
+          <div className="space-y-6">
+            <p className="font-display text-2xl md:text-4xl text-red italic">
+              {t("footer.tagline")}
+            </p>
+            <p className="text-paper/70 max-w-2xl mx-auto leading-relaxed md:text-lg">
+              {t("footer.description")}
             </p>
           </div>
-          <div className="md:col-span-5 flex flex-col sm:flex-row gap-3">
-            <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-            <input
-              id="newsletter-email"
-              type="email"
-              name="EMAIL"
-              required
-              placeholder="name@company.com"
-              className="flex-1 bg-transparent border-2 border-paper/20 px-4 py-3 text-paper placeholder:text-paper/65 font-mono text-sm focus:outline-none focus:border-red transition-colors"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
-            >
-              Get the dispatch →
-            </button>
-          </div>
-        </form>
-      </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-12">
-        <div className="col-span-2 md:col-span-4">
-          <p className="inline-block bg-paper px-2 py-1 font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> Contact</p>
-          <ul className="space-y-2 text-paper/80 text-sm">
-            <li><a href="mailto:hello@unlearning.ro" className="hover:text-red transition-colors">hello@unlearning.ro</a></li>
-            <li><a href="tel:+40722598346" className="hover:text-red transition-colors">+40 722 598 346</a></li>
-            <li className="text-paper/60">1, Aleea Pasărea în Văzduh, București, RO</li>
-          </ul>
         </div>
 
-        <div className="md:col-span-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Programmes</p>
-          <ul className="space-y-2 text-paper/80 text-sm">
-            {programmes.map((l) => (
-              <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="md:col-span-2">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Company</p>
-          <ul className="space-y-2 text-paper/80 text-sm">
-            {masthead.map((l) => (
-              <li key={l.to}>
-                {l.external ? (
-                  <a href={l.to} target="_blank" rel="noopener noreferrer" className="hover:text-red transition-colors">{l.label}</a>
-                ) : (
-                  <Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="md:col-span-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-4">Legal</p>
-          <ul className="space-y-2 text-paper/80 text-sm mb-6">
-            {legal.map((l) => (
-              <li key={l.to}><Link to={l.to} className="hover:text-red transition-colors">{l.label}</Link></li>
-            ))}
-          </ul>
-          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-paper/65 mb-3">Follow</p>
-          <div className="flex gap-3">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={s.label}
-                className="w-9 h-9 flex items-center justify-center border border-paper/20 text-paper/60 hover:text-red hover:border-red transition-colors"
-              >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d={s.path} /></svg>
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Massive brand block */}
-      <div className="mt-16 overflow-hidden text-center flex flex-col items-center gap-8">
-        <img
-          src={logo}
-          alt="The Unlearning School"
-          width={1624}
-          height={812}
-          loading="lazy"
-          decoding="async"
-          className="w-full max-w-4xl h-auto invert brightness-200 select-none pointer-events-none [image-rendering:crisp-edges]"
-          aria-hidden="true"
-        />
-        <div className="space-y-6">
-          <p className="font-display text-2xl md:text-4xl text-red italic">
-            What is learned can be unlearned.
-          </p>
-          <p className="text-paper/70 max-w-2xl mx-auto leading-relaxed md:text-lg">
-            The Unlearning School builds programs, systems and useful ways of working for teams dealing with projects funding pressure, AI adoption, digital change and the future of work.
+        <div className="mt-12 border-t border-paper/10 pt-8 text-center">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/65">
+            <Trans i18nKey="footer.copyright" values={{ year: new Date().getFullYear() }} />
           </p>
         </div>
       </div>
-
-      <div className="mt-12 border-t border-paper/10 pt-8 text-center">
-        <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/65">
-          © {new Date().getFullYear()} The Unlearning School. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default Footer;
