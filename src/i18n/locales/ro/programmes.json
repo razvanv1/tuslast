@@ -19,7 +19,7 @@
     "kicker": "Provocarea actuală",
     "title1": "Adopția AI fără structură creează lacune în ",
     "titleEm": "performanță, conformitate și securitate.",
-    "intro": "În echipele de business, adopția AI începe adesea înainte ca direcția companiei să aibă un model clar despre cum ar trebui folosit. Unii angajați se bazează pe el zilnic, alții îl evită. Fără standarde. Fără vizibilitate. Fără responsabilizare. Cu reglementarea AI care se strânge în România și Europa, asta nu mai este doar ineficiență — este risc legal și operațional.",
+    "intro": "În echipele de business, adopția AI începe adesea înainte ca direcția companiei să aibă un model clar despre cum ar trebui folosit. Unii angajați se bazează pe el zilnic, alții îl evită. Fără standarde. Fără vizibilitate. Fără responsabilizare. Cu reglementarea AI care se strânge în România și Europa, asta nu mai este doar ineficiență - este risc legal și operațional.",
     "items": [
       { "tag": "Conformitate EU AI Act", "body": "Din februarie 2025, EU AI Act obligă organizațiile să asigure alfabetizarea AI a angajaților. Articolul 4 este o obligație legală, nu o recomandare." },
       { "tag": "Adopție inconsecventă", "body": "Unii oameni folosesc AI zilnic, alții aproape deloc. Calitatea rezultatelor variază de la persoană la persoană." },
@@ -282,7 +282,7 @@
     "kicker": "După training",
     "titleStart": "Acum știi ce vrei să construiești.",
     "titleEm": "Finanțează construcția.",
-    "body": "Prototipurile construite în program devin producție cu buget — agenți, integrări, licențe Copilot și Azure, dev work. MDF vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică.",
+    "body": "Prototipurile construite în program devin producție cu buget - agenți, integrări, licențe Copilot și Azure, dev work. MDF vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică.",
     "cta": "Vezi opțiuni de finanțare →"
   },
   "cta": {

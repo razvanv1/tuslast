@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Diagnostic AI Adoption — test gratuit de maturitate AI, 2 minute",
+    "title": "Diagnostic AI Adoption - test gratuit de maturitate AI, 2 minute",
     "description": "Măsoară maturitatea AI a echipei tale în 2 minute. 10 întrebări ponderate despre strategie, instrumente, adopție și impact. Scor instant, analiză a lacunelor și o foaie de parcurs prioritizată.",
     "keywords": "evaluare maturitate AI, scor adopție AI, test pregătire AI, model maturitate AI, audit AI gratuit, conformitate EU AI Act",
     "docTitle": "Diagnostic AI Adoption, The Unlearning School"
@@ -51,9 +51,9 @@
     "nextBody": "Discutăm rezultatele tale în direct sau intri direct în cohorta construită pentru echipe non-tehnice.",
     "bookCall": "Programează o discuție gratuită despre rezultate →",
     "seeCohort": "Vezi cohorta AI pentru Muncă →",
-    "savedNote": "Rapoartele automate pe email vin în curând — până atunci, salvează această pagină sau fă o captură. Dacă vrei să discutăm rezultatele, programează o discuție gratuită mai jos.",
+    "savedNote": "Rapoartele automate pe email vin în curând - până atunci, salvează această pagină sau fă o captură. Dacă vrei să discutăm rezultatele, programează o discuție gratuită mai jos.",
     "share": "✉ Trimite scorul unui coleg",
-    "shareSubject": "Scorul meu AI Adoption: {{score}}/100 — {{rank}}",
+    "shareSubject": "Scorul meu AI Adoption: {{score}}/100 - {{rank}}",
     "shareBody": "Tocmai am făcut Diagnosticul AI Adoption de la The Unlearning School și am obținut {{score}}/100 ({{rank}}).\n\nFă-l și tu aici (2 minute): https://tuslast.lovable.app/ai-adoption-score",
     "retake": "↺ Reia evaluarea"
   },
@@ -115,7 +115,7 @@
     {
       "text": "Au angajații acces la instrumente AI aprobate?",
       "options": [
-        "Niciun instrument aprobat — fiecare folosește ce găsește",
+        "Niciun instrument aprobat - fiecare folosește ce găsește",
         "Există unele instrumente, dar fără ghidaj clar",
         "Există un set aprobat, majoritatea oamenilor știu de el",
         "Set clar de instrumente aprobate, cu onboarding pentru fiecare"
@@ -124,7 +124,7 @@
     {
       "text": "Sunt instrumentele AI integrate în fluxurile de lucru zilnice?",
       "options": [
-        "Nu — AI stă alături de instrumentele obișnuite, nefolosit",
+        "Nu - AI stă alături de instrumentele obișnuite, nefolosit",
         "Câteva persoane au integrat AI",
         "Mai multe echipe au AI în fluxurile lor",
         "AI este integrat în procesele de bază din toată organizația"
@@ -134,7 +134,7 @@
       "text": "Există ghiduri clare despre ce instrument AI să fie folosit pentru ce sarcină?",
       "options": [
         "Niciun ghid",
-        "Cunoștințe informale — „întreabă pe cineva care știe”",
+        "Cunoștințe informale - „întreabă pe cineva care știe”",
         "Există ceva documentație",
         "Cadru de decizie clar, documentat și distribuit"
       ]
@@ -185,7 +185,7 @@
     "tools": [
       "Definește instrumentele AI implicite pentru organizație",
       "Documentează unde este permis și unde este interzis AI",
-      "Simplifică accesul — single sign-on, bookmark-uri"
+      "Simplifică accesul - single sign-on, bookmark-uri"
     ],
     "adoption": [
       "Organizează un workshop de cohortă cu 10 oameni",

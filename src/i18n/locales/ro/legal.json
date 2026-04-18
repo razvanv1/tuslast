@@ -9,14 +9,14 @@
     "intro": "Această politică se aplică între dumneavoastră, utilizatorul acestui site web și The Unlearning School, proprietarul și furnizorul acestui site. Politica descrie modul în care colectăm, stocăm și utilizăm datele cu caracter personal în legătură cu utilizarea platformei www.unlearning.ro și a oricăror servicii asociate.",
     "sections": {
       "s1": { "h": "1. Definiții", "items": [
-        { "label": "Cont", "body": " — informațiile personale, detaliile de plată și acreditările utilizate pentru accesarea serviciilor sau conținutului platformei." },
-        { "label": "Conținut", "body": " — orice text, imagine, grafică, video, audio, software sau alte materiale disponibile pe site." },
-        { "label": "Cookie", "body": " — fișier text plasat în dispozitivul dumneavoastră pentru a urmări navigarea și a îmbunătăți experiența pe site." },
-        { "label": "Date", "body": " — orice informație trimisă prin formulare, conturi, înscrieri sau navigare." },
-        { "label": "Serviciu", "body": " — orice funcționalitate oferită de The Unlearning School pe acest site web." },
-        { "label": "Sistem", "body": " — infrastructura noastră digitală (ex: email, chat, conturi de utilizator)." },
-        { "label": "Utilizator", "body": " — orice persoană care accesează site-ul și nu este angajată de The Unlearning School." },
-        { "label": "Site web", "body": " — domeniul www.unlearning.ro și orice subdomenii asociate." }
+        { "label": "Cont", "body": " - informațiile personale, detaliile de plată și acreditările utilizate pentru accesarea serviciilor sau conținutului platformei." },
+        { "label": "Conținut", "body": " - orice text, imagine, grafică, video, audio, software sau alte materiale disponibile pe site." },
+        { "label": "Cookie", "body": " - fișier text plasat în dispozitivul dumneavoastră pentru a urmări navigarea și a îmbunătăți experiența pe site." },
+        { "label": "Date", "body": " - orice informație trimisă prin formulare, conturi, înscrieri sau navigare." },
+        { "label": "Serviciu", "body": " - orice funcționalitate oferită de The Unlearning School pe acest site web." },
+        { "label": "Sistem", "body": " - infrastructura noastră digitală (ex: email, chat, conturi de utilizator)." },
+        { "label": "Utilizator", "body": " - orice persoană care accesează site-ul și nu este angajată de The Unlearning School." },
+        { "label": "Site web", "body": " - domeniul www.unlearning.ro și orice subdomenii asociate." }
       ] },
       "s2": { "h": "2. Date colectate", "intro": "Colectăm următoarele tipuri de date:", "items": [
         "Nume și prenume",
@@ -67,7 +67,7 @@
   "cookies": {
     "docTitle": "Politica de Cookie-uri, The Unlearning School",
     "seoTitle": "Politica de Cookie-uri",
-    "seoDescription": "Politica de cookie-uri a The Unlearning School — ce cookie-uri folosim, de ce și cum îți poți gestiona consimțământul.",
+    "seoDescription": "Politica de cookie-uri a The Unlearning School - ce cookie-uri folosim, de ce și cum îți poți gestiona consimțământul.",
     "title": "Politica de Cookie-uri.",
     "intro": "Această Politică privind cookie-urile a fost actualizată ultima dată pe 18.04.2026 și se aplică cetățenilor și rezidenților permanenți din Spațiul Economic European și Elveția.",
     "s1": { "h": "1. Introducere", "body": "Site-ul nostru, https://www.unlearning.ro (numit în continuare „site-ul”), folosește cookie-uri și alte tehnologii similare (pentru comoditate, toate tehnologiile sunt numite în continuare „cookie-uri”). Cookie-urile sunt plasate atât de noi, cât și de terții cu care colaborăm pentru funcționalități esențiale (procesare plăți, găzduire formulare). În documentul de mai jos te informăm despre modul în care folosim cookie-urile pe site-ul nostru." },
@@ -83,7 +83,7 @@
     "s6h": "6. Cookie-uri și servicii plasate",
     "s6intro": "Lista de mai jos enumeră serviciile care pot plasa cookie-uri sau stoca date local pe dispozitivul tău atunci când folosești site-ul nostru.",
     "s6items": [
-      { "h": "Stocare locală — preferințe consimțământ", "type": "Funcțional (esențial)", "body": "Stocăm local în browserul tău alegerea de consimțământ pentru cookie-uri și preferința de limbă (RO/EN), pentru ca să nu te întrebăm la fiecare vizită. Nu necesită consimțământ." },
+      { "h": "Stocare locală - preferințe consimțământ", "type": "Funcțional (esențial)", "body": "Stocăm local în browserul tău alegerea de consimțământ pentru cookie-uri și preferința de limbă (RO/EN), pentru ca să nu te întrebăm la fiecare vizită. Nu necesită consimțământ." },
       { "h": "Stripe", "type": "Funcțional (esențial pentru plăți)", "body": "Procesatorul nostru de plăți. Stripe plasează cookie-uri DOAR pe paginile de checkout pentru programele plătite, pentru detectare fraudă și securitate. Vezi politica Stripe: https://stripe.com/privacy" },
       { "h": "Supabase (Lovable Cloud)", "type": "Funcțional (esențial)", "body": "Backend-ul nostru pentru formulare (ex. captarea email-ului la AI Adoption Score). Folosește stocare locală pentru sesiuni tehnice. Nu este folosit pentru profilare sau publicitate." },
       { "h": "Domeniul lovable.app (doar staging)", "type": "Funcțional", "body": "Pe versiunile preview și staging găzduite de Lovable, platforma poate plasa cookie-uri tehnice esențiale pentru funcționarea infrastructurii. Acestea nu apar pe domeniul de producție personalizat." }
@@ -118,7 +118,7 @@
     "sections": {
       "s1": { "h": "1. Acceptarea termenilor", "body": "Prin accesarea site-ului The Unlearning School (www.unlearning.ro) și a serviciilor noastre, confirmi că ai citit, înțeles și ești de acord cu acești Termeni și Condiții. Dacă nu ești de acord cu vreuna dintre prevederi, te rugăm să nu folosești site-ul sau serviciile noastre. Acești termeni se aplică tuturor vizitatorilor, utilizatorilor și clienților." },
       "s2": { "h": "2. Ce oferim și cum folosim site-ul", "body": "The Unlearning School oferă servicii de consultanță, training, design de programe și suport pentru adopția AI, funding intelligence, pregătirea pentru execuție și design de academii corporate. Conținutul publicat pe site (articole, ghiduri, scoruri de maturitate, resurse) este oferit în scop informativ și educativ. Accesarea platformei nu creează o relație contractuală sau de consultanță individuală decât dacă semnăm un acord separat (ex. propunere comercială, contract B2B, scope of work pentru un program personalizat)." },
-      "s3": { "h": "3. Drepturi de autor și utilizare corectă", "body": "Tot conținutul de pe acest site — texte, imagini, logo-uri, diagrame, structuri de program, ghiduri, scoruri de evaluare, fișiere descărcabile — este proprietatea The Unlearning School (sau a colaboratorilor noștri, cu acordul lor) și este protejat de legislația privind drepturile de autor și proprietatea intelectuală. Ai voie să accesezi, să citești și să salvezi conținutul pentru uz personal, non-comercial. Nu ai voie: (a) să copiezi, redistribui, editezi sau vinzi conținutul fără acordul nostru scris; (b) să folosești materialele noastre în numele altor branduri, produse sau servicii; (c) să reproduci structura programelor, metodologia sau scorurile noastre de evaluare în propriile oferte comerciale." },
+      "s3": { "h": "3. Drepturi de autor și utilizare corectă", "body": "Tot conținutul de pe acest site - texte, imagini, logo-uri, diagrame, structuri de program, ghiduri, scoruri de evaluare, fișiere descărcabile - este proprietatea The Unlearning School (sau a colaboratorilor noștri, cu acordul lor) și este protejat de legislația privind drepturile de autor și proprietatea intelectuală. Ai voie să accesezi, să citești și să salvezi conținutul pentru uz personal, non-comercial. Nu ai voie: (a) să copiezi, redistribui, editezi sau vinzi conținutul fără acordul nostru scris; (b) să folosești materialele noastre în numele altor branduri, produse sau servicii; (c) să reproduci structura programelor, metodologia sau scorurile noastre de evaluare în propriile oferte comerciale." },
       "s4": { "h": "4. Conduita pe site", "items": ["Nu trimite spam, nu încerca să compromiți securitatea site-ului și nu posta mesaje jignitoare, discriminatorii sau ilegale", "Nu distribui materiale care pot dăuna site-ului, utilizatorilor sau reputației brandului The Unlearning School", "Nu te da drept altcineva, nu folosi date false la înscriere și nu folosi adrese de email temporare pentru a accesa resurse gated", "Furnizezi informații exacte și complete când trimiți formulare sau te înscrii la programe", "Respecți drepturile de proprietate intelectuală ale The Unlearning School și ale colaboratorilor noștri"] },
       "s5": { "h": "5. Discuții de lucru și angajamente comerciale", "body": "Discuția inițială (AI Adoption Call) de 30 de minute este oferită gratuit, fără obligația de a contracta servicii ulterioare. Angajamentele plătite (programe, training-uri, consultanță, propuneri pentru funding) sunt supuse unor acorduri separate, agreate individual cu fiecare client. Ne rezervăm dreptul de a reprograma sau anula discuții cu un preaviz rezonabil. Pentru programele plătite cu plata online, condițiile specifice de retragere și rambursare sunt detaliate în confirmarea de înscriere." },
       "s6": { "h": "6. Funcționalitatea site-ului", "body": "Facem eforturi mari ca site-ul să funcționeze lin, dar nu putem garanta că: (a) site-ul va fi mereu 100% funcțional, rapid sau fără erori; (b) toate informațiile vor fi mereu actualizate la secundă; (c) orice plugin sau serviciu terț (formulare, procesatoare de plăți, calendar de programare, instrumente de analytics) va funcționa perfect în orice browser sau pe orice dispozitiv. Dacă apar probleme tehnice, scrie-ne la hello@unlearning.ro și le rezolvăm cât mai repede." },

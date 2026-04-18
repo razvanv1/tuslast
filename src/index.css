@@ -1,4 +1,4 @@
-/* Self-hosted fonts — inlined to avoid render-blocking CSS chain.
+/* Self-hosted fonts - inlined to avoid render-blocking CSS chain.
    Only latin + latin-ext subsets for above-the-fold weights are inlined here.
    Extra weights/scripts are loaded on demand via the deferred loader in main.tsx.
    The woff2 files are also <link rel="preload"> in index.html for early discovery. */
@@ -93,7 +93,7 @@
     --paper-dim: 40 20% 82%;
     --ink: 0 0% 6%;
     --mid: 40 8% 60%;
-    --red: 11 76% 44%;              /* brand red #c03a1e — do not change */
+    --red: 11 76% 44%;              /* brand red #c03a1e - do not change */
     --red-on-dark: 0 0% 6%;         /* paired bg for red text to meet AA */
     --blue: 222 70% 32%;
     --off-white: 40 30% 94%;
@@ -109,7 +109,7 @@
     --sidebar-border: 0 0% 18%;
     --sidebar-ring: 11 76% 44%;
 
-    /* Bauhaus / Kandinsky popsicle palette — DECORATIVE SHAPES ONLY.
+    /* Bauhaus / Kandinsky popsicle palette - DECORATIVE SHAPES ONLY.
        Do not use for text, buttons, or UI surfaces. Brand colors stay intact. */
     --bau-red: 0 85% 55%;
     --bau-yellow: 48 100% 58%;
@@ -173,7 +173,7 @@
 
 @layer utilities {
 
-  /* Section grey variants — flat matte tones, no sheen, for tonal rhythm */
+  /* Section grey variants - flat matte tones, no sheen, for tonal rhythm */
   .bg-section-darker {
     background-color: hsl(0 0% 5%);
   }

@@ -1,7 +1,7 @@
 {
   "paymentSuccess": {
     "docTitle": "Plată primită, The Unlearning School",
-    "seoTitle": "Plată primită — The Unlearning School",
+    "seoTitle": "Plată primită - The Unlearning School",
     "seoDescription": "Înscrierea ta este confirmată. Te contactăm în curând pentru a programa prima sesiune.",
     "tag": "Plată primită",
     "titlePre": "Ești ",
@@ -13,7 +13,7 @@
   },
   "paymentCanceled": {
     "docTitle": "Plată anulată, The Unlearning School",
-    "seoTitle": "Plată anulată — The Unlearning School",
+    "seoTitle": "Plată anulată - The Unlearning School",
     "seoDescription": "Checkout-ul a fost anulat. Nu a fost efectuată nicio plată. Poți relua oricând.",
     "tag": "Plată anulată",
     "titlePre": "Nu s-a ",

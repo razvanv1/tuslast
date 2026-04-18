@@ -3,7 +3,7 @@
  * All SVGs are inline, decorative (aria-hidden), and use --bau-* tokens.
  * A shared <defs> filter (#bau-shine) applies a subtle glow for the
  * "shiny popsicle" look. Drop the <BauhausDefs/> once near the app root
- * (or inline per-shape — it's cheap and idempotent).
+ * (or inline per-shape - it's cheap and idempotent).
  */
 import { cn } from "@/lib/utils";
 
@@ -15,7 +15,7 @@ type ShapeProps = {
 
 const shine = "url(#bau-shine)";
 
-/** Shared SVG defs — render once per page (e.g. in App or a layout). */
+/** Shared SVG defs - render once per page (e.g. in App or a layout). */
 export const BauhausDefs = () => (
   <svg width="0" height="0" className="absolute" aria-hidden="true">
     <defs>

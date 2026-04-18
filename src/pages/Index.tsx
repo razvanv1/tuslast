@@ -202,7 +202,7 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* PRICING — 2 entry points */}
+      {/* PRICING - 2 entry points */}
       <Section variant="darker">
         <div id="pricing" className="scroll-mt-20" />
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
@@ -298,7 +298,7 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* PARTNERS — external endorsement */}
+      {/* PARTNERS - external endorsement */}
       <Section variant="paper">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("partners.eyebrow")}</p>

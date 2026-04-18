@@ -29,7 +29,7 @@ const Affiliations = ({ variant = "paper" }: AffiliationsProps) => {
 
   return (
     <Section variant={variant === "paper" ? "paper" : "dark"} decor="edge-right">
-      {/* Header — authority statement */}
+      {/* Header - authority statement */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-14">
         <div className="md:col-span-4">
           <p className={`font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4`}>
@@ -45,7 +45,7 @@ const Affiliations = ({ variant = "paper" }: AffiliationsProps) => {
         </div>
         <div className={`md:col-span-8 md:border-l ${border} md:pl-10 flex items-center`}>
           <p className={`text-[15px] leading-relaxed ${textMuted} max-w-2xl`}>
-            The work is informed by participation in selected memberships, networks, and initiatives connected to <span className={textMain}>education, skills, innovation, entrepreneurship, and the future of work</span>. None of this is sponsorship — these are working affiliations that keep the practice grounded in current European policy and ecosystem reality.
+            The work is informed by participation in selected memberships, networks, and initiatives connected to <span className={textMain}>education, skills, innovation, entrepreneurship, and the future of work</span>. None of this is sponsorship - these are working affiliations that keep the practice grounded in current European policy and ecosystem reality.
           </p>
         </div>
       </div>
@@ -54,7 +54,7 @@ const Affiliations = ({ variant = "paper" }: AffiliationsProps) => {
       <div className={`border-t-2 border-b-2 ${border} divide-y ${border}`}>
         <div className="grid grid-cols-12 py-3">
           <p className={`col-span-12 font-mono text-[10px] uppercase tracking-[0.3em] ${textFaint}`}>
-            01 — Institutional · Policy & learning networks
+            01 - Institutional · Policy & learning networks
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2">
@@ -87,7 +87,7 @@ const Affiliations = ({ variant = "paper" }: AffiliationsProps) => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10">
         <div className="md:col-span-4">
           <p className={`font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4`}>
-            02 — Builder ecosystems
+            02 - Builder ecosystems
           </p>
           <h3 className={`font-display text-3xl md:text-4xl ${textMain} leading-tight`}>
             Connected to <em className="text-red">startup and technology</em> ecosystems.

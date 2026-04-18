@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
         <div className="max-w-3xl mx-auto px-6 md:px-10 py-16 md:py-24 space-y-10">
           <p className="text-ink/75 text-[15px] leading-relaxed italic">{t("privacy.intro")}</p>
 
-          {/* s1 — Definitions (label + body list) */}
+          {/* s1 - Definitions (label + body list) */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("privacy.sections.s1.h")}</h2>
             <ul className="text-ink/75 text-[15px] leading-relaxed space-y-2 list-disc pl-6">

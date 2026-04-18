@@ -1,4 +1,4 @@
-# The Unlearning School — fully permissive for search engines, AI crawlers, and chatbots.
+# The Unlearning School - fully permissive for search engines, AI crawlers, and chatbots.
 # Updated: 2026-04-18
 
 # --- Search engines ---

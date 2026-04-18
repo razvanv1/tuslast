@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Structurare finanțare — MDF vendor, AWS co-sell și granturi digitale UE",
+    "title": "Structurare finanțare - MDF vendor, AWS co-sell și granturi digitale UE",
     "description": "După training vine implementarea, iar implementarea cere buget. Structurăm programul tău de adopție AI ca să se califice pentru Microsoft MDF, AWS co-sell sau granturi digitale UE.",
     "keywords": "Microsoft MDF, AWS co-sell, granturi digitale UE, finanțare AI, Digital Europe Programme, grant AI România, credite vendor"
   },
@@ -9,7 +9,7 @@
     "tag": "MDF, Finanțare & Granturi",
     "bannerAlt": "Echipă modernă analizând documente de finanțare",
     "title": "Ai învățat ce să construiești. Acum finanțează construcția.",
-    "subtitle": "Training-ul îți dă echipei knowledge-ul și prototipurile. Producția — agenți, integrări, licențe Copilot și Azure, dev work, change management — costă bani reali. MDF-urile vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică. Puțini știu cum să aplice.",
+    "subtitle": "Training-ul îți dă echipei knowledge-ul și prototipurile. Producția - agenți, integrări, licențe Copilot și Azure, dev work, change management - costă bani reali. MDF-urile vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică. Puțini știu cum să aplice.",
     "ctaText": "Programează call de finanțare →",
     "secondaryText": "Vezi instrumentele de finanțare ↓",
     "note": "Call gratuit de 30 min · Shortlist scris în 5 zile lucrătoare · Fără angajament"
@@ -23,7 +23,7 @@
         "num": "01",
         "label": "Training",
         "title": "Echipa învață să prototipeze cu AI pe workflow-uri reale.",
-        "body": "În programele noastre, echipele pleacă cu prototipuri funcționale construite pe propriile probleme — nu cu slide-uri. Knowledge-ul rămâne în casă.",
+        "body": "În programele noastre, echipele pleacă cu prototipuri funcționale construite pe propriile probleme - nu cu slide-uri. Knowledge-ul rămâne în casă.",
         "linkText": "Vezi programele →",
         "linkTo": "/programmes"
       },
@@ -31,13 +31,13 @@
         "num": "02",
         "label": "Decalajul",
         "title": "Prototipul nu e producție.",
-        "body": "Ca să transformi un prototip într-un agent sau workflow deployed, ai nevoie de licențe, integrări, dev work și change management. Aici se blochează majoritatea adopțiilor — nu pe knowledge, pe buget."
+        "body": "Ca să transformi un prototip într-un agent sau workflow deployed, ai nevoie de licențe, integrări, dev work și change management. Aici se blochează majoritatea adopțiilor - nu pe knowledge, pe buget."
       },
       {
         "num": "03",
         "label": "Finanțare",
         "title": "MDF vendor, AWS co-sell și granturi UE există ca să finanțeze exact asta.",
-        "body": "Structurăm programul tău de adopție ca să se califice — și scriem aplicația. Munca se întâmplă oricum; finanțarea decide dacă te costă ceva."
+        "body": "Structurăm programul tău de adopție ca să se califice - și scriem aplicația. Munca se întâmplă oricum; finanțarea decide dacă te costă ceva."
       }
     ]
   },
@@ -45,7 +45,7 @@
     "kicker": "Obiecția pe care o auzim cel mai des",
     "titleStart": "„Nu avem buget",
     "titleEm": "pentru asta.\"",
-    "intro": "E pasul care vine după training. Knowledge-ul e al tău; implementarea cere buget. În majoritatea cazurilor, bugetul există — doar că nu a fost identificat sau structurat corect.",
+    "intro": "E pasul care vine după training. Knowledge-ul e al tău; implementarea cere buget. În majoritatea cazurilor, bugetul există - doar că nu a fost identificat sau structurat corect.",
     "paragraphs": [
       "În fiecare trimestru, Microsoft, AWS și Google alocă Market Development Funds partenerilor care susțin adopția platformei. Aceste bugete există tocmai pentru a finanța programe de skill-uri și implementare AI în interiorul organizațiilor.",
       "Majoritatea rămân neutilizate, nu pentru că firmele nu se califică, ci pentru că nimeni nu a structurat programul într-un mod care să respecte criteriile de finanțare.",
@@ -63,7 +63,7 @@
       {
         "title": "Microsoft MDF & Founders Hub",
         "audience": "Pentru parteneri Microsoft, implementări Copilot și startup-uri eligibile",
-        "body": "Două piste. Parteneri: Market Development Funds susțin adopția Copilot, Azure AI și Microsoft 365 — programele trebuie structurate pe rezultate concrete de adopție, nu pe training generic. Startup-uri & scaleup-uri: Microsoft for Startups Founders Hub oferă până la $150k credits Azure plus acces Copilot, GitHub și OpenAI API. Facilităm accesul pe ambele piste.",
+        "body": "Două piste. Parteneri: Market Development Funds susțin adopția Copilot, Azure AI și Microsoft 365 - programele trebuie structurate pe rezultate concrete de adopție, nu pe training generic. Startup-uri & scaleup-uri: Microsoft for Startups Founders Hub oferă până la $150k credits Azure plus acces Copilot, GitHub și OpenAI API. Facilităm accesul pe ambele piste.",
         "coverage": "licențe Copilot & Microsoft 365, consum Azure AI, credits OpenAI API prin Founders Hub, lucru de adopție prin partener, training & enablement",
         "tag": "Tier de partener sau pistă startup"
       },
@@ -115,13 +115,13 @@
   },
   "quote": {
     "attribution": "Despre calificare",
-    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
+    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există - există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
   },
   "eventsBridge": {
     "kicker": "Înainte să o finanțezi",
     "titleStart": "Vrei să vezi cum arată o sesiune live",
     "titleEm": "înainte să o finanțezi?",
-    "body": "Vino într-o sesiune live de prototipare și vezi exact ce produce programul — prototipuri funcționale, capabilitate de echipă, livrabile — înainte să structurezi finanțarea în jurul lui.",
+    "body": "Vino într-o sesiune live de prototipare și vezi exact ce produce programul - prototipuri funcționale, capabilitate de echipă, livrabile - înainte să structurezi finanțarea în jurul lui.",
     "cta": "Vezi sesiuni live →"
   },
   "faq": {
@@ -130,10 +130,10 @@
     "titleEm": "call-ul de scoping.",
     "items": [
       { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie, tipic 3–5 săptămâni: 1 săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă tipic 2–6 săptămâni." },
-      { "q": "Dacă nu suntem partener Microsoft / AWS?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft și AWS în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel — majoritatea companiilor care deja plătesc Copilot sau AWS se califică pentru un tier de intrare în câteva săptămâni." },
-      { "q": "Cum se face efectiv rambursarea?", "a": "Depinde de instrument. MDF vendor se plătește de obicei pe milestone-uri aprobate — structurăm livrarea ca documentația să se potrivească cu aplicația din ziua unu. Granturile UE merg tipic pe tranșe contra livrabile verificate. În ambele cazuri programul rulează prima dată; banii vin după fiecare milestone verificat." },
+      { "q": "Dacă nu suntem partener Microsoft / AWS?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft și AWS în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel - majoritatea companiilor care deja plătesc Copilot sau AWS se califică pentru un tier de intrare în câteva săptămâni." },
+      { "q": "Cum se face efectiv rambursarea?", "a": "Depinde de instrument. MDF vendor se plătește de obicei pe milestone-uri aprobate - structurăm livrarea ca documentația să se potrivească cu aplicația din ziua unu. Granturile UE merg tipic pe tranșe contra livrabile verificate. În ambele cazuri programul rulează prima dată; banii vin după fiecare milestone verificat." },
       { "q": "Ce documente cerem de la voi?", "a": "Pentru audit: acordurile actuale cu vendor-ii (statusul de partener Microsoft, tier-ul AWS), facturi recente pentru cheltuiala AI/cloud și un brief scurt despre programul pe care vrei să-l rulezi. Pentru aplicația în sine: detalii despre organizație, headcount, rezultate țintă. Restul scriem noi." },
-      { "q": "Cât ne costă?", "a": "Call-ul de scoping de 30 de minute și shortlist-ul scris de instrumente sunt gratuite. Dacă mergem mai departe, munca de structurare și aplicație are scope per program — de obicei un fee fix plus o componentă de succes legată de finanțarea aprobată efectiv. Confirmăm cifrele înainte de orice angajament." },
+      { "q": "Cât ne costă?", "a": "Call-ul de scoping de 30 de minute și shortlist-ul scris de instrumente sunt gratuite. Dacă mergem mai departe, munca de structurare și aplicație are scope per program - de obicei un fee fix plus o componentă de succes legată de finanțarea aprobată efectiv. Confirmăm cifrele înainte de orice angajament." },
       { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem în shortlist, în scris, în 5 zile lucrătoare. Fără fee, fără angajament. Majoritatea companiilor se califică pentru cel puțin un instrument, dar dacă structura chiar nu se potrivește, nu fabricăm o aplicație." }
     ]
   },

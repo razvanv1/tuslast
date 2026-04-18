@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Events & Keynotes — Live AI prototyping workshops, hackathons, keynotes",
+    "title": "Events & Keynotes - Live AI prototyping workshops, hackathons, keynotes",
     "description": "Live AI prototyping on your real workflows. Workshops, hackathons and keynotes where teams leave with a working prototype, not slides. 90 min – 2 days. 15 to 500 people.",
     "keywords": "AI keynote, AI workshop, AI hackathon, live prototyping, corporate AI event, AI speaker EU, Copilot workshop"
   },
@@ -19,9 +19,9 @@
     "kicker": "In partnership with",
     "titleStart": "International standards.",
     "titleEm": "Local rooms.",
-    "lovable": { "name": "Lovable", "role": "Lovable Ambassador — official partner for AI app prototyping" },
-    "hermes": { "name": "Hermes Agent", "role": "Hermes Agent Partner — official partner for autonomous AI agents" },
-    "subline": "Public events are free. The condition is simple: practical only — no generic talks, no slideware, no theory.",
+    "lovable": { "name": "Lovable", "role": "Lovable Ambassador - official partner for AI app prototyping" },
+    "hermes": { "name": "Hermes Agent", "role": "Hermes Agent Partner - official partner for autonomous AI agents" },
+    "subline": "Public events are free. The condition is simple: practical only - no generic talks, no slideware, no theory.",
     "perks": [
       { "num": "01", "title": "Free for participants", "body": "All public events are free. No tickets, no upsell." },
       { "num": "02", "title": "Practical, no slides", "body": "Live builds on real workflows. Zero generic decks, zero PowerPoint." },
@@ -53,7 +53,7 @@
       {
         "time": "00:30",
         "title": "Live build, with the failures",
-        "body": "I prototype the first solution in front of the room, on that team's problem, inside the AI tools you already pay for. Wrong outputs included — that's where teams learn to actually trust the tool."
+        "body": "I prototype the first solution in front of the room, on that team's problem, inside the AI tools you already pay for. Wrong outputs included - that's where teams learn to actually trust the tool."
       },
       {
         "time": "01:30",
@@ -127,9 +127,9 @@
     "titleStart": "Before you",
     "titleEm": "book the call.",
     "items": [
-      { "q": "How long do you need before the event?", "a": "Two to three weeks is ideal — that gives me time to research your company, your sector, and the teams in the room. Tighter timelines work too; we just narrow the prep scope." },
-      { "q": "What if our teams don't already use AI tools?", "a": "It's not a blocker. We work in whatever you have access to — Copilot, ChatGPT, Gemini, Claude — and if there's no access at all, I bring a working setup to demo on. Live prototyping still happens." },
-      { "q": "Do participants need to bring laptops or prep anything?", "a": "Yes — laptops, and one real problem each team has this week. That's the only prep. The sharper the problem, the sharper the prototype we build on it." },
+      { "q": "How long do you need before the event?", "a": "Two to three weeks is ideal - that gives me time to research your company, your sector, and the teams in the room. Tighter timelines work too; we just narrow the prep scope." },
+      { "q": "What if our teams don't already use AI tools?", "a": "It's not a blocker. We work in whatever you have access to - Copilot, ChatGPT, Gemini, Claude - and if there's no access at all, I bring a working setup to demo on. Live prototyping still happens." },
+      { "q": "Do participants need to bring laptops or prep anything?", "a": "Yes - laptops, and one real problem each team has this week. That's the only prep. The sharper the problem, the sharper the prototype we build on it." },
       { "q": "Can you deliver in English and Romanian?", "a": "Both. Sessions are delivered in the language of the room. Most prompt sheets and post-session materials ship bilingually by default." },
       { "q": "Do you sign NDAs and handle confidential context?", "a": "Always. NDA signed before any pre-event research starts. Nothing built on real client problems leaves the room without your approval." },
       { "q": "What happens after the session?", "a": "Every participant leaves with a copy-paste prompt sheet and a one-page next-week plan. Optional: a scoped proposal for follow-up adoption work, based on what surfaced in the room." }
