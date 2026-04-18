@@ -114,6 +114,29 @@ const Hermes = () => {
         </div>
       </Section>
 
+      <Section variant="paper" decor="corner-tr">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div className="md:col-span-8">
+            <div className="flex items-center gap-4 mb-4">
+              <img src={partnerHermes} alt="Hermes Agent" width={120} height={32} className="h-8 w-auto object-contain" />
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red">{t("eventsBridge.kicker")}</p>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-ink leading-[1.05] mb-4">
+              {t("eventsBridge.titleStart")} <em className="text-red">{t("eventsBridge.titleEm")}</em>
+            </h2>
+            <p className="text-ink/75 text-[15px] leading-relaxed max-w-2xl">{t("eventsBridge.body")}</p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <Link
+              to="/events#partners"
+              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-colors"
+            >
+              {t("eventsBridge.cta")}
+            </Link>
+          </div>
+        </div>
+      </Section>
+
       <Section>
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-5">
