@@ -6,6 +6,8 @@ import logo from "@/assets/logo.webp";
 import { BOOKING_URL } from "@/lib/booking";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Link } from "@/components/LocalizedLink";
+import ProgrammesDropdown from "@/components/ProgrammesDropdown";
+import { trackEvent } from "@/lib/analytics";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -13,13 +15,21 @@ const Navbar = () => {
   const { t } = useTranslation();
   const onAssessment = location.pathname === "/assessment" || location.pathname === "/ro/assessment";
 
-  const navLinks = [
-    { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
-    { label: t("nav.events"), to: "/events" },
-    { label: t("nav.hermes"), to: "/hermes" },
-    { label: t("nav.funding"), to: "/funding" },
-    { label: t("nav.aiScore"), to: "/ai-adoption-score" },
+  // 4 top-level items + Programmes dropdown.
+  const topLinks = [
     { label: t("nav.resources"), to: "/resources" },
+    { label: t("nav.aiScore"), to: "/ai-adoption-score" },
+    { label: t("nav.about"), to: "/about" },
+  ];
+
+  // Mobile drawer keeps the flat list — easier to scan on small screens.
+  const mobileLinks = [
+    { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
+    { label: t("nav.hermes"), to: "/hermes" },
+    { label: t("nav.events"), to: "/events" },
+    { label: t("nav.funding"), to: "/funding" },
+    { label: t("nav.resources"), to: "/resources" },
+    { label: t("nav.aiScore"), to: "/ai-adoption-score" },
     { label: t("nav.about"), to: "/about" },
   ];
 
@@ -34,8 +44,9 @@ const Navbar = () => {
   const mobileBookingClass =
     "mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]";
 
-  // Active-state matching: strip the /ro prefix before comparing to canonical path
   const canonicalPath = location.pathname.replace(/^\/ro(\/|$)/, "/").replace(/\/+$/, "") || "/";
+
+  const handleBookClick = () => trackEvent("cta_book_call", { location: "navbar" });
 
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
@@ -52,7 +63,8 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-5 lg:gap-6 ml-auto">
-          {navLinks.map((link) => (
+          <ProgrammesDropdown />
+          {topLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
@@ -65,11 +77,11 @@ const Navbar = () => {
           ))}
           <LanguageSwitcher variant="dark" className="ml-1" />
           {onAssessment ? (
-            <button type="button" onClick={scrollToBook} className={desktopBookingClass}>
+            <button type="button" onClick={() => { handleBookClick(); scrollToBook(); }} className={desktopBookingClass}>
               {bookingLabel} →
             </button>
           ) : (
-            <Link to={BOOKING_URL} className={desktopBookingClass}>
+            <Link to={BOOKING_URL} onClick={handleBookClick} className={desktopBookingClass}>
               {bookingLabel} →
             </Link>
           )}
@@ -89,7 +101,7 @@ const Navbar = () => {
           <div className="py-3 border-b border-paper/5">
             <LanguageSwitcher variant="dark" />
           </div>
-          {navLinks.map((link) => (
+          {mobileLinks.map((link) => (
             <Link
               key={link.to}
               to={link.to}
@@ -102,7 +114,7 @@ const Navbar = () => {
           {onAssessment ? (
             <button
               type="button"
-              onClick={() => { setOpen(false); setTimeout(scrollToBook, 50); }}
+              onClick={() => { handleBookClick(); setOpen(false); setTimeout(scrollToBook, 50); }}
               className={mobileBookingClass}
             >
               {bookingLabel} →
@@ -110,7 +122,7 @@ const Navbar = () => {
           ) : (
             <Link
               to={BOOKING_URL}
-              onClick={() => setOpen(false)}
+              onClick={() => { handleBookClick(); setOpen(false); }}
               className={mobileBookingClass}
             >
               {bookingLabel} →
