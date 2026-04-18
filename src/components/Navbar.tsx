@@ -1,16 +1,17 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/logo.webp";
 import { BOOKING_URL } from "@/lib/booking";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { Link } from "@/components/LocalizedLink";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const { t } = useTranslation();
-  const onAssessment = location.pathname === "/assessment";
+  const onAssessment = location.pathname === "/assessment" || location.pathname === "/ro/assessment";
 
   const navLinks = [
     { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
@@ -33,6 +34,9 @@ const Navbar = () => {
   const mobileBookingClass =
     "mt-4 inline-flex items-center px-5 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em]";
 
+  // Active-state matching: strip the /ro prefix before comparing to canonical path
+  const canonicalPath = location.pathname.replace(/^\/ro(\/|$)/, "/").replace(/\/+$/, "") || "/";
+
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b-2 border-paper/10">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-20">
@@ -53,7 +57,7 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               className={`font-mono text-[11px] uppercase tracking-[0.2em] transition-colors hover:text-red ${
-                location.pathname === link.to ? "text-red" : "text-paper/70"
+                canonicalPath === link.to ? "text-red" : "text-paper/70"
               }`}
             >
               {link.label}
