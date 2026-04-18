@@ -6,17 +6,62 @@
     "seoTitle": "Politica de Confidențialitate",
     "seoDescription": "Politica de confidențialitate conformă GDPR pentru The Unlearning School.",
     "title": "Politica de Confidențialitate.",
+    "intro": "Această politică se aplică între dumneavoastră, utilizatorul acestui site web și The Unlearning School, proprietarul și furnizorul acestui site. Politica descrie modul în care colectăm, stocăm și utilizăm datele cu caracter personal în legătură cu utilizarea platformei www.unlearning.ro și a oricăror servicii asociate.",
     "sections": {
-      "s1": { "h": "1. Introducere", "body": "The Unlearning School („noi”, „nouă”, „nostru”) se angajează să protejeze confidențialitatea vizitatorilor și utilizatorilor site-ului nostru. Această Politică de Confidențialitate explică modul în care colectăm, folosim, stocăm și protejăm datele tale personale în conformitate cu Regulamentul General privind Protecția Datelor (GDPR) și legile române aplicabile privind protecția datelor." },
-      "s2": { "h": "2. Operator de Date", "controllerLabel": "Operatorul de date responsabil pentru datele tale personale este:", "name": "The Unlearning School", "address": "Adresă: Aleea Pasărea în Văzduh nr. 1, București, România", "email": "Email: hello@unlearning.ro", "phone": "Telefon: +40 722 598 346" },
-      "s3": { "h": "3. Ce Date Colectăm", "items": ["Informații de contact (nume, email, telefon) când trimiți un formular sau rezervi o discuție", "Date de comunicare (mesaje, întrebări prin formularele de contact)", "Date tehnice (adresa IP, tipul browserului, dispozitiv, cookie-uri) colectate automat", "Date de utilizare (pagini vizitate, timp petrecut, tipare de navigație)", "Date de abonare la newsletter"] },
-      "s4": { "h": "4. Cum Folosim Datele Tale", "items": ["Răspundem la întrebările tale și oferim serviciile cerute", "Programăm și gestionăm discuții de lucru", "Trimitem actualizări de newsletter (doar cu consimțământ explicit)", "Îmbunătățim site-ul prin analytics", "Respectăm obligațiile legale"] },
-      "s5": { "h": "5. Temei Legal pentru Procesare", "items": [{ "label": "Consimțământ:", "body": " pentru newsletter și cookie-uri non-esențiale" }, { "label": "Interes legitim:", "body": " pentru analytics și îmbunătățirea serviciului" }, { "label": "Necesitate contractuală:", "body": " pentru serviciile pe care le-ai cerut" }, { "label": "Obligație legală:", "body": " pentru conformitatea cu legile aplicabile" }] },
-      "s6": { "h": "6. Partajarea Datelor", "body": "Nu vindem datele tale personale. Putem partaja date cu furnizori terți de încredere (email, analytics, programare) obligați prin acorduri de procesare a datelor conforme cu GDPR." },
-      "s7": { "h": "7. Reținerea Datelor", "body": "Reținem datele personale doar atât timp cât este necesar sau cerut de lege. Datele din formularele de contact sunt reținute până la 2 ani. Datele de newsletter sunt reținute până când te dezabonezi." },
-      "s8": { "h": "8. Drepturile Tale", "intro": "Conform GDPR ai dreptul să:", "items": ["Accesezi datele tale personale", "Rectifici datele inexacte sau incomplete", "Ceri ștergerea („dreptul de a fi uitat”)", "Restricționezi procesarea datelor tale", "Te opui procesării", "Portabilitatea datelor", "Retragi consimțământul oricând"], "outro": "Pentru a exercita oricare dintre aceste drepturi, contactează-ne la hello@unlearning.ro." },
-      "s9": { "h": "9. Cookie-uri", "bodyPre": "Site-ul nostru folosește cookie-uri. Vezi ", "linkText": "Politica de Cookie-uri", "bodyPost": " pentru detalii." },
-      "s10": { "h": "10. Contact", "intro": "Întrebări sau cereri privind drepturile:", "email": "Email: hello@unlearning.ro", "phone": "Telefon: +40 722 598 346", "outro": "Ai de asemenea dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)." }
+      "s1": { "h": "1. Definiții", "items": [
+        { "label": "Cont", "body": " — informațiile personale, detaliile de plată și acreditările utilizate pentru accesarea serviciilor sau conținutului platformei." },
+        { "label": "Conținut", "body": " — orice text, imagine, grafică, video, audio, software sau alte materiale disponibile pe site." },
+        { "label": "Cookie", "body": " — fișier text plasat în dispozitivul dumneavoastră pentru a urmări navigarea și a îmbunătăți experiența pe site." },
+        { "label": "Date", "body": " — orice informație trimisă prin formulare, conturi, înscrieri sau navigare." },
+        { "label": "Serviciu", "body": " — orice funcționalitate oferită de The Unlearning School pe acest site web." },
+        { "label": "Sistem", "body": " — infrastructura noastră digitală (ex: email, chat, conturi de utilizator)." },
+        { "label": "Utilizator", "body": " — orice persoană care accesează site-ul și nu este angajată de The Unlearning School." },
+        { "label": "Site web", "body": " — domeniul www.unlearning.ro și orice subdomenii asociate." }
+      ] },
+      "s2": { "h": "2. Date colectate", "intro": "Colectăm următoarele tipuri de date:", "items": [
+        "Nume și prenume",
+        "Adresă de email și număr de telefon",
+        "Ocupație și domeniu de activitate",
+        "Locație geografică (ex. cod poștal)",
+        "Date despre plată (ex: card bancar)",
+        "IP, browser, sistem de operare",
+        "Navigare pe site (pagini accesate, sursă trafic)",
+        "Preferințe și răspunsuri la chestionare",
+        "Informații colectate prin cookie-uri (vezi Secțiunea 10)"
+      ] },
+      "s3": { "h": "3. Utilizarea datelor", "intro": "Datele colectate pot fi utilizate pentru:", "items": [
+        "Furnizarea de servicii educaționale (programe, sprinturi, teste)",
+        "Contactarea în scopuri administrative, comerciale sau de suport",
+        "Trimiterea de mesaje promoționale (cu acordul dumneavoastră)",
+        "Analiza comportamentului de utilizare pentru îmbunătățirea platformei",
+        "Cercetare de piață și personalizare a conținutului"
+      ], "outro": "Datele NU vor fi vândute sau transferate către terți fără consimțământ, cu excepția cazurilor impuse de lege." },
+      "s4": { "h": "4. Furnizori terți", "intro": "Folosim servicii externe pentru:", "items": [
+        "Procesarea plăților (ex: Stripe)",
+        "Analiză trafic (ex: Google Analytics)",
+        "Email marketing (ex: Brevo)",
+        "Găzduire și mentenanță"
+      ], "outro": "Aceste entități pot procesa date limitate, strict necesare prestării serviciilor. Ne asigurăm că toți partenerii respectă legislația GDPR." },
+      "s5": { "h": "5. Transferul datelor în caz de schimbare de proprietate", "body": "Dacă SC CARBON SMART EUROPA SRL va fi preluată sau reorganizată, datele utilizatorilor pot fi transferate către noii administratori. În acest caz, veți fi notificat și veți putea solicita ștergerea datelor." },
+      "s6": { "h": "6. Controlul utilizării datelor", "intro": "Aveți dreptul să:", "items": [
+        "Refuzați utilizarea datelor în scopuri de marketing",
+        "Refuzați partajarea cu terți",
+        "Modificați preferințele în contul dumneavoastră"
+      ] },
+      "s7": { "h": "7. Reținerea datelor", "body": "Datele vor fi păstrate atâta timp cât sunteți utilizator activ sau cât este necesar legal pentru arhivare contabilă, fiscală sau contractuală. Aveți dreptul să solicitați ștergerea datelor." },
+      "s8": { "h": "8. Accesarea și modificarea datelor", "body": "Puteți accesa, modifica sau solicita ștergerea datelor personale printr-o solicitare scrisă trimisă la:", "email": "Email: hello@unlearning.ro" },
+      "s9": { "h": "9. Securitatea datelor", "intro": "Protejăm datele prin:", "items": [
+        "Servere securizate cu criptare SSL",
+        "Protecții împotriva accesului neautorizat",
+        "Back-up periodic"
+      ], "outro": "Totuși, nu suntem responsabili pentru eventuale breșe în sistemele externe pe care le utilizăm sau către care redirecționăm utilizatorii." },
+      "s10": { "h": "10. Cookie-uri", "intro": "Site-ul folosește cookie-uri pentru:", "items": [
+        "Funcționalități esențiale",
+        "Analiză de trafic și performanță",
+        "Remarketing (cu acord explicit)"
+      ], "outro": "Vă puteți gestiona preferințele din setările browserului sau folosind bara de consimțământ." },
+      "s11": { "h": "11. Actualizări ale politicii", "body": "Putem actualiza această politică periodic. Data ultimei modificări va fi afișată în partea de jos a paginii. Utilizarea în continuare a site-ului implică acceptarea noilor condiții." },
+      "s12": { "h": "12. Contact", "intro": "Pentru întrebări sau solicitări privind datele cu caracter personal:", "name": "The Unlearning School", "address": "1, Aleea Pasărea în Văzduh, București, RO", "phone": "Telefon: +40 722 598 346", "email": "Email: hello@unlearning.ro", "outro": "Ai de asemenea dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)." }
     }
   },
   "cookies": {
