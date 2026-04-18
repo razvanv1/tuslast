@@ -131,8 +131,8 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
           loading={index <= 1 ? "eager" : "lazy"}
           fetchPriority={index === 0 ? "high" : index === 1 ? "high" : "auto"}
           decoding="async"
-          width={512}
-          height={704}
+          width={454}
+          height={597}
           className={`w-full h-full object-cover ${label === "Events & Keynotes" ? "scale-[1.08]" : ""}`}
           draggable={false}
         />
