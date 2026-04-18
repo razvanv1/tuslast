@@ -1,18 +1,19 @@
 {
   "seo": {
-    "title": "Evenimente & Keynote-uri — workshopuri, hackathoane și conferințe AI",
-    "description": "Workshopuri AI adaptate pe sector, hackathoane interne și keynote-uri. 90 min – 2 zile. 15 până la 500 de persoane. Fiecare demo construit pe fluxurile tale de lucru, nu pe exemple generice.",
-    "keywords": "keynote AI, workshop AI, hackathon AI, eveniment corporate AI, speaker AI EU, workshop Copilot"
+    "title": "Evenimente & Keynote-uri — Prototipare AI live, workshopuri, hackathoane",
+    "description": "Prototipare AI live pe fluxurile tale reale de lucru. Workshopuri, hackathoane și keynote-uri în care echipele pleacă cu un prototip funcțional, nu cu slide-uri. 90 min – 2 zile. 15 până la 500 de persoane.",
+    "keywords": "keynote AI, workshop AI, hackathon AI, prototipare live, eveniment corporate AI, speaker AI EU, workshop Copilot"
   },
   "documentTitle": "Evenimente & Keynote-uri, The Unlearning School",
   "hero": {
     "tag": "Evenimente & Keynote-uri",
     "bannerAlt": "Speaker pe scenă în fața unui public numeros",
-    "title": "Pleacă acasă cu ceva ce au construit ei.",
-    "subtitle": "Workshopuri, hackathoane și keynote-uri pentru companii care au nevoie de dovezi rapide, momentum intern sau o cale de a arăta echipei de management cum arată AI în practică.",
-    "ctaText": "Discuție AI Adoption →",
-    "secondaryText": "Vezi toate programele",
-    "note": "90 min – 2 zile · 15 până la 500 de persoane · Adaptat pe sector"
+    "title": "Prototipare AI live. Pe fluxurile tale. În sală.",
+    "subtitle": "Echipele tale aduc o problemă reală pe care o au săptămâna asta. La final, pleacă cu un prototip funcțional pe ea, plus fișa de prompturi ca să-l reconstruiască luni dimineață. Fără slide-uri. Fără demo-uri generice.",
+    "ctaText": "Programează discuția pentru evenimentul tău →",
+    "secondaryText": "Vezi cum decurge o sesiune ↓",
+    "secondaryTo": "#inside",
+    "note": "90 min – 2 zile · 15 până la 500 de persoane · Adaptat pe sector · Propunere în 48h"
   },
   "intro": {
     "kicker": "De ce majoritatea evenimentelor AI nu funcționează",
@@ -20,32 +21,76 @@
     "titleEm": "Nu ce face în compania ta.",
     "intro": "Oamenii se uită la un demo. Poate încearcă o dată. Apoi revin la fluxurile vechi de marți dimineață. Motivul nu e instrumentul, e că nimic din sesiune nu s-a legat de munca lor reală. Rapoartele lor. Apelurile cu clienții. Pregătirea săptămânală. Când AI nu se mapează pe o sarcină concretă pe care cineva o face zilnic, rămâne o curiozitate.",
     "pullQuoteStart": "Înainte de fiecare sesiune, cercetez compania, sectorul și echipele care vor fi în sală.",
-    "pullQuoteEm": "Demo-urile sunt construite pe fluxurile lor de lucru, nu pe exemple generice de productivitate.",
+    "pullQuoteEm": "Apoi construim, live, pe o problemă reală adusă de una din echipe în acea dimineață.",
     "pullQuoteEnd": "Toată lumea pleacă acasă cu fișe de prompturi gata de copy-paste luni dimineață."
+  },
+  "inside": {
+    "kicker": "În sală",
+    "titleStart": "Cum arată concret o sesiune",
+    "titleEm": "de prototipare live.",
+    "intro": "Un workshop standard de jumătate de zi, minut cu minut. Aceeași structură se extinde la un hackathon de 2 zile sau se restrânge la un keynote de 90 de minute cu segment de build live.",
+    "steps": [
+      {
+        "time": "00:00",
+        "title": "Intake",
+        "body": "Fiecare echipă aduce o problemă reală pe care o are săptămâna asta. Un raport blocat, un proces lent cu clientul, o sarcină de research pe care nimeni nu vrea să o facă. Alegem cea mai clară ca să construim pe ea prima."
+      },
+      {
+        "time": "00:30",
+        "title": "Build live, cu eșecurile incluse",
+        "body": "Prototipez prima soluție în fața sălii, pe problema acelei echipe, în instrumentele AI pe care deja le plătești. Cu output-uri greșite incluse — acolo învață echipele să aibă încredere reală în instrument."
+      },
+      {
+        "time": "01:30",
+        "title": "Hands-on, fiecare echipă construiește",
+        "body": "Fiecare echipă lucrează pe problema ei. Eu mă mișc între mese, deblochez, împing prompturile mai departe, arăt scurtături. Nimeni nu se uită. Toți construiesc."
+      },
+      {
+        "time": "03:00",
+        "title": "Showcase + sharpening",
+        "body": "Fiecare echipă arată ce a construit. Sala dă feedback, ascut prompturile pe loc, și capturăm pattern-urile care au funcționat la mai multe echipe."
+      },
+      {
+        "time": "04:00",
+        "title": "Plecăm cu",
+        "body": "Un prototip funcțional per echipă, o fișă de prompturi copy-paste construită din ce a funcționat în sală, și un plan de o pagină pentru ce livrăm săptămâna următoare."
+      }
+    ]
+  },
+  "proof": {
+    "kicker": "Track record",
+    "items": [
+      { "stat": "40+", "label": "Sesiuni livrate" },
+      { "stat": "8", "label": "Sectoare acoperite" },
+      { "stat": "2.500+", "label": "Oameni în săli" }
+    ]
   },
   "formats": {
     "kicker": "Formate",
     "titleStart": "Trei formate.",
     "titleEm": "Un singur standard:",
-    "titleEnd": "rezultate reale, nu slide-uri despre rezultate.",
+    "titleEnd": "prototipuri reale, nu slide-uri despre prototipuri.",
     "items": [
       {
         "num": "01",
-        "title": "Keynote + Q&A",
+        "title": "Keynote + build live",
         "meta": "90 de minute · Până la 500 de persoane",
-        "body": "Conceput pentru conferințe și evenimente corporate mari. Subiecte: alfabetizare AI, pregătirea pentru EU AI Act, prototipare rapidă, viitorul muncii. Conținutul e adaptat la audiența și sectorul tău, nu reciclat de la evenimentul precedent."
+        "body": "Conceput pentru conferințe și evenimente corporate mari. Închei fiecare keynote cu un build AI live pe o problemă propusă din public, ca sala să vadă fluxul de lucru, nu doar teoria.",
+        "outcome": "Pleci cu: înregistrarea, fișa de prompturi și un exemplu construit complet pe sectorul tău."
       },
       {
         "num": "02",
         "title": "Workshop hands-on",
         "meta": "Jumătate sau o zi întreagă · 15–50 participanți",
-        "body": "Participanții lucrează direct în instrumentele AI la care au deja acces. Demo-urile live includ și eșecuri reale, pentru că acolo construiesc echipele încredere autentică în instrument. Fiecare participant pleacă cu ceva ce a construit el însuși."
+        "body": "Formatul complet de prototipare live de mai sus. Participanții lucrează direct în instrumentele AI la care au deja acces, pe problemele reale aduse în sală. Cu eșecuri reale incluse.",
+        "outcome": "Pleci cu: 1 prototip funcțional per echipă + fișă de prompturi copy-paste + plan pentru săptămâna următoare."
       },
       {
         "num": "03",
         "title": "Hackathon intern",
         "meta": "1 sau 2 zile · Scope personalizat",
-        "body": "Design și facilitare completă a unui hackathon AI intern. Include design-ul brief-ului, coaching pe echipe, criterii de jurizare și showcase final. Echipele construiesc prototipuri funcționale pe probleme reale ale companiei, nu prezentări despre prototipuri."
+        "body": "Design și facilitare completă a unui hackathon AI intern. Design de brief, coaching în timpul construcției, criterii de jurizare și showcase final către management. Echipele livrează prototipuri funcționale pe probleme reale.",
+        "outcome": "Pleci cu: 5–10 prototipuri funcționale, jurizate și clasate, plus un short-list gata de adopție."
       }
     ]
   },
@@ -54,9 +99,10 @@
     "titleStart": "Fără slide-uri generice.",
     "titleEm": "Fără conținut reciclat.",
     "items": [
+      "Facilitare live și prototipare live de Răzvan Vâlceanu, fondatorul The Unlearning School",
+      "Prototipuri reale construite în sală pe problemele tale, nu slide-uri despre prototipuri",
       "Cercetare pre-eveniment despre companie, sector și echipele specifice din sală",
       "Tot conținutul și demo-urile construite pe stack-ul tău de instrumente și contextul industriei",
-      "Facilitare live de Răzvan Vâlceanu, fondatorul The Unlearning School",
       "Fișe de prompturi copy-paste pe care fiecare participant le ia cu el",
       "Pachet de resurse post-sesiune: prompturi, exemple de fluxuri, pași următori",
       "Opțional: propunere de scope pentru continuarea muncii de adopție pe baza a ceea ce iese la suprafață în sală"
@@ -74,9 +120,9 @@
     "body": "Programul tău AI ar putea fi deja finanțat. Doar că nu l-ai structurat așa. Microsoft, AWS și Google alocă bugete de co-sell și Market Development Funds în fiecare trimestru pentru exact acest tip de muncă de adopție. Majoritatea companiilor se califică. Majoritatea nu știu."
   },
   "cta": {
-    "title": "Spune-mi despre evenimentul tău.",
+    "title": "Adu asta echipei tale.",
     "subtitle": "Un apel de 30 de minute pentru a confirma formatul, audiența și scope-ul. Propunere specifică în 48 de ore. Construită pe oamenii din sală, nu pe evenimentul anterior pe care l-am livrat.",
-    "ctaText": "Discuție AI Adoption →",
+    "ctaText": "Programează discuția pentru evenimentul tău →",
     "note": "Gratuit · Fără angajament · Propunere în 48 de ore"
   }
 }

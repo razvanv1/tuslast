@@ -1,18 +1,19 @@
 {
   "seo": {
-    "title": "Events & Keynotes — AI adoption workshops, hackathons, keynotes",
-    "description": "Sector-adapted AI workshops, internal hackathons and keynotes. 90 min – 2 days. 15 to 500 people. Every demo built around your workflows, not generic productivity examples.",
-    "keywords": "AI keynote, AI workshop, AI hackathon, corporate AI event, AI speaker EU, Copilot workshop"
+    "title": "Events & Keynotes — Live AI prototyping workshops, hackathons, keynotes",
+    "description": "Live AI prototyping on your real workflows. Workshops, hackathons and keynotes where teams leave with a working prototype, not slides. 90 min – 2 days. 15 to 500 people.",
+    "keywords": "AI keynote, AI workshop, AI hackathon, live prototyping, corporate AI event, AI speaker EU, Copilot workshop"
   },
   "documentTitle": "Events & Keynotes, The Unlearning School",
   "hero": {
     "tag": "Events & Keynotes",
     "bannerAlt": "Speaker on stage in front of large audience",
-    "title": "They leave with something they built.",
-    "subtitle": "Workshops, hackathons, and keynotes for companies that need fast proof, internal momentum, or a way to show leadership what AI actually looks like in practice.",
-    "ctaText": "AI Adoption Call →",
-    "secondaryText": "See all programmes",
-    "note": "90 min – 2 days · 15 to 500 people · Sector-adapted"
+    "title": "Live AI prototyping. On your workflows. In the room.",
+    "subtitle": "Your teams bring a real problem they have this week. By the end of the session, they walk out with a working prototype on it, plus the prompt sheet to rebuild it on Monday morning. No slideware. No generic demos.",
+    "ctaText": "Book your event call →",
+    "secondaryText": "See how a session runs ↓",
+    "secondaryTo": "#inside",
+    "note": "90 min – 2 days · 15 to 500 people · Sector-adapted · Proposal in 48h"
   },
   "intro": {
     "kicker": "Why most AI events don't work",
@@ -20,32 +21,76 @@
     "titleEm": "Not what it does inside your company.",
     "intro": "People watch a demo. Maybe try something once. Then go back to old workflows by Tuesday morning. The reason isn't the tool, it's that nothing in the session connected to their actual work. Their reports. Their client calls. Their weekly prep. When AI doesn't map to a specific task someone does every day, it stays a curiosity.",
     "pullQuoteStart": "Before every session, I research the company, the sector, and the teams in the room.",
-    "pullQuoteEm": "The demos are built around their workflows, not generic productivity examples.",
+    "pullQuoteEm": "Then we build, live, on a real problem one of the teams brought that morning.",
     "pullQuoteEnd": "Everyone leaves with prompt sheets they can copy-paste on Monday morning."
+  },
+  "inside": {
+    "kicker": "Inside the room",
+    "titleStart": "What a live prototyping session",
+    "titleEm": "actually looks like.",
+    "intro": "A standard half-day workshop, minute by minute. The exact same shape scales up to a 2-day hackathon or down to a 90-minute keynote with a live build segment.",
+    "steps": [
+      {
+        "time": "00:00",
+        "title": "Intake",
+        "body": "Each team brings one real problem they have this week. A stuck report, a slow client process, a research task no one wants to do. We pick the sharpest one to build on first."
+      },
+      {
+        "time": "00:30",
+        "title": "Live build, with the failures",
+        "body": "I prototype the first solution in front of the room, on that team's problem, inside the AI tools you already pay for. Wrong outputs included — that's where teams learn to actually trust the tool."
+      },
+      {
+        "time": "01:30",
+        "title": "Hands-on, every team builds",
+        "body": "Each team works on their own problem. I move between tables, unblock, push the prompts further, show shortcuts. Nobody watches. Everyone builds."
+      },
+      {
+        "time": "03:00",
+        "title": "Showcase + sharpening",
+        "body": "Each team demos what they built. The room critiques, I sharpen the prompts on the spot, and we capture the patterns that worked across teams."
+      },
+      {
+        "time": "04:00",
+        "title": "Walk out with",
+        "body": "A working prototype per team, a copy-paste prompt sheet built from what worked in the room, and a one-page plan for what to ship next week."
+      }
+    ]
+  },
+  "proof": {
+    "kicker": "Track record",
+    "items": [
+      { "stat": "40+", "label": "Sessions delivered" },
+      { "stat": "8", "label": "Sectors covered" },
+      { "stat": "2,500+", "label": "People in rooms" }
+    ]
   },
   "formats": {
     "kicker": "Formats",
     "titleStart": "Three formats.",
     "titleEm": "One standard:",
-    "titleEnd": "real outputs, not slides about outputs.",
+    "titleEnd": "real prototypes, not slides about prototypes.",
     "items": [
       {
         "num": "01",
-        "title": "Keynote + Q&A",
+        "title": "Keynote + live build",
         "meta": "90 minutes · Up to 500 people",
-        "body": "Built for conferences and large corporate events. Topics include AI literacy, EU AI Act readiness, rapid prototyping, and future of work. Content is adapted to your audience and sector, not recycled from the previous event."
+        "body": "Built for conferences and large corporate events. I close every keynote with a live AI build on a problem volunteered from the audience, so the room sees the workflow, not just the theory.",
+        "outcome": "Walk out with: the recording, the prompt sheet, and one fully built example from your sector."
       },
       {
         "num": "02",
         "title": "Hands-on workshop",
         "meta": "Half-day or full day · 15–50 participants",
-        "body": "Participants work inside the AI tools they already have access to. Live demos include real failures, because that's where teams build actual trust in the tool. Every participant leaves with something they built themselves."
+        "body": "The full live prototyping format above. Participants work inside the AI tools they already have access to, on the actual problems they brought into the room. Real failures included.",
+        "outcome": "Walk out with: 1 working prototype per team + copy-paste prompt sheet + next-week plan."
       },
       {
         "num": "03",
         "title": "Internal hackathon",
         "meta": "1 to 2 days · Custom scope",
-        "body": "Full design and facilitation of an internal AI hackathon. Includes brief design, team coaching, judging criteria, and an output showcase. Teams build working prototypes on real company problems, not presentations about prototypes."
+        "body": "Full design and facilitation of an internal AI hackathon. Brief design, team coaching during the build, judging criteria, and a final showcase to leadership. Teams ship working prototypes on real company problems.",
+        "outcome": "Walk out with: 5–10 working prototypes, judged and ranked, plus a shortlist ready for adoption."
       }
     ]
   },
@@ -54,9 +99,10 @@
     "titleStart": "No generic deck.",
     "titleEm": "No recycled content.",
     "items": [
+      "Live facilitation and live prototyping by Răzvan Vâlceanu, founder of The Unlearning School",
+      "Real prototypes built in the room on your problems, not slideware about prototypes",
       "Pre-event research on the company, sector, and specific teams in the room",
       "All content and demos built around your tool stack and industry context",
-      "Live facilitation by Răzvan Vâlceanu, founder of The Unlearning School",
       "Copy-paste prompt sheets every participant takes out of the room",
       "Post-session resource pack: prompts, workflow examples, next steps",
       "Optional: scoped proposal for follow-up adoption work based on what surfaces in the room"
@@ -74,9 +120,9 @@
     "body": "Your AI program might already be funded. You just haven't structured it that way. Microsoft, AWS, and Google allocate co-sell and Market Development Funds every quarter to support exactly this kind of adoption work. Most companies qualify. Most don't know it."
   },
   "cta": {
-    "title": "Tell me about your event.",
+    "title": "Bring this to your team.",
     "subtitle": "A 30-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran.",
-    "ctaText": "AI Adoption Call →",
+    "ctaText": "Book your event call →",
     "note": "Free · No commitment · Proposal within 48 hours"
   }
 }
