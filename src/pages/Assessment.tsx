@@ -35,7 +35,7 @@ const Assessment = () => {
         tag="Free audit"
         banner={bannerAssessment}
         bannerAlt="Team filling out assessment forms around a table"
-        title="Free audit. 30 minutes with Răzvan."
+        title="Free audit, 30 minutes."
         subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
         ctaText="Free audit →"
         ctaTo="#book"
