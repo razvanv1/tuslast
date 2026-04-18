@@ -61,14 +61,45 @@
     }
     </script>
 
-    <!-- WebSite JSON-LD with SearchAction (AEO) -->
+    <!-- WebSite JSON-LD (AEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "The Unlearning School",
       "url": "https://tuslast.lovable.app/",
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "publisher": { "@type": "Organization", "name": "The Unlearning School" }
+    }
+    </script>
+
+    <!-- Service JSON-LD (AEO: helps answer engines describe what we do) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "AI Adoption Training for Non-Technical Teams",
+      "serviceType": "AI literacy and workflow redesign training",
+      "provider": { "@type": "Organization", "name": "The Unlearning School", "url": "https://tuslast.lovable.app/" },
+      "areaServed": ["RO", "EU"],
+      "audience": { "@type": "BusinessAudience", "audienceType": "Non-technical teams in SMEs and mid-market organisations" },
+      "description": "Behaviour-change training that gets non-technical teams actually using the AI tools their company already pays for. EU AI Act Article 4 ready.",
+      "url": "https://tuslast.lovable.app/programmes/ai-for-non-technical-people"
+    }
+    </script>
+
+    <!-- ProfessionalService JSON-LD (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "The Unlearning School",
+      "url": "https://tuslast.lovable.app/",
+      "image": "https://tuslast.lovable.app/favicon.ico",
+      "priceRange": "$$",
+      "areaServed": ["Romania", "European Union"],
+      "address": { "@type": "PostalAddress", "addressCountry": "RO", "addressLocality": "Bucharest" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 44.4268, "longitude": 26.1025 }
     }
     </script>
     <meta property="og:title" content="The Unlearning School for AI Training for Non-Tech Teams">
