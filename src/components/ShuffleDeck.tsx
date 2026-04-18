@@ -167,6 +167,7 @@ const ShuffleDeck = () => {
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
           if (position > 2) return null;
+          if (position > 0 && !stackReady) return null;
           return (
             <DeckCard
               key={cardIdx}
