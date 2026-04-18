@@ -1,94 +1,100 @@
 
-## Homepage — Partners endorsement + 2 pricing CTAs
+Big batch. Let me plan it tight.
 
-### Ce se schimbă pe `src/pages/Index.tsx`
+## Scope (everything you listed)
 
-Homepage actuală are aceste secțiuni majore: Hero → ShuffleDeck → Stats → Pattern → Premise (quote) → Audience → Ladder (3 programe) → Mechanism → Credibility → FinalCTA + FAQ. Trebuie să adăugăm două lucruri noi, integrate natural, fără să rupem ritmul editorial:
+**A. Testimonials section (new)** — 6 real testimonials, RO + EN translation, on home page + About page. New `Testimonials.tsx` component, editorial style (no star ratings, no SaaS card-grid; use Wired pull-quote style with attribution mono).
 
-**A. Bandă de Parteneri (endorsement) — sub Credibility, înainte de FinalCTA**
+**B. Founder mini-bio + photo + LinkedIn on home page** — new section "The person behind it" between Credibility and Partners. Use the new uploaded photo (`person_extracted.png`) → copy to `src/assets/founder-portrait.png`. Bio adapted from your LinkedIn copy (condensed to ~80 words for home, full version stays on About). LinkedIn link button.
 
-De ce aici: Credibility deja spune "the receipts" (1.400+ trained, founder, before/after). Banda de parteneri e următorul tier de credibilitate — *external endorsement*. Ordinea naturală: dovezi proprii → validare externă → CTA final.
+**C. AI Adoption Score hero strip** — thin promo strip directly under the Hero (above ShuffleDeck). Mono kicker + one-line pitch + button "Take the 2-min test →". Variant `paper` for contrast. Doesn't replace hero CTA, complements it.
 
-Layout (pattern deja folosit pe `/events#partners`, dar adaptat pentru homepage):
-- Variant: `paper` (cream) ca să spargă vizual succesiunea de secțiuni dark
-- Kicker mono uppercase: "Official partners · External endorsement"
-- Title display medie: "Backed by the platforms *we teach.*" / RO: "Susținut de platformele *pe care le predăm.*"
-- Sub-line scurtă (1 propoziție): "We are official Lovable Ambassador and Hermes Agent Partner. The tools we train teams on, we partner with directly."
-- 2 logo-uri side-by-side, mari, centrate, pe carduri `bg-paper` cu border subtle (logos sunt deja dark, deci pe paper merg). Sub fiecare logo: rolul în mono uppercase ("Lovable Ambassador" / "Hermes Agent Partner")
-- Sub bandă, link discret mono → `/events#partners` "See partner perks at our events →"
+**D. Meta titles <60 chars + 4 more home FAQs** — trim title strings in `i18n/.../meta.title` for home + main pages. Add 4 FAQs to home (price, timeline, languages, in-person/remote).
 
-**B. Pricing CTAs — secțiune nouă "Start now" cu 2 carduri de preț**
+**E. Image intrinsic sizes** — re-export `card-ai-non-technical.webp` and `card-assessment.webp` at ~454px wide (current display size). Will use `code--exec` with imagemagick/cwebp to resize.
 
-Plasament: între Ladder și Mechanism. De ce: Ladder enumeră cele 3 programe (Core / Events / Funding) ca *catalog descriptiv*. Imediat după catalog e momentul firesc să arăți **două puncte concrete de intrare cu preț**, înainte de a continua narrativ cu mechanism/credibility. E pattern-ul "catalog → buy now → continue story".
+**F. Resources index — 6 article stubs scaffolded**:
+1. EU AI Act Article 4 — what it means for non-tech teams
+2. Why Copilot rollouts stall after 30 days
+3. The Lewin model applied to AI adoption
+4. AI for procurement: 3 workflows, before/after
+5. How to qualify for vendor MDF on AI training
+6. Hermes Agent vs ChatGPT — when to use which
 
-Layout:
-- Variant: `darker` (mai întunecat decât default), pentru contrast cu Ladder (paper sau dark) și cu Mechanism care urmează
-- Kicker: "Start now · Two entry points"
-- Title: "Skip the call. *Start today.*" / RO: "Sari peste call. *Începe azi.*"
-- Sub-line: "Two productized entry points with public pricing. Pay, get scheduled, start. Everything else still routes through the free AI Adoption Call."
-- Grid 2 coloane (md:grid-cols-2), gap-px pe `bg-paper/15`, fiecare card `bg-background p-10`:
+Each gets a stub `.tsx` page with hero + 3 placeholder sections + CTA back to /assessment. Resources index page becomes a real grid linking to all 6 + the existing playbook.
 
-  **Card 1 — AI for Work training**
-  - Tag mono: "Training · Per person"
-  - Price block mare: "from €600" (display, big), apoi "/ participant" mic mono
-  - Title: "AI for Non-Technical People"
-  - 3 bullet-uri scurte: "Modular: Discovery / Sprint / Full" · "Built on tools you already pay for" · "EU AI Act Article 4 ready"
-  - Primary CTA buton roșu: "Buy AI for Work →" → `/programmes/ai-for-non-technical-people`
-  - Secondary text link mono: "See programme details →"
+**G. Nav restructure → 4 top items + Programmes dropdown**
+Final nav: **Programmes ▾** (AI for Work, Hermes, Events, Funding) · **Resources** · **About** · **AI Score** · CTA "Book a call". Mobile keeps flat list inside drawer.
 
-  **Card 2 — Hermes Agent install**
-  - Tag mono: "Personal AI assistant · Per install"
-  - Price block: "from €497" + "/ install" mic
-  - Title: "Hermes Agent — personal install"
-  - 3 bullet-uri: "Autonomous AI assistant configured for your workflow" · "Setup, training, handover" · "Official Hermes Agent Partner"
-  - Primary CTA buton roșu: "Install Hermes →" → `/hermes`
-  - Secondary text link mono: "See what Hermes does →"
+**H. Funding comparison table + "what you get" tables on pricing cards**
+- Funding page: new comparison table (4 instruments × coverage% / timeline / eligibility / typical save).
+- Home pricing cards: replace current 3 bullets with a 4–5 row "what you get" mini-table (deliverable / format / outcome).
 
-- Sub grid, o linie mono fină centrată: "Need to scope first? → AI Adoption Call (free, 30 min)" cu link spre `/assessment` — ca să nu pierdem oamenii care nu sunt încă gata să cumpere.
+**J. Before/After workflow infographic component (reusable)**
+New `<BeforeAfterWorkflow>` component. Two columns (Before grey, After red accent), each with: process name, time, steps, friction note. Used once on home (between Premise and Audience) with one anonymized example: "Procurement RFP review · before 6h, after 45min".
 
-### Fișiere modificate
+**K. Logo wall / case study tiles infrastructure**
+New `<CaseStudyTiles>` component — 5 anonymized tiles (sector + scale + outcome, no logos since you can't publish names). Goes on home between Credibility and the new Founder section. Pattern: "Top-3 RO bank · 120 PMs · 4-week sprint · 38% process time saved".
 
-1. `src/i18n/locales/en/home.json` — adaugă blocuri `partners` și `pricing`
-2. `src/i18n/locales/ro/home.json` — același set, RO natural
-3. `src/pages/Index.tsx` — render 2 secțiuni noi în pozițiile descrise; importă `partner-lovable.png` și `partner-hermes.png` din `src/assets/`
+**L. Analytics events layer**
+Add Plausible script to `index.html` (lightweight, GDPR-safe, no cookie banner needed beyond what you have). Wrap primary CTAs (Buy AI for Work, Book Call, Take Score, Install Hermes) with `data-analytics` attributes + a small `trackEvent()` helper. No PostHog — heavier and overlap with existing Cloudflare.
 
-### Detaliu tehnic
+**M. RO copy native-speaker pass**
+Pass over all `ro/*.json` files. Fix the awkward bits I flagged: "Acum extrag" → "Trag acum", "Discuție AI Adoption" → "Sesiune AI Adoption" (consistent), "perks" → "beneficii", smooth out remaining anglicisms. No structural changes, just language polish.
 
-- Folosim `<Section variant="paper">` pentru parteneri (contrast cu vecinii dark) și `<Section variant="darker">` pentru pricing (contrast cu Ladder).
-- Logo-uri: `<img loading="lazy" decoding="async">` cu `h-12 md:h-14 w-auto object-contain`, în carduri `bg-paper` cu padding generos. Pe paper-section logo-urile dark se văd direct fără card alb suplimentar — folosim doar border `border-ink/10` și padding.
-- Pricing cards: pattern editorial, nu SaaS-style — preț în `font-display text-5xl md:text-6xl text-paper`, "from" mic deasupra în mono uppercase roșu, "/participant" sau "/install" mic mono sub preț. Bullet-uri cu separator `border-t border-paper/10` între ele, fără bullet-points tipice (estetica Wired).
-- CTA primar: pattern existent — `bg-red text-paper px-7 py-4 font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink`. Secondary: text link mono cu hover red.
-- Navigare: `Link` din `@/components/LocalizedLink` (ca să meargă atât EN cât și RO automat).
-- Anchor: secțiunea pricing primește `id="pricing"` ca să putem face link din alte locuri ulterior.
+### Skipping (with reason)
+- **I. Embed Brevo calendar inline** — Brevo's iframe is heavy and breaks our design system. Better as separate scope after measuring current /assessment conversion. Flagging, not doing.
 
-### Copy direction (concis)
+## File touch list
 
-EN partners:
-- Kicker: "Official partners · External endorsement"
-- Title: "Backed by the platforms *we teach.*"
-- Body: "We are official Lovable Ambassador and Hermes Agent Partner. The platforms we train teams on, we partner with directly — which means perks, free credits, and access for the people we train."
+**New files (~14)**
+- `src/components/Testimonials.tsx`
+- `src/components/FounderBio.tsx`
+- `src/components/AIScoreStrip.tsx`
+- `src/components/BeforeAfterWorkflow.tsx`
+- `src/components/CaseStudyTiles.tsx`
+- `src/components/ProgrammesDropdown.tsx`
+- `src/lib/analytics.ts`
+- `src/assets/founder-portrait.png` (copied from upload)
+- `src/pages/resources/EUAIActArticle4.tsx`
+- `src/pages/resources/CopilotRollout.tsx`
+- `src/pages/resources/LewinAdoption.tsx`
+- `src/pages/resources/ProcurementWorkflows.tsx`
+- `src/pages/resources/VendorMDF.tsx`
+- `src/pages/resources/HermesVsChatGPT.tsx`
 
-RO partners:
-- Kicker: "Parteneri oficiali · Validare externă"
-- Title: "Susținut de platformele *pe care le predăm.*"
-- Body: "Suntem Lovable Ambassador oficial și Hermes Agent Partner. Platformele pe care formăm echipele sunt și partenerii noștri direcți — ceea ce înseamnă perks, credits gratuite și acces pentru oamenii pe care îi pregătim."
+**Modified (~12)**
+- `src/pages/Index.tsx` — insert AIScoreStrip, BeforeAfter, CaseStudyTiles, FounderBio, Testimonials; replace pricing card bullets with mini-tables
+- `src/pages/About.tsx` — full LinkedIn bio + Testimonials block
+- `src/pages/Resources.tsx` — real grid of 7 items
+- `src/pages/Funding.tsx` — comparison table
+- `src/components/Navbar.tsx` — 4-item nav + Programmes dropdown
+- `src/lib/routes.ts` — register 6 new resource routes (EN + RO)
+- `src/App.tsx` — add 12 new routes
+- `index.html` — Plausible script tag
+- All `src/i18n/locales/{en,ro}/home.json` — meta title trim, +4 FAQs, founder bio, testimonials, score strip, before/after
+- `src/i18n/locales/{en,ro}/about.json` — testimonials + extended bio
+- `src/i18n/locales/{en,ro}/resources.json` — 6 new article entries + RO native pass
+- `src/i18n/locales/ro/*.json` — language polish across all locale files
+- `public/sitemap.xml` — add 12 new URLs
+- `src/assets/card-ai-non-technical.webp` & `card-assessment.webp` — re-encoded smaller
 
-EN pricing:
-- Kicker: "Start now · Two entry points"
-- Title: "Skip the call. *Start today.*"
-- Body: "Two productized entry points with public pricing. Pay, get scheduled, start. Everything else still routes through the free AI Adoption Call."
-- Card 1 footer note: "Cohort minimum applies. Volume pricing on request."
-- Card 2 footer note: "Includes setup, configuration, and 1 handover session."
-- Bottom line: "Need to scope first? → AI Adoption Call (free, 30 min)"
+## Approach details
 
-RO pricing:
-- Kicker: "Începe acum · Două puncte de intrare"
-- Title: "Sari peste call. *Începe azi.*"
-- Body: "Două intrări cu preț public. Plătești, te programezi, începi. Restul rămâne pe Discuția AI Adoption (gratuită)."
-- Card 1 footer: "Minim de cohortă aplicabil. Preț de volum la cerere."
-- Card 2 footer: "Include setup, configurare și 1 sesiune de handover."
-- Bottom: "Vrei să faci mai întâi scoping? → Discuție AI Adoption (gratuit, 30 min)"
+- **Testimonials component**: editorial pull-quote style. Big italic display quote, mono attribution (NAME — ROLE), 3-up grid on desktop, stacked on mobile. Cream paper variant section.
+- **FounderBio**: 2-col on desktop (photo left 40%, text right 60%), stacked mobile. Photo on `bg-paper` with subtle ink border. LinkedIn button in red.
+- **Score strip**: full-width thin band (paper bg), single row: kicker + "2-minute AI maturity test, instant score & roadmap" + button. Mobile stacks.
+- **BeforeAfterWorkflow**: split layout, Before column muted/grey, After column accent red. Time stamps in big mono. Process steps as numbered list.
+- **CaseStudyTiles**: 5 tiles in horizontal scroll on mobile, 5-col grid on desktop. Each tile: sector chip (mono red), big number (display font), one-line outcome.
+- **Programmes dropdown**: hover on desktop, click on mobile. Same Wired aesthetic as nav (mono uppercase, sharp corners, no shadows).
+- **Analytics**: `trackEvent(name, props?)` calls `window.plausible?.(name, {props})`. Wrap CTAs in onClick handlers. Defined events: `cta_buy_training`, `cta_book_call`, `cta_take_score`, `cta_install_hermes`, `cta_funding_call`.
+- **Resource stubs**: 250–350 word each, real outline (intro / 3 numbered sections / takeaway / CTA), I'll write first drafts in EN + RO. You can rewrite later.
 
-### Ordinea finală a homepage-ului
+## Confirm before I build
 
-Hero → Shuffle → Stats → Pattern → Premise → Audience → **Ladder** → **🆕 Pricing (2 carduri)** → Mechanism → Credibility → **🆕 Partners endorsement** → FinalCTA → FAQ
+Two things to confirm:
+
+1. **Plausible analytics** — you have an account, or want me to use the free no-account-needed setup? If no account, I'll add a placeholder `data-domain` you fill in later.
+2. **Resource article copy** — write first drafts myself (you edit later) or you want to write them yourself and I just scaffold empty pages?
+
+If both default (yes account-later, drafts-by-me), reply "go" and I'll build everything in one round.
