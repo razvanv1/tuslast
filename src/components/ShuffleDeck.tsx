@@ -146,6 +146,13 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
 
 const ShuffleDeck = () => {
   const [order, setOrder] = useState<number[]>(DECK.map((_, i) => i));
+  // Mount only the top card initially; reveal stack cards after first paint
+  // to avoid framer-motion measuring 3 cards' layout during hydration (forced reflow).
+  const [stackReady, setStackReady] = useState(false);
+  useEffect(() => {
+    const id = window.setTimeout(() => setStackReady(true), 0);
+    return () => window.clearTimeout(id);
+  }, []);
 
   const cycle = () => setOrder((prev) => [...prev.slice(1), prev[0]]);
   const topIdx = order[0];
@@ -160,6 +167,7 @@ const ShuffleDeck = () => {
         {order.map((cardIdx, position) => {
           const card = DECK[cardIdx];
           if (position > 2) return null;
+          if (position > 0 && !stackReady) return null;
           return (
             <DeckCard
               key={cardIdx}
