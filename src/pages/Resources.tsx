@@ -64,7 +64,7 @@ const Resources = () => {
             </ul>
             <div className="flex flex-wrap gap-3">
               <a
-                href="/resources/ai-literacy-playbook.html"
+                href={i18n.language?.startsWith("ro") ? "/resources/ai-literacy-playbook-ro.html" : "/resources/ai-literacy-playbook.html"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
@@ -79,7 +79,7 @@ const Resources = () => {
 
           <div className="md:col-span-7 flex justify-center md:justify-end">
             <a
-              href="/resources/ai-literacy-playbook.html"
+              href={i18n.language?.startsWith("ro") ? "/resources/ai-literacy-playbook-ro.html" : "/resources/ai-literacy-playbook.html"}
               target="_blank"
               rel="noopener noreferrer"
               className="relative block bg-paper p-3 pb-16 card-shadow w-[280px] sm:w-[340px] md:w-[400px] max-w-full transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
