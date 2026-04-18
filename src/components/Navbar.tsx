@@ -6,9 +6,9 @@ import { BOOKING_URL, BOOKING_LABEL } from "@/lib/booking";
 
 const navLinks = [
   { label: "AI for Work", to: "/programmes/ai-for-non-technical-people" },
-  { label: "AI Score", to: "/ai-adoption-score" },
   { label: "Events", to: "/events" },
   { label: "Funding", to: "/funding" },
+  { label: "AI Score", to: "/ai-adoption-score" },
   { label: "Resources", to: "/resources" },
   { label: "Hermes Agent", to: "/hermes" },
   { label: "About", to: "/about" },
