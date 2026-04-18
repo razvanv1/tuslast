@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { getAlternates } from "@/lib/routes";
 
 const SITE_URL = "https://tuslast.lovable.app";
 const SITE_NAME = "The Unlearning School";
@@ -41,8 +42,9 @@ const SEO = ({
 }: SEOProps) => {
   const { pathname } = useLocation();
   const { i18n } = useTranslation();
-  const lang = i18n.language?.startsWith("ro") ? "ro" : "en";
-  const url = `${SITE_URL}${pathname}`;
+  const { en: enUrl, ro: roUrl, current } = getAlternates(pathname);
+  const lang = current;
+  const url = current === "ro" ? roUrl : enUrl;
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
 
   const extraLd: Record<string, unknown>[] = [];
@@ -81,9 +83,9 @@ const SEO = ({
       <meta name="ICBM" content="44.4268,26.1025" />
       <meta httpEquiv="content-language" content={lang} />
       <meta name="language" content={lang === "ro" ? "Romanian" : "English"} />
-      <link rel="alternate" hrefLang="en" href={url} />
-      <link rel="alternate" hrefLang="ro" href={url} />
-      <link rel="alternate" hrefLang="x-default" href={url} />
+      <link rel="alternate" hrefLang="en" href={enUrl} />
+      <link rel="alternate" hrefLang="ro" href={roUrl} />
+      <link rel="alternate" hrefLang="x-default" href={enUrl} />
       <html lang={lang} />
 
       {/* Open Graph (Facebook, LinkedIn) */}

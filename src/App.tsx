@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import CookieConsent from "@/components/CookieConsent";
+import LangRoute from "@/components/LangRoute";
 import { BauhausDefs } from "@/components/bauhaus/BauhausShapes";
 import Index from "./pages/Index";
 
@@ -32,33 +33,59 @@ const PaymentCanceled = lazy(() => import("./pages/PaymentCanceled"));
 
 const queryClient = new QueryClient();
 
+const wrap = (lang: "en" | "ro", node: JSX.Element) => (
+  <LangRoute lang={lang}>
+    <PageTransition>{node}</PageTransition>
+  </LangRoute>
+);
+
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
       <Suspense fallback={null}>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageTransition><Index /></PageTransition>} />
+          {/* EN — canonical, no prefix */}
+          <Route path="/" element={wrap("en", <Index />)} />
           <Route path="/index" element={<Navigate to="/" replace />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
           <Route path="/for-operations" element={<Navigate to="/" replace />} />
           <Route path="/for-hr" element={<Navigate to="/" replace />} />
           <Route path="/for-it" element={<Navigate to="/" replace />} />
           <Route path="/programmes" element={<Navigate to="/programmes/ai-for-non-technical-people" replace />} />
-          <Route path="/programmes/ai-for-non-technical-people" element={<PageTransition><AIForNonTechnical /></PageTransition>} />
-          <Route path="/events" element={<PageTransition><Events /></PageTransition>} />
-          <Route path="/funding" element={<PageTransition><Funding /></PageTransition>} />
-          <Route path="/hermes" element={<PageTransition><Hermes /></PageTransition>} />
-          <Route path="/resources" element={<PageTransition><Resources /></PageTransition>} />
-          <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-          <Route path="/assessment" element={<PageTransition><Assessment /></PageTransition>} />
-          <Route path="/ai-adoption-score" element={<PageTransition><AIAdoptionScore /></PageTransition>} />
+          <Route path="/programmes/ai-for-non-technical-people" element={wrap("en", <AIForNonTechnical />)} />
+          <Route path="/events" element={wrap("en", <Events />)} />
+          <Route path="/funding" element={wrap("en", <Funding />)} />
+          <Route path="/hermes" element={wrap("en", <Hermes />)} />
+          <Route path="/resources" element={wrap("en", <Resources />)} />
+          <Route path="/about" element={wrap("en", <About />)} />
+          <Route path="/assessment" element={wrap("en", <Assessment />)} />
+          <Route path="/ai-adoption-score" element={wrap("en", <AIAdoptionScore />)} />
           <Route path="/contact" element={<Navigate to="/assessment" replace />} />
-          <Route path="/privacy-policy" element={<PageTransition><PrivacyPolicy /></PageTransition>} />
-          <Route path="/cookie-policy" element={<PageTransition><CookiePolicy /></PageTransition>} />
-          <Route path="/terms-and-conditions" element={<PageTransition><TermsAndConditions /></PageTransition>} />
-          <Route path="/payment-success" element={<PageTransition><PaymentSuccess /></PageTransition>} />
-          <Route path="/payment-canceled" element={<PageTransition><PaymentCanceled /></PageTransition>} />
+          <Route path="/privacy-policy" element={wrap("en", <PrivacyPolicy />)} />
+          <Route path="/cookie-policy" element={wrap("en", <CookiePolicy />)} />
+          <Route path="/terms-and-conditions" element={wrap("en", <TermsAndConditions />)} />
+          <Route path="/payment-success" element={wrap("en", <PaymentSuccess />)} />
+          <Route path="/payment-canceled" element={wrap("en", <PaymentCanceled />)} />
+
+          {/* RO — mirrored under /ro/ */}
+          <Route path="/ro" element={wrap("ro", <Index />)} />
+          <Route path="/ro/programmes" element={<Navigate to="/ro/programmes/ai-for-non-technical-people" replace />} />
+          <Route path="/ro/programmes/ai-for-non-technical-people" element={wrap("ro", <AIForNonTechnical />)} />
+          <Route path="/ro/events" element={wrap("ro", <Events />)} />
+          <Route path="/ro/funding" element={wrap("ro", <Funding />)} />
+          <Route path="/ro/hermes" element={wrap("ro", <Hermes />)} />
+          <Route path="/ro/resources" element={wrap("ro", <Resources />)} />
+          <Route path="/ro/about" element={wrap("ro", <About />)} />
+          <Route path="/ro/assessment" element={wrap("ro", <Assessment />)} />
+          <Route path="/ro/ai-adoption-score" element={wrap("ro", <AIAdoptionScore />)} />
+          <Route path="/ro/contact" element={<Navigate to="/ro/assessment" replace />} />
+          <Route path="/ro/privacy-policy" element={wrap("ro", <PrivacyPolicy />)} />
+          <Route path="/ro/cookie-policy" element={wrap("ro", <CookiePolicy />)} />
+          <Route path="/ro/terms-and-conditions" element={wrap("ro", <TermsAndConditions />)} />
+          <Route path="/ro/payment-success" element={wrap("ro", <PaymentSuccess />)} />
+          <Route path="/ro/payment-canceled" element={wrap("ro", <PaymentCanceled />)} />
+
           <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
         </Routes>
       </Suspense>
