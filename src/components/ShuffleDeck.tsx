@@ -32,6 +32,13 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
   const rotate = useTransform(x, [-300, 0, 300], [-25, 0, 25]);
   const opacity = useTransform(x, [-320, -180, 0, 180, 320], [0, 1, 1, 1, 0]);
   const draggedRef = useRef(false);
+  // Defer enabling drag until after first paint so framer-motion's initial
+  // layout measurement doesn't force a reflow during hydration.
+  const [dragReady, setDragReady] = useState(false);
+  useEffect(() => {
+    const id = window.setTimeout(() => setDragReady(true), 0);
+    return () => window.clearTimeout(id);
+  }, []);
 
   const stackOffset = index * 6;
   const stackRotate = index === 0 ? 0 : (index % 2 === 0 ? -2 : 2) * (index * 0.6);
@@ -91,7 +98,7 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
 
   return (
     <motion.figure
-      drag={isTop ? true : false}
+      drag={isTop && dragReady ? true : false}
       dragElastic={0.6}
       dragMomentum={false}
       onDragStart={handleDragStart}
