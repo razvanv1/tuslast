@@ -98,7 +98,7 @@ const DeckCard = ({ image, label, caption, href, external, index, total, onSwipe
 
   return (
     <motion.figure
-      drag={isTop ? true : false}
+      drag={isTop && dragReady ? true : false}
       dragElastic={0.6}
       dragMomentum={false}
       onDragStart={handleDragStart}
