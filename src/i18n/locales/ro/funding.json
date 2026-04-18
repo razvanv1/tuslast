@@ -1,0 +1,88 @@
+{
+  "seo": {
+    "title": "Structurare finanțare — MDF vendor, AWS co-sell și granturi digitale UE",
+    "description": "Structurăm programul tău de adopție AI ca să se califice pentru Microsoft MDF, AWS co-sell sau granturi digitale UE. Scriem aplicația și aliniem livrarea ca rambursarea să se întâmple efectiv.",
+    "keywords": "Microsoft MDF, AWS co-sell, granturi digitale UE, finanțare AI, Digital Europe Programme, grant AI România, credite vendor"
+  },
+  "documentTitle": "Structurare finanțare, The Unlearning School",
+  "hero": {
+    "tag": "MDF, Finanțare & Granturi",
+    "bannerAlt": "Echipă modernă analizând documente de finanțare",
+    "title": "Programul tău AI s-ar putea să fie deja finanțat.",
+    "subtitle": "Programele de MDF de la furnizori, bugetele de co-sell și granturile digitale UE există tocmai pentru a finanța acest tip de muncă. Majoritatea companiilor se califică pentru cel puțin unul. Majoritatea nu l-au accesat niciodată.",
+    "ctaText": "Discuție AI Adoption →",
+    "secondaryText": "Vezi toate programele",
+    "note": "Noi facem structurarea · Tu rulezi programul · Îți recuperezi costul"
+  },
+  "intro": {
+    "kicker": "Obiecția pe care o auzim cel mai des",
+    "titleStart": "„Nu avem buget",
+    "titleEm": "pentru asta.\"",
+    "intro": "În majoritatea cazurilor, asta nu e adevărat. Înseamnă că bugetul nu a fost identificat sau structurat corect.",
+    "paragraphs": [
+      "În fiecare trimestru, Microsoft, AWS și Google alocă Market Development Funds partenerilor care susțin adopția platformei. Aceste bugete există tocmai pentru a finanța programe de skill-uri AI în interiorul organizațiilor.",
+      "Majoritatea rămân neutilizate, nu pentru că firmele nu se califică, ci pentru că nimeni nu a structurat programul într-un mod care să respecte criteriile de finanțare.",
+      "Același lucru e valabil pentru granturile UE de competitivitate digitală din Digital Europe și programele conexe. Aplicațiile pică nu pentru că munca nu e finanțabilă, ci pentru că sunt depuse ca planuri interne de training în loc de proiecte care se califică."
+    ],
+    "italicStart": "Transformăm programul tău de adopție AI în ceva care se califică.",
+    "italicEm": "Tu rulezi programul. Îți recuperezi costul."
+  },
+  "instruments": {
+    "kicker": "Instrumente de finanțare disponibile",
+    "titleStart": "Trei surse.",
+    "titleEm": "Majoritatea companiilor au acces la cel puțin una.",
+    "items": [
+      {
+        "title": "Microsoft MDF & co-sell",
+        "audience": "Pentru parteneri Microsoft și implementări Copilot",
+        "body": "Market Development Funds alocate partenerilor Microsoft pentru a susține adopția Copilot, Azure AI și Microsoft 365. Programele care se califică trebuie structurate pe rezultate concrete de adopție, nu pe training generic.",
+        "tag": "Depinde de tier-ul de partener"
+      },
+      {
+        "title": "Programe de partener AWS",
+        "audience": "Pentru parteneri AWS și echipe adiacente cloud",
+        "body": "AWS alocă bugete de co-sell prin rețeaua de parteneri pentru a susține programe de skill-uri digitale și adopție cloud. Calificarea cere status activ de partener și un program aliniat la metricile de adopție AWS.",
+        "tag": "Necesită partener APN"
+      },
+      {
+        "title": "Granturi UE de competitivitate digitală",
+        "audience": "Digital Europe Programme și instrumente conexe",
+        "body": "Programe UE care finanțează alfabetizarea AI și dezvoltarea skill-urilor digitale în organizații. Aplicațiile trebuie încadrate ca proiecte care se califică, cu rezultate de adopție măsurabile, nu ca bugete interne de training.",
+        "tag": "Eligibil în România"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Cum lucrăm",
+    "titleStart": "Noi facem structurarea.",
+    "titleEm": "Tu rulezi programul.",
+    "steps": [
+      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău actual de partener Microsoft, tier-ul AWS și orice acord existent cu furnizori, ca să identificăm pentru ce programe de finanțare te califici chiar acum." },
+      { "title": "Identificăm instrumentele eligibile", "body": "Pe baza auditului, mapăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică, un set specific de opțiuni cu criteriile de calificare confirmate." },
+      { "title": "Structurăm programul ca să se califice", "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. E pasul pe care majoritatea companiilor îl ratează. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă." },
+      { "title": "Scriem și susținem aplicația", "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici. Le știm." },
+      { "title": "Coordonăm livrarea și rambursarea", "body": "Documentația de livrare e aliniată la cerințele programului din start, nu reconstruită la final. Rambursarea nu se blochează pentru că hârtiile nu se potrivesc cu aplicația." }
+    ]
+  },
+  "result": {
+    "kicker": "Rezultat",
+    "titleStart": "Un program de adopție",
+    "titleEm": "complet finanțat sau cu cost semnificativ redus.",
+    "paragraphs": [
+      "Pentru companiile unde aprobarea bugetului intern e blocajul, asta elimină complet obiecția.",
+      "Pentru companiile unde bugetul există dar e greu de apărat, calificarea pentru finanțare vendor sau UE mută conversația de la „ar trebui să cheltuim asta?\" la „ar trebui să lăsăm banii ăștia pe masă?\"."
+    ],
+    "italicStart": "Munca se întâmplă oricum.",
+    "italicEm": "Finanțarea decide dacă te costă ceva."
+  },
+  "quote": {
+    "attribution": "Despre calificare",
+    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
+  },
+  "cta": {
+    "title": "Verifică pentru ce te califici.",
+    "subtitle": "Un apel de 30 de minute pentru a mapa relațiile tale cu furnizorii și a confirma ce instrumente se potrivesc. Revenim cu un shortlist scris în 5 zile lucrătoare. Fără angajament până nu vezi cifrele.",
+    "ctaText": "Discuție AI Adoption →",
+    "note": "Gratuit · Fără angajament · Shortlist scris în 5 zile lucrătoare"
+  }
+}

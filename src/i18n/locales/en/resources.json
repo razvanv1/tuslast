@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "title": "Resources — AI adoption insights, frameworks & playbooks",
+    "description": "Selected articles, podcast episodes, working frameworks and tools on AI adoption, funding intelligence, execution friction, and the future of work.",
+    "keywords": "AI adoption resources, AI playbook, EU AI Act guide, funding intelligence, AI frameworks, podcast AI work"
+  },
+  "documentTitle": "Resources, The Unlearning School",
+  "hero": {
+    "tag": "Resources",
+    "title": "Useful material for teams working through AI, funding, execution, and change.",
+    "subtitle": "Articles, podcast episodes, studies, working notes, frameworks, and practical tools for teams dealing with opportunity overload, uneven AI adoption, execution drag, academy building, and the future of work.",
+    "ctaText": "Join The Unlearning Pill →",
+    "secondaryText": "AI Adoption Call"
+  },
+  "playbook": {
+    "tag": "Featured · Free download",
+    "titleStart": "The AI Literacy",
+    "titleEm": "Compliance Playbook.",
+    "body": "How to solve the EU AI Act Article 4 mandate. A practical guide to AI Literacy training for your employees, written for HR, L&D, Operations and exec teams in SMEs.",
+    "bullets": [
+      "Why Article 4 already applies to your team today",
+      "The \"Shadow AI\" risk and how to surface it",
+      "A 4-step rollout plan for AI Literacy",
+      "How to turn compliance into a competitive advantage"
+    ],
+    "button": "Read the playbook →",
+    "footnote": "Free · No email required · 2026 edition",
+    "card": {
+      "kicker": "The Article 4 Mandate",
+      "edition": "2026 edition",
+      "playbookNum": "Playbook 01",
+      "titleStart": "The AI Literacy",
+      "titleEm": "Compliance Playbook",
+      "audience": "For SMEs · HR · L&D · Ops",
+      "ribbonTitle": "Read the playbook",
+      "ribbonBadge": "Free · No signup"
+    }
+  },
+  "entry": {
+    "kicker": "Start here",
+    "titleStart": "Pick the entry point",
+    "titleEm": "that matches the pressure.",
+    "ifLabel": "If:",
+    "items": [
+      { "tag": "Funding noise", "desc": "Read the pieces on funding intelligence, opportunity selection, vendor credits, public and private routes, and diversification of funding sources." },
+      { "tag": "AI in the team", "desc": "Start with AI at work, role-based use, habits, judgment, and what responsible adoption looks like inside real teams." },
+      { "tag": "Weak traction", "desc": "Go to execution friction, weak-fit initiatives, adoption drag, decision bottlenecks, work that keeps moving without progress." },
+      { "tag": "Expertise → product", "desc": "Use the academy and learning systems section for academy design, learning products, partner academies, customer education." }
+    ]
+  },
+  "formats": {
+    "kicker": "What you will find",
+    "titleStart": "Six formats.",
+    "titleEm": "One library.",
+    "items": [
+      { "name": "Articles & analysis", "desc": "Sharp pieces on funding, AI, execution, and the future of work, usable thinking, not recycled summaries." },
+      { "name": "Podcast episodes", "desc": "Conversations and solo episodes that turn messy themes into something easier to challenge, use, and apply." },
+      { "name": "Guides & working notes", "desc": "Practical material for teams that need a starting point, stronger framing, or a way to move from idea to action." },
+      { "name": "Studies & case notes", "desc": "Selected research, examples, observations, and supporting material for situations beyond surface-level content." },
+      { "name": "Tools, templates, checklists", "desc": "Simple assets that can be used inside actual work, not only discussed." },
+      { "name": "Frameworks & methods", "desc": "Selected pieces that show how The Unlearning School thinks and works behind the scenes." }
+    ]
+  },
+  "topics": {
+    "kicker": "Browse",
+    "titleStart": "By",
+    "titleEm": "topic.",
+    "topicLabel": "Topic",
+    "items": [
+      "Funding intelligence",
+      "AI at work",
+      "Execution friction",
+      "Future of work",
+      "Academies & learning systems",
+      "Tools & frameworks",
+      "Podcast & insights",
+      "Hermes Agent"
+    ]
+  },
+  "newsletter": {
+    "kicker": "The Unlearning Pill",
+    "titleStart": "Signal,",
+    "titleEm": "not noise.",
+    "body": "Selected updates on funding intelligence, AI at work, execution friction, academy building, and the future of work.",
+    "bullets": [
+      "Selected articles and notes",
+      "Practical insights from the podcast",
+      "Funding and opportunity observations",
+      "Working frameworks and useful tools",
+      "Updates worth reading, not inbox filler"
+    ],
+    "button": "Join the newsletter →"
+  },
+  "cta": {
+    "title": "Start with the AI Adoption Call.",
+    "subtitle": "A free 30-minute call that scores your AI adoption maturity and gives you a ranked next-step roadmap. 1-page written summary within 24 hours.",
+    "ctaText": "AI Adoption Call →",
+    "note": "Free · hello@unlearning.ro"
+  }
+}

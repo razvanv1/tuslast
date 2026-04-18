@@ -1,0 +1,100 @@
+{
+  "seo": {
+    "title": "Resurse — analize, framework-uri și playbook-uri de adopție AI",
+    "description": "Articole selectate, episoade de podcast, framework-uri de lucru și instrumente despre adopția AI, intelligence pe finanțare, frictiune în execuție și viitorul muncii.",
+    "keywords": "resurse adopție AI, playbook AI, ghid EU AI Act, intelligence finanțare, framework-uri AI, podcast AI muncă"
+  },
+  "documentTitle": "Resurse, The Unlearning School",
+  "hero": {
+    "tag": "Resurse",
+    "title": "Material util pentru echipele care lucrează cu AI, finanțare, execuție și schimbare.",
+    "subtitle": "Articole, episoade de podcast, studii, notițe de lucru, framework-uri și instrumente practice pentru echipele care se confruntă cu supraîncărcare de oportunități, adopție AI inegală, frecare în execuție, construcția de academii și viitorul muncii.",
+    "ctaText": "Mă abonez la The Unlearning Pill →",
+    "secondaryText": "Discuție AI Adoption"
+  },
+  "playbook": {
+    "tag": "Recomandat · Descărcare gratuită",
+    "titleStart": "AI Literacy",
+    "titleEm": "Compliance Playbook.",
+    "body": "Cum rezolvi mandatul EU AI Act, Articolul 4. Un ghid practic pentru training-ul de alfabetizare AI al angajaților tăi, scris pentru echipele de HR, L&D, Operațiuni și management din IMM-uri.",
+    "bullets": [
+      "De ce Articolul 4 ți se aplică deja echipei astăzi",
+      "Riscul „Shadow AI\" și cum îl scoți la suprafață",
+      "Un plan de implementare în 4 pași pentru AI Literacy",
+      "Cum transformi conformitatea într-un avantaj competitiv"
+    ],
+    "button": "Citește playbook-ul →",
+    "footnote": "Gratuit · Fără email · Ediția 2026",
+    "card": {
+      "kicker": "Mandatul Articolului 4",
+      "edition": "Ediția 2026",
+      "playbookNum": "Playbook 01",
+      "titleStart": "AI Literacy",
+      "titleEm": "Compliance Playbook",
+      "audience": "Pentru IMM-uri · HR · L&D · Ops",
+      "ribbonTitle": "Citește playbook-ul",
+      "ribbonBadge": "Gratuit · Fără cont"
+    }
+  },
+  "entry": {
+    "kicker": "Începe aici",
+    "titleStart": "Alege punctul de intrare",
+    "titleEm": "care se potrivește presiunii tale.",
+    "ifLabel": "Dacă:",
+    "items": [
+      { "tag": "Zgomot pe finanțare", "desc": "Citește materialele despre intelligence pe finanțare, selecția oportunităților, credite vendor, rute publice și private și diversificarea surselor de finanțare." },
+      { "tag": "AI în echipă", "desc": "Începe cu AI la muncă, utilizare pe roluri, obiceiuri, judecată și cum arată adopția responsabilă în echipe reale." },
+      { "tag": "Tracțiune slabă", "desc": "Mergi la frecarea în execuție, inițiative cu fit slab, frânarea adopției, blocaje de decizie, muncă ce continuă să se miște fără progres." },
+      { "tag": "Expertiză → produs", "desc": "Folosește secțiunea de academii și sisteme de învățare pentru design de academie, produse de learning, academii de partener, educație pentru clienți." }
+    ]
+  },
+  "formats": {
+    "kicker": "Ce vei găsi",
+    "titleStart": "Șase formate.",
+    "titleEm": "O singură bibliotecă.",
+    "items": [
+      { "name": "Articole & analize", "desc": "Materiale ascuțite despre finanțare, AI, execuție și viitorul muncii, gândire utilizabilă, nu sumarizări reciclate." },
+      { "name": "Episoade de podcast", "desc": "Conversații și episoade solo care transformă teme dezordonate în ceva mai ușor de provocat, folosit și aplicat." },
+      { "name": "Ghiduri & notițe de lucru", "desc": "Material practic pentru echipele care au nevoie de un punct de plecare, o încadrare mai puternică sau o cale de la idee la acțiune." },
+      { "name": "Studii & note de caz", "desc": "Cercetare selectată, exemple, observații și material suport pentru situații ce trec de conținutul de suprafață." },
+      { "name": "Instrumente, template-uri, checklist-uri", "desc": "Resurse simple care pot fi folosite în munca reală, nu doar discutate." },
+      { "name": "Framework-uri & metode", "desc": "Materiale selectate care arată cum gândește și lucrează The Unlearning School în spate." }
+    ]
+  },
+  "topics": {
+    "kicker": "Răsfoiește",
+    "titleStart": "După",
+    "titleEm": "subiect.",
+    "topicLabel": "Subiect",
+    "items": [
+      "Intelligence pe finanțare",
+      "AI la muncă",
+      "Frecare în execuție",
+      "Viitorul muncii",
+      "Academii & sisteme de învățare",
+      "Instrumente & framework-uri",
+      "Podcast & insight-uri",
+      "Agentul Hermes"
+    ]
+  },
+  "newsletter": {
+    "kicker": "The Unlearning Pill",
+    "titleStart": "Semnal,",
+    "titleEm": "nu zgomot.",
+    "body": "Update-uri selectate despre intelligence pe finanțare, AI la muncă, frecare în execuție, construcția de academii și viitorul muncii.",
+    "bullets": [
+      "Articole și notițe selectate",
+      "Insight-uri practice din podcast",
+      "Observații pe finanțare și oportunități",
+      "Framework-uri de lucru și instrumente utile",
+      "Update-uri care merită citite, nu spam de inbox"
+    ],
+    "button": "Mă abonez la newsletter →"
+  },
+  "cta": {
+    "title": "Începe cu Discuția AI Adoption.",
+    "subtitle": "Un apel gratuit de 30 de minute care îți scorează maturitatea adopției AI și îți dă o foaie de parcurs cu pași prioritizați. Sumar scris de 1 pagină în 24 de ore.",
+    "ctaText": "Discuție AI Adoption →",
+    "note": "Gratuit · hello@unlearning.ro"
+  }
+}
