@@ -15,9 +15,21 @@ export interface CurriculumSession {
 
 interface CurriculumAccordionProps {
   sessions: CurriculumSession[];
+  labels?: {
+    moduleKicker?: (num: string) => string;
+    module?: (num: string) => string;
+    topics?: string;
+    practice?: string;
+    useCases?: string;
+  };
 }
 
-const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
+const CurriculumAccordion = ({ sessions, labels }: CurriculumAccordionProps) => {
+  const moduleLabel = (num: string) => labels?.module?.(num) ?? `Module ${num}`;
+  const moduleKicker = (num: string) => labels?.moduleKicker?.(num) ?? `Module ${num} · Live session`;
+  const topicsLabel = labels?.topics ?? "What's covered";
+  const practiceLabel = labels?.practice ?? "Hands-on practice";
+  const useCasesLabel = labels?.useCases ?? "Real use cases participants work on";
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -43,7 +55,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                 {s.num}
               </span>
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/70 hidden lg:inline whitespace-nowrap">
-                Module {s.num}
+                {moduleLabel(s.num)}
               </span>
             </button>
             {i < sessions.length - 1 && (
@@ -90,7 +102,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                 </span>
                 <div className="flex-1 min-w-0">
                   <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red/80 mb-1">
-                    {s.kicker ?? `Module ${s.num} · Live session`}
+                    {s.kicker ?? moduleKicker(s.num)}
                   </p>
                   <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-paper leading-tight">
                     {s.title}
@@ -124,7 +136,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                         <div className="flex items-center gap-2 mb-4">
                           <BookOpen size={14} className="text-red" />
                           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            What's covered
+                            {topicsLabel}
                           </p>
                         </div>
                         <ul className="space-y-2">
@@ -146,7 +158,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                           <div className="flex items-center gap-2 mb-4">
                             <Wrench size={14} className="text-red" />
                             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                              Hands-on practice
+                              {practiceLabel}
                             </p>
                           </div>
                           <ul className="space-y-3">
@@ -168,7 +180,7 @@ const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
                         <div className="flex items-center gap-2 mb-4">
                           <Target size={14} className="text-red" />
                           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red">
-                            Real use cases participants work on
+                            {useCasesLabel}
                           </p>
                         </div>
                         <div className="flex flex-wrap gap-2">
