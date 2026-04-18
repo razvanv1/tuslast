@@ -53,7 +53,8 @@ const Events = () => {
         note={t("hero.note")}
       />
 
-      <Section id="partners" className="scroll-mt-20" decor="center-burst">
+      <Section decor="center-burst">
+        <div id="partners" className="scroll-mt-20" />
         <div className="text-center mb-12">
           <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("partners.kicker")}</p>
           <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] max-w-3xl mx-auto">

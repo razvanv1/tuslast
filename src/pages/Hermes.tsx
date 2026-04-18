@@ -12,6 +12,8 @@ import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import bannerHermes from "@/assets/banner-hermes.avif";
+import partnerHermes from "@/assets/partner-hermes.png";
 
 interface Stat { v: string; l: string; }
 interface TerminalLine { speaker: string; type: "user" | "agent"; text: string; }
@@ -72,6 +74,8 @@ const Hermes = () => {
       />
       <PageHero
         tag={t("hero.tag")}
+        banner={bannerHermes}
+        bannerAlt={t("hero.bannerAlt")}
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         ctaText={t("hero.ctaText")}
