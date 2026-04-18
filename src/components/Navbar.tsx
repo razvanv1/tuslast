@@ -16,10 +16,10 @@ const Navbar = () => {
   const navLinks = [
     { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
     { label: t("nav.events"), to: "/events" },
+    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.funding"), to: "/funding" },
     { label: t("nav.aiScore"), to: "/ai-adoption-score" },
     { label: t("nav.resources"), to: "/resources" },
-    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.about"), to: "/about" },
   ];
 
