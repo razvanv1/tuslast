@@ -56,28 +56,36 @@
   },
   "instruments": {
     "kicker": "Available funding instruments",
-    "titleStart": "Three sources.",
+    "titleStart": "Four sources.",
     "titleEm": "Most companies have access to at least one.",
+    "cardCta": "Book a call about this →",
     "items": [
       {
-        "title": "Microsoft MDF & co-sell",
-        "audience": "For Microsoft partners and Copilot rollouts",
-        "body": "Market Development Funds allocated to Microsoft partners to support adoption of Copilot, Azure AI, and Microsoft 365. Qualifying programs must be structured around specific adoption outcomes, not generic training.",
-        "coverage": "Typically covers: Copilot licences, Azure AI consumption, partner-led adoption work, training & enablement",
-        "tag": "Partner tier dependent"
+        "title": "Microsoft MDF & Founders Hub",
+        "audience": "For Microsoft partners, Copilot rollouts, and eligible startups",
+        "body": "Two tracks. Partners: Market Development Funds support Copilot, Azure AI, and Microsoft 365 adoption — programs must be structured around specific adoption outcomes, not generic training. Startups & scaleups: Microsoft for Startups Founders Hub provides up to $150k in Azure credits plus Copilot, GitHub, and OpenAI API access. We facilitate access to both tracks.",
+        "coverage": "Copilot & Microsoft 365 licences, Azure AI consumption, OpenAI API credits via Founders Hub, partner-led adoption work, training & enablement",
+        "tag": "Partner tier or startup track"
       },
       {
-        "title": "AWS partner programs",
-        "audience": "For AWS partners and cloud-adjacent teams",
-        "body": "AWS allocates co-sell budgets through its partner network to support digital skills and cloud adoption programs. Qualifying requires active partner status and a program aligned to AWS adoption metrics.",
-        "coverage": "Typically covers: Bedrock & SageMaker consumption, migration credits, partner-led delivery, enablement workshops",
-        "tag": "APN partner required"
+        "title": "AWS co-sell & Activate credits",
+        "audience": "For AWS partners, cloud-adjacent teams, and funded startups",
+        "body": "Two tracks. APN partners: co-sell budgets fund digital skills and cloud adoption programs aligned to AWS adoption metrics. Startups & scaleups: AWS Activate provides up to $100k in credits (via VC, accelerator, or standalone application) plus Bedrock and SageMaker access. We facilitate access to both tracks.",
+        "coverage": "Bedrock & SageMaker consumption, Activate credits up to $100k, migration credits, partner-led delivery, enablement workshops",
+        "tag": "APN partner or Activate track"
       },
       {
-        "title": "EU digital competitiveness grants",
-        "audience": "Digital Europe Programme and related instruments",
-        "body": "EU programs that fund AI literacy and digital skills development inside organisations. Applications must be framed as qualifying projects with measurable adoption outcomes, not internal training budgets.",
-        "coverage": "Typically covers: AI implementation projects, upskilling cohorts, integration & dev work, third-party advisory",
+        "title": "Google Cloud partner & startup credits",
+        "audience": "For Google Cloud partners, Workspace rollouts, and AI-first scaleups",
+        "body": "Two tracks. Partners: Google Cloud Partner Advantage allocates co-marketing and adoption funds for Vertex AI, Gemini Enterprise, and Workspace rollouts. Startups & scaleups: Google for Startups Cloud Program offers up to $200k in Google Cloud credits plus Gemini API access and dedicated AI support. We facilitate access to both tracks.",
+        "coverage": "Vertex AI & Gemini API consumption, Workspace + Gemini Enterprise licences, up to $200k cloud credits, partner-led delivery, MVP build credits",
+        "tag": "Partner or startup track"
+      },
+      {
+        "title": "EU digital grants & Erasmus+",
+        "audience": "Digital Europe, Horizon Europe, and Erasmus+ instruments",
+        "body": "EU funding for AI literacy, digital skills, and implementation work inside organisations. Includes Digital Europe Programme (AI deployment projects), Horizon Europe digital pillars (R&D and innovation), and Erasmus+ (upskilling cohorts, training mobility, partnerships). Applications must be framed as qualifying projects with measurable outcomes, not internal training budgets.",
+        "coverage": "AI implementation projects, MVP build & validation, upskilling cohorts under Erasmus+, Digital Europe AI deployment, integration & dev work, third-party advisory",
         "tag": "Romania-eligible"
       }
     ]
@@ -108,6 +116,13 @@
   "quote": {
     "attribution": "On qualification",
     "body": "Most companies qualify for at least one instrument. The question is not whether the funding exists, it does. The question is whether your program is structured in a way that the funding body will recognise."
+  },
+  "eventsBridge": {
+    "kicker": "Before you fund it",
+    "titleStart": "Want to see what a live session looks like",
+    "titleEm": "before you fund one?",
+    "body": "Come into a live prototyping session and see exactly what the program produces — working prototypes, team capability, deliverables — before you structure the funding around it.",
+    "cta": "See live sessions →"
   },
   "faq": {
     "kicker": "Frequently asked",

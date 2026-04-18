@@ -56,28 +56,36 @@
   },
   "instruments": {
     "kicker": "Instrumente de finanțare disponibile",
-    "titleStart": "Trei surse.",
+    "titleStart": "Patru surse.",
     "titleEm": "Majoritatea companiilor au acces la cel puțin una.",
+    "cardCta": "Programează un call pentru asta →",
     "items": [
       {
-        "title": "Microsoft MDF & co-sell",
-        "audience": "Pentru parteneri Microsoft și implementări Copilot",
-        "body": "Market Development Funds alocate partenerilor Microsoft pentru a susține adopția Copilot, Azure AI și Microsoft 365. Programele care se califică trebuie structurate pe rezultate concrete de adopție, nu pe training generic.",
-        "coverage": "Acoperă tipic: licențe Copilot, consum Azure AI, lucru de adopție prin partener, training & enablement",
-        "tag": "Depinde de tier-ul de partener"
+        "title": "Microsoft MDF & Founders Hub",
+        "audience": "Pentru parteneri Microsoft, implementări Copilot și startup-uri eligibile",
+        "body": "Două piste. Parteneri: Market Development Funds susțin adopția Copilot, Azure AI și Microsoft 365 — programele trebuie structurate pe rezultate concrete de adopție, nu pe training generic. Startup-uri & scaleup-uri: Microsoft for Startups Founders Hub oferă până la $150k credits Azure plus acces Copilot, GitHub și OpenAI API. Facilităm accesul pe ambele piste.",
+        "coverage": "licențe Copilot & Microsoft 365, consum Azure AI, credits OpenAI API prin Founders Hub, lucru de adopție prin partener, training & enablement",
+        "tag": "Tier de partener sau pistă startup"
       },
       {
-        "title": "Programe de partener AWS",
-        "audience": "Pentru parteneri AWS și echipe adiacente cloud",
-        "body": "AWS alocă bugete de co-sell prin rețeaua de parteneri pentru a susține programe de skill-uri digitale și adopție cloud. Calificarea cere status activ de partener și un program aliniat la metricile de adopție AWS.",
-        "coverage": "Acoperă tipic: consum Bedrock & SageMaker, credite de migrare, livrare prin partener, workshop-uri de enablement",
-        "tag": "Necesită partener APN"
+        "title": "AWS co-sell & credits Activate",
+        "audience": "Pentru parteneri AWS, echipe adiacente cloud și startup-uri finanțate",
+        "body": "Două piste. Parteneri APN: bugete de co-sell finanțează programe de skill-uri digitale și adopție cloud aliniate la metricile AWS. Startup-uri & scaleup-uri: AWS Activate oferă până la $100k credits (prin VC, accelerator sau aplicație standalone) plus acces Bedrock și SageMaker. Facilităm accesul pe ambele piste.",
+        "coverage": "consum Bedrock & SageMaker, credits Activate până la $100k, credite de migrare, livrare prin partener, workshop-uri de enablement",
+        "tag": "Partener APN sau pistă Activate"
       },
       {
-        "title": "Granturi UE de competitivitate digitală",
-        "audience": "Digital Europe Programme și instrumente conexe",
-        "body": "Programe UE care finanțează alfabetizarea AI și dezvoltarea skill-urilor digitale în organizații. Aplicațiile trebuie încadrate ca proiecte care se califică, cu rezultate de adopție măsurabile, nu ca bugete interne de training.",
-        "coverage": "Acoperă tipic: proiecte de implementare AI, cohorte de upskilling, integrări & dev work, consultanță third-party",
+        "title": "Google Cloud partener & credits startup",
+        "audience": "Pentru parteneri Google Cloud, implementări Workspace și scaleup-uri AI-first",
+        "body": "Două piste. Parteneri: Google Cloud Partner Advantage alocă fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise și Workspace. Startup-uri & scaleup-uri: Google for Startups Cloud Program oferă până la $200k credits Google Cloud plus acces Gemini API și suport AI dedicat. Facilităm accesul pe ambele piste.",
+        "coverage": "consum Vertex AI & Gemini API, licențe Workspace + Gemini Enterprise, până la $200k credits cloud, livrare prin partener, credits pentru build de MVP",
+        "tag": "Pistă partener sau startup"
+      },
+      {
+        "title": "Granturi UE & Erasmus+",
+        "audience": "Digital Europe, Horizon Europe și instrumente Erasmus+",
+        "body": "Finanțare UE pentru alfabetizare AI, skill-uri digitale și implementare în organizații. Include Digital Europe Programme (proiecte de deployment AI), Horizon Europe pe pilonii digitali (R&D și inovare) și Erasmus+ (cohorte de upskilling, mobilitate de training, parteneriate). Aplicațiile trebuie încadrate ca proiecte care se califică, cu rezultate măsurabile, nu ca bugete interne de training.",
+        "coverage": "proiecte de implementare AI, build & validare MVP, cohorte de upskilling prin Erasmus+, deployment AI prin Digital Europe, integrări & dev work, consultanță third-party",
         "tag": "Eligibil în România"
       }
     ]
@@ -108,6 +116,13 @@
   "quote": {
     "attribution": "Despre calificare",
     "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
+  },
+  "eventsBridge": {
+    "kicker": "Înainte să o finanțezi",
+    "titleStart": "Vrei să vezi cum arată o sesiune live",
+    "titleEm": "înainte să o finanțezi?",
+    "body": "Vino într-o sesiune live de prototipare și vezi exact ce produce programul — prototipuri funcționale, capabilitate de echipă, livrabile — înainte să structurezi finanțarea în jurul lui.",
+    "cta": "Vezi sesiuni live →"
   },
   "faq": {
     "kicker": "Întrebări frecvente",

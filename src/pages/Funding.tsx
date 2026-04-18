@@ -105,7 +105,7 @@ const Funding = () => {
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           {t("instruments.titleStart")} <em className="text-red">{t("instruments.titleEm")}</em>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ink/10">
           {instruments.map((i) => (
             <article key={i.title} className="bg-paper p-8 md:p-10 flex flex-col">
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{i.audience}</p>
@@ -114,9 +114,15 @@ const Funding = () => {
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60 leading-relaxed mb-4">
                 <span className="text-red">Covers: </span>{i.coverage}
               </p>
-              <div className="border-t border-ink/15 pt-3">
+              <div className="border-t border-ink/15 pt-3 mb-4">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60">{i.tag}</span>
               </div>
+              <Link
+                to="/assessment"
+                className="inline-flex items-center font-mono text-[10px] uppercase tracking-[0.25em] text-red hover:text-ink transition-colors border-t border-ink/15 pt-4 w-full"
+              >
+                {t("instruments.cardCta")}
+              </Link>
             </article>
           ))}
         </div>
@@ -147,6 +153,26 @@ const Funding = () => {
             <p className="font-display italic text-xl text-ink">
               {t("result.italicStart")} <span className="text-red">{t("result.italicEm")}</span>
             </p>
+          </div>
+        </div>
+      </Section>
+
+      <Section bordered={false}>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div className="md:col-span-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("eventsBridge.kicker")}</p>
+            <h2 className="font-display text-3xl md:text-4xl text-paper leading-[1.05] mb-4">
+              {t("eventsBridge.titleStart")} <em className="text-red">{t("eventsBridge.titleEm")}</em>
+            </h2>
+            <p className="text-paper/75 text-[15px] leading-relaxed max-w-2xl">{t("eventsBridge.body")}</p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <Link
+              to="/events"
+              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            >
+              {t("eventsBridge.cta")}
+            </Link>
           </div>
         </div>
       </Section>
