@@ -57,14 +57,6 @@
       }
     ]
   },
-  "proof": {
-    "kicker": "Track record",
-    "items": [
-      { "stat": "40+", "label": "Sessions delivered" },
-      { "stat": "8", "label": "Sectors covered" },
-      { "stat": "2,500+", "label": "People in rooms" }
-    ]
-  },
   "formats": {
     "kicker": "Formats",
     "titleStart": "Three formats.",
@@ -115,9 +107,12 @@
     "body": "A 30-minute call is enough to confirm the format, the audience, and the right scope. From there we send a specific proposal within 48 hours.",
     "italic": "No catalogue pricing. Every event is built around the room it is delivered in."
   },
-  "quote": {
-    "attribution": "When budget is the objection",
-    "body": "Your AI program might already be funded. You just haven't structured it that way. Microsoft, AWS, and Google allocate co-sell and Market Development Funds every quarter to support exactly this kind of adoption work. Most companies qualify. Most don't know it."
+  "funding": {
+    "kicker": "When budget is the objection",
+    "titleStart": "Your AI program might",
+    "titleEm": "already be funded.",
+    "body": "Microsoft, AWS, and Google allocate co-sell and Market Development Funds every quarter to support exactly this kind of adoption work. Most companies qualify. Most don't know it. We structure the program so it does.",
+    "cta": "See funding options →"
   },
   "cta": {
     "title": "Bring this to your team.",

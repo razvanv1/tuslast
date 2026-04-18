@@ -57,14 +57,6 @@
       }
     ]
   },
-  "proof": {
-    "kicker": "Track record",
-    "items": [
-      { "stat": "40+", "label": "Sesiuni livrate" },
-      { "stat": "8", "label": "Sectoare acoperite" },
-      { "stat": "2.500+", "label": "Oameni în săli" }
-    ]
-  },
   "formats": {
     "kicker": "Formate",
     "titleStart": "Trei formate.",
@@ -115,9 +107,12 @@
     "body": "Un apel de 30 de minute e suficient pentru a confirma formatul, audiența și scope-ul potrivit. De acolo, trimitem o propunere specifică în 48 de ore.",
     "italic": "Fără pricing de catalog. Fiecare eveniment e construit pe sala în care e livrat."
   },
-  "quote": {
-    "attribution": "Când bugetul e obiecția",
-    "body": "Programul tău AI ar putea fi deja finanțat. Doar că nu l-ai structurat așa. Microsoft, AWS și Google alocă bugete de co-sell și Market Development Funds în fiecare trimestru pentru exact acest tip de muncă de adopție. Majoritatea companiilor se califică. Majoritatea nu știu."
+  "funding": {
+    "kicker": "Când bugetul e obiecția",
+    "titleStart": "Programul tău AI ar putea fi",
+    "titleEm": "deja finanțat.",
+    "body": "Microsoft, AWS și Google alocă bugete de co-sell și Market Development Funds în fiecare trimestru pentru exact acest tip de muncă de adopție. Majoritatea companiilor se califică. Majoritatea nu știu. Noi structurăm programul ca să o facă.",
+    "cta": "Vezi opțiuni de finanțare →"
   },
   "cta": {
     "title": "Adu asta echipei tale.",
