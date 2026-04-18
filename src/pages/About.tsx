@@ -165,6 +165,8 @@ const About = () => {
         </div>
       </Section>
 
+      <Affiliations variant="dark" />
+
       <AIScoreCTA />
 
       <CTASection

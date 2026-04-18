@@ -293,6 +293,9 @@ const Index = () => {
         </div>
       </Section>
 
+      {/* AFFILIATIONS — authority & credibility */}
+      <Affiliations variant="paper" />
+
       {/* CTA */}
       <CTASection
         title="Ready to put AI to work?"
