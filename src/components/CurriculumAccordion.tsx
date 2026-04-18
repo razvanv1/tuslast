@@ -15,9 +15,21 @@ export interface CurriculumSession {
 
 interface CurriculumAccordionProps {
   sessions: CurriculumSession[];
+  labels?: {
+    moduleKicker?: (num: string) => string;
+    module?: (num: string) => string;
+    topics?: string;
+    practice?: string;
+    useCases?: string;
+  };
 }
 
-const CurriculumAccordion = ({ sessions }: CurriculumAccordionProps) => {
+const CurriculumAccordion = ({ sessions, labels }: CurriculumAccordionProps) => {
+  const moduleLabel = (num: string) => labels?.module?.(num) ?? `Module ${num}`;
+  const moduleKicker = (num: string) => labels?.moduleKicker?.(num) ?? `Module ${num} · Live session`;
+  const topicsLabel = labels?.topics ?? "What's covered";
+  const practiceLabel = labels?.practice ?? "Hands-on practice";
+  const useCasesLabel = labels?.useCases ?? "Real use cases participants work on";
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
