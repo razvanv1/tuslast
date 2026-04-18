@@ -3,11 +3,29 @@ import Stripe from "https://esm.sh/stripe@18.5.0";
 
 // Allowlist of trusted origins. Used both for CORS and to construct
 // Stripe success/cancel URLs — never trust the raw Origin header for redirects.
-const ALLOWED_ORIGINS = new Set<string>([
+// Production: tuslast.lovable.app
+// Lovable preview/sandbox iframes: *.lovable.app and *.lovableproject.com
+const STATIC_ALLOWED_ORIGINS = new Set<string>([
   "https://tuslast.lovable.app",
-  "https://id-preview--11481bdc-fc49-4be4-a510-45046c1d81c9.lovable.app",
 ]);
+const ALLOWED_ORIGIN_SUFFIXES = [
+  ".lovable.app",
+  ".lovableproject.com",
+  ".sandbox.lovable.dev",
+];
 const DEFAULT_ORIGIN = "https://tuslast.lovable.app";
+
+const isAllowedOrigin = (origin: string | null): origin is string => {
+  if (!origin) return false;
+  if (STATIC_ALLOWED_ORIGINS.has(origin)) return true;
+  try {
+    const { protocol, hostname } = new URL(origin);
+    if (protocol !== "https:") return false;
+    return ALLOWED_ORIGIN_SUFFIXES.some((suffix) => hostname.endsWith(suffix));
+  } catch {
+    return false;
+  }
+};
 
 const baseCorsHeaders = {
   "Access-Control-Allow-Headers":
@@ -18,7 +36,7 @@ const baseCorsHeaders = {
 
 const corsFor = (req: Request) => {
   const reqOrigin = req.headers.get("origin");
-  const allowed = reqOrigin && ALLOWED_ORIGINS.has(reqOrigin) ? reqOrigin : DEFAULT_ORIGIN;
+  const allowed = isAllowedOrigin(reqOrigin) ? reqOrigin : DEFAULT_ORIGIN;
   return { ...baseCorsHeaders, "Access-Control-Allow-Origin": allowed };
 };
 
@@ -40,7 +58,7 @@ serve(async (req) => {
     // Reject requests from origins not in the allowlist. Browsers enforce CORS,
     // but server-side checks block scripted/curl callers from abusing the endpoint.
     const reqOrigin = req.headers.get("origin");
-    if (!reqOrigin || !ALLOWED_ORIGINS.has(reqOrigin)) {
+    if (!isAllowedOrigin(reqOrigin)) {
       return new Response(JSON.stringify({ error: "Forbidden" }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
         status: 403,
