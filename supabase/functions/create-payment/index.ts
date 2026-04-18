@@ -58,7 +58,7 @@ serve(async (req) => {
     // Reject requests from origins not in the allowlist. Browsers enforce CORS,
     // but server-side checks block scripted/curl callers from abusing the endpoint.
     const reqOrigin = req.headers.get("origin");
-    if (!reqOrigin || !ALLOWED_ORIGINS.has(reqOrigin)) {
+    if (!isAllowedOrigin(reqOrigin)) {
       return new Response(JSON.stringify({ error: "Forbidden" }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
         status: 403,
