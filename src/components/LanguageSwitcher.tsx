@@ -25,8 +25,8 @@ const LanguageSwitcher = ({ variant = "dark", className = "" }: LanguageSwitcher
 
   const base =
     "font-mono text-[11px] uppercase tracking-[0.2em] transition-colors px-1.5 py-1";
-  const activeColor = "text-red";
-  const idleColor = variant === "dark" ? "text-paper/55 hover:text-paper" : "text-ink/55 hover:text-ink";
+  const activeColor = variant === "dark" ? "text-paper font-bold underline underline-offset-4" : "text-red font-bold underline underline-offset-4";
+  const idleColor = variant === "dark" ? "text-paper/70 hover:text-paper" : "text-ink/60 hover:text-ink";
   const sep = variant === "dark" ? "text-paper/25" : "text-ink/25";
 
   return (
