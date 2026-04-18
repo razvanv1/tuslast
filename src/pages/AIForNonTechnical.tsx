@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
-import bannerAi from "@/assets/banner-ai.webp";
+import bannerAi from "@/assets/ai-for-non-technical-hero.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
