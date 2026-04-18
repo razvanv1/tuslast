@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ChevronDown, HelpCircle } from "lucide-react";
 
 export interface FAQItem {
@@ -20,6 +21,8 @@ interface FAQAccordionProps {
  * height transition, monospace kickers. Designed for dark sections.
  */
 const FAQAccordion = ({ items, grouped = false }: FAQAccordionProps) => {
+  const { i18n } = useTranslation();
+  const faqLabel = i18n.language === "ro" ? "Întrebare" : "FAQ";
   const [openKey, setOpenKey] = useState<string | null>(items[0] ? `0-${items[0].q}` : null);
 
   const groups = grouped
@@ -83,7 +86,7 @@ const FAQAccordion = ({ items, grouped = false }: FAQAccordionProps) => {
                     </span>
                     <div className="flex-1 min-w-0">
                       <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-red/80 mb-1">
-                        FAQ · {String(idx + 1).padStart(2, "0")}
+                        {faqLabel} · {String(idx + 1).padStart(2, "0")}
                       </p>
                       <h3 className="font-display text-lg md:text-xl text-paper leading-snug">
                         {f.q}
