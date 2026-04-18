@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
-import cardWorkersUrl from "@/assets/card-ai-non-technical.webp";
+import lcpCardUrl from "@/assets/card-assessment.webp";
 import interLatinUrl from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
 import dmSerifLatinUrl from "@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url";
 import jetbrainsMonoUrl from "@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2?url";
@@ -12,7 +12,7 @@ import jetbrainsMonoUrl from "@fontsource/jetbrains-mono/files/jetbrains-mono-la
 const preloadLink = document.createElement("link");
 preloadLink.rel = "preload";
 preloadLink.as = "image";
-preloadLink.href = cardWorkersUrl;
+preloadLink.href = lcpCardUrl;
 preloadLink.type = "image/webp";
 preloadLink.fetchPriority = "high";
 document.head.appendChild(preloadLink);
