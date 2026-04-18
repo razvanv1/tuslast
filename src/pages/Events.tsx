@@ -9,7 +9,9 @@ import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 
-interface FormatItem { num: string; title: string; meta: string; body: string; }
+interface FormatItem { num: string; title: string; meta: string; body: string; outcome: string; }
+interface InsideStep { time: string; title: string; body: string; }
+interface ProofItem { stat: string; label: string; }
 
 const Events = () => {
   const { t } = useTranslation("events");
@@ -17,6 +19,8 @@ const Events = () => {
 
   const formats = t("formats.items", { returnObjects: true }) as FormatItem[];
   const included = t("included.items", { returnObjects: true }) as string[];
+  const insideSteps = t("inside.steps", { returnObjects: true }) as InsideStep[];
+  const proofItems = t("proof.items", { returnObjects: true }) as ProofItem[];
 
   return (
     <>
@@ -27,7 +31,7 @@ const Events = () => {
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
-          serviceType: "AI keynote, workshop and hackathon facilitation",
+          serviceType: "Live AI prototyping, keynote, workshop and hackathon facilitation",
           provider: { "@type": "Organization", name: "The Unlearning School" },
           areaServed: ["RO", "EU"],
         }}
@@ -41,7 +45,7 @@ const Events = () => {
         ctaText={t("hero.ctaText")}
         ctaTo="/assessment"
         secondaryText={t("hero.secondaryText")}
-        secondaryTo="/programmes"
+        secondaryTo="#inside"
         note={t("hero.note")}
       />
 
@@ -54,6 +58,45 @@ const Events = () => {
         <p className="font-display italic text-xl md:text-2xl text-paper/80 leading-snug max-w-3xl mt-6">
           {t("intro.pullQuoteStart")} <span className="text-red not-italic">{t("intro.pullQuoteEm")}</span> {t("intro.pullQuoteEnd")}
         </p>
+      </Section>
+
+      <Section variant="paper" className="scroll-mt-20" >
+        <div id="inside" className="grid grid-cols-1 md:grid-cols-12 gap-10">
+          <div className="md:col-span-4">
+            <Kicker>{t("inside.kicker")}</Kicker>
+            <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-6">
+              {t("inside.titleStart")} <em className="text-red">{t("inside.titleEm")}</em>
+            </h2>
+            <p className="text-ink/70 text-[15px] leading-relaxed">{t("inside.intro")}</p>
+          </div>
+          <div className="md:col-span-8">
+            <ol className="border-t border-ink/15">
+              {insideSteps.map((step) => (
+                <li key={step.time} className="grid grid-cols-12 gap-4 py-6 border-b border-ink/15">
+                  <div className="col-span-12 md:col-span-2">
+                    <span className="font-mono text-sm tabular-nums text-red">{step.time}</span>
+                  </div>
+                  <div className="col-span-12 md:col-span-10">
+                    <h3 className="font-display text-2xl text-ink leading-tight mb-2">{step.title}</h3>
+                    <p className="text-ink/70 text-[15px] leading-relaxed">{step.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </Section>
+
+      <Section bordered={false}>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-8">{t("proof.kicker")}</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
+          {proofItems.map((p) => (
+            <div key={p.label} className="bg-background p-8 md:p-10">
+              <div className="font-display text-6xl md:text-7xl text-red leading-none mb-3">{p.stat}</div>
+              <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-paper/70">{p.label}</div>
+            </div>
+          ))}
+        </div>
       </Section>
 
       <Section variant="paper">
@@ -69,7 +112,10 @@ const Events = () => {
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50 text-right">{f.meta}</span>
               </div>
               <h3 className="font-display text-2xl text-ink leading-tight mb-3">{f.title}</h3>
-              <p className="text-ink/70 text-[15px] leading-relaxed">{f.body}</p>
+              <p className="text-ink/70 text-[15px] leading-relaxed mb-5">{f.body}</p>
+              <p className="mt-auto pt-4 border-t border-ink/15 font-mono text-[11px] uppercase tracking-[0.15em] text-red leading-relaxed">
+                {f.outcome}
+              </p>
             </article>
           ))}
         </div>
