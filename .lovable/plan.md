@@ -1,85 +1,94 @@
 
+## Homepage — Partners endorsement + 2 pricing CTAs
 
-## Partnerships block on Events + Hermes — credibility & magnetism
+### Ce se schimbă pe `src/pages/Index.tsx`
 
-### Goal
-Anchor Events page on two trust signals (Lovable Ambassador + Hermes Agent partner) and explicitly tell the audience these events are **free, practical, no-PowerPoint, with merch + free credits + perks**. Cross-link Events ↔ Hermes. Add Hermes logo and yellow banner to Hermes page hero.
+Homepage actuală are aceste secțiuni majore: Hero → ShuffleDeck → Stats → Pattern → Premise (quote) → Audience → Ladder (3 programe) → Mechanism → Credibility → FinalCTA + FAQ. Trebuie să adăugăm două lucruri noi, integrate natural, fără să rupem ritmul editorial:
 
-### Assets to copy from uploads to project
-- `user-uploads://Lovable_Logo_Wordmark_Black.png` → `src/assets/partner-lovable.png`
-- `user-uploads://images.png` (Hermes Agent logo) → `src/assets/partner-hermes.png`
-- `user-uploads://hermes-agent-banner.avif` → `src/assets/banner-hermes.avif`
+**A. Bandă de Parteneri (endorsement) — sub Credibility, înainte de FinalCTA**
 
-### Changes per file
+De ce aici: Credibility deja spune "the receipts" (1.400+ trained, founder, before/after). Banda de parteneri e următorul tier de credibilitate — *external endorsement*. Ordinea naturală: dovezi proprii → validare externă → CTA final.
 
-**1. `src/pages/Events.tsx` — new central "Partners & what attendees get" section**
-Inserted right after the Hero (before `intro` Section), so it's the second thing visitors see. Layout:
-- Top row: kicker "In partnership with" centered, then the **two logos side-by-side, large and central** (Lovable wordmark + Hermes Agent), white card on dark bg, with subtle separator. Below each logo: one-line role ("Lovable Ambassador" / "Hermes Agent Partner").
-- Bottom row: 4-column grid of perks for attendees, each with a number and short label:
-  - `01 Free for participants` — "All public events are free. No tickets, no upsell."
-  - `02 Practical, no slides` — "Live builds on real workflows. Zero generic decks, zero PowerPoint."
-  - `03 Merch & free credits` — "Lovable + Hermes Agent perks: free platform credits, merch, swag."
-  - `04 International, local` — "We bring international speakers and standards into local rooms."
-- Anchor id `#partners` so we can link to it from Hermes.
+Layout (pattern deja folosit pe `/events#partners`, dar adaptat pentru homepage):
+- Variant: `paper` (cream) ca să spargă vizual succesiunea de secțiuni dark
+- Kicker mono uppercase: "Official partners · External endorsement"
+- Title display medie: "Backed by the platforms *we teach.*" / RO: "Susținut de platformele *pe care le predăm.*"
+- Sub-line scurtă (1 propoziție): "We are official Lovable Ambassador and Hermes Agent Partner. The tools we train teams on, we partner with directly."
+- 2 logo-uri side-by-side, mari, centrate, pe carduri `bg-paper` cu border subtle (logos sunt deja dark, deci pe paper merg). Sub fiecare logo: rolul în mono uppercase ("Lovable Ambassador" / "Hermes Agent Partner")
+- Sub bandă, link discret mono → `/events#partners` "See partner perks at our events →"
 
-**2. `src/pages/Hermes.tsx` — banner + partnership section + back-link to Events**
-- Add `banner` prop on `PageHero` using `banner-hermes.avif` (yellow Hermes Agent banner).
-- New section right after the terminal/stats block: small kicker "We host Hermes events", title "See Hermes Agent live in person.", short body explaining we run free, practical Hermes Agent demos & build sessions inside our Events programme, with a CTA button → `/events#partners` "See live events →".
-- Show Hermes logo (small, paper card) inside this section header for brand recognition.
+**B. Pricing CTAs — secțiune nouă "Start now" cu 2 carduri de preț**
 
-**3. `src/i18n/locales/en/events.json` + `src/i18n/locales/ro/events.json`**
-Add a new top-level `partners` block:
-```
-partners: {
-  kicker, titleStart, titleEm,
-  lovable: { role, name },
-  hermes: { role, name },
-  perks: [4 items with num/title/body],
-  hermesLinkText, hermesLinkTo
-}
-```
+Plasament: între Ladder și Mechanism. De ce: Ladder enumeră cele 3 programe (Core / Events / Funding) ca *catalog descriptiv*. Imediat după catalog e momentul firesc să arăți **două puncte concrete de intrare cu preț**, înainte de a continua narrativ cu mechanism/credibility. E pattern-ul "catalog → buy now → continue story".
 
-**4. `src/i18n/locales/en/hermes.json` + `src/i18n/locales/ro/hermes.json`**
-Add `eventsBridge` block: `{ kicker, titleStart, titleEm, body, cta }` for the new "See Hermes live at our events" section, plus `hero.bannerAlt` for the new yellow banner.
+Layout:
+- Variant: `darker` (mai întunecat decât default), pentru contrast cu Ladder (paper sau dark) și cu Mechanism care urmează
+- Kicker: "Start now · Two entry points"
+- Title: "Skip the call. *Start today.*" / RO: "Sari peste call. *Începe azi.*"
+- Sub-line: "Two productized entry points with public pricing. Pay, get scheduled, start. Everything else still routes through the free AI Adoption Call."
+- Grid 2 coloane (md:grid-cols-2), gap-px pe `bg-paper/15`, fiecare card `bg-background p-10`:
 
-### Copy direction (concise, credibility-first)
+  **Card 1 — AI for Work training**
+  - Tag mono: "Training · Per person"
+  - Price block mare: "from €600" (display, big), apoi "/ participant" mic mono
+  - Title: "AI for Non-Technical People"
+  - 3 bullet-uri scurte: "Modular: Discovery / Sprint / Full" · "Built on tools you already pay for" · "EU AI Act Article 4 ready"
+  - Primary CTA buton roșu: "Buy AI for Work →" → `/programmes/ai-for-non-technical-people`
+  - Secondary text link mono: "See programme details →"
 
-EN Events partners section:
-- Kicker: "In partnership with"
-- Title: "International standards. *Local rooms.*"
-- Lovable role: "Lovable Ambassador — official partner for AI app prototyping"
-- Hermes role: "Hermes Agent Partner — official partner for autonomous AI agents"
-- Subline under perks grid: "Public events are free. The condition is simple: practical only — no generic talks, no slideware, no theory."
+  **Card 2 — Hermes Agent install**
+  - Tag mono: "Personal AI assistant · Per install"
+  - Price block: "from €497" + "/ install" mic
+  - Title: "Hermes Agent — personal install"
+  - 3 bullet-uri: "Autonomous AI assistant configured for your workflow" · "Setup, training, handover" · "Official Hermes Agent Partner"
+  - Primary CTA buton roșu: "Install Hermes →" → `/hermes`
+  - Secondary text link mono: "See what Hermes does →"
 
-RO Events:
-- Kicker: "În parteneriat cu"
-- Title: "Standarde internaționale. *Săli locale.*"
-- Lovable rol: "Lovable Ambassador — partener oficial pentru prototipare AI"
-- Hermes rol: "Hermes Agent Partner — partener oficial pentru agenți AI autonomi"
-- Subline: "Evenimentele publice sunt gratuite. Condiția: doar practic — fără prezentări generale, fără slide-uri, fără teorie."
+- Sub grid, o linie mono fină centrată: "Need to scope first? → AI Adoption Call (free, 30 min)" cu link spre `/assessment` — ca să nu pierdem oamenii care nu sunt încă gata să cumpere.
 
-EN Hermes bridge:
-- "See Hermes Agent *live at our events.*"
-- Body: "We bring Hermes Agent into our public events — free, practical, no slides. Watch a live build, ask questions, and walk out with a working prototype and free credits."
-- CTA: "See live events →" → `/events#partners`
+### Fișiere modificate
 
-RO Hermes bridge:
-- "Vezi Hermes Agent *live la evenimentele noastre.*"
-- Body: "Aducem Hermes Agent în evenimentele noastre publice — gratuite, practice, fără slide-uri. Vezi un build live, pune întrebări, pleci cu un prototip și credits gratuite."
-- CTA: "Vezi evenimentele live →"
+1. `src/i18n/locales/en/home.json` — adaugă blocuri `partners` și `pricing`
+2. `src/i18n/locales/ro/home.json` — același set, RO natural
+3. `src/pages/Index.tsx` — render 2 secțiuni noi în pozițiile descrise; importă `partner-lovable.png` și `partner-hermes.png` din `src/assets/`
 
-### Visual / layout notes
-- Logos rendered on a `bg-paper` card (the logos are dark on white) inside the dark Events section, so they pop. Side-by-side on desktop (`md:grid-cols-2`), stacked on mobile, separated by a vertical paper/15 divider.
-- Logos use `<img>` with explicit width/height for CLS, `loading="lazy"` (below fold ok for partners block? It's near hero — use `eager`).
-- Hermes hero banner: same `PageHero banner` pattern already used on Events/Funding/etc — full-width, paper bg. The yellow banner becomes the visual anchor.
-- Hermes logo small inline in the bridge section header (h-8) for instant recognition.
+### Detaliu tehnic
 
-### Files modified
-- `src/pages/Events.tsx`
-- `src/pages/Hermes.tsx`
-- `src/i18n/locales/en/events.json`
-- `src/i18n/locales/ro/events.json`
-- `src/i18n/locales/en/hermes.json`
-- `src/i18n/locales/ro/hermes.json`
-- 3 new assets copied into `src/assets/`
+- Folosim `<Section variant="paper">` pentru parteneri (contrast cu vecinii dark) și `<Section variant="darker">` pentru pricing (contrast cu Ladder).
+- Logo-uri: `<img loading="lazy" decoding="async">` cu `h-12 md:h-14 w-auto object-contain`, în carduri `bg-paper` cu padding generos. Pe paper-section logo-urile dark se văd direct fără card alb suplimentar — folosim doar border `border-ink/10` și padding.
+- Pricing cards: pattern editorial, nu SaaS-style — preț în `font-display text-5xl md:text-6xl text-paper`, "from" mic deasupra în mono uppercase roșu, "/participant" sau "/install" mic mono sub preț. Bullet-uri cu separator `border-t border-paper/10` între ele, fără bullet-points tipice (estetica Wired).
+- CTA primar: pattern existent — `bg-red text-paper px-7 py-4 font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink`. Secondary: text link mono cu hover red.
+- Navigare: `Link` din `@/components/LocalizedLink` (ca să meargă atât EN cât și RO automat).
+- Anchor: secțiunea pricing primește `id="pricing"` ca să putem face link din alte locuri ulterior.
 
+### Copy direction (concis)
+
+EN partners:
+- Kicker: "Official partners · External endorsement"
+- Title: "Backed by the platforms *we teach.*"
+- Body: "We are official Lovable Ambassador and Hermes Agent Partner. The platforms we train teams on, we partner with directly — which means perks, free credits, and access for the people we train."
+
+RO partners:
+- Kicker: "Parteneri oficiali · Validare externă"
+- Title: "Susținut de platformele *pe care le predăm.*"
+- Body: "Suntem Lovable Ambassador oficial și Hermes Agent Partner. Platformele pe care formăm echipele sunt și partenerii noștri direcți — ceea ce înseamnă perks, credits gratuite și acces pentru oamenii pe care îi pregătim."
+
+EN pricing:
+- Kicker: "Start now · Two entry points"
+- Title: "Skip the call. *Start today.*"
+- Body: "Two productized entry points with public pricing. Pay, get scheduled, start. Everything else still routes through the free AI Adoption Call."
+- Card 1 footer note: "Cohort minimum applies. Volume pricing on request."
+- Card 2 footer note: "Includes setup, configuration, and 1 handover session."
+- Bottom line: "Need to scope first? → AI Adoption Call (free, 30 min)"
+
+RO pricing:
+- Kicker: "Începe acum · Două puncte de intrare"
+- Title: "Sari peste call. *Începe azi.*"
+- Body: "Două intrări cu preț public. Plătești, te programezi, începi. Restul rămâne pe Discuția AI Adoption (gratuită)."
+- Card 1 footer: "Minim de cohortă aplicabil. Preț de volum la cerere."
+- Card 2 footer: "Include setup, configurare și 1 sesiune de handover."
+- Bottom: "Vrei să faci mai întâi scoping? → Discuție AI Adoption (gratuit, 30 min)"
+
+### Ordinea finală a homepage-ului
+
+Hero → Shuffle → Stats → Pattern → Premise → Audience → **Ladder** → **🆕 Pricing (2 carduri)** → Mechanism → Credibility → **🆕 Partners endorsement** → FinalCTA → FAQ
