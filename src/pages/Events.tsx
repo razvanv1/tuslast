@@ -4,14 +4,13 @@ import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerEvents from "@/assets/banner-events.webp";
 import Section from "@/components/Section";
-import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
+import { Link } from "@/components/LocalizedLink";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 
 interface FormatItem { num: string; title: string; meta: string; body: string; outcome: string; }
 interface InsideStep { time: string; title: string; body: string; }
-interface ProofItem { stat: string; label: string; }
 
 const Events = () => {
   const { t } = useTranslation("events");
@@ -20,7 +19,6 @@ const Events = () => {
   const formats = t("formats.items", { returnObjects: true }) as FormatItem[];
   const included = t("included.items", { returnObjects: true }) as string[];
   const insideSteps = t("inside.steps", { returnObjects: true }) as InsideStep[];
-  const proofItems = t("proof.items", { returnObjects: true }) as ProofItem[];
 
   return (
     <>
@@ -87,18 +85,6 @@ const Events = () => {
         </div>
       </Section>
 
-      <Section bordered={false}>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-8">{t("proof.kicker")}</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
-          {proofItems.map((p) => (
-            <div key={p.label} className="bg-background p-8 md:p-10">
-              <div className="font-display text-6xl md:text-7xl text-red leading-none mb-3">{p.stat}</div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-paper/70">{p.label}</div>
-            </div>
-          ))}
-        </div>
-      </Section>
-
       <Section variant="paper">
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("formats.kicker")}</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
@@ -162,9 +148,23 @@ const Events = () => {
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution={t("quote.attribution")}>
-          {t("quote.body")}
-        </Blockquote>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          <div className="md:col-span-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("funding.kicker")}</p>
+            <h2 className="font-display text-3xl md:text-4xl text-paper leading-[1.05] mb-4">
+              {t("funding.titleStart")} <em className="text-red">{t("funding.titleEm")}</em>
+            </h2>
+            <p className="text-paper/75 text-[15px] leading-relaxed max-w-2xl">{t("funding.body")}</p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <Link
+              to="/funding"
+              className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+            >
+              {t("funding.cta")}
+            </Link>
+          </div>
+        </div>
       </Section>
 
       <AIScoreCTA />
