@@ -6,11 +6,12 @@ import bannerFunding from "@/assets/banner-funding.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
-import AIScoreCTA from "@/components/AIScoreCTA";
+import { Link } from "@/components/LocalizedLink";
 import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
 
-interface Instrument { title: string; audience: string; body: string; tag: string; }
+interface Instrument { title: string; audience: string; body: string; coverage: string; tag: string; }
 interface Step { title: string; body: string; }
+interface BridgeStep { num: string; label: string; title: string; body: string; linkText?: string; linkTo?: string; }
 
 const Funding = () => {
   const { t } = useTranslation("funding");
@@ -20,6 +21,7 @@ const Funding = () => {
   const steps = t("process.steps", { returnObjects: true }) as Step[];
   const introParagraphs = t("intro.paragraphs", { returnObjects: true }) as string[];
   const resultParagraphs = t("result.paragraphs", { returnObjects: true }) as string[];
+  const bridgeSteps = t("bridge.steps", { returnObjects: true }) as BridgeStep[];
 
   return (
     <>
@@ -45,9 +47,41 @@ const Funding = () => {
         ctaText={t("hero.ctaText")}
         ctaTo="/assessment"
         secondaryText={t("hero.secondaryText")}
-        secondaryTo="/programmes"
+        secondaryTo="#instruments"
         note={t("hero.note")}
       />
+
+      <Section>
+        <SectionHeading
+          kicker={t("bridge.kicker")}
+          title={<>{t("bridge.titleStart")} <em className="text-red">{t("bridge.titleEm")}</em></>}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10 mt-8">
+          {bridgeSteps.map((s, idx) => {
+            const isGap = idx === 1;
+            return (
+              <article key={s.num} className="bg-background p-8 md:p-10 flex flex-col">
+                <div className="flex items-baseline gap-3 mb-5">
+                  <span className={`font-display text-5xl leading-none ${isGap ? "text-paper/40" : "text-red"}`}>{s.num}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/60">{s.label}</span>
+                </div>
+                <h3 className="font-display text-2xl text-paper leading-tight mb-4">{s.title}</h3>
+                <p className="text-paper/70 text-[15px] leading-relaxed flex-1">{s.body}</p>
+                {s.linkText && s.linkTo && (
+                  <div className="border-t border-paper/15 pt-4 mt-5">
+                    <Link
+                      to={s.linkTo}
+                      className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/80 hover:text-red transition-colors"
+                    >
+                      {s.linkText}
+                    </Link>
+                  </div>
+                )}
+              </article>
+            );
+          })}
+        </div>
+      </Section>
 
       <Section>
         <SectionHeading
@@ -63,7 +97,8 @@ const Funding = () => {
         </div>
       </Section>
 
-      <Section variant="paper">
+      <Section variant="paper" className="scroll-mt-20" >
+        <div id="instruments" />
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("instruments.kicker")}</p>
         <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95] mb-12 max-w-3xl">
           {t("instruments.titleStart")} <em className="text-red">{t("instruments.titleEm")}</em>
@@ -74,6 +109,9 @@ const Funding = () => {
               <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">{i.audience}</p>
               <h3 className="font-display text-2xl text-ink leading-tight mb-4">{i.title}</h3>
               <p className="text-ink/70 text-[15px] leading-relaxed flex-1 mb-5">{i.body}</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60 leading-relaxed mb-4">
+                <span className="text-red">Covers: </span>{i.coverage}
+              </p>
               <div className="border-t border-ink/15 pt-3">
                 <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60">{i.tag}</span>
               </div>
@@ -116,8 +154,6 @@ const Funding = () => {
           {t("quote.body")}
         </Blockquote>
       </Section>
-
-      <AIScoreCTA />
 
       <CTASection
         title={t("cta.title")}
