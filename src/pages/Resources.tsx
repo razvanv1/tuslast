@@ -64,7 +64,7 @@ const Resources = () => {
         subtitle="Articles, podcast episodes, studies, working notes, frameworks, and practical tools for teams dealing with opportunity overload, uneven AI adoption, execution drag, academy building, and the future of work."
         ctaText="Join The Unlearning Pill →"
         ctaTo="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
-        secondaryText="Free audit"
+        secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
       />
 
@@ -210,9 +210,9 @@ const Resources = () => {
       </Section>
 
       <CTASection
-        title="Start with the free audit."
-        subtitle="30 minutes. A structured conversation about where adoption is stalling. Written 1-page output within 24 hours."
-        ctaText="Free audit →"
+        title="Start with the AI Adoption Call."
+        subtitle="A free 30-minute call that scores your AI adoption maturity and gives you a ranked next-step roadmap. 1-page written summary within 24 hours."
+        ctaText="AI Adoption Call →"
         ctaTo="/assessment"
         note="Free · hello@unlearning.ro"
       />

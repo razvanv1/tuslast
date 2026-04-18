@@ -347,7 +347,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_self" ? "Loading…" : "Pay & enrol →"}
               </button>
-              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book the free audit</Link>
+              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/60 hover:text-red">Or book the AI Adoption Call</Link>
             </div>
           </article>
           <article className="border-2 border-red bg-red text-paper p-8 md:p-10 relative">
@@ -368,7 +368,7 @@ const Hermes = () => {
               >
                 {loadingKey === "hermes_full" ? "Loading…" : "Pay & secure your spot →"}
               </button>
-              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the free audit first</Link>
+              <Link to="/assessment" className="block text-center font-mono text-[10px] uppercase tracking-[0.2em] text-paper/85 hover:text-paper underline">Or book the AI Adoption Call first</Link>
             </div>
           </article>
         </div>
@@ -403,7 +403,7 @@ const Hermes = () => {
         subtitle="Pay and secure your spot, or book the free 30-minute audit first if you want to talk it through."
         ctaText="Buy Hermes · from €497 →"
         ctaTo="#pricing"
-        secondaryText="Free audit"
+        secondaryText="AI Adoption Call"
         secondaryTo="/assessment"
         note="No pitch deck · hello@unlearning.ro"
       />

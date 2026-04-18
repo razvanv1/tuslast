@@ -8,7 +8,7 @@ import cardGears from "@/assets/card-gears.webp";
 import cardKey from "@/assets/card-key.webp";
 
 const cards = [
-  { image: cardTool, label: "Free audit", caption: "Free · 30 min", rotate: -14, top: "top-2", left: "left-[2%]" },
+  { image: cardTool, label: "AI Adoption Call", caption: "Free · 30 min · Score", rotate: -14, top: "top-2", left: "left-[2%]" },
   { image: cardWorkers, label: "AI for Work", caption: "Modular · cohort", rotate: -7, top: "top-12", left: "left-[16%]" },
   { image: cardGears, label: "Events & Keynotes", caption: "90 min – 2 days", rotate: -2, top: "top-0", left: "left-[31%]" },
   { image: cardBrain, label: "Funding Structuring", caption: "MDF · grants", rotate: 4, top: "top-16", left: "left-[46%]" },

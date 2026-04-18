@@ -60,7 +60,7 @@ const Events = () => {
         bannerAlt="Speaker on stage in front of large audience"
         title="They leave with something they built."
         subtitle="Workshops, hackathons, and keynotes for companies that need fast proof, internal momentum, or a way to show leadership what AI actually looks like in practice."
-        ctaText="Free audit →"
+        ctaText="AI Adoption Call →"
         ctaTo="/assessment"
         secondaryText="See all programmes"
         secondaryTo="/programmes"
@@ -146,7 +146,7 @@ const Events = () => {
       <CTASection
         title="Tell me about your event."
         subtitle="A 30-minute call to confirm format, audience, and scope. Specific proposal within 48 hours. Built around the people in the room, not the previous event we ran."
-        ctaText="Free audit →"
+        ctaText="AI Adoption Call →"
         ctaTo="/assessment"
         note="Free · No commitment · Proposal within 48 hours"
       />

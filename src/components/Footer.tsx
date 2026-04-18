@@ -11,7 +11,7 @@ const programmes = [
 const masthead: Array<{ label: string; to: string; external?: boolean }> = [
   { label: "About", to: "/about" },
   { label: "Resources", to: "/resources" },
-  { label: "Free audit", to: "/assessment" },
+  { label: "AI Adoption Call", to: "/assessment" },
 ];
 
 const legal = [

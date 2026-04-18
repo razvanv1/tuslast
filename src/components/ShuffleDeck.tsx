@@ -10,7 +10,7 @@ const DECK = [
   { image: cardWorkers, label: "AI for Non-Technical People", caption: "Modular · cohort", href: "/programmes/ai-for-non-technical-people", external: false },
   { image: cardEvents, label: "Events & Keynotes", caption: "90 min – 2 days", href: "/events", external: false },
   { image: cardFunding, label: "MDF, Funding & Grants", caption: "Vendor MDF · EU grants", href: "/funding", external: false },
-  { image: cardAssessment, label: "Free audit", caption: "Free · 30 min with Răzvan", href: "/assessment", external: false },
+  { image: cardAssessment, label: "AI Adoption Call", caption: "Free · 30 min · Maturity score", href: "/assessment", external: false },
 ];
 
 interface DeckCardProps {

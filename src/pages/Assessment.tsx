@@ -5,59 +5,59 @@ import bannerAssessment from "@/assets/banner-assessment.webp";
 import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import { Kicker, NumberedStep, SectionHeading, Sidebar } from "@/components/Editorial";
-import { BOOKING_URL, CALENDAR_URL } from "@/lib/booking";
+import { CALENDAR_URL } from "@/lib/booking";
 
 const personas = [
-  { num: "01", tag: "COO / Operations", title: "Low usage after rollout.", desc: "You want to know exactly where the process blockage is before spending more on training or tooling." },
-  { num: "02", tag: "HR / L&D Lead", title: "You need a credible internal programme.", desc: "You need to understand what demonstrable AI literacy looks like in your organisation, and which teams need it most urgently." },
-  { num: "03", tag: "Business unit lead", title: "Your team uses AI. You don't control how.", desc: "You need a structured map of who uses what, where the gaps create real risk, and which workflows would benefit first from redesign." },
+  { num: "01", tag: "COO / Operations", title: "You need a number to justify investment.", desc: "The maturity score gives you a defensible baseline to take to the board, and a ranked roadmap of where the next euro should go." },
+  { num: "02", tag: "HR / L&D Lead", title: "You need to know which teams to train first.", desc: "The gap analysis maps maturity across dimensions, so your training programme targets the actual blockers, not generic AI literacy." },
+  { num: "03", tag: "Business unit lead", title: "You need a practical first move, not a strategy deck.", desc: "The roadmap names the 1–3 workflows where redesigning around AI would produce a visible result inside one quarter." },
 ];
 
 const Assessment = () => {
-  useEffect(() => { document.title = "Free audit, The Unlearning School"; }, []);
+  useEffect(() => { document.title = "AI Adoption Call, The Unlearning School"; }, []);
 
   return (
     <>
       <SEO
-        title="Free audit — 30-minute working call with Răzvan"
-        description="Free 30-minute working call that maps where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
-        keywords="free AI audit, AI adoption assessment, AI gap analysis, free AI consultation, Copilot adoption audit, EU AI Act readiness"
+        title="AI Adoption Call — free 30-minute maturity assessment"
+        description="A free 30-minute call that measures how mature your organisation is for AI adoption. You receive a maturity score, a gap analysis, and a practical next-step roadmap within 24 hours."
+        keywords="AI adoption call, AI maturity assessment, AI readiness score, AI gap analysis, AI adoption roadmap, EU AI Act readiness, free AI consultation"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          name: "Free audit",
-          description: "Book a free 30-minute working call.",
+          name: "AI Adoption Call",
+          description: "Book a free 30-minute AI maturity assessment call.",
           url: "https://tuslast.lovable.app/assessment",
           provider: { "@type": "Organization", name: "The Unlearning School" },
         }}
       />
       <PageHero
-        tag="Free audit"
+        tag="AI Adoption Call"
         banner={bannerAssessment}
-        bannerAlt="Team filling out assessment forms around a table"
-        title="Free audit, 30 minutes."
-        subtitle="A structured 30-minute conversation that identifies exactly where AI adoption is stalling in your organisation. Written 1-page summary within 24 hours. No proposal attached."
-        ctaText="Free audit →"
+        bannerAlt="Team reviewing an AI maturity assessment around a table"
+        title="AI Adoption Call, 30 minutes."
+        subtitle="A free 30-minute call that measures how mature your organisation is for AI adoption. We ask a short set of structured questions and send back a maturity score, a gap analysis, and a practical next-step roadmap — within 24 hours."
+        ctaText="Book the call →"
         ctaTo="#book"
-        note="No pitch · No commitment · No pricing document"
+        note="Free · 30 min · Maturity score in 24h"
       />
 
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-          <Sidebar byline="The 30 minutes" read="3 min" filed="Free audit · Method" />
+          <Sidebar byline="The 30 minutes" read="3 min" filed="AI Adoption Call · Method" />
           <div className="md:col-span-9">
             <SectionHeading
               kicker="What the call covers"
               title={<>Three questions, <em className="text-red">in order.</em></>}
             />
-            <NumberedStep num={1} title="What AI tools are currently deployed">
-              Which tools, which teams, whether deployment is recent or established. Establishes the baseline, what is available versus what is actually being used in daily work.
+            <NumberedStep num={1} title="Where you are today">
+              A short structured conversation across the dimensions that determine AI maturity: tools deployed, workflows touched, governance in place, and team skills. Establishes the baseline.
             </NumberedStep>
-            <NumberedStep num={2} title="Where usage is measurably low, or unmeasurable">
-              The gap between tool access and actual workflow change. Specific processes, not general impressions. This is usually where the most actionable information surfaces.
+            <NumberedStep num={2} title="Where the gaps are">
+              We score each dimension and surface the specific gaps holding adoption back. Not a vague "you need more training" — concrete, named blockers per area.
             </NumberedStep>
-            <NumberedStep num={3} title="The highest-priority process for redesign">
-              A concrete identification of the one process where a one-day sprint would produce a visible result. A specific, named workflow, not a general capability recommendation.
+            <NumberedStep num={3} title="What to do next">
+              A practical, ranked roadmap of the first 1–3 moves: which workflow to redesign first, which team to upskill, which governance gap to close. Sequenced, not theoretical.
             </NumberedStep>
           </div>
         </div>
@@ -78,9 +78,9 @@ const Assessment = () => {
             </p>
             <ul className="space-y-3 mb-8 border-t-2 border-ink/15">
               {[
-                "Where the adoption gap is largest in your organisation",
-                "The 3 highest-priority processes for AI redesign, ranked",
-                "A brief note on which programme format (if any) fits the problem identified",
+                "A maturity score for your organisation across the key AI adoption dimensions",
+                "A gap analysis: where the score is lowest, and why it matters operationally",
+                "A practical next-step roadmap: 1–3 ranked moves to start with, in order",
               ].map((item, i) => (
                 <li key={i} className="flex gap-4 py-3 border-b border-ink/15 text-ink text-[15px]">
                   <span className="font-mono text-red">0{i + 1}</span>
@@ -89,7 +89,7 @@ const Assessment = () => {
               ))}
             </ul>
             <p className="font-display italic text-xl text-ink/75 leading-snug">
-              This document is written to be shared inside your organisation. It is not a proposal. It contains no pricing. <span className="text-red not-italic">Many clients use it to align operations, HR, and IT leads before any internal budget discussion starts.</span>
+              This document is written to be shared inside your organisation. It is not a proposal. It contains no pricing. <span className="text-red not-italic">Many clients use the maturity score and roadmap to align operations, HR, and IT leads before any internal budget discussion starts.</span>
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Assessment = () => {
       <Section>
         <SectionHeading
           kicker="Who books this"
-          title={<>Three readers. <em className="text-red">Three diagnoses.</em></>}
+          title={<>Three readers. <em className="text-red">Three uses for the score.</em></>}
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-paper/10">
           {personas.map((p) => (
@@ -123,7 +123,7 @@ const Assessment = () => {
             Pick a time. <em className="text-red">We'll do the rest.</em>
           </h2>
           <p className="font-display italic text-lg md:text-xl text-ink/65 mb-10 max-w-2xl">
-            Select a time below. You will receive 3 short pre-call questions by email to keep the 30 minutes focused on your specific situation rather than gathering context.
+            Select a time below. You will receive 3 short pre-call questions by email so the 30 minutes go straight to scoring your situation, not gathering context.
           </p>
 
           <div className="border-2 border-ink/15 bg-paper p-10 md:p-14 text-center">
@@ -137,33 +137,36 @@ const Assessment = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-ink transition-colors"
             >
-              Free audit · Open calendar →
+              AI Adoption Call · Open calendar →
             </a>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50 mt-6 max-w-md mx-auto">
+              Soon this will run as a self-serve tool. Until it ships, we run the assessment live with you on a call.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
-            <p><strong className="text-ink">Before the call:</strong> 3 short questions by email. 5 minutes to answer. The session goes straight to your situation, not to gathering context.</p>
-            <p><strong className="text-ink">After the call:</strong> 1-page written summary within 24 hours. No follow-up pitch unless you request one.</p>
+            <p><strong className="text-ink">Before the call:</strong> 3 short questions by email. 5 minutes to answer. The session goes straight to scoring, not to gathering context.</p>
+            <p><strong className="text-ink">After the call:</strong> 1-page written summary within 24 hours — maturity score, gap analysis, next-step roadmap. No follow-up pitch unless you request one.</p>
           </div>
 
           <p className="text-sm text-ink/60 mt-8">
             Or email:{" "}
             <a
-              href="mailto:hello@unlearning.ro?subject=Free%20audit"
+              href="mailto:hello@unlearning.ro?subject=AI%20Adoption%20Call"
               className="text-red font-medium hover:underline"
             >
               hello@unlearning.ro
             </a>
             <span className="block font-mono text-[10px] uppercase tracking-[0.2em] text-ink/40 mt-2">
-              Subject: Free audit · Reply within 1 business day
+              Subject: AI Adoption Call · Reply within 1 business day
             </span>
           </p>
         </div>
       </Section>
 
       <Section bordered={false}>
-        <Blockquote attribution="Standard practice, every audit">
-          No proposal is attached to this call. If there is no problem worth solving, we say so. If there is, we describe what fixing it would look like. You decide what to do next.
+        <Blockquote attribution="Standard practice, every AI Adoption Call">
+          No proposal is attached to this call. If the score shows there is no problem worth solving, we say so. If there is, the roadmap describes what fixing it would look like. You decide what to do next.
         </Blockquote>
       </Section>
     </>
