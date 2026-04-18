@@ -8,11 +8,19 @@
   "documentTitle": "Agentul Hermes, The Unlearning School",
   "hero": {
     "tag": "Agentul Hermes · Soluție agentică internă",
+    "bannerAlt": "Hermes Agent — agent AI open-source pentru operațiuni",
     "title": "Nu mai prompt-ui. Începe să delegi.",
     "subtitle": "ChatGPT răspunde la întrebări. Hermes trimite emailul, programează întâlnirea, cercetează prospectul, monitorizează piața și raportează pe Telegram. În timp ce tu ești într-un call.",
     "ctaText": "Cumpără Agentul →",
     "secondaryText": "Sună acum",
     "note": "Open source · MIT · Construit de Nous Research"
+  },
+  "eventsBridge": {
+    "kicker": "Găzduim evenimente Hermes",
+    "titleStart": "Vezi Hermes Agent",
+    "titleEm": "live la evenimentele noastre.",
+    "body": "Aducem Hermes Agent în evenimentele noastre publice — gratuite, practice, fără slide-uri. Vezi un build live, pune întrebări și pleci cu un prototip funcțional și credits gratuite.",
+    "cta": "Vezi evenimentele live →"
   },
   "terminal": {
     "title": "hermes · gateway telegram · activ",

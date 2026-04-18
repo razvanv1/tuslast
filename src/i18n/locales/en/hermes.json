@@ -8,11 +8,19 @@
   "documentTitle": "Hermes Agent, The Unlearning School",
   "hero": {
     "tag": "Hermes Agent · Internal Agentic Solution",
+    "bannerAlt": "Hermes Agent — open-source AI operations agent",
     "title": "Stop prompting. Start delegating.",
     "subtitle": "ChatGPT answers questions. Hermes sends the email, books the meeting, researches the prospect, monitors the market, and reports back on Telegram. While you are in a call.",
     "ctaText": "Buy Agent →",
     "secondaryText": "Call now",
     "note": "Open source · MIT · Built by Nous Research"
+  },
+  "eventsBridge": {
+    "kicker": "We host Hermes events",
+    "titleStart": "See Hermes Agent",
+    "titleEm": "live at our events.",
+    "body": "We bring Hermes Agent into our public events — free, practical, no slides. Watch a live build, ask questions, and walk out with a working prototype and free credits.",
+    "cta": "See live events →"
   },
   "terminal": {
     "title": "hermes · telegram gateway · running",

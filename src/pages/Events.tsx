@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import bannerEvents from "@/assets/banner-events.webp";
+import partnerLovable from "@/assets/partner-lovable.png";
+import partnerHermes from "@/assets/partner-hermes.png";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
@@ -12,6 +14,7 @@ import { Kicker, SectionHeading } from "@/components/Editorial";
 
 interface FormatItem { num: string; title: string; meta: string; body: string; outcome: string; }
 interface InsideStep { time: string; title: string; body: string; }
+interface Perk { num: string; title: string; body: string; }
 
 const Events = () => {
   const { t } = useTranslation("events");
@@ -21,6 +24,7 @@ const Events = () => {
   const included = t("included.items", { returnObjects: true }) as string[];
   const insideSteps = t("inside.steps", { returnObjects: true }) as InsideStep[];
   const faqItems = t("faq.items", { returnObjects: true }) as FAQItem[];
+  const perks = t("partners.perks", { returnObjects: true }) as Perk[];
 
   return (
     <>
@@ -48,6 +52,43 @@ const Events = () => {
         secondaryTo="#inside"
         note={t("hero.note")}
       />
+
+      <Section decor="center-burst">
+        <div id="partners" className="scroll-mt-20" />
+        <div className="text-center mb-12">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{t("partners.kicker")}</p>
+          <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] max-w-3xl mx-auto">
+            {t("partners.titleStart")} <em className="text-red">{t("partners.titleEm")}</em>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/15 border border-paper/15 mb-12">
+          <div className="bg-paper p-10 md:p-12 flex flex-col items-center justify-center text-center">
+            <img src={partnerLovable} alt="Lovable" width={240} height={60} loading="eager" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 max-w-xs">{t("partners.lovable.role")}</p>
+          </div>
+          <div className="bg-paper p-10 md:p-12 flex flex-col items-center justify-center text-center">
+            <img src={partnerHermes} alt="Hermes Agent" width={240} height={60} loading="eager" className="h-10 md:h-12 w-auto object-contain mb-5" />
+            <Link to="/hermes" className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/70 hover:text-red max-w-xs">
+              {t("partners.hermes.role")}
+            </Link>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-paper/15">
+          {perks.map((p) => (
+            <div key={p.num} className="bg-background p-6 md:p-8 border border-paper/10">
+              <span className="font-display text-4xl text-red leading-none">{p.num}</span>
+              <h3 className="font-display text-xl text-paper leading-tight mt-4 mb-2">{p.title}</h3>
+              <p className="text-paper/70 text-[14px] leading-relaxed">{p.body}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="font-display italic text-lg md:text-xl text-paper/75 leading-snug max-w-3xl mx-auto text-center mt-10">
+          {t("partners.subline")}
+        </p>
+      </Section>
 
       <Section>
         <SectionHeading
