@@ -9,8 +9,8 @@ type DecorVariant =
 interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  /** dark = base grey; darker = deeper recessed grey; graphite = lighter cool grey with sheen; paper = inverted cream */
-  variant?: "dark" | "darker" | "graphite" | "paper";
+  /** dark = matte charcoal; darker = matte deep; graphite = cool dark grey; slate = neutral mid-dark; paper = inverted cream */
+  variant?: "dark" | "darker" | "graphite" | "slate" | "paper";
   bordered?: boolean;
   /** Bauhaus decorative backdrop. "none" disables. Defaults rotate by variant. */
   decor?: DecorVariant | "none";
@@ -30,6 +30,8 @@ const Section = ({ children, className, variant = "dark", bordered = true, decor
       ? "bg-section-darker text-paper"
       : variant === "graphite"
       ? "bg-section-graphite text-paper"
+      : variant === "slate"
+      ? "bg-section-slate text-paper"
       : "bg-background text-paper";
 
   const resolvedDecor: DecorVariant | "none" =
