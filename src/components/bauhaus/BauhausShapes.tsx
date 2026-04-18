@@ -45,9 +45,9 @@ export const CircleStack = ({ className, opacity = 0.9 }: ShapeProps) => (
 
 export const TriangleGrid = ({ className, opacity = 0.85 }: ShapeProps) => (
   <svg viewBox="0 0 120 80" className={baseSvg(className)} style={{ opacity }} aria-hidden="true" role="presentation">
-    <polygon points="10,70 30,15 50,70" fill="hsl(var(--bau-red))" filter={shine} />
-    <polygon points="45,70 65,15 85,70" fill="hsl(var(--bau-yellow))" filter={shine} />
-    <polygon points="80,70 100,15 120,70" fill="hsl(var(--bau-blue))" filter={shine} />
+    <polygon points="10,70 30,15 50,70" fill="hsl(var(--bau-green))" filter={shine} />
+    <polygon points="45,70 65,15 85,70" fill="hsl(var(--paper))" filter={shine} />
+    <polygon points="80,70 100,15 120,70" fill="hsl(var(--bau-orange))" filter={shine} />
   </svg>
 );
 
