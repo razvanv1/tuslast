@@ -399,6 +399,8 @@ const Hermes = () => {
         <FAQAccordion items={faqs} grouped />
       </Section>
 
+      <AIScoreCTA />
+
       <CTASection
         title="One agent. Built around your workflows."
         subtitle="Pay and secure your spot, or book the free 30-minute audit first if you want to talk it through."
