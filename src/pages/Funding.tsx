@@ -119,7 +119,7 @@ const Funding = () => {
               </div>
               <Link
                 to="/assessment"
-                className="inline-flex items-center font-mono text-[10px] uppercase tracking-[0.25em] text-red hover:text-ink transition-colors border-t border-ink/15 pt-4 w-full"
+                className="mt-auto inline-flex items-center justify-center gap-2 bg-ink text-paper hover:bg-red font-mono text-[11px] uppercase tracking-[0.2em] px-5 py-3 transition-colors w-full"
               >
                 {t("instruments.cardCta")}
               </Link>
