@@ -28,9 +28,23 @@ import roMisc from "./locales/ro/misc.json";
 
 const STORAGE_KEY = "tus-lang";
 
+const detectBrowserLang = (): "en" | "ro" => {
+  if (typeof navigator === "undefined") return "en";
+  const langs = [
+    ...(navigator.languages ?? []),
+    navigator.language,
+  ].filter(Boolean);
+  for (const l of langs) {
+    const code = l.toLowerCase().split("-")[0];
+    if (code === "ro") return "ro";
+    if (code === "en") return "en";
+  }
+  return "en";
+};
+
 const stored =
   typeof window !== "undefined" ? window.localStorage.getItem(STORAGE_KEY) : null;
-const initial = stored === "ro" || stored === "en" ? stored : "en";
+const initial = stored === "ro" || stored === "en" ? stored : detectBrowserLang();
 
 void i18n.use(initReactI18next).init({
   resources: {
