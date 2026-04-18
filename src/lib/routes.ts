@@ -30,7 +30,7 @@ export const getAlternates = (pathname: string): { en: string; ro: string; curre
   if (match) {
     return { en: `${SITE_URL}${match.en}`, ro: `${SITE_URL}${match.ro}`, current: isRo ? "ro" : "en" };
   }
-  // Unknown route — mirror it
+  // Unknown route - mirror it
   const ro = enPath === "/" ? "/ro" : `/ro${enPath}`;
   return { en: `${SITE_URL}${enPath}`, ro: `${SITE_URL}${ro}`, current: isRo ? "ro" : "en" };
 };

@@ -22,7 +22,7 @@ export const ProseParagraph = ({
   </p>
 );
 
-/** Magazine "byline / kicker" label — red filled badge with paper text */
+/** Magazine "byline / kicker" label - red filled badge with paper text */
 export const Kicker = ({
   children,
   variant = "red",

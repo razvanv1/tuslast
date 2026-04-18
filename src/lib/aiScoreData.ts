@@ -1,4 +1,4 @@
-// AI Adoption Score — single source of truth for keys, weights, and rank thresholds.
+// AI Adoption Score - single source of truth for keys, weights, and rank thresholds.
 // All user-facing strings (questions, options, category names, ranks, priority actions)
 // live in src/i18n/locales/{en,ro}/score.json and are pulled via useTranslation in the page.
 
@@ -45,7 +45,7 @@ export const rankToneClass: Record<RankKey, string> = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Legacy English defaults — kept so the page renders before full i18n wiring.
+// Legacy English defaults - kept so the page renders before full i18n wiring.
 // TODO: replace with t("score:...") lookups when refactoring AIAdoptionScore.tsx.
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -112,7 +112,7 @@ export const priorityActions: Record<CategoryKey, string[]> = {
   adoption: [
     "Run a structured cohort programme, not a one-off webinar.",
     "Create a weekly 30-min show-and-tell to surface real workflows.",
-    "Make it safe to admit AI usage — leadership uses it openly first.",
+    "Make it safe to admit AI usage - leadership uses it openly first.",
   ],
   impact: [
     "Pick 3 use cases and instrument time saved per week.",

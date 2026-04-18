@@ -29,7 +29,7 @@ const Resources = () => {
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "The Unlearning Pill — Resources",
+          name: "The Unlearning Pill - Resources",
           description: t("seo.description"),
           inLanguage: i18n.language?.startsWith("ro") ? "ro" : "en",
           isPartOf: { "@type": "WebSite", name: "The Unlearning School", url: "https://tuslast.lovable.app/" },

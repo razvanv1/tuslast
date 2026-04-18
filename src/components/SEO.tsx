@@ -45,7 +45,7 @@ const SEO = ({
   const { en: enUrl, ro: roUrl, current } = getAlternates(pathname);
   const lang = current;
   const url = current === "ro" ? roUrl : enUrl;
-  const fullTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
+  const fullTitle = title.includes(SITE_NAME) ? title : `${title} - ${SITE_NAME}`;
 
   const extraLd: Record<string, unknown>[] = [];
   if (faq && faq.length) {

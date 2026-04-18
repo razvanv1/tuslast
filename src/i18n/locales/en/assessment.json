@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "AI Adoption Call — free 30-minute maturity assessment",
+    "title": "AI Adoption Call - free 30-minute maturity assessment",
     "description": "A free 30-minute call that measures how mature your organisation is for AI adoption. You receive a maturity score, a gap analysis, and a practical next-step roadmap within 24 hours.",
     "keywords": "AI adoption call, AI maturity assessment, AI readiness score, AI gap analysis, AI adoption roadmap, EU AI Act readiness, free AI consultation",
     "schemaName": "AI Adoption Call",
@@ -11,7 +11,7 @@
     "tag": "AI Adoption Call",
     "bannerAlt": "Team reviewing an AI maturity assessment around a table",
     "title": "AI Adoption Call, 30 minutes.",
-    "subtitle": "A free 30-minute call that measures how mature your organisation is for AI adoption. We ask a short set of structured questions and send back a maturity score, a gap analysis, and a practical next-step roadmap — within 24 hours.",
+    "subtitle": "A free 30-minute call that measures how mature your organisation is for AI adoption. We ask a short set of structured questions and send back a maturity score, a gap analysis, and a practical next-step roadmap - within 24 hours.",
     "ctaText": "Book the call →",
     "note": "Free · 30 min · Maturity score in 24h"
   },
@@ -23,7 +23,7 @@
     "step1Title": "Where you are today",
     "step1Body": "A short structured conversation across the dimensions that determine AI maturity: tools deployed, workflows touched, governance in place, and team skills. Establishes the baseline.",
     "step2Title": "Where the gaps are",
-    "step2Body": "We score each dimension and surface the specific gaps holding adoption back. Not a vague \"you need more training\" — concrete, named blockers per area.",
+    "step2Body": "We score each dimension and surface the specific gaps holding adoption back. Not a vague \"you need more training\" - concrete, named blockers per area.",
     "step3Title": "What to do next",
     "step3Body": "A practical, ranked roadmap of the first 1–3 moves: which workflow to redesign first, which team to upskill, which governance gap to close. Sequenced, not theoretical."
   },
@@ -63,7 +63,7 @@
     "before": "Before the call:",
     "beforeBody": " 3 short questions by email. 5 minutes to answer. The session goes straight to scoring, not to gathering context.",
     "after": "After the call:",
-    "afterBody": " 1-page written summary within 24 hours — maturity score, gap analysis, next-step roadmap. No follow-up pitch unless you request one.",
+    "afterBody": " 1-page written summary within 24 hours - maturity score, gap analysis, next-step roadmap. No follow-up pitch unless you request one.",
     "emailLine": "Or email: ",
     "emailSubject": "Subject: AI Adoption Call · Reply within 1 business day"
   },

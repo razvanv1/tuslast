@@ -33,7 +33,7 @@ const TermsAndConditions = () => {
               <p className="text-ink/75 text-[15px] leading-relaxed">{t(`terms.sections.${k}.body`)}</p>
             </div>
           ))}
-          {/* s4 — bullet list */}
+          {/* s4 - bullet list */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s4.h")}</h2>
             <ul className="text-ink/75 text-[15px] leading-relaxed space-y-2 list-disc pl-6">
@@ -47,7 +47,7 @@ const TermsAndConditions = () => {
               <p className="text-ink/75 text-[15px] leading-relaxed">{t(`terms.sections.${k}.body`)}</p>
             </div>
           ))}
-          {/* s7 — privacy policy link inline */}
+          {/* s7 - privacy policy link inline */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s7.h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed">

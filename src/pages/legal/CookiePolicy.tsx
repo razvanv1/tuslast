@@ -33,7 +33,7 @@ const CookiePolicy = () => {
             {t("cookies.intro")}
           </p>
 
-          {/* s1 — s4 plain sections */}
+          {/* s1 - s4 plain sections */}
           {(["s1", "s2", "s3", "s4"] as const).map((k) => (
             <div key={k}>
               <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t(`cookies.${k}.h`)}</h2>
@@ -41,7 +41,7 @@ const CookiePolicy = () => {
             </div>
           ))}
 
-          {/* s5 — types of cookies */}
+          {/* s5 - types of cookies */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s5h")}</h2>
             <div className="space-y-4">
@@ -54,7 +54,7 @@ const CookiePolicy = () => {
             </div>
           </div>
 
-          {/* s6 — services placed */}
+          {/* s6 - services placed */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s6h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed mb-5">{t("cookies.s6intro")}</p>
@@ -71,19 +71,19 @@ const CookiePolicy = () => {
             </div>
           </div>
 
-          {/* s7 — consent */}
+          {/* s7 - consent */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s7.h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed">{t("cookies.s7.body")}</p>
           </div>
 
-          {/* s8 — managing cookies */}
+          {/* s8 - managing cookies */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s8.h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed">{t("cookies.s8.body")}</p>
           </div>
 
-          {/* s9 — GDPR rights */}
+          {/* s9 - GDPR rights */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s9h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed mb-4">{t("cookies.s9intro")}</p>
@@ -93,7 +93,7 @@ const CookiePolicy = () => {
             <p className="text-ink/75 text-[15px] leading-relaxed">{t("cookies.s9outro")}</p>
           </div>
 
-          {/* s10 — contact */}
+          {/* s10 - contact */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("cookies.s10h")}</h2>
             <p className="text-ink/75 text-[15px] leading-relaxed mb-4">{t("cookies.s10intro")}</p>

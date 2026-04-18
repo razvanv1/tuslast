@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "AI Adoption Score — Free 2-minute AI maturity test",
+    "title": "AI Adoption Score - Free 2-minute AI maturity test",
     "description": "Measure your team's AI maturity in 2 minutes. 10 weighted questions across strategy, tools, adoption and impact. Instant score, gap analysis, and a ranked next-step roadmap.",
     "keywords": "AI maturity assessment, AI adoption score, AI readiness test, AI maturity model, free AI audit, EU AI Act readiness",
     "docTitle": "AI Adoption Score, The Unlearning School"
@@ -51,9 +51,9 @@
     "nextBody": "Walk through your results live with us, or jump straight into the cohort built for non-technical teams.",
     "bookCall": "Book a free call to discuss results →",
     "seeCohort": "See the AI for Work cohort →",
-    "savedNote": "Automated email reports are coming soon — for now, save this page or screenshot your score. If you want to discuss the results, book a free call below.",
+    "savedNote": "Automated email reports are coming soon - for now, save this page or screenshot your score. If you want to discuss the results, book a free call below.",
     "share": "✉ Share score with a colleague",
-    "shareSubject": "My AI Adoption Score: {{score}}/100 — {{rank}}",
+    "shareSubject": "My AI Adoption Score: {{score}}/100 - {{rank}}",
     "shareBody": "I just took the AI Adoption Score from The Unlearning School and got {{score}}/100 ({{rank}}).\n\nTake yours here (2 minutes): https://tuslast.lovable.app/ai-adoption-score",
     "retake": "↺ Retake assessment"
   },
@@ -115,7 +115,7 @@
     {
       "text": "Do employees have access to approved AI tools?",
       "options": [
-        "No approved tools — people use whatever they find",
+        "No approved tools - people use whatever they find",
         "Some tools available but no clear guidance",
         "Approved toolset exists, most people know about it",
         "Clear approved toolkit with onboarding for each tool"
@@ -124,7 +124,7 @@
     {
       "text": "Are AI tools integrated into daily workflows?",
       "options": [
-        "No — AI sits alongside regular tools, unused",
+        "No - AI sits alongside regular tools, unused",
         "Some individuals have integrated AI",
         "Several teams have AI in their workflows",
         "AI is embedded in core processes across the organization"
@@ -134,7 +134,7 @@
       "text": "Are there clear guidelines on which AI tool to use for which task?",
       "options": [
         "No guidelines",
-        "Informal knowledge — \"ask someone who knows\"",
+        "Informal knowledge - \"ask someone who knows\"",
         "Some documentation exists",
         "Clear decision framework documented and shared"
       ]
@@ -185,7 +185,7 @@
     "tools": [
       "Define default AI tools for the org",
       "Document where AI is permitted vs forbidden",
-      "Simplify access — single sign-on, bookmarks"
+      "Simplify access - single sign-on, bookmarks"
     ],
     "adoption": [
       "Run a cohort workshop with 10 people",

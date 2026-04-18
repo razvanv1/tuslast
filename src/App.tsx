@@ -45,7 +45,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Suspense fallback={null}>
         <Routes location={location} key={location.pathname}>
-          {/* EN — canonical, no prefix */}
+          {/* EN - canonical, no prefix */}
           <Route path="/" element={wrap("en", <Index />)} />
           <Route path="/index" element={<Navigate to="/" replace />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
@@ -68,7 +68,7 @@ const AnimatedRoutes = () => {
           <Route path="/payment-success" element={wrap("en", <PaymentSuccess />)} />
           <Route path="/payment-canceled" element={wrap("en", <PaymentCanceled />)} />
 
-          {/* RO — mirrored under /ro/ */}
+          {/* RO - mirrored under /ro/ */}
           <Route path="/ro" element={wrap("ro", <Index />)} />
           <Route path="/ro/programmes" element={<Navigate to="/ro/programmes/ai-for-non-technical-people" replace />} />
           <Route path="/ro/programmes/ai-for-non-technical-people" element={wrap("ro", <AIForNonTechnical />)} />
