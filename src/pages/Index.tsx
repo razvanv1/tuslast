@@ -132,7 +132,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* AI ADOPTION SCORE — lead magnet */}
+      {/* AI ADOPTION SCORE — lead magnet, top placement right after hero */}
       <AIScoreCTA />
 
       {/* STATS strip */}
