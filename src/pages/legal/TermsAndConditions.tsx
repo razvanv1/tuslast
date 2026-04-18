@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
+import { Link } from "@/components/LocalizedLink";
 
 const TermsAndConditions = () => {
   const { t } = useTranslation("legal");
@@ -9,7 +10,9 @@ const TermsAndConditions = () => {
   }, [t]);
 
   const s4Items = t("terms.sections.s4.items", { returnObjects: true }) as string[];
-  const simpleKeys = ["s1", "s2", "s3", "s5", "s6", "s7", "s8", "s9", "s10"] as const;
+  // s7 has a Privacy Policy link in the middle; render it manually.
+  // All other sections render as plain {h, body}.
+  const plainKeys = ["s1", "s2", "s3", "s5", "s6", "s8", "s9", "s10"] as const;
 
   return (
     <>
@@ -23,25 +26,40 @@ const TermsAndConditions = () => {
       </section>
       <section className="bg-paper text-ink">
         <div className="max-w-3xl mx-auto px-6 md:px-10 py-16 md:py-24 space-y-10">
-          <div>
-            <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s1.h")}</h2>
-            <p className="text-ink/75 text-[15px] leading-relaxed">{t("terms.sections.s1.body")}</p>
-          </div>
-          <div>
-            <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s2.h")}</h2>
-            <p className="text-ink/75 text-[15px] leading-relaxed">{t("terms.sections.s2.body")}</p>
-          </div>
-          <div>
-            <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s3.h")}</h2>
-            <p className="text-ink/75 text-[15px] leading-relaxed">{t("terms.sections.s3.body")}</p>
-          </div>
+          {/* s1, s2, s3 */}
+          {(["s1", "s2", "s3"] as const).map((k) => (
+            <div key={k}>
+              <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t(`terms.sections.${k}.h`)}</h2>
+              <p className="text-ink/75 text-[15px] leading-relaxed">{t(`terms.sections.${k}.body`)}</p>
+            </div>
+          ))}
+          {/* s4 — bullet list */}
           <div>
             <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s4.h")}</h2>
             <ul className="text-ink/75 text-[15px] leading-relaxed space-y-2 list-disc pl-6">
               {s4Items.map((i) => <li key={i}>{i}</li>)}
             </ul>
           </div>
-          {simpleKeys.slice(3).map((k) => (
+          {/* s5, s6 */}
+          {(["s5", "s6"] as const).map((k) => (
+            <div key={k}>
+              <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t(`terms.sections.${k}.h`)}</h2>
+              <p className="text-ink/75 text-[15px] leading-relaxed">{t(`terms.sections.${k}.body`)}</p>
+            </div>
+          ))}
+          {/* s7 — privacy policy link inline */}
+          <div>
+            <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t("terms.sections.s7.h")}</h2>
+            <p className="text-ink/75 text-[15px] leading-relaxed">
+              {t("terms.sections.s7.bodyPre")}
+              <Link to="/privacy-policy" className="text-red hover:underline">
+                {t("terms.sections.s7.linkText")}
+              </Link>
+              {t("terms.sections.s7.bodyPost")}
+            </p>
+          </div>
+          {/* s8, s9, s10 */}
+          {(["s8", "s9", "s10"] as const).map((k) => (
             <div key={k}>
               <h2 className="font-display text-2xl md:text-3xl text-ink mb-4">{t(`terms.sections.${k}.h`)}</h2>
               <p className="text-ink/75 text-[15px] leading-relaxed">{t(`terms.sections.${k}.body`)}</p>
