@@ -144,6 +144,12 @@ const Assessment = () => {
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50 mt-6 max-w-md mx-auto">
               {t("booking.directNote")}
             </p>
+            <Link
+              to="/ai-adoption-score"
+              className="inline-flex items-center mt-4 font-mono text-[11px] uppercase tracking-[0.25em] text-red hover:text-ink transition-colors border-b border-red/40 hover:border-ink pb-0.5"
+            >
+              {t("booking.selfServeLink")}
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 text-ink/75 text-[14px]">
