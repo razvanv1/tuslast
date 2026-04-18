@@ -22,18 +22,48 @@
   "cookies": {
     "docTitle": "Politica de Cookie-uri, The Unlearning School",
     "seoTitle": "Politica de Cookie-uri",
-    "seoDescription": "Cookie-uri folosite pe site-ul The Unlearning School.",
+    "seoDescription": "Politica de cookie-uri a The Unlearning School — ce cookie-uri folosim, de ce și cum îți poți gestiona consimțământul.",
     "title": "Politica de Cookie-uri.",
-    "s1": { "h": "1. Ce Sunt Cookie-urile", "body": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul tău când vizitezi un site. Ajută site-ul să funcționeze, oferă analytics și rețin preferințele tale." },
-    "s2": { "h": "2. Tipuri de Cookie-uri pe care le Folosim", "items": [
-      { "h": "Cookie-uri Esențiale", "body": "Necesare pentru funcționarea site-ului. Navigare în pagini, zone securizate. Site-ul nu poate funcționa corect fără ele." },
-      { "h": "Cookie-uri de Analytics", "body": "Ne ajută să înțelegem cum interacționează vizitatorii cu site-ul prin colectarea și raportarea informațiilor anonim." },
-      { "h": "Cookie-uri Funcționale", "body": "Activează funcționalități îmbunătățite și personalizare, cum ar fi reținerea preferințelor tale de consimțământ pentru cookie-uri." }
-    ] },
-    "s3": { "h": "3. Cookie-uri de la Terți", "body": "Unele cookie-uri sunt setate de servicii terțe (instrumente de programare, conținut încorporat, furnizori de analytics). Acești terți au propriile politici de confidențialitate care guvernează cookie-urile lor." },
-    "s4": { "h": "4. Gestionarea Cookie-urilor", "body": "La prima vizită, vezi un banner de consimțământ care îți permite să accepți sau să refuzi cookie-urile non-esențiale. Poți schimba preferințele oricând ștergând cookie-urile din browser sau din setările browserului." },
-    "s5": { "h": "5. Consimțământul Tău", "body": "Făcând clic pe „Accept toate” îți dai consimțământul pentru cookie-urile non-esențiale așa cum sunt descrise. Cookie-urile esențiale nu necesită consimțământ." },
-    "s6": { "h": "6. Contact", "body": "Întrebări despre folosirea cookie-urilor: hello@unlearning.ro." }
+    "intro": "Această Politică privind cookie-urile a fost actualizată ultima dată pe 18.04.2026 și se aplică cetățenilor și rezidenților permanenți din Spațiul Economic European și Elveția.",
+    "s1": { "h": "1. Introducere", "body": "Site-ul nostru, https://tuslast.lovable.app (numit în continuare „site-ul”), folosește cookie-uri și alte tehnologii similare (pentru comoditate, toate tehnologiile sunt numite în continuare „cookie-uri”). Cookie-urile sunt plasate atât de noi, cât și de terții cu care colaborăm pentru funcționalități esențiale (procesare plăți, găzduire formulare). În documentul de mai jos te informăm despre modul în care folosim cookie-urile pe site-ul nostru." },
+    "s2": { "h": "2. Ce sunt cookie-urile?", "body": "Un cookie este un fișier simplu, de mici dimensiuni, trimis împreună cu paginile acestui site web și stocat de browserul tău pe hard diskul computerului sau al altui dispozitiv. Informațiile stocate acolo pot fi trimise înapoi către serverele noastre sau ale terților relevanți, în timpul unei vizite ulterioare." },
+    "s3": { "h": "3. Ce sunt scripturile?", "body": "Un script este un fragment de cod (de program), utilizat pentru ca site-ul nostru să funcționeze corect și interactiv. Acest cod este executat pe serverul nostru sau pe dispozitivul tău." },
+    "s4": { "h": "4. Ce este un web beacon?", "body": "Un „web beacon” (sau „pixel tag”) este un mic fragment invizibil de text sau o imagine, plasat pe un site web pentru a monitoriza traficul. Pentru realizarea monitorizării traficului, web beacons pot stoca diverse date despre tine. În prezent, site-ul nostru NU folosește web beacons sau pixeli de tracking de la rețele sociale (ex. Facebook Pixel, LinkedIn Insight Tag)." },
+    "s5h": "5. Tipuri de cookie-uri pe care le folosim",
+    "s5items": [
+      { "h": "5.1 Cookie-uri tehnice sau funcționale", "body": "Unele cookie-uri se asigură că anumite părți ale site-ului funcționează corect și că preferințele tale de utilizator rămân cunoscute (ex. preferința de limbă RO/EN, alegerea de consimțământ pentru cookie-uri). Putem plasa aceste cookie-uri fără consimțământul tău." },
+      { "h": "5.2 Cookie-uri statistice", "body": "În prezent NU folosim cookie-uri statistice (ex. Google Analytics, Plausible, PostHog) pe acest site. Dacă vom adăuga astfel de servicii în viitor, vom actualiza această politică și îți vom cere permisiunea." },
+      { "h": "5.3 Cookie-uri pentru marketing/urmărire", "body": "În prezent NU folosim cookie-uri de marketing sau de urmărire pe acest site. Nu există pixeli de Facebook, LinkedIn Insight Tag, Google Ads sau alte rețele de retargeting." }
+    ],
+    "s6h": "6. Cookie-uri și servicii plasate",
+    "s6intro": "Lista de mai jos enumeră serviciile care pot plasa cookie-uri sau stoca date local pe dispozitivul tău atunci când folosești site-ul nostru.",
+    "s6items": [
+      { "h": "Stocare locală — preferințe consimțământ", "type": "Funcțional (esențial)", "body": "Stocăm local în browserul tău alegerea de consimțământ pentru cookie-uri și preferința de limbă (RO/EN), pentru ca să nu te întrebăm la fiecare vizită. Nu necesită consimțământ." },
+      { "h": "Stripe", "type": "Funcțional (esențial pentru plăți)", "body": "Procesatorul nostru de plăți. Stripe plasează cookie-uri DOAR pe paginile de checkout pentru programele plătite, pentru detectare fraudă și securitate. Vezi politica Stripe: https://stripe.com/privacy" },
+      { "h": "Supabase (Lovable Cloud)", "type": "Funcțional (esențial)", "body": "Backend-ul nostru pentru formulare (ex. captarea email-ului la AI Adoption Score). Folosește stocare locală pentru sesiuni tehnice. Nu este folosit pentru profilare sau publicitate." },
+      { "h": "Domeniul lovable.app (doar staging)", "type": "Funcțional", "body": "Pe versiunile preview și staging găzduite de Lovable, platforma poate plasa cookie-uri tehnice esențiale pentru funcționarea infrastructurii. Acestea nu apar pe domeniul de producție personalizat." }
+    ],
+    "s7": { "h": "7. Consimțământ", "body": "Când vizitezi prima dată site-ul nostru, îți arătăm un banner cu explicații despre cookie-uri. După ce dai clic pe „Accept”, ne-ai dat consimțământul să folosim toate cookie-urile descrise în banner și în această politică. Poți dezactiva folosirea cookie-urilor în browser, dar te rugăm să reții că anumite funcționalități (ex. salvarea preferinței de limbă, plata online) ar putea să nu mai funcționeze corect." },
+    "s8": { "h": "8. Activarea/dezactivarea și ștergerea cookie-urilor", "body": "Poți utiliza browserul tău pentru a șterge automat sau manual cookie-urile. De asemenea, poți specifica faptul că anumite cookie-uri nu pot fi plasate. O altă opțiune este să modifici setările browserului pentru a primi un mesaj de fiecare dată când este plasat un cookie. Pentru mai multe informații, consultă instrucțiunile din secțiunea Ajutor a browserului tău. Reține că site-ul nostru s-ar putea să nu funcționeze corect dacă sunt dezactivate toate cookie-urile. Dacă ștergi cookie-urile din browser, ele vor fi plasate din nou după ce îți dai consimțământul când vizitezi din nou site-ul." },
+    "s9h": "9. Drepturile tale asupra datelor cu caracter personal",
+    "s9intro": "Ai următoarele drepturi asupra datelor cu caracter personal:",
+    "s9items": [
+      "Ai dreptul să știi de ce sunt necesare datele tale, ce vom face cu ele și cât timp vor fi păstrate",
+      "Dreptul de acces: ai dreptul de a-ți accesa datele cu caracter personal pe care le-am colectat",
+      "Dreptul la rectificare: ai dreptul de a completa, corecta, șterge sau bloca datele tale oricând vrei",
+      "Dacă ne dai consimțământul să-ți prelucrăm datele, ai dreptul de a revoca consimțământul și să ceri ștergerea datelor",
+      "Dreptul de a-ți transfera datele: ai dreptul să ceri toate datele tale și să le transferi la un alt operator",
+      "Dreptul de a obiecta: te poți opune prelucrării datelor tale; respectăm acest lucru, cu excepția cazurilor în care există motive justificate pentru prelucrare"
+    ],
+    "s9outro": "Pentru exercitarea acestor drepturi, contactează-ne folosind detaliile din secțiunea de mai jos. Dacă ai o reclamație cu privire la modul în care gestionăm datele tale, ne-ar plăcea să auzim direct de la tine, dar ai și dreptul de a depune o reclamație la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP).",
+    "s10h": "10. Date de contact",
+    "s10intro": "Pentru întrebări sau comentarii în legătură cu Politica noastră privind cookie-urile, te rugăm să ne contactezi folosind următoarele informații:",
+    "s10company": "Carbon Smart Europa SRL",
+    "s10address": "Aleea Pasărea în Văzduh, nr. 1, Bl. C1.11, București, Sectorul 6, România",
+    "s10website": "Site web: https://tuslast.lovable.app",
+    "s10email": "Email: hello@unlearning.ro",
+    "s10phone": "Telefon: +40 722 598 346",
+    "s10sync": "Această Politică privind cookie-urile a fost sincronizată cu cookiedatabase.org pe 18.04.2026."
   },
   "terms": {
     "docTitle": "Termeni și Condiții, The Unlearning School",
