@@ -1,0 +1,223 @@
+{
+  "seo": {
+    "title": "AI Adoption Score — Free 2-minute AI maturity test",
+    "description": "Measure your team's AI maturity in 2 minutes. 10 weighted questions across strategy, tools, adoption and impact. Instant score, gap analysis, and a ranked next-step roadmap.",
+    "keywords": "AI maturity assessment, AI adoption score, AI readiness test, AI maturity model, free AI audit, EU AI Act readiness",
+    "docTitle": "AI Adoption Score, The Unlearning School"
+  },
+  "hero": {
+    "kicker": "AI Adoption Score · 2 min",
+    "title1": "How AI-ready is your team, ",
+    "titleEm": "really?",
+    "subtitle": "92% of companies invest in AI. Only 1% feel mature. Drop the self-narrative and get your maturity score, a gap analysis across four dimensions, and the next move that actually matters."
+  },
+  "stats": [
+    { "value": "92%", "label": "of companies invest in AI" },
+    { "value": "1%", "label": "feel mature in AI adoption" },
+    { "value": "75%", "label": "of AI projects stall in pilot" },
+    { "value": "57%", "label": "of employees hide AI usage" }
+  ],
+  "quiz": {
+    "yourResult": "Your result",
+    "questionOf": "Question {{current}} of {{total}}",
+    "previous": "← Previous question"
+  },
+  "gate": {
+    "kicker": "Your score is ready",
+    "title1": "Drop your email ",
+    "titleEm": "to see it.",
+    "subtitle": "We'll show your maturity score, the gap analysis across all four dimensions, and the priority actions for your weakest area.",
+    "consent": "I agree to receive my score by email and occasional insights from The Unlearning School. Unsubscribe anytime. See our ",
+    "privacyPolicy": "Privacy Policy",
+    "saving": "Saving...",
+    "submit": "See my score →",
+    "invalidEmailTitle": "Invalid email",
+    "invalidEmail": "Please enter a valid email",
+    "saveErrorTitle": "Couldn't save your result",
+    "saveErrorBody": "Please try again."
+  },
+  "results": {
+    "scoreLabel": "Your AI Adoption Score",
+    "gapKicker": "Gap Analysis",
+    "gapTitle": "Where you score across the four dimensions",
+    "weight": "Weight {{value}}%",
+    "actionsKicker": "Priority Actions",
+    "startHere": "Start here: ",
+    "weakestSubtitle": "Your weakest area. Move on these first.",
+    "recommendedFormat": "Recommended format",
+    "nextKicker": "What's next",
+    "nextTitle1": "Want help ",
+    "nextTitleEm": "closing the gaps?",
+    "nextBody": "Walk through your results live with us, or jump straight into the cohort built for non-technical teams.",
+    "bookCall": "Book a free call to discuss results →",
+    "seeCohort": "See the AI for Work cohort →",
+    "savedNote": "Automated email reports are coming soon — for now, save this page or screenshot your score. If you want to discuss the results, book a free call below.",
+    "share": "✉ Share score with a colleague",
+    "shareSubject": "My AI Adoption Score: {{score}}/100 — {{rank}}",
+    "shareBody": "I just took the AI Adoption Score from The Unlearning School and got {{score}}/100 ({{rank}}).\n\nTake yours here (2 minutes): https://tuslast.lovable.app/ai-adoption-score",
+    "retake": "↺ Retake assessment"
+  },
+  "method": {
+    "kicker": "Methodology",
+    "title1": "A weighted model. ",
+    "titleEm": "Not a vibe-check.",
+    "subtitle": "Not all aspects of AI readiness are equal. Adoption and strategy weigh more because they have the biggest impact on real outcomes.",
+    "weights": "Weight per dimension",
+    "ranks": "Rank bands"
+  },
+  "cta": {
+    "title": "Score in hand. Now what?",
+    "subtitle": "A 30-minute call to walk through your gaps and decide the first move that actually moves the number.",
+    "primary": "Book the AI Adoption Call →",
+    "secondary": "See AI for Work →",
+    "note": "Free · 30 min · No pricing pitch"
+  },
+  "categories": {
+    "strategy": "Strategy",
+    "tools": "Tools",
+    "adoption": "Adoption",
+    "impact": "Impact"
+  },
+  "categoryNames": {
+    "strategy": "Leadership & Strategy",
+    "tools": "Tools & Infrastructure",
+    "adoption": "Team Adoption & Skills",
+    "impact": "Impact & Measurement"
+  },
+  "questions": [
+    {
+      "text": "Does your organization have a documented AI strategy?",
+      "options": [
+        "No strategy exists",
+        "Informal / in discussion",
+        "Documented but not widely shared",
+        "Documented, communicated, and reviewed regularly"
+      ]
+    },
+    {
+      "text": "Are senior leaders actively using AI in their daily work?",
+      "options": [
+        "No, leadership is not using AI",
+        "A few leaders experiment occasionally",
+        "Most leaders use AI regularly",
+        "Leadership champions AI and models usage for the team"
+      ]
+    },
+    {
+      "text": "Is there a dedicated budget for AI training and tools?",
+      "options": [
+        "No budget allocated",
+        "Ad-hoc spending when needed",
+        "Budget exists but not formally tracked",
+        "Dedicated annual budget with clear allocation"
+      ]
+    },
+    {
+      "text": "Do employees have access to approved AI tools?",
+      "options": [
+        "No approved tools — people use whatever they find",
+        "Some tools available but no clear guidance",
+        "Approved toolset exists, most people know about it",
+        "Clear approved toolkit with onboarding for each tool"
+      ]
+    },
+    {
+      "text": "Are AI tools integrated into daily workflows?",
+      "options": [
+        "No — AI sits alongside regular tools, unused",
+        "Some individuals have integrated AI",
+        "Several teams have AI in their workflows",
+        "AI is embedded in core processes across the organization"
+      ]
+    },
+    {
+      "text": "Are there clear guidelines on which AI tool to use for which task?",
+      "options": [
+        "No guidelines",
+        "Informal knowledge — \"ask someone who knows\"",
+        "Some documentation exists",
+        "Clear decision framework documented and shared"
+      ]
+    },
+    {
+      "text": "What percentage of your team regularly uses AI in their work?",
+      "options": [
+        "Less than 10%",
+        "10–30%",
+        "30–60%",
+        "Over 60%"
+      ]
+    },
+    {
+      "text": "Does your organization provide formal AI training?",
+      "options": [
+        "No training available",
+        "Self-service resources only",
+        "Optional workshops or courses",
+        "Structured training program with follow-up"
+      ]
+    },
+    {
+      "text": "Are there identified AI champions who mentor others?",
+      "options": [
+        "No champions identified",
+        "A few people help informally",
+        "Champions recognized but not formally supported",
+        "Formal champion program with time/resources allocated"
+      ]
+    },
+    {
+      "text": "Can you measure time saved or productivity gained from AI usage?",
+      "options": [
+        "We have no measurement at all",
+        "Some people track anecdotally",
+        "We have metrics for specific use cases",
+        "Organization-wide tracking with regular reporting"
+      ]
+    }
+  ],
+  "priorityActions": {
+    "strategy": [
+      "Create a one-page AI policy",
+      "Appoint an executive sponsor",
+      "Identify and approve 3 initial use cases"
+    ],
+    "tools": [
+      "Define default AI tools for the org",
+      "Document where AI is permitted vs forbidden",
+      "Simplify access — single sign-on, bookmarks"
+    ],
+    "adoption": [
+      "Run a cohort workshop with 10 people",
+      "Identify 2–3 internal champions",
+      "Measure usage weekly for 30 days"
+    ],
+    "impact": [
+      "Track hours saved per week per use case",
+      "Measure frequency + quality of AI outputs",
+      "Quantify one repetitive process fully"
+    ]
+  },
+  "ranks": {
+    "leader": {
+      "name": "AI Leader",
+      "desc": "Strong maturity. Next step: scale and govern.",
+      "format": "Executive briefing + scale plan (2h)"
+    },
+    "advanced": {
+      "name": "AI Advanced",
+      "desc": "Good momentum. Opportunity: standardize and align leadership.",
+      "format": "4-session enablement sprint"
+    },
+    "builder": {
+      "name": "AI Builder",
+      "desc": "Activity without structure. Need: standards, champions, training.",
+      "format": "2-session starter sprint"
+    },
+    "starter": {
+      "name": "AI Starter",
+      "desc": "Early stage. Fastest win: enablement sprint.",
+      "format": "1-day AI reset workshop"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "seo": {
+    "title": "Diagnostic AI Adoption — test gratuit de maturitate AI, 2 minute",
+    "description": "Măsoară maturitatea AI a echipei tale în 2 minute. 10 întrebări ponderate despre strategie, instrumente, adopție și impact. Scor instant, analiză a lacunelor și o foaie de parcurs prioritizată.",
+    "keywords": "evaluare maturitate AI, scor adopție AI, test pregătire AI, model maturitate AI, audit AI gratuit, conformitate EU AI Act",
+    "docTitle": "Diagnostic AI Adoption, The Unlearning School"
+  },
+  "hero": {
+    "kicker": "Diagnostic AI Adoption · 2 min",
+    "title1": "Cât de pregătită este echipa ta pentru AI, ",
+    "titleEm": "cu adevărat?",
+    "subtitle": "92% dintre companii investesc în AI. Doar 1% se simt mature. Lasă povestea pe care ți-o spui și obține scorul de maturitate, analiza lacunelor pe patru dimensiuni și următoarea mișcare care contează cu adevărat."
+  },
+  "stats": [
+    { "value": "92%", "label": "dintre companii investesc în AI" },
+    { "value": "1%", "label": "se simt mature în adopția AI" },
+    { "value": "75%", "label": "dintre proiectele AI rămân blocate în pilot" },
+    { "value": "57%", "label": "dintre angajați își ascund folosirea AI" }
+  ],
+  "quiz": {
+    "yourResult": "Rezultatul tău",
+    "questionOf": "Întrebarea {{current}} din {{total}}",
+    "previous": "← Întrebarea anterioară"
+  },
+  "gate": {
+    "kicker": "Scorul tău este gata",
+    "title1": "Lasă-ți emailul ",
+    "titleEm": "ca să-l vezi.",
+    "subtitle": "Îți vom arăta scorul de maturitate, analiza lacunelor pe toate cele patru dimensiuni și acțiunile prioritare pentru zona ta cea mai slabă.",
+    "consent": "Sunt de acord să primesc scorul pe email și ocazional notițe utile de la The Unlearning School. Mă pot dezabona oricând. Vezi ",
+    "privacyPolicy": "Politica de Confidențialitate",
+    "saving": "Se salvează...",
+    "submit": "Vezi scorul →",
+    "invalidEmailTitle": "Email invalid",
+    "invalidEmail": "Te rugăm să introduci o adresă de email validă",
+    "saveErrorTitle": "Nu am putut salva rezultatul",
+    "saveErrorBody": "Te rugăm să încerci din nou."
+  },
+  "results": {
+    "scoreLabel": "Scorul tău AI Adoption",
+    "gapKicker": "Analiza lacunelor",
+    "gapTitle": "Cum stai pe cele patru dimensiuni",
+    "weight": "Pondere {{value}}%",
+    "actionsKicker": "Acțiuni prioritare",
+    "startHere": "Începe aici: ",
+    "weakestSubtitle": "Zona ta cea mai slabă. De aici pornești.",
+    "recommendedFormat": "Format recomandat",
+    "nextKicker": "Ce urmează",
+    "nextTitle1": "Vrei ajutor să ",
+    "nextTitleEm": "închizi lacunele?",
+    "nextBody": "Discutăm rezultatele tale în direct sau intri direct în cohorta construită pentru echipe non-tehnice.",
+    "bookCall": "Programează o discuție gratuită despre rezultate →",
+    "seeCohort": "Vezi cohorta AI pentru Muncă →",
+    "savedNote": "Rapoartele automate pe email vin în curând — până atunci, salvează această pagină sau fă o captură. Dacă vrei să discutăm rezultatele, programează o discuție gratuită mai jos.",
+    "share": "✉ Trimite scorul unui coleg",
+    "shareSubject": "Scorul meu AI Adoption: {{score}}/100 — {{rank}}",
+    "shareBody": "Tocmai am făcut Diagnosticul AI Adoption de la The Unlearning School și am obținut {{score}}/100 ({{rank}}).\n\nFă-l și tu aici (2 minute): https://tuslast.lovable.app/ai-adoption-score",
+    "retake": "↺ Reia evaluarea"
+  },
+  "method": {
+    "kicker": "Metodologie",
+    "title1": "Un model ponderat. ",
+    "titleEm": "Nu o impresie de moment.",
+    "subtitle": "Nu toate aspectele pregătirii pentru AI sunt egale. Adopția și strategia cântăresc mai mult pentru că au cel mai mare impact asupra rezultatelor reale.",
+    "weights": "Pondere per dimensiune",
+    "ranks": "Pragurile de încadrare"
+  },
+  "cta": {
+    "title": "Ai scorul. Și acum?",
+    "subtitle": "O discuție de 30 de minute în care îți parcurgem lacunele și decidem prima mișcare care chiar mișcă scorul.",
+    "primary": "Programează Discuția AI Adoption →",
+    "secondary": "Vezi AI pentru Muncă →",
+    "note": "Gratuit · 30 min · Fără pitch comercial"
+  },
+  "categories": {
+    "strategy": "Strategie",
+    "tools": "Instrumente",
+    "adoption": "Adopție",
+    "impact": "Impact"
+  },
+  "categoryNames": {
+    "strategy": "Leadership & Strategie",
+    "tools": "Instrumente & Infrastructură",
+    "adoption": "Adopție & Abilități în echipă",
+    "impact": "Impact & Măsurare"
+  },
+  "questions": [
+    {
+      "text": "Are organizația ta o strategie AI documentată?",
+      "options": [
+        "Nu există nicio strategie",
+        "Informală / în discuție",
+        "Documentată, dar nu distribuită larg",
+        "Documentată, comunicată și revizuită regulat"
+      ]
+    },
+    {
+      "text": "Folosesc activ liderii seniori AI în munca lor zilnică?",
+      "options": [
+        "Nu, conducerea nu folosește AI",
+        "Câțiva lideri experimentează ocazional",
+        "Majoritatea liderilor folosesc AI regulat",
+        "Conducerea promovează AI și e exemplul de urmat pentru echipă"
+      ]
+    },
+    {
+      "text": "Există un buget dedicat pentru formare și instrumente AI?",
+      "options": [
+        "Niciun buget alocat",
+        "Cheltuieli ad-hoc, când e nevoie",
+        "Există buget, dar nu este urmărit formal",
+        "Buget anual dedicat, cu alocare clară"
+      ]
+    },
+    {
+      "text": "Au angajații acces la instrumente AI aprobate?",
+      "options": [
+        "Niciun instrument aprobat — fiecare folosește ce găsește",
+        "Există unele instrumente, dar fără ghidaj clar",
+        "Există un set aprobat, majoritatea oamenilor știu de el",
+        "Set clar de instrumente aprobate, cu onboarding pentru fiecare"
+      ]
+    },
+    {
+      "text": "Sunt instrumentele AI integrate în fluxurile de lucru zilnice?",
+      "options": [
+        "Nu — AI stă alături de instrumentele obișnuite, nefolosit",
+        "Câteva persoane au integrat AI",
+        "Mai multe echipe au AI în fluxurile lor",
+        "AI este integrat în procesele de bază din toată organizația"
+      ]
+    },
+    {
+      "text": "Există ghiduri clare despre ce instrument AI să fie folosit pentru ce sarcină?",
+      "options": [
+        "Niciun ghid",
+        "Cunoștințe informale — „întreabă pe cineva care știe”",
+        "Există ceva documentație",
+        "Cadru de decizie clar, documentat și distribuit"
+      ]
+    },
+    {
+      "text": "Ce procent din echipa ta folosește regulat AI în munca lor?",
+      "options": [
+        "Mai puțin de 10%",
+        "10–30%",
+        "30–60%",
+        "Peste 60%"
+      ]
+    },
+    {
+      "text": "Oferă organizația ta formare AI structurată?",
+      "options": [
+        "Nicio formare disponibilă",
+        "Doar resurse self-service",
+        "Workshopuri sau cursuri opționale",
+        "Program de formare structurat, cu follow-up"
+      ]
+    },
+    {
+      "text": "Sunt identificați campioni AI care îi mentorează pe ceilalți?",
+      "options": [
+        "Niciun campion identificat",
+        "Câteva persoane ajută informal",
+        "Campionii sunt recunoscuți, dar fără sprijin formal",
+        "Program formal de campioni, cu timp și resurse alocate"
+      ]
+    },
+    {
+      "text": "Poți măsura timpul economisit sau productivitatea câștigată din folosirea AI?",
+      "options": [
+        "Nu avem nicio măsurare",
+        "Unii oameni urmăresc anecdotic",
+        "Avem indicatori pentru cazuri specifice",
+        "Urmărire la nivel de organizație, cu raportare regulată"
+      ]
+    }
+  ],
+  "priorityActions": {
+    "strategy": [
+      "Creează o politică AI de o pagină",
+      "Numește un sponsor executiv",
+      "Identifică și aprobă 3 cazuri de utilizare inițiale"
+    ],
+    "tools": [
+      "Definește instrumentele AI implicite pentru organizație",
+      "Documentează unde este permis și unde este interzis AI",
+      "Simplifică accesul — single sign-on, bookmark-uri"
+    ],
+    "adoption": [
+      "Organizează un workshop de cohortă cu 10 oameni",
+      "Identifică 2–3 campioni interni",
+      "Măsoară săptămânal utilizarea timp de 30 de zile"
+    ],
+    "impact": [
+      "Urmărește orele economisite pe săptămână, pe caz de utilizare",
+      "Măsoară frecvența + calitatea rezultatelor AI",
+      "Cuantifică complet un proces repetitiv"
+    ]
+  },
+  "ranks": {
+    "leader": {
+      "name": "Lider AI",
+      "desc": "Maturitate solidă. Pasul următor: scalare și guvernanță.",
+      "format": "Briefing executiv + plan de scalare (2h)"
+    },
+    "advanced": {
+      "name": "Avansat AI",
+      "desc": "Avânt bun. Oportunitate: standardizare și aliniere a conducerii.",
+      "format": "Sprint de activare în 4 sesiuni"
+    },
+    "builder": {
+      "name": "Constructor AI",
+      "desc": "Activitate fără structură. Nevoi: standarde, campioni, formare.",
+      "format": "Sprint de pornire în 2 sesiuni"
+    },
+    "starter": {
+      "name": "Începător AI",
+      "desc": "Stadiu incipient. Cea mai rapidă victorie: sprintul de activare.",
+      "format": "Workshop AI reset de 1 zi"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "seo": {
+    "title": "Discuție AI Adoption — evaluare gratuită de maturitate, 30 de minute",
+    "description": "O discuție gratuită de 30 de minute care măsoară cât de pregătită este organizația ta pentru adopția AI. Primești un scor de maturitate, o analiză a lacunelor și o foaie de parcurs practică, în 24 de ore.",
+    "keywords": "discuție AI adoption, evaluare maturitate AI, scor pregătire AI, analiză lacune AI, foaie de parcurs AI, conformitate EU AI Act, consultanță AI gratuită",
+    "schemaName": "Discuție AI Adoption",
+    "schemaDescription": "Programează o discuție gratuită de 30 de minute pentru evaluarea maturității AI.",
+    "docTitle": "Discuție AI Adoption, The Unlearning School"
+  },
+  "hero": {
+    "tag": "Discuție AI Adoption",
+    "bannerAlt": "Echipă analizând o evaluare de maturitate AI în jurul unei mese",
+    "title": "Discuție AI Adoption, 30 de minute.",
+    "subtitle": "O discuție gratuită de 30 de minute care măsoară cât de pregătită este organizația ta pentru adopția AI. Punem un set scurt de întrebări structurate și îți trimitem înapoi un scor de maturitate, o analiză a lacunelor și o foaie de parcurs practică — în 24 de ore.",
+    "ctaText": "Programează discuția →",
+    "note": "Gratuit · 30 min · Scor de maturitate în 24h"
+  },
+  "selfTest": "Preferi mai întâi un auto-test?",
+  "covers": {
+    "kicker": "Ce acoperă discuția",
+    "title1": "Trei întrebări, ",
+    "titleEm": "în ordine.",
+    "step1Title": "Unde te afli astăzi",
+    "step1Body": "O conversație scurtă și structurată pe dimensiunile care determină maturitatea AI: instrumente implementate, fluxuri de lucru atinse, guvernanță existentă și abilitățile echipei. Stabilește punctul de plecare.",
+    "step2Title": "Unde sunt lacunele",
+    "step2Body": "Punctăm fiecare dimensiune și scoatem la suprafață lacunele specifice care blochează adopția. Nu un vag „aveți nevoie de mai multă instruire” — blocaje concrete, denumite, pe fiecare zonă.",
+    "step3Title": "Ce ai de făcut în continuare",
+    "step3Body": "O foaie de parcurs practică, prioritizată, cu primele 1–3 mișcări: ce flux de lucru să reproiectezi primul, ce echipă să formezi, ce lacună de guvernanță să închizi. Secvențiat, nu teoretic."
+  },
+  "receive": {
+    "kicker": "Ce primești",
+    "title1": "O pagină. ",
+    "titleEm": "A ta, pentru totdeauna.",
+    "intro": "În 24 de ore de la discuție, primești un document scris de 1 pagină care conține:",
+    "items": [
+      "Un scor de maturitate pentru organizația ta, pe dimensiunile cheie ale adopției AI",
+      "O analiză a lacunelor: unde scorul este cel mai mic și de ce contează operațional",
+      "O foaie de parcurs practică: 1–3 mișcări prioritizate de la care să începi, în ordine"
+    ],
+    "footer1": "Documentul este scris pentru a fi distribuit în interiorul organizației. Nu este o ofertă. Nu conține prețuri. ",
+    "footerEm": "Mulți clienți folosesc scorul de maturitate și foaia de parcurs pentru a alinia conducerea de operațiuni, HR și IT înainte de orice discuție internă de buget."
+  },
+  "personas": {
+    "kicker": "Cine programează această discuție",
+    "title1": "Trei cititori. ",
+    "titleEm": "Trei utilizări pentru scor.",
+    "items": [
+      { "num": "01", "tag": "COO / Operațiuni", "title": "Ai nevoie de o cifră care să justifice investiția.", "desc": "Scorul de maturitate îți oferă o bază solidă pe care o poți duce la board și o foaie de parcurs prioritizată cu locul în care ar trebui să meargă următorul euro." },
+      { "num": "02", "tag": "HR / Lead L&D", "title": "Ai nevoie să știi ce echipe să formezi primele.", "desc": "Analiza lacunelor cartografiază maturitatea pe dimensiuni, astfel încât programul tău de formare să țintească blocajele reale, nu o alfabetizare AI generică." },
+      { "num": "03", "tag": "Lead unitate de business", "title": "Ai nevoie de o primă mișcare practică, nu de un deck de strategie.", "desc": "Foaia de parcurs numește 1–3 fluxuri de lucru unde reproiectarea în jurul AI ar produce un rezultat vizibil într-un singur trimestru." }
+    ]
+  },
+  "booking": {
+    "kicker": "Rezervă-ți slotul",
+    "title1": "Alege o oră. ",
+    "titleEm": "De restul ne ocupăm noi.",
+    "subtitle": "Alege un interval mai jos. Vei primi pe email 3 întrebări scurte de pregătire, ca cele 30 de minute să meargă direct în evaluarea situației tale, nu în culegerea contextului.",
+    "directKicker": "Programare directă",
+    "directBody": "Apasă mai jos pentru a deschide calendarul și a alege un interval de 30 de minute care ți se potrivește.",
+    "directButton": "Discuție AI Adoption · Deschide calendarul →",
+    "directNote": "În curând va funcționa ca instrument self-service. Până atunci, evaluarea o facem în direct, împreună cu tine, în cadrul discuției.",
+    "before": "Înainte de discuție:",
+    "beforeBody": " 3 întrebări scurte pe email. 5 minute de răspuns. Sesiunea merge direct în evaluare, nu în culegerea contextului.",
+    "after": "După discuție:",
+    "afterBody": " Un rezumat scris de 1 pagină în 24 de ore — scor de maturitate, analiză a lacunelor, foaie de parcurs. Fără follow-up comercial decât dacă îl ceri tu.",
+    "emailLine": "Sau scrie pe email: ",
+    "emailSubject": "Subiect: Discuție AI Adoption · Răspundem în 1 zi lucrătoare"
+  },
+  "preview": "Vrei o previzualizare înainte de discuție?",
+  "quote": {
+    "attribution": "Practică standard, la fiecare Discuție AI Adoption",
+    "body": "Nu există ofertă atașată acestei discuții. Dacă scorul arată că nu există o problemă care merită rezolvată, îți spunem asta. Dacă există, foaia de parcurs descrie cum ar arăta rezolvarea ei. Tu decizi ce faci mai departe."
+  },
+  "faqList": [
+    { "question": "Discuția chiar este gratuită?", "answer": "Da. Discuția de 30 de minute și raportul de 1 pagină pe care îl primești în 24 de ore sunt gratuite, fără obligația de a face un pas următor." }
+  ]
+}
