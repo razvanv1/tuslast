@@ -1,89 +1,93 @@
 
 ## Goal
-Construiesc un calculator interactiv **AI Adoption Score** (10 întrebări, scoring ponderat, gap analysis, priority actions) integrat în designul nostru editorial Wired (paper/ink/red, DM Serif + JetBrains Mono). Folosit ca **lead magnet**: rezultatul scorului e gated de email; după dezvăluire, două CTA-uri — "Book free call" + "Vezi cursul AI for Work".
+Faci AI Adoption Score un instrument de **top-of-funnel** complet: după ce userul lasă emailul și vede scorul, primește **automat pe email** un raport branded cu scorul, interpretarea, gap analysis și 2 CTA-uri (Book free call + Cumpără cursul). Plus: mai multe puncte de intrare pe site către calculator.
 
-## Architecture
+## De ce nu merge acum emailul
+Calculatorul salvează submisia în `ai_score_submissions`, dar **nu există nicio infrastructură de email** în proiect. Niciun edge function, niciun template, niciun apel `send-transactional-email`. De-asta nu primești nimic în inbox.
 
-### New page — `/ai-adoption-score`
-Componentă React full-stack (nu HTML embed). Logica calculatorului portată 1:1 din fișierul tău: aceleași 10 întrebări, aceleași ponderi (Strategy 30%, Tools 15%, Adoption 35%, Impact 20%), aceleași 4 ranks (Leader/Advanced/Builder/Starter), aceleași priority actions per categorie slabă.
+## Ce construiesc
 
-**Flux pe pagină:**
-1. **Hero** — banner editorial: "How AI-ready is your team? 10 questions. 2 minutes." + stats row (92% / 1% / 75% / 57% — cu surse) în stil mono labels.
-2. **Calculator** (state local React):
-   - Bară de progres roșie sus
-   - O întrebare per ecran cu categorie + 4 opțiuni (click → auto-advance, fade transition)
-   - Buton "Înapoi" discret
-3. **Gate de email** (înainte de dezvăluirea scorului):
-   - Headline: "Scorul tău e gata. Lasă emailul ca să-l vezi."
-   - Câmp email + checkbox GDPR + buton "Vezi scorul →"
-   - Validare zod (trim, email, max 255)
-   - Submit → salvează în Lovable Cloud → afișează rezultate
-4. **Rezultate** (după email):
-   - Scor mare (0–100) + rank badge colorat
-   - Gap Analysis: 4 bare orizontale per categorie cu scor + pondere
-   - Priority Actions pentru categoria cea mai slabă (3 acțiuni)
-   - Recommended format (ex: "4-session enablement sprint")
-   - **Două CTA-uri side-by-side:**
-     - Primary roșu: "Book a free call to discuss results →" (link la `/assessment#book`)
-     - Secondary: "See the AI for Work cohort →" (link la `/programmes/ai-for-non-technical-people`)
-   - Link mic: "Retake assessment ↺"
-5. **Methodology section** (paper variant) — tabelul cu ponderi + tabelul cu rank bands (din designul tău), redate în stil editorial.
-6. **Closing CTA section** — reuses `<CTASection>`.
+### 1. Infrastructura de email (Lovable Email — built-in)
+- Verific domeniul de email al proiectului. Dacă nu e configurat, deschid dialogul de setup (un singur click — apoi continui automat).
+- Rulez `setup_email_infra` (cozi pgmq, tabele log/suppression, cron, etc.).
+- Rulez `scaffold_transactional_email` (edge function `send-transactional-email`, unsubscribe handler, suppression handler).
 
-### Backend — Lovable Cloud
-Tabel nou `ai_score_submissions`:
-- `id` uuid pk
-- `email` text (validat)
-- `score` int
-- `rank` text
-- `category_scores` jsonb (strategy/tools/adoption/impact)
-- `weakest_category` text
-- `consent_marketing` boolean
-- `created_at` timestamptz
+### 2. Patru template-uri de email (React Email, branding Wired)
+Un template per rank, ca fiecare user să primească interpretarea potrivită scorului lui. Toate au același skeleton vizual + aceleași 2 CTA.
 
-RLS: insert public (oricine poate trimite), select doar pentru rolul admin (rămâne pentru viitor — momentan doar colectăm). Fără autentificare cerută utilizatorului.
+| Template | Trimis la rank | Subject |
+|---|---|---|
+| `ai-score-leader` | 80–100 | "Your AI Adoption Score: Leader (X/100)" |
+| `ai-score-advanced` | 60–79 | "Your AI Adoption Score: Advanced (X/100)" |
+| `ai-score-builder` | 40–59 | "Your AI Adoption Score: Builder (X/100)" |
+| `ai-score-starter` | 0–39 | "Your AI Adoption Score: Starter (X/100)" |
 
-### Sitewide hooks (lead magnet, multe puncte de intrare)
-Adaug butoane "Take the AI Adoption Score" în:
-- **Homepage** — un bloc nou între hero card deck și prima secțiune existentă: "2 minutes. 10 questions. Know where you stand." + buton roșu mare.
-- **Hero card deck** — adaug un card nou "AI Adoption Score" (folosesc un asset existent `card-eye` sau `card-bubble`) lângă AI Adoption Call.
-- **Navbar** — link nou "AI Score" (sub butonul AI Adoption Call sau ca pill secundar).
-- **Footer** — link în coloana resurse.
-- **Assessment page** (`/assessment`) — adaug un mic bloc: "Prefer to start with a 2-min self-test? Take the AI Adoption Score →".
-- **AIForNonTechnical** — bloc înainte de booking: "Not sure if you need this? Take the score first."
-- **Resources** — listare ca tool.
+**Conținutul fiecărui email** (dynamic data din `templateData`):
+- Header pe paper cream, label mono "AI Adoption Score", titlu DM Serif cu scorul mare (ex: "73 / 100 — AI Advanced")
+- Paragraf de interpretare specific rank-ului (1 paragraf strong)
+- **Gap Analysis** vizual: 4 bare orizontale (Strategy/Tools/Adoption/Impact) — randate inline cu div-uri colorate (red accent pe categoria slabă)
+- **Priority Actions** — 3 acțiuni concrete pentru categoria slabă (din `priorityActions` în `aiScoreData.ts`)
+- **Recommended next step** — formatul recomandat (ex: "4-session enablement sprint")
+- **Două CTA-uri**:
+  - Primary roșu: "Book a free call to discuss your score →" → `https://tuslast.lovable.app/assessment#book`
+  - Secondary outline: "Join the AI for Work cohort →" → `https://tuslast.lovable.app/programmes/ai-for-non-technical-people`
+- Semnătură Răzvan + The Unlearning School
+- Footer system-managed (unsubscribe automat)
 
-### Files to create / modify
+Fonturi: Arial fallback (email-safe), bg #ffffff, accent #C2261D (red), ink #0F0F0F, paper accent #F4EFE2.
+
+### 3. Trigger din pagina calculatorului
+În `src/pages/AIAdoptionScore.tsx`, după `insert` în `ai_score_submissions`, apelez:
+```ts
+supabase.functions.invoke('send-transactional-email', {
+  body: {
+    templateName: `ai-score-${rankSlug}`, // leader|advanced|builder|starter
+    recipientEmail: email,
+    idempotencyKey: `ai-score-${submissionId}`,
+    templateData: { score, rank, categoryScores, weakest, priorityActions, format }
+  }
+})
+```
+Trimiterea e async — userul vede rezultatele instant pe pagină, emailul vine în câteva secunde. Dacă invoke eșuează, scorul tot se afișează (fail-soft).
+
+### 4. Mai multe puncte de intrare către calculator (ToFu maxim)
+Verific ce există deja și completez unde lipsește:
+- ✅ Navbar — există
+- ✅ Footer — există  
+- ✅ HeroCardDeck (homepage) — există
+- ✅ AIScoreCTA pe Index, Assessment, AIForNonTechnical, Resources — există
+- ➕ **Adaug bandă AIScoreCTA și pe**: `Funding.tsx`, `Events.tsx`, `Hermes.tsx`, `About.tsx` — înainte de CTASection-ul final
+- ➕ **Pe homepage**, mut `<AIScoreCTA variant="band" />` mai sus (după hero deck, înainte de Editorial) ca să fie primul lucru pe care-l vede userul după hero
+- ➕ **Pe Assessment**, adaug variantă inline și sub blocul de booking (nu doar sus) cu mesaj: "Vrei un preview înainte de call? Take the score → ai un punct de plecare structurat pentru discuție."
+
+### 5. Ajustări mici pe pagina calculatorului
+- Adaug pe ecranul de rezultate un mesaj clar: *"📧 Ți-am trimis raportul complet pe [email] — verifică inboxul (și spam)."*
+- Sub CTA-uri, adaug un al treilea link discret: "Trimite scorul unui coleg" (mailto cu pre-filled subject + URL).
+
+### 6. Out of scope (nu fac acum)
+- ❌ Pagină separată `/assessment/quiz` — calculatorul `/ai-adoption-score` ESTE deja exact ce ai descris (10 întrebări structurate, score 0–100, gap chart, roadmap, salvare în DB). Nu duplicăm. Dacă vrei alt slug, doar redirect — spune-mi.
+- ❌ Admin dashboard pentru submisii (poate fi follow-up).
+- ❌ A/B testing pe gate copy.
+
+## Files
+
 **New:**
-- `src/pages/AIAdoptionScore.tsx` — pagina + calculator
-- `src/lib/aiScoreData.ts` — întrebări, ponderi, ranks, priority actions (sursă unică)
-- `src/components/AIScoreCTA.tsx` — bloc reutilizabil "Take the AI Adoption Score" (folosit pe homepage, assessment, AI for Work, etc.)
-- Migration SQL — tabel `ai_score_submissions` + RLS
+- `supabase/functions/_shared/transactional-email-templates/ai-score-leader.tsx`
+- `supabase/functions/_shared/transactional-email-templates/ai-score-advanced.tsx`
+- `supabase/functions/_shared/transactional-email-templates/ai-score-builder.tsx`
+- `supabase/functions/_shared/transactional-email-templates/ai-score-starter.tsx`
 
 **Modified:**
-- `src/App.tsx` — rută `/ai-adoption-score` (lazy)
-- `src/components/Navbar.tsx` — link nou
-- `src/components/Footer.tsx` — link nou
-- `src/components/HeroCardDeck.tsx` — card nou
-- `src/pages/Index.tsx` — bloc AIScoreCTA
-- `src/pages/Assessment.tsx` — bloc AIScoreCTA mic
-- `src/pages/AIForNonTechnical.tsx` — bloc AIScoreCTA
-- `src/pages/Resources.tsx` — listare ca tool
-- `public/sitemap.xml` — URL nou
+- `supabase/functions/_shared/transactional-email-templates/registry.ts` — register 4 templates
+- `src/pages/AIAdoptionScore.tsx` — invoke send-transactional-email + confirmation message
+- `src/pages/Funding.tsx`, `Events.tsx`, `Hermes.tsx`, `About.tsx` — adaug AIScoreCTA band
+- `src/pages/Index.tsx` — repoziționez bloc AIScoreCTA mai sus
+- `src/pages/Assessment.tsx` — adaug AIScoreCTA inline sub booking
 
-## Design notes
-- 100% în sistemul nostru: `bg-paper`, `text-ink`, `text-red`, `font-display` (DM Serif), `font-mono` uppercase tracking pe labels, borduri 2px `border-ink/15`.
-- Calculatorul în secțiune `paper` (cremă) pentru contrast cu restul site-ului dark.
-- Animații cu Framer Motion (fade între întrebări) — coerent cu `PageTransition`.
-- Bare gap analysis: tracking colorat per categorie folosind tokens existenți (red, blue, accent).
-- Mobile-first: o întrebare pe ecran ocupă tot viewportul, opțiuni stivuite vertical.
+**Auto-created by tools:**
+- Email domain (dacă nu există) — prin dialog
+- Email infra (cozi, tabele, cron) — prin `setup_email_infra`
+- `send-transactional-email`, `handle-email-unsubscribe`, `handle-email-suppression` — prin `scaffold_transactional_email`
 
-## Marketing copy (carlig tare)
-- Hero: *"92% of companies invest in AI. Only 1% feel mature. Where do you actually stand?"*
-- Pre-email gate: *"Your score is ready. Drop your email to see your maturity level, gap analysis, and the next move that actually matters."*
-- Post-score CTA: *"Want help closing the gaps? Book a free call to walk through your results — or jump straight into the cohort built for non-technical teams."*
-
-## Out of scope
-- NU modific alte pagini (cum ai cerut explicit) decât pentru a adăuga butonul/cardul de intrare la calculator.
-- NU trimit email automat cu rezultatul (doar salvăm în DB) — pot adăuga ulterior dacă vrei.
-- NU adaug autentificare.
+## Risc
+Mic. Singurul punct sensibil: configurarea domeniului de email — dacă nu e gata, deschid dialogul și continui automat după ce confirmi. Restul e pur cod (template-uri + un `invoke` în pagină).
