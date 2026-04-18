@@ -6,6 +6,7 @@ import bannerEvents from "@/assets/banner-events.webp";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
+import FAQAccordion, { type FAQItem } from "@/components/FAQAccordion";
 import { Link } from "@/components/LocalizedLink";
 import { Kicker, SectionHeading } from "@/components/Editorial";
 
@@ -19,6 +20,7 @@ const Events = () => {
   const formats = t("formats.items", { returnObjects: true }) as FormatItem[];
   const included = t("included.items", { returnObjects: true }) as string[];
   const insideSteps = t("inside.steps", { returnObjects: true }) as InsideStep[];
+  const faqItems = t("faq.items", { returnObjects: true }) as FAQItem[];
 
   return (
     <>
