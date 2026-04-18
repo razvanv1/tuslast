@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
+import Affiliations from "@/components/Affiliations";
 import { Kicker, NumberedStep, SectionHeading, Sidebar, TwoColumnGrid } from "@/components/Editorial";
 import razvanPhoto from "@/assets/razvan-valceanu.jpg";
 
