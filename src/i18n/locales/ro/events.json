@@ -1,0 +1,82 @@
+{
+  "seo": {
+    "title": "Evenimente & Keynote-uri — workshopuri, hackathoane și conferințe AI",
+    "description": "Workshopuri AI adaptate pe sector, hackathoane interne și keynote-uri. 90 min – 2 zile. 15 până la 500 de persoane. Fiecare demo construit pe fluxurile tale de lucru, nu pe exemple generice.",
+    "keywords": "keynote AI, workshop AI, hackathon AI, eveniment corporate AI, speaker AI EU, workshop Copilot"
+  },
+  "documentTitle": "Evenimente & Keynote-uri, The Unlearning School",
+  "hero": {
+    "tag": "Evenimente & Keynote-uri",
+    "bannerAlt": "Speaker pe scenă în fața unui public numeros",
+    "title": "Pleacă acasă cu ceva ce au construit ei.",
+    "subtitle": "Workshopuri, hackathoane și keynote-uri pentru companii care au nevoie de dovezi rapide, momentum intern sau o cale de a arăta echipei de management cum arată AI în practică.",
+    "ctaText": "Discuție AI Adoption →",
+    "secondaryText": "Vezi toate programele",
+    "note": "90 min – 2 zile · 15 până la 500 de persoane · Adaptat pe sector"
+  },
+  "intro": {
+    "kicker": "De ce majoritatea evenimentelor AI nu funcționează",
+    "titleStart": "Arată ce poate face AI.",
+    "titleEm": "Nu ce face în compania ta.",
+    "intro": "Oamenii se uită la un demo. Poate încearcă o dată. Apoi revin la fluxurile vechi de marți dimineață. Motivul nu e instrumentul, e că nimic din sesiune nu s-a legat de munca lor reală. Rapoartele lor. Apelurile cu clienții. Pregătirea săptămânală. Când AI nu se mapează pe o sarcină concretă pe care cineva o face zilnic, rămâne o curiozitate.",
+    "pullQuoteStart": "Înainte de fiecare sesiune, cercetez compania, sectorul și echipele care vor fi în sală.",
+    "pullQuoteEm": "Demo-urile sunt construite pe fluxurile lor de lucru, nu pe exemple generice de productivitate.",
+    "pullQuoteEnd": "Toată lumea pleacă acasă cu fișe de prompturi gata de copy-paste luni dimineață."
+  },
+  "formats": {
+    "kicker": "Formate",
+    "titleStart": "Trei formate.",
+    "titleEm": "Un singur standard:",
+    "titleEnd": "rezultate reale, nu slide-uri despre rezultate.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Keynote + Q&A",
+        "meta": "90 de minute · Până la 500 de persoane",
+        "body": "Conceput pentru conferințe și evenimente corporate mari. Subiecte: alfabetizare AI, pregătirea pentru EU AI Act, prototipare rapidă, viitorul muncii. Conținutul e adaptat la audiența și sectorul tău, nu reciclat de la evenimentul precedent."
+      },
+      {
+        "num": "02",
+        "title": "Workshop hands-on",
+        "meta": "Jumătate sau o zi întreagă · 15–50 participanți",
+        "body": "Participanții lucrează direct în instrumentele AI la care au deja acces. Demo-urile live includ și eșecuri reale, pentru că acolo construiesc echipele încredere autentică în instrument. Fiecare participant pleacă cu ceva ce a construit el însuși."
+      },
+      {
+        "num": "03",
+        "title": "Hackathon intern",
+        "meta": "1 sau 2 zile · Scope personalizat",
+        "body": "Design și facilitare completă a unui hackathon AI intern. Include design-ul brief-ului, coaching pe echipe, criterii de jurizare și showcase final. Echipele construiesc prototipuri funcționale pe probleme reale ale companiei, nu prezentări despre prototipuri."
+      }
+    ]
+  },
+  "included": {
+    "kicker": "Ce e inclus în orice colaborare",
+    "titleStart": "Fără slide-uri generice.",
+    "titleEm": "Fără conținut reciclat.",
+    "items": [
+      "Cercetare pre-eveniment despre companie, sector și echipele specifice din sală",
+      "Tot conținutul și demo-urile construite pe stack-ul tău de instrumente și contextul industriei",
+      "Facilitare live de Răzvan Vâlceanu, fondatorul The Unlearning School",
+      "Fișe de prompturi copy-paste pe care fiecare participant le ia cu el",
+      "Pachet de resurse post-sesiune: prompturi, exemple de fluxuri, pași următori",
+      "Opțional: propunere de scope pentru continuarea muncii de adopție pe baza a ceea ce iese la suprafață în sală"
+    ]
+  },
+  "pricing": {
+    "kicker": "Pricing",
+    "titleStart": "Cu scope-ul stabilit per",
+    "titleEm": "colaborare.",
+    "body": "Un apel de 30 de minute e suficient pentru a confirma formatul, audiența și scope-ul potrivit. De acolo, trimitem o propunere specifică în 48 de ore.",
+    "italic": "Fără pricing de catalog. Fiecare eveniment e construit pe sala în care e livrat."
+  },
+  "quote": {
+    "attribution": "Când bugetul e obiecția",
+    "body": "Programul tău AI ar putea fi deja finanțat. Doar că nu l-ai structurat așa. Microsoft, AWS și Google alocă bugete de co-sell și Market Development Funds în fiecare trimestru pentru exact acest tip de muncă de adopție. Majoritatea companiilor se califică. Majoritatea nu știu."
+  },
+  "cta": {
+    "title": "Spune-mi despre evenimentul tău.",
+    "subtitle": "Un apel de 30 de minute pentru a confirma formatul, audiența și scope-ul. Propunere specifică în 48 de ore. Construită pe oamenii din sală, nu pe evenimentul anterior pe care l-am livrat.",
+    "ctaText": "Discuție AI Adoption →",
+    "note": "Gratuit · Fără angajament · Propunere în 48 de ore"
+  }
+}
