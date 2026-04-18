@@ -117,6 +117,13 @@
     "attribution": "On qualification",
     "body": "Most companies qualify for at least one instrument. The question is not whether the funding exists, it does. The question is whether your program is structured in a way that the funding body will recognise."
   },
+  "eventsBridge": {
+    "kicker": "Before you fund it",
+    "titleStart": "Want to see what a live session looks like",
+    "titleEm": "before you fund one?",
+    "body": "Come into a live prototyping session and see exactly what the program produces — working prototypes, team capability, deliverables — before you structure the funding around it.",
+    "cta": "See live sessions →"
+  },
   "faq": {
     "kicker": "Frequently asked",
     "titleStart": "Before the",
