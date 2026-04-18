@@ -173,34 +173,26 @@
 
 @layer utilities {
 
-  /* Section grey variants — give the page rhythm with multiple grey tones */
+  /* Section grey variants — flat matte tones, no sheen, for tonal rhythm */
   .bg-section-darker {
-    background-color: hsl(220 9% 9%);
-    background-image:
-      radial-gradient(ellipse at 50% 0%, hsl(220 10% 14% / 0.6), transparent 60%),
-      linear-gradient(180deg, hsl(220 9% 10%) 0%, hsl(220 8% 8%) 100%);
+    background-color: hsl(0 0% 5%);
   }
   .bg-section-graphite {
-    background-color: hsl(220 7% 18%);
-    background-image:
-      radial-gradient(ellipse at 30% 20%, hsl(220 10% 26% / 0.55), transparent 55%),
-      radial-gradient(ellipse at 80% 90%, hsl(220 12% 14% / 0.5), transparent 55%),
-      linear-gradient(180deg, hsl(220 8% 19%) 0%, hsl(220 8% 16%) 100%);
+    background-color: hsl(220 4% 14%);
+  }
+  .bg-section-slate {
+    background-color: hsl(220 3% 11%);
   }
 
-  /* Auto-rhythm: every even dark section gets the graphite tone for variety */
+  /* Auto-rhythm: alternate matte tones between consecutive default-dark sections */
   section.bg-background:nth-of-type(even) {
-    background-color: hsl(220 7% 17%);
-    background-image:
-      radial-gradient(ellipse at 30% 20%, hsl(220 10% 24% / 0.5), transparent 55%),
-      radial-gradient(ellipse at 80% 90%, hsl(220 12% 13% / 0.5), transparent 55%),
-      linear-gradient(180deg, hsl(220 8% 18%) 0%, hsl(220 8% 15%) 100%);
+    background-color: hsl(220 4% 14%);
   }
   section.bg-background:nth-of-type(3n) {
-    background-color: hsl(220 9% 11%);
-    background-image:
-      radial-gradient(ellipse at 70% 0%, hsl(220 12% 19% / 0.55), transparent 55%),
-      linear-gradient(180deg, hsl(220 9% 12%) 0%, hsl(220 9% 9%) 100%);
+    background-color: hsl(220 3% 11%);
+  }
+  section.bg-background:nth-of-type(4n) {
+    background-color: hsl(0 0% 5%);
   }
 
   /* Paper texture */
