@@ -13,6 +13,9 @@ import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
 interface Instrument { title: string; audience: string; body: string; coverage: string; tag: string; }
 interface Step { title: string; body: string; }
 interface BridgeStep { num: string; label: string; title: string; body: string; linkText?: string; linkTo?: string; }
+interface NamedItem { name: string; what: string; }
+interface NamedGroup { title: string; items: NamedItem[]; }
+interface EngineItem { title: string; body: string; }
 
 const Funding = () => {
   const { t } = useTranslation("funding");
@@ -24,6 +27,9 @@ const Funding = () => {
   const resultParagraphs = t("result.paragraphs", { returnObjects: true }) as string[];
   const bridgeSteps = t("bridge.steps", { returnObjects: true }) as BridgeStep[];
   const faqItems = t("faq.items", { returnObjects: true }) as FAQItem[];
+  const programmesVendor = t("programmes.vendor", { returnObjects: true }) as NamedGroup;
+  const programmesEu = t("programmes.eu", { returnObjects: true }) as NamedGroup;
+  const engineItems = t("engine.items", { returnObjects: true }) as EngineItem[];
 
   return (
     <>
