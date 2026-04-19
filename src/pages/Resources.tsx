@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
-import { Kicker, SectionHeading } from "@/components/Editorial";
+import { SectionHeading } from "@/components/Editorial";
 import { Link } from "@/components/LocalizedLink";
 
 interface LibraryItem {
