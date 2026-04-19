@@ -188,5 +188,110 @@
       "question": "How do I start?",
       "answer": "Book a free AI Adoption Gap Assessment. One working session, written report within 5 business days, no proposal attached."
     }
-  ]
+  ],
+  "scoreStrip": {
+    "kicker": "AI Adoption Score · 2 min",
+    "body": "Take the 2-minute test.",
+    "bodyEm": "Get your score and a tailored adoption roadmap.",
+    "button": "Take the test"
+  },
+  "beforeAfter": {
+    "kicker": "Before / After · One real workflow",
+    "titleStart": "Procurement RFP review,",
+    "titleEm": "rebuilt with AI.",
+    "body": "One workflow, two timelines. Same team, same RFP, same outcome quality. The difference is where the work actually happens.",
+    "before": {
+      "tag": "Before · Manual",
+      "title": "RFP review, the old way",
+      "time": "6h",
+      "steps": [
+        "Read 80-page RFP end-to-end",
+        "Highlight risks and obligations by hand",
+        "Re-type findings into internal template",
+        "Cross-check pricing terms across sections",
+        "Schedule 2 follow-up meetings to clarify"
+      ],
+      "friction": "Senior reviewer pulled off other work for a day"
+    },
+    "after": {
+      "tag": "After · AI-assisted",
+      "title": "RFP review, with the same team",
+      "time": "45min",
+      "steps": [
+        "Drop RFP into the team's existing Copilot",
+        "Run prompt sheet for risk + obligation extraction",
+        "Auto-fill internal template from structured output",
+        "Reviewer validates, edits, signs off",
+        "Send clarifications in one consolidated email"
+      ],
+      "friction": "Reviewer keeps judgement, loses the typing"
+    }
+  },
+  "cases": {
+    "kicker": "Track record · Anonymised by request",
+    "titleStart": "Real organisations,",
+    "titleEm": "real outcomes.",
+    "body": "We don't publish client logos. We do publish what changed: hours saved, processes rebuilt, people trained. Sectors and scale below are accurate; names withheld by agreement.",
+    "items": [
+      { "sector": "Top-3 RO bank", "metric": "120", "outcome": "PMs trained on AI-assisted spec writing", "context": "4-week sprint · 38% spec time saved" },
+      { "sector": "National distributor", "metric": "80", "outcome": "Sceptical employees turned Copilot-active in 2h", "context": "On-site session · 100% completion" },
+      { "sector": "EU pharma", "metric": "3 depts", "outcome": "Compliance + medical + commercial trained together", "context": "EU AI Act Article 4 ready" },
+      { "sector": "Public university", "metric": "200+", "outcome": "Faculty and admin trained on responsible AI use", "context": "Full academic year programme" },
+      { "sector": "Mid-cap retail", "metric": "45%", "outcome": "Reduction in weekly report production time", "context": "6-week embed · finance team" }
+    ],
+    "footnote": "Reference calls available under NDA after a first conversation."
+  },
+  "founder": {
+    "kicker": "The person behind it",
+    "label": "Founder",
+    "titleStart": "Run by someone who has",
+    "titleEm": "actually done the rollout.",
+    "lead": "Your company already paid for AI licences. Most of them are barely touched. The problem is rarely the tool — it's that no one showed the team how AI fits their actual work.",
+    "body": "Before any session I research the company, the industry, and the departments in the room. Demos are built on workflows they already do. Sessions run 80% inside AI tools they already have access to. Everyone leaves with prompt sheets they can use the next morning, not a recording they'll never rewatch.",
+    "bullets": [
+      "20+ years across business leadership and education",
+      "Former General Manager, Bitdefender Romania & Moldova",
+      "Entrepreneurship Director, University of Life Sciences Timișoara",
+      "1,400+ professionals trained directly · Lovable Ambassador"
+    ],
+    "linkedin": "Connect on LinkedIn",
+    "aboutCta": "Read the full story"
+  },
+  "testimonials": {
+    "kicker": "What participants say",
+    "titleStart": "Words from",
+    "titleEm": "the room.",
+    "items": [
+      {
+        "quote": "Transformation begins with the commitment to intentional growth, and that is the meaning of this course. It exceeded expectations, and the one-on-one sessions with Răzvan had a major impact on my future artistic career.",
+        "name": "Mary Calai",
+        "role": "Artist"
+      },
+      {
+        "quote": "The entrepreneurship course was extremely useful — I learned a lot from you, but I think it's only a small piece of what you have to offer. Wishing you continued success, and I hope more people get the chance to know you and learn from you.",
+        "name": "Alina Nițu",
+        "role": "Lawyer"
+      },
+      {
+        "quote": "The course gave me the tools I needed to align personal development with professional growth and pushed me toward a holistic view of success. I confidently recommend The Unlearning School to any entrepreneur who wants to grow on both fronts.",
+        "name": "Oana Chiva",
+        "role": "Entrepreneur"
+      },
+      {
+        "quote": "Răzvan separates fact from myth in personal development and entrepreneurship and delivers a complete educational concept. Well-structured, detailed, and the trainer's involvement was total.",
+        "name": "Alex Tănase",
+        "role": "Entrepreneur"
+      },
+      {
+        "quote": "One of the most inspired and dedicated trainers I've met. Răzvan turns theory into practical experience and gives you not just solid business knowledge but the tools to apply it in real life — concise, yet all-encompassing.",
+        "name": "Alexandra Zărnescu",
+        "role": "Screenwriter & marketing specialist"
+      },
+      {
+        "quote": "Thank you for the support and advice — it helped enormously. We wanted to let you know we placed 3rd. We did really well.",
+        "name": "Andra & Erin",
+        "role": "Master's students"
+      }
+    ]
+  }
 }
