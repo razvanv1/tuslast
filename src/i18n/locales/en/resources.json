@@ -94,18 +94,21 @@
           { "name": "Ollama", "what": "Run open-source LLMs on your own server with one command.", "url": "https://ollama.com/" },
           { "name": "LM Studio", "what": "Desktop app to run open models on a laptop or workstation, GUI included.", "url": "https://lmstudio.ai/" }
         ]
-      },
-      {
-        "title": "EU funding routes · 2026",
-        "blurb": "Public funding programmes that co-fund AI adoption, training and pilots.",
-        "items": [
-          { "name": "Digital Europe Programme", "what": "EU co-funding for digital skills, AI testing and EDIH access.", "url": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme" },
-          { "name": "Horizon Europe — AI calls", "what": "R&D and innovation funding, including AI-focused topics.", "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" },
-          { "name": "PNRR Romania · digitalization", "what": "National recovery funds for SME digitalization and AI adoption.", "url": "https://mfe.gov.ro/pnrr/" },
-          { "name": "POCIDIF / programe digitalizare RO", "what": "Operational programmes co-funding digital + AI projects in Romania.", "url": "https://mfe.gov.ro/" }
-        ]
       }
     ]
+  },
+  "funding": {
+    "kicker": "Funding · in the works",
+    "titleStart": "We also work on",
+    "titleEm": "funding intelligence.",
+    "body": "EU calls, national programmes, recovery funds — the landscape is dense and most teams miss the deadlines that matter. We are building a dedicated practice around this: tracking opportunities, scoring fit, and turning them into submitted applications without the manual overhead. More to share soon.",
+    "tags": [
+      "EU structural & Horizon programmes",
+      "National digitalization & recovery funds",
+      "Fit scoring & deadline tracking",
+      "Application drafting from past work"
+    ],
+    "footnote": "Detailed routes and tools coming later in 2026."
   },
   "cta": {
     "title": "Start with the AI Adoption Call.",
