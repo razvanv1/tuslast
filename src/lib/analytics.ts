@@ -30,6 +30,6 @@ export const trackEvent = (
     if (typeof window === "undefined") return;
     window.plausible?.(name, props ? { props } : undefined);
   } catch {
-    // Swallow analytics errors — never block UX.
+    // Swallow analytics errors - never block UX.
   }
 };

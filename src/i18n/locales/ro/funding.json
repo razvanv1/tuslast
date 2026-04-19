@@ -9,7 +9,7 @@
     "tag": "MDF · Credite vendor · Granturi UE",
     "bannerAlt": "Echipă modernă analizând documente de finanțare",
     "title": "Ai învățat ce să construiești. Acum finanțează construcția.",
-    "subtitle": "Training-ul lasă în urmă prototipuri funcționale și capacitatea echipei de a le folosi. Producția — agenți, integrări, licențe, dev work, change management — costă bani reali. Microsoft, AWS, Google și programele UE finanțează exact tranziția asta. Majoritatea companiilor se califică. Puține își structurează programul într-un mod pe care organismul de finanțare să-l recunoască.",
+    "subtitle": "Training-ul lasă în urmă prototipuri funcționale și capacitatea echipei de a le folosi. Producția - agenți, integrări, licențe, dev work, change management - costă bani reali. Microsoft, AWS, Google și programele UE finanțează exact tranziția asta. Majoritatea companiilor se califică. Puține își structurează programul într-un mod pe care organismul de finanțare să-l recunoască.",
     "ctaText": "Află pentru ce te califici →",
     "secondaryText": "Vezi instrumentele de finanțare ↓",
     "note": "Gratuit · Fără angajament · Shortlist scris în 5 zile lucrătoare"
@@ -62,7 +62,7 @@
     "kicker": "Instrumente de finanțare disponibile",
     "titleStart": "Patru surse.",
     "titleEm": "Majoritatea companiilor au acces la cel puțin una.",
-    "intro": "Sunt programe actuale, numite, active — nu categorii generice. Sumele de credit, tier-urile de partener și ferestrele de eligibilitate se schimbă trimestrial. Le urmărim noi ca tu să nu fii nevoit.",
+    "intro": "Sunt programe actuale, numite, active - nu categorii generice. Sumele de credit, tier-urile de partener și ferestrele de eligibilitate se schimbă trimestrial. Le urmărim noi ca tu să nu fii nevoit.",
     "cardCta": "Programează un call pentru asta →",
     "items": [
       {
@@ -119,7 +119,7 @@
     "kicker": "Programe concrete cu care lucrăm",
     "titleStart": "Programe reale,",
     "titleEm": "numite.",
-    "intro": "Când zicem „patru surse” ne referim la programele astea concrete — actuale, numite, active în 2026. Credite vendor în stânga, granturi UE și naționale în dreapta. Nu e exhaustiv — apelurile deschise și programele de partener se schimbă în fiecare trimestru.",
+    "intro": "Când zicem „patru surse” ne referim la programele astea concrete - actuale, numite, active în 2026. Credite vendor în stânga, granturi UE și naționale în dreapta. Nu e exhaustiv - apelurile deschise și programele de partener se schimbă în fiecare trimestru.",
     "vendor": {
       "title": "Credite vendor & fonduri de partener",
       "items": [
@@ -157,7 +157,7 @@
       "title": "Granturi UE & naționale",
       "items": [
         {
-          "name": "PNRR România — digitalizare",
+          "name": "PNRR România - digitalizare",
           "what": "Planul Național de Redresare și Reziliență, componente de digitalizare. Specific România, apeluri active 2025–2026."
         },
         {
@@ -169,7 +169,7 @@
           "what": "Co-finanțare UE pentru skill-uri AI, medii de testare digitală și acces EDIH."
         },
         {
-          "name": "Horizon Europe — apeluri AI",
+          "name": "Horizon Europe - apeluri AI",
           "what": "Finanțare R&D și inovare, inclusiv subiecte AI și proiecte de consorțiu."
         },
         {
@@ -178,7 +178,7 @@
         }
       ]
     },
-    "footnote": "Nu e exhaustiv. Urmărim mai multe — apelurile deschise și programele partenerilor se schimbă în fiecare trimestru."
+    "footnote": "Nu e exhaustiv. Urmărim mai multe - apelurile deschise și programele partenerilor se schimbă în fiecare trimestru."
   },
   "process": {
     "kicker": "Cum lucrăm",
@@ -191,7 +191,7 @@
       },
       {
         "title": "Mapăm instrumentele eligibile",
-        "body": "Pe baza auditului, identificăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică — un set specific cu criteriile de calificare confirmate."
+        "body": "Pe baza auditului, identificăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică - un set specific cu criteriile de calificare confirmate."
       },
       {
         "title": "Structurăm programul ca să se califice",
@@ -243,7 +243,7 @@
     "kicker": "În spatele scenei",
     "titleStart": "Ce facem efectiv",
     "titleEm": "în spatele structurării.",
-    "intro": "Munca de structurare nu e un singur PDF. Rulează pe un strat operațional pe care-l folosim în fiecare angajament de finanțare. Îl deschidem ca tool separat mai târziu — deocamdată rulează în munca pe care o facem pentru tine.",
+    "intro": "Munca de structurare nu e un singur PDF. Rulează pe un strat operațional pe care-l folosim în fiecare angajament de finanțare. Îl deschidem ca tool separat mai târziu - deocamdată rulează în munca pe care o facem pentru tine.",
     "items": [
       {
         "title": "Scanare continuă",
@@ -251,7 +251,7 @@
       },
       {
         "title": "Scoring de potrivire",
-        "body": "Fiecare oportunitate e scorată după profilul organizației — eligibilitate, efort, acoperire estimată."
+        "body": "Fiecare oportunitate e scorată după profilul organizației - eligibilitate, efort, acoperire estimată."
       },
       {
         "title": "Urmărire deadline-uri & follow-up",
@@ -259,7 +259,7 @@
       },
       {
         "title": "Reutilizare a conținutului anterior",
-        "body": "Draft-urile pleacă de la aplicațiile, deck-urile și propunerile tale anterioare — ca să rafinezi, nu să pornești de la pagină goală."
+        "body": "Draft-urile pleacă de la aplicațiile, deck-urile și propunerile tale anterioare - ca să rafinezi, nu să pornești de la pagină goală."
       },
       {
         "title": "Draft structurat de propunere",
@@ -286,7 +286,7 @@
       },
       {
         "q": "Cum funcționează efectiv rambursarea?",
-        "a": "Pentru credite vendor (AWS, Google, Microsoft Founders Hub), fondurile se aplică direct pe contul tău de billing ca să compenseze costurile de infrastructură și API. Nimic de revendicat — creditul e acolo când îți trebuie.\n\nPentru granturi UE și MDF de partener: rulezi programul, plătești facturile și depui dovada execuției. Vendor-ul sau organismul UE te rambursează direct. Structurăm documentația de livrare din ziua unu ca să se potrivească exact cu criteriile de rambursare — nu reconstruită la final."
+        "a": "Pentru credite vendor (AWS, Google, Microsoft Founders Hub), fondurile se aplică direct pe contul tău de billing ca să compenseze costurile de infrastructură și API. Nimic de revendicat - creditul e acolo când îți trebuie.\n\nPentru granturi UE și MDF de partener: rulezi programul, plătești facturile și depui dovada execuției. Vendor-ul sau organismul UE te rambursează direct. Structurăm documentația de livrare din ziua unu ca să se potrivească exact cu criteriile de rambursare - nu reconstruită la final."
       },
       {
         "q": "Ce documente cerem de la voi?",
@@ -306,12 +306,12 @@
     "kicker": "Înainte să o finanțezi",
     "titleStart": "Vrei să vezi ce produce o sesiune",
     "titleEm": "înainte să o finanțezi?",
-    "body": "Vino într-o sesiune live de prototipare și vezi exact livrabilele — prototipuri funcționale, capabilitate de echipă construită, artefacte practice — înainte să structurezi finanțarea în jurul lor.",
+    "body": "Vino într-o sesiune live de prototipare și vezi exact livrabilele - prototipuri funcționale, capabilitate de echipă construită, artefacte practice - înainte să structurezi finanțarea în jurul lor.",
     "cta": "Vezi sesiuni live →"
   },
   "quote": {
     "attribution": "Despre calificare · The Unlearning School",
-    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
+    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există - există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
   },
   "cta": {
     "title": "Află pentru ce te califici.",

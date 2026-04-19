@@ -159,7 +159,7 @@ const Funding = () => {
               <ul className="space-y-2 mb-6 flex-1">
                 {i.coverage.map((c, ci) => (
                   <li key={ci} className="flex gap-3 text-[14px] text-ink/80 border-b border-ink/10 pb-2">
-                    <span className="font-mono text-red text-[12px] flex-shrink-0">—</span>
+                    <span className="font-mono text-red text-[12px] flex-shrink-0">-</span>
                     <span>{c}</span>
                   </li>
                 ))}
@@ -204,7 +204,7 @@ const Funding = () => {
         </p>
       </Section>
 
-      {/* How we work — 5 steps + Result */}
+      {/* How we work - 5 steps + Result */}
       <Section>
         <SectionHeading
           kicker={t("process.kicker")}
@@ -255,7 +255,7 @@ const Funding = () => {
         </div>
       </Section>
 
-      {/* Engine — operational layer */}
+      {/* Engine - operational layer */}
       <Section>
         <SectionHeading
           kicker={t("engine.kicker")}
