@@ -270,16 +270,23 @@ const Resources = () => {
             </p>
           </div>
           <div className="md:col-span-5">
-            <ul className="border-t border-paper/15">
-              {(t("funding.tags", { returnObjects: true }) as string[]).map((tag, i) => (
-                <li key={i} className="flex items-baseline gap-3 py-4 border-b border-paper/15">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-red shrink-0">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="text-paper/85 text-[15px] leading-snug">{tag}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="border border-paper/15 p-7 md:p-8 bg-background/40">
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+                {t("funding.depthKicker")}
+              </p>
+              <h3 className="font-display text-2xl text-paper leading-tight mb-3">
+                {t("funding.depthTitle")}
+              </h3>
+              <p className="text-paper/70 text-[14px] leading-relaxed mb-5">
+                {t("funding.depthBody")}
+              </p>
+              <Link
+                to="/funding"
+                className="inline-flex items-center font-mono text-[11px] uppercase tracking-[0.25em] text-paper hover:text-red transition-colors border-b border-paper/30 hover:border-red pb-1"
+              >
+                {t("funding.depthCta")}
+              </Link>
+            </div>
           </div>
         </div>
       </Section>
