@@ -1,92 +1,71 @@
 
 
-## Plan: Audit + rewrite all SEO/GEO/AEO meta across the site
+## Plan: SEO/AEO hardening + crawlability + copy coherence audit
 
-I'll do a coherent, persuasive rewrite of titles, meta descriptions, OG/Twitter, keywords, and JSON-LD across **every page in both EN and RO**, matching the voice you set on the homepage meta:
+Three separate problems bundled. I'll tackle them in one pass.
 
-> *"AI Training, Workshops and Events for AI adoption. We redesign workflows so your team actually uses the AI tools your company is already paying for."*
+### 1) Make the site readable to AI bots (the "React blank page" problem)
 
-That's the master tone: concrete, second-person, names the actual problem, no jargon. I'll apply it everywhere.
+**The real issue**: Vite SPA serves an empty `<div id="root">` to bots that don't run JS. Some AI crawlers (older GPTBot fetches, Claude-Web, Perplexity-User, social previews) get nothing. `react-helmet-async` only works after JS runs.
 
-### Audit findings (what's wrong now)
+**Fix without changing stack** (no SSR, no Next.js):
+- **Inline a server-rendered fallback inside `index.html` `<body>`** — visible H1, page intro paragraph, nav links, key offer copy, contact, address — wrapped in a `<noscript>` + a regular `<div id="bot-content">` that gets hidden by CSS once React hydrates (`#root:not(:empty) ~ #bot-content { display: none }`). Bots without JS see real content; humans never see it.
+- **Add static `<meta>` baseline** in `index.html` for the homepage (already partly done) — title, description, OG, Twitter, geo, JSON-LD. So even zero-JS crawlers get full meta on `/`.
+- **Add `prerender` hints**: `<link rel="alternate" hreflang>` already there via Helmet, but add static EN/RO hreflang in `index.html` too.
+- **Verify `robots.txt`** — already permissive (audited earlier, all major AI bots allowed). Confirm sitemap is fresh.
+- **Add `llms.txt`** content check — `public/llms.txt` exists; I'll rewrite it as a clean, structured site map for LLMs (what TUS does, key pages, contact). This is the AEO standard now.
+- **Add `<meta name="generator">` removal** and `<meta name="fediverse:creator">` skip (not needed) — keep meta clean.
 
-1. **`index.html` is hardcoded EN-only and stale** — title/description in `<head>` are static and override the homepage's React `<SEO>` for first paint and crawlers that don't run JS. They also don't match what `home.json` says. Two competing sources of truth.
-2. **Tone drift across pages** — some titles use a dash format (`AI Adoption Call - free 30-minute…`), others use a comma (`AI for Non-Technical People, structured…`), some are description-style, some are feature-list style. No consistent shape.
-3. **Descriptions are mixed quality** — `funding`, `programmes`, `score`, `assessment`, `events` are decent. `about`, `resources`, `hermes` are flat. Legal/payment/404 are bare-bones.
-4. **Keywords drift** — homepage missing "Gemini Enterprise", funding has it, programmes doesn't. No coherent keyword cluster strategy.
-5. **GEO partial** — `geo.region=RO`, `ICBM` are set but no `geo.position`, no localized `geo.placename` for RO version (still "Bucharest" in English on RO pages — fine but could add `București`).
-6. **6 resource articles** each have their own SEO block — need same treatment.
-7. **OG image** — homepage has a real one, all other pages fall back to a generic `12b5078b-…` OG image. Acceptable for now, but I'll keep the system intact.
+**What I won't do**: install SSR/prerender tooling (react-snap, vite-prerender). That's a bigger refactor. The static fallback + per-page Helmet covers 95% of bots.
 
-### What I'll do
+### 2) Copy coherence audit (button labels, funnel naming)
 
-#### A) Define one consistent title formula
-**Format**: `{Page promise} · {Concrete proof or scope}` — no dashes, no "The Unlearning School" suffix (SEO.tsx already appends it).
+**Audit scope**: Every CTA button label across all pages, EN + RO. Goal: one action = one name everywhere.
 
-Examples (EN → RO):
-- Home: `AI training that gets your team using the tools you already pay for` / `Training AI care îți face echipa să folosească tool-urile pe care deja le plătești`
-- Programmes: `AI for non-technical teams · role-adapted, EU AI Act Article 4 ready` / `AI pentru echipe non-tehnice · adaptat pe rol, conform Art. 4 EU AI Act`
-- Funding: `Fund the AI adoption you can't afford to skip · MDF, AWS, Google, EU grants` / `Finanțează adopția AI pe care nu ți-o permiți să o amâni · MDF, AWS, Google, granturi UE`
-- Events: `Live AI prototyping for 15–500 people · workshops, hackathons, keynotes`
-- Hermes: `Hermes · the open-source AI agent that runs on your server`
-- Score: `Free 2-minute AI adoption score · know exactly where you stand`
-- Assessment: `Free 30-minute AI adoption call · maturity score + roadmap in 24h`
-- Resources: `Field notes on AI adoption · frameworks, funding intel, EU AI Act`
-- About: `Behaviour change practice for AI adoption · founded by Răzvan Vâlceanu`
+Known inconsistencies to fix:
+- "AI Adoption Call" vs "Book a call" vs "Free 30-min call" vs "Discuție AI Adoption" vs "Programează o discuție" — pick one canonical name per language and use it everywhere (nav, hero, CTAs, footer, FAQ).
+- "AI Adoption Score" vs "AI Score" vs "Take the score" vs "Diagnostic AI" vs "Fă diagnosticul" — same.
+- "Programmes" vs "AI for Work" vs "AI for non-technical" — clarify hierarchy.
+- "See programmes" vs "View programmes" vs "Explore programmes" — pick one.
+- "Book a funding call" vs "Find out what you qualify for" vs "Book a call about this" — funding page has 3 names for the same CTA.
 
-#### B) Rewrite descriptions in the homepage voice
-Every description follows: **(1) what the page actually delivers + (2) who it's for + (3) one concrete proof point**. 150–160 chars, second person, no buzzwords like "leverage" / "transform" / "empower".
+**Deliverable**: a canonical CTA dictionary (EN + RO), then propagate across all components and locale files.
 
-Example for Funding (EN):
-> *"Most companies qualify for Microsoft MDF, AWS co-sell, Google Cloud Partner funds or EU digital grants. Few structure the application right. We do that, free."*
+### 3) Translation quality pass + remove em-dashes
 
-Example for Hermes (EN):
-> *"Hermes is an open-source AI agent with persistent memory and 40+ tools. Runs on your server. Telegram, Slack, Email. From prototype to autonomy in 4 weeks."*
+**Em-dashes (—)**: Scan all `.json`, `.tsx`, `.html`, `.md`, `.txt` files. Replace `—` with either `-` (regular dash, OK for Google SERP) or restructure the sentence (often better). Keep regular hyphens (`-`) as-is. This includes the funding page rewrite I just did, the SEO descriptions, and the bot-content fallback.
 
-#### C) Coherent keyword clusters
-3 master clusters reused across pages:
-- **Adoption cluster**: AI adoption, AI training, change management, Copilot adoption, Gemini Enterprise rollout, EU AI Act Article 4
-- **Geo cluster**: Romania, Bucharest, EU, mid-market
-- **Vendor cluster**: Microsoft Copilot, Microsoft 365, AWS Bedrock, Google Workspace, Gemini, OpenAI ChatGPT
-Each page picks its relevant subset — no more orphan keywords.
+**RO translation pass**: Sweep RO locale files for:
+- LM-stereotype words: "claritate", "intersecție", "navighează", "valorifică", "împuternicește", "transformă", "experiență seamless", "soluții" (when overused), "în mod natural", "într-adevăr", "pur și simplu"
+- Robotic literal translations of EN idioms — rewrite in native business RO
+- Anglicisms left untranslated where a clean RO word exists; keep tech terms (Copilot, Gemini, MDF, Bedrock, etc.) in English
 
-#### D) Fix `index.html` (server-rendered baseline)
-- Update the static `<title>` and `<meta description>` to the new home strings
-- Remove the **duplicate** OG/Twitter meta tags at the bottom (lines 105–110) — `react-helmet-async` already injects them
-- Keep the JSON-LD blobs but tighten descriptions to match
-- Add `geo.position` and a Romanian-friendly second placename
+**EN translation pass**: Same hunt for AI-stereotype phrases — "leverage", "unlock", "seamlessly", "harness the power of", "in today's fast-paced world", "robust solution", "cutting-edge", "game-changer". Strip them.
 
-#### E) Strengthen GEO/AEO in `SEO.tsx`
-- Add `geo.position="44.4268;26.1025"` (sibling to ICBM)
-- For RO routes: add `geo.placename="București, România"` instead of "Bucharest"
-- Add `<meta name="audience" content="business">` (helps AEO classify intent)
-- Add a default `BreadcrumbList` JSON-LD when not on home (helps Google rich results)
+### Files I'll touch
 
-#### F) Per-article SEO for the 6 resource articles
-Same rewrite treatment in EN + RO (titles + descriptions + keywords).
+**Crawlability**:
+- `index.html` — add bot-content fallback block, static hreflang, hide-on-hydrate CSS
+- `public/llms.txt` — rewrite as proper LLM site index
+- `public/robots.txt` — verify (likely no change)
+- `public/sitemap.xml` — verify dates current
 
-#### G) Legal / payment / 404 pages
-Tighten the bare descriptions — still `noindex` so they're not ranking, but the title/OG should be on-brand for any accidental share.
+**Copy coherence + em-dashes + translation pass**:
+- All 22 locale files in `src/i18n/locales/{en,ro}/*.json`
+- All page components that contain hardcoded copy: scan `src/pages/*.tsx` and `src/components/*.tsx` for any inline strings (most are already in i18n, but spot-check)
+- `src/components/Navbar.tsx`, `Footer.tsx`, CTA components — verify they pull from canonical i18n keys
 
-### Files to edit
+### What I need to confirm before starting
 
-**i18n (12 files)**:
-- `src/i18n/locales/en/{home,about,assessment,events,funding,hermes,programmes,resources,score,legal,misc}.json` — `seo` / `meta` blocks
-- `src/i18n/locales/ro/` — same 11 files, RO native (not literal translation)
-- Both `resources.json` files — also rewrite the 6 `articles.*.seo` blocks
+One decision:
 
-**Code (2 files)**:
-- `index.html` — replace hardcoded title/description, remove duplicate OG/Twitter blocks at bottom, refresh JSON-LD copy
-- `src/components/SEO.tsx` — add `geo.position`, RO-aware `geo.placename`, optional breadcrumb JSON-LD, `audience` meta
+**Canonical CTA names** — pick the version you want used everywhere:
+1. **For the 30-min booking call**: 
+   - EN: `AI Adoption Call` (current default in nav/footer) — keep this everywhere?
+   - RO: `Discuție AI Adoption` — keep this everywhere?
+2. **For the 2-min self-test**: 
+   - EN: `AI Adoption Score` — keep this everywhere?
+   - RO: `Diagnostic AI Adoption` — keep this everywhere?
 
-### What I'm NOT doing
-
-- Not creating per-page custom OG images (out of scope, would need design pass — current fallback OG stays)
-- Not changing canonical/hreflang logic (already correct via `routes.ts`)
-- Not touching `sitemap.xml` or `robots.txt` (already aligned)
-- Not adding new pages or new JSON-LD types beyond `BreadcrumbList`
-
-### One quick check
-
-Should the title format use the **middle dot `·`** (used in your funding HTML reference) as the separator everywhere, or a **dash `–`** (more common in Google SERPs)? Default if no answer: `·` to match the editorial style you already established on `/funding`.
+**Default if you don't answer**: I'll standardize on those four names (current nav defaults) and rewrite every other variant to match. If you prefer different wording, tell me now.
 
