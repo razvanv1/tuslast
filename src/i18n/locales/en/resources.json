@@ -57,9 +57,9 @@
   },
   "cheapAi": {
     "kicker": "Reference",
-    "titleStart": "AI on the",
-    "titleEm": "cheap.",
-    "subtitle": "Credits, free tiers and open-source tools that let teams pilot AI without a procurement cycle. Updated for 2026.",
+    "titleStart": "Free opportunities &",
+    "titleEm": "bonus credits.",
+    "subtitle": "Vendor perks, free tiers and on-prem options that let teams adopt AI without paying full price — and without sending sensitive data to a US chatbot. Updated for 2026.",
     "groups": [
       {
         "title": "Vendor credits",
@@ -72,25 +72,27 @@
         ]
       },
       {
-        "title": "Free tiers worth using",
-        "blurb": "Real free tiers, not 14-day trials. Good enough for prototypes and small workloads.",
+        "title": "Free tiers & domain agents",
+        "blurb": "Real free tiers, not 14-day trials. Good enough for prototypes, pilots and small workloads.",
         "items": [
           { "name": "Lovable AI Gateway", "what": "Free window on Gemini 2.5 Flash. No key, no card.", "url": "https://docs.lovable.dev/features/ai" },
-          { "name": "Groq", "what": "Very fast inference on Llama and Mixtral, generous free tier.", "url": "https://console.groq.com/" },
+          { "name": "Hermes Agent", "what": "Our domain agent for AI adoption questions. Free to try, no signup.", "url": "/hermes" },
+          { "name": "OpenClaw", "what": "Open-source agent framework for building your own domain assistants.", "url": "https://github.com/openclaw" },
           { "name": "Mistral La Plateforme", "what": "Free API access to Mistral Small for experimentation.", "url": "https://console.mistral.ai/" },
           { "name": "Together AI", "what": "Free credits on Llama, Qwen and other open models.", "url": "https://www.together.ai/" }
         ]
       },
       {
-        "title": "Open-source models & tools",
-        "blurb": "Run AI locally or self-host. Zero per-token cost, full data control.",
+        "title": "On-prem & local models · privacy first",
+        "blurb": "Companies need privacy, not a ChatGPT subscription. Run open models on your own hardware — zero data leaves the building.",
         "items": [
-          { "name": "Llama 3.x", "what": "Meta's flagship open-weight family. Strong general-purpose models.", "url": "https://llama.meta.com/" },
+          { "name": "Gemma 3 (Google)", "what": "Latest open-weight family from Google. Runs on a single GPU, strong for SMB workloads.", "url": "https://ai.google.dev/gemma" },
+          { "name": "Llama 3.x (Meta)", "what": "Flagship open-weight family. Strong general-purpose models, full self-host.", "url": "https://llama.meta.com/" },
           { "name": "Mistral & Mixtral", "what": "European open models, efficient for European-language workloads.", "url": "https://mistral.ai/technology/" },
-          { "name": "Qwen", "what": "Alibaba's open models, top of the charts on multilingual tasks.", "url": "https://qwenlm.github.io/" },
-          { "name": "Whisper", "what": "OpenAI's open-source speech-to-text. Runs locally, multilingual.", "url": "https://github.com/openai/whisper" },
-          { "name": "Ollama", "what": "Run open-source LLMs locally with one command.", "url": "https://ollama.com/" },
-          { "name": "LM Studio", "what": "Desktop app to run open models on your laptop, GUI included.", "url": "https://lmstudio.ai/" }
+          { "name": "Qwen", "what": "Top of the charts on multilingual tasks, fully open weights.", "url": "https://qwenlm.github.io/" },
+          { "name": "Whisper", "what": "Open-source speech-to-text. Runs locally, multilingual, no upload.", "url": "https://github.com/openai/whisper" },
+          { "name": "Ollama", "what": "Run open-source LLMs on your own server with one command.", "url": "https://ollama.com/" },
+          { "name": "LM Studio", "what": "Desktop app to run open models on a laptop or workstation, GUI included.", "url": "https://lmstudio.ai/" }
         ]
       },
       {
