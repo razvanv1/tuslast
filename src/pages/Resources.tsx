@@ -143,32 +143,6 @@ const Resources = () => {
         </div>
       </Section>
 
-      <Section variant="paper" bordered={false}>
-        <div className="max-w-3xl mx-auto text-center">
-          <Kicker> {t("newsletter.kicker")}</Kicker>
-          <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-6">
-            {t("newsletter.titleStart")} <em className="text-red">{t("newsletter.titleEm")}</em>
-          </h2>
-          <p className="text-ink/75 text-[15px] leading-relaxed mb-8">
-            {t("newsletter.body")}
-          </p>
-          <ul className="text-left max-w-md mx-auto space-y-2 mb-10 border-t-2 border-ink/15">
-            {newsletterBullets.map((b, i) => (
-              <li key={b} className="flex gap-4 py-3 border-b border-ink/15 text-ink text-[15px]">
-                <span className="font-mono text-red">0{i + 1}</span>
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
-          <a
-            href="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
-            className="inline-flex items-center px-7 py-4 bg-ink text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-red transition-colors"
-          >
-            {t("newsletter.button")}
-          </a>
-        </div>
-      </Section>
-
       <CTASection
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}
