@@ -17,8 +17,8 @@ const Navbar = () => {
 
   const topLinks = [
     { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
-    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.events"), to: "/events" },
+    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.funding"), to: "/funding" },
     { label: t("nav.resources"), to: "/resources" },
     { label: t("nav.aiScore"), to: "/ai-adoption-score" },
@@ -28,8 +28,8 @@ const Navbar = () => {
   // Mobile drawer keeps the flat list — easier to scan on small screens.
   const mobileLinks = [
     { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
-    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.events"), to: "/events" },
+    { label: t("nav.hermes"), to: "/hermes" },
     { label: t("nav.funding"), to: "/funding" },
     { label: t("nav.resources"), to: "/resources" },
     { label: t("nav.aiScore"), to: "/ai-adoption-score" },
