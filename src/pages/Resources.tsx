@@ -26,6 +26,8 @@ interface CheapAiGroup {
   title: string;
   blurb: string;
   items: CheapAiItem[];
+  ctaText?: string;
+  ctaTo?: string;
 }
 
 const Resources = () => {
@@ -190,7 +192,7 @@ const Resources = () => {
 
         <div className="grid md:grid-cols-2 gap-px bg-ink/10">
           {cheapAiGroups.map((group, gi) => (
-            <div key={gi} className="bg-paper p-7 md:p-8">
+            <div key={gi} className="bg-paper p-7 md:p-8 flex flex-col">
               <h3 className="font-display text-2xl md:text-[26px] text-ink leading-[1.1] mb-2">{group.title}</h3>
               <p className="text-ink/60 text-sm leading-relaxed mb-6">{group.blurb}</p>
               <ul className="space-y-4 border-t border-ink/15 pt-5">
@@ -213,6 +215,16 @@ const Resources = () => {
                   </li>
                 ))}
               </ul>
+              {group.ctaText && group.ctaTo && (
+                <div className="mt-7 pt-5 border-t border-ink/15">
+                  <Link
+                    to={group.ctaTo}
+                    className="inline-flex items-center px-5 py-3 bg-ink text-paper font-mono text-[10px] uppercase tracking-[0.2em] hover:bg-red transition-colors"
+                  >
+                    {group.ctaText}
+                  </Link>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -220,16 +232,30 @@ const Resources = () => {
 
       {/* Funding teaser */}
       <Section variant="dark">
-        <div className="grid md:grid-cols-12 gap-10 items-start">
+        <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-start">
           <div className="md:col-span-7">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("funding.kicker")}</p>
-            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mb-5">
+            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mb-6">
               {t("funding.titleStart")} <em className="text-red">{t("funding.titleEm")}</em>
             </h2>
-            <p className="text-paper/75 text-[15px] leading-relaxed max-w-xl">
+            <p className="text-paper/80 text-[15px] leading-relaxed mb-5">
               {t("funding.body")}
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/45 mt-6">
+            <p className="text-paper/70 text-[15px] leading-relaxed mb-8">
+              {t("funding.bodyTwo")}
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                to={t("funding.ctaTo")}
+                className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
+              >
+                {t("funding.ctaText")}
+              </Link>
+              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50">
+                {t("funding.note")}
+              </p>
+            </div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/40 mt-6">
               {t("funding.footnote")}
             </p>
           </div>

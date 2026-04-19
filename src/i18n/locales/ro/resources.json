@@ -75,40 +75,50 @@
         "title": "Free tier-uri și agenți de domeniu",
         "blurb": "Free tier-uri reale, nu trial-uri de 14 zile. Suficient pentru prototipuri, piloți și volume mici.",
         "items": [
-          { "name": "Lovable AI Gateway", "what": "Fereastră gratuită pe Gemini 2.5 Flash. Fără cheie, fără card.", "url": "https://docs.lovable.dev/features/ai" },
+          { "name": "Lovable AI Gateway", "what": "Fereastră gratuită pe Gemini Flash. Fără cheie, fără card.", "url": "https://docs.lovable.dev/features/ai" },
           { "name": "Hermes Agent", "what": "Agentul nostru de domeniu pentru întrebări de adopție AI. Gratuit, fără cont.", "url": "/hermes" },
           { "name": "OpenClaw", "what": "Framework open-source pentru a construi propriii tăi asistenți de domeniu.", "url": "https://github.com/openclaw" },
-          { "name": "Mistral La Plateforme", "what": "Acces gratuit la Mistral Small prin API pentru experimentare.", "url": "https://console.mistral.ai/" },
+          { "name": "Mistral La Plateforme", "what": "Acces gratuit prin API la modelele Mistral pentru experimentare.", "url": "https://console.mistral.ai/" },
           { "name": "Together AI", "what": "Credite gratuite pe Llama, Qwen și alte modele open.", "url": "https://www.together.ai/" }
-        ]
+        ],
+        "ctaText": "Hai să discutăm un pilot gratuit →",
+        "ctaTo": "/assessment"
       },
       {
         "title": "Modele on-prem și locale · privacy first",
         "blurb": "Companiile au nevoie de privacy, nu de un abonament la ChatGPT. Rulezi modele open pe hardware-ul tău — zero date care părăsesc clădirea.",
         "items": [
-          { "name": "Gemma 3 (Google)", "what": "Cea mai nouă familie open-weight de la Google. Rulează pe un singur GPU, bună pentru IMM-uri.", "url": "https://ai.google.dev/gemma" },
-          { "name": "Llama 3.x (Meta)", "what": "Familia open-weight flagship de la Meta. Modele generale puternice, complet self-host.", "url": "https://llama.meta.com/" },
+          { "name": "Gemma (Google)", "what": "Familie open-weight de la Google. Rulează local pe un singur GPU, bună pentru IMM-uri.", "url": "https://ai.google.dev/gemma" },
+          { "name": "Llama (Meta)", "what": "Familia open-weight flagship de la Meta. Modele generale puternice, complet self-host.", "url": "https://llama.meta.com/" },
           { "name": "Mistral & Mixtral", "what": "Modele europene open, eficiente pe limbi europene.", "url": "https://mistral.ai/technology/" },
           { "name": "Qwen", "what": "Top pe sarcini multilingve, weights complet open.", "url": "https://qwenlm.github.io/" },
           { "name": "Whisper", "what": "Speech-to-text open-source. Rulează local, multilingv, fără upload.", "url": "https://github.com/openai/whisper" },
           { "name": "Ollama", "what": "Rulezi LLM-uri open-source pe propriul server, cu o singură comandă.", "url": "https://ollama.com/" },
           { "name": "LM Studio", "what": "Aplicație desktop pentru a rula modele open pe laptop sau workstation, cu GUI.", "url": "https://lmstudio.ai/" }
-        ]
+        ],
+        "ctaText": "Te ajutăm să rulezi on-prem →",
+        "ctaTo": "/assessment"
       }
     ]
   },
   "funding": {
     "kicker": "Finanțare · în lucru",
-    "titleStart": "Lucrăm și pe",
-    "titleEm": "intelligence pe finanțări.",
-    "body": "Apeluri UE, programe naționale, fonduri de redresare — peisajul e dens și majoritatea echipelor pierd deadline-urile care contează. Construim o practică dedicată în jurul acestui subiect: urmărim oportunități, scorăm potrivirea și le transformăm în aplicații depuse, fără munca manuală care înghite timp. Mai multe vor urma.",
+    "titleStart": "Transformăm și",
+    "titleEm": "finanțările în aplicații depuse.",
+    "body": "Fonduri structurale UE, Horizon, programe de redresare, granturi naționale de digitalizare — peisajul e dens, regulile se schimbă cu fiecare ciclu, iar majoritatea echipelor pierd apeluri nu pentru că nu se califică, ci pentru că nimeni nu a avut bandwidth să scrie aplicația până la deadline. Construim o practică dedicată exact pentru acest gap: monitorizăm continuu apelurile care se potrivesc cu profilul tău, le scorăm după fit și efort și producem draft-uri structurate plecând de la munca ta anterioară, ca echipa să rafineze, nu să pornească de la pagină goală.",
+    "bodyTwo": "E aceeași logică ca în partea de AI — eliminăm munca manuală repetitivă, lăsăm decizia umană în buclă și depunem ce trebuia depus. Platforma completă se lansează mai târziu în 2026. Până atunci, dacă organizația ta funcționează pe granturi și vrei un preview privat sau un scan manual al apelurilor deschise pentru profilul tău, îl facem pe un call.",
     "tags": [
       "Programe UE structurale & Horizon",
       "Fonduri naționale de digitalizare & redresare",
       "Scoring de potrivire & urmărire deadline-uri",
-      "Draft de aplicații pornind de la lucrări anterioare"
+      "Draft de aplicații pornind de la lucrări anterioare",
+      "Coordonare consorțiu & co-aplicanți",
+      "Pipeline reporting de la oportunitate la depunere"
     ],
-    "footnote": "Rute detaliate și unelte vor fi publicate mai târziu în 2026."
+    "ctaText": "Cere un scan privat de finanțare →",
+    "ctaTo": "/assessment",
+    "note": "Gratuit · pe un call · fără cont pe platformă",
+    "footnote": "Platforma completă se lansează mai târziu în 2026."
   },
   "cta": {
     "title": "Începe cu Sesiunea AI Adoption.",
