@@ -46,6 +46,7 @@ const SEO = ({
   const lang = current;
   const url = current === "ro" ? roUrl : enUrl;
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} - ${SITE_NAME}`;
+  const placename = lang === "ro" ? "București, România" : "Bucharest, Romania";
 
   const extraLd: Record<string, unknown>[] = [];
   if (faq && faq.length) {
@@ -59,6 +60,27 @@ const SEO = ({
       })),
     });
   }
+
+  // Auto BreadcrumbList for non-home pages (Google rich results + AEO)
+  const cleanPath = pathname.replace(/^\/(en|ro)(?=\/|$)/, "") || "/";
+  if (cleanPath !== "/" && cleanPath !== "") {
+    const segments = cleanPath.split("/").filter(Boolean);
+    const homeUrl = lang === "ro" ? `${SITE_URL}/ro` : SITE_URL;
+    extraLd.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: homeUrl },
+        ...segments.map((seg, i) => ({
+          "@type": "ListItem",
+          position: i + 2,
+          name: seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+          item: `${homeUrl}/${segments.slice(0, i + 1).join("/")}`,
+        })),
+      ],
+    });
+  }
+
   if (jsonLd) {
     if (Array.isArray(jsonLd)) extraLd.push(...jsonLd);
     else extraLd.push(jsonLd);
@@ -79,8 +101,10 @@ const SEO = ({
 
       {/* Geo / locale (GEO) */}
       <meta name="geo.region" content="RO" />
-      <meta name="geo.placename" content="Bucharest" />
-      <meta name="ICBM" content="44.4268,26.1025" />
+      <meta name="geo.placename" content={placename} />
+      <meta name="geo.position" content="44.4268;26.1025" />
+      <meta name="ICBM" content="44.4268, 26.1025" />
+      <meta name="audience" content="business" />
       <meta httpEquiv="content-language" content={lang} />
       <meta name="language" content={lang === "ro" ? "Romanian" : "English"} />
       <link rel="alternate" hrefLang="en" href={enUrl} />

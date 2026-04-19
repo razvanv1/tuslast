@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Despre - o practică de schimbare comportamentală pentru adopția AI",
-    "description": "The Unlearning School este o practică de schimbare comportamentală fondată de Răzvan Vâlceanu. Reproiectăm fluxurile de lucru ca instrumentele AI să fie efectiv folosite în echipele non-tehnice din UE.",
-    "keywords": "The Unlearning School, Răzvan Vâlceanu, consultanță adopție AI, schimbare comportamentală AI, change management AI, UE"
+    "title": "Practică de schimbare comportamentală pentru adopție AI · fondată de Răzvan Vâlceanu",
+    "description": "Suntem o practică de schimbare comportamentală cu sediul în București, activă în toată UE. Reproiectăm fluxurile echipelor non-tehnice ca tool-urile AI pe care le-ai cumpărat să fie folosite.",
+    "keywords": "The Unlearning School, Răzvan Vâlceanu, consultanță adopție AI, schimbare comportamentală AI, change management AI, reproiectare fluxuri AI, București, România, UE mid-market"
   },
   "docTitle": "Despre, The Unlearning School",
   "hero": {
@@ -31,9 +31,18 @@
     "titleEm": "reîngheață.",
     "intro": "Toate programele The Unlearning School sunt construite pe aceeași secvență, adaptată din modelul de schimbare al lui Kurt Lewin (1947) și aplicată la adopția fluxurilor AI.",
     "steps": [
-      { "title": "Dezgheață", "body": "Participanții scot la suprafață obiceiul curent: cum rulează procesul azi, ce presupuneri sunt încorporate în el și de ce există acele presupuneri. Acest pas nu se negociază. Fără el, comportamentele noi nu se lipesc." },
-      { "title": "Schimbă", "body": "Participanții reproiectează fluxul cu AI încorporat, în sesiune, nu ca temă. Versiunea nouă e testată, ajustată și finalizată înainte ca cineva să plece." },
-      { "title": "Reîngheață", "body": "Fluxul nou este documentat ca șablon deținut de echipă. Participanții care l-au construit sunt cei care îl rulează săptămâna viitoare. Acea proprietate e motivul pentru care se lipește." }
+      {
+        "title": "Dezgheață",
+        "body": "Participanții scot la suprafață obiceiul curent: cum rulează procesul azi, ce presupuneri sunt încorporate în el și de ce există acele presupuneri. Acest pas nu se negociază. Fără el, comportamentele noi nu se lipesc."
+      },
+      {
+        "title": "Schimbă",
+        "body": "Participanții reproiectează fluxul cu AI încorporat, în sesiune, nu ca temă. Versiunea nouă e testată, ajustată și finalizată înainte ca cineva să plece."
+      },
+      {
+        "title": "Reîngheață",
+        "body": "Fluxul nou este documentat ca șablon deținut de echipă. Participanții care l-au construit sunt cei care îl rulează săptămâna viitoare. Acea proprietate e motivul pentru care se lipește."
+      }
     ]
   },
   "redesign": {
@@ -81,9 +90,21 @@
     "tag": "Istoric",
     "title": "Pe scurt.",
     "items": [
-      { "tag": "Scară", "title": "1.400+ profesioniști instruiți", "body": "În finance, retail, producție și servicii profesionale. România și UE. Programe livrate în engleză și română." },
-      { "tag": "Dovadă", "title": "Exemple de fluxuri înainte/după", "body": "Exemple anonimizate din sectoare relevante sunt disponibile în Discuția AI Adoption. Niciun nume de client nu este publicat pe acest site." },
-      { "tag": "Context", "title": "Corporate, academic, startup", "body": "Programele au fost livrate în corporații mari, instituții academice și companii în creștere. Metoda se adaptează la context; mecanismul nu se schimbă." }
+      {
+        "tag": "Scară",
+        "title": "1.400+ profesioniști instruiți",
+        "body": "În finance, retail, producție și servicii profesionale. România și UE. Programe livrate în engleză și română."
+      },
+      {
+        "tag": "Dovadă",
+        "title": "Exemple de fluxuri înainte/după",
+        "body": "Exemple anonimizate din sectoare relevante sunt disponibile în Discuția AI Adoption. Niciun nume de client nu este publicat pe acest site."
+      },
+      {
+        "tag": "Context",
+        "title": "Corporate, academic, startup",
+        "body": "Programele au fost livrate în corporații mari, instituții academice și companii în creștere. Metoda se adaptează la context; mecanismul nu se schimbă."
+      }
     ]
   },
   "cta": {

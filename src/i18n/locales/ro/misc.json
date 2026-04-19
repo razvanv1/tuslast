@@ -1,8 +1,8 @@
 {
   "paymentSuccess": {
     "docTitle": "Plată primită, The Unlearning School",
-    "seoTitle": "Plată primită - The Unlearning School",
-    "seoDescription": "Înscrierea ta este confirmată. Te contactăm în curând pentru a programa prima sesiune.",
+    "seoTitle": "Ești înscris · plată primită",
+    "seoDescription": "Înscrierea ta este confirmată. Te contactăm în maxim o zi lucrătoare pentru a programa discuția de kick-off.",
     "tag": "Plată primită",
     "titlePre": "Ești ",
     "titleEm": "înscris.",
@@ -13,8 +13,8 @@
   },
   "paymentCanceled": {
     "docTitle": "Plată anulată, The Unlearning School",
-    "seoTitle": "Plată anulată - The Unlearning School",
-    "seoDescription": "Checkout-ul a fost anulat. Nu a fost efectuată nicio plată. Poți relua oricând.",
+    "seoTitle": "Nu s-a perceput nimic · plată anulată",
+    "seoDescription": "Checkout-ul a fost anulat. Nu s-a procesat nicio plată. Reia oricând sau programează o discuție gratuită de 30 de minute.",
     "tag": "Plată anulată",
     "titlePre": "Nu s-a ",
     "titleEm": "perceput nimic.",
@@ -23,8 +23,8 @@
     "ctaAssessment": "Discuție AI Adoption în schimb"
   },
   "notFound": {
-    "seoTitle": "Pagină inexistentă (404)",
-    "seoDescription": "Pagina pe care o cauți nu există.",
+    "seoTitle": "Pagină inexistentă · 404",
+    "seoDescription": "Pagina pe care o cauți nu există. Întoarce-te acasă sau programează o discuție AI Adoption gratuită de 30 de minute.",
     "title": "404",
     "subtitle": "Hopa! Pagina nu a fost găsită",
     "back": "Înapoi acasă"

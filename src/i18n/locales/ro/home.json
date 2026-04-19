@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "The Unlearning School - formare în adopția AI pentru echipe non-tehnice",
-    "description": "Practică de schimbare comportamentală pentru adopția AI. Reproiectăm fluxurile de lucru ca echipele non-tehnice să folosească real instrumentele AI pe care le-ai cumpărat. România și UE.",
-    "keywords": "adopție AI, formare AI, EU AI Act Articolul 4, adopție Copilot, AI pentru echipe non-tehnice, reproiectare flux de lucru, change management, România, UE"
+    "title": "Training AI care îți face echipa să folosească tool-urile pe care deja le plătești",
+    "description": "Training AI, workshopuri și evenimente pentru adopție AI. Reproiectăm fluxurile de lucru ca echipele non-tehnice din România și UE să folosească real Copilot, Gemini și ChatGPT.",
+    "keywords": "adopție AI, training AI, EU AI Act Articolul 4, adopție Microsoft Copilot, implementare Gemini Enterprise, AI pentru echipe non-tehnice, reproiectare flux de lucru, change management, alfabetizare AI, România, București, UE"
   },
   "hero": {
     "headlinePart1": "Organizația ta a cumpărat capacitate AI.",
@@ -20,17 +20,41 @@
     "next": "Înainte",
     "drawing": "Acum extrag:",
     "deck": {
-      "aiForWork": { "label": "AI pentru oameni non-tehnici", "caption": "Modular · cohortă" },
-      "aiScore": { "label": "Diagnostic AI Adoption", "caption": "2 min · Test de maturitate instant" },
-      "events": { "label": "Evenimente & Keynote-uri", "caption": "90 min – 2 zile" },
-      "funding": { "label": "MDF, finanțare & granturi", "caption": "MDF de la furnizori · granturi UE" },
-      "assessment": { "label": "Discuție AI Adoption", "caption": "Gratuit · 30 min · Vorbim direct" }
+      "aiForWork": {
+        "label": "AI pentru oameni non-tehnici",
+        "caption": "Modular · cohortă"
+      },
+      "aiScore": {
+        "label": "Diagnostic AI Adoption",
+        "caption": "2 min · Test de maturitate instant"
+      },
+      "events": {
+        "label": "Evenimente & Keynote-uri",
+        "caption": "90 min – 2 zile"
+      },
+      "funding": {
+        "label": "MDF, finanțare & granturi",
+        "caption": "MDF de la furnizori · granturi UE"
+      },
+      "assessment": {
+        "label": "Discuție AI Adoption",
+        "caption": "Gratuit · 30 min · Vorbim direct"
+      }
     }
   },
   "stats": {
-    "s1": { "value": "64%", "label": "dintre angajații cu acces la Copilot nu îl folosesc activ" },
-    "s2": { "value": "1.400+", "label": "profesioniști formați în UE" },
-    "s3": { "value": "1 zi", "label": "ca să reproiectezi un proces cu AI integrat" }
+    "s1": {
+      "value": "64%",
+      "label": "dintre angajații cu acces la Copilot nu îl folosesc activ"
+    },
+    "s2": {
+      "value": "1.400+",
+      "label": "profesioniști formați în UE"
+    },
+    "s3": {
+      "value": "1 zi",
+      "label": "ca să reproiectezi un proces cu AI integrat"
+    }
   },
   "pattern": {
     "eyebrow": "Tiparul",
@@ -38,9 +62,18 @@
     "title": "De ce se blochează adopția AI după lansare.",
     "body": "Majoritatea organizațiilor răspund la utilizarea scăzută a instrumentelor AI cu încă o sesiune de training. Același rezultat. Problema nu e instrumentul și nu e echipa. E procesul, care n-a fost niciodată reproiectat să folosească AI.",
     "rows": [
-      { "week": "Săpt. 1–2", "text": "Adoptanții timpurii folosesc instrumentul zilnic. Avânt vizibil." },
-      { "week": "Săpt. 3–4", "text": "Majoritatea încearcă o dată sau de două ori pe sarcini familiare. Folosire neregulată." },
-      { "week": "Săpt. 5+", "text": "Utilizarea stagnează. Majoritatea revin la fluxurile vechi. Dashboard-ul arată „licențe active”. Procesele n-au fost schimbate." }
+      {
+        "week": "Săpt. 1–2",
+        "text": "Adoptanții timpurii folosesc instrumentul zilnic. Avânt vizibil."
+      },
+      {
+        "week": "Săpt. 3–4",
+        "text": "Majoritatea încearcă o dată sau de două ori pe sarcini familiare. Folosire neregulată."
+      },
+      {
+        "week": "Săpt. 5+",
+        "text": "Utilizarea stagnează. Majoritatea revin la fluxurile vechi. Dashboard-ul arată „licențe active”. Procesele n-au fost schimbate."
+      }
     ]
   },
   "premise": {
@@ -109,9 +142,21 @@
     "eyebrow": "Pe scurt, credibilitatea",
     "title": "Dovezile.",
     "items": [
-      { "tag": "Track record", "title": "1.400+ profesioniști formați", "body": "În finanțe, retail, producție și servicii profesionale, în România și UE." },
-      { "tag": "Fondator", "title": "Răzvan Vâlceanu", "body": "Peste 20 de ani în inovație, transformare digitală, educație executivă și antreprenoriat." },
-      { "tag": "Format de dovadă", "title": "Fluxuri înainte / după", "body": "Exemple anonimizate pe sector, disponibile la cerere în timpul Discuției. Nu publicăm pe site numele clienților." }
+      {
+        "tag": "Track record",
+        "title": "1.400+ profesioniști formați",
+        "body": "În finanțe, retail, producție și servicii profesionale, în România și UE."
+      },
+      {
+        "tag": "Fondator",
+        "title": "Răzvan Vâlceanu",
+        "body": "Peste 20 de ani în inovație, transformare digitală, educație executivă și antreprenoriat."
+      },
+      {
+        "tag": "Format de dovadă",
+        "title": "Fluxuri înainte / după",
+        "body": "Exemple anonimizate pe sector, disponibile la cerere în timpul Discuției. Nu publicăm pe site numele clienților."
+      }
     ]
   },
   "pricing": {
@@ -125,12 +170,27 @@
       "price": "600 €",
       "unit": "/ participant",
       "title": "AI pentru oameni non-tehnici",
-      "tableHeader": { "col1": "Ce", "col2": "Primești" },
+      "tableHeader": {
+        "col1": "Ce",
+        "col2": "Primești"
+      },
       "rows": [
-        { "label": "Format", "value": "Cohortă modulară: Discovery / Sprint / Complet" },
-        { "label": "Stack", "value": "Pe instrumentele pe care echipa le plătește deja" },
-        { "label": "Rezultat", "value": "Prompt sheets și workflows utilizabile a doua zi" },
-        { "label": "Conformitate", "value": "Alfabetizare EU AI Act Articolul 4 inclusă" }
+        {
+          "label": "Format",
+          "value": "Cohortă modulară: Discovery / Sprint / Complet"
+        },
+        {
+          "label": "Stack",
+          "value": "Pe instrumentele pe care echipa le plătește deja"
+        },
+        {
+          "label": "Rezultat",
+          "value": "Prompt sheets și workflows utilizabile a doua zi"
+        },
+        {
+          "label": "Conformitate",
+          "value": "Alfabetizare EU AI Act Articolul 4 inclusă"
+        }
       ],
       "footnote": "Minim de cohortă aplicabil. Preț de volum la cerere.",
       "cta": "Cumpără AI pentru Muncă →",
@@ -142,12 +202,27 @@
       "price": "497 €",
       "unit": "/ instalare",
       "title": "Hermes Agent - instalare personală",
-      "tableHeader": { "col1": "Ce", "col2": "Primești" },
+      "tableHeader": {
+        "col1": "Ce",
+        "col2": "Primești"
+      },
       "rows": [
-        { "label": "Setup", "value": "Hermes instalat și configurat pentru fluxul tău" },
-        { "label": "Training", "value": "1 sesiune de handover, live cu tine" },
-        { "label": "Rezultat", "value": "Asistent autonom funcțional din ziua 1" },
-        { "label": "Partener", "value": "Livrat de un Hermes Agent Partner oficial" }
+        {
+          "label": "Setup",
+          "value": "Hermes instalat și configurat pentru fluxul tău"
+        },
+        {
+          "label": "Training",
+          "value": "1 sesiune de handover, live cu tine"
+        },
+        {
+          "label": "Rezultat",
+          "value": "Asistent autonom funcțional din ziua 1"
+        },
+        {
+          "label": "Partener",
+          "value": "Livrat de un Hermes Agent Partner oficial"
+        }
       ],
       "footnote": "Include setup, configurare și 1 sesiune de handover.",
       "cta": "Instalează Hermes →",
@@ -233,11 +308,36 @@
     "titleEm": "rezultate reale.",
     "body": "Nu publicăm logo-uri de clienți. Publicăm ce s-a schimbat: ore economisite, procese reconstruite, oameni formați. Sectoarele și scara de mai jos sunt corecte; numele rămân confidențiale prin acord.",
     "items": [
-      { "sector": "Bancă RO top-3", "metric": "120", "outcome": "PM-i formați pe scriere de specificații asistată de AI", "context": "Sprint 4 săptămâni · 38% timp salvat la spec" },
-      { "sector": "Distribuitor național", "metric": "80", "outcome": "Angajați sceptici devenit Copilot-activi în 2h", "context": "Sesiune on-site · 100% completare" },
-      { "sector": "Pharma UE", "metric": "3 dep.", "outcome": "Compliance + medical + comercial formate împreună", "context": "Pregătit pentru EU AI Act Articolul 4" },
-      { "sector": "Universitate publică", "metric": "200+", "outcome": "Cadre didactice și administrativ formate pe AI responsabil", "context": "Program pe un an academic complet" },
-      { "sector": "Retail mid-cap", "metric": "45%", "outcome": "Reducere a timpului de producție săptămânal a rapoartelor", "context": "Embed 6 săptămâni · echipa de finance" }
+      {
+        "sector": "Bancă RO top-3",
+        "metric": "120",
+        "outcome": "PM-i formați pe scriere de specificații asistată de AI",
+        "context": "Sprint 4 săptămâni · 38% timp salvat la spec"
+      },
+      {
+        "sector": "Distribuitor național",
+        "metric": "80",
+        "outcome": "Angajați sceptici devenit Copilot-activi în 2h",
+        "context": "Sesiune on-site · 100% completare"
+      },
+      {
+        "sector": "Pharma UE",
+        "metric": "3 dep.",
+        "outcome": "Compliance + medical + comercial formate împreună",
+        "context": "Pregătit pentru EU AI Act Articolul 4"
+      },
+      {
+        "sector": "Universitate publică",
+        "metric": "200+",
+        "outcome": "Cadre didactice și administrativ formate pe AI responsabil",
+        "context": "Program pe un an academic complet"
+      },
+      {
+        "sector": "Retail mid-cap",
+        "metric": "45%",
+        "outcome": "Reducere a timpului de producție săptămânal a rapoartelor",
+        "context": "Embed 6 săptămâni · echipa de finance"
+      }
     ],
     "footnote": "Apeluri de referință disponibile sub NDA, după o primă discuție."
   },

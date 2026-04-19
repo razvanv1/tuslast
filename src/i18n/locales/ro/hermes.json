@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Agentul Hermes - agentul tău AI care se auto-îmbunătățește",
-    "description": "Agent AI open-source cu memorie persistentă, peste 40 de instrumente, gateway multi-platformă. Rulează pe serverul tău. Telegram, Slack, Email. 4 săptămâni până la autonomie completă.",
-    "keywords": "agent AI, agent care se auto-îmbunătățește, agent Hermes, agent AI open source, agent AI Telegram, agent autonom, agent cu memorie persistentă",
-    "schemaDescription": "Agent AI de operațiuni care se auto-îmbunătățește, cu memorie persistentă și peste 40 de instrumente integrate. Rulează pe serverul tău."
+    "title": "Hermes · agentul AI open-source care rulează pe serverul tău",
+    "description": "Hermes este un agent AI open-source cu memorie persistentă și peste 40 de tool-uri. Rulează pe serverul tău. Telegram, Slack, Email. De la prototip la autonomie completă în 4 săptămâni.",
+    "keywords": "agent AI Hermes, agent AI open source, agent AI self-hosted, agent AI on-prem, agent cu memorie persistentă, agent AI Telegram, agent AI Slack, agent autonom, agent AI operațiuni, rezidență date UE",
+    "schemaDescription": "Agent AI open-source de operațiuni cu memorie persistentă și peste 40 de tool-uri integrate. Self-hosted pe serverul tău, cu gateway-uri Telegram, Slack și Email."
   },
   "documentTitle": "Agentul Hermes, The Unlearning School",
   "hero": {
@@ -25,17 +25,45 @@
   "terminal": {
     "title": "hermes · gateway telegram · activ",
     "lines": [
-      { "speaker": "Tu 07:29", "type": "user", "text": "Briefing de dimineață, te rog." },
-      { "speaker": "Hermes 07:30", "type": "agent", "text": "Verific email, calendar și știri...\n3 emailuri trebuie răspunse azi. Propunerea lui Andrei e gata de revizuire. 14:00 confirmat.\nSemnal principal: deadline-ul de conformitate EU AI Act mutat în Q3. Un competitor a actualizat prețurile.\nAm draftat răspunsuri pentru 2 emailuri de rutină. Le trimit?" },
-      { "speaker": "Tu 07:31", "type": "user", "text": "Da. Cercetează Innobyte înainte de 14:00." },
-      { "speaker": "Hermes 07:31", "type": "agent", "text": "Trimise. Cercetez Innobyte acum.\n60 de angajați · €2.1M strânși în 2023 · recrutează 3 roluri de vânzări · principalul competitor a pierdut 2 clienți enterprise luna trecută.\n✓ Briefing complet la 07:31" }
+      {
+        "speaker": "Tu 07:29",
+        "type": "user",
+        "text": "Briefing de dimineață, te rog."
+      },
+      {
+        "speaker": "Hermes 07:30",
+        "type": "agent",
+        "text": "Verific email, calendar și știri...\n3 emailuri trebuie răspunse azi. Propunerea lui Andrei e gata de revizuire. 14:00 confirmat.\nSemnal principal: deadline-ul de conformitate EU AI Act mutat în Q3. Un competitor a actualizat prețurile.\nAm draftat răspunsuri pentru 2 emailuri de rutină. Le trimit?"
+      },
+      {
+        "speaker": "Tu 07:31",
+        "type": "user",
+        "text": "Da. Cercetează Innobyte înainte de 14:00."
+      },
+      {
+        "speaker": "Hermes 07:31",
+        "type": "agent",
+        "text": "Trimise. Cercetez Innobyte acum.\n60 de angajați · €2.1M strânși în 2023 · recrutează 3 roluri de vânzări · principalul competitor a pierdut 2 clienți enterprise luna trecută.\n✓ Briefing complet la 07:31"
+      }
     ]
   },
   "stats": [
-    { "v": "40+", "l": "instrumente integrate" },
-    { "v": "24/7", "l": "rulează pe serverul tău" },
-    { "v": "MIT", "l": "open source · e al tău" },
-    { "v": "4 săpt", "l": "până la autonomie completă" }
+    {
+      "v": "40+",
+      "l": "instrumente integrate"
+    },
+    {
+      "v": "24/7",
+      "l": "rulează pe serverul tău"
+    },
+    {
+      "v": "MIT",
+      "l": "open source · e al tău"
+    },
+    {
+      "v": "4 săpt",
+      "l": "până la autonomie completă"
+    }
   ],
   "whatIs": {
     "kicker": "Ce e asta de fapt",
@@ -57,9 +85,21 @@
     "titleStart": "Trei lucruri",
     "titleEm": "pe care niciun chatbot nu le face.",
     "items": [
-      { "num": "01", "h": "Memorie care se cumulează", "body": "Hermes ține minte clienții, deciziile și de ce le-ai luat. Memorie pe mai multe niveluri, între sesiuni. Își caută în propriul istoric ca să-și amintească o decizie de pricing de acum 4 săptămâni și o folosește ca să evite o greșeală în săptămâna 5. Chatbot-urile de bază uită după ce închizi tab-ul." },
-      { "num": "02", "h": "Buclă de auto-îmbunătățire", "body": "Când Hermes rezolvă o problemă grea, scrie un skill reutilizabil în Markdown ca să rezolve probleme similare mai repede data viitoare. Fără configurare manuală. A văzut un fondator clasificând tichete de suport și și-a construit propriul skill pentru asta." },
-      { "num": "03", "h": "Acțiune, nu răspuns", "body": "Trimite emailuri. Programează întâlniri. Face cercetare pe prospecți. Actualizează spreadsheet-uri. Rulează task-uri programate cât tu dormi. Conectat la Gmail, Calendar, Slack, Notion, CRM și peste 40 de alte instrumente. Cere aprobare înainte să facă ceva în afara scope-ului." }
+      {
+        "num": "01",
+        "h": "Memorie care se cumulează",
+        "body": "Hermes ține minte clienții, deciziile și de ce le-ai luat. Memorie pe mai multe niveluri, între sesiuni. Își caută în propriul istoric ca să-și amintească o decizie de pricing de acum 4 săptămâni și o folosește ca să evite o greșeală în săptămâna 5. Chatbot-urile de bază uită după ce închizi tab-ul."
+      },
+      {
+        "num": "02",
+        "h": "Buclă de auto-îmbunătățire",
+        "body": "Când Hermes rezolvă o problemă grea, scrie un skill reutilizabil în Markdown ca să rezolve probleme similare mai repede data viitoare. Fără configurare manuală. A văzut un fondator clasificând tichete de suport și și-a construit propriul skill pentru asta."
+      },
+      {
+        "num": "03",
+        "h": "Acțiune, nu răspuns",
+        "body": "Trimite emailuri. Programează întâlniri. Face cercetare pe prospecți. Actualizează spreadsheet-uri. Rulează task-uri programate cât tu dormi. Conectat la Gmail, Calendar, Slack, Notion, CRM și peste 40 de alte instrumente. Cere aprobare înainte să facă ceva în afara scope-ului."
+      }
     ]
   },
   "useCases": {
@@ -68,12 +108,54 @@
     "titleEm": "construite pentru business-ul tău.",
     "intro": "Astea sunt fluxuri pe care le construim împreună în programul de coaching, adaptate la contextul tău. Nu demo-uri. Nu template-uri. Ale tale.",
     "items": [
-      { "num": 1, "when": "În fiecare dimineață · 07:30", "h": "Briefing de inteligență matinal", "body": "Hermes îți citește emailurile, verifică calendarul, scanează 5 surse din industrie pe care le definești și trimite un sumar de 3 minute pe Telegram. Lucruri marcate, răspunsuri draftate și prioritățile zilei. Înainte de prima cafea.", "metric": "45 min", "sub": "salvate zilnic" },
-      { "num": 2, "when": "Înainte de orice apel de vânzări", "h": "Cercetare pe prospect la cerere", "body": "Trimite un nume de companie cu 30 de minute înainte de apel. Primești înapoi: dimensiune, știri recente, activitate LinkedIn, posibile pain points și 3 întrebări care merită puse. Intri pregătit fără să petreci o oră pe Google.", "metric": "3×", "sub": "apeluri pregătite de conversie" },
-      { "num": 3, "when": "Pipeline de conținut", "h": "Mesaj vocal → post LinkedIn", "body": "Trimite un mesaj vocal de 2 minute pe Telegram. Hermes transcrie, extrage ideea ta cheie, scrie un post în tonul tău și cere aprobare. Tu publici. N-ai scris un cuvânt.", "metric": "5×", "sub": "output de conținut" },
-      { "num": 4, "when": "În fiecare vineri · 17:00", "h": "Digest de monitorizare a competitorilor", "body": "Urmărește 3-5 competitori: pagini noi, schimbări de preț, anunțuri de joburi, mențiuni în presă. Raport săptămânal structurat pe Telegram. Vezi ce s-a mișcat în piață fără să cauți.", "metric": "Zero", "sub": "puncte oarbe" },
-      { "num": 5, "when": "După fiecare ședință", "h": "Protocol automat de follow-up", "body": "Lipește notițele ședinței. Hermes extrage decizii, action items și responsabili. Draftuiește emailuri de follow-up pentru fiecare persoană. Creează task-uri în instrumentul tău de proiect. Un lipit, 90 de secunde, gata.", "metric": "0", "sub": "follow-up-uri ratate" },
-      { "num": 6, "when": "Săptămânal · la cerere", "h": "Snapshot de pipeline și venituri", "body": "Citește CRM-ul sau foaia de deal-uri, calculează pipeline ponderat, marchează deal-urile inactive de peste 14 zile și îți spune pe ce 3 conturi să suni săptămâna asta. Raport structurat, fără gimnastică în spreadsheet.", "metric": "Clar", "sub": "prioritate săptămânală" }
+      {
+        "num": 1,
+        "when": "În fiecare dimineață · 07:30",
+        "h": "Briefing de inteligență matinal",
+        "body": "Hermes îți citește emailurile, verifică calendarul, scanează 5 surse din industrie pe care le definești și trimite un sumar de 3 minute pe Telegram. Lucruri marcate, răspunsuri draftate și prioritățile zilei. Înainte de prima cafea.",
+        "metric": "45 min",
+        "sub": "salvate zilnic"
+      },
+      {
+        "num": 2,
+        "when": "Înainte de orice apel de vânzări",
+        "h": "Cercetare pe prospect la cerere",
+        "body": "Trimite un nume de companie cu 30 de minute înainte de apel. Primești înapoi: dimensiune, știri recente, activitate LinkedIn, posibile pain points și 3 întrebări care merită puse. Intri pregătit fără să petreci o oră pe Google.",
+        "metric": "3×",
+        "sub": "apeluri pregătite de conversie"
+      },
+      {
+        "num": 3,
+        "when": "Pipeline de conținut",
+        "h": "Mesaj vocal → post LinkedIn",
+        "body": "Trimite un mesaj vocal de 2 minute pe Telegram. Hermes transcrie, extrage ideea ta cheie, scrie un post în tonul tău și cere aprobare. Tu publici. N-ai scris un cuvânt.",
+        "metric": "5×",
+        "sub": "output de conținut"
+      },
+      {
+        "num": 4,
+        "when": "În fiecare vineri · 17:00",
+        "h": "Digest de monitorizare a competitorilor",
+        "body": "Urmărește 3-5 competitori: pagini noi, schimbări de preț, anunțuri de joburi, mențiuni în presă. Raport săptămânal structurat pe Telegram. Vezi ce s-a mișcat în piață fără să cauți.",
+        "metric": "Zero",
+        "sub": "puncte oarbe"
+      },
+      {
+        "num": 5,
+        "when": "După fiecare ședință",
+        "h": "Protocol automat de follow-up",
+        "body": "Lipește notițele ședinței. Hermes extrage decizii, action items și responsabili. Draftuiește emailuri de follow-up pentru fiecare persoană. Creează task-uri în instrumentul tău de proiect. Un lipit, 90 de secunde, gata.",
+        "metric": "0",
+        "sub": "follow-up-uri ratate"
+      },
+      {
+        "num": 6,
+        "when": "Săptămânal · la cerere",
+        "h": "Snapshot de pipeline și venituri",
+        "body": "Citește CRM-ul sau foaia de deal-uri, calculează pipeline ponderat, marchează deal-urile inactive de peste 14 zile și îți spune pe ce 3 conturi să suni săptămâna asta. Raport structurat, fără gimnastică în spreadsheet.",
+        "metric": "Clar",
+        "sub": "prioritate săptămânală"
+      }
     ]
   },
   "tech": {
@@ -82,12 +164,30 @@
     "titleEm": "tehnic vorbind.",
     "intro": "Fără jargon dincolo de ce contează.",
     "items": [
-      { "h": "Agent care se auto-îmbunătățește", "body": "Construiește skill-uri reutilizabile din experiență. Cu cât rulează mai mult, cu atât trebuie să-l instruiești mai puțin." },
-      { "h": "Memorie persistentă între sesiuni", "body": "Ține minte clienți, preferințe, context și decizii anterioare. SQLite + sumarizare LLM pentru reamintire între sesiuni." },
-      { "h": "Agnostic față de model", "body": "Funcționează cu peste 200 de modele prin OpenRouter, Nous Portal, OpenAI sau endpoint-ul tău. Schimbi modelul cu o singură comandă." },
-      { "h": "Gateway multi-platformă", "body": "Telegram, Slack, Discord, WhatsApp, Email. Pornește un task pe laptop, primești rezultatul pe telefon." },
-      { "h": "Subagenți paraleli", "body": "Lansează agenți izolați pentru fluxuri paralele. Cercetează trei companii simultan. Monitorizează cinci surse deodată." },
-      { "h": "Peste 40 de instrumente integrate", "body": "Căutare web, automatizare browser, operații cu fișiere, execuție de cod, email, calendar, CRM, generare imagini, voce." }
+      {
+        "h": "Agent care se auto-îmbunătățește",
+        "body": "Construiește skill-uri reutilizabile din experiență. Cu cât rulează mai mult, cu atât trebuie să-l instruiești mai puțin."
+      },
+      {
+        "h": "Memorie persistentă între sesiuni",
+        "body": "Ține minte clienți, preferințe, context și decizii anterioare. SQLite + sumarizare LLM pentru reamintire între sesiuni."
+      },
+      {
+        "h": "Agnostic față de model",
+        "body": "Funcționează cu peste 200 de modele prin OpenRouter, Nous Portal, OpenAI sau endpoint-ul tău. Schimbi modelul cu o singură comandă."
+      },
+      {
+        "h": "Gateway multi-platformă",
+        "body": "Telegram, Slack, Discord, WhatsApp, Email. Pornește un task pe laptop, primești rezultatul pe telefon."
+      },
+      {
+        "h": "Subagenți paraleli",
+        "body": "Lansează agenți izolați pentru fluxuri paralele. Cercetează trei companii simultan. Monitorizează cinci surse deodată."
+      },
+      {
+        "h": "Peste 40 de instrumente integrate",
+        "body": "Căutare web, automatizare browser, operații cu fișiere, execuție de cod, email, calendar, CRM, generare imagini, voce."
+      }
     ],
     "code": {
       "comment1": "# Instalează Hermes pe VPS-ul tău",
@@ -115,7 +215,13 @@
         "title": "Fundație",
         "kicker": "Săptămâna 01 · Instalare & conectare",
         "body": "Punem Hermes să ruleze pe infrastructura ta și îl conectăm la canalele în care deja lucrezi. La sfârșitul săptămânii, agentul îți trimite un briefing matinal util în fiecare zi.",
-        "topics": ["Agent instalat pe serverul tău", "Gateway Telegram conectat", "Integrare Gmail + Calendar", "Primul flux: briefing matinal", "Memorie configurată pe contextul tău"],
+        "topics": [
+          "Agent instalat pe serverul tău",
+          "Gateway Telegram conectat",
+          "Integrare Gmail + Calendar",
+          "Primul flux: briefing matinal",
+          "Memorie configurată pe contextul tău"
+        ],
         "outcome": "Un agent live pe serverul tău, accesibil din Telegram, cu un flux zilnic deja activ."
       },
       {
@@ -123,7 +229,13 @@
         "title": "Fluxuri de business",
         "kicker": "Săptămâna 02 · Sprint de construcție",
         "body": "Construim împreună trei automatizări custom - cele de care ai efectiv nevoie. Vezi cum sunt cablate ca să le poți edita și extinde singur mai târziu.",
-        "topics": ["3 automatizări custom construite cu tine", "Flux de cercetare pe prospecți", "Setup de raportare programată", "Monitorizare competitori activă", "Protocol de follow-up după ședințe"],
+        "topics": [
+          "3 automatizări custom construite cu tine",
+          "Flux de cercetare pe prospecți",
+          "Setup de raportare programată",
+          "Monitorizare competitori activă",
+          "Protocol de follow-up după ședințe"
+        ],
         "outcome": "Trei fluxuri de producție rulează pe pilot automat, fiecare salvându-ți ore pe săptămână."
       },
       {
@@ -131,7 +243,13 @@
         "title": "Conexiuni cu instrumente",
         "kicker": "Săptămâna 03 · Integrare",
         "body": "Hermes se conectează la restul stack-ului tău - Slack, Notion, CRM-ul tău, pipeline de conținut. Fluxurile de aprobare înseamnă că întreabă mereu înainte să facă ceva sensibil.",
-        "topics": ["Conectare la stack-ul existent", "Slack / Notion / bazele CRM", "Setup pipeline de conținut", "Fluxuri de aprobare (agentul întreabă întâi)", "Revizuire securitate și permisiuni"],
+        "topics": [
+          "Conectare la stack-ul existent",
+          "Slack / Notion / bazele CRM",
+          "Setup pipeline de conținut",
+          "Fluxuri de aprobare (agentul întreabă întâi)",
+          "Revizuire securitate și permisiuni"
+        ],
         "outcome": "Hermes trăiește în instrumentele tale, cu permisiuni clare și un human-in-the-loop pe orice contează."
       },
       {
@@ -139,14 +257,29 @@
         "title": "Mod autonom",
         "kicker": "Săptămâna 04 · Predare",
         "body": "Trecem de la supervizat la autonom. Hermes rulează singur, gestionează excepțiile după regulile pe care le setezi tu, iar tu înveți cum să-l înveți skill-uri noi fără noi.",
-        "topics": ["Agentul rulează fără input zilnic", "Reguli de gestionare a excepțiilor", "Design digest săptămânal", "Înveți Hermes skill-uri noi live", "Predare și documentație"],
+        "topics": [
+          "Agentul rulează fără input zilnic",
+          "Reguli de gestionare a excepțiilor",
+          "Design digest săptămânal",
+          "Înveți Hermes skill-uri noi live",
+          "Predare și documentație"
+        ],
         "outcome": "Un agent care rulează singur și e complet al tău, cu documentația și skill-urile necesare ca să-l extinzi singur."
       }
     ],
     "footer": [
-      { "label": "Inclus:", "body": "4 sesiuni 1:1 de 90 de minute, înregistrate. Suport asincron pe Telegram. Playbook custom pentru fiecare flux." },
-      { "label": "Al tău după:", "body": "Agentul e complet al tău. Licență MIT. Fără abonament. 3 luni de suport ușor după ce se termină programul." },
-      { "label": "Maxim 4 clienți/lună.", "body": "Program 1:1. Locurile sunt rezervate de obicei cu 2-3 săptămâni în avans." }
+      {
+        "label": "Inclus:",
+        "body": "4 sesiuni 1:1 de 90 de minute, înregistrate. Suport asincron pe Telegram. Playbook custom pentru fiecare flux."
+      },
+      {
+        "label": "Al tău după:",
+        "body": "Agentul e complet al tău. Licență MIT. Fără abonament. 3 luni de suport ușor după ce se termină programul."
+      },
+      {
+        "label": "Maxim 4 clienți/lună.",
+        "body": "Program 1:1. Locurile sunt rezervate de obicei cu 2-3 săptămâni în avans."
+      }
     ]
   },
   "pricing": {
@@ -164,13 +297,26 @@
       "self": {
         "tag": "Self-directed",
         "price": "€497",
-        "features": ["2 sesiuni 1:1 de 90 de minute", "Setup agent + 2 fluxuri de bază", "Playbook scris", "Suport pe email 30 de zile", "Hermes complet al tău la final"],
+        "features": [
+          "2 sesiuni 1:1 de 90 de minute",
+          "Setup agent + 2 fluxuri de bază",
+          "Playbook scris",
+          "Suport pe email 30 de zile",
+          "Hermes complet al tău la final"
+        ],
         "button": "Plătește & înscrie-te →"
       },
       "full": {
         "tag": "Full build",
         "price": "€997",
-        "features": ["4 sesiuni 1:1 de 90 de minute", "Setup complet de agent + 6 sau mai multe fluxuri", "Integrări complete cu instrumente", "Suport asincron Telegram · 4 săptămâni", "Playbook custom + înregistrări ale sesiunilor", "3 luni de suport ușor după"],
+        "features": [
+          "4 sesiuni 1:1 de 90 de minute",
+          "Setup complet de agent + 6 sau mai multe fluxuri",
+          "Integrări complete cu instrumente",
+          "Suport asincron Telegram · 4 săptămâni",
+          "Playbook custom + înregistrări ale sesiunilor",
+          "3 luni de suport ușor după"
+        ],
         "button": "Plătește & rezervă-ți locul →"
       }
     }
@@ -185,42 +331,161 @@
     "titleEm": "înainte să te înscrii.",
     "intro": "{{count}} întrebări care acoperă pricing, garanții, setup tehnic, proprietate și fit. Apasă pe orice întrebare ca să se extindă răspunsul.",
     "items": [
-      { "category": "Pricing & garanții", "q": "Cât costă Hermes?", "a": "Două tier-uri, ambele plăți unice fără taxe recurente. Self-directed: €497 (2 sesiuni de 90 min, setup agent + 2 fluxuri de bază, 30 de zile suport pe email). Full build: €997 (4 sesiuni de 90 min, setup complet + 6 sau mai multe fluxuri, integrări complete, 4 săptămâni de suport asincron pe Telegram, înregistrări, 3 luni de suport ușor după). Agentul în sine e al tău pentru totdeauna sub licență MIT." },
-      { "category": "Pricing & garanții", "q": "Există taxe recurente sau abonamente?", "a": "Nu. Ambele tier-uri sunt strict plată unică. Odată ce programul se termină, nu mai datorezi nimic - nici nouă, nici unui vendor SaaS. Singurul cost continuu e serverul cloud mic pe care rulează Hermes (cam €5–8/lună, facturat de furnizorul de cloud direct ție)." },
-      { "category": "Pricing & garanții", "q": "Care e garanția de satisfacție?", "a": "Dacă după prima sesiune de 90 de minute decizi că Hermes nu e pentru tine, îți rambursăm suma integral fără întrebări și fără hârtii. După prima sesiune am trecut de punctul în care un refund e corect pentru oricine, dar dacă merge ceva prost rezolvăm mereu - n-am avut niciodată un client care să plece nemulțumit." },
-      { "category": "Pricing & garanții", "q": "Care e garanția de price-lock?", "a": "Prețul pe care îl plătești la înscriere e blocat. Orice creșteri viitoare (ajustăm pricing-ul cam de două ori pe an) nu ți se aplică, inclusiv pentru orice colaborare ulterioară în 12 luni. Locurile sunt limitate la 4 pe lună, deci prețul reflectă raritatea, nu o urgență artificială." },
-      { "category": "Pricing & garanții", "q": "Oferiți planuri de plată sau facturare?", "a": "Da. Pentru Full build (€997) oferim un plan în 2 rate fără cost suplimentar (€499 + €498). Facturarea pentru companii în EUR sau RON e disponibilă - emitem o factură corectă de la un SRL românesc cu TVA. Doar menționează înainte de checkout și trimitem un link de plată cu termenii." },
-      { "category": "Pricing & garanții", "q": "Există discount pentru echipe sau mai multe locuri?", "a": "Da. Două locuri: 10% reducere. Trei sau mai multe: ofertă custom. Fiecare persoană primește propriul agent pe propriul server - nu împărțim infrastructura între membrii echipei pentru că permisiunile și memoria sunt personale." },
-
-      { "category": "Tehnic & setup", "q": "Trebuie să știu să programez?", "a": "Nu. Hermes folosește limbaj natural pentru aproape toată configurarea. Setup-ul tehnic (server, gateway, integrări) e făcut cu tine live în prima sesiune - nu predat ca temă pentru acasă. La sfârșitul primei săptămâni vorbești cu un agent funcțional de pe telefon." },
-      { "category": "Tehnic & setup", "q": "Ce înseamnă „pe serverul meu\" mai exact?", "a": "Hermes rulează pe o instanță Linux mică în cloud - de obicei un VPS de €5–8/lună pe Hetzner, DigitalOcean sau Scaleway. Tu deții serverul, cheile API, datele și agentul. Nimic nu e rutat prin infrastructura noastră. Te ajutăm să-l provizionezi în prima sesiune și păstrezi acces root complet." },
-      { "category": "Tehnic & setup", "q": "Ce modele AI folosește Hermes?", "a": "Implicit, Hermes folosește cheile tale API pentru OpenAI, Anthropic (Claude) sau Google (Gemini) - care preferi. Plătești furnizorului de model direct la cost (de obicei €5–30/lună în funcție de utilizare). Te ajutăm să alegi modelul potrivit pentru fiecare flux în program." },
-      { "category": "Tehnic & setup", "q": "Ce fac dacă nu am deja un server în cloud?", "a": "Provizionăm unul cu tine în prima sesiune - durează cam 15 minute. Te ducem prin signup pe Hetzner sau DigitalOcean, instalăm Hermes și configurăm acces SSH. Nu e nevoie de experiență anterioară cu servere." },
-      { "category": "Tehnic & setup", "q": "Cu ce instrumente și platforme se integrează Hermes?", "a": "Din cutie: Telegram, Gmail, Google Calendar, Slack, Notion, Airtable, Linear, GitHub, HubSpot, Pipedrive, plus 30+ altele prin webhook și HTTP. Integrări noi pot fi adăugate descriindu-le în engleză simplă - Hermes își scrie propriul connector și tu îl aprobi." },
-      { "category": "Tehnic & setup", "q": "Poate Hermes să funcționeze offline sau on-premise?", "a": "Da, pentru clienți avansați. Putem deploya Hermes pe un LLM local (Ollama, LM Studio) pe hardware-ul tău, cu zero apeluri API ieșite. Setup-ul e mai complicat și e inclus doar în Full build cu acord prealabil - menționează înainte de înscriere." },
-
-      { "category": "Cum funcționează Hermes", "q": "Cum e diferit de Zapier sau Make?", "a": "Zapier și Make automatizează reguli fixe de tipul if-this-then-that. Hermes gestionează decizii ambigue - poate citi o situație, cântări opțiuni, decide ce să facă și să te întrebe când e nesigur. Instrumentele bazate pe reguli nu pot face asta. Cele două sunt complementare: mulți clienți păstrează fluxurile lor Zapier și folosesc Hermes pentru părțile care cer judecată." },
-      { "category": "Cum funcționează Hermes", "q": "Cum e diferit de ChatGPT sau Claude?", "a": "ChatGPT e o interfață de chat - uită după ce închizi tab-ul și nu poate face acțiuni în instrumentele tale. Hermes e un agent persistent: ține minte clienții și deciziile tale luni de zile, trimite emailuri reale, programează întâlniri reale, rulează task-uri programate cât tu dormi și își scrie propriile skill-uri reutilizabile când rezolvă o problemă grea." },
-      { "category": "Cum funcționează Hermes", "q": "Ce înseamnă „auto-îmbunătățire\" mai exact?", "a": "Când Hermes rezolvă cu succes un task non-trivial, scrie un fișier mic de skill în Markdown care descrie cum a făcut-o. Data viitoare când apare un task similar, încarcă acel skill în loc să raționeze de la zero - mai rapid, mai ieftin, mai consistent. Poți citi fiecare skill în engleză simplă și poți edita sau șterge oricare." },
-      { "category": "Cum funcționează Hermes", "q": "Cum funcționează memoria?", "a": "Hermes are memorie pe mai multe niveluri: pe termen scurt (conversația curentă), memorie de sesiune (ultimele câteva zile de activitate) și cunoaștere pe termen lung (clienți, proiecte, decizii, preferințe). Își caută în propriul istoric înainte să acționeze, deci o decizie de pricing din săptămâna 4 poate informa o ofertă în săptămâna 12. Toată memoria e stocată într-un fișier SQLite local pe serverul tău - poți inspecta, exporta sau șterge oricând." },
-      { "category": "Cum funcționează Hermes", "q": "Poate Hermes să acționeze fără aprobarea mea?", "a": "Doar pe fluxurile pe care le-ai marcat explicit ca autonome (ex. briefing matinal, rapoarte programate). Orice atinge lumea exterioară - trimitere email, programare întâlnire, postare în Slack - cere aprobare explicită implicit, până când îi spui lui Hermes că ai încredere pentru acel tip specific de acțiune." },
-
-      { "category": "Confidențialitate & proprietate", "q": "Sunt datele mele în siguranță?", "a": "Da. Toate datele trăiesc pe serverul tău. Fără telemetrie, fără analytics, fără vendor lock-in cloud terț, fără date împărtășite cu noi. Hermes e open source sub licență MIT - poți audita fiecare linie de cod. Singurele apeluri ieșite sunt către furnizorul de model AI ales (OpenAI/Anthropic/Google) și către integrările pe care le conectezi explicit." },
-      { "category": "Confidențialitate & proprietate", "q": "Cine deține Hermes după program?", "a": "Tu. Complet. Codul e licențiat MIT, serverul e al tău, cheile API sunt ale tale, memoria e a ta. Nu păstrăm niciun acces. Dacă dispărem mâine, agentul tău continuă să ruleze la nesfârșit." },
-      { "category": "Confidențialitate & proprietate", "q": "Pot modifica sau extinde Hermes singur?", "a": "Da - ăsta e și scopul. Codebase-ul e mic (cam 8.000 de linii de Python) și bine documentat. Predarea din săptămâna 4 include un walkthrough al arhitecturii, ca tu (sau un dezvoltator pe care îl angajezi) să-l poți extinde fără noi." },
-      { "category": "Confidențialitate & proprietate", "q": "E Hermes conform GDPR?", "a": "Da. Pentru că toate datele rămân pe serverul tău în regiunea UE pe care o alegi, rămâi singurul operator de date. Oferim un template DPA de o pagină dacă echipa ta legală are nevoie. Hermes nu loghează niciodată informații personale identificabile către servicii externe decât dacă îl configurezi tu explicit." },
-
-      { "category": "Logistica programului", "q": "Cât durează programul?", "a": "Full build durează 4 săptămâni: o sesiune de 90 de minute pe săptămână, plus suport asincron pe Telegram între sesiuni. Self-directed durează 2 săptămâni cu două sesiuni. Ambele timeline-uri sunt flexibile - clienții cu călătorii sau săptămâni aglomerate pot extinde la 6–8 săptămâni fără cost suplimentar." },
-      { "category": "Logistica programului", "q": "Când pot să încep?", "a": "Maxim 4 clienți pe lună. Lista de așteptare actuală e de obicei de 2–3 săptămâni. Apelul gratuit de descoperire de 30 de minute se poate întâmpla de obicei în 48 de ore - acolo confirmăm fit-ul și fixăm data de start." },
-      { "category": "Logistica programului", "q": "Programul e 1:1 sau de grup?", "a": "Strict 1:1. Fiecare sesiune e construită pe fluxurile tale specifice - fără slide-uri, fără curriculum aplicat unei cohorte. Plafonul de 4 clienți pe lună e ce face asta posibil." },
-      { "category": "Logistica programului", "q": "Ce fac dacă trebuie să reprogramez o sesiune?", "a": "Nicio problemă. Atâta timp cât anunți cu 24h înainte, mutăm la următorul slot disponibil. Lucrăm pe fus orar CET dar acomodăm regulat clienți de la EST până la GMT+8." },
-      { "category": "Logistica programului", "q": "Ce se întâmplă după cele 4 săptămâni?", "a": "Primești 3 luni de suport ușor incluse - mesaje asincrone pe Telegram pentru întrebări, fix-uri mici, update-uri de model. După aceea, retainer opțional (€200/lună) sau sesiuni separate (€250/90 min) dacă vrei ajutor să adaugi fluxuri noi. Majoritatea clienților nu au nevoie." },
-      { "category": "Logistica programului", "q": "Înregistrați sesiunile?", "a": "Da. Fiecare sesiune e înregistrată și împărtășită cu tine în 24 de ore, indexată pe subiect. Înregistrările plus playbook-ul scris înseamnă că poți întotdeauna să te întorci și să vezi exact cum a fost construit un flux." },
-
-      { "category": "Fit & decizie", "q": "Pentru cine NU e Hermes?", "a": "Trei grupuri: (1) Oameni care vor un instrument no-code drag-and-drop - Hermes e configurat vorbind cu el, nu prin click-uri. (2) Echipe care au nevoie de un UI SaaS lustruit pentru utilizatori finali non-tehnici - Hermes e un agent de operațiuni personal, nu un produs. (3) Oricine se așteaptă la magie fără efort - programul cere 4 ore de muncă live plus fluxurile tale reale pe care să construim." },
-      { "category": "Fit & decizie", "q": "Cine obține cea mai mare valoare din Hermes?", "a": "Fondatori solo, proprietari de agenții, consultanți și operatori care: petrec 5+ ore pe săptămână pe email/cercetare/coordonare, își știu deja fluxurile pe de rost și vor să dețină instrumentul în loc să închirieze încă un SaaS. Clientul tipic recuperează 8–15 ore pe săptămână în 60 de zile." },
-      { "category": "Fit & decizie", "q": "Ce fac dacă nu sunt sigur că Hermes se potrivește fluxurilor mele?", "a": "Rezervă auditul gratuit de 30 de minute. Ne uităm la 2–3 task-uri recurente reale ale tale și îți spunem sincer dacă Hermes va ajuta, nu va ajuta sau dacă un instrument mai simplu ar face treaba. Cam 30% dintre apelurile de audit se termină cu noi recomandând altceva." },
-      { "category": "Fit & decizie", "q": "Pot vedea Hermes funcționând înainte să mă angajez?", "a": "Da. Apelul de descoperire include un demo live de 5 minute al unui flux de client real (cu permisiune și date anonimizate). Poți vedea și repository-ul open-source pe GitHub înainte să vorbești cu noi." }
+      {
+        "category": "Pricing & garanții",
+        "q": "Cât costă Hermes?",
+        "a": "Două tier-uri, ambele plăți unice fără taxe recurente. Self-directed: €497 (2 sesiuni de 90 min, setup agent + 2 fluxuri de bază, 30 de zile suport pe email). Full build: €997 (4 sesiuni de 90 min, setup complet + 6 sau mai multe fluxuri, integrări complete, 4 săptămâni de suport asincron pe Telegram, înregistrări, 3 luni de suport ușor după). Agentul în sine e al tău pentru totdeauna sub licență MIT."
+      },
+      {
+        "category": "Pricing & garanții",
+        "q": "Există taxe recurente sau abonamente?",
+        "a": "Nu. Ambele tier-uri sunt strict plată unică. Odată ce programul se termină, nu mai datorezi nimic - nici nouă, nici unui vendor SaaS. Singurul cost continuu e serverul cloud mic pe care rulează Hermes (cam €5–8/lună, facturat de furnizorul de cloud direct ție)."
+      },
+      {
+        "category": "Pricing & garanții",
+        "q": "Care e garanția de satisfacție?",
+        "a": "Dacă după prima sesiune de 90 de minute decizi că Hermes nu e pentru tine, îți rambursăm suma integral fără întrebări și fără hârtii. După prima sesiune am trecut de punctul în care un refund e corect pentru oricine, dar dacă merge ceva prost rezolvăm mereu - n-am avut niciodată un client care să plece nemulțumit."
+      },
+      {
+        "category": "Pricing & garanții",
+        "q": "Care e garanția de price-lock?",
+        "a": "Prețul pe care îl plătești la înscriere e blocat. Orice creșteri viitoare (ajustăm pricing-ul cam de două ori pe an) nu ți se aplică, inclusiv pentru orice colaborare ulterioară în 12 luni. Locurile sunt limitate la 4 pe lună, deci prețul reflectă raritatea, nu o urgență artificială."
+      },
+      {
+        "category": "Pricing & garanții",
+        "q": "Oferiți planuri de plată sau facturare?",
+        "a": "Da. Pentru Full build (€997) oferim un plan în 2 rate fără cost suplimentar (€499 + €498). Facturarea pentru companii în EUR sau RON e disponibilă - emitem o factură corectă de la un SRL românesc cu TVA. Doar menționează înainte de checkout și trimitem un link de plată cu termenii."
+      },
+      {
+        "category": "Pricing & garanții",
+        "q": "Există discount pentru echipe sau mai multe locuri?",
+        "a": "Da. Două locuri: 10% reducere. Trei sau mai multe: ofertă custom. Fiecare persoană primește propriul agent pe propriul server - nu împărțim infrastructura între membrii echipei pentru că permisiunile și memoria sunt personale."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Trebuie să știu să programez?",
+        "a": "Nu. Hermes folosește limbaj natural pentru aproape toată configurarea. Setup-ul tehnic (server, gateway, integrări) e făcut cu tine live în prima sesiune - nu predat ca temă pentru acasă. La sfârșitul primei săptămâni vorbești cu un agent funcțional de pe telefon."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Ce înseamnă „pe serverul meu\" mai exact?",
+        "a": "Hermes rulează pe o instanță Linux mică în cloud - de obicei un VPS de €5–8/lună pe Hetzner, DigitalOcean sau Scaleway. Tu deții serverul, cheile API, datele și agentul. Nimic nu e rutat prin infrastructura noastră. Te ajutăm să-l provizionezi în prima sesiune și păstrezi acces root complet."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Ce modele AI folosește Hermes?",
+        "a": "Implicit, Hermes folosește cheile tale API pentru OpenAI, Anthropic (Claude) sau Google (Gemini) - care preferi. Plătești furnizorului de model direct la cost (de obicei €5–30/lună în funcție de utilizare). Te ajutăm să alegi modelul potrivit pentru fiecare flux în program."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Ce fac dacă nu am deja un server în cloud?",
+        "a": "Provizionăm unul cu tine în prima sesiune - durează cam 15 minute. Te ducem prin signup pe Hetzner sau DigitalOcean, instalăm Hermes și configurăm acces SSH. Nu e nevoie de experiență anterioară cu servere."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Cu ce instrumente și platforme se integrează Hermes?",
+        "a": "Din cutie: Telegram, Gmail, Google Calendar, Slack, Notion, Airtable, Linear, GitHub, HubSpot, Pipedrive, plus 30+ altele prin webhook și HTTP. Integrări noi pot fi adăugate descriindu-le în engleză simplă - Hermes își scrie propriul connector și tu îl aprobi."
+      },
+      {
+        "category": "Tehnic & setup",
+        "q": "Poate Hermes să funcționeze offline sau on-premise?",
+        "a": "Da, pentru clienți avansați. Putem deploya Hermes pe un LLM local (Ollama, LM Studio) pe hardware-ul tău, cu zero apeluri API ieșite. Setup-ul e mai complicat și e inclus doar în Full build cu acord prealabil - menționează înainte de înscriere."
+      },
+      {
+        "category": "Cum funcționează Hermes",
+        "q": "Cum e diferit de Zapier sau Make?",
+        "a": "Zapier și Make automatizează reguli fixe de tipul if-this-then-that. Hermes gestionează decizii ambigue - poate citi o situație, cântări opțiuni, decide ce să facă și să te întrebe când e nesigur. Instrumentele bazate pe reguli nu pot face asta. Cele două sunt complementare: mulți clienți păstrează fluxurile lor Zapier și folosesc Hermes pentru părțile care cer judecată."
+      },
+      {
+        "category": "Cum funcționează Hermes",
+        "q": "Cum e diferit de ChatGPT sau Claude?",
+        "a": "ChatGPT e o interfață de chat - uită după ce închizi tab-ul și nu poate face acțiuni în instrumentele tale. Hermes e un agent persistent: ține minte clienții și deciziile tale luni de zile, trimite emailuri reale, programează întâlniri reale, rulează task-uri programate cât tu dormi și își scrie propriile skill-uri reutilizabile când rezolvă o problemă grea."
+      },
+      {
+        "category": "Cum funcționează Hermes",
+        "q": "Ce înseamnă „auto-îmbunătățire\" mai exact?",
+        "a": "Când Hermes rezolvă cu succes un task non-trivial, scrie un fișier mic de skill în Markdown care descrie cum a făcut-o. Data viitoare când apare un task similar, încarcă acel skill în loc să raționeze de la zero - mai rapid, mai ieftin, mai consistent. Poți citi fiecare skill în engleză simplă și poți edita sau șterge oricare."
+      },
+      {
+        "category": "Cum funcționează Hermes",
+        "q": "Cum funcționează memoria?",
+        "a": "Hermes are memorie pe mai multe niveluri: pe termen scurt (conversația curentă), memorie de sesiune (ultimele câteva zile de activitate) și cunoaștere pe termen lung (clienți, proiecte, decizii, preferințe). Își caută în propriul istoric înainte să acționeze, deci o decizie de pricing din săptămâna 4 poate informa o ofertă în săptămâna 12. Toată memoria e stocată într-un fișier SQLite local pe serverul tău - poți inspecta, exporta sau șterge oricând."
+      },
+      {
+        "category": "Cum funcționează Hermes",
+        "q": "Poate Hermes să acționeze fără aprobarea mea?",
+        "a": "Doar pe fluxurile pe care le-ai marcat explicit ca autonome (ex. briefing matinal, rapoarte programate). Orice atinge lumea exterioară - trimitere email, programare întâlnire, postare în Slack - cere aprobare explicită implicit, până când îi spui lui Hermes că ai încredere pentru acel tip specific de acțiune."
+      },
+      {
+        "category": "Confidențialitate & proprietate",
+        "q": "Sunt datele mele în siguranță?",
+        "a": "Da. Toate datele trăiesc pe serverul tău. Fără telemetrie, fără analytics, fără vendor lock-in cloud terț, fără date împărtășite cu noi. Hermes e open source sub licență MIT - poți audita fiecare linie de cod. Singurele apeluri ieșite sunt către furnizorul de model AI ales (OpenAI/Anthropic/Google) și către integrările pe care le conectezi explicit."
+      },
+      {
+        "category": "Confidențialitate & proprietate",
+        "q": "Cine deține Hermes după program?",
+        "a": "Tu. Complet. Codul e licențiat MIT, serverul e al tău, cheile API sunt ale tale, memoria e a ta. Nu păstrăm niciun acces. Dacă dispărem mâine, agentul tău continuă să ruleze la nesfârșit."
+      },
+      {
+        "category": "Confidențialitate & proprietate",
+        "q": "Pot modifica sau extinde Hermes singur?",
+        "a": "Da - ăsta e și scopul. Codebase-ul e mic (cam 8.000 de linii de Python) și bine documentat. Predarea din săptămâna 4 include un walkthrough al arhitecturii, ca tu (sau un dezvoltator pe care îl angajezi) să-l poți extinde fără noi."
+      },
+      {
+        "category": "Confidențialitate & proprietate",
+        "q": "E Hermes conform GDPR?",
+        "a": "Da. Pentru că toate datele rămân pe serverul tău în regiunea UE pe care o alegi, rămâi singurul operator de date. Oferim un template DPA de o pagină dacă echipa ta legală are nevoie. Hermes nu loghează niciodată informații personale identificabile către servicii externe decât dacă îl configurezi tu explicit."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Cât durează programul?",
+        "a": "Full build durează 4 săptămâni: o sesiune de 90 de minute pe săptămână, plus suport asincron pe Telegram între sesiuni. Self-directed durează 2 săptămâni cu două sesiuni. Ambele timeline-uri sunt flexibile - clienții cu călătorii sau săptămâni aglomerate pot extinde la 6–8 săptămâni fără cost suplimentar."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Când pot să încep?",
+        "a": "Maxim 4 clienți pe lună. Lista de așteptare actuală e de obicei de 2–3 săptămâni. Apelul gratuit de descoperire de 30 de minute se poate întâmpla de obicei în 48 de ore - acolo confirmăm fit-ul și fixăm data de start."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Programul e 1:1 sau de grup?",
+        "a": "Strict 1:1. Fiecare sesiune e construită pe fluxurile tale specifice - fără slide-uri, fără curriculum aplicat unei cohorte. Plafonul de 4 clienți pe lună e ce face asta posibil."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Ce fac dacă trebuie să reprogramez o sesiune?",
+        "a": "Nicio problemă. Atâta timp cât anunți cu 24h înainte, mutăm la următorul slot disponibil. Lucrăm pe fus orar CET dar acomodăm regulat clienți de la EST până la GMT+8."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Ce se întâmplă după cele 4 săptămâni?",
+        "a": "Primești 3 luni de suport ușor incluse - mesaje asincrone pe Telegram pentru întrebări, fix-uri mici, update-uri de model. După aceea, retainer opțional (€200/lună) sau sesiuni separate (€250/90 min) dacă vrei ajutor să adaugi fluxuri noi. Majoritatea clienților nu au nevoie."
+      },
+      {
+        "category": "Logistica programului",
+        "q": "Înregistrați sesiunile?",
+        "a": "Da. Fiecare sesiune e înregistrată și împărtășită cu tine în 24 de ore, indexată pe subiect. Înregistrările plus playbook-ul scris înseamnă că poți întotdeauna să te întorci și să vezi exact cum a fost construit un flux."
+      },
+      {
+        "category": "Fit & decizie",
+        "q": "Pentru cine NU e Hermes?",
+        "a": "Trei grupuri: (1) Oameni care vor un instrument no-code drag-and-drop - Hermes e configurat vorbind cu el, nu prin click-uri. (2) Echipe care au nevoie de un UI SaaS lustruit pentru utilizatori finali non-tehnici - Hermes e un agent de operațiuni personal, nu un produs. (3) Oricine se așteaptă la magie fără efort - programul cere 4 ore de muncă live plus fluxurile tale reale pe care să construim."
+      },
+      {
+        "category": "Fit & decizie",
+        "q": "Cine obține cea mai mare valoare din Hermes?",
+        "a": "Fondatori solo, proprietari de agenții, consultanți și operatori care: petrec 5+ ore pe săptămână pe email/cercetare/coordonare, își știu deja fluxurile pe de rost și vor să dețină instrumentul în loc să închirieze încă un SaaS. Clientul tipic recuperează 8–15 ore pe săptămână în 60 de zile."
+      },
+      {
+        "category": "Fit & decizie",
+        "q": "Ce fac dacă nu sunt sigur că Hermes se potrivește fluxurilor mele?",
+        "a": "Rezervă auditul gratuit de 30 de minute. Ne uităm la 2–3 task-uri recurente reale ale tale și îți spunem sincer dacă Hermes va ajuta, nu va ajuta sau dacă un instrument mai simplu ar face treaba. Cam 30% dintre apelurile de audit se termină cu noi recomandând altceva."
+      },
+      {
+        "category": "Fit & decizie",
+        "q": "Pot vedea Hermes funcționând înainte să mă angajez?",
+        "a": "Da. Apelul de descoperire include un demo live de 5 minute al unui flux de client real (cu permisiune și date anonimizate). Poți vedea și repository-ul open-source pe GitHub înainte să vorbești cu noi."
+      }
     ]
   },
   "checkout": {

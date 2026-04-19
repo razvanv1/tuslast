@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Structurare finanțare - credite Microsoft, AWS, Google și granturi digitale UE",
-    "description": "După training vine implementarea, iar implementarea cere buget. Structurăm programul tău de adopție AI ca să se califice pentru Microsoft MDF, AWS co-sell, fonduri Google Cloud sau granturi digitale UE.",
-    "keywords": "Microsoft MDF, AWS co-sell, Google Cloud Partner Advantage, Gemini Enterprise, granturi digitale UE, finanțare AI, Digital Europe Programme, grant AI România, credite vendor"
+    "title": "Finanțează adopția AI pe care nu ți-o permiți să o amâni · MDF, AWS, Google, granturi UE",
+    "description": "Majoritatea companiilor se califică pentru Microsoft MDF, AWS co-sell, fonduri Google Cloud sau granturi digitale UE. Puțini structurează aplicația corect. O facem noi, gratuit, pe un call.",
+    "keywords": "Microsoft MDF, AWS co-sell, Google Cloud Partner Advantage, finanțare Gemini Enterprise, granturi digitale UE, finanțare AI România, Digital Europe Programme, credite vendor, grant training AI, mid-market UE"
   },
   "documentTitle": "Structurare finanțare, The Unlearning School",
   "hero": {
@@ -123,23 +123,59 @@
     "vendor": {
       "title": "Credite vendor & fonduri de partener",
       "items": [
-        { "name": "Microsoft for Startups Founders Hub", "what": "Până la $150k credite Azure + OpenAI. Fără equity." },
-        { "name": "Microsoft MDF (Market Development Funds)", "what": "Co-finanțare prin partener pentru adopția Copilot, Azure AI și Microsoft 365." },
-        { "name": "AWS Activate", "what": "Până la $100k credite AWS, inclusiv acces la modelele Bedrock." },
-        { "name": "AWS co-sell & fonduri de partener", "what": "Bugete APN pentru programe de skill-uri digitale și adopție cloud." },
-        { "name": "Google for Startups Cloud Program", "what": "Până la $200k credite Google Cloud + Gemini pe 2 ani." },
-        { "name": "Google Cloud Partner Advantage", "what": "Fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise, Workspace." },
-        { "name": "Anthropic for Startups", "what": "Credite API Claude și acces prioritar pentru echipe early-stage." }
+        {
+          "name": "Microsoft for Startups Founders Hub",
+          "what": "Până la $150k credite Azure + OpenAI. Fără equity."
+        },
+        {
+          "name": "Microsoft MDF (Market Development Funds)",
+          "what": "Co-finanțare prin partener pentru adopția Copilot, Azure AI și Microsoft 365."
+        },
+        {
+          "name": "AWS Activate",
+          "what": "Până la $100k credite AWS, inclusiv acces la modelele Bedrock."
+        },
+        {
+          "name": "AWS co-sell & fonduri de partener",
+          "what": "Bugete APN pentru programe de skill-uri digitale și adopție cloud."
+        },
+        {
+          "name": "Google for Startups Cloud Program",
+          "what": "Până la $200k credite Google Cloud + Gemini pe 2 ani."
+        },
+        {
+          "name": "Google Cloud Partner Advantage",
+          "what": "Fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise, Workspace."
+        },
+        {
+          "name": "Anthropic for Startups",
+          "what": "Credite API Claude și acces prioritar pentru echipe early-stage."
+        }
       ]
     },
     "eu": {
       "title": "Granturi UE & naționale",
       "items": [
-        { "name": "PNRR România — digitalizare", "what": "Planul Național de Redresare și Reziliență, componente de digitalizare. Specific România, apeluri active 2025–2026." },
-        { "name": "POCIDIF", "what": "Programul Operațional Creștere Inteligentă, Digitalizare și Instrumente Financiare. Acoperă deployment AI și proiecte de upskilling." },
-        { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru skill-uri AI, medii de testare digitală și acces EDIH." },
-        { "name": "Horizon Europe — apeluri AI", "what": "Finanțare R&D și inovare, inclusiv subiecte AI și proiecte de consorțiu." },
-        { "name": "Erasmus+", "what": "Cohorte de upskilling, mobilitate de training și parteneriate transfrontaliere pentru forța de muncă." }
+        {
+          "name": "PNRR România — digitalizare",
+          "what": "Planul Național de Redresare și Reziliență, componente de digitalizare. Specific România, apeluri active 2025–2026."
+        },
+        {
+          "name": "POCIDIF",
+          "what": "Programul Operațional Creștere Inteligentă, Digitalizare și Instrumente Financiare. Acoperă deployment AI și proiecte de upskilling."
+        },
+        {
+          "name": "Digital Europe Programme",
+          "what": "Co-finanțare UE pentru skill-uri AI, medii de testare digitală și acces EDIH."
+        },
+        {
+          "name": "Horizon Europe — apeluri AI",
+          "what": "Finanțare R&D și inovare, inclusiv subiecte AI și proiecte de consorțiu."
+        },
+        {
+          "name": "Erasmus+",
+          "what": "Cohorte de upskilling, mobilitate de training și parteneriate transfrontaliere pentru forța de muncă."
+        }
       ]
     },
     "footnote": "Nu e exhaustiv. Urmărim mai multe — apelurile deschise și programele partenerilor se schimbă în fiecare trimestru."
@@ -149,11 +185,26 @@
     "titleStart": "Noi facem structurarea.",
     "titleEm": "Tu rulezi programul.",
     "steps": [
-      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage și orice acord existent cu furnizori, ca să identificăm pentru ce programe te califici chiar acum." },
-      { "title": "Mapăm instrumentele eligibile", "body": "Pe baza auditului, identificăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică — un set specific cu criteriile de calificare confirmate." },
-      { "title": "Structurăm programul ca să se califice", "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă. E pasul pe care majoritatea companiilor îl ratează." },
-      { "title": "Scriem și depunem aplicația", "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici de rezultat. Le știm pentru că am făcut asta pentru propriile noastre programe." },
-      { "title": "Aliniem livrarea și rambursarea", "body": "Documentația de livrare e construită ca să se potrivească cu cerințele aplicației din ziua unu. Rambursarea nu se blochează pentru că hârtiile nu se potrivesc cu ce a fost depus." }
+      {
+        "title": "Auditul relațiilor cu furnizorii",
+        "body": "Analizăm statusul tău de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage și orice acord existent cu furnizori, ca să identificăm pentru ce programe te califici chiar acum."
+      },
+      {
+        "title": "Mapăm instrumentele eligibile",
+        "body": "Pe baza auditului, identificăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică — un set specific cu criteriile de calificare confirmate."
+      },
+      {
+        "title": "Structurăm programul ca să se califice",
+        "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă. E pasul pe care majoritatea companiilor îl ratează."
+      },
+      {
+        "title": "Scriem și depunem aplicația",
+        "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici de rezultat. Le știm pentru că am făcut asta pentru propriile noastre programe."
+      },
+      {
+        "title": "Aliniem livrarea și rambursarea",
+        "body": "Documentația de livrare e construită ca să se potrivească cu cerințele aplicației din ziua unu. Rambursarea nu se blochează pentru că hârtiile nu se potrivesc cu ce a fost depus."
+      }
     ],
     "result": {
       "label": "Rezultat",
@@ -170,10 +221,22 @@
       "Dacă nu te califici pentru nimic, îți spunem asta în shortlist-ul scris, în 5 zile lucrătoare de la call-ul de scoping. Nu urmează niciun pitch. Nu s-a făcut niciun angajament."
     ],
     "points": [
-      { "label": "Ce acoperă call-ul", "body": "Mapăm relațiile tale cu furnizorii și eligibilitatea UE. Pleci cu o imagine clară a instrumentelor care se aplică, sumele estimate de acoperire și ce documente îți trebuie. Fără angajament până nu vezi cifrele." },
-      { "label": "Ce se întâmplă după", "body": "Dacă te califici și vrei să mergi mai departe, structurăm programul, scriem aplicația și coordonăm livrarea. TUS e partenerul de livrare numit în aplicație." },
-      { "label": "Cât te costă", "body": "Munca de structurare și aplicație e acoperită prin contractul de implementare. Dacă finanțarea nu se aprobă, nu plătești pentru munca de structurare." },
-      { "label": "Stimulentul nostru", "body": "Suntem plătiți să livrăm un program doar când ai bugetul să-l finanțezi. Aprobarea finanțării tale e interesul nostru comercial. Stimulentele sunt aliniate." }
+      {
+        "label": "Ce acoperă call-ul",
+        "body": "Mapăm relațiile tale cu furnizorii și eligibilitatea UE. Pleci cu o imagine clară a instrumentelor care se aplică, sumele estimate de acoperire și ce documente îți trebuie. Fără angajament până nu vezi cifrele."
+      },
+      {
+        "label": "Ce se întâmplă după",
+        "body": "Dacă te califici și vrei să mergi mai departe, structurăm programul, scriem aplicația și coordonăm livrarea. TUS e partenerul de livrare numit în aplicație."
+      },
+      {
+        "label": "Cât te costă",
+        "body": "Munca de structurare și aplicație e acoperită prin contractul de implementare. Dacă finanțarea nu se aprobă, nu plătești pentru munca de structurare."
+      },
+      {
+        "label": "Stimulentul nostru",
+        "body": "Suntem plătiți să livrăm un program doar când ai bugetul să-l finanțezi. Aprobarea finanțării tale e interesul nostru comercial. Stimulentele sunt aliniate."
+      }
     ]
   },
   "engine": {
@@ -182,12 +245,30 @@
     "titleEm": "în spatele structurării.",
     "intro": "Munca de structurare nu e un singur PDF. Rulează pe un strat operațional pe care-l folosim în fiecare angajament de finanțare. Îl deschidem ca tool separat mai târziu — deocamdată rulează în munca pe care o facem pentru tine.",
     "items": [
-      { "title": "Scanare continuă", "body": "Monitorizăm săptămânal apelurile UE și naționale și marcăm pe cele care se potrivesc profilului tău." },
-      { "title": "Scoring de potrivire", "body": "Fiecare oportunitate e scorată după profilul organizației — eligibilitate, efort, acoperire estimată." },
-      { "title": "Urmărire deadline-uri & follow-up", "body": "Fiecare apel are un ceas. Urmărim ferestrele de depunere, milestone-urile și cerințele de follow-up ca să nu scape nimic." },
-      { "title": "Reutilizare a conținutului anterior", "body": "Draft-urile pleacă de la aplicațiile, deck-urile și propunerile tale anterioare — ca să rafinezi, nu să pornești de la pagină goală." },
-      { "title": "Draft structurat de propunere", "body": "Fiecare secțiune a aplicației e scrisă în formatul cerut de organismul de finanțare, gata pentru rafinare cu echipa ta." },
-      { "title": "Coordonare consorțiu & co-aplicanți", "body": "Unde apelul cere consorțiu, ajutăm la alinierea co-aplicanților și coordonarea depunerii comune." }
+      {
+        "title": "Scanare continuă",
+        "body": "Monitorizăm săptămânal apelurile UE și naționale și marcăm pe cele care se potrivesc profilului tău."
+      },
+      {
+        "title": "Scoring de potrivire",
+        "body": "Fiecare oportunitate e scorată după profilul organizației — eligibilitate, efort, acoperire estimată."
+      },
+      {
+        "title": "Urmărire deadline-uri & follow-up",
+        "body": "Fiecare apel are un ceas. Urmărim ferestrele de depunere, milestone-urile și cerințele de follow-up ca să nu scape nimic."
+      },
+      {
+        "title": "Reutilizare a conținutului anterior",
+        "body": "Draft-urile pleacă de la aplicațiile, deck-urile și propunerile tale anterioare — ca să rafinezi, nu să pornești de la pagină goală."
+      },
+      {
+        "title": "Draft structurat de propunere",
+        "body": "Fiecare secțiune a aplicației e scrisă în formatul cerut de organismul de finanțare, gata pentru rafinare cu echipa ta."
+      },
+      {
+        "title": "Coordonare consorțiu & co-aplicanți",
+        "body": "Unde apelul cere consorțiu, ajutăm la alinierea co-aplicanților și coordonarea depunerii comune."
+      }
     ]
   },
   "faq": {
@@ -195,12 +276,30 @@
     "titleStart": "Înainte de",
     "titleEm": "call-ul de scoping.",
     "items": [
-      { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie: tipic 3–5 săptămâni. O săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă 2–6 săptămâni peste momentul depunerii.\n\nTimeline-urile pentru granturi UE sunt mai lungi și variază pe instrument. Apelurile PNRR și POCIDIF au ferestre fixe de depunere. Le urmărim și le semnalăm înainte să se închidă." },
-      { "q": "Dacă nu suntem partener Microsoft, AWS sau Google?", "a": "Nu trebuie să fii partener formal ca să accesezi pistele de startup și scaleup. AWS Activate, Google for Startups și Microsoft Founders Hub sunt accesibile fără certificare de partener. Pentru MDF enterprise, faptul că ești deja client al produselor lor cloud sau workspace e tipic suficient.\n\nVerificăm exact în ce tier ești în call-ul de scoping și mapăm cea mai rapidă cale spre instrumentele care se aplică situației tale." },
-      { "q": "Cum funcționează efectiv rambursarea?", "a": "Pentru credite vendor (AWS, Google, Microsoft Founders Hub), fondurile se aplică direct pe contul tău de billing ca să compenseze costurile de infrastructură și API. Nimic de revendicat — creditul e acolo când îți trebuie.\n\nPentru granturi UE și MDF de partener: rulezi programul, plătești facturile și depui dovada execuției. Vendor-ul sau organismul UE te rambursează direct. Structurăm documentația de livrare din ziua unu ca să se potrivească exact cu criteriile de rambursare — nu reconstruită la final." },
-      { "q": "Ce documente cerem de la voi?", "a": "Pentru auditul inițial: nimic în afară de 30 de minute din timpul tău. Trebuie să înțelegem stack-ul tău tehnologic actual și relațiile cu furnizorii. Asta e tot input-ul pentru call-ul de scoping.\n\nDupă ce identificăm o pistă finanțabilă, vom avea nevoie de profilul standard al companiei și, unde se aplică, acces read-only la portalul tău de partener vendor. Dăm o checklist specifică de documente la pasul ăla." },
-      { "q": "Cât ne costă?", "a": "Auditul de finanțare și structurarea aplicației sunt gratuite. De ce? Pentru că suntem o companie de adopție AI, nu o consultanță de granturi. Facem munca grea ca să-ți aprobi bugetul cu o singură condiție: odată ce finanțarea e securizată, The Unlearning School e partenerul tău pentru livrarea programului de adopție AI.\n\nNoi aducem structura care deblochează bugetul. Tu rulezi programul cu noi. Asta e aranjamentul, spus pe șleau." },
-      { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem imediat în call-ul de scoping. Nu pierdem timp structurând aplicații care nu vor câștiga, pentru că suntem plătiți doar când rulezi efectiv programul cu noi. Dacă finanțarea nu e acolo, o spunem și ne despărțim.\n\nÎn practică, majoritatea companiilor mid-market din România se califică pentru cel puțin un instrument. Pistele de digitalizare PNRR și cohortele de upskilling Erasmus+ acoperă o gamă largă de situații. Aflăm în 30 de minute." }
+      {
+        "q": "Cât durează o aplicație MDF?",
+        "a": "De la kick-off până la submisie: tipic 3–5 săptămâni. O săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă 2–6 săptămâni peste momentul depunerii.\n\nTimeline-urile pentru granturi UE sunt mai lungi și variază pe instrument. Apelurile PNRR și POCIDIF au ferestre fixe de depunere. Le urmărim și le semnalăm înainte să se închidă."
+      },
+      {
+        "q": "Dacă nu suntem partener Microsoft, AWS sau Google?",
+        "a": "Nu trebuie să fii partener formal ca să accesezi pistele de startup și scaleup. AWS Activate, Google for Startups și Microsoft Founders Hub sunt accesibile fără certificare de partener. Pentru MDF enterprise, faptul că ești deja client al produselor lor cloud sau workspace e tipic suficient.\n\nVerificăm exact în ce tier ești în call-ul de scoping și mapăm cea mai rapidă cale spre instrumentele care se aplică situației tale."
+      },
+      {
+        "q": "Cum funcționează efectiv rambursarea?",
+        "a": "Pentru credite vendor (AWS, Google, Microsoft Founders Hub), fondurile se aplică direct pe contul tău de billing ca să compenseze costurile de infrastructură și API. Nimic de revendicat — creditul e acolo când îți trebuie.\n\nPentru granturi UE și MDF de partener: rulezi programul, plătești facturile și depui dovada execuției. Vendor-ul sau organismul UE te rambursează direct. Structurăm documentația de livrare din ziua unu ca să se potrivească exact cu criteriile de rambursare — nu reconstruită la final."
+      },
+      {
+        "q": "Ce documente cerem de la voi?",
+        "a": "Pentru auditul inițial: nimic în afară de 30 de minute din timpul tău. Trebuie să înțelegem stack-ul tău tehnologic actual și relațiile cu furnizorii. Asta e tot input-ul pentru call-ul de scoping.\n\nDupă ce identificăm o pistă finanțabilă, vom avea nevoie de profilul standard al companiei și, unde se aplică, acces read-only la portalul tău de partener vendor. Dăm o checklist specifică de documente la pasul ăla."
+      },
+      {
+        "q": "Cât ne costă?",
+        "a": "Auditul de finanțare și structurarea aplicației sunt gratuite. De ce? Pentru că suntem o companie de adopție AI, nu o consultanță de granturi. Facem munca grea ca să-ți aprobi bugetul cu o singură condiție: odată ce finanțarea e securizată, The Unlearning School e partenerul tău pentru livrarea programului de adopție AI.\n\nNoi aducem structura care deblochează bugetul. Tu rulezi programul cu noi. Asta e aranjamentul, spus pe șleau."
+      },
+      {
+        "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?",
+        "a": "Îți spunem imediat în call-ul de scoping. Nu pierdem timp structurând aplicații care nu vor câștiga, pentru că suntem plătiți doar când rulezi efectiv programul cu noi. Dacă finanțarea nu e acolo, o spunem și ne despărțim.\n\nÎn practică, majoritatea companiilor mid-market din România se califică pentru cel puțin un instrument. Pistele de digitalizare PNRR și cohortele de upskilling Erasmus+ acoperă o gamă largă de situații. Aflăm în 30 de minute."
+      }
     ]
   },
   "eventsBridge": {

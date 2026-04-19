@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "AI Adoption Call - free 30-minute maturity assessment",
-    "description": "A free 30-minute call that measures how mature your organisation is for AI adoption. You receive a maturity score, a gap analysis, and a practical next-step roadmap within 24 hours.",
-    "keywords": "AI adoption call, AI maturity assessment, AI readiness score, AI gap analysis, AI adoption roadmap, EU AI Act readiness, free AI consultation",
+    "title": "Free 30-minute AI adoption call · maturity score + roadmap in 24h",
+    "description": "Book a free 30-minute call. We score your AI adoption maturity, name the real gaps, and send a 1-page prioritised roadmap within 24 hours. No deck, no sales follow-up.",
+    "keywords": "AI adoption call, free AI consultation, AI maturity assessment, AI readiness score, AI gap analysis, AI adoption roadmap, EU AI Act Article 4 readiness, Copilot adoption audit, Romania, EU",
     "schemaName": "AI Adoption Call",
-    "schemaDescription": "Book a free 30-minute AI maturity assessment call.",
+    "schemaDescription": "Free 30-minute call. Maturity score, gap analysis and a 1-page roadmap delivered within 24 hours.",
     "docTitle": "AI Adoption Call, The Unlearning School"
   },
   "hero": {
@@ -45,9 +45,24 @@
     "title1": "Three readers. ",
     "titleEm": "Three uses for the score.",
     "items": [
-      { "num": "01", "tag": "COO / Operations", "title": "You need a number to justify investment.", "desc": "The maturity score gives you a defensible baseline to take to the board, and a ranked roadmap of where the next euro should go." },
-      { "num": "02", "tag": "HR / L&D Lead", "title": "You need to know which teams to train first.", "desc": "The gap analysis maps maturity across dimensions, so your training programme targets the actual blockers, not generic AI literacy." },
-      { "num": "03", "tag": "Business unit lead", "title": "You need a practical first move, not a strategy deck.", "desc": "The roadmap names the 1–3 workflows where redesigning around AI would produce a visible result inside one quarter." }
+      {
+        "num": "01",
+        "tag": "COO / Operations",
+        "title": "You need a number to justify investment.",
+        "desc": "The maturity score gives you a defensible baseline to take to the board, and a ranked roadmap of where the next euro should go."
+      },
+      {
+        "num": "02",
+        "tag": "HR / L&D Lead",
+        "title": "You need to know which teams to train first.",
+        "desc": "The gap analysis maps maturity across dimensions, so your training programme targets the actual blockers, not generic AI literacy."
+      },
+      {
+        "num": "03",
+        "tag": "Business unit lead",
+        "title": "You need a practical first move, not a strategy deck.",
+        "desc": "The roadmap names the 1–3 workflows where redesigning around AI would produce a visible result inside one quarter."
+      }
     ]
   },
   "booking": {
@@ -73,6 +88,9 @@
     "body": "No proposal is attached to this call. If the score shows there is no problem worth solving, we say so. If there is, the roadmap describes what fixing it would look like. You decide what to do next."
   },
   "faqList": [
-    { "question": "Is the call really free?", "answer": "Yes. The 30-minute call and the 1-page maturity report you receive within 24 hours are free, with no obligation to take a next step." }
+    {
+      "question": "Is the call really free?",
+      "answer": "Yes. The 30-minute call and the 1-page maturity report you receive within 24 hours are free, with no obligation to take a next step."
+    }
   ]
 }

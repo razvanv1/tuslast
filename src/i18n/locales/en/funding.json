@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Funding Structuring - Microsoft, AWS, Google credits & EU digital grants",
-    "description": "After the training comes implementation, and implementation needs budget. We structure your AI adoption program to qualify for Microsoft MDF, AWS co-sell, Google Cloud partner funds, or EU digital grants.",
-    "keywords": "Microsoft MDF, AWS co-sell, Google Cloud Partner Advantage, Gemini Enterprise, EU digital grants, AI funding, Digital Europe Programme, AI grant Romania, vendor credits"
+    "title": "Fund the AI adoption you can't afford to skip · MDF, AWS, Google, EU grants",
+    "description": "Most companies qualify for Microsoft MDF, AWS co-sell, Google Cloud Partner funds or EU digital grants. Few structure the application right. We do that, free, on a call.",
+    "keywords": "Microsoft MDF, AWS co-sell, Google Cloud Partner Advantage, Gemini Enterprise funding, EU digital grants, AI funding Romania, Digital Europe Programme, vendor credits, AI training grant, mid-market funding EU"
   },
   "documentTitle": "Funding Structuring, The Unlearning School",
   "hero": {
@@ -123,23 +123,59 @@
     "vendor": {
       "title": "Vendor credits & partner funds",
       "items": [
-        { "name": "Microsoft for Startups Founders Hub", "what": "Up to $150k Azure + OpenAI credits. No equity required." },
-        { "name": "Microsoft MDF (Market Development Funds)", "what": "Partner-led co-funding for Copilot, Azure AI and Microsoft 365 adoption programmes." },
-        { "name": "AWS Activate", "what": "Up to $100k AWS credits including Bedrock model access." },
-        { "name": "AWS co-sell & partner funding", "what": "APN partner budgets for digital skills and cloud adoption programmes." },
-        { "name": "Google for Startups Cloud Program", "what": "Up to $200k Google Cloud + Gemini credits over 2 years." },
-        { "name": "Google Cloud Partner Advantage", "what": "Co-marketing and adoption funds for Vertex AI, Gemini Enterprise, Workspace." },
-        { "name": "Anthropic for Startups", "what": "Claude API credits and priority access for early-stage teams." }
+        {
+          "name": "Microsoft for Startups Founders Hub",
+          "what": "Up to $150k Azure + OpenAI credits. No equity required."
+        },
+        {
+          "name": "Microsoft MDF (Market Development Funds)",
+          "what": "Partner-led co-funding for Copilot, Azure AI and Microsoft 365 adoption programmes."
+        },
+        {
+          "name": "AWS Activate",
+          "what": "Up to $100k AWS credits including Bedrock model access."
+        },
+        {
+          "name": "AWS co-sell & partner funding",
+          "what": "APN partner budgets for digital skills and cloud adoption programmes."
+        },
+        {
+          "name": "Google for Startups Cloud Program",
+          "what": "Up to $200k Google Cloud + Gemini credits over 2 years."
+        },
+        {
+          "name": "Google Cloud Partner Advantage",
+          "what": "Co-marketing and adoption funds for Vertex AI, Gemini Enterprise, Workspace."
+        },
+        {
+          "name": "Anthropic for Startups",
+          "what": "Claude API credits and priority access for early-stage teams."
+        }
       ]
     },
     "eu": {
       "title": "EU & national grants",
       "items": [
-        { "name": "PNRR Romania — digitalizare", "what": "National Recovery and Resilience Plan, digitalization components. Romania-specific, active calls in 2025–2026." },
-        { "name": "POCIDIF", "what": "Operational Programme Smart Growth, Digitalization and Financial Instruments. Covers AI deployment and upskilling projects." },
-        { "name": "Digital Europe Programme", "what": "EU co-funding for AI skills, digital testing environments and EDIH access." },
-        { "name": "Horizon Europe — AI calls", "what": "R&D and innovation funding including AI-focused topics and consortium projects." },
-        { "name": "Erasmus+", "what": "Upskilling cohorts, training mobility and cross-border partnerships for workforce development." }
+        {
+          "name": "PNRR Romania — digitalizare",
+          "what": "National Recovery and Resilience Plan, digitalization components. Romania-specific, active calls in 2025–2026."
+        },
+        {
+          "name": "POCIDIF",
+          "what": "Operational Programme Smart Growth, Digitalization and Financial Instruments. Covers AI deployment and upskilling projects."
+        },
+        {
+          "name": "Digital Europe Programme",
+          "what": "EU co-funding for AI skills, digital testing environments and EDIH access."
+        },
+        {
+          "name": "Horizon Europe — AI calls",
+          "what": "R&D and innovation funding including AI-focused topics and consortium projects."
+        },
+        {
+          "name": "Erasmus+",
+          "what": "Upskilling cohorts, training mobility and cross-border partnerships for workforce development."
+        }
       ]
     },
     "footnote": "Not exhaustive. We track more — open calls and partner programmes shift every quarter."
@@ -149,11 +185,26 @@
     "titleStart": "We do the structuring.",
     "titleEm": "You run the programme.",
     "steps": [
-      { "title": "Audit your vendor relationships", "body": "We review your Microsoft Partner status, AWS tier, Google Cloud Partner Advantage standing, and any existing vendor agreements to identify which programmes you qualify for right now." },
-      { "title": "Map eligible instruments", "body": "Based on the audit, we identify the specific MDF programmes, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list — a specific set with qualification criteria confirmed." },
-      { "title": "Structure the programme to qualify", "body": "We redesign the scope and documentation of your AI adoption programme to meet the funding criteria. The programme content stays the same. The way it is framed and documented changes. This is the step most companies miss." },
-      { "title": "Draft and submit the application", "body": "We write or co-author the MDF proposal or grant application. Vendor fund applications require specific language and outcome metrics. We know what those are because we have done this for our own programmes." },
-      { "title": "Align delivery and reimbursement", "body": "Delivery documentation is built to match application requirements from day one. Reimbursement does not stall because the paperwork does not match what was submitted." }
+      {
+        "title": "Audit your vendor relationships",
+        "body": "We review your Microsoft Partner status, AWS tier, Google Cloud Partner Advantage standing, and any existing vendor agreements to identify which programmes you qualify for right now."
+      },
+      {
+        "title": "Map eligible instruments",
+        "body": "Based on the audit, we identify the specific MDF programmes, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list — a specific set with qualification criteria confirmed."
+      },
+      {
+        "title": "Structure the programme to qualify",
+        "body": "We redesign the scope and documentation of your AI adoption programme to meet the funding criteria. The programme content stays the same. The way it is framed and documented changes. This is the step most companies miss."
+      },
+      {
+        "title": "Draft and submit the application",
+        "body": "We write or co-author the MDF proposal or grant application. Vendor fund applications require specific language and outcome metrics. We know what those are because we have done this for our own programmes."
+      },
+      {
+        "title": "Align delivery and reimbursement",
+        "body": "Delivery documentation is built to match application requirements from day one. Reimbursement does not stall because the paperwork does not match what was submitted."
+      }
     ],
     "result": {
       "label": "Result",
@@ -170,10 +221,22 @@
       "If you qualify for nothing, we tell you that in the written shortlist within 5 business days of the scoping call. No pitch follows. No commitment was made."
     ],
     "points": [
-      { "label": "What the call covers", "body": "We map your vendor relationships and EU eligibility. You leave with a clear picture of which instruments apply, estimated coverage amounts, and what documentation you need. No commitment until you see the numbers." },
-      { "label": "What happens after", "body": "If you qualify and want to proceed, we structure the programme, draft the application, and coordinate delivery. TUS is the named delivery partner in the application." },
-      { "label": "What it costs you", "body": "The structuring and application work is covered under the implementation agreement. If the funding is not approved, you do not pay for the structuring work." },
-      { "label": "Our incentive", "body": "We only get paid to deliver a programme when you have the budget to fund one. Your funding approval is our commercial interest. The incentives are aligned." }
+      {
+        "label": "What the call covers",
+        "body": "We map your vendor relationships and EU eligibility. You leave with a clear picture of which instruments apply, estimated coverage amounts, and what documentation you need. No commitment until you see the numbers."
+      },
+      {
+        "label": "What happens after",
+        "body": "If you qualify and want to proceed, we structure the programme, draft the application, and coordinate delivery. TUS is the named delivery partner in the application."
+      },
+      {
+        "label": "What it costs you",
+        "body": "The structuring and application work is covered under the implementation agreement. If the funding is not approved, you do not pay for the structuring work."
+      },
+      {
+        "label": "Our incentive",
+        "body": "We only get paid to deliver a programme when you have the budget to fund one. Your funding approval is our commercial interest. The incentives are aligned."
+      }
     ]
   },
   "engine": {
@@ -182,12 +245,30 @@
     "titleEm": "behind the structuring.",
     "intro": "The structuring work isn't a single PDF. It runs on an operational layer we use across every funding engagement. We'll open it up as a separate tool later — for now it runs inside our work for you.",
     "items": [
-      { "title": "Continuous scanning", "body": "We monitor EU and national calls weekly and flag the ones that match your profile." },
-      { "title": "Fit scoring", "body": "Each opportunity is scored against your org profile — eligibility, effort, expected coverage." },
-      { "title": "Deadline & follow-up tracking", "body": "Every call has a clock. We track submission windows, milestones and follow-up requirements so nothing slips." },
-      { "title": "Reuse of past content", "body": "Drafts pull from your previous applications, decks and proposals — so you refine instead of starting from a blank page." },
-      { "title": "Structured proposal drafting", "body": "Each section of the application is drafted in the format the funding body expects, ready for your team to refine." },
-      { "title": "Partner & co-applicant coordination", "body": "Where the call needs a consortium, we help line up the co-applicants and coordinate the joint submission." }
+      {
+        "title": "Continuous scanning",
+        "body": "We monitor EU and national calls weekly and flag the ones that match your profile."
+      },
+      {
+        "title": "Fit scoring",
+        "body": "Each opportunity is scored against your org profile — eligibility, effort, expected coverage."
+      },
+      {
+        "title": "Deadline & follow-up tracking",
+        "body": "Every call has a clock. We track submission windows, milestones and follow-up requirements so nothing slips."
+      },
+      {
+        "title": "Reuse of past content",
+        "body": "Drafts pull from your previous applications, decks and proposals — so you refine instead of starting from a blank page."
+      },
+      {
+        "title": "Structured proposal drafting",
+        "body": "Each section of the application is drafted in the format the funding body expects, ready for your team to refine."
+      },
+      {
+        "title": "Partner & co-applicant coordination",
+        "body": "Where the call needs a consortium, we help line up the co-applicants and coordinate the joint submission."
+      }
     ]
   },
   "faq": {
@@ -195,12 +276,30 @@
     "titleStart": "Before the",
     "titleEm": "scoping call.",
     "items": [
-      { "q": "How long does an MDF application take?", "a": "From kick-off to submission: typically 3–5 weeks. One week for audit and instrument mapping, 1–2 weeks for programme structuring, 1–2 weeks for drafting and partner sign-off. The vendor's own decision window adds another 2–6 weeks on top of submission.\n\nEU grant timelines are longer and vary by instrument. PNRR and POCIDIF calls have fixed submission windows. We track these deadlines and flag them before they close." },
-      { "q": "What if we are not a Microsoft, AWS or Google partner yet?", "a": "You don't need to be a formal partner to access the startup and scaleup tracks. AWS Activate, Google for Startups, and Microsoft Founders Hub are all accessible without partner certification. For enterprise MDF, being an existing customer of their cloud or workspace products is typically sufficient.\n\nWe check exactly which tier you are in during the scoping call and map the fastest path to the instruments that apply to your situation." },
-      { "q": "How does reimbursement actually work?", "a": "For vendor credits (AWS, Google, Microsoft Founders Hub), the funds are applied directly to your billing account to offset infrastructure and API costs. Nothing to claim — the credit is there when you need it.\n\nFor EU grants and partner MDF: you run the programme, pay the invoices, and submit proof of execution. The vendor or EU body reimburses you directly. We structure the delivery documentation from day one to match the reimbursement criteria exactly — not retrofitted at the end." },
-      { "q": "What documents do you need from us?", "a": "For the initial audit: nothing except 30 minutes of your time. We need to understand your current technology stack and vendor relationships. That's the whole input for the scoping call.\n\nOnce we identify a fundable track, we will need your standard company profile and, where applicable, read-only access to your vendor partner portal. We provide a specific document checklist at that stage." },
-      { "q": "What does this cost us?", "a": "The funding audit and application structuring are free. Why? Because we are an AI adoption company, not a grants consultancy. We do the heavy lifting to get your budget approved with one condition: once the funding is secured, The Unlearning School is your partner for delivering the AI adoption programme.\n\nWe bring the structure that unlocks the budget. You run the programme with us. That is the arrangement, stated plainly." },
-      { "q": "What if we don't qualify for anything?", "a": "We tell you immediately on the scoping call. We don't spend time structuring applications that won't win, because we only get paid when you actually run the programme with us. If the funding is not there, we say so and part ways.\n\nIn practice, most mid-market companies in Romania qualify for at least one instrument. PNRR digitalization tracks and Erasmus+ upskilling cohorts cover a wide range of situations. We find out in 30 minutes." }
+      {
+        "q": "How long does an MDF application take?",
+        "a": "From kick-off to submission: typically 3–5 weeks. One week for audit and instrument mapping, 1–2 weeks for programme structuring, 1–2 weeks for drafting and partner sign-off. The vendor's own decision window adds another 2–6 weeks on top of submission.\n\nEU grant timelines are longer and vary by instrument. PNRR and POCIDIF calls have fixed submission windows. We track these deadlines and flag them before they close."
+      },
+      {
+        "q": "What if we are not a Microsoft, AWS or Google partner yet?",
+        "a": "You don't need to be a formal partner to access the startup and scaleup tracks. AWS Activate, Google for Startups, and Microsoft Founders Hub are all accessible without partner certification. For enterprise MDF, being an existing customer of their cloud or workspace products is typically sufficient.\n\nWe check exactly which tier you are in during the scoping call and map the fastest path to the instruments that apply to your situation."
+      },
+      {
+        "q": "How does reimbursement actually work?",
+        "a": "For vendor credits (AWS, Google, Microsoft Founders Hub), the funds are applied directly to your billing account to offset infrastructure and API costs. Nothing to claim — the credit is there when you need it.\n\nFor EU grants and partner MDF: you run the programme, pay the invoices, and submit proof of execution. The vendor or EU body reimburses you directly. We structure the delivery documentation from day one to match the reimbursement criteria exactly — not retrofitted at the end."
+      },
+      {
+        "q": "What documents do you need from us?",
+        "a": "For the initial audit: nothing except 30 minutes of your time. We need to understand your current technology stack and vendor relationships. That's the whole input for the scoping call.\n\nOnce we identify a fundable track, we will need your standard company profile and, where applicable, read-only access to your vendor partner portal. We provide a specific document checklist at that stage."
+      },
+      {
+        "q": "What does this cost us?",
+        "a": "The funding audit and application structuring are free. Why? Because we are an AI adoption company, not a grants consultancy. We do the heavy lifting to get your budget approved with one condition: once the funding is secured, The Unlearning School is your partner for delivering the AI adoption programme.\n\nWe bring the structure that unlocks the budget. You run the programme with us. That is the arrangement, stated plainly."
+      },
+      {
+        "q": "What if we don't qualify for anything?",
+        "a": "We tell you immediately on the scoping call. We don't spend time structuring applications that won't win, because we only get paid when you actually run the programme with us. If the funding is not there, we say so and part ways.\n\nIn practice, most mid-market companies in Romania qualify for at least one instrument. PNRR digitalization tracks and Erasmus+ upskilling cohorts cover a wide range of situations. We find out in 30 minutes."
+      }
     ]
   },
   "eventsBridge": {

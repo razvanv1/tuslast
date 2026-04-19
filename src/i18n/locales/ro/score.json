@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Diagnostic AI Adoption - test gratuit de maturitate AI, 2 minute",
-    "description": "Măsoară maturitatea AI a echipei tale în 2 minute. 10 întrebări ponderate despre strategie, instrumente, adopție și impact. Scor instant, analiză a lacunelor și o foaie de parcurs prioritizată.",
-    "keywords": "evaluare maturitate AI, scor adopție AI, test pregătire AI, model maturitate AI, audit AI gratuit, conformitate EU AI Act",
+    "title": "Diagnostic AI Adoption gratuit, 2 minute · află exact unde te afli",
+    "description": "10 întrebări ponderate despre strategie, instrumente, adopție și impact. Primești scorul de maturitate instant, zona cea mai slabă numită și o foaie de parcurs prioritizată. Gratuit.",
+    "keywords": "evaluare maturitate AI, scor adopție AI, test pregătire AI gratuit, model maturitate AI, audit AI, conformitate EU AI Act Articolul 4, scor adopție Copilot, România, UE",
     "docTitle": "Diagnostic AI Adoption, The Unlearning School"
   },
   "hero": {
@@ -12,10 +12,22 @@
     "subtitle": "92% dintre companii investesc în AI. Doar 1% se simt mature. Lasă povestea pe care ți-o spui și obține scorul de maturitate, analiza lacunelor pe patru dimensiuni și următoarea mișcare care contează cu adevărat."
   },
   "stats": [
-    { "value": "92%", "label": "dintre companii investesc în AI" },
-    { "value": "1%", "label": "se simt mature în adopția AI" },
-    { "value": "75%", "label": "dintre proiectele AI rămân blocate în pilot" },
-    { "value": "57%", "label": "dintre angajați își ascund folosirea AI" }
+    {
+      "value": "92%",
+      "label": "dintre companii investesc în AI"
+    },
+    {
+      "value": "1%",
+      "label": "se simt mature în adopția AI"
+    },
+    {
+      "value": "75%",
+      "label": "dintre proiectele AI rămân blocate în pilot"
+    },
+    {
+      "value": "57%",
+      "label": "dintre angajați își ascund folosirea AI"
+    }
   ],
   "quiz": {
     "yourResult": "Rezultatul tău",
