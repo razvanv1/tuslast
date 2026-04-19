@@ -1,15 +1,15 @@
 {
   "seo": {
     "title": "Resurse - analize, framework-uri și playbook-uri de adopție AI",
-    "description": "Articole selectate, episoade de podcast, framework-uri de lucru și instrumente despre adopția AI, intelligence pe finanțare, frictiune în execuție și viitorul muncii.",
-    "keywords": "resurse adopție AI, playbook AI, ghid EU AI Act, intelligence finanțare, framework-uri AI, podcast AI muncă"
+    "description": "AI Literacy Compliance Playbook, evenimente unde ne găsești și o listă curată de credite, free tier-uri și unelte open-source pentru a porni cu AI ieftin.",
+    "keywords": "resurse adopție AI, playbook AI, ghid EU AI Act, credite AI, free tier AI, open source AI, finanțare AI România"
   },
   "documentTitle": "Resurse, The Unlearning School",
   "hero": {
     "tag": "Resurse",
     "title": "Material util pentru echipele care lucrează cu AI, finanțare, execuție și schimbare.",
-    "subtitle": "Articole, episoade de podcast, studii, notițe de lucru, framework-uri și instrumente practice pentru echipele care se confruntă cu supraîncărcare de oportunități, adopție AI inegală, frecare în execuție, construcția de academii și viitorul muncii.",
-    "ctaText": "Mă abonez la The Unlearning Pill →",
+    "subtitle": "AI Literacy Compliance Playbook, evenimente unde apărem și o listă curată de credite, free tier-uri și unelte open-source care fac AI ieftin de pornit.",
+    "ctaText": "Citește Playbook-ul →",
     "secondaryText": "Sesiune AI Adoption"
   },
   "playbook": {
@@ -36,70 +36,74 @@
       "ribbonBadge": "Gratuit · Fără cont"
     }
   },
-  "library": {
-    "kicker": "Biblioteca",
-    "titleStart": "Articole care merită",
-    "titleEm": "timpul tău.",
-    "subtitle": "Materiale precise despre adopția AI, conformitate și execuție. Fără umplutură.",
-    "readTime": "min citire",
+  "events": {
+    "kicker": "Următoarele",
+    "titleStart": "Unde ne",
+    "titleEm": "găsești.",
+    "subtitle": "Evenimente publice, conferințe și mese rotunde despre adopția AI, conformitate EU AI Act și intelligence pe finanțare. Fără webinarii-de-lead-gen.",
+    "registerLabel": "Înscriere →",
+    "detailsLabel": "Detalii →",
+    "emptyState": "Nu sunt evenimente publice programate acum. Rezervă în schimb o Sesiune AI Adoption.",
+    "emptyCta": "Sesiune AI Adoption →",
     "items": [
       {
-        "kicker": "Conformitate",
-        "title": "EU AI Act Articolul 4 — ce înseamnă pentru echipele non-tech",
-        "excerpt": "Mandatul de alfabetizare e deja în vigoare. Iată ce trebuie să facă HR, Ops și managerii în trimestrul ăsta.",
-        "readTime": 6,
-        "to": "/resources/eu-ai-act-article-4"
-      },
-      {
-        "kicker": "Adopție",
-        "title": "De ce implementările Copilot se blochează după 30 de zile",
-        "excerpt": "Licențe cumpărate, training făcut, utilizare zero. Tiparul se repetă — și soluția nu e mai multe funcții.",
-        "readTime": 5,
-        "to": "/resources/copilot-rollout-stalls"
-      },
-      {
-        "kicker": "Framework",
-        "title": "Modelul Lewin aplicat adopției AI",
-        "excerpt": "Unfreeze, change, refreeze — un model de 70 de ani care explică de ce ți-e blocată implementarea AI.",
-        "readTime": 7,
-        "to": "/resources/lewin-model-ai-adoption"
-      },
-      {
-        "kicker": "Fluxuri",
-        "title": "AI pentru procurement: 3 fluxuri, înainte/după",
-        "excerpt": "Analiză RFP, scoring furnizori, redactare contracte. Economii reale de timp, nu promisiuni de slide.",
-        "readTime": 8,
-        "to": "/resources/ai-procurement-workflows"
-      },
-      {
-        "kicker": "Finanțare",
-        "title": "Cum califici pentru vendor MDF pe training AI",
-        "excerpt": "Microsoft, Google și AWS co-finanțează training-ul AI al echipei tale. Majoritatea firmelor nu cer niciodată.",
-        "readTime": 6,
-        "to": "/resources/vendor-mdf-ai-training"
-      },
-      {
-        "kicker": "Instrumente",
-        "title": "Hermes Agent vs ChatGPT — când folosești ce",
-        "excerpt": "Un asistent general și un agent de domeniu rezolvă probleme diferite. Un ghid practic de decizie.",
-        "readTime": 5,
-        "to": "/resources/hermes-vs-chatgpt"
+        "date": "Mai 2026",
+        "name": "Lovable Founder Series",
+        "context": "Discuție de fondator despre adopția AI în echipele non-tech. Înscrierile se deschid curând.",
+        "linkLabel": "Detalii →",
+        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20Mai%202026"
       }
     ]
   },
-  "newsletter": {
-    "kicker": "The Unlearning Pill",
-    "titleStart": "Semnal,",
-    "titleEm": "nu zgomot.",
-    "body": "Update-uri selectate despre intelligence pe finanțare, AI la muncă, frecare în execuție, construcția de academii și viitorul muncii.",
-    "bullets": [
-      "Articole și notițe selectate",
-      "Insight-uri practice din podcast",
-      "Observații pe finanțare și oportunități",
-      "Framework-uri de lucru și instrumente utile",
-      "Update-uri care merită citite, nu spam de inbox"
-    ],
-    "button": "Mă abonez la newsletter →"
+  "cheapAi": {
+    "kicker": "Referință",
+    "titleStart": "AI",
+    "titleEm": "ieftin.",
+    "subtitle": "Credite, free tier-uri și unelte open-source care permit echipelor să piloteze AI fără un ciclu de procurement. Actualizat pentru 2026.",
+    "groups": [
+      {
+        "title": "Credite de la furnizori",
+        "blurb": "Înscrii compania ca startup sau IMM și primești credite cloud + AI de mii de dolari.",
+        "items": [
+          { "name": "Microsoft for Startups Founders Hub", "what": "Până la $150k în credite Azure + OpenAI, fără equity.", "url": "https://www.microsoft.com/en-us/startups" },
+          { "name": "Google for Startups Cloud Program", "what": "Până la $200k în credite Google Cloud + Gemini, pe 2 ani.", "url": "https://cloud.google.com/startup" },
+          { "name": "AWS Activate", "what": "Până la $100k în credite AWS, inclusiv acces la Bedrock.", "url": "https://aws.amazon.com/activate/" },
+          { "name": "Anthropic for Startups", "what": "Credite API Claude și acces prioritar pentru echipe early-stage.", "url": "https://www.anthropic.com/startups" }
+        ]
+      },
+      {
+        "title": "Free tier-uri care chiar merită",
+        "blurb": "Free tier-uri reale, nu trial-uri de 14 zile. Suficient pentru prototipuri și volume mici.",
+        "items": [
+          { "name": "Lovable AI Gateway", "what": "Fereastră gratuită pe Gemini 2.5 Flash. Fără cheie, fără card.", "url": "https://docs.lovable.dev/features/ai" },
+          { "name": "Groq", "what": "Inferență foarte rapidă pe Llama și Mixtral, free tier generos.", "url": "https://console.groq.com/" },
+          { "name": "Mistral La Plateforme", "what": "Acces gratuit la Mistral Small prin API pentru experimentare.", "url": "https://console.mistral.ai/" },
+          { "name": "Together AI", "what": "Credite gratuite pe Llama, Qwen și alte modele open.", "url": "https://www.together.ai/" }
+        ]
+      },
+      {
+        "title": "Modele și unelte open-source",
+        "blurb": "Rulezi AI local sau self-hosted. Zero cost per token, control total pe date.",
+        "items": [
+          { "name": "Llama 3.x", "what": "Familia open-weight de la Meta. Modele generale puternice.", "url": "https://llama.meta.com/" },
+          { "name": "Mistral & Mixtral", "what": "Modele europene open, eficiente pe limbi europene.", "url": "https://mistral.ai/technology/" },
+          { "name": "Qwen", "what": "Modele open de la Alibaba, top pe sarcini multilingve.", "url": "https://qwenlm.github.io/" },
+          { "name": "Whisper", "what": "Speech-to-text open-source de la OpenAI. Rulează local, multilingv.", "url": "https://github.com/openai/whisper" },
+          { "name": "Ollama", "what": "Rulezi LLM-uri open-source local, cu o singură comandă.", "url": "https://ollama.com/" },
+          { "name": "LM Studio", "what": "Aplicație desktop pentru a rula modele open pe laptop, cu GUI.", "url": "https://lmstudio.ai/" }
+        ]
+      },
+      {
+        "title": "Rute de finanțare UE · 2026",
+        "blurb": "Programe publice care co-finanțează adopția AI, training-ul și piloții.",
+        "items": [
+          { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru competențe digitale, testare AI și acces EDIH.", "url": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme" },
+          { "name": "Horizon Europe — apeluri AI", "what": "Finanțare R&D și inovare, inclusiv topicuri AI.", "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" },
+          { "name": "PNRR România · digitalizare", "what": "Fonduri naționale pentru digitalizarea IMM-urilor și adopție AI.", "url": "https://mfe.gov.ro/pnrr/" },
+          { "name": "POCIDIF / programe digitalizare RO", "what": "Programe operaționale care co-finanțează proiecte digitale + AI în România.", "url": "https://mfe.gov.ro/" }
+        ]
+      }
+    ]
   },
   "cta": {
     "title": "Începe cu Sesiunea AI Adoption.",
