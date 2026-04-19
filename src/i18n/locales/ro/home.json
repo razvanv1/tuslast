@@ -188,5 +188,110 @@
       "question": "Cum încep?",
       "answer": "Programează un Diagnostic gratuit. O sesiune de lucru, raport scris în maximum 5 zile lucrătoare, fără propunere atașată."
     }
-  ]
+  ],
+  "scoreStrip": {
+    "kicker": "AI Adoption Score · 2 min",
+    "body": "Dă testul de 2 minute.",
+    "bodyEm": "Primești scorul tău și un roadmap personalizat.",
+    "button": "Începe testul"
+  },
+  "beforeAfter": {
+    "kicker": "Înainte / După · Un workflow real",
+    "titleStart": "Analiza unui RFP de achiziții,",
+    "titleEm": "reconstruită cu AI.",
+    "body": "Un singur workflow, două cronologii. Aceeași echipă, același RFP, aceeași calitate finală. Diferența e unde se întâmplă efectiv munca.",
+    "before": {
+      "tag": "Înainte · Manual",
+      "title": "Analiza RFP, varianta veche",
+      "time": "6h",
+      "steps": [
+        "Citire RFP de 80 de pagini, integral",
+        "Marcare manuală a riscurilor și obligațiilor",
+        "Retastare a constatărilor în template-ul intern",
+        "Verificare încrucișată a clauzelor de preț între secțiuni",
+        "Programare a 2 ședințe suplimentare pentru clarificări"
+      ],
+      "friction": "Reviewer-ul senior scos o zi de pe alte priorități"
+    },
+    "after": {
+      "tag": "După · Asistat de AI",
+      "title": "Analiza RFP, cu aceeași echipă",
+      "time": "45 min",
+      "steps": [
+        "Încarci RFP-ul în Copilot-ul pe care echipa îl are deja",
+        "Rulezi prompt sheet-ul pentru extragerea riscurilor și obligațiilor",
+        "Completare automată a template-ului intern din output structurat",
+        "Reviewer-ul validează, ajustează, semnează",
+        "Trimiteți clarificările într-un singur email consolidat"
+      ],
+      "friction": "Reviewer-ul păstrează judecata, scapă de tastat"
+    }
+  },
+  "cases": {
+    "kicker": "Track record · Anonimizat la cerere",
+    "titleStart": "Organizații reale,",
+    "titleEm": "rezultate reale.",
+    "body": "Nu publicăm logo-uri de clienți. Publicăm ce s-a schimbat: ore economisite, procese reconstruite, oameni formați. Sectoarele și scara de mai jos sunt corecte; numele rămân confidențiale prin acord.",
+    "items": [
+      { "sector": "Bancă RO top-3", "metric": "120", "outcome": "PM-i formați pe scriere de specificații asistată de AI", "context": "Sprint 4 săptămâni · 38% timp salvat la spec" },
+      { "sector": "Distribuitor național", "metric": "80", "outcome": "Angajați sceptici devenit Copilot-activi în 2h", "context": "Sesiune on-site · 100% completare" },
+      { "sector": "Pharma UE", "metric": "3 dep.", "outcome": "Compliance + medical + comercial formate împreună", "context": "Pregătit pentru EU AI Act Articolul 4" },
+      { "sector": "Universitate publică", "metric": "200+", "outcome": "Cadre didactice și administrativ formate pe AI responsabil", "context": "Program pe un an academic complet" },
+      { "sector": "Retail mid-cap", "metric": "45%", "outcome": "Reducere a timpului de producție săptămânal a rapoartelor", "context": "Embed 6 săptămâni · echipa de finance" }
+    ],
+    "footnote": "Apeluri de referință disponibile sub NDA, după o primă discuție."
+  },
+  "founder": {
+    "kicker": "Omul din spatele proiectului",
+    "label": "Fondator",
+    "titleStart": "Condus de cineva care",
+    "titleEm": "a făcut efectiv rollout-ul.",
+    "lead": "Compania ta a plătit deja licențele de AI. Cele mai multe sunt aproape neatinse. Problema e rareori instrumentul — e că nimeni nu a arătat echipei cum se potrivește AI cu munca lor reală.",
+    "body": "Înainte de orice sesiune cercetez compania, industria și departamentele din sală. Demo-urile sunt construite pe workflow-uri pe care echipa le face deja. 80% din sesiune se petrece în instrumente AI la care oamenii au deja acces. Toți pleacă cu prompt sheets pe care le pot folosi a doua zi dimineață, nu cu o înregistrare pe care n-o vor revedea niciodată.",
+    "bullets": [
+      "20+ ani în leadership de business și educație",
+      "Fost General Manager, Bitdefender România și Moldova",
+      "Director Antreprenoriat, Universitatea de Științele Vieții Timișoara",
+      "1.400+ profesioniști formați direct · Lovable Ambassador"
+    ],
+    "linkedin": "Conectează-te pe LinkedIn",
+    "aboutCta": "Citește povestea completă"
+  },
+  "testimonials": {
+    "kicker": "Ce spun cursanții",
+    "titleStart": "Cuvinte din",
+    "titleEm": "sală.",
+    "items": [
+      {
+        "quote": "Transformarea începe cu angajamentul pentru creștere intenționată, iar acesta este sensul cursului. A depășit așteptările și sesiunile individuale cu Răzvan au fost o experiență cu impact major pentru parcursul meu viitor în cariera artistică.",
+        "name": "Mary Calai",
+        "role": "Artistă"
+      },
+      {
+        "quote": "Cursul de antreprenoriat a fost foarte util, am învățat multe de la tine, dar cred că e doar o părticică mică din cât ai de oferit. Mult succes în continuare și sper ca oamenii să aibă șansa să te cunoască și să învețe de la tine. Mulțumesc!",
+        "name": "Alina Nițu",
+        "role": "Avocată"
+      },
+      {
+        "quote": "Cursul mi-a oferit instrumentele de care aveam nevoie pentru a corela dezvoltarea personală cu cea profesională și m-a încurajat să adopt o viziune holistică asupra succesului. Recomand cu încredere Școala de Dezvățare oricărui antreprenor care vrea să crească atât pe plan personal, cât și profesional.",
+        "name": "Oana Chiva",
+        "role": "Antreprenoare"
+      },
+      {
+        "quote": "Răzvan desparte faptele de mituri în domeniul dezvoltării personale și antreprenoriale și oferă un concept educațional complet. Cursul a fost bine structurat, detaliat, iar implicarea trainerului a fost totală.",
+        "name": "Alex Tănase",
+        "role": "Antreprenor"
+      },
+      {
+        "quote": "Unul dintre cei mai inspirați și dedicați traineri pe care i-am întâlnit. Răzvan transformă conceptele teoretice în experiențe practice și oferă cursanților nu doar cunoștințe solide de business, ci și instrumentele necesare pentru a le aplica în viața reală — concis, dar atotcuprinzător.",
+        "name": "Alexandra Zărnescu",
+        "role": "Scenarist & specialist marketing"
+      },
+      {
+        "quote": "Mulțumim pentru susținere și sfaturi — ne-au ajutat enorm. Voiam să-ți spunem că am luat locul 3. Ne-am descurcat foarte bine.",
+        "name": "Andra & Erin",
+        "role": "Studente Master"
+      }
+    ]
+  }
 }
