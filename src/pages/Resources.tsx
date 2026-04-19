@@ -6,17 +6,21 @@ import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
 import { Kicker, SectionHeading } from "@/components/Editorial";
+import { Link } from "@/components/LocalizedLink";
 
-interface EntryItem { tag: string; desc: string; }
-interface FormatItem { name: string; desc: string; }
+interface LibraryItem {
+  kicker: string;
+  title: string;
+  excerpt: string;
+  readTime: number;
+  to: string;
+}
 
 const Resources = () => {
   const { t, i18n } = useTranslation("resources");
   useEffect(() => { document.title = t("documentTitle"); }, [t]);
 
-  const entryPaths = t("entry.items", { returnObjects: true }) as EntryItem[];
-  const contentTypes = t("formats.items", { returnObjects: true }) as FormatItem[];
-  const topics = t("topics.items", { returnObjects: true }) as string[];
+  const libraryItems = t("library.items", { returnObjects: true }) as LibraryItem[];
   const newsletterBullets = t("newsletter.bullets", { returnObjects: true }) as string[];
   const playbookBullets = t("playbook.bullets", { returnObjects: true }) as string[];
 
@@ -114,47 +118,27 @@ const Resources = () => {
 
       <Section>
         <SectionHeading
-          kicker={t("entry.kicker")}
-          title={<>{t("entry.titleStart")} <em className="text-red">{t("entry.titleEm")}</em></>}
+          kicker={t("library.kicker")}
+          title={<>{t("library.titleStart")} <em className="text-red">{t("library.titleEm")}</em></>}
         />
-        <div className="grid md:grid-cols-2 gap-px bg-paper/10">
-          {entryPaths.map((s) => (
-            <article key={s.tag} className="bg-background p-8 md:p-10 border-2 border-paper/15">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("entry.ifLabel")} {s.tag}</p>
-              <p className="text-paper/80 text-[15px] leading-relaxed">{s.desc}</p>
-            </article>
-          ))}
-        </div>
-      </Section>
-
-      <Section variant="paper">
-        <div className="grid md:grid-cols-12 gap-10 mb-12">
-          <div className="md:col-span-5">
-            <Kicker> {t("formats.kicker")}</Kicker>
-            <h2 className="font-display text-4xl md:text-5xl text-ink leading-[0.95]">
-              {t("formats.titleStart")} <em className="text-red">{t("formats.titleEm")}</em>
-            </h2>
-          </div>
-        </div>
-        <div className="grid md:grid-cols-3 gap-px bg-ink/10">
-          {contentTypes.map((f, i) => (
-            <article key={f.name} className="bg-paper p-8 border-2 border-ink/10">
-              <span className="font-display text-5xl text-red leading-none">{String(i + 1).padStart(2, "0")}</span>
-              <h3 className="font-display text-2xl text-ink mt-4 mb-2">{f.name}</h3>
-              <p className="text-ink/70 text-sm leading-relaxed">{f.desc}</p>
-            </article>
-          ))}
-        </div>
-      </Section>
-
-      <Section>
-        <SectionHeading kicker={t("topics.kicker")} title={<>{t("topics.titleStart")} <em className="text-red">{t("topics.titleEm")}</em></>} />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-paper/10">
-          {topics.map((tp) => (
-            <div key={tp} className="bg-background border-2 border-paper/15 p-6 hover:border-red transition-colors">
-              <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2"> {t("topics.topicLabel")}</p>
-              <p className="font-display text-lg text-paper leading-tight">{tp}</p>
-            </div>
+        <p className="text-paper/70 text-[15px] max-w-2xl mb-10 -mt-4">{t("library.subtitle")}</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10">
+          {libraryItems.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="group bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col hover:border-red transition-colors duration-300"
+            >
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{item.kicker}</p>
+              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3 group-hover:text-red transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-paper/70 text-sm leading-relaxed mb-6">{item.excerpt}</p>
+              <div className="mt-auto pt-4 border-t border-paper/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50">
+                <span>{item.readTime} {t("library.readTime")}</span>
+                <span className="text-red group-hover:translate-x-1 transition-transform">→</span>
+              </div>
+            </Link>
           ))}
         </div>
       </Section>
