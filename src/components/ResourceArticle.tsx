@@ -29,7 +29,8 @@ const ResourceArticle = ({ articleKey, canonicalPath }: ResourceArticleProps) =>
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [articleKey, i18n.language]);
 
-  const sections = t(`${base}.sections`, { returnObjects: true }) as ArticleSection[];
+  const sectionsRaw = t(`${base}.sections`, { returnObjects: true, defaultValue: [] });
+  const sections: ArticleSection[] = Array.isArray(sectionsRaw) ? (sectionsRaw as ArticleSection[]) : [];
   const takeaway = t(`${base}.takeaway`);
   const tag = t(`${base}.tag`);
   const readTime = t(`${base}.readTime`);
