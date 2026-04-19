@@ -26,6 +26,8 @@ interface CheapAiGroup {
   title: string;
   blurb: string;
   items: CheapAiItem[];
+  ctaText?: string;
+  ctaTo?: string;
 }
 
 const Resources = () => {
