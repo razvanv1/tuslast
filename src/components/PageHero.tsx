@@ -13,6 +13,8 @@ interface PageHeroProps {
   issue?: string;
   banner?: string;
   bannerAlt?: string;
+  /** Disable decorative Bauhaus shapes in the hero (use when banner art needs to breathe). */
+  disableDecor?: boolean;
 }
 
 const isExternal = (to?: string) => !!to && /^(https?:|tel:|mailto:)/i.test(to);
@@ -56,10 +58,10 @@ const HeroCTA = ({
   );
 };
 
-const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School", banner, bannerAlt }: PageHeroProps) => (
+const PageHero = ({ tag, title, subtitle, ctaText, ctaTo, secondaryText, secondaryTo, note, issue = "The Unlearning School", banner, bannerAlt, disableDecor }: PageHeroProps) => (
   <section className="relative bg-background text-paper border-b-2 border-paper/10 overflow-hidden">
-    <BauhausBackdrop variant="corner-tr" blend="screen" />
-    <BauhausBackdrop variant="corner-bl" blend="screen" />
+    {!disableDecor && <BauhausBackdrop variant="corner-tr" blend="screen" />}
+    {!disableDecor && <BauhausBackdrop variant="corner-bl" blend="screen" />}
     <div className="relative bg-halftone">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10 pt-8 pb-16 md:pt-12 md:pb-24">
 

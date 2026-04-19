@@ -83,6 +83,7 @@ const Hermes = () => {
         secondaryText={t("hero.secondaryText")}
         secondaryTo="tel:+40722598346"
         note={t("hero.note")}
+        disableDecor
       />
 
       <Section bordered={false}>
