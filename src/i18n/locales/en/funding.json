@@ -90,6 +90,49 @@
       }
     ]
   },
+  "programmes": {
+    "kicker": "Named programmes we work with",
+    "titleStart": "Real programmes,",
+    "titleEm": "named.",
+    "intro": "When we say \"four sources\" we mean these specific programmes — current, named, active in 2026. Vendor credits on the left, EU and national grants on the right.",
+    "vendor": {
+      "title": "Vendor credits & partner funds",
+      "items": [
+        { "name": "Microsoft for Startups Founders Hub", "what": "Up to $150k Azure + OpenAI credits, no equity." },
+        { "name": "AWS Activate", "what": "Up to $100k AWS credits incl. Bedrock model access." },
+        { "name": "Google for Startups Cloud Program", "what": "Up to $200k Google Cloud + Gemini credits over 2 years." },
+        { "name": "Microsoft MDF (Market Development Funds)", "what": "Partner-led co-funding for Copilot, Azure AI and Microsoft 365 adoption." },
+        { "name": "AWS co-sell & partner funding", "what": "APN partner budgets for digital skills and cloud adoption programmes." },
+        { "name": "Google Cloud Partner Advantage", "what": "Co-marketing and adoption funds for Vertex AI, Gemini Enterprise, Workspace." },
+        { "name": "Anthropic for Startups", "what": "Claude API credits and priority access for early-stage teams." }
+      ]
+    },
+    "eu": {
+      "title": "EU & national grants",
+      "items": [
+        { "name": "Digital Europe Programme", "what": "EU co-funding for digital skills, AI testing and EDIH access." },
+        { "name": "Horizon Europe — AI calls", "what": "R&D and innovation funding, including AI-focused topics." },
+        { "name": "PNRR Romania (digitalization)", "what": "National Recovery and Resilience Plan, digitalization components." },
+        { "name": "POCIDIF", "what": "Operational Programme Smart Growth, Digitalization and Financial Instruments." },
+        { "name": "Erasmus+", "what": "Upskilling cohorts, training mobility and partnerships." }
+      ]
+    },
+    "footnote": "Not exhaustive. We track more — open calls and partner programmes shift every quarter."
+  },
+  "engine": {
+    "kicker": "Behind the scenes",
+    "titleStart": "What we actually do",
+    "titleEm": "behind the structuring.",
+    "intro": "The structuring work isn't a single PDF. It runs on an operational layer we use across every funding engagement. We'll open it up as a separate tool later — for now it runs inside our work for you.",
+    "items": [
+      { "title": "Continuous scanning", "body": "We monitor EU and national calls weekly and flag the ones that match your profile." },
+      { "title": "Fit scoring", "body": "Each opportunity is scored against your org profile — eligibility, effort, expected coverage." },
+      { "title": "Deadline & follow-up tracking", "body": "Every call has a clock. We track submission windows, milestones and follow-up requirements so nothing slips." },
+      { "title": "Reuse of past content", "body": "Drafts pull from your previous applications, decks and proposals — so you refine instead of starting from a blank page." },
+      { "title": "Structured proposal drafting", "body": "Each section of the application is drafted in the format the funding body expects, ready for your team to refine." },
+      { "title": "Partner & co-applicant coordination", "body": "Where the call needs a consortium, we help line up the co-applicants and coordinate the joint submission." }
+    ]
+  },
   "process": {
     "kicker": "How we work",
     "titleStart": "We do the structuring.",

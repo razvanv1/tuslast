@@ -109,14 +109,10 @@
     "titleEm": "funding into submitted applications.",
     "body": "EU structural funds, Horizon, recovery programmes, national digitalization grants — the landscape is dense, the rules shift every cycle, and most teams lose calls not because they don't qualify, but because nobody had the bandwidth to write the application before the deadline. We're building a dedicated practice around exactly this gap: continuously monitoring the calls that match your profile, scoring them by fit and effort, and producing structured drafts from your past work so your team refines instead of starting from a blank page.",
     "bodyTwo": "It's the same logic as our AI work — remove the manual overhead, keep human judgment in the loop, and ship the things that were always supposed to be shipped. The full platform launches later in 2026. In the meantime, if your organization runs on grants and you want a private preview or a manual scan of what's open right now for your profile, we'll do it on a call.",
-    "tags": [
-      "EU structural & Horizon programmes",
-      "National digitalization & recovery funds",
-      "Fit scoring & deadline tracking",
-      "Application drafting from past work",
-      "Consortium & co-applicant coordination",
-      "Pipeline reporting from spotted to submitted"
-    ],
+    "depthKicker": "Full practice",
+    "depthTitle": "Named programmes & operational layer.",
+    "depthBody": "The complete list of vendor credits, EU and national grants we work with — plus the operational engine behind every funding engagement — lives on the Funding page.",
+    "depthCta": "See the full funding practice →",
     "ctaText": "Request a private funding scan →",
     "ctaTo": "/assessment",
     "note": "Free · on a call · no platform signup required",

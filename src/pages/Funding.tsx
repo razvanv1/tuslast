@@ -13,6 +13,9 @@ import { Kicker, NumberedStep, SectionHeading } from "@/components/Editorial";
 interface Instrument { title: string; audience: string; body: string; coverage: string; tag: string; }
 interface Step { title: string; body: string; }
 interface BridgeStep { num: string; label: string; title: string; body: string; linkText?: string; linkTo?: string; }
+interface NamedItem { name: string; what: string; }
+interface NamedGroup { title: string; items: NamedItem[]; }
+interface EngineItem { title: string; body: string; }
 
 const Funding = () => {
   const { t } = useTranslation("funding");
@@ -24,6 +27,9 @@ const Funding = () => {
   const resultParagraphs = t("result.paragraphs", { returnObjects: true }) as string[];
   const bridgeSteps = t("bridge.steps", { returnObjects: true }) as BridgeStep[];
   const faqItems = t("faq.items", { returnObjects: true }) as FAQItem[];
+  const programmesVendor = t("programmes.vendor", { returnObjects: true }) as NamedGroup;
+  const programmesEu = t("programmes.eu", { returnObjects: true }) as NamedGroup;
+  const engineItems = t("engine.items", { returnObjects: true }) as EngineItem[];
 
   return (
     <>
@@ -130,6 +136,34 @@ const Funding = () => {
 
       <Section>
         <SectionHeading
+          kicker={t("programmes.kicker")}
+          title={<>{t("programmes.titleStart")} <em className="text-red">{t("programmes.titleEm")}</em></>}
+          intro={t("programmes.intro")}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
+          {[programmesVendor, programmesEu].map((group, gi) => (
+            <div key={gi} className="bg-background p-7 md:p-9 flex flex-col">
+              <h3 className="font-display text-2xl text-paper leading-tight mb-5 pb-4 border-b border-paper/15">
+                {group.title}
+              </h3>
+              <ul className="space-y-4">
+                {group.items.map((it, ii) => (
+                  <li key={ii} className="border-b border-paper/10 pb-4 last:border-0 last:pb-0">
+                    <p className="font-display text-lg text-paper leading-tight mb-1">{it.name}</p>
+                    <p className="text-paper/70 text-sm leading-relaxed">{it.what}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/40 mt-6">
+          {t("programmes.footnote")}
+        </p>
+      </Section>
+
+      <Section>
+        <SectionHeading
           kicker={t("process.kicker")}
           title={<>{t("process.titleStart")} <em className="text-red">{t("process.titleEm")}</em></>}
         />
@@ -181,6 +215,25 @@ const Funding = () => {
         <Blockquote attribution={t("quote.attribution")}>
           {t("quote.body")}
         </Blockquote>
+      </Section>
+
+      <Section variant="paper">
+        <SectionHeading
+          kicker={t("engine.kicker")}
+          title={<>{t("engine.titleStart")} <em className="text-red">{t("engine.titleEm")}</em></>}
+          intro={t("engine.intro")}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/10 mt-8">
+          {engineItems.map((it, i) => (
+            <article key={i} className="bg-paper p-7 md:p-8 flex flex-col">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-xl text-ink leading-tight mb-3">{it.title}</h3>
+              <p className="text-ink/70 text-[14px] leading-relaxed">{it.body}</p>
+            </article>
+          ))}
+        </div>
       </Section>
 
       <Section variant="darker">
