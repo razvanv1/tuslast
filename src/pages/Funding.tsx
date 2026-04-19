@@ -163,6 +163,8 @@ const Funding = () => {
       </Section>
 
       <Section>
+        <SectionHeading
+          kicker={t("process.kicker")}
           title={<>{t("process.titleStart")} <em className="text-red">{t("process.titleEm")}</em></>}
         />
         {steps.map((s, idx) => (
