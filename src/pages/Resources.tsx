@@ -168,7 +168,7 @@ const Resources = () => {
                   <h3 className="font-display text-2xl md:text-[28px] text-ink leading-[1.1] mb-2">{ev.name}</h3>
                   <p className="text-ink/70 text-sm leading-relaxed">{ev.context}</p>
                 </div>
-                <div className="md:col-span-3 md:text-right">
+                <div className="md:col-span-3 md:text-right flex flex-col gap-3 md:items-end">
                   <a
                     href={ev.url}
                     target={ev.url.startsWith("http") ? "_blank" : undefined}
@@ -177,6 +177,14 @@ const Resources = () => {
                   >
                     {ev.linkLabel}
                   </a>
+                  {ev.notifyLabel && ev.notifyUrl && (
+                    <a
+                      href={ev.notifyUrl}
+                      className="inline-flex items-center px-4 py-2.5 bg-ink text-paper font-mono text-[10px] uppercase tracking-[0.2em] hover:bg-red transition-colors whitespace-nowrap"
+                    >
+                      {ev.notifyLabel}
+                    </a>
+                  )}
                 </div>
               </li>
             ))}
