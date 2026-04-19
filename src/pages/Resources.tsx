@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
-import { Kicker, SectionHeading } from "@/components/Editorial";
+import { SectionHeading } from "@/components/Editorial";
 import { Link } from "@/components/LocalizedLink";
 
 interface LibraryItem {
@@ -21,7 +21,7 @@ const Resources = () => {
   useEffect(() => { document.title = t("documentTitle"); }, [t]);
 
   const libraryItems = t("library.items", { returnObjects: true }) as LibraryItem[];
-  const newsletterBullets = t("newsletter.bullets", { returnObjects: true }) as string[];
+  
   const playbookBullets = t("playbook.bullets", { returnObjects: true }) as string[];
 
   return (
@@ -124,48 +124,22 @@ const Resources = () => {
         <p className="text-paper/70 text-[15px] max-w-2xl mb-10 -mt-4">{t("library.subtitle")}</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10">
           {libraryItems.map((item) => (
-            <Link
+            <div
               key={item.to}
-              to={item.to}
-              className="group bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col hover:border-red transition-colors duration-300"
+              aria-disabled="true"
+              className="bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col opacity-60 cursor-not-allowed"
             >
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{item.kicker}</p>
-              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3 group-hover:text-red transition-colors">
+              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3">
                 {item.title}
               </h3>
               <p className="text-paper/70 text-sm leading-relaxed mb-6">{item.excerpt}</p>
               <div className="mt-auto pt-4 border-t border-paper/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50">
                 <span>{item.readTime} {t("library.readTime")}</span>
-                <span className="text-red group-hover:translate-x-1 transition-transform">→</span>
+                <span className="text-paper/40">{i18n.language?.startsWith("ro") ? "În curând" : "Coming soon"}</span>
               </div>
-            </Link>
+            </div>
           ))}
-        </div>
-      </Section>
-
-      <Section variant="paper" bordered={false}>
-        <div className="max-w-3xl mx-auto text-center">
-          <Kicker> {t("newsletter.kicker")}</Kicker>
-          <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-6">
-            {t("newsletter.titleStart")} <em className="text-red">{t("newsletter.titleEm")}</em>
-          </h2>
-          <p className="text-ink/75 text-[15px] leading-relaxed mb-8">
-            {t("newsletter.body")}
-          </p>
-          <ul className="text-left max-w-md mx-auto space-y-2 mb-10 border-t-2 border-ink/15">
-            {newsletterBullets.map((b, i) => (
-              <li key={b} className="flex gap-4 py-3 border-b border-ink/15 text-ink text-[15px]">
-                <span className="font-mono text-red">0{i + 1}</span>
-                <span>{b}</span>
-              </li>
-            ))}
-          </ul>
-          <a
-            href="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
-            className="inline-flex items-center px-7 py-4 bg-ink text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-red transition-colors"
-          >
-            {t("newsletter.button")}
-          </a>
         </div>
       </Section>
 
