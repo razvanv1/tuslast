@@ -218,6 +218,36 @@ const Resources = () => {
         </div>
       </Section>
 
+      {/* Funding teaser */}
+      <Section variant="dark">
+        <div className="grid md:grid-cols-12 gap-10 items-start">
+          <div className="md:col-span-7">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3">{t("funding.kicker")}</p>
+            <h2 className="font-display text-4xl md:text-5xl text-paper leading-[0.95] mb-5">
+              {t("funding.titleStart")} <em className="text-red">{t("funding.titleEm")}</em>
+            </h2>
+            <p className="text-paper/75 text-[15px] leading-relaxed max-w-xl">
+              {t("funding.body")}
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/45 mt-6">
+              {t("funding.footnote")}
+            </p>
+          </div>
+          <div className="md:col-span-5">
+            <ul className="border-t border-paper/15">
+              {(t("funding.tags", { returnObjects: true }) as string[]).map((tag, i) => (
+                <li key={i} className="flex items-baseline gap-3 py-4 border-b border-paper/15">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-red shrink-0">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-paper/85 text-[15px] leading-snug">{tag}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
+
       <CTASection
         title={t("cta.title")}
         subtitle={t("cta.subtitle")}
