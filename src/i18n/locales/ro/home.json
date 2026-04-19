@@ -125,10 +125,12 @@
       "price": "600 €",
       "unit": "/ participant",
       "title": "AI pentru oameni non-tehnici",
-      "bullets": [
-        "Modular: Discovery / Sprint / Complet",
-        "Construit pe instrumentele pe care deja le plătești",
-        "Pregătit pentru EU AI Act Articolul 4"
+      "tableHeader": { "col1": "Ce", "col2": "Primești" },
+      "rows": [
+        { "label": "Format", "value": "Cohortă modulară: Discovery / Sprint / Complet" },
+        { "label": "Stack", "value": "Pe instrumentele pe care echipa le plătește deja" },
+        { "label": "Rezultat", "value": "Prompt sheets și workflows utilizabile a doua zi" },
+        { "label": "Conformitate", "value": "Alfabetizare EU AI Act Articolul 4 inclusă" }
       ],
       "footnote": "Minim de cohortă aplicabil. Preț de volum la cerere.",
       "cta": "Cumpără AI pentru Muncă →",
@@ -140,10 +142,12 @@
       "price": "497 €",
       "unit": "/ instalare",
       "title": "Hermes Agent - instalare personală",
-      "bullets": [
-        "Asistent AI autonom configurat pentru fluxul tău",
-        "Setup, training, handover",
-        "Hermes Agent Partner oficial"
+      "tableHeader": { "col1": "Ce", "col2": "Primești" },
+      "rows": [
+        { "label": "Setup", "value": "Hermes instalat și configurat pentru fluxul tău" },
+        { "label": "Training", "value": "1 sesiune de handover, live cu tine" },
+        { "label": "Rezultat", "value": "Asistent autonom funcțional din ziua 1" },
+        { "label": "Partener", "value": "Livrat de un Hermes Agent Partner oficial" }
       ],
       "footnote": "Include setup, configurare și 1 sesiune de handover.",
       "cta": "Instalează Hermes →",

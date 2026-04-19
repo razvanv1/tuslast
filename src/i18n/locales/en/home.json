@@ -125,10 +125,12 @@
       "price": "€600",
       "unit": "/ participant",
       "title": "AI for Non-Technical People",
-      "bullets": [
-        "Modular: Discovery / Sprint / Full",
-        "Built on tools you already pay for",
-        "EU AI Act Article 4 ready"
+      "tableHeader": { "col1": "What", "col2": "You get" },
+      "rows": [
+        { "label": "Format", "value": "Modular cohort: Discovery / Sprint / Full" },
+        { "label": "Stack", "value": "Built on tools your team already pays for" },
+        { "label": "Outcome", "value": "Prompt sheets + workflows usable next morning" },
+        { "label": "Compliance", "value": "EU AI Act Article 4 literacy included" }
       ],
       "footnote": "Cohort minimum applies. Volume pricing on request.",
       "cta": "Buy AI for Work →",
@@ -140,10 +142,12 @@
       "price": "€497",
       "unit": "/ install",
       "title": "Hermes Agent - personal install",
-      "bullets": [
-        "Autonomous AI assistant configured for your workflow",
-        "Setup, training, handover",
-        "Official Hermes Agent Partner"
+      "tableHeader": { "col1": "What", "col2": "You get" },
+      "rows": [
+        { "label": "Setup", "value": "Hermes installed and configured for your workflow" },
+        { "label": "Training", "value": "1 handover session, live with you" },
+        { "label": "Outcome", "value": "Autonomous assistant running on day one" },
+        { "label": "Partner", "value": "Delivered by an Official Hermes Agent Partner" }
       ],
       "footnote": "Includes setup, configuration, and 1 handover session.",
       "cta": "Install Hermes →",
