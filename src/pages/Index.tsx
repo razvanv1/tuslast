@@ -10,7 +10,7 @@ import AIScoreCTA from "@/components/AIScoreCTA";
 import AIScoreStrip from "@/components/AIScoreStrip";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
-import BeforeAfterWorkflow from "@/components/BeforeAfterWorkflow";
+
 
 import FounderBio from "@/components/FounderBio";
 import Testimonials from "@/components/Testimonials";
@@ -140,9 +140,6 @@ const Index = () => {
           {t("premise.quote")}
         </Blockquote>
       </Section>
-
-      {/* NEW — Before / After workflow infographic */}
-      <BeforeAfterWorkflow variant="paper" />
 
       {/* WHO THIS IS FOR */}
       <Section variant="paper">
