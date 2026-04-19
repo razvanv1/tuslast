@@ -6,7 +6,7 @@ import logo from "@/assets/logo.webp";
 import { BOOKING_URL } from "@/lib/booking";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Link } from "@/components/LocalizedLink";
-import ProgrammesDropdown from "@/components/ProgrammesDropdown";
+
 import { trackEvent } from "@/lib/analytics";
 
 const Navbar = () => {
@@ -15,8 +15,11 @@ const Navbar = () => {
   const { t } = useTranslation();
   const onAssessment = location.pathname === "/assessment" || location.pathname === "/ro/assessment";
 
-  // 4 top-level items + Programmes dropdown.
   const topLinks = [
+    { label: t("nav.aiForWork"), to: "/programmes/ai-for-non-technical-people" },
+    { label: t("nav.hermes"), to: "/hermes" },
+    { label: t("nav.events"), to: "/events" },
+    { label: t("nav.funding"), to: "/funding" },
     { label: t("nav.resources"), to: "/resources" },
     { label: t("nav.aiScore"), to: "/ai-adoption-score" },
     { label: t("nav.about"), to: "/about" },
@@ -63,7 +66,6 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-5 lg:gap-6 ml-auto">
-          <ProgrammesDropdown />
           {topLinks.map((link) => (
             <Link
               key={link.to}
