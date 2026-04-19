@@ -217,6 +217,25 @@ const Funding = () => {
         </Blockquote>
       </Section>
 
+      <Section variant="paper">
+        <SectionHeading
+          kicker={t("engine.kicker")}
+          title={<>{t("engine.titleStart")} <em className="text-red">{t("engine.titleEm")}</em></>}
+          intro={t("engine.intro")}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/10 mt-8">
+          {engineItems.map((it, i) => (
+            <article key={i} className="bg-paper p-7 md:p-8 flex flex-col">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-xl text-ink leading-tight mb-3">{it.title}</h3>
+              <p className="text-ink/70 text-[14px] leading-relaxed">{it.body}</p>
+            </article>
+          ))}
+        </div>
+      </Section>
+
       <Section variant="darker">
         <SectionHeading
           kicker={t("faq.kicker")}
