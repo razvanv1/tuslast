@@ -51,7 +51,9 @@
         "name": "Lovable Founder Series",
         "context": "Founder talk on AI adoption inside non-tech teams. Registration opens soon.",
         "linkLabel": "Details →",
-        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20May%202026"
+        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20May%202026",
+        "notifyLabel": "Notify me when registration opens →",
+        "notifyUrl": "mailto:hello@unlearning.ro?subject=Notify%20me%20%E2%80%94%20Lovable%20Founder%20Series%20May%202026&body=Please%20add%20me%20to%20the%20waitlist%20for%20Lovable%20Founder%20Series%20May%202026.%20Name%3A%20%5Byour%20name%5D%2C%20Company%3A%20%5Boptional%5D."
       }
     ]
   },
