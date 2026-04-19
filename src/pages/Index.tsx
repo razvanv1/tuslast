@@ -141,9 +141,6 @@ const Index = () => {
         </Blockquote>
       </Section>
 
-      {/* NEW — Before / After workflow infographic */}
-      <BeforeAfterWorkflow variant="paper" />
-
       {/* WHO THIS IS FOR */}
       <Section variant="paper">
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-3"> {t("audience.eyebrow")}</p>
