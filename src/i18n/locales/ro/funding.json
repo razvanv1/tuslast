@@ -1,15 +1,15 @@
 {
   "seo": {
-    "title": "Structurare finanțare - MDF vendor, AWS co-sell și granturi digitale UE",
-    "description": "După training vine implementarea, iar implementarea cere buget. Structurăm programul tău de adopție AI ca să se califice pentru Microsoft MDF, AWS co-sell sau granturi digitale UE.",
-    "keywords": "Microsoft MDF, AWS co-sell, granturi digitale UE, finanțare AI, Digital Europe Programme, grant AI România, credite vendor"
+    "title": "Structurare finanțare - credite Microsoft, AWS, Google și granturi digitale UE",
+    "description": "După training vine implementarea, iar implementarea cere buget. Structurăm programul tău de adopție AI ca să se califice pentru Microsoft MDF, AWS co-sell, fonduri Google Cloud sau granturi digitale UE.",
+    "keywords": "Microsoft MDF, AWS co-sell, Google Cloud Partner Advantage, Gemini Enterprise, granturi digitale UE, finanțare AI, Digital Europe Programme, grant AI România, credite vendor"
   },
   "documentTitle": "Structurare finanțare, The Unlearning School",
   "hero": {
     "tag": "MDF, Finanțare & Granturi",
     "bannerAlt": "Echipă modernă analizând documente de finanțare",
     "title": "Ai învățat ce să construiești. Acum finanțează construcția.",
-    "subtitle": "Training-ul îți dă echipei knowledge-ul și prototipurile. Producția - agenți, integrări, licențe Copilot și Azure, dev work, change management - costă bani reali. MDF-urile vendor, AWS co-sell și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică. Puțini știu cum să aplice.",
+    "subtitle": "Training-ul îți dă echipei knowledge-ul și prototipurile. Producția - agenți, integrări, licențe Copilot, Gemini și Azure, dev work, change management - costă bani reali. Microsoft MDF, AWS co-sell, fondurile Google Cloud și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică. Puțini știu cum să aplice.",
     "ctaText": "Programează call de finanțare →",
     "secondaryText": "Vezi instrumentele de finanțare ↓",
     "note": "Call gratuit de 30 min · Shortlist scris în 5 zile lucrătoare · Fără angajament"
@@ -36,7 +36,7 @@
       {
         "num": "03",
         "label": "Finanțare",
-        "title": "MDF vendor, AWS co-sell și granturi UE există ca să finanțeze exact asta.",
+        "title": "Fondurile de partener Microsoft, AWS și Google — plus granturile UE — există ca să finanțeze exact asta.",
         "body": "Structurăm programul tău de adopție ca să se califice - și scriem aplicația. Munca se întâmplă oricum; finanțarea decide dacă te costă ceva."
       }
     ]
@@ -138,7 +138,7 @@
     "titleStart": "Noi facem structurarea.",
     "titleEm": "Tu rulezi programul.",
     "steps": [
-      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău actual de partener Microsoft, tier-ul AWS și orice acord existent cu furnizori, ca să identificăm pentru ce programe de finanțare te califici chiar acum." },
+      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău actual de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage și orice acord existent cu furnizori, ca să identificăm pentru ce programe de finanțare te califici chiar acum." },
       { "title": "Identificăm instrumentele eligibile", "body": "Pe baza auditului, mapăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică, un set specific de opțiuni cu criteriile de calificare confirmate." },
       { "title": "Structurăm programul ca să se califice", "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. E pasul pe care majoritatea companiilor îl ratează. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă." },
       { "title": "Scriem și susținem aplicația", "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici. Le știm." },
@@ -173,9 +173,9 @@
     "titleEm": "call-ul de scoping.",
     "items": [
       { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie, tipic 3–5 săptămâni: 1 săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă tipic 2–6 săptămâni." },
-      { "q": "Dacă nu suntem partener Microsoft / AWS?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft și AWS în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel - majoritatea companiilor care deja plătesc Copilot sau AWS se califică pentru un tier de intrare în câteva săptămâni." },
+      { "q": "Dacă nu suntem partener Microsoft / AWS / Google?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft, AWS și Google Cloud în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel - majoritatea companiilor care deja plătesc Copilot, AWS sau Workspace/Gemini se califică pentru un tier de intrare în câteva săptămâni." },
       { "q": "Cum se face efectiv rambursarea?", "a": "Depinde de instrument. MDF vendor se plătește de obicei pe milestone-uri aprobate - structurăm livrarea ca documentația să se potrivească cu aplicația din ziua unu. Granturile UE merg tipic pe tranșe contra livrabile verificate. În ambele cazuri programul rulează prima dată; banii vin după fiecare milestone verificat." },
-      { "q": "Ce documente cerem de la voi?", "a": "Pentru audit: acordurile actuale cu vendor-ii (statusul de partener Microsoft, tier-ul AWS), facturi recente pentru cheltuiala AI/cloud și un brief scurt despre programul pe care vrei să-l rulezi. Pentru aplicația în sine: detalii despre organizație, headcount, rezultate țintă. Restul scriem noi." },
+      { "q": "Ce documente cerem de la voi?", "a": "Pentru audit: acordurile actuale cu vendor-ii (statusul de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage dacă există), facturi recente pentru cheltuiala AI/cloud și un brief scurt despre programul pe care vrei să-l rulezi. Pentru aplicația în sine: detalii despre organizație, headcount, rezultate țintă. Restul scriem noi." },
       { "q": "Cât ne costă?", "a": "Call-ul de scoping de 30 de minute și shortlist-ul scris de instrumente sunt gratuite. Dacă mergem mai departe, munca de structurare și aplicație are scope per program - de obicei un fee fix plus o componentă de succes legată de finanțarea aprobată efectiv. Confirmăm cifrele înainte de orice angajament." },
       { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem în shortlist, în scris, în 5 zile lucrătoare. Fără fee, fără angajament. Majoritatea companiilor se califică pentru cel puțin un instrument, dar dacă structura chiar nu se potrivește, nu fabricăm o aplicație." }
     ]
