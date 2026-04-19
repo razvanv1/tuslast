@@ -94,18 +94,21 @@
           { "name": "Ollama", "what": "Rulezi LLM-uri open-source pe propriul server, cu o singură comandă.", "url": "https://ollama.com/" },
           { "name": "LM Studio", "what": "Aplicație desktop pentru a rula modele open pe laptop sau workstation, cu GUI.", "url": "https://lmstudio.ai/" }
         ]
-      },
-      {
-        "title": "Rute de finanțare UE · 2026",
-        "blurb": "Programe publice care co-finanțează adopția AI, training-ul și piloții.",
-        "items": [
-          { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru competențe digitale, testare AI și acces EDIH.", "url": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme" },
-          { "name": "Horizon Europe — apeluri AI", "what": "Finanțare R&D și inovare, inclusiv topicuri AI.", "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" },
-          { "name": "PNRR România · digitalizare", "what": "Fonduri naționale pentru digitalizarea IMM-urilor și adopție AI.", "url": "https://mfe.gov.ro/pnrr/" },
-          { "name": "POCIDIF / programe digitalizare RO", "what": "Programe operaționale care co-finanțează proiecte digitale + AI în România.", "url": "https://mfe.gov.ro/" }
-        ]
       }
     ]
+  },
+  "funding": {
+    "kicker": "Finanțare · în lucru",
+    "titleStart": "Lucrăm și pe",
+    "titleEm": "intelligence pe finanțări.",
+    "body": "Apeluri UE, programe naționale, fonduri de redresare — peisajul e dens și majoritatea echipelor pierd deadline-urile care contează. Construim o practică dedicată în jurul acestui subiect: urmărim oportunități, scorăm potrivirea și le transformăm în aplicații depuse, fără munca manuală care înghite timp. Mai multe vor urma.",
+    "tags": [
+      "Programe UE structurale & Horizon",
+      "Fonduri naționale de digitalizare & redresare",
+      "Scoring de potrivire & urmărire deadline-uri",
+      "Draft de aplicații pornind de la lucrări anterioare"
+    ],
+    "footnote": "Rute detaliate și unelte vor fi publicate mai târziu în 2026."
   },
   "cta": {
     "title": "Începe cu Sesiunea AI Adoption.",
