@@ -90,6 +90,49 @@
       }
     ]
   },
+  "programmes": {
+    "kicker": "Programe concrete cu care lucrăm",
+    "titleStart": "Programe reale,",
+    "titleEm": "numite.",
+    "intro": "Când zicem „patru surse\" ne referim la programele astea concrete — actuale, numite, active în 2026. Credite vendor în stânga, granturi UE și naționale în dreapta.",
+    "vendor": {
+      "title": "Credite vendor & fonduri de partener",
+      "items": [
+        { "name": "Microsoft for Startups Founders Hub", "what": "Până la $150k credite Azure + OpenAI, fără equity." },
+        { "name": "AWS Activate", "what": "Până la $100k credite AWS, inclusiv acces Bedrock." },
+        { "name": "Google for Startups Cloud Program", "what": "Până la $200k credite Google Cloud + Gemini, pe 2 ani." },
+        { "name": "Microsoft MDF (Market Development Funds)", "what": "Co-finanțare prin partener pentru adopția Copilot, Azure AI, Microsoft 365." },
+        { "name": "AWS co-sell & fonduri de partener", "what": "Bugete APN pentru programe de skill-uri digitale și adopție cloud." },
+        { "name": "Google Cloud Partner Advantage", "what": "Fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise, Workspace." },
+        { "name": "Anthropic for Startups", "what": "Credite API Claude și acces prioritar pentru echipe early-stage." }
+      ]
+    },
+    "eu": {
+      "title": "Granturi UE & naționale",
+      "items": [
+        { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru skill-uri digitale, testare AI și acces EDIH." },
+        { "name": "Horizon Europe — apeluri AI", "what": "Finanțare de R&D și inovare, inclusiv subiecte AI." },
+        { "name": "PNRR România (digitalizare)", "what": "Planul Național de Redresare și Reziliență, componente de digitalizare." },
+        { "name": "POCIDIF", "what": "Programul Operațional Creștere Inteligentă, Digitalizare și Instrumente Financiare." },
+        { "name": "Erasmus+", "what": "Cohorte de upskilling, mobilitate de training și parteneriate." }
+      ]
+    },
+    "footnote": "Nu e exhaustiv. Urmărim mai multe — apelurile deschise și programele partenerilor se schimbă în fiecare trimestru."
+  },
+  "engine": {
+    "kicker": "În spatele scenei",
+    "titleStart": "Ce facem efectiv",
+    "titleEm": "în spatele structurării.",
+    "intro": "Munca de structurare nu e un singur PDF. Rulează pe un strat operațional pe care-l folosim în fiecare angajament de finanțare. Îl deschidem ca tool separat mai târziu — deocamdată rulează în munca pe care o facem pentru tine.",
+    "items": [
+      { "title": "Scanare continuă", "body": "Monitorizăm săptămânal apelurile UE și naționale și marcăm pe cele care se potrivesc profilului tău." },
+      { "title": "Scoring de potrivire", "body": "Fiecare oportunitate e scorată după profilul organizației — eligibilitate, efort, acoperire estimată." },
+      { "title": "Urmărire deadline-uri & follow-up", "body": "Fiecare apel are un ceas. Urmărim ferestrele de depunere, milestone-urile și cerințele de follow-up ca să nu scape nimic." },
+      { "title": "Reutilizare a conținutului anterior", "body": "Draft-urile pleacă de la aplicațiile, deck-urile și propunerile tale anterioare — ca să rafinezi, nu să pornești de la pagină goală." },
+      { "title": "Draft structurat de propunere", "body": "Fiecare secțiune a aplicației e scrisă în formatul cerut de organismul de finanțare, gata pentru rafinare cu echipa ta." },
+      { "title": "Coordonare consorțiu & co-aplicanți", "body": "Unde apelul cere consorțiu, ajutăm la alinierea co-aplicanților și coordonarea depunerii comune." }
+    ]
+  },
   "process": {
     "kicker": "Cum lucrăm",
     "titleStart": "Noi facem structurarea.",
