@@ -21,7 +21,7 @@ const Resources = () => {
   useEffect(() => { document.title = t("documentTitle"); }, [t]);
 
   const libraryItems = t("library.items", { returnObjects: true }) as LibraryItem[];
-  const newsletterBullets = t("newsletter.bullets", { returnObjects: true }) as string[];
+  
   const playbookBullets = t("playbook.bullets", { returnObjects: true }) as string[];
 
   return (
