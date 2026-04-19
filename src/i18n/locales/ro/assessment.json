@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "Discuție AI Adoption - evaluare gratuită de maturitate, 30 de minute",
-    "description": "O discuție gratuită de 30 de minute care măsoară cât de pregătită este organizația ta pentru adopția AI. Primești un scor de maturitate, o analiză a lacunelor și o foaie de parcurs practică, în 24 de ore.",
-    "keywords": "discuție AI adoption, evaluare maturitate AI, scor pregătire AI, analiză lacune AI, foaie de parcurs AI, conformitate EU AI Act, consultanță AI gratuită",
+    "title": "Discuție AI Adoption gratuită, 30 de minute · scor de maturitate + roadmap în 24h",
+    "description": "Programează o discuție gratuită de 30 de minute. Îți măsurăm maturitatea AI, numim lacunele reale și îți trimitem o foaie de parcurs de 1 pagină în 24h. Fără follow-up comercial.",
+    "keywords": "discuție AI adoption, consultanță AI gratuită, evaluare maturitate AI, scor pregătire AI, analiză lacune AI, foaie de parcurs AI, conformitate EU AI Act Articolul 4, audit Copilot, România, UE",
     "schemaName": "Discuție AI Adoption",
-    "schemaDescription": "Programează o discuție gratuită de 30 de minute pentru evaluarea maturității AI.",
+    "schemaDescription": "Discuție gratuită de 30 de minute. Scor de maturitate, analiză a lacunelor și o foaie de parcurs de 1 pagină în 24h.",
     "docTitle": "Discuție AI Adoption, The Unlearning School"
   },
   "hero": {
@@ -45,9 +45,24 @@
     "title1": "Trei cititori. ",
     "titleEm": "Trei utilizări pentru scor.",
     "items": [
-      { "num": "01", "tag": "COO / Operațiuni", "title": "Ai nevoie de o cifră care să justifice investiția.", "desc": "Scorul de maturitate îți oferă o bază solidă pe care o poți duce la board și o foaie de parcurs prioritizată cu locul în care ar trebui să meargă următorul euro." },
-      { "num": "02", "tag": "HR / Lead L&D", "title": "Ai nevoie să știi ce echipe să formezi primele.", "desc": "Analiza lacunelor cartografiază maturitatea pe dimensiuni, astfel încât programul tău de formare să țintească blocajele reale, nu o alfabetizare AI generică." },
-      { "num": "03", "tag": "Lead unitate de business", "title": "Ai nevoie de o primă mișcare practică, nu de un deck de strategie.", "desc": "Foaia de parcurs numește 1–3 fluxuri de lucru unde reproiectarea în jurul AI ar produce un rezultat vizibil într-un singur trimestru." }
+      {
+        "num": "01",
+        "tag": "COO / Operațiuni",
+        "title": "Ai nevoie de o cifră care să justifice investiția.",
+        "desc": "Scorul de maturitate îți oferă o bază solidă pe care o poți duce la board și o foaie de parcurs prioritizată cu locul în care ar trebui să meargă următorul euro."
+      },
+      {
+        "num": "02",
+        "tag": "HR / Lead L&D",
+        "title": "Ai nevoie să știi ce echipe să formezi primele.",
+        "desc": "Analiza lacunelor cartografiază maturitatea pe dimensiuni, astfel încât programul tău de formare să țintească blocajele reale, nu o alfabetizare AI generică."
+      },
+      {
+        "num": "03",
+        "tag": "Lead unitate de business",
+        "title": "Ai nevoie de o primă mișcare practică, nu de un deck de strategie.",
+        "desc": "Foaia de parcurs numește 1–3 fluxuri de lucru unde reproiectarea în jurul AI ar produce un rezultat vizibil într-un singur trimestru."
+      }
     ]
   },
   "booking": {
@@ -73,6 +88,9 @@
     "body": "Nu există ofertă atașată acestei discuții. Dacă scorul arată că nu există o problemă care merită rezolvată, îți spunem asta. Dacă există, foaia de parcurs descrie cum ar arăta rezolvarea ei. Tu decizi ce faci mai departe."
   },
   "faqList": [
-    { "question": "Discuția chiar este gratuită?", "answer": "Da. Discuția de 30 de minute și raportul de 1 pagină pe care îl primești în 24 de ore sunt gratuite, fără obligația de a face un pas următor." }
+    {
+      "question": "Discuția chiar este gratuită?",
+      "answer": "Da. Discuția de 30 de minute și raportul de 1 pagină pe care îl primești în 24 de ore sunt gratuite, fără obligația de a face un pas următor."
+    }
   ]
 }

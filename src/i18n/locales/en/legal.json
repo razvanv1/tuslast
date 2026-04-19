@@ -3,93 +3,212 @@
   "tag": "Legal",
   "privacy": {
     "docTitle": "Privacy Policy, The Unlearning School",
-    "seoTitle": "Privacy Policy",
-    "seoDescription": "GDPR-compliant privacy policy for The Unlearning School.",
+    "seoTitle": "Privacy policy · how we handle your data",
+    "seoDescription": "How The Unlearning School collects, stores and uses personal data. GDPR-aligned, plain-English, written for the people we actually work with.",
     "title": "Privacy Policy.",
     "intro": "This policy applies between you, the user of this website, and The Unlearning School, the owner and provider of this website. The policy describes how we collect, store and use personal data in connection with the use of the www.unlearning.ro platform and any associated services.",
     "sections": {
-      "s1": { "h": "1. Definitions", "items": [
-        { "label": "Account", "body": " - the personal information, payment details and credentials used to access services or platform content." },
-        { "label": "Content", "body": " - any text, image, graphic, video, audio, software or other materials available on the website." },
-        { "label": "Cookie", "body": " - a text file placed on your device to track navigation and improve the website experience." },
-        { "label": "Data", "body": " - any information submitted through forms, accounts, sign-ups or browsing." },
-        { "label": "Service", "body": " - any functionality offered by The Unlearning School on this website." },
-        { "label": "System", "body": " - our digital infrastructure (e.g. email, chat, user accounts)." },
-        { "label": "User", "body": " - any person who accesses the website and is not employed by The Unlearning School." },
-        { "label": "Website", "body": " - the www.unlearning.ro domain and any associated subdomains." }
-      ] },
-      "s2": { "h": "2. Data we collect", "intro": "We collect the following types of data:", "items": [
-        "First and last name",
-        "Email address and phone number",
-        "Occupation and field of activity",
-        "Geographic location (e.g. postal code)",
-        "Payment data (e.g. bank card)",
-        "IP, browser, operating system",
-        "Website navigation (pages accessed, traffic source)",
-        "Preferences and answers to questionnaires",
-        "Information collected through cookies (see Section 10)"
-      ] },
-      "s3": { "h": "3. Use of data", "intro": "Collected data may be used for:", "items": [
-        "Providing educational services (programs, sprints, assessments)",
-        "Contact for administrative, commercial or support purposes",
-        "Sending promotional messages (with your consent)",
-        "Analyzing usage behavior to improve the platform",
-        "Market research and content personalization"
-      ], "outro": "Data will NOT be sold or transferred to third parties without consent, except where required by law." },
-      "s4": { "h": "4. Third-party providers", "intro": "We use external services for:", "items": [
-        "Payment processing (e.g. Stripe)",
-        "Traffic analysis (e.g. Google Analytics)",
-        "Email marketing (e.g. Brevo)",
-        "Hosting and maintenance"
-      ], "outro": "These entities may process limited data, strictly necessary to deliver the services. We ensure all partners comply with GDPR legislation." },
-      "s5": { "h": "5. Data transfer in case of change of ownership", "body": "If SC CARBON SMART EUROPA SRL is acquired or reorganized, user data may be transferred to the new administrators. In this case, you will be notified and may request deletion of your data." },
-      "s6": { "h": "6. Control over data use", "intro": "You have the right to:", "items": [
-        "Refuse the use of data for marketing purposes",
-        "Refuse sharing with third parties",
-        "Modify preferences in your account"
-      ] },
-      "s7": { "h": "7. Data retention", "body": "Data will be retained for as long as you are an active user or as legally required for accounting, fiscal or contractual archiving. You have the right to request deletion of your data." },
-      "s8": { "h": "8. Accessing and modifying data", "body": "You can access, modify or request deletion of your personal data through a written request sent to:", "email": "Email: hello@unlearning.ro" },
-      "s9": { "h": "9. Data security", "intro": "We protect data through:", "items": [
-        "Secure servers with SSL encryption",
-        "Protections against unauthorized access",
-        "Regular back-ups"
-      ], "outro": "However, we are not responsible for any breaches in external systems we use or to which we redirect users." },
-      "s10": { "h": "10. Cookies", "intro": "The website uses cookies for:", "items": [
-        "Essential functionality",
-        "Traffic and performance analysis",
-        "Remarketing (with explicit consent)"
-      ], "outro": "You can manage your preferences from your browser settings or using the consent bar." },
-      "s11": { "h": "11. Policy updates", "body": "We may update this policy periodically. The date of the last modification will be displayed at the bottom of the page. Continued use of the website implies acceptance of the new conditions." },
-      "s12": { "h": "12. Contact", "intro": "For questions or requests regarding personal data:", "name": "The Unlearning School", "address": "1, Aleea Pasărea în Văzduh, București, RO", "phone": "Phone: +40 722 598 346", "email": "Email: hello@unlearning.ro", "outro": "You also have the right to lodge a complaint with the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP)." }
+      "s1": {
+        "h": "1. Definitions",
+        "items": [
+          {
+            "label": "Account",
+            "body": " - the personal information, payment details and credentials used to access services or platform content."
+          },
+          {
+            "label": "Content",
+            "body": " - any text, image, graphic, video, audio, software or other materials available on the website."
+          },
+          {
+            "label": "Cookie",
+            "body": " - a text file placed on your device to track navigation and improve the website experience."
+          },
+          {
+            "label": "Data",
+            "body": " - any information submitted through forms, accounts, sign-ups or browsing."
+          },
+          {
+            "label": "Service",
+            "body": " - any functionality offered by The Unlearning School on this website."
+          },
+          {
+            "label": "System",
+            "body": " - our digital infrastructure (e.g. email, chat, user accounts)."
+          },
+          {
+            "label": "User",
+            "body": " - any person who accesses the website and is not employed by The Unlearning School."
+          },
+          {
+            "label": "Website",
+            "body": " - the www.unlearning.ro domain and any associated subdomains."
+          }
+        ]
+      },
+      "s2": {
+        "h": "2. Data we collect",
+        "intro": "We collect the following types of data:",
+        "items": [
+          "First and last name",
+          "Email address and phone number",
+          "Occupation and field of activity",
+          "Geographic location (e.g. postal code)",
+          "Payment data (e.g. bank card)",
+          "IP, browser, operating system",
+          "Website navigation (pages accessed, traffic source)",
+          "Preferences and answers to questionnaires",
+          "Information collected through cookies (see Section 10)"
+        ]
+      },
+      "s3": {
+        "h": "3. Use of data",
+        "intro": "Collected data may be used for:",
+        "items": [
+          "Providing educational services (programs, sprints, assessments)",
+          "Contact for administrative, commercial or support purposes",
+          "Sending promotional messages (with your consent)",
+          "Analyzing usage behavior to improve the platform",
+          "Market research and content personalization"
+        ],
+        "outro": "Data will NOT be sold or transferred to third parties without consent, except where required by law."
+      },
+      "s4": {
+        "h": "4. Third-party providers",
+        "intro": "We use external services for:",
+        "items": [
+          "Payment processing (e.g. Stripe)",
+          "Traffic analysis (e.g. Google Analytics)",
+          "Email marketing (e.g. Brevo)",
+          "Hosting and maintenance"
+        ],
+        "outro": "These entities may process limited data, strictly necessary to deliver the services. We ensure all partners comply with GDPR legislation."
+      },
+      "s5": {
+        "h": "5. Data transfer in case of change of ownership",
+        "body": "If SC CARBON SMART EUROPA SRL is acquired or reorganized, user data may be transferred to the new administrators. In this case, you will be notified and may request deletion of your data."
+      },
+      "s6": {
+        "h": "6. Control over data use",
+        "intro": "You have the right to:",
+        "items": [
+          "Refuse the use of data for marketing purposes",
+          "Refuse sharing with third parties",
+          "Modify preferences in your account"
+        ]
+      },
+      "s7": {
+        "h": "7. Data retention",
+        "body": "Data will be retained for as long as you are an active user or as legally required for accounting, fiscal or contractual archiving. You have the right to request deletion of your data."
+      },
+      "s8": {
+        "h": "8. Accessing and modifying data",
+        "body": "You can access, modify or request deletion of your personal data through a written request sent to:",
+        "email": "Email: hello@unlearning.ro"
+      },
+      "s9": {
+        "h": "9. Data security",
+        "intro": "We protect data through:",
+        "items": [
+          "Secure servers with SSL encryption",
+          "Protections against unauthorized access",
+          "Regular back-ups"
+        ],
+        "outro": "However, we are not responsible for any breaches in external systems we use or to which we redirect users."
+      },
+      "s10": {
+        "h": "10. Cookies",
+        "intro": "The website uses cookies for:",
+        "items": [
+          "Essential functionality",
+          "Traffic and performance analysis",
+          "Remarketing (with explicit consent)"
+        ],
+        "outro": "You can manage your preferences from your browser settings or using the consent bar."
+      },
+      "s11": {
+        "h": "11. Policy updates",
+        "body": "We may update this policy periodically. The date of the last modification will be displayed at the bottom of the page. Continued use of the website implies acceptance of the new conditions."
+      },
+      "s12": {
+        "h": "12. Contact",
+        "intro": "For questions or requests regarding personal data:",
+        "name": "The Unlearning School",
+        "address": "1, Aleea Pasărea în Văzduh, București, RO",
+        "phone": "Phone: +40 722 598 346",
+        "email": "Email: hello@unlearning.ro",
+        "outro": "You also have the right to lodge a complaint with the Romanian National Supervisory Authority for Personal Data Processing (ANSPDCP)."
+      }
     }
   },
   "cookies": {
     "docTitle": "Cookie Policy, The Unlearning School",
-    "seoTitle": "Cookie Policy",
-    "seoDescription": "Cookies used on The Unlearning School website.",
+    "seoTitle": "Cookie policy · what we set and why",
+    "seoDescription": "The cookies The Unlearning School sets, why each one exists, and how to manage your consent. GDPR and ePrivacy aligned.",
     "title": "Cookie Policy.",
     "intro": "This Cookie Policy was last updated on 18.04.2026 and applies to citizens and permanent residents of the European Economic Area and Switzerland.",
-    "s1": { "h": "1. Introduction", "body": "Our website, https://www.unlearning.ro (hereinafter: \"the website\"), uses cookies and other related technologies (for convenience all technologies are referred to as \"cookies\"). Cookies are also placed by us and by the third parties we work with for essential functionality (payment processing, form hosting). In the document below we inform you about how we use cookies on our website." },
-    "s2": { "h": "2. What are cookies?", "body": "A cookie is a small simple file sent along with the pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored there may be sent back to our servers or to the servers of the relevant third parties during a subsequent visit." },
-    "s3": { "h": "3. What are scripts?", "body": "A script is a piece of program code used to make our website function properly and interactively. This code is executed on our server or on your device." },
-    "s4": { "h": "4. What is a web beacon?", "body": "A web beacon (or pixel tag) is a small, invisible piece of text or image on a website used to monitor traffic on a website. In order to do this, various data about you is stored using web beacons. Currently our website does NOT use web beacons or social-network tracking pixels (e.g. Facebook Pixel, LinkedIn Insight Tag)." },
+    "s1": {
+      "h": "1. Introduction",
+      "body": "Our website, https://www.unlearning.ro (hereinafter: \"the website\"), uses cookies and other related technologies (for convenience all technologies are referred to as \"cookies\"). Cookies are also placed by us and by the third parties we work with for essential functionality (payment processing, form hosting). In the document below we inform you about how we use cookies on our website."
+    },
+    "s2": {
+      "h": "2. What are cookies?",
+      "body": "A cookie is a small simple file sent along with the pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored there may be sent back to our servers or to the servers of the relevant third parties during a subsequent visit."
+    },
+    "s3": {
+      "h": "3. What are scripts?",
+      "body": "A script is a piece of program code used to make our website function properly and interactively. This code is executed on our server or on your device."
+    },
+    "s4": {
+      "h": "4. What is a web beacon?",
+      "body": "A web beacon (or pixel tag) is a small, invisible piece of text or image on a website used to monitor traffic on a website. In order to do this, various data about you is stored using web beacons. Currently our website does NOT use web beacons or social-network tracking pixels (e.g. Facebook Pixel, LinkedIn Insight Tag)."
+    },
     "s5h": "5. Types of cookies we use",
     "s5items": [
-      { "h": "5.1 Technical or functional cookies", "body": "Some cookies ensure that certain parts of the website work properly and that your user preferences remain known (e.g. your RO/EN language preference, your cookie consent choice). We can place these cookies without your consent." },
-      { "h": "5.2 Statistics cookies", "body": "We currently do NOT use statistics cookies (such as Google Analytics, Plausible, PostHog) on this site. If we add such services in the future, we will update this policy and ask for your permission." },
-      { "h": "5.3 Marketing/Tracking cookies", "body": "We currently do NOT use marketing or tracking cookies on this site. There is no Facebook Pixel, LinkedIn Insight Tag, Google Ads, or any other retargeting network active." }
+      {
+        "h": "5.1 Technical or functional cookies",
+        "body": "Some cookies ensure that certain parts of the website work properly and that your user preferences remain known (e.g. your RO/EN language preference, your cookie consent choice). We can place these cookies without your consent."
+      },
+      {
+        "h": "5.2 Statistics cookies",
+        "body": "We currently do NOT use statistics cookies (such as Google Analytics, Plausible, PostHog) on this site. If we add such services in the future, we will update this policy and ask for your permission."
+      },
+      {
+        "h": "5.3 Marketing/Tracking cookies",
+        "body": "We currently do NOT use marketing or tracking cookies on this site. There is no Facebook Pixel, LinkedIn Insight Tag, Google Ads, or any other retargeting network active."
+      }
     ],
     "s6h": "6. Cookies and services placed",
     "s6intro": "The list below covers the services that may place cookies or store data locally on your device when you use our website.",
     "s6items": [
-      { "h": "Local storage - consent preferences", "type": "Functional (essential)", "body": "We store your cookie consent choice and language preference (RO/EN) in your browser's local storage so we don't have to ask on every visit. No consent required." },
-      { "h": "Stripe", "type": "Functional (essential for payments)", "body": "Our payment processor. Stripe places cookies ONLY on the checkout pages for paid programmes, for fraud detection and security. See Stripe's policy: https://stripe.com/privacy" },
-      { "h": "Supabase (Lovable Cloud)", "type": "Functional (essential)", "body": "Our backend for forms (e.g. capturing your email at the AI Adoption Score). Uses local storage for technical sessions. Not used for profiling or advertising." },
-      { "h": "lovable.app domain (staging only)", "type": "Functional", "body": "On preview and staging versions hosted by Lovable, the platform may place essential technical cookies for infrastructure operation. These do not appear on the production custom domain." }
+      {
+        "h": "Local storage - consent preferences",
+        "type": "Functional (essential)",
+        "body": "We store your cookie consent choice and language preference (RO/EN) in your browser's local storage so we don't have to ask on every visit. No consent required."
+      },
+      {
+        "h": "Stripe",
+        "type": "Functional (essential for payments)",
+        "body": "Our payment processor. Stripe places cookies ONLY on the checkout pages for paid programmes, for fraud detection and security. See Stripe's policy: https://stripe.com/privacy"
+      },
+      {
+        "h": "Supabase (Lovable Cloud)",
+        "type": "Functional (essential)",
+        "body": "Our backend for forms (e.g. capturing your email at the AI Adoption Score). Uses local storage for technical sessions. Not used for profiling or advertising."
+      },
+      {
+        "h": "lovable.app domain (staging only)",
+        "type": "Functional",
+        "body": "On preview and staging versions hosted by Lovable, the platform may place essential technical cookies for infrastructure operation. These do not appear on the production custom domain."
+      }
     ],
-    "s7": { "h": "7. Consent", "body": "When you visit our website for the first time, we show you a banner explaining cookies. As soon as you click \"Accept\", you consent to us using all cookies as described in the banner and this Cookie Policy. You can disable the use of cookies via your browser, but please note that some functionality (e.g. saving your language preference, online payment) may no longer work properly." },
-    "s8": { "h": "8. Enabling/disabling and deleting cookies", "body": "You can use your browser to delete cookies automatically or manually. You can also specify that certain cookies may not be placed. Another option is to change the settings of your browser so that you receive a message every time a cookie is placed. For more information about these options, please refer to the instructions in the Help section of your browser. Please note that our website may not work properly if all cookies are disabled. If you do delete the cookies in your browser, they will be placed again after your consent when you visit our website again." },
+    "s7": {
+      "h": "7. Consent",
+      "body": "When you visit our website for the first time, we show you a banner explaining cookies. As soon as you click \"Accept\", you consent to us using all cookies as described in the banner and this Cookie Policy. You can disable the use of cookies via your browser, but please note that some functionality (e.g. saving your language preference, online payment) may no longer work properly."
+    },
+    "s8": {
+      "h": "8. Enabling/disabling and deleting cookies",
+      "body": "You can use your browser to delete cookies automatically or manually. You can also specify that certain cookies may not be placed. Another option is to change the settings of your browser so that you receive a message every time a cookie is placed. For more information about these options, please refer to the instructions in the Help section of your browser. Please note that our website may not work properly if all cookies are disabled. If you do delete the cookies in your browser, they will be placed again after your consent when you visit our website again."
+    },
     "s9h": "9. Your rights with respect to personal data",
     "s9intro": "You have the following rights with respect to your personal data:",
     "s9items": [
@@ -112,20 +231,58 @@
   },
   "terms": {
     "docTitle": "Terms & Conditions, The Unlearning School",
-    "seoTitle": "Terms & Conditions",
-    "seoDescription": "Terms and conditions for The Unlearning School services and website.",
+    "seoTitle": "Terms & conditions · how we work together",
+    "seoDescription": "The terms that govern access to The Unlearning School services and website. Written without legal theatre.",
     "title": "Terms & Conditions.",
     "sections": {
-      "s1": { "h": "1. Acceptance of terms", "body": "By accessing The Unlearning School website (www.unlearning.ro) and our services, you confirm that you have read, understood and agree to these Terms & Conditions. If you do not agree with any of these provisions, please do not use the website or our services. These terms apply to all visitors, users and clients." },
-      "s2": { "h": "2. What we offer and how to use the site", "body": "The Unlearning School provides consulting, training, programme design and support services around AI adoption, funding intelligence, execution readiness and corporate academy design. The content published on the site (articles, guides, maturity scores, resources) is offered for informational and educational purposes only. Accessing the platform does not create a contractual or individual advisory relationship unless we sign a separate agreement (e.g. commercial proposal, B2B contract, scope of work for a tailored programme)." },
-      "s3": { "h": "3. Intellectual property and fair use", "body": "All content on this site - texts, images, logos, diagrams, programme structures, guides, assessment scores, downloadable files - is the property of The Unlearning School (or of our collaborators, with their consent) and is protected by copyright and intellectual property law. You are allowed to access, read and save the content for personal, non-commercial use. You are not allowed to: (a) copy, redistribute, edit or sell the content without our written consent; (b) use our materials on behalf of other brands, products or services; (c) reproduce the structure of our programmes, our methodology or our assessment scores in your own commercial offerings." },
-      "s4": { "h": "4. Conduct on the site", "items": ["Do not send spam, do not attempt to compromise site security and do not post offensive, discriminatory or unlawful messages", "Do not distribute materials that may harm the site, its users or The Unlearning School brand reputation", "Do not impersonate others, do not submit false information when registering and do not use temporary email addresses to access gated resources", "Provide accurate and complete information when submitting forms or enrolling in programmes", "Respect the intellectual property rights of The Unlearning School and our collaborators"] },
-      "s5": { "h": "5. Working calls and commercial engagements", "body": "The initial AI Adoption Call (30 minutes) is offered free of charge, with no obligation to contract further services. Paid engagements (programmes, training, consulting, funding proposals) are subject to separate agreements, agreed individually with each client. We reserve the right to reschedule or cancel calls with reasonable notice. For paid programmes with online payment, the specific withdrawal and refund conditions are detailed in the enrolment confirmation." },
-      "s6": { "h": "6. Site functionality", "body": "We make significant efforts to keep the site running smoothly, but we cannot guarantee that: (a) the site will always be 100% available, fast or error-free; (b) all information will always be up to date to the second; (c) any plugin or third-party service (forms, payment processors, scheduling calendar, analytics tools) will work flawlessly across every browser or device. If you encounter technical issues, write to hello@unlearning.ro and we'll fix them as quickly as possible." },
-      "s7": { "h": "7. Privacy and personal data", "bodyPre": "Your data is safe with us. We comply with applicable legislation (including GDPR) and we have a clear ", "linkText": "Privacy Policy", "bodyPost": " you can read on the site. We do not sell, share or use your data for hidden purposes." },
-      "s8": { "h": "8. Limitation of liability", "body": "Use of the site and of the published resources is at your own risk. The Unlearning School provides services on an \"as is\" basis, without guaranteeing specific business outcomes. We cannot be held liable for: (a) decisions you make based on the information, scores or recommendations we provide; (b) financial, operational or reputational losses indirectly resulting from the use of our resources; (c) issues caused by third-party services we reference (e.g. AI tooling vendors). To the maximum extent permitted by law, our total liability shall not exceed the amount you paid us for the relevant service in the past 12 months. We recommend you always exercise judgement and seek specialised professional advice where appropriate (legal, tax, compliance)." },
-      "s9": { "h": "9. External links", "body": "Our site may contain links to third-party websites (partners, reference articles, data sources, recommended tools). We are not responsible for their content, privacy policies or business practices." },
-      "s10": { "h": "10. Changes to these terms and governing law", "body": "We may update these terms at any time, without prior notice. We will always publish the most recent version on the site, with the revision date updated. Continued use of the site after changes means you agree to the new conditions. These Terms are governed by the laws of Romania. Any disputes shall be resolved by the competent courts in Bucharest, Romania. For any questions about these terms, write to hello@unlearning.ro." }
+      "s1": {
+        "h": "1. Acceptance of terms",
+        "body": "By accessing The Unlearning School website (www.unlearning.ro) and our services, you confirm that you have read, understood and agree to these Terms & Conditions. If you do not agree with any of these provisions, please do not use the website or our services. These terms apply to all visitors, users and clients."
+      },
+      "s2": {
+        "h": "2. What we offer and how to use the site",
+        "body": "The Unlearning School provides consulting, training, programme design and support services around AI adoption, funding intelligence, execution readiness and corporate academy design. The content published on the site (articles, guides, maturity scores, resources) is offered for informational and educational purposes only. Accessing the platform does not create a contractual or individual advisory relationship unless we sign a separate agreement (e.g. commercial proposal, B2B contract, scope of work for a tailored programme)."
+      },
+      "s3": {
+        "h": "3. Intellectual property and fair use",
+        "body": "All content on this site - texts, images, logos, diagrams, programme structures, guides, assessment scores, downloadable files - is the property of The Unlearning School (or of our collaborators, with their consent) and is protected by copyright and intellectual property law. You are allowed to access, read and save the content for personal, non-commercial use. You are not allowed to: (a) copy, redistribute, edit or sell the content without our written consent; (b) use our materials on behalf of other brands, products or services; (c) reproduce the structure of our programmes, our methodology or our assessment scores in your own commercial offerings."
+      },
+      "s4": {
+        "h": "4. Conduct on the site",
+        "items": [
+          "Do not send spam, do not attempt to compromise site security and do not post offensive, discriminatory or unlawful messages",
+          "Do not distribute materials that may harm the site, its users or The Unlearning School brand reputation",
+          "Do not impersonate others, do not submit false information when registering and do not use temporary email addresses to access gated resources",
+          "Provide accurate and complete information when submitting forms or enrolling in programmes",
+          "Respect the intellectual property rights of The Unlearning School and our collaborators"
+        ]
+      },
+      "s5": {
+        "h": "5. Working calls and commercial engagements",
+        "body": "The initial AI Adoption Call (30 minutes) is offered free of charge, with no obligation to contract further services. Paid engagements (programmes, training, consulting, funding proposals) are subject to separate agreements, agreed individually with each client. We reserve the right to reschedule or cancel calls with reasonable notice. For paid programmes with online payment, the specific withdrawal and refund conditions are detailed in the enrolment confirmation."
+      },
+      "s6": {
+        "h": "6. Site functionality",
+        "body": "We make significant efforts to keep the site running smoothly, but we cannot guarantee that: (a) the site will always be 100% available, fast or error-free; (b) all information will always be up to date to the second; (c) any plugin or third-party service (forms, payment processors, scheduling calendar, analytics tools) will work flawlessly across every browser or device. If you encounter technical issues, write to hello@unlearning.ro and we'll fix them as quickly as possible."
+      },
+      "s7": {
+        "h": "7. Privacy and personal data",
+        "bodyPre": "Your data is safe with us. We comply with applicable legislation (including GDPR) and we have a clear ",
+        "linkText": "Privacy Policy",
+        "bodyPost": " you can read on the site. We do not sell, share or use your data for hidden purposes."
+      },
+      "s8": {
+        "h": "8. Limitation of liability",
+        "body": "Use of the site and of the published resources is at your own risk. The Unlearning School provides services on an \"as is\" basis, without guaranteeing specific business outcomes. We cannot be held liable for: (a) decisions you make based on the information, scores or recommendations we provide; (b) financial, operational or reputational losses indirectly resulting from the use of our resources; (c) issues caused by third-party services we reference (e.g. AI tooling vendors). To the maximum extent permitted by law, our total liability shall not exceed the amount you paid us for the relevant service in the past 12 months. We recommend you always exercise judgement and seek specialised professional advice where appropriate (legal, tax, compliance)."
+      },
+      "s9": {
+        "h": "9. External links",
+        "body": "Our site may contain links to third-party websites (partners, reference articles, data sources, recommended tools). We are not responsible for their content, privacy policies or business practices."
+      },
+      "s10": {
+        "h": "10. Changes to these terms and governing law",
+        "body": "We may update these terms at any time, without prior notice. We will always publish the most recent version on the site, with the revision date updated. Continued use of the site after changes means you agree to the new conditions. These Terms are governed by the laws of Romania. Any disputes shall be resolved by the competent courts in Bucharest, Romania. For any questions about these terms, write to hello@unlearning.ro."
+      }
     }
   }
 }

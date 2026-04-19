@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "About - a behaviour change practice for AI adoption",
-    "description": "The Unlearning School is a behaviour change practice founded by Răzvan Vâlceanu. We redesign workflows so AI tools actually get used in non-technical teams across the EU.",
-    "keywords": "The Unlearning School, Răzvan Vâlceanu, AI adoption consultancy, behaviour change AI, change management AI, EU"
+    "title": "Behaviour change practice for AI adoption · founded by Răzvan Vâlceanu",
+    "description": "We are a behaviour change practice based in Bucharest, working across the EU. We redesign the workflows of non-technical teams so the AI tools you already bought get used.",
+    "keywords": "The Unlearning School, Răzvan Vâlceanu, AI adoption consultancy, behaviour change AI, change management AI, AI workflow redesign, Bucharest, Romania, EU mid-market"
   },
   "docTitle": "About, The Unlearning School",
   "hero": {
@@ -31,9 +31,18 @@
     "titleEm": "refreeze.",
     "intro": "All The Unlearning School programmes are built on the same sequence, adapted from Kurt Lewin's change model (1947) and applied to AI workflow adoption.",
     "steps": [
-      { "title": "Unfreeze", "body": "Participants explicitly surface the current habit: how they run the process today, what assumptions are embedded in it, and why those assumptions exist. This step is non-negotiable. Without it, new behaviours do not stick." },
-      { "title": "Change", "body": "Participants redesign the workflow with AI embedded, in the session, not as homework. The new version is tested, adjusted, and completed before anyone leaves." },
-      { "title": "Refreeze", "body": "The new workflow is documented as a team-owned template. Participants who built it are the ones who run it next week. That ownership is why it sticks." }
+      {
+        "title": "Unfreeze",
+        "body": "Participants explicitly surface the current habit: how they run the process today, what assumptions are embedded in it, and why those assumptions exist. This step is non-negotiable. Without it, new behaviours do not stick."
+      },
+      {
+        "title": "Change",
+        "body": "Participants redesign the workflow with AI embedded, in the session, not as homework. The new version is tested, adjusted, and completed before anyone leaves."
+      },
+      {
+        "title": "Refreeze",
+        "body": "The new workflow is documented as a team-owned template. Participants who built it are the ones who run it next week. That ownership is why it sticks."
+      }
     ]
   },
   "redesign": {
@@ -81,9 +90,21 @@
     "tag": "Track record",
     "title": "Briefly stated.",
     "items": [
-      { "tag": "Scale", "title": "1,400+ professionals trained", "body": "Across finance, retail, manufacturing, and professional services. Romania and EU. Programmes delivered in English and Romanian." },
-      { "tag": "Proof", "title": "Before / after workflow examples", "body": "Anonymised examples from relevant sectors are available during the Assessment call. No client names are published on this site." },
-      { "tag": "Context", "title": "Corporate, academic, startup", "body": "Programmes have been delivered inside large enterprises, academic institutions, and growth-stage companies. The method adapts to the context; the mechanism does not change." }
+      {
+        "tag": "Scale",
+        "title": "1,400+ professionals trained",
+        "body": "Across finance, retail, manufacturing, and professional services. Romania and EU. Programmes delivered in English and Romanian."
+      },
+      {
+        "tag": "Proof",
+        "title": "Before / after workflow examples",
+        "body": "Anonymised examples from relevant sectors are available during the Assessment call. No client names are published on this site."
+      },
+      {
+        "tag": "Context",
+        "title": "Corporate, academic, startup",
+        "body": "Programmes have been delivered inside large enterprises, academic institutions, and growth-stage companies. The method adapts to the context; the mechanism does not change."
+      }
     ]
   },
   "cta": {

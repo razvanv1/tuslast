@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "AI Adoption Score - Free 2-minute AI maturity test",
-    "description": "Measure your team's AI maturity in 2 minutes. 10 weighted questions across strategy, tools, adoption and impact. Instant score, gap analysis, and a ranked next-step roadmap.",
-    "keywords": "AI maturity assessment, AI adoption score, AI readiness test, AI maturity model, free AI audit, EU AI Act readiness",
+    "title": "Free 2-minute AI adoption score · know exactly where you stand",
+    "description": "10 weighted questions across strategy, tools, adoption and impact. You get an instant maturity score, the weakest area named, and a ranked next-step roadmap. Free.",
+    "keywords": "AI maturity assessment, AI adoption score, free AI readiness test, AI maturity model, AI audit, EU AI Act Article 4 readiness, Copilot adoption score, Romania, EU",
     "docTitle": "AI Adoption Score, The Unlearning School"
   },
   "hero": {
@@ -12,10 +12,22 @@
     "subtitle": "92% of companies invest in AI. Only 1% feel mature. Drop the self-narrative and get your maturity score, a gap analysis across four dimensions, and the next move that actually matters."
   },
   "stats": [
-    { "value": "92%", "label": "of companies invest in AI" },
-    { "value": "1%", "label": "feel mature in AI adoption" },
-    { "value": "75%", "label": "of AI projects stall in pilot" },
-    { "value": "57%", "label": "of employees hide AI usage" }
+    {
+      "value": "92%",
+      "label": "of companies invest in AI"
+    },
+    {
+      "value": "1%",
+      "label": "feel mature in AI adoption"
+    },
+    {
+      "value": "75%",
+      "label": "of AI projects stall in pilot"
+    },
+    {
+      "value": "57%",
+      "label": "of employees hide AI usage"
+    }
   ],
   "quiz": {
     "yourResult": "Your result",

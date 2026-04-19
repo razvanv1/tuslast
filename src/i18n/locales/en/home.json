@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "The Unlearning School, AI adoption training for non-technical teams",
-    "description": "Behaviour change practice for AI adoption. We redesign workflows so non-technical teams actually use the AI tools you deployed. Romania & EU.",
-    "keywords": "AI adoption, AI training, EU AI Act Article 4, Copilot adoption, AI for non-technical teams, workflow redesign, change management, Romania, EU"
+    "title": "AI training that gets your team using the tools you already pay for",
+    "description": "AI training, workshops and events for AI adoption. We redesign workflows so non-technical teams in Romania and the EU actually use Copilot, Gemini and ChatGPT.",
+    "keywords": "AI adoption, AI training, EU AI Act Article 4, Microsoft Copilot adoption, Gemini Enterprise rollout, AI for non-technical teams, workflow redesign, change management, AI literacy, Romania, Bucharest, EU, mid-market"
   },
   "hero": {
     "headlinePart1": "Your organisation bought AI capability.",
@@ -20,17 +20,41 @@
     "next": "Next",
     "drawing": "Now drawing:",
     "deck": {
-      "aiForWork": { "label": "AI for Non-Technical People", "caption": "Modular · cohort" },
-      "aiScore": { "label": "AI Adoption Score", "caption": "2 min · Instant maturity test" },
-      "events": { "label": "Events & Keynotes", "caption": "90 min – 2 days" },
-      "funding": { "label": "MDF, Funding & Grants", "caption": "Vendor MDF · EU grants" },
-      "assessment": { "label": "AI Adoption Call", "caption": "Free · 30 min · Talk to us" }
+      "aiForWork": {
+        "label": "AI for Non-Technical People",
+        "caption": "Modular · cohort"
+      },
+      "aiScore": {
+        "label": "AI Adoption Score",
+        "caption": "2 min · Instant maturity test"
+      },
+      "events": {
+        "label": "Events & Keynotes",
+        "caption": "90 min – 2 days"
+      },
+      "funding": {
+        "label": "MDF, Funding & Grants",
+        "caption": "Vendor MDF · EU grants"
+      },
+      "assessment": {
+        "label": "AI Adoption Call",
+        "caption": "Free · 30 min · Talk to us"
+      }
     }
   },
   "stats": {
-    "s1": { "value": "64%", "label": "of employees with Copilot access do not actively use it" },
-    "s2": { "value": "1,400+", "label": "professionals trained across the EU" },
-    "s3": { "value": "1 day", "label": "to redesign one process with AI embedded" }
+    "s1": {
+      "value": "64%",
+      "label": "of employees with Copilot access do not actively use it"
+    },
+    "s2": {
+      "value": "1,400+",
+      "label": "professionals trained across the EU"
+    },
+    "s3": {
+      "value": "1 day",
+      "label": "to redesign one process with AI embedded"
+    }
   },
   "pattern": {
     "eyebrow": "The Pattern",
@@ -38,9 +62,18 @@
     "title": "Why AI adoption stalls after the rollout.",
     "body": "Most organisations respond to low AI tool usage with a second training session. Same result. The problem is not the tool and it is not the team. It is the process, which was never redesigned to use AI.",
     "rows": [
-      { "week": "Week 1–2", "text": "Enthusiastic early adopters use the tool daily. Visible momentum." },
-      { "week": "Week 3–4", "text": "Middle majority try it once or twice on familiar tasks. Irregular usage." },
-      { "week": "Week 5+", "text": "Usage plateaus. Most employees return to previous workflows. Dashboard shows \"active licences.\" Processes have not changed." }
+      {
+        "week": "Week 1–2",
+        "text": "Enthusiastic early adopters use the tool daily. Visible momentum."
+      },
+      {
+        "week": "Week 3–4",
+        "text": "Middle majority try it once or twice on familiar tasks. Irregular usage."
+      },
+      {
+        "week": "Week 5+",
+        "text": "Usage plateaus. Most employees return to previous workflows. Dashboard shows \"active licences.\" Processes have not changed."
+      }
     ]
   },
   "premise": {
@@ -109,9 +142,21 @@
     "eyebrow": "Credibility, briefly",
     "title": "The receipts.",
     "items": [
-      { "tag": "Track record", "title": "1,400+ professionals trained", "body": "Across finance, retail, manufacturing, and professional services, Romania and EU." },
-      { "tag": "Founder", "title": "Răzvan Vâlceanu", "body": "20+ years across innovation, digital transformation, executive education, and entrepreneurship." },
-      { "tag": "Proof format", "title": "Before / after workflows", "body": "Anonymised sector examples available on request during the Assessment call. No client names published on this site." }
+      {
+        "tag": "Track record",
+        "title": "1,400+ professionals trained",
+        "body": "Across finance, retail, manufacturing, and professional services, Romania and EU."
+      },
+      {
+        "tag": "Founder",
+        "title": "Răzvan Vâlceanu",
+        "body": "20+ years across innovation, digital transformation, executive education, and entrepreneurship."
+      },
+      {
+        "tag": "Proof format",
+        "title": "Before / after workflows",
+        "body": "Anonymised sector examples available on request during the Assessment call. No client names published on this site."
+      }
     ]
   },
   "pricing": {
@@ -125,12 +170,27 @@
       "price": "€600",
       "unit": "/ participant",
       "title": "AI for Non-Technical People",
-      "tableHeader": { "col1": "What", "col2": "You get" },
+      "tableHeader": {
+        "col1": "What",
+        "col2": "You get"
+      },
       "rows": [
-        { "label": "Format", "value": "Modular cohort: Discovery / Sprint / Full" },
-        { "label": "Stack", "value": "Built on tools your team already pays for" },
-        { "label": "Outcome", "value": "Prompt sheets + workflows usable next morning" },
-        { "label": "Compliance", "value": "EU AI Act Article 4 literacy included" }
+        {
+          "label": "Format",
+          "value": "Modular cohort: Discovery / Sprint / Full"
+        },
+        {
+          "label": "Stack",
+          "value": "Built on tools your team already pays for"
+        },
+        {
+          "label": "Outcome",
+          "value": "Prompt sheets + workflows usable next morning"
+        },
+        {
+          "label": "Compliance",
+          "value": "EU AI Act Article 4 literacy included"
+        }
       ],
       "footnote": "Cohort minimum applies. Volume pricing on request.",
       "cta": "Buy AI for Work →",
@@ -142,12 +202,27 @@
       "price": "€497",
       "unit": "/ install",
       "title": "Hermes Agent - personal install",
-      "tableHeader": { "col1": "What", "col2": "You get" },
+      "tableHeader": {
+        "col1": "What",
+        "col2": "You get"
+      },
       "rows": [
-        { "label": "Setup", "value": "Hermes installed and configured for your workflow" },
-        { "label": "Training", "value": "1 handover session, live with you" },
-        { "label": "Outcome", "value": "Autonomous assistant running on day one" },
-        { "label": "Partner", "value": "Delivered by an Official Hermes Agent Partner" }
+        {
+          "label": "Setup",
+          "value": "Hermes installed and configured for your workflow"
+        },
+        {
+          "label": "Training",
+          "value": "1 handover session, live with you"
+        },
+        {
+          "label": "Outcome",
+          "value": "Autonomous assistant running on day one"
+        },
+        {
+          "label": "Partner",
+          "value": "Delivered by an Official Hermes Agent Partner"
+        }
       ],
       "footnote": "Includes setup, configuration, and 1 handover session.",
       "cta": "Install Hermes →",
@@ -233,11 +308,36 @@
     "titleEm": "real outcomes.",
     "body": "We don't publish client logos. We do publish what changed: hours saved, processes rebuilt, people trained. Sectors and scale below are accurate; names withheld by agreement.",
     "items": [
-      { "sector": "Top-3 RO bank", "metric": "120", "outcome": "PMs trained on AI-assisted spec writing", "context": "4-week sprint · 38% spec time saved" },
-      { "sector": "National distributor", "metric": "80", "outcome": "Sceptical employees turned Copilot-active in 2h", "context": "On-site session · 100% completion" },
-      { "sector": "EU pharma", "metric": "3 depts", "outcome": "Compliance + medical + commercial trained together", "context": "EU AI Act Article 4 ready" },
-      { "sector": "Public university", "metric": "200+", "outcome": "Faculty and admin trained on responsible AI use", "context": "Full academic year programme" },
-      { "sector": "Mid-cap retail", "metric": "45%", "outcome": "Reduction in weekly report production time", "context": "6-week embed · finance team" }
+      {
+        "sector": "Top-3 RO bank",
+        "metric": "120",
+        "outcome": "PMs trained on AI-assisted spec writing",
+        "context": "4-week sprint · 38% spec time saved"
+      },
+      {
+        "sector": "National distributor",
+        "metric": "80",
+        "outcome": "Sceptical employees turned Copilot-active in 2h",
+        "context": "On-site session · 100% completion"
+      },
+      {
+        "sector": "EU pharma",
+        "metric": "3 depts",
+        "outcome": "Compliance + medical + commercial trained together",
+        "context": "EU AI Act Article 4 ready"
+      },
+      {
+        "sector": "Public university",
+        "metric": "200+",
+        "outcome": "Faculty and admin trained on responsible AI use",
+        "context": "Full academic year programme"
+      },
+      {
+        "sector": "Mid-cap retail",
+        "metric": "45%",
+        "outcome": "Reduction in weekly report production time",
+        "context": "6-week embed · finance team"
+      }
     ],
     "footnote": "Reference calls available under NDA after a first conversation."
   },

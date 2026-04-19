@@ -1,8 +1,8 @@
 {
   "paymentSuccess": {
     "docTitle": "Payment received, The Unlearning School",
-    "seoTitle": "Payment received - The Unlearning School",
-    "seoDescription": "Your enrolment is confirmed. We'll be in touch shortly to schedule the first session.",
+    "seoTitle": "You're in · payment received",
+    "seoDescription": "Your enrolment is confirmed. We'll be in touch within 1 business day to schedule the kick-off conversation.",
     "tag": "Payment received",
     "titlePre": "You're ",
     "titleEm": "in.",
@@ -13,8 +13,8 @@
   },
   "paymentCanceled": {
     "docTitle": "Payment canceled, The Unlearning School",
-    "seoTitle": "Payment canceled - The Unlearning School",
-    "seoDescription": "Your checkout was canceled. No charge was made. You can resume any time.",
+    "seoTitle": "Nothing charged · payment canceled",
+    "seoDescription": "Your checkout was canceled. No payment was processed. Resume any time, or book a free 30-minute call instead.",
     "tag": "Payment canceled",
     "titlePre": "Nothing ",
     "titleEm": "charged.",
@@ -23,8 +23,8 @@
     "ctaAssessment": "AI Adoption Call instead"
   },
   "notFound": {
-    "seoTitle": "Page not found (404)",
-    "seoDescription": "The page you are looking for does not exist.",
+    "seoTitle": "Page not found · 404",
+    "seoDescription": "The page you are looking for doesn't exist. Head back home or book a free 30-minute AI adoption call.",
     "title": "404",
     "subtitle": "Oops! Page not found",
     "back": "Return to Home"

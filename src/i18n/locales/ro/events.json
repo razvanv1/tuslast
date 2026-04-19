@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Evenimente & Keynote-uri - Prototipare AI live, workshopuri, hackathoane",
-    "description": "Prototipare AI live pe fluxurile tale reale de lucru. Workshopuri, hackathoane și keynote-uri în care echipele pleacă cu un prototip funcțional, nu cu slide-uri. 90 min – 2 zile. 15 până la 500 de persoane.",
-    "keywords": "keynote AI, workshop AI, hackathon AI, prototipare live, eveniment corporate AI, speaker AI EU, workshop Copilot"
+    "title": "Prototipare AI live pentru 15–500 de oameni · workshopuri, hackathoane, keynote-uri",
+    "description": "Sesiuni AI hands-on pe fluxurile tale reale. Echipele pleacă cu un prototip funcțional, nu cu slide-uri. 90 de minute până la 2 zile, 15–500 de persoane, în România și UE.",
+    "keywords": "speaker AI keynote, workshop AI, hackathon AI, prototipare AI live, eveniment corporate AI, workshop Copilot, workshop Gemini, eveniment training AI București, conferință AI România, UE"
   },
   "documentTitle": "Evenimente & Keynote-uri, The Unlearning School",
   "hero": {
@@ -19,14 +19,36 @@
     "kicker": "În parteneriat cu",
     "titleStart": "Standarde internaționale.",
     "titleEm": "Săli locale.",
-    "lovable": { "name": "Lovable", "role": "Lovable Ambassador - partener oficial pentru prototipare AI" },
-    "hermes": { "name": "Hermes Agent", "role": "Hermes Agent Partner - partener oficial pentru agenți AI autonomi" },
+    "lovable": {
+      "name": "Lovable",
+      "role": "Lovable Ambassador - partener oficial pentru prototipare AI"
+    },
+    "hermes": {
+      "name": "Hermes Agent",
+      "role": "Hermes Agent Partner - partener oficial pentru agenți AI autonomi"
+    },
     "subline": "Evenimentele publice sunt gratuite. Condiția e simplă: doar practic - fără prezentări generale, fără slide-uri, fără teorie.",
     "perks": [
-      { "num": "01", "title": "Gratuit pentru participanți", "body": "Toate evenimentele publice sunt gratuite. Fără bilete, fără upsell." },
-      { "num": "02", "title": "Practic, fără slide-uri", "body": "Build-uri live pe fluxuri reale. Zero deck-uri generice, zero PowerPoint." },
-      { "num": "03", "title": "Merch & free credits", "body": "Beneficii Lovable + Hermes Agent: credits gratuite pe platforme, merch și swag pentru participanți." },
-      { "num": "04", "title": "Internațional, local", "body": "Aducem speakeri și standarde internaționale în săli locale." }
+      {
+        "num": "01",
+        "title": "Gratuit pentru participanți",
+        "body": "Toate evenimentele publice sunt gratuite. Fără bilete, fără upsell."
+      },
+      {
+        "num": "02",
+        "title": "Practic, fără slide-uri",
+        "body": "Build-uri live pe fluxuri reale. Zero deck-uri generice, zero PowerPoint."
+      },
+      {
+        "num": "03",
+        "title": "Merch & free credits",
+        "body": "Beneficii Lovable + Hermes Agent: credits gratuite pe platforme, merch și swag pentru participanți."
+      },
+      {
+        "num": "04",
+        "title": "Internațional, local",
+        "body": "Aducem speakeri și standarde internaționale în săli locale."
+      }
     ],
     "hermesLinkText": "Vezi Hermes Agent →"
   },
@@ -127,12 +149,30 @@
     "titleStart": "Înainte să",
     "titleEm": "programezi discuția.",
     "items": [
-      { "q": "De cât timp aveți nevoie înainte de eveniment?", "a": "Două-trei săptămâni e ideal - îmi dă timp să cercetez compania, sectorul și echipele care vor fi în sală. Termenele scurte funcționează și ele; doar restrângem scope-ul de pregătire." },
-      { "q": "Dacă echipele noastre nu folosesc deja instrumente AI?", "a": "Nu e un blocaj. Lucrăm cu ce aveți acces - Copilot, ChatGPT, Gemini, Claude - iar dacă nu există deloc acces, aduc eu un setup funcțional pe care construim live. Prototiparea tot se întâmplă." },
-      { "q": "Participanții trebuie să aducă laptop-uri sau să pregătească ceva?", "a": "Da - laptop-uri și o problemă reală pe care fiecare echipă o are săptămâna asta. Asta e singura pregătire. Cu cât e mai clară problema, cu atât e mai clar prototipul construit pe ea." },
-      { "q": "Puteți livra în engleză și română?", "a": "Ambele. Sesiunile se livrează în limba sălii. Majoritatea fișelor de prompturi și materialelor post-sesiune ajung bilingv din start." },
-      { "q": "Semnați NDA-uri și lucrați cu context confidențial?", "a": "Întotdeauna. NDA semnat înainte de orice research pre-eveniment. Nimic construit pe probleme reale de client nu iese din sală fără aprobarea voastră." },
-      { "q": "Ce se întâmplă după sesiune?", "a": "Fiecare participant pleacă cu o fișă de prompturi copy-paste și un plan de o pagină pentru săptămâna următoare. Opțional: o propunere de scope pentru continuarea muncii de adopție, pe baza a ceea ce iese la suprafață în sală." }
+      {
+        "q": "De cât timp aveți nevoie înainte de eveniment?",
+        "a": "Două-trei săptămâni e ideal - îmi dă timp să cercetez compania, sectorul și echipele care vor fi în sală. Termenele scurte funcționează și ele; doar restrângem scope-ul de pregătire."
+      },
+      {
+        "q": "Dacă echipele noastre nu folosesc deja instrumente AI?",
+        "a": "Nu e un blocaj. Lucrăm cu ce aveți acces - Copilot, ChatGPT, Gemini, Claude - iar dacă nu există deloc acces, aduc eu un setup funcțional pe care construim live. Prototiparea tot se întâmplă."
+      },
+      {
+        "q": "Participanții trebuie să aducă laptop-uri sau să pregătească ceva?",
+        "a": "Da - laptop-uri și o problemă reală pe care fiecare echipă o are săptămâna asta. Asta e singura pregătire. Cu cât e mai clară problema, cu atât e mai clar prototipul construit pe ea."
+      },
+      {
+        "q": "Puteți livra în engleză și română?",
+        "a": "Ambele. Sesiunile se livrează în limba sălii. Majoritatea fișelor de prompturi și materialelor post-sesiune ajung bilingv din start."
+      },
+      {
+        "q": "Semnați NDA-uri și lucrați cu context confidențial?",
+        "a": "Întotdeauna. NDA semnat înainte de orice research pre-eveniment. Nimic construit pe probleme reale de client nu iese din sală fără aprobarea voastră."
+      },
+      {
+        "q": "Ce se întâmplă după sesiune?",
+        "a": "Fiecare participant pleacă cu o fișă de prompturi copy-paste și un plan de o pagină pentru săptămâna următoare. Opțional: o propunere de scope pentru continuarea muncii de adopție, pe baza a ceea ce iese la suprafață în sală."
+      }
     ]
   },
   "funding": {

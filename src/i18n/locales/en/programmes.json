@@ -1,10 +1,10 @@
 {
   "seo": {
-    "title": "AI for Non-Technical People, structured AI adoption programme",
-    "description": "Role-adapted AI training for operations, HR, finance, and customer support teams. EU AI Act Article 4 ready. Built on the AI tools you already pay for. From 3,000 EUR per cohort.",
-    "keywords": "AI training non-technical, EU AI Act Article 4, Copilot training, ChatGPT training, AI literacy programme, AI workflow design, role-based AI",
+    "title": "AI for non-technical teams · role-adapted, EU AI Act Article 4 ready",
+    "description": "Role-adapted AI training for operations, HR, finance and customer support teams. Built on the Copilot, Gemini and ChatGPT licenses you already pay for. From 3,000 EUR.",
+    "keywords": "AI training for non-technical teams, EU AI Act Article 4 training, Microsoft Copilot training, ChatGPT training, Gemini Workspace training, AI literacy programme, AI workflow design, role-based AI training, Romania, EU",
     "courseName": "AI for Non-Technical People",
-    "courseDescription": "Modular AI adoption programme for non-technical business teams. Discovery, Short Sprint, or Full Programme.",
+    "courseDescription": "Modular AI adoption programme for non-technical business teams. EU AI Act Article 4 ready. Discovery, Short Sprint or Full Programme tracks.",
     "docTitle": "AI for Non-Technical People, The Unlearning School"
   },
   "hero": {
@@ -21,12 +21,30 @@
     "titleEm": "performance, compliance, and security.",
     "intro": "Across business teams, AI adoption often starts before leadership has a clear model for how it should be used. Some employees rely on it daily, others avoid it. No standards. No visibility. No accountability. With AI regulation tightening across Romania and Europe, this is no longer just inefficiency, it is legal and operational risk.",
     "items": [
-      { "tag": "EU AI Act compliance", "body": "Since February 2025, the EU AI Act requires organisations to ensure AI literacy among employees. Article 4 is a legal obligation, not a recommendation." },
-      { "tag": "Inconsistent adoption", "body": "Some people use AI daily, others barely use it at all. Output quality varies from person to person." },
-      { "tag": "Isolated time savings", "body": "Teams save time in isolated ways, but not at a team level. Managers have little visibility into what is actually changing." },
-      { "tag": "Personal experimentation", "body": "AI becomes personal experimentation, not an operational capability." },
-      { "tag": "Data leak risk", "body": "Unregulated AI use risks data leaks through unsupervised inputs and outputs." },
-      { "tag": "Compliance audit gaps", "body": "Inconsistent tool usage makes compliance audits harder to pass." }
+      {
+        "tag": "EU AI Act compliance",
+        "body": "Since February 2025, the EU AI Act requires organisations to ensure AI literacy among employees. Article 4 is a legal obligation, not a recommendation."
+      },
+      {
+        "tag": "Inconsistent adoption",
+        "body": "Some people use AI daily, others barely use it at all. Output quality varies from person to person."
+      },
+      {
+        "tag": "Isolated time savings",
+        "body": "Teams save time in isolated ways, but not at a team level. Managers have little visibility into what is actually changing."
+      },
+      {
+        "tag": "Personal experimentation",
+        "body": "AI becomes personal experimentation, not an operational capability."
+      },
+      {
+        "tag": "Data leak risk",
+        "body": "Unregulated AI use risks data leaks through unsupervised inputs and outputs."
+      },
+      {
+        "tag": "Compliance audit gaps",
+        "body": "Inconsistent tool usage makes compliance audits harder to pass."
+      }
     ],
     "footer1": "Teams lose time on research, preparation, reporting, and repetitive tasks that AI could handle. Managers know the shift is happening, but often lack a structured framework for guiding adoption, setting expectations, and measuring progress. ",
     "footerEm": "The cost of unstructured AI adoption is not just productivity loss. It is legal, operational, and reputational risk."
@@ -40,9 +58,33 @@
     "title1": "Any team that makes decisions ",
     "titleEm": "and gets work done.",
     "items": [
-      { "tag": "Primary participants", "items": ["Operations teams", "Finance teams", "HR teams", "Customer support", "Engineering teams", "Team leads and managers"] },
-      { "tag": "Internal sponsors", "items": ["HR", "L&D", "Business unit leadership"] },
-      { "tag": "Cohort size", "items": ["Up to 5 participants", "Up to 10 participants", "Over 10 (custom)"] }
+      {
+        "tag": "Primary participants",
+        "items": [
+          "Operations teams",
+          "Finance teams",
+          "HR teams",
+          "Customer support",
+          "Engineering teams",
+          "Team leads and managers"
+        ]
+      },
+      {
+        "tag": "Internal sponsors",
+        "items": [
+          "HR",
+          "L&D",
+          "Business unit leadership"
+        ]
+      },
+      {
+        "tag": "Cohort size",
+        "items": [
+          "Up to 5 participants",
+          "Up to 10 participants",
+          "Over 10 (custom)"
+        ]
+      }
     ],
     "footer": "Any department mix. Cross-functional cohorts welcome."
   },
@@ -51,9 +93,21 @@
     "title1": "Modular delivery. ",
     "titleEm": "Flexible scope.",
     "items": [
-      { "name": "Discovery Session", "meta": "1 session · 2 hours", "body": "Understand where AI fits, where it doesn't, and what's blocking adoption." },
-      { "name": "Short Sprint", "meta": "2–3 sessions over 2–3 weeks", "body": "Pick one operational bottleneck, build and test an AI workflow for it." },
-      { "name": "Full Program", "meta": "4+ sessions, modular", "body": "Covers adoption infrastructure, workflow integration, internal champions, and a 30-day action plan." }
+      {
+        "name": "Discovery Session",
+        "meta": "1 session · 2 hours",
+        "body": "Understand where AI fits, where it doesn't, and what's blocking adoption."
+      },
+      {
+        "name": "Short Sprint",
+        "meta": "2–3 sessions over 2–3 weeks",
+        "body": "Pick one operational bottleneck, build and test an AI workflow for it."
+      },
+      {
+        "name": "Full Program",
+        "meta": "4+ sessions, modular",
+        "body": "Covers adoption infrastructure, workflow integration, internal champions, and a 30-day action plan."
+      }
     ],
     "footer": "Book the AI Adoption Call. Get your maturity score and roadmap. Scope the right format together. No commitment until you see the fit."
   },
@@ -76,13 +130,36 @@
         "How the program will run and what is expected between sessions"
       ],
       "practice": [
-        { "h": "Personalised AI Configuration", "body": "setting permanent rules for how your AI assistant responds (tone, format, context)" },
-        { "h": "Memory Management", "body": "controlling what your AI remembers across conversations" },
-        { "h": "Data Privacy Controls", "body": "disabling model training on your conversations; enterprise data boundaries" },
-        { "h": "Model Selection Guide", "body": "when to use fast/instant models vs deep-thinking models vs specialised models" },
-        { "h": "AI Tool Selection Framework", "body": "matching the right AI tool to the right task based on capability, not brand" }
+        {
+          "h": "Personalised AI Configuration",
+          "body": "setting permanent rules for how your AI assistant responds (tone, format, context)"
+        },
+        {
+          "h": "Memory Management",
+          "body": "controlling what your AI remembers across conversations"
+        },
+        {
+          "h": "Data Privacy Controls",
+          "body": "disabling model training on your conversations; enterprise data boundaries"
+        },
+        {
+          "h": "Model Selection Guide",
+          "body": "when to use fast/instant models vs deep-thinking models vs specialised models"
+        },
+        {
+          "h": "AI Tool Selection Framework",
+          "body": "matching the right AI tool to the right task based on capability, not brand"
+        }
       ],
-      "useCases": ["Workflow automation", "Internal reporting", "Research and analysis", "Document drafting", "Process documentation", "Data synthesis", "Stakeholder communication"],
+      "useCases": [
+        "Workflow automation",
+        "Internal reporting",
+        "Research and analysis",
+        "Document drafting",
+        "Process documentation",
+        "Data synthesis",
+        "Stakeholder communication"
+      ],
       "outcome": "By the end of Session 1, the cohort has a shared language, a realistic scope, and concrete working scenarios. Each participant defines 1–2 real use cases to work on during the program."
     },
     {
@@ -97,11 +174,26 @@
         "Reducing time spent on repetitive preparation tasks"
       ],
       "practice": [
-        { "h": "Deep Research Mode", "body": "using extended research capabilities to generate comprehensive reports with cited sources in 10+ minutes" },
-        { "h": "4 Prompting Strategies", "body": "Clear Idea, Sequential Approach, Reverse Engineering, Cloning" },
-        { "h": "Temperature & Creativity Controls", "body": "adjusting output precision (low for compliance/finance) vs creative freedom (high for ideation)" },
-        { "h": "Private Knowledge Base Querying", "body": "uploading your own documents and interrogating them without external data leakage" },
-        { "h": "Source-Cited Research", "body": "conversational search that returns answers with verifiable references" }
+        {
+          "h": "Deep Research Mode",
+          "body": "using extended research capabilities to generate comprehensive reports with cited sources in 10+ minutes"
+        },
+        {
+          "h": "4 Prompting Strategies",
+          "body": "Clear Idea, Sequential Approach, Reverse Engineering, Cloning"
+        },
+        {
+          "h": "Temperature & Creativity Controls",
+          "body": "adjusting output precision (low for compliance/finance) vs creative freedom (high for ideation)"
+        },
+        {
+          "h": "Private Knowledge Base Querying",
+          "body": "uploading your own documents and interrogating them without external data leakage"
+        },
+        {
+          "h": "Source-Cited Research",
+          "body": "conversational search that returns answers with verifiable references"
+        }
       ],
       "useCases": [],
       "outcome": "By the end of Session 2, participants have tested practical workflows and built prompt frameworks they can immediately use in their role."
@@ -119,11 +211,26 @@
         "How to reduce the gap between early adopters and the rest of the team"
       ],
       "practice": [
-        { "h": "The Adoption Bottleneck", "body": "middle managers caught between AI-fluent juniors and results-driven seniors" },
-        { "h": "From Prompting to Orchestration", "body": "shifting from asking AI to write content, to having AI agents execute multi-step workflows autonomously" },
-        { "h": "Cohort Completion Advantage", "body": "group-based learning delivers 85%+ completion vs 10-15% for self-paced courses" },
-        { "h": "Internal AI Champions", "body": "identifying 2-3 team members who become the go-to reference for AI adoption" },
-        { "h": "Impact Measurement: Hours Saved", "body": "measuring success by time recovered, not modules completed" }
+        {
+          "h": "The Adoption Bottleneck",
+          "body": "middle managers caught between AI-fluent juniors and results-driven seniors"
+        },
+        {
+          "h": "From Prompting to Orchestration",
+          "body": "shifting from asking AI to write content, to having AI agents execute multi-step workflows autonomously"
+        },
+        {
+          "h": "Cohort Completion Advantage",
+          "body": "group-based learning delivers 85%+ completion vs 10-15% for self-paced courses"
+        },
+        {
+          "h": "Internal AI Champions",
+          "body": "identifying 2-3 team members who become the go-to reference for AI adoption"
+        },
+        {
+          "h": "Impact Measurement: Hours Saved",
+          "body": "measuring success by time recovered, not modules completed"
+        }
       ],
       "useCases": [],
       "outcome": "By the end of Session 3, the team has both practical workflows and a clearer internal structure for sustained adoption."
@@ -141,11 +248,26 @@
         "Building a 30-day roadmap for ongoing adoption"
       ],
       "practice": [
-        { "h": "Non-Deterministic AI Outputs", "body": "understanding that the same prompt generates different results, and how to iterate effectively" },
-        { "h": "Rapid Prototyping Without Code", "body": "building functional web applications and tools using AI-assisted development platforms" },
-        { "h": "Reverse Engineering Strategy", "body": "providing an existing product as reference and asking AI to analyse its business model, audience, and structure" },
-        { "h": "Cloning Strategy", "body": "replicating the structure and style of an existing product as a starting point for a new project" },
-        { "h": "30-Day Adoption Sprint", "body": "post-program action plan with clear ownership, milestones, and accountability based on hours saved" }
+        {
+          "h": "Non-Deterministic AI Outputs",
+          "body": "understanding that the same prompt generates different results, and how to iterate effectively"
+        },
+        {
+          "h": "Rapid Prototyping Without Code",
+          "body": "building functional web applications and tools using AI-assisted development platforms"
+        },
+        {
+          "h": "Reverse Engineering Strategy",
+          "body": "providing an existing product as reference and asking AI to analyse its business model, audience, and structure"
+        },
+        {
+          "h": "Cloning Strategy",
+          "body": "replicating the structure and style of an existing product as a starting point for a new project"
+        },
+        {
+          "h": "30-Day Adoption Sprint",
+          "body": "post-program action plan with clear ownership, milestones, and accountability based on hours saved"
+        }
       ],
       "useCases": [],
       "outcome": "By the end of Session 4, your team has a first trained cohort, visible implementation examples, and a practical next-step plan."
@@ -206,9 +328,39 @@
       "body": "If, after Session 1, your team concludes the program is not the right fit, the remaining sessions can be stopped and not invoiced."
     },
     "tiers": [
-      { "tag": "Small Team", "cohort": "Up to 5 participants", "price": "3,000", "perPerson": "600 EUR per participant", "bestForItems": ["Focused team or department pilot", "Quick validation of AI fit", "Tight, hands-on cohort"] },
-      { "tag": "Standard", "cohort": "Up to 10 participants", "price": "5,000", "perPerson": "500 EUR per participant", "bestForItems": ["Cross-functional team rollout", "Balanced group size for exercises", "Best price-to-impact ratio"] },
-      { "tag": "Enterprise", "cohort": "Over 10 participants", "price": "Custom", "perPerson": "Custom pricing on request", "bestForItems": ["Multi-department rollout", "Custom scope and delivery plan", "Volume pricing agreed after initial meeting"] }
+      {
+        "tag": "Small Team",
+        "cohort": "Up to 5 participants",
+        "price": "3,000",
+        "perPerson": "600 EUR per participant",
+        "bestForItems": [
+          "Focused team or department pilot",
+          "Quick validation of AI fit",
+          "Tight, hands-on cohort"
+        ]
+      },
+      {
+        "tag": "Standard",
+        "cohort": "Up to 10 participants",
+        "price": "5,000",
+        "perPerson": "500 EUR per participant",
+        "bestForItems": [
+          "Cross-functional team rollout",
+          "Balanced group size for exercises",
+          "Best price-to-impact ratio"
+        ]
+      },
+      {
+        "tag": "Enterprise",
+        "cohort": "Over 10 participants",
+        "price": "Custom",
+        "perPerson": "Custom pricing on request",
+        "bestForItems": [
+          "Multi-department rollout",
+          "Custom scope and delivery plan",
+          "Volume pricing agreed after initial meeting"
+        ]
+      }
     ],
     "customLabel": "Custom"
   },
@@ -218,9 +370,18 @@
     "title1": "Flexible delivery. ",
     "titleEm": "Tailored to your context.",
     "items": [
-      { "h": "Delivery", "body": "Online, hybrid, or in person." },
-      { "h": "Scheduling", "body": "Modular sessions. Dates agreed in advance with your team." },
-      { "h": "Customisation", "body": "Everything is tailored. Prompt kit, exercises, and workflows are adapted to your actual context, and built on the AI tools and licenses you already use. Initial meeting used to tailor use cases and expected outcomes." }
+      {
+        "h": "Delivery",
+        "body": "Online, hybrid, or in person."
+      },
+      {
+        "h": "Scheduling",
+        "body": "Modular sessions. Dates agreed in advance with your team."
+      },
+      {
+        "h": "Customisation",
+        "body": "Everything is tailored. Prompt kit, exercises, and workflows are adapted to your actual context, and built on the AI tools and licenses you already use. Initial meeting used to tailor use cases and expected outcomes."
+      }
     ]
   },
   "why": {
@@ -273,9 +434,21 @@
     "title1": "Three steps ",
     "titleEm": "to get started.",
     "items": [
-      { "num": "1", "h": "Book the AI Adoption Call", "body": "A free 30-minute call that scores your AI adoption maturity, surfaces the gaps, and produces a ranked next-step roadmap. No commitment." },
-      { "num": "2", "h": "We scope the right format together", "body": "Based on the meeting, we agree on the right entry point: a single session, a short sprint, or the full program. Everything is adapted to your team's tools and context." },
-      { "num": "3", "h": "Delivery starts", "body": "The program begins on your timeline. Modular delivery means you control the pace. From this initial engagement, we grow the number of trained participants together." }
+      {
+        "num": "1",
+        "h": "Book the AI Adoption Call",
+        "body": "A free 30-minute call that scores your AI adoption maturity, surfaces the gaps, and produces a ranked next-step roadmap. No commitment."
+      },
+      {
+        "num": "2",
+        "h": "We scope the right format together",
+        "body": "Based on the meeting, we agree on the right entry point: a single session, a short sprint, or the full program. Everything is adapted to your team's tools and context."
+      },
+      {
+        "num": "3",
+        "h": "Delivery starts",
+        "body": "The program begins on your timeline. Modular delivery means you control the pace. From this initial engagement, we grow the number of trained participants together."
+      }
     ]
   },
   "fundingBridge": {
@@ -293,10 +466,22 @@
     "note": "Modular delivery · Built on your existing tools · Certificate of completion"
   },
   "faqList": [
-    { "question": "Who is this programme for?", "answer": "Operations, finance, HR, customer support, and engineering teams that have access to AI tools but inconsistent or low usage." },
-    { "question": "Does it satisfy EU AI Act Article 4?", "answer": "Yes. The programme is designed to deliver auditable AI literacy required by EU AI Act Article 4, in force since February 2025." },
-    { "question": "Which AI tools do we use?", "answer": "The tools your organisation already pays for, typically Microsoft 365 Copilot, ChatGPT Enterprise, Gemini, or your internal assistants." },
-    { "question": "How much does it cost?", "answer": "3,000 EUR for up to 5 participants, 5,000 EUR for up to 10 participants. Custom pricing for over 10. All tiers include the same content, audit, and certificate." }
+    {
+      "question": "Who is this programme for?",
+      "answer": "Operations, finance, HR, customer support, and engineering teams that have access to AI tools but inconsistent or low usage."
+    },
+    {
+      "question": "Does it satisfy EU AI Act Article 4?",
+      "answer": "Yes. The programme is designed to deliver auditable AI literacy required by EU AI Act Article 4, in force since February 2025."
+    },
+    {
+      "question": "Which AI tools do we use?",
+      "answer": "The tools your organisation already pays for, typically Microsoft 365 Copilot, ChatGPT Enterprise, Gemini, or your internal assistants."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "3,000 EUR for up to 5 participants, 5,000 EUR for up to 10 participants. Custom pricing for over 10. All tiers include the same content, audit, and certificate."
+    }
   ],
   "curriculumLabels": {
     "moduleKicker": "Module {{num}} · Live session",
