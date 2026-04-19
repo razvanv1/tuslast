@@ -11,7 +11,7 @@ import AIScoreStrip from "@/components/AIScoreStrip";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
 import BeforeAfterWorkflow from "@/components/BeforeAfterWorkflow";
-import CaseStudyTiles from "@/components/CaseStudyTiles";
+
 import FounderBio from "@/components/FounderBio";
 import Testimonials from "@/components/Testimonials";
 import partnerLovable from "@/assets/partner-lovable.png";
@@ -327,9 +327,6 @@ const Index = () => {
           ))}
         </div>
       </Section>
-
-      {/* NEW — Anonymised case-study tiles */}
-      <CaseStudyTiles />
 
       {/* NEW — Founder mini-bio */}
       <FounderBio />
