@@ -1,46 +1,44 @@
 
+## Plan: Rebuild /resources around what's actually real
 
-## Plan: Real Resources index grid
-
-Cut the filler. Replace with a real article grid.
+Cut the teaser grid entirely. Replace with real, useful content blocks that already exist or can be assembled now — no "coming soon" placeholders.
 
 ### Remove
-- "Pick the entry point" section (entry paths)
-- "Six formats. One library." section (formats)
-- "Browse by topic" section (topics)
+- The 6-card "Library" grid (fake teaser, links go nowhere usable)
+- The `library` keys from `resources.json` (EN + RO)
 
-### Keep
-- Hero
-- AI Score CTA
-- Playbook featured card (it's the anchor)
-- Newsletter section
-- Final CTA
+### Keep (in this order)
+1. Hero
+2. AI Score CTA (yours, real)
+3. Playbook featured card (yours, real, downloadable)
+4. Final CTA (AI Adoption Call, real)
 
-### Add: Real article grid
+### Add: 2 new real sections between Playbook and Final CTA
 
-New section between Playbook and Newsletter: **"The Library"** — 6-card grid of the actual resource articles already scaffolded in `src/pages/resources/`:
+**Section A — "Upcoming events & where to meet us"**
+Editorial list, not a grid. Each row: date (mono) · event name (display) · 1-line context · link (Register / Details).
+Seed with 1 real entry you mentioned:
+- May 2026 · Lovable Founder Series · [your context] · Register link
+Plus 1–2 placeholder rows you can edit easily in the locale file (RO + EN). Empty-state message if list is empty: "No public events scheduled. Book an AI Adoption Call instead."
 
-1. EU AI Act Article 4 — what it means for non-tech teams (`/resources/eu-ai-act-article-4`)
-2. Why Copilot rollouts stall after 30 days (`/resources/copilot-rollout-stalls`)
-3. The Lewin model applied to AI adoption (`/resources/lewin-model-ai-adoption`)
-4. AI for procurement: 3 workflows, before/after (`/resources/ai-procurement-workflows`)
-5. How to qualify for vendor MDF on AI training (`/resources/vendor-mdf-ai-training`)
-6. Hermes Agent vs ChatGPT — when to use which (`/resources/hermes-vs-chatgpt`)
+**Section B — "AI on the cheap · Credits, free tiers, open source"**
+A curated reference list — the kind of thing people actually bookmark. Editorial 2-column layout, grouped by category. Each item: name · 1-line what-you-get · link.
 
-Each card (Wired editorial style, matches site):
-- Mono kicker: category tag (e.g. "Compliance", "Adoption", "Frameworks", "Workflows", "Funding", "Tools")
-- Display headline (DM Serif, ~2xl)
-- 1-line excerpt (paper/70, sm)
-- Mono footer: read time + arrow
-- Hover: red border, subtle lift
-- 3-col desktop, 2-col tablet, 1-col mobile
-- Border-grid pattern (`gap-px bg-paper/10`) consistent with rest of site
+Categories + seed entries (you edit/extend later):
+- **Vendor credits** — Microsoft for Startups (Azure + OpenAI credits), Google for Startups (Cloud + Gemini), AWS Activate, Anthropic Startups
+- **Free tiers worth using** — Lovable AI gateway (Gemini Flash free window), Groq (fast inference free tier), Mistral (free API tier), Together AI (free credits)
+- **Open source models / tools** — Llama 3, Mistral, Qwen, Whisper (speech), Ollama (run local), LM Studio
+- **EU funding routes (2026)** — Digital Europe, Horizon Europe AI calls, national digitalization grants (RO: PNRR, POCIDIF)
+
+All copy in EN + RO, real links, no placeholders pretending to be articles.
 
 ### Files to change
-- `src/pages/Resources.tsx` — remove 3 sections, add 1 grid section, use `LocalizedLink`
-- `src/i18n/locales/en/resources.json` — remove `entry`, `formats`, `topics` keys; add `library` key with section heading + 6 article entries (kicker, title, excerpt, readTime)
+- `src/pages/Resources.tsx` — remove library grid, add 2 new sections (Events list + Cheap-AI reference list)
+- `src/i18n/locales/en/resources.json` — drop `library`, add `events` + `cheapAi` keys
 - `src/i18n/locales/ro/resources.json` — same, RO native
 
 ### Result
-Page flow: Hero → Score CTA → Playbook (featured) → **Library grid (6 articles)** → Newsletter → CTA. Tighter, real, linked to actual content.
+Page flow: Hero → Score CTA → Playbook (real download) → **Events (real, dated)** → **Cheap AI reference (real links)** → Final CTA. Everything on the page is usable today. Zero teasing.
 
+### One thing I need from you before building
+What's the real Lovable Founder Series May 2026 detail — is it a date + city + registration URL you have, or should I leave it as an editable placeholder row you fill in the locale file after?
