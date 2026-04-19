@@ -124,21 +124,21 @@ const Resources = () => {
         <p className="text-paper/70 text-[15px] max-w-2xl mb-10 -mt-4">{t("library.subtitle")}</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10">
           {libraryItems.map((item) => (
-            <Link
+            <div
               key={item.to}
-              to={item.to}
-              className="group bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col hover:border-red transition-colors duration-300"
+              aria-disabled="true"
+              className="bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col opacity-60 cursor-not-allowed"
             >
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{item.kicker}</p>
-              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3 group-hover:text-red transition-colors">
+              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3">
                 {item.title}
               </h3>
               <p className="text-paper/70 text-sm leading-relaxed mb-6">{item.excerpt}</p>
               <div className="mt-auto pt-4 border-t border-paper/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50">
                 <span>{item.readTime} {t("library.readTime")}</span>
-                <span className="text-red group-hover:translate-x-1 transition-transform">→</span>
+                <span className="text-paper/40">{i18n.language?.startsWith("ro") ? "În curând" : "Coming soon"}</span>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </Section>
