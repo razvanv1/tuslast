@@ -1,81 +1,92 @@
 
 
-## Plan: Rewrite /funding to sell the call (EN + RO)
+## Plan: Audit + rewrite all SEO/GEO/AEO meta across the site
 
-You gave me a complete reference HTML for the new `/funding`. I'll port the **content and structure** into the existing React/Tailwind components — keeping our design system (Wired editorial, red accent, paper/dark sections, DM Serif Display, JetBrains Mono) instead of importing the gold/serif theme from the HTML.
+I'll do a coherent, persuasive rewrite of titles, meta descriptions, OG/Twitter, keywords, and JSON-LD across **every page in both EN and RO**, matching the voice you set on the homepage meta:
 
-### What changes
+> *"AI Training, Workshops and Events for AI adoption. We redesign workflows so your team actually uses the AI tools your company is already paying for."*
 
-**1. Hero** — sharper sell:
-- Title: "You learned what to build. *Now fund building it.*"
-- Subtitle: training leaves prototypes, production costs real money, MS/AWS/Google/EU fund exactly that, most qualify, few structure it right.
-- Primary CTA: "Find out what you qualify for →" → `/assessment`
-- Secondary: "See funding instruments ↓" → `#instruments`
-- Note: "Free · No commitment · Written shortlist in 5 business days"
+That's the master tone: concrete, second-person, names the actual problem, no jargon. I'll apply it everywhere.
 
-**2. Bridge (3 steps) — rewritten as Training → The Gap → Funding**
-- 01 Training: prototypes built on your workflows, link to `/programmes`
-- 02 The gap: prototype ≠ production; needs licences, integrations, change mgmt
-- 03 Funding: budget already exists; we structure + draft
+### Audit findings (what's wrong now)
 
-**3. NEW: EU AI Act Article 4 callout** (between bridge and instruments)
-- Editorial dark callout with red left border. "Compliance training qualifies under multiple instruments. You're legally required to do this anyway." Link to existing `/resources/eu-ai-act-article-4`.
+1. **`index.html` is hardcoded EN-only and stale** — title/description in `<head>` are static and override the homepage's React `<SEO>` for first paint and crawlers that don't run JS. They also don't match what `home.json` says. Two competing sources of truth.
+2. **Tone drift across pages** — some titles use a dash format (`AI Adoption Call - free 30-minute…`), others use a comma (`AI for Non-Technical People, structured…`), some are description-style, some are feature-list style. No consistent shape.
+3. **Descriptions are mixed quality** — `funding`, `programmes`, `score`, `assessment`, `events` are decent. `about`, `resources`, `hermes` are flat. Legal/payment/404 are bare-bones.
+4. **Keywords drift** — homepage missing "Gemini Enterprise", funding has it, programmes doesn't. No coherent keyword cluster strategy.
+5. **GEO partial** — `geo.region=RO`, `ICBM` are set but no `geo.position`, no localized `geo.placename` for RO version (still "Bucharest" in English on RO pages — fine but could add `București`).
+6. **6 resource articles** each have their own SEO block — need same treatment.
+7. **OG image** — homepage has a real one, all other pages fall back to a generic `12b5078b-…` OG image. Acceptable for now, but I'll keep the system intact.
 
-**4. Objection section** ("We don't have budget for this")
-- Replace current `intro` block with the objection framing: MDF goes unused, EU apps fail on framing not work, we turn programme into something funding body recognises.
+### What I'll do
 
-**5. Instruments (4 cards)** — rewrite to:
-- Microsoft MDF & Founders Hub (two tracks)
-- AWS co-sell & Activate (two tracks)
-- Google Cloud Partner & startup credits (two tracks) — **new card, replaces one of the current 4**
-- EU & national (PNRR, POCIDIF, Digital Europe, Erasmus+)
-- Each card gets a `covers` **list** (4 bullets) instead of a single coverage line, and CTA "Book a call about this →" → `/assessment`
+#### A) Define one consistent title formula
+**Format**: `{Page promise} · {Concrete proof or scope}` — no dashes, no "The Unlearning School" suffix (SEO.tsx already appends it).
 
-**6. Named programmes** — keep the 2-column structure, expand to match the HTML (add Anthropic for Startups, Horizon Europe explicitly).
+Examples (EN → RO):
+- Home: `AI training that gets your team using the tools you already pay for` / `Training AI care îți face echipa să folosească tool-urile pe care deja le plătești`
+- Programmes: `AI for non-technical teams · role-adapted, EU AI Act Article 4 ready` / `AI pentru echipe non-tehnice · adaptat pe rol, conform Art. 4 EU AI Act`
+- Funding: `Fund the AI adoption you can't afford to skip · MDF, AWS, Google, EU grants` / `Finanțează adopția AI pe care nu ți-o permiți să o amâni · MDF, AWS, Google, granturi UE`
+- Events: `Live AI prototyping for 15–500 people · workshops, hackathons, keynotes`
+- Hermes: `Hermes · the open-source AI agent that runs on your server`
+- Score: `Free 2-minute AI adoption score · know exactly where you stand`
+- Assessment: `Free 30-minute AI adoption call · maturity score + roadmap in 24h`
+- Resources: `Field notes on AI adoption · frameworks, funding intel, EU AI Act`
+- About: `Behaviour change practice for AI adoption · founded by Răzvan Vâlceanu`
 
-**7. How we work — 5 steps** (currently 4):
-- 01 Audit vendor relationships
-- 02 Map eligible instruments
-- 03 Structure programme to qualify
-- 04 Draft and submit application
-- 05 Align delivery and reimbursement
-- Plus a **Result** callout block: "Fully funded, or significantly reduced-cost, adoption programme…"
+#### B) Rewrite descriptions in the homepage voice
+Every description follows: **(1) what the page actually delivers + (2) who it's for + (3) one concrete proof point**. 150–160 chars, second person, no buzzwords like "leverage" / "transform" / "empower".
 
-**8. NEW: "How our model works"** (paper/inverted section) — honest framing:
-- Left: we're not a grants consultancy, we're an AI adoption company; structuring is part of how we engage; if you qualify for nothing we tell you in 5 days, no pitch follows.
-- Right: 4 numbered points — What the call covers / What happens after / What it costs / Our incentive.
-- Replaces the current `result` section.
+Example for Funding (EN):
+> *"Most companies qualify for Microsoft MDF, AWS co-sell, Google Cloud Partner funds or EU digital grants. Few structure the application right. We do that, free."*
 
-**9. FAQ — 6 questions, FULL answers** (this fixes the "FAQ answers missing" issue):
-- How long does an MDF application take?
-- What if we are not a Microsoft / AWS / Google partner yet?
-- How does reimbursement actually work?
-- What documents do you need from us?
-- What does this cost us?
-- What if we don't qualify for anything?
-- Each answer = 2 paragraphs, matching the HTML.
+Example for Hermes (EN):
+> *"Hermes is an open-source AI agent with persistent memory and 40+ tools. Runs on your server. Telegram, Slack, Email. From prototype to autonomy in 4 weeks."*
 
-**10. "Before you fund — see a live session" callout** — bridge to `/events` (replaces current `eventsBridge` block, repositioned after FAQ).
+#### C) Coherent keyword clusters
+3 master clusters reused across pages:
+- **Adoption cluster**: AI adoption, AI training, change management, Copilot adoption, Gemini Enterprise rollout, EU AI Act Article 4
+- **Geo cluster**: Romania, Bucharest, EU, mid-market
+- **Vendor cluster**: Microsoft Copilot, Microsoft 365, AWS Bedrock, Google Workspace, Gemini, OpenAI ChatGPT
+Each page picks its relevant subset — no more orphan keywords.
 
-**11. Quote** — keep, swap to: *"Most companies qualify for at least one instrument. The question is not whether the funding exists — it does. The question is whether your programme is structured in a way that the funding body will recognise."*
+#### D) Fix `index.html` (server-rendered baseline)
+- Update the static `<title>` and `<meta description>` to the new home strings
+- Remove the **duplicate** OG/Twitter meta tags at the bottom (lines 105–110) — `react-helmet-async` already injects them
+- Keep the JSON-LD blobs but tighten descriptions to match
+- Add `geo.position` and a Romanian-friendly second placename
 
-**12. Final CTA** — "Find out what you qualify for · A 30-minute call. A written shortlist in 5 days." Primary → `/assessment`, secondary → `/programmes`.
+#### E) Strengthen GEO/AEO in `SEO.tsx`
+- Add `geo.position="44.4268;26.1025"` (sibling to ICBM)
+- For RO routes: add `geo.placename="București, România"` instead of "Bucharest"
+- Add `<meta name="audience" content="business">` (helps AEO classify intent)
+- Add a default `BreadcrumbList` JSON-LD when not on home (helps Google rich results)
 
-### What I'm NOT doing
+#### F) Per-article SEO for the 6 resource articles
+Same rewrite treatment in EN + RO (titles + descriptions + keywords).
 
-- Not changing the visual theme to the gold/Playfair palette in the HTML — staying with our red/paper/DM Serif system. (Otherwise `/funding` would look like a different site.)
-- Not adding the standalone newsletter section at bottom — we don't have a newsletter component on other pages and adding one here only is inconsistent. Skipping unless you want it.
-- Not removing the existing `engine` (operational machinery) section — it still adds proof. Keeping it between FAQ and final CTA, slightly trimmed.
-- Not touching `/resources` — out of scope.
+#### G) Legal / payment / 404 pages
+Tighten the bare descriptions — still `noindex` so they're not ranking, but the title/OG should be on-brand for any accidental share.
 
 ### Files to edit
 
-- `src/i18n/locales/en/funding.json` — full rewrite of all content blocks
-- `src/i18n/locales/ro/funding.json` — same, RO native (not literal translation)
-- `src/pages/Funding.tsx` — restructure: add EU AI Act callout, expand instruments to support `covers` array, add 5th process step + Result block, add new `model` section (paper variant), expand FAQ rendering (already supports it), reposition events bridge after FAQ
-- No new components needed — reusing `Section`, `SectionHeading`, `NumberedStep`, `Blockquote`, `FAQAccordion`, `CTASection`, `Link`
+**i18n (12 files)**:
+- `src/i18n/locales/en/{home,about,assessment,events,funding,hermes,programmes,resources,score,legal,misc}.json` — `seo` / `meta` blocks
+- `src/i18n/locales/ro/` — same 11 files, RO native (not literal translation)
+- Both `resources.json` files — also rewrite the 6 `articles.*.seo` blocks
+
+**Code (2 files)**:
+- `index.html` — replace hardcoded title/description, remove duplicate OG/Twitter blocks at bottom, refresh JSON-LD copy
+- `src/components/SEO.tsx` — add `geo.position`, RO-aware `geo.placename`, optional breadcrumb JSON-LD, `audience` meta
+
+### What I'm NOT doing
+
+- Not creating per-page custom OG images (out of scope, would need design pass — current fallback OG stays)
+- Not changing canonical/hreflang logic (already correct via `routes.ts`)
+- Not touching `sitemap.xml` or `robots.txt` (already aligned)
+- Not adding new pages or new JSON-LD types beyond `BreadcrumbList`
 
 ### One quick check
 
-The HTML has `instrument-card` with a **list of 4 coverage bullets** (not a single string). Our current `Instrument` type uses `coverage: string`. I'll change it to `coverage: string[]` and update both locales — confirm that's fine, otherwise I'll keep it as a comma-joined string. Default if no answer: switch to array (cleaner, matches the source).
+Should the title format use the **middle dot `·`** (used in your funding HTML reference) as the separator everywhere, or a **dash `–`** (more common in Google SERPs)? Default if no answer: `·` to match the editorial style you already established on `/funding`.
 
