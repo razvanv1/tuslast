@@ -14,6 +14,8 @@ interface EventItem {
   context: string;
   linkLabel: string;
   url: string;
+  notifyLabel?: string;
+  notifyUrl?: string;
 }
 
 interface CheapAiItem {
