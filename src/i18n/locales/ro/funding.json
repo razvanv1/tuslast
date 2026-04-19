@@ -6,13 +6,13 @@
   },
   "documentTitle": "Structurare finanțare, The Unlearning School",
   "hero": {
-    "tag": "MDF, Finanțare & Granturi",
+    "tag": "MDF · Credite vendor · Granturi UE",
     "bannerAlt": "Echipă modernă analizând documente de finanțare",
     "title": "Ai învățat ce să construiești. Acum finanțează construcția.",
-    "subtitle": "Training-ul îți dă echipei knowledge-ul și prototipurile. Producția - agenți, integrări, licențe Copilot, Gemini și Azure, dev work, change management - costă bani reali. Microsoft MDF, AWS co-sell, fondurile Google Cloud și granturile digitale UE există tocmai pentru asta. Majoritatea companiilor se califică. Puțini știu cum să aplice.",
-    "ctaText": "Programează call de finanțare →",
+    "subtitle": "Training-ul lasă în urmă prototipuri funcționale și capacitatea echipei de a le folosi. Producția — agenți, integrări, licențe, dev work, change management — costă bani reali. Microsoft, AWS, Google și programele UE finanțează exact tranziția asta. Majoritatea companiilor se califică. Puține își structurează programul într-un mod pe care organismul de finanțare să-l recunoască.",
+    "ctaText": "Află pentru ce te califici →",
     "secondaryText": "Vezi instrumentele de finanțare ↓",
-    "note": "Call gratuit de 30 min · Shortlist scris în 5 zile lucrătoare · Fără angajament"
+    "note": "Gratuit · Fără angajament · Shortlist scris în 5 zile lucrătoare"
   },
   "bridge": {
     "kicker": "De la training la producție",
@@ -22,70 +22,95 @@
       {
         "num": "01",
         "label": "Training",
-        "title": "Echipa învață să prototipeze cu AI pe workflow-uri reale.",
-        "body": "În programele noastre, echipele pleacă cu prototipuri funcționale construite pe propriile probleme - nu cu slide-uri. Knowledge-ul rămâne în casă.",
+        "title": "Echipa ta construiește prototipuri funcționale pe workflow-uri reale.",
+        "body": "În programele noastre, echipele pleacă cu prototipuri construite pe propriile probleme. Nu slide-uri despre AI. Build-uri reale, funcționale. Knowledge-ul și artefactele rămân în casă.",
         "linkText": "Vezi programele →",
         "linkTo": "/programmes"
       },
       {
         "num": "02",
         "label": "Decalajul",
-        "title": "Prototipul nu e producție.",
-        "body": "Ca să transformi un prototip într-un agent sau workflow deployed, ai nevoie de licențe, integrări, dev work și change management. Aici se blochează majoritatea adopțiilor - nu pe knowledge, pe buget."
+        "title": "Un prototip nu e un sistem de producție.",
+        "body": "Ca să transformi un prototip într-un agent sau workflow deployed, ai nevoie de licențe, integrări, dev work și change management. Aici se blochează majoritatea adopțiilor. Nu pe knowledge. Pe buget."
       },
       {
         "num": "03",
         "label": "Finanțare",
-        "title": "Fondurile de partener Microsoft, AWS și Google — plus granturile UE — există ca să finanțeze exact asta.",
-        "body": "Structurăm programul tău de adopție ca să se califice - și scriem aplicația. Munca se întâmplă oricum; finanțarea decide dacă te costă ceva."
+        "title": "Bugetul pentru asta există deja.",
+        "body": "Microsoft, AWS, Google și granturile digitale UE au fost gândite specific pentru a finanța această tranziție. Structurăm programul tău ca să se califice și scriem aplicația. Munca se întâmplă oricum. Finanțarea decide dacă te costă ceva."
       }
     ]
   },
-  "intro": {
+  "legal": {
+    "label": "EU AI Act · Articolul 4 · Cerință de conformitate",
+    "body": "Articolul 4 din EU AI Act cere organizațiilor care folosesc sisteme AI să asigure un nivel adecvat de alfabetizare AI în întreaga forță de muncă. Nu e o recomandare. E o obligație legală. Programele de training pentru conformitate se califică pentru mai multe instrumente de finanțare vendor și UE. Costul neconformității depășește costul unui program de training finanțat. Discuția despre finanțare devine simplă: oricum ești obligat legal să faci asta.",
+    "linkText": "Citește brief-ul Articolului 4 →",
+    "linkTo": "/resources/eu-ai-act-article-4"
+  },
+  "objection": {
     "kicker": "Obiecția pe care o auzim cel mai des",
     "titleStart": "„Nu avem buget",
-    "titleEm": "pentru asta.\"",
-    "intro": "E pasul care vine după training. Knowledge-ul e al tău; implementarea cere buget. În majoritatea cazurilor, bugetul există - doar că nu a fost identificat sau structurat corect.",
+    "titleEm": "pentru asta.”",
     "paragraphs": [
-      "În fiecare trimestru, Microsoft, AWS și Google alocă Market Development Funds partenerilor care susțin adopția platformei. Aceste bugete există tocmai pentru a finanța programe de skill-uri și implementare AI în interiorul organizațiilor.",
-      "Majoritatea rămân neutilizate, nu pentru că firmele nu se califică, ci pentru că nimeni nu a structurat programul într-un mod care să respecte criteriile de finanțare.",
-      "Același lucru e valabil pentru granturile UE de competitivitate digitală din Digital Europe și programele conexe. Aplicațiile pică nu pentru că munca nu e finanțabilă, ci pentru că sunt depuse ca planuri interne de training în loc de proiecte care se califică."
+      "În fiecare trimestru, Microsoft, AWS și Google alocă Market Development Funds partenerilor care susțin adopția platformei. Bugetele sunt gândite pentru a susține programe de skill-uri AI și implementare în interiorul organizațiilor. Majoritatea rămân neutilizate. Nu pentru că firmele nu se califică, ci pentru că nimeni nu a structurat programul într-un mod care să respecte criteriile de finanțare.",
+      "Același lucru e valabil pentru granturile UE de competitivitate digitală din Digital Europe și programele conexe. Aplicațiile pică nu pentru că munca nu e finanțabilă, ci pentru că sunt depuse ca planuri interne de training în loc de proiecte care se califică. Încadrarea e greșită. Munca e bună.",
+      "Transformăm programul tău de adopție AI în ceva pe care organismul de finanțare îl recunoaște. Tu rulezi programul. Îți recuperezi costul."
     ],
-    "italicStart": "Transformăm programul tău de adopție AI în ceva care se califică.",
-    "italicEm": "Tu rulezi programul. Îți recuperezi costul."
+    "highlight": "Bugetul există. Doar că nu a fost identificat sau structurat corect. În fiecare trimestru, banii ăștia stau neutilizați în timp ce companiile ne spun că nu-și permit implementarea."
   },
   "instruments": {
     "kicker": "Instrumente de finanțare disponibile",
     "titleStart": "Patru surse.",
     "titleEm": "Majoritatea companiilor au acces la cel puțin una.",
+    "intro": "Sunt programe actuale, numite, active — nu categorii generice. Sumele de credit, tier-urile de partener și ferestrele de eligibilitate se schimbă trimestrial. Le urmărim noi ca tu să nu fii nevoit.",
     "cardCta": "Programează un call pentru asta →",
     "items": [
       {
         "title": "Microsoft MDF & Founders Hub",
-        "audience": "Pentru parteneri Microsoft, implementări Copilot și startup-uri eligibile",
-        "body": "Două piste. Parteneri: Market Development Funds susțin adopția Copilot, Azure AI și Microsoft 365 - programele trebuie structurate pe rezultate concrete de adopție, nu pe training generic. Startup-uri & scaleup-uri: Microsoft for Startups Founders Hub oferă până la $150k credits Azure plus acces Copilot, GitHub și OpenAI API. Facilităm accesul pe ambele piste.",
-        "coverage": "licențe Copilot & Microsoft 365, consum Azure AI, credits OpenAI API prin Founders Hub, lucru de adopție prin partener, training & enablement",
+        "audience": "Microsoft · Două piste",
+        "body": "Parteneri: Market Development Funds susțin adopția Copilot, Azure AI și Microsoft 365. Programele trebuie structurate pe rezultate concrete de adopție. Startup-uri: Founders Hub oferă până la $150k credite Azure și OpenAI. Facilităm accesul pe ambele piste.",
+        "coverage": [
+          "Licențe Copilot & Microsoft 365",
+          "Consum Azure AI și OpenAI API",
+          "Lucru de adopție și training prin partener",
+          "Până la $150k credite prin Founders Hub"
+        ],
         "tag": "Tier de partener sau pistă startup"
       },
       {
         "title": "AWS co-sell & credits Activate",
-        "audience": "Pentru parteneri AWS, echipe adiacente cloud și startup-uri finanțate",
-        "body": "Două piste. Parteneri APN: bugete de co-sell finanțează programe de skill-uri digitale și adopție cloud aliniate la metricile AWS. Startup-uri & scaleup-uri: AWS Activate oferă până la $100k credits (prin VC, accelerator sau aplicație standalone) plus acces Bedrock și SageMaker. Facilităm accesul pe ambele piste.",
-        "coverage": "consum Bedrock & SageMaker, credits Activate până la $100k, credite de migrare, livrare prin partener, workshop-uri de enablement",
+        "audience": "AWS · Două piste",
+        "body": "Parteneri APN: bugete de co-sell finanțează programe de skill-uri digitale și adopție cloud aliniate la metricile AWS. Startup-uri: AWS Activate oferă până la $100k credite, inclusiv acces Bedrock și SageMaker. Facilităm accesul pe ambele piste.",
+        "coverage": [
+          "Consum Bedrock & SageMaker",
+          "Credite Activate până la $100k",
+          "Credite de migrare și adopție",
+          "Livrare și enablement prin partener"
+        ],
         "tag": "Partener APN sau pistă Activate"
       },
       {
-        "title": "Google Cloud partener & credits startup",
-        "audience": "Pentru parteneri Google Cloud, implementări Workspace și scaleup-uri AI-first",
-        "body": "Două piste. Parteneri: Google Cloud Partner Advantage alocă fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise și Workspace. Startup-uri & scaleup-uri: Google for Startups Cloud Program oferă până la $200k credits Google Cloud plus acces Gemini API și suport AI dedicat. Facilităm accesul pe ambele piste.",
-        "coverage": "consum Vertex AI & Gemini API, licențe Workspace + Gemini Enterprise, până la $200k credits cloud, livrare prin partener, credits pentru build de MVP",
+        "title": "Google Cloud partener & credite startup",
+        "audience": "Google Cloud · Două piste",
+        "body": "Parteneri: Google Cloud Partner Advantage alocă fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise și Workspace. Startup-uri: Google for Startups Cloud Program oferă până la $200k credite și suport AI dedicat.",
+        "coverage": [
+          "Consum Vertex AI & Gemini API",
+          "Licențe Workspace + Gemini Enterprise",
+          "Până la $200k credite cloud pe 2 ani",
+          "Credite pentru build de MVP și livrare prin partener"
+        ],
         "tag": "Pistă partener sau startup"
       },
       {
         "title": "Granturi UE & Erasmus+",
-        "audience": "Digital Europe, Horizon Europe și instrumente Erasmus+",
-        "body": "Finanțare UE pentru alfabetizare AI, skill-uri digitale și implementare în organizații. Include Digital Europe Programme (proiecte de deployment AI), Horizon Europe pe pilonii digitali (R&D și inovare) și Erasmus+ (cohorte de upskilling, mobilitate de training, parteneriate). Aplicațiile trebuie încadrate ca proiecte care se califică, cu rezultate măsurabile, nu ca bugete interne de training.",
-        "coverage": "proiecte de implementare AI, build & validare MVP, cohorte de upskilling prin Erasmus+, deployment AI prin Digital Europe, integrări & dev work, consultanță third-party",
+        "audience": "UE & național · Eligibil în România",
+        "body": "Finanțare UE pentru alfabetizare AI, skill-uri digitale și implementare în organizații. Include componentele de digitalizare PNRR România, POCIDIF, Digital Europe și cohorte de upskilling Erasmus+. Aplicațiile trebuie încadrate ca proiecte care se califică, cu rezultate măsurabile.",
+        "coverage": [
+          "Proiecte de implementare și deployment AI",
+          "Cohorte de upskilling prin Erasmus+",
+          "Pista de digitalizare PNRR și POCIDIF",
+          "Programe de alfabetizare AI prin Digital Europe"
+        ],
         "tag": "Eligibil în România"
       }
     ]
@@ -94,15 +119,15 @@
     "kicker": "Programe concrete cu care lucrăm",
     "titleStart": "Programe reale,",
     "titleEm": "numite.",
-    "intro": "Când zicem „patru surse\" ne referim la programele astea concrete — actuale, numite, active în 2026. Credite vendor în stânga, granturi UE și naționale în dreapta.",
+    "intro": "Când zicem „patru surse” ne referim la programele astea concrete — actuale, numite, active în 2026. Credite vendor în stânga, granturi UE și naționale în dreapta. Nu e exhaustiv — apelurile deschise și programele de partener se schimbă în fiecare trimestru.",
     "vendor": {
       "title": "Credite vendor & fonduri de partener",
       "items": [
-        { "name": "Microsoft for Startups Founders Hub", "what": "Până la $150k credite Azure + OpenAI, fără equity." },
-        { "name": "AWS Activate", "what": "Până la $100k credite AWS, inclusiv acces Bedrock." },
-        { "name": "Google for Startups Cloud Program", "what": "Până la $200k credite Google Cloud + Gemini, pe 2 ani." },
-        { "name": "Microsoft MDF (Market Development Funds)", "what": "Co-finanțare prin partener pentru adopția Copilot, Azure AI, Microsoft 365." },
+        { "name": "Microsoft for Startups Founders Hub", "what": "Până la $150k credite Azure + OpenAI. Fără equity." },
+        { "name": "Microsoft MDF (Market Development Funds)", "what": "Co-finanțare prin partener pentru adopția Copilot, Azure AI și Microsoft 365." },
+        { "name": "AWS Activate", "what": "Până la $100k credite AWS, inclusiv acces la modelele Bedrock." },
         { "name": "AWS co-sell & fonduri de partener", "what": "Bugete APN pentru programe de skill-uri digitale și adopție cloud." },
+        { "name": "Google for Startups Cloud Program", "what": "Până la $200k credite Google Cloud + Gemini pe 2 ani." },
         { "name": "Google Cloud Partner Advantage", "what": "Fonduri de co-marketing și adopție pentru Vertex AI, Gemini Enterprise, Workspace." },
         { "name": "Anthropic for Startups", "what": "Credite API Claude și acces prioritar pentru echipe early-stage." }
       ]
@@ -110,14 +135,46 @@
     "eu": {
       "title": "Granturi UE & naționale",
       "items": [
-        { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru skill-uri digitale, testare AI și acces EDIH." },
-        { "name": "Horizon Europe — apeluri AI", "what": "Finanțare de R&D și inovare, inclusiv subiecte AI." },
-        { "name": "PNRR România (digitalizare)", "what": "Planul Național de Redresare și Reziliență, componente de digitalizare." },
-        { "name": "POCIDIF", "what": "Programul Operațional Creștere Inteligentă, Digitalizare și Instrumente Financiare." },
-        { "name": "Erasmus+", "what": "Cohorte de upskilling, mobilitate de training și parteneriate." }
+        { "name": "PNRR România — digitalizare", "what": "Planul Național de Redresare și Reziliență, componente de digitalizare. Specific România, apeluri active 2025–2026." },
+        { "name": "POCIDIF", "what": "Programul Operațional Creștere Inteligentă, Digitalizare și Instrumente Financiare. Acoperă deployment AI și proiecte de upskilling." },
+        { "name": "Digital Europe Programme", "what": "Co-finanțare UE pentru skill-uri AI, medii de testare digitală și acces EDIH." },
+        { "name": "Horizon Europe — apeluri AI", "what": "Finanțare R&D și inovare, inclusiv subiecte AI și proiecte de consorțiu." },
+        { "name": "Erasmus+", "what": "Cohorte de upskilling, mobilitate de training și parteneriate transfrontaliere pentru forța de muncă." }
       ]
     },
     "footnote": "Nu e exhaustiv. Urmărim mai multe — apelurile deschise și programele partenerilor se schimbă în fiecare trimestru."
+  },
+  "process": {
+    "kicker": "Cum lucrăm",
+    "titleStart": "Noi facem structurarea.",
+    "titleEm": "Tu rulezi programul.",
+    "steps": [
+      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage și orice acord existent cu furnizori, ca să identificăm pentru ce programe te califici chiar acum." },
+      { "title": "Mapăm instrumentele eligibile", "body": "Pe baza auditului, identificăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică — un set specific cu criteriile de calificare confirmate." },
+      { "title": "Structurăm programul ca să se califice", "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă. E pasul pe care majoritatea companiilor îl ratează." },
+      { "title": "Scriem și depunem aplicația", "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici de rezultat. Le știm pentru că am făcut asta pentru propriile noastre programe." },
+      { "title": "Aliniem livrarea și rambursarea", "body": "Documentația de livrare e construită ca să se potrivească cu cerințele aplicației din ziua unu. Rambursarea nu se blochează pentru că hârtiile nu se potrivesc cu ce a fost depus." }
+    ],
+    "result": {
+      "label": "Rezultat",
+      "body": "Un program de adopție complet finanțat sau cu cost semnificativ redus. Pentru companiile unde aprobarea bugetului intern e blocajul, asta elimină obiecția. Pentru companiile unde bugetul există dar e greu de apărat, calificarea pentru finanțare vendor sau UE mută conversația de la „ar trebui să cheltuim asta?” la „ar trebui să lăsăm banii ăștia pe masă?”"
+    }
+  },
+  "model": {
+    "kicker": "Cum funcționează modelul nostru",
+    "titleStart": "Nu suntem o",
+    "titleEm": "consultanță de granturi.",
+    "paragraphs": [
+      "Suntem o companie de adopție AI. Auditul de finanțare și structurarea aplicației nu sunt un serviciu plătit de sine stătător. E parte din modul în care lucrăm cu companiile care vor să ruleze programele noastre dar au nevoie de buget aprobat în prealabil.",
+      "Structurăm finanțarea pentru că livrăm programul. Fondurile vendor acoperă licențe, integrări și implementare. TUS e partenerul de implementare. Aplicația de finanțare ne numește ca vendor de livrare. Asta e aranjamentul, spus pe șleau.",
+      "Dacă nu te califici pentru nimic, îți spunem asta în shortlist-ul scris, în 5 zile lucrătoare de la call-ul de scoping. Nu urmează niciun pitch. Nu s-a făcut niciun angajament."
+    ],
+    "points": [
+      { "label": "Ce acoperă call-ul", "body": "Mapăm relațiile tale cu furnizorii și eligibilitatea UE. Pleci cu o imagine clară a instrumentelor care se aplică, sumele estimate de acoperire și ce documente îți trebuie. Fără angajament până nu vezi cifrele." },
+      { "label": "Ce se întâmplă după", "body": "Dacă te califici și vrei să mergi mai departe, structurăm programul, scriem aplicația și coordonăm livrarea. TUS e partenerul de livrare numit în aplicație." },
+      { "label": "Cât te costă", "body": "Munca de structurare și aplicație e acoperită prin contractul de implementare. Dacă finanțarea nu se aprobă, nu plătești pentru munca de structurare." },
+      { "label": "Stimulentul nostru", "body": "Suntem plătiți să livrăm un program doar când ai bugetul să-l finanțezi. Aprobarea finanțării tale e interesul nostru comercial. Stimulentele sunt aliniate." }
+    ]
   },
   "engine": {
     "kicker": "În spatele scenei",
@@ -133,57 +190,35 @@
       { "title": "Coordonare consorțiu & co-aplicanți", "body": "Unde apelul cere consorțiu, ajutăm la alinierea co-aplicanților și coordonarea depunerii comune." }
     ]
   },
-  "process": {
-    "kicker": "Cum lucrăm",
-    "titleStart": "Noi facem structurarea.",
-    "titleEm": "Tu rulezi programul.",
-    "steps": [
-      { "title": "Auditul relațiilor cu furnizorii", "body": "Analizăm statusul tău actual de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage și orice acord existent cu furnizori, ca să identificăm pentru ce programe de finanțare te califici chiar acum." },
-      { "title": "Identificăm instrumentele eligibile", "body": "Pe baza auditului, mapăm programele MDF specifice, bugetele de co-sell sau instrumentele de grant UE care se potrivesc situației tale. Nu o listă generică, un set specific de opțiuni cu criteriile de calificare confirmate." },
-      { "title": "Structurăm programul ca să se califice", "body": "Reproiectăm scope-ul și documentația programului tău de adopție AI ca să respecte criteriile de finanțare. E pasul pe care majoritatea companiilor îl ratează. Conținutul programului rămâne același. Modul în care e încadrat și documentat se schimbă." },
-      { "title": "Scriem și susținem aplicația", "body": "Scriem sau co-autorăm propunerea MDF sau aplicația de grant. Aplicațiile pe fonduri vendor cer un anumit limbaj și anumite metrici. Le știm." },
-      { "title": "Coordonăm livrarea și rambursarea", "body": "Documentația de livrare e aliniată la cerințele programului din start, nu reconstruită la final. Rambursarea nu se blochează pentru că hârtiile nu se potrivesc cu aplicația." }
-    ]
-  },
-  "result": {
-    "kicker": "Rezultat",
-    "titleStart": "Un program de adopție",
-    "titleEm": "complet finanțat sau cu cost semnificativ redus.",
-    "paragraphs": [
-      "Pentru companiile unde aprobarea bugetului intern e blocajul, asta elimină complet obiecția.",
-      "Pentru companiile unde bugetul există dar e greu de apărat, calificarea pentru finanțare vendor sau UE mută conversația de la „ar trebui să cheltuim asta?\" la „ar trebui să lăsăm banii ăștia pe masă?\"."
-    ],
-    "italicStart": "Munca se întâmplă oricum.",
-    "italicEm": "Finanțarea decide dacă te costă ceva."
-  },
-  "quote": {
-    "attribution": "Despre calificare",
-    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există - există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
-  },
-  "eventsBridge": {
-    "kicker": "Înainte să o finanțezi",
-    "titleStart": "Vrei să vezi cum arată o sesiune live",
-    "titleEm": "înainte să o finanțezi?",
-    "body": "Vino într-o sesiune live de prototipare și vezi exact ce produce programul - prototipuri funcționale, capabilitate de echipă, livrabile - înainte să structurezi finanțarea în jurul lui.",
-    "cta": "Vezi sesiuni live →"
-  },
   "faq": {
     "kicker": "Întrebări frecvente",
     "titleStart": "Înainte de",
     "titleEm": "call-ul de scoping.",
     "items": [
-      { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie, tipic 3–5 săptămâni: 1 săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă tipic 2–6 săptămâni." },
-      { "q": "Dacă nu suntem partener Microsoft / AWS / Google?", "a": "Tot avem opțiuni. Granturile digitale UE nu cer status de partener. Pentru Microsoft, AWS și Google Cloud în mod specific, fie rutăm prin una din relațiile noastre de partener, fie te ajutăm să-ți deschizi status de partener în paralel - majoritatea companiilor care deja plătesc Copilot, AWS sau Workspace/Gemini se califică pentru un tier de intrare în câteva săptămâni." },
-      { "q": "Cum se face efectiv rambursarea?", "a": "Depinde de instrument. MDF vendor se plătește de obicei pe milestone-uri aprobate - structurăm livrarea ca documentația să se potrivească cu aplicația din ziua unu. Granturile UE merg tipic pe tranșe contra livrabile verificate. În ambele cazuri programul rulează prima dată; banii vin după fiecare milestone verificat." },
-      { "q": "Ce documente cerem de la voi?", "a": "Pentru audit: acordurile actuale cu vendor-ii (statusul de partener Microsoft, tier-ul AWS, statusul Google Cloud Partner Advantage dacă există), facturi recente pentru cheltuiala AI/cloud și un brief scurt despre programul pe care vrei să-l rulezi. Pentru aplicația în sine: detalii despre organizație, headcount, rezultate țintă. Restul scriem noi." },
-      { "q": "Cât ne costă?", "a": "Call-ul de scoping de 30 de minute și shortlist-ul scris de instrumente sunt gratuite. Dacă mergem mai departe, munca de structurare și aplicație are scope per program - de obicei un fee fix plus o componentă de succes legată de finanțarea aprobată efectiv. Confirmăm cifrele înainte de orice angajament." },
-      { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem în shortlist, în scris, în 5 zile lucrătoare. Fără fee, fără angajament. Majoritatea companiilor se califică pentru cel puțin un instrument, dar dacă structura chiar nu se potrivește, nu fabricăm o aplicație." }
+      { "q": "Cât durează o aplicație MDF?", "a": "De la kick-off până la submisie: tipic 3–5 săptămâni. O săptămână de audit și mapare de instrumente, 1–2 săptămâni de structurare a programului, 1–2 săptămâni de scris și sign-off cu partenerul. Fereastra de decizie a vendor-ului mai adaugă 2–6 săptămâni peste momentul depunerii.\n\nTimeline-urile pentru granturi UE sunt mai lungi și variază pe instrument. Apelurile PNRR și POCIDIF au ferestre fixe de depunere. Le urmărim și le semnalăm înainte să se închidă." },
+      { "q": "Dacă nu suntem partener Microsoft, AWS sau Google?", "a": "Nu trebuie să fii partener formal ca să accesezi pistele de startup și scaleup. AWS Activate, Google for Startups și Microsoft Founders Hub sunt accesibile fără certificare de partener. Pentru MDF enterprise, faptul că ești deja client al produselor lor cloud sau workspace e tipic suficient.\n\nVerificăm exact în ce tier ești în call-ul de scoping și mapăm cea mai rapidă cale spre instrumentele care se aplică situației tale." },
+      { "q": "Cum funcționează efectiv rambursarea?", "a": "Pentru credite vendor (AWS, Google, Microsoft Founders Hub), fondurile se aplică direct pe contul tău de billing ca să compenseze costurile de infrastructură și API. Nimic de revendicat — creditul e acolo când îți trebuie.\n\nPentru granturi UE și MDF de partener: rulezi programul, plătești facturile și depui dovada execuției. Vendor-ul sau organismul UE te rambursează direct. Structurăm documentația de livrare din ziua unu ca să se potrivească exact cu criteriile de rambursare — nu reconstruită la final." },
+      { "q": "Ce documente cerem de la voi?", "a": "Pentru auditul inițial: nimic în afară de 30 de minute din timpul tău. Trebuie să înțelegem stack-ul tău tehnologic actual și relațiile cu furnizorii. Asta e tot input-ul pentru call-ul de scoping.\n\nDupă ce identificăm o pistă finanțabilă, vom avea nevoie de profilul standard al companiei și, unde se aplică, acces read-only la portalul tău de partener vendor. Dăm o checklist specifică de documente la pasul ăla." },
+      { "q": "Cât ne costă?", "a": "Auditul de finanțare și structurarea aplicației sunt gratuite. De ce? Pentru că suntem o companie de adopție AI, nu o consultanță de granturi. Facem munca grea ca să-ți aprobi bugetul cu o singură condiție: odată ce finanțarea e securizată, The Unlearning School e partenerul tău pentru livrarea programului de adopție AI.\n\nNoi aducem structura care deblochează bugetul. Tu rulezi programul cu noi. Asta e aranjamentul, spus pe șleau." },
+      { "q": "Ce se întâmplă dacă nu ne calificăm pentru nimic?", "a": "Îți spunem imediat în call-ul de scoping. Nu pierdem timp structurând aplicații care nu vor câștiga, pentru că suntem plătiți doar când rulezi efectiv programul cu noi. Dacă finanțarea nu e acolo, o spunem și ne despărțim.\n\nÎn practică, majoritatea companiilor mid-market din România se califică pentru cel puțin un instrument. Pistele de digitalizare PNRR și cohortele de upskilling Erasmus+ acoperă o gamă largă de situații. Aflăm în 30 de minute." }
     ]
+  },
+  "eventsBridge": {
+    "kicker": "Înainte să o finanțezi",
+    "titleStart": "Vrei să vezi ce produce o sesiune",
+    "titleEm": "înainte să o finanțezi?",
+    "body": "Vino într-o sesiune live de prototipare și vezi exact livrabilele — prototipuri funcționale, capabilitate de echipă construită, artefacte practice — înainte să structurezi finanțarea în jurul lor.",
+    "cta": "Vezi sesiuni live →"
+  },
+  "quote": {
+    "attribution": "Despre calificare · The Unlearning School",
+    "body": "Majoritatea companiilor se califică pentru cel puțin un instrument. Întrebarea nu e dacă finanțarea există — există. Întrebarea e dacă programul tău e structurat într-un mod pe care organismul de finanțare îl va recunoaște."
   },
   "cta": {
     "title": "Află pentru ce te califici.",
-    "subtitle": "Un apel de 30 de minute pentru a mapa relațiile tale cu furnizorii și eligibilitatea UE. Revenim cu un shortlist scris de instrumente și acoperire estimată în 5 zile lucrătoare. Fără angajament până nu vezi cifrele.",
+    "subtitle": "Un call de 30 de minute. Un shortlist scris în 5 zile. Mapăm relațiile tale cu furnizorii și eligibilitatea UE într-un singur call. Primești un shortlist scris de instrumente, acoperire estimată și pașii următori în 5 zile lucrătoare. Fără angajament până nu vezi cifrele.",
     "ctaText": "Programează call de finanțare →",
+    "secondaryText": "Vezi întâi programele ↗",
     "note": "Gratuit · Fără angajament · Shortlist scris în 5 zile lucrătoare"
   }
 }
