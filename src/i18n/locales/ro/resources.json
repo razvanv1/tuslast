@@ -51,7 +51,9 @@
         "name": "Lovable Founder Series",
         "context": "Discuție de fondator despre adopția AI în echipele non-tech. Înscrierile se deschid curând.",
         "linkLabel": "Detalii →",
-        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20Mai%202026"
+        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20Mai%202026",
+        "notifyLabel": "Anunță-mă când se deschid înscrierile →",
+        "notifyUrl": "mailto:hello@unlearning.ro?subject=Anun%C8%9B%C4%83-m%C4%83%20%E2%80%94%20Lovable%20Founder%20Series%20Mai%202026&body=V%C4%83%20rog%20s%C4%83%20m%C4%83%20ad%C4%83uga%C8%9Bi%20pe%20lista%20de%20a%C8%99teptare%20pentru%20Lovable%20Founder%20Series%20Mai%202026.%20Nume%3A%20%5Bnumele%20t%C4%83u%5D%2C%20Companie%3A%20%5Bop%C8%9Bional%5D."
       }
     ]
   },
