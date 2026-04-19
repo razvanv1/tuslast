@@ -36,45 +36,55 @@
       "ribbonBadge": "Free · No signup"
     }
   },
-  "entry": {
-    "kicker": "Start here",
-    "titleStart": "Pick the entry point",
-    "titleEm": "that matches the pressure.",
-    "ifLabel": "If:",
+  "library": {
+    "kicker": "The Library",
+    "titleStart": "Articles worth",
+    "titleEm": "your time.",
+    "subtitle": "Sharp, specific pieces on AI adoption, compliance, and execution. No filler.",
+    "readTime": "min read",
     "items": [
-      { "tag": "Funding noise", "desc": "Read the pieces on funding intelligence, opportunity selection, vendor credits, public and private routes, and diversification of funding sources." },
-      { "tag": "AI in the team", "desc": "Start with AI at work, role-based use, habits, judgment, and what responsible adoption looks like inside real teams." },
-      { "tag": "Weak traction", "desc": "Go to execution friction, weak-fit initiatives, adoption drag, decision bottlenecks, work that keeps moving without progress." },
-      { "tag": "Expertise → product", "desc": "Use the academy and learning systems section for academy design, learning products, partner academies, customer education." }
-    ]
-  },
-  "formats": {
-    "kicker": "What you will find",
-    "titleStart": "Six formats.",
-    "titleEm": "One library.",
-    "items": [
-      { "name": "Articles & analysis", "desc": "Sharp pieces on funding, AI, execution, and the future of work, usable thinking, not recycled summaries." },
-      { "name": "Podcast episodes", "desc": "Conversations and solo episodes that turn messy themes into something easier to challenge, use, and apply." },
-      { "name": "Guides & working notes", "desc": "Practical material for teams that need a starting point, stronger framing, or a way to move from idea to action." },
-      { "name": "Studies & case notes", "desc": "Selected research, examples, observations, and supporting material for situations beyond surface-level content." },
-      { "name": "Tools, templates, checklists", "desc": "Simple assets that can be used inside actual work, not only discussed." },
-      { "name": "Frameworks & methods", "desc": "Selected pieces that show how The Unlearning School thinks and works behind the scenes." }
-    ]
-  },
-  "topics": {
-    "kicker": "Browse",
-    "titleStart": "By",
-    "titleEm": "topic.",
-    "topicLabel": "Topic",
-    "items": [
-      "Funding intelligence",
-      "AI at work",
-      "Execution friction",
-      "Future of work",
-      "Academies & learning systems",
-      "Tools & frameworks",
-      "Podcast & insights",
-      "Hermes Agent"
+      {
+        "kicker": "Compliance",
+        "title": "EU AI Act Article 4 — what it means for non-tech teams",
+        "excerpt": "The literacy mandate is already in force. Here's what HR, Ops and managers need to do this quarter.",
+        "readTime": 6,
+        "to": "/resources/eu-ai-act-article-4"
+      },
+      {
+        "kicker": "Adoption",
+        "title": "Why Copilot rollouts stall after 30 days",
+        "excerpt": "Licenses bought, training done, usage flat. The pattern repeats — and the fix isn't more features.",
+        "readTime": 5,
+        "to": "/resources/copilot-rollout-stalls"
+      },
+      {
+        "kicker": "Frameworks",
+        "title": "The Lewin model applied to AI adoption",
+        "excerpt": "Unfreeze, change, refreeze — a 70-year-old model that explains why your AI rollout is stuck.",
+        "readTime": 7,
+        "to": "/resources/lewin-model-ai-adoption"
+      },
+      {
+        "kicker": "Workflows",
+        "title": "AI for procurement: 3 workflows, before/after",
+        "excerpt": "RFP review, vendor scoring, contract redlining. Concrete time savings, not slideware promises.",
+        "readTime": 8,
+        "to": "/resources/ai-procurement-workflows"
+      },
+      {
+        "kicker": "Funding",
+        "title": "How to qualify for vendor MDF on AI training",
+        "excerpt": "Microsoft, Google and AWS will co-fund your team's AI training. Most companies never ask.",
+        "readTime": 6,
+        "to": "/resources/vendor-mdf-ai-training"
+      },
+      {
+        "kicker": "Tools",
+        "title": "Hermes Agent vs ChatGPT — when to use which",
+        "excerpt": "A general assistant and a domain agent solve different problems. A practical decision guide.",
+        "readTime": 5,
+        "to": "/resources/hermes-vs-chatgpt"
+      }
     ]
   },
   "newsletter": {
