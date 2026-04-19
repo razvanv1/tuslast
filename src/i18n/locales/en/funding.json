@@ -63,7 +63,7 @@
     "titleStart": "Four sources.",
     "titleEm": "Most companies have access to at least one.",
     "intro": "These are current, named, active programmes - not generic categories. Credit amounts, partner tiers, and eligibility windows shift quarterly. We track them so you don't have to.",
-    "cardCta": "Book a call about this →",
+    "cardCta": "Book the AI Adoption Call →",
     "items": [
       {
         "title": "Microsoft MDF & Founders Hub",
@@ -316,7 +316,7 @@
   "cta": {
     "title": "Find out what you qualify for.",
     "subtitle": "A 30-minute call. A written shortlist in 5 days. We map your vendor relationships and EU eligibility in a single call. You get a written shortlist of instruments, estimated coverage, and next steps within 5 business days. No commitment until you see the numbers.",
-    "ctaText": "Book a funding call →",
+    "ctaText": "Book the AI Adoption Call →",
     "secondaryText": "See programmes first ↗",
     "note": "Free · No commitment · Written shortlist in 5 business days"
   }
