@@ -8,8 +8,8 @@
   "hero": {
     "tag": "Resources",
     "title": "Useful material for teams working through AI, funding, execution, and change.",
-    "subtitle": "Articles, podcast episodes, studies, working notes, frameworks, and practical tools for teams dealing with opportunity overload, uneven AI adoption, execution drag, academy building, and the future of work.",
-    "ctaText": "Join The Unlearning Pill →",
+    "subtitle": "The AI Literacy Compliance Playbook, upcoming events where we show up, and a curated list of credits, free tiers and open-source tools that make AI cheap to start with.",
+    "ctaText": "Read the Playbook →",
     "secondaryText": "AI Adoption Call"
   },
   "playbook": {
@@ -36,70 +36,74 @@
       "ribbonBadge": "Free · No signup"
     }
   },
-  "library": {
-    "kicker": "The Library",
-    "titleStart": "Articles worth",
-    "titleEm": "your time.",
-    "subtitle": "Sharp, specific pieces on AI adoption, compliance, and execution. No filler.",
-    "readTime": "min read",
+  "events": {
+    "kicker": "Upcoming",
+    "titleStart": "Where to",
+    "titleEm": "meet us.",
+    "subtitle": "Public events, talks and roundtables on AI adoption, EU AI Act compliance, and funding intelligence. No webinars-for-leads.",
+    "registerLabel": "Register →",
+    "detailsLabel": "Details →",
+    "emptyState": "No public events scheduled right now. Book an AI Adoption Call instead.",
+    "emptyCta": "AI Adoption Call →",
     "items": [
       {
-        "kicker": "Compliance",
-        "title": "EU AI Act Article 4 — what it means for non-tech teams",
-        "excerpt": "The literacy mandate is already in force. Here's what HR, Ops and managers need to do this quarter.",
-        "readTime": 6,
-        "to": "/resources/eu-ai-act-article-4"
-      },
-      {
-        "kicker": "Adoption",
-        "title": "Why Copilot rollouts stall after 30 days",
-        "excerpt": "Licenses bought, training done, usage flat. The pattern repeats — and the fix isn't more features.",
-        "readTime": 5,
-        "to": "/resources/copilot-rollout-stalls"
-      },
-      {
-        "kicker": "Frameworks",
-        "title": "The Lewin model applied to AI adoption",
-        "excerpt": "Unfreeze, change, refreeze — a 70-year-old model that explains why your AI rollout is stuck.",
-        "readTime": 7,
-        "to": "/resources/lewin-model-ai-adoption"
-      },
-      {
-        "kicker": "Workflows",
-        "title": "AI for procurement: 3 workflows, before/after",
-        "excerpt": "RFP review, vendor scoring, contract redlining. Concrete time savings, not slideware promises.",
-        "readTime": 8,
-        "to": "/resources/ai-procurement-workflows"
-      },
-      {
-        "kicker": "Funding",
-        "title": "How to qualify for vendor MDF on AI training",
-        "excerpt": "Microsoft, Google and AWS will co-fund your team's AI training. Most companies never ask.",
-        "readTime": 6,
-        "to": "/resources/vendor-mdf-ai-training"
-      },
-      {
-        "kicker": "Tools",
-        "title": "Hermes Agent vs ChatGPT — when to use which",
-        "excerpt": "A general assistant and a domain agent solve different problems. A practical decision guide.",
-        "readTime": 5,
-        "to": "/resources/hermes-vs-chatgpt"
+        "date": "May 2026",
+        "name": "Lovable Founder Series",
+        "context": "Founder talk on AI adoption inside non-tech teams. Registration opens soon.",
+        "linkLabel": "Details →",
+        "url": "mailto:hello@unlearning.ro?subject=Lovable%20Founder%20Series%20May%202026"
       }
     ]
   },
-  "newsletter": {
-    "kicker": "The Unlearning Pill",
-    "titleStart": "Signal,",
-    "titleEm": "not noise.",
-    "body": "Selected updates on funding intelligence, AI at work, execution friction, academy building, and the future of work.",
-    "bullets": [
-      "Selected articles and notes",
-      "Practical insights from the podcast",
-      "Funding and opportunity observations",
-      "Working frameworks and useful tools",
-      "Updates worth reading, not inbox filler"
-    ],
-    "button": "Join the newsletter →"
+  "cheapAi": {
+    "kicker": "Reference",
+    "titleStart": "AI on the",
+    "titleEm": "cheap.",
+    "subtitle": "Credits, free tiers and open-source tools that let teams pilot AI without a procurement cycle. Updated for 2026.",
+    "groups": [
+      {
+        "title": "Vendor credits",
+        "blurb": "Sign up as a startup or SME and get cloud + AI credits worth thousands.",
+        "items": [
+          { "name": "Microsoft for Startups Founders Hub", "what": "Up to $150k in Azure + OpenAI credits, no equity required.", "url": "https://www.microsoft.com/en-us/startups" },
+          { "name": "Google for Startups Cloud Program", "what": "Up to $200k in Google Cloud + Gemini credits over 2 years.", "url": "https://cloud.google.com/startup" },
+          { "name": "AWS Activate", "what": "Up to $100k in AWS credits, including Bedrock model access.", "url": "https://aws.amazon.com/activate/" },
+          { "name": "Anthropic for Startups", "what": "Claude API credits and priority access for early-stage teams.", "url": "https://www.anthropic.com/startups" }
+        ]
+      },
+      {
+        "title": "Free tiers worth using",
+        "blurb": "Real free tiers, not 14-day trials. Good enough for prototypes and small workloads.",
+        "items": [
+          { "name": "Lovable AI Gateway", "what": "Free window on Gemini 2.5 Flash. No key, no card.", "url": "https://docs.lovable.dev/features/ai" },
+          { "name": "Groq", "what": "Very fast inference on Llama and Mixtral, generous free tier.", "url": "https://console.groq.com/" },
+          { "name": "Mistral La Plateforme", "what": "Free API access to Mistral Small for experimentation.", "url": "https://console.mistral.ai/" },
+          { "name": "Together AI", "what": "Free credits on Llama, Qwen and other open models.", "url": "https://www.together.ai/" }
+        ]
+      },
+      {
+        "title": "Open-source models & tools",
+        "blurb": "Run AI locally or self-host. Zero per-token cost, full data control.",
+        "items": [
+          { "name": "Llama 3.x", "what": "Meta's flagship open-weight family. Strong general-purpose models.", "url": "https://llama.meta.com/" },
+          { "name": "Mistral & Mixtral", "what": "European open models, efficient for European-language workloads.", "url": "https://mistral.ai/technology/" },
+          { "name": "Qwen", "what": "Alibaba's open models, top of the charts on multilingual tasks.", "url": "https://qwenlm.github.io/" },
+          { "name": "Whisper", "what": "OpenAI's open-source speech-to-text. Runs locally, multilingual.", "url": "https://github.com/openai/whisper" },
+          { "name": "Ollama", "what": "Run open-source LLMs locally with one command.", "url": "https://ollama.com/" },
+          { "name": "LM Studio", "what": "Desktop app to run open models on your laptop, GUI included.", "url": "https://lmstudio.ai/" }
+        ]
+      },
+      {
+        "title": "EU funding routes · 2026",
+        "blurb": "Public funding programmes that co-fund AI adoption, training and pilots.",
+        "items": [
+          { "name": "Digital Europe Programme", "what": "EU co-funding for digital skills, AI testing and EDIH access.", "url": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme" },
+          { "name": "Horizon Europe — AI calls", "what": "R&D and innovation funding, including AI-focused topics.", "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" },
+          { "name": "PNRR Romania · digitalization", "what": "National recovery funds for SME digitalization and AI adoption.", "url": "https://mfe.gov.ro/pnrr/" },
+          { "name": "POCIDIF / programe digitalizare RO", "what": "Operational programmes co-funding digital + AI projects in Romania.", "url": "https://mfe.gov.ro/" }
+        ]
+      }
+    ]
   },
   "cta": {
     "title": "Start with the AI Adoption Call.",

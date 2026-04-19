@@ -8,21 +8,37 @@ import AIScoreCTA from "@/components/AIScoreCTA";
 import { SectionHeading } from "@/components/Editorial";
 import { Link } from "@/components/LocalizedLink";
 
-interface LibraryItem {
-  kicker: string;
+interface EventItem {
+  date: string;
+  name: string;
+  context: string;
+  linkLabel: string;
+  url: string;
+}
+
+interface CheapAiItem {
+  name: string;
+  what: string;
+  url: string;
+}
+
+interface CheapAiGroup {
   title: string;
-  excerpt: string;
-  readTime: number;
-  to: string;
+  blurb: string;
+  items: CheapAiItem[];
 }
 
 const Resources = () => {
   const { t, i18n } = useTranslation("resources");
   useEffect(() => { document.title = t("documentTitle"); }, [t]);
 
-  const libraryItems = t("library.items", { returnObjects: true }) as LibraryItem[];
-  
   const playbookBullets = t("playbook.bullets", { returnObjects: true }) as string[];
+  const events = t("events.items", { returnObjects: true }) as EventItem[];
+  const cheapAiGroups = t("cheapAi.groups", { returnObjects: true }) as CheapAiGroup[];
+
+  const playbookHref = i18n.language?.startsWith("ro")
+    ? "/resources/ai-literacy-playbook-ro.html"
+    : "/resources/ai-literacy-playbook.html";
 
   return (
     <>
@@ -33,7 +49,7 @@ const Resources = () => {
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "The Unlearning Pill - Resources",
+          name: "The Unlearning School - Resources",
           description: t("seo.description"),
           inLanguage: i18n.language?.startsWith("ro") ? "ro" : "en",
           isPartOf: { "@type": "WebSite", name: "The Unlearning School", url: "https://tuslast.lovable.app/" },
@@ -44,7 +60,7 @@ const Resources = () => {
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
         ctaText={t("hero.ctaText")}
-        ctaTo="mailto:hello@unlearning.ro?subject=Subscribe%20to%20The%20Unlearning%20Pill"
+        ctaTo={playbookHref}
         secondaryText={t("hero.secondaryText")}
         secondaryTo="/assessment"
       />
@@ -68,7 +84,7 @@ const Resources = () => {
             </ul>
             <div className="flex flex-wrap gap-3">
               <a
-                href={i18n.language?.startsWith("ro") ? "/resources/ai-literacy-playbook-ro.html" : "/resources/ai-literacy-playbook.html"}
+                href={playbookHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-7 py-4 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors"
@@ -83,7 +99,7 @@ const Resources = () => {
 
           <div className="md:col-span-7 flex justify-center md:justify-end">
             <a
-              href={i18n.language?.startsWith("ro") ? "/resources/ai-literacy-playbook-ro.html" : "/resources/ai-literacy-playbook.html"}
+              href={playbookHref}
               target="_blank"
               rel="noopener noreferrer"
               className="relative block bg-paper p-3 pb-16 card-shadow w-[280px] sm:w-[340px] md:w-[400px] max-w-full transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
@@ -116,28 +132,87 @@ const Resources = () => {
         </div>
       </Section>
 
+      {/* Events */}
       <Section>
         <SectionHeading
-          kicker={t("library.kicker")}
-          title={<>{t("library.titleStart")} <em className="text-red">{t("library.titleEm")}</em></>}
+          kicker={t("events.kicker")}
+          title={<>{t("events.titleStart")} <em className="text-red">{t("events.titleEm")}</em></>}
         />
-        <p className="text-paper/70 text-[15px] max-w-2xl mb-10 -mt-4">{t("library.subtitle")}</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-paper/10">
-          {libraryItems.map((item) => (
-            <div
-              key={item.to}
-              aria-disabled="true"
-              className="bg-background border-2 border-paper/15 p-7 md:p-8 flex flex-col opacity-60 cursor-not-allowed"
+        <p className="text-paper/70 text-[15px] max-w-2xl mb-10 -mt-4">{t("events.subtitle")}</p>
+
+        {events.length === 0 ? (
+          <div className="border-2 border-paper/15 p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p className="text-paper/70 text-[15px] max-w-xl">{t("events.emptyState")}</p>
+            <Link
+              to="/assessment"
+              className="inline-flex items-center px-6 py-3 bg-red text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-paper hover:text-ink transition-colors whitespace-nowrap"
             >
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">{item.kicker}</p>
-              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-3">
-                {item.title}
-              </h3>
-              <p className="text-paper/70 text-sm leading-relaxed mb-6">{item.excerpt}</p>
-              <div className="mt-auto pt-4 border-t border-paper/15 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.25em] text-paper/50">
-                <span>{item.readTime} {t("library.readTime")}</span>
-                <span className="text-paper/40">{i18n.language?.startsWith("ro") ? "În curând" : "Coming soon"}</span>
-              </div>
+              {t("events.emptyCta")}
+            </Link>
+          </div>
+        ) : (
+          <ul className="border-t-2 border-paper/15">
+            {events.map((ev, i) => (
+              <li
+                key={i}
+                className="grid md:grid-cols-12 gap-4 md:gap-6 py-7 border-b-2 border-paper/15 group"
+              >
+                <div className="md:col-span-2">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-red">{ev.date}</p>
+                </div>
+                <div className="md:col-span-7">
+                  <h3 className="font-display text-2xl md:text-[28px] text-paper leading-[1.1] mb-2">{ev.name}</h3>
+                  <p className="text-paper/70 text-sm leading-relaxed">{ev.context}</p>
+                </div>
+                <div className="md:col-span-3 md:text-right">
+                  <a
+                    href={ev.url}
+                    target={ev.url.startsWith("http") ? "_blank" : undefined}
+                    rel={ev.url.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="inline-flex items-center font-mono text-[11px] uppercase tracking-[0.25em] text-paper hover:text-red transition-colors"
+                  >
+                    {ev.linkLabel}
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </Section>
+
+      {/* AI on the cheap */}
+      <Section variant="darker">
+        <SectionHeading
+          kicker={t("cheapAi.kicker")}
+          title={<>{t("cheapAi.titleStart")} <em className="text-red">{t("cheapAi.titleEm")}</em></>}
+        />
+        <p className="text-paper/70 text-[15px] max-w-2xl mb-12 -mt-4">{t("cheapAi.subtitle")}</p>
+
+        <div className="grid md:grid-cols-2 gap-px bg-paper/10">
+          {cheapAiGroups.map((group, gi) => (
+            <div key={gi} className="bg-section-darker p-7 md:p-8">
+              <h3 className="font-display text-2xl md:text-[26px] text-paper leading-[1.1] mb-2">{group.title}</h3>
+              <p className="text-paper/60 text-sm leading-relaxed mb-6">{group.blurb}</p>
+              <ul className="space-y-4 border-t border-paper/15 pt-5">
+                {group.items.map((item, ii) => (
+                  <li key={ii} className="border-b border-paper/10 pb-4 last:border-0 last:pb-0">
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block group"
+                    >
+                      <div className="flex items-baseline justify-between gap-3 mb-1">
+                        <span className="font-display text-lg text-paper group-hover:text-red transition-colors leading-tight">
+                          {item.name}
+                        </span>
+                        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-paper/40 group-hover:text-red transition-colors shrink-0">→</span>
+                      </div>
+                      <p className="text-paper/65 text-sm leading-relaxed">{item.what}</p>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
