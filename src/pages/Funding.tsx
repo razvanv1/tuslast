@@ -136,7 +136,33 @@ const Funding = () => {
 
       <Section>
         <SectionHeading
-          kicker={t("process.kicker")}
+          kicker={t("programmes.kicker")}
+          title={<>{t("programmes.titleStart")} <em className="text-red">{t("programmes.titleEm")}</em></>}
+          intro={t("programmes.intro")}
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-paper/10 mt-8">
+          {[programmesVendor, programmesEu].map((group, gi) => (
+            <div key={gi} className="bg-background p-7 md:p-9 flex flex-col">
+              <h3 className="font-display text-2xl text-paper leading-tight mb-5 pb-4 border-b border-paper/15">
+                {group.title}
+              </h3>
+              <ul className="space-y-4">
+                {group.items.map((it, ii) => (
+                  <li key={ii} className="border-b border-paper/10 pb-4 last:border-0 last:pb-0">
+                    <p className="font-display text-lg text-paper leading-tight mb-1">{it.name}</p>
+                    <p className="text-paper/70 text-sm leading-relaxed">{it.what}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/40 mt-6">
+          {t("programmes.footnote")}
+        </p>
+      </Section>
+
+      <Section>
           title={<>{t("process.titleStart")} <em className="text-red">{t("process.titleEm")}</em></>}
         />
         {steps.map((s, idx) => (
