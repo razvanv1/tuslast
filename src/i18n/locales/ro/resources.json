@@ -61,7 +61,7 @@
     "kicker": "Referință",
     "titleStart": "Oportunități gratuite și",
     "titleEm": "credite bonus.",
-    "subtitle": "Perks de la furnizori, free tier-uri și opțiuni on-prem care permit echipelor să adopte AI fără a plăti preț întreg — și fără a trimite date sensibile către un chatbot din US. Actualizat pentru 2026.",
+    "subtitle": "Perks de la furnizori, free tier-uri și opțiuni on-prem care permit echipelor să adopte AI fără a plăti preț întreg - și fără a trimite date sensibile către un chatbot din US. Actualizat pentru 2026.",
     "groups": [
       {
         "title": "Credite de la furnizori",
@@ -124,7 +124,7 @@
       },
       {
         "title": "Modele on-prem și locale · privacy first",
-        "blurb": "Companiile au nevoie de privacy, nu de un abonament la ChatGPT. Rulezi modele open pe hardware-ul tău — zero date care părăsesc clădirea.",
+        "blurb": "Companiile au nevoie de privacy, nu de un abonament la ChatGPT. Rulezi modele open pe hardware-ul tău - zero date care părăsesc clădirea.",
         "items": [
           {
             "name": "Gemma (Google)",
@@ -171,11 +171,11 @@
     "kicker": "Finanțare · în lucru",
     "titleStart": "Transformăm și",
     "titleEm": "finanțările în aplicații depuse.",
-    "body": "Fonduri structurale UE, Horizon, programe de redresare, granturi naționale de digitalizare — peisajul e dens, regulile se schimbă cu fiecare ciclu, iar majoritatea echipelor pierd apeluri nu pentru că nu se califică, ci pentru că nimeni nu a avut bandwidth să scrie aplicația până la deadline. Construim o practică dedicată exact pentru acest gap: monitorizăm continuu apelurile care se potrivesc cu profilul tău, le scorăm după fit și efort și producem draft-uri structurate plecând de la munca ta anterioară, ca echipa să rafineze, nu să pornească de la pagină goală.",
-    "bodyTwo": "E aceeași logică ca în partea de AI — eliminăm munca manuală repetitivă, lăsăm decizia umană în buclă și depunem ce trebuia depus. Platforma completă se lansează mai târziu în 2026. Până atunci, dacă organizația ta funcționează pe granturi și vrei un preview privat sau un scan manual al apelurilor deschise pentru profilul tău, îl facem pe un call.",
+    "body": "Fonduri structurale UE, Horizon, programe de redresare, granturi naționale de digitalizare - peisajul e dens, regulile se schimbă cu fiecare ciclu, iar majoritatea echipelor pierd apeluri nu pentru că nu se califică, ci pentru că nimeni nu a avut bandwidth să scrie aplicația până la deadline. Construim o practică dedicată exact pentru acest gap: monitorizăm continuu apelurile care se potrivesc cu profilul tău, le scorăm după fit și efort și producem draft-uri structurate plecând de la munca ta anterioară, ca echipa să rafineze, nu să pornească de la pagină goală.",
+    "bodyTwo": "E aceeași logică ca în partea de AI - eliminăm munca manuală repetitivă, lăsăm decizia umană în buclă și depunem ce trebuia depus. Platforma completă se lansează mai târziu în 2026. Până atunci, dacă organizația ta funcționează pe granturi și vrei un preview privat sau un scan manual al apelurilor deschise pentru profilul tău, îl facem pe un call.",
     "depthKicker": "Practica completă",
     "depthTitle": "Programe concrete & strat operațional.",
-    "depthBody": "Lista completă a creditelor vendor, granturilor UE și naționale cu care lucrăm — plus motorul operațional din spatele fiecărui angajament de finanțare — se află pe pagina de Finanțare.",
+    "depthBody": "Lista completă a creditelor vendor, granturilor UE și naționale cu care lucrăm - plus motorul operațional din spatele fiecărui angajament de finanțare - se află pe pagina de Finanțare.",
     "depthCta": "Vezi practica completă de finanțare →",
     "ctaText": "Cere un scan privat de finanțare →",
     "ctaTo": "/assessment",

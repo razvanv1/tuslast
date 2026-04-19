@@ -325,10 +325,10 @@ const Index = () => {
         </div>
       </Section>
 
-      {/* NEW — Founder mini-bio */}
+      {/* NEW - Founder mini-bio */}
       <FounderBio />
 
-      {/* NEW — Testimonials */}
+      {/* NEW - Testimonials */}
       <Testimonials />
 
       {/* PARTNERS - external endorsement */}

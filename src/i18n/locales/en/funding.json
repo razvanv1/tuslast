@@ -9,7 +9,7 @@
     "tag": "MDF · Vendor credits · EU grants",
     "bannerAlt": "Modern team reviewing funding documents",
     "title": "You learned what to build. Now fund building it.",
-    "subtitle": "Training leaves your team with working prototypes and the capability to use them. Production — agents, integrations, licences, dev work, change management — costs real money. Microsoft, AWS, Google and EU programmes fund exactly this transition. Most companies qualify. Few structure their programme in a way the funding body recognises.",
+    "subtitle": "Training leaves your team with working prototypes and the capability to use them. Production - agents, integrations, licences, dev work, change management - costs real money. Microsoft, AWS, Google and EU programmes fund exactly this transition. Most companies qualify. Few structure their programme in a way the funding body recognises.",
     "ctaText": "Find out what you qualify for →",
     "secondaryText": "See funding instruments ↓",
     "note": "Free · No commitment · Written shortlist in 5 business days"
@@ -62,8 +62,8 @@
     "kicker": "Available funding instruments",
     "titleStart": "Four sources.",
     "titleEm": "Most companies have access to at least one.",
-    "intro": "These are current, named, active programmes — not generic categories. Credit amounts, partner tiers, and eligibility windows shift quarterly. We track them so you don't have to.",
-    "cardCta": "Book a call about this →",
+    "intro": "These are current, named, active programmes - not generic categories. Credit amounts, partner tiers, and eligibility windows shift quarterly. We track them so you don't have to.",
+    "cardCta": "Book the AI Adoption Call →",
     "items": [
       {
         "title": "Microsoft MDF & Founders Hub",
@@ -119,7 +119,7 @@
     "kicker": "Named programmes we work with",
     "titleStart": "Real programmes,",
     "titleEm": "named.",
-    "intro": "When we say “four sources” we mean these specific programmes — current, named, active in 2026. Vendor credits on the left, EU and national grants on the right. Not exhaustive — open calls and partner programmes shift every quarter.",
+    "intro": "When we say “four sources” we mean these specific programmes - current, named, active in 2026. Vendor credits on the left, EU and national grants on the right. Not exhaustive - open calls and partner programmes shift every quarter.",
     "vendor": {
       "title": "Vendor credits & partner funds",
       "items": [
@@ -157,7 +157,7 @@
       "title": "EU & national grants",
       "items": [
         {
-          "name": "PNRR Romania — digitalizare",
+          "name": "PNRR Romania - digitalizare",
           "what": "National Recovery and Resilience Plan, digitalization components. Romania-specific, active calls in 2025–2026."
         },
         {
@@ -169,7 +169,7 @@
           "what": "EU co-funding for AI skills, digital testing environments and EDIH access."
         },
         {
-          "name": "Horizon Europe — AI calls",
+          "name": "Horizon Europe - AI calls",
           "what": "R&D and innovation funding including AI-focused topics and consortium projects."
         },
         {
@@ -178,7 +178,7 @@
         }
       ]
     },
-    "footnote": "Not exhaustive. We track more — open calls and partner programmes shift every quarter."
+    "footnote": "Not exhaustive. We track more - open calls and partner programmes shift every quarter."
   },
   "process": {
     "kicker": "How we work",
@@ -191,7 +191,7 @@
       },
       {
         "title": "Map eligible instruments",
-        "body": "Based on the audit, we identify the specific MDF programmes, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list — a specific set with qualification criteria confirmed."
+        "body": "Based on the audit, we identify the specific MDF programmes, co-sell budgets, or EU grant instruments that fit your situation. Not a generic list - a specific set with qualification criteria confirmed."
       },
       {
         "title": "Structure the programme to qualify",
@@ -243,7 +243,7 @@
     "kicker": "Behind the scenes",
     "titleStart": "What we actually do",
     "titleEm": "behind the structuring.",
-    "intro": "The structuring work isn't a single PDF. It runs on an operational layer we use across every funding engagement. We'll open it up as a separate tool later — for now it runs inside our work for you.",
+    "intro": "The structuring work isn't a single PDF. It runs on an operational layer we use across every funding engagement. We'll open it up as a separate tool later - for now it runs inside our work for you.",
     "items": [
       {
         "title": "Continuous scanning",
@@ -251,7 +251,7 @@
       },
       {
         "title": "Fit scoring",
-        "body": "Each opportunity is scored against your org profile — eligibility, effort, expected coverage."
+        "body": "Each opportunity is scored against your org profile - eligibility, effort, expected coverage."
       },
       {
         "title": "Deadline & follow-up tracking",
@@ -259,7 +259,7 @@
       },
       {
         "title": "Reuse of past content",
-        "body": "Drafts pull from your previous applications, decks and proposals — so you refine instead of starting from a blank page."
+        "body": "Drafts pull from your previous applications, decks and proposals - so you refine instead of starting from a blank page."
       },
       {
         "title": "Structured proposal drafting",
@@ -286,7 +286,7 @@
       },
       {
         "q": "How does reimbursement actually work?",
-        "a": "For vendor credits (AWS, Google, Microsoft Founders Hub), the funds are applied directly to your billing account to offset infrastructure and API costs. Nothing to claim — the credit is there when you need it.\n\nFor EU grants and partner MDF: you run the programme, pay the invoices, and submit proof of execution. The vendor or EU body reimburses you directly. We structure the delivery documentation from day one to match the reimbursement criteria exactly — not retrofitted at the end."
+        "a": "For vendor credits (AWS, Google, Microsoft Founders Hub), the funds are applied directly to your billing account to offset infrastructure and API costs. Nothing to claim - the credit is there when you need it.\n\nFor EU grants and partner MDF: you run the programme, pay the invoices, and submit proof of execution. The vendor or EU body reimburses you directly. We structure the delivery documentation from day one to match the reimbursement criteria exactly - not retrofitted at the end."
       },
       {
         "q": "What documents do you need from us?",
@@ -294,7 +294,7 @@
       },
       {
         "q": "What does this cost us?",
-        "a": "The funding audit and application structuring are free. Why? Because we are an AI adoption company, not a grants consultancy. We do the heavy lifting to get your budget approved with one condition: once the funding is secured, The Unlearning School is your partner for delivering the AI adoption programme.\n\nWe bring the structure that unlocks the budget. You run the programme with us. That is the arrangement, stated plainly."
+        "a": "The funding audit and application structuring are free. Why? Because we are an AI adoption company, not a grants consultancy. We do the heavy lifting to get your budget approved with one condition: once the funding is secured, The Unlearning School is your partner for delivering the AI adoption programme.\n\nWe bring the structure that gets the budget approved. You run the programme with us. That is the arrangement, stated plainly."
       },
       {
         "q": "What if we don't qualify for anything?",
@@ -306,17 +306,17 @@
     "kicker": "Before you fund it",
     "titleStart": "Want to see what a session produces",
     "titleEm": "before you fund one?",
-    "body": "Join a live prototyping session and see the exact deliverables — working prototypes, team capability built, practical artefacts — before you structure funding around it.",
+    "body": "Join a live prototyping session and see the exact deliverables - working prototypes, team capability built, practical artefacts - before you structure funding around it.",
     "cta": "See live sessions →"
   },
   "quote": {
     "attribution": "On qualification · The Unlearning School",
-    "body": "Most companies qualify for at least one instrument. The question is not whether the funding exists — it does. The question is whether your programme is structured in a way that the funding body will recognise."
+    "body": "Most companies qualify for at least one instrument. The question is not whether the funding exists - it does. The question is whether your programme is structured in a way that the funding body will recognise."
   },
   "cta": {
     "title": "Find out what you qualify for.",
     "subtitle": "A 30-minute call. A written shortlist in 5 days. We map your vendor relationships and EU eligibility in a single call. You get a written shortlist of instruments, estimated coverage, and next steps within 5 business days. No commitment until you see the numbers.",
-    "ctaText": "Book a funding call →",
+    "ctaText": "Book the AI Adoption Call →",
     "secondaryText": "See programmes first ↗",
     "note": "Free · No commitment · Written shortlist in 5 business days"
   }

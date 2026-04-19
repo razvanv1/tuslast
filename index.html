@@ -13,8 +13,16 @@
     <meta name="author" content="The Unlearning School" />
     <meta name="keywords" content="AI adoption, AI training, EU AI Act Article 4, Microsoft Copilot adoption, Gemini Enterprise rollout, AI for non-technical teams, workflow redesign, change management, AI literacy, Romania, Bucharest, EU, mid-market" />
     <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+    <meta name="bingbot" content="index,follow" />
     <meta name="audience" content="business" />
+    <meta name="rating" content="general" />
     <link rel="canonical" href="https://tuslast.lovable.app/" />
+
+    <!-- Static hreflang baseline (Helmet adds per-page; this is the home default for zero-JS crawlers) -->
+    <link rel="alternate" hreflang="en" href="https://tuslast.lovable.app/" />
+    <link rel="alternate" hreflang="ro" href="https://tuslast.lovable.app/ro" />
+    <link rel="alternate" hreflang="x-default" href="https://tuslast.lovable.app/" />
 
     <!-- Geo (GEO) -->
     <meta name="geo.region" content="RO" />
@@ -26,7 +34,10 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="The Unlearning School" />
     <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="ro_RO" />
     <meta property="og:url" content="https://tuslast.lovable.app/" />
+    <meta property="og:title" content="AI training that gets your team using the tools you already pay for" />
+    <meta property="og:description" content="We redesign workflows so non-technical teams in Romania and the EU actually use Copilot, Gemini and ChatGPT. EU AI Act Article 4 ready." />
     <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/IdBYduUEeXhnKxF1hWuwXOkQoAk1/social-images/social-1776502775834-ai_for_non_technical_16-9.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -34,6 +45,8 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI training that gets your team using the tools you already pay for" />
+    <meta name="twitter:description" content="We redesign workflows so non-technical teams in Romania and the EU actually use Copilot, Gemini and ChatGPT." />
     <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/IdBYduUEeXhnKxF1hWuwXOkQoAk1/social-images/social-1776502775834-ai_for_non_technical_16-9.webp" />
 
     <!-- Organization JSON-LD (AEO + brand graph) -->
@@ -48,7 +61,7 @@
       "description": "Behaviour change practice for AI adoption in non-technical teams. EU AI Act Article 4 ready training, workshops and funding structuring.",
       "founder": { "@type": "Person", "name": "Răzvan Vâlceanu" },
       "areaServed": ["RO", "EU"],
-      "address": { "@type": "PostalAddress", "addressCountry": "RO", "addressLocality": "Bucharest" },
+      "address": { "@type": "PostalAddress", "addressCountry": "RO", "addressLocality": "Bucharest", "streetAddress": "1, Aleea Pasărea în Văzduh" },
       "sameAs": [
         "https://www.linkedin.com/company/the-unlearning-school"
       ]
@@ -96,10 +109,83 @@
       "geo": { "@type": "GeoCoordinates", "latitude": 44.4268, "longitude": 26.1025 }
     }
     </script>
+
+    <!-- Hide the bot-content fallback once React has hydrated #root -->
+    <style>
+      #bot-content { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+      #root:not(:empty) ~ #bot-content { display: none !important; }
+    </style>
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!--
+      Bot-readable content fallback.
+      Visible to crawlers that do not execute JavaScript (older GPTBot fetches,
+      Claude-Web, Perplexity-User, social previews, archive.org, etc.).
+      Hidden from sighted users via CSS once React mounts (see #root:not(:empty) rule above)
+      and offscreen by default so it never flashes during hydration.
+    -->
+    <div id="bot-content">
+      <header>
+        <h1>The Unlearning School - AI training that gets your team using the tools you already pay for</h1>
+        <p>
+          The Unlearning School is a behaviour-change practice for AI adoption in non-technical teams.
+          We redesign workflows so the AI tools your company already pays for - Microsoft Copilot,
+          Google Gemini, ChatGPT - actually get used. EU AI Act Article 4 ready training,
+          delivered in Romania and across the European Union.
+        </p>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="https://tuslast.lovable.app/">Home</a></li>
+            <li><a href="https://tuslast.lovable.app/programmes/ai-for-non-technical-people">AI for non-technical teams</a></li>
+            <li><a href="https://tuslast.lovable.app/events">Events and keynotes</a></li>
+            <li><a href="https://tuslast.lovable.app/hermes">Hermes Agent</a></li>
+            <li><a href="https://tuslast.lovable.app/funding">Funding</a></li>
+            <li><a href="https://tuslast.lovable.app/resources">Resources</a></li>
+            <li><a href="https://tuslast.lovable.app/ai-adoption-score">AI Adoption Score (free 2-minute self-test)</a></li>
+            <li><a href="https://tuslast.lovable.app/about">About and founder</a></li>
+            <li><a href="https://tuslast.lovable.app/assessment">Book the AI Adoption Call (free, 30 minutes)</a></li>
+            <li><a href="https://tuslast.lovable.app/ro">Romanian / Română</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>What we do</h2>
+          <ul>
+            <li><strong>AI Adoption Training for non-technical teams.</strong> Workshops and programmes that change how people work, not just what tools they open.</li>
+            <li><strong>AI Adoption Score.</strong> Free 2-minute diagnostic that scores readiness across literacy, governance, workflow, tools and culture.</li>
+            <li><strong>AI Adoption Call.</strong> Free 30-minute discovery session. We score maturity and send a 1-page roadmap within 24 hours.</li>
+            <li><strong>EU AI Act Article 4 compliance.</strong> AI literacy training that meets the 2 February 2026 obligation for staff dealing with AI systems.</li>
+            <li><strong>Funding-backed programmes.</strong> Microsoft MDF, AWS co-sell, Google Cloud Partner funds and EU digital grants. We structure the application; you run the programme.</li>
+            <li><strong>Hermes Agent.</strong> Open-source AI agent with persistent memory and 40+ tools. Runs on your own server.</li>
+            <li><strong>Events.</strong> Talks, workshops, hackathons and roundtables on responsible AI adoption.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Who we are</h2>
+          <p>
+            Founded by Răzvan Vâlceanu. Based in Bucharest, Romania. Serving Romania and the European Union
+            in English and Romanian. We work with operations, marketing, HR, finance, legal and customer
+            success teams inside SMEs and mid-market organisations.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <address>
+            The Unlearning School<br />
+            1, Aleea Pasărea în Văzduh, Bucharest, Romania<br />
+            Book a call: <a href="https://tuslast.lovable.app/assessment">https://tuslast.lovable.app/assessment</a>
+          </address>
+        </section>
+      </main>
+    </div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
