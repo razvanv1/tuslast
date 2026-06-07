@@ -3,6 +3,7 @@ import type { Answers, SafetyAnswer, ScoreResult } from "./types";
 import LeadForm from "./LeadForm";
 import Confirmation from "./Confirmation";
 import { submitLead } from "./trainerApi";
+import { useCopy } from "./copy";
 
 interface TrainerCardProps {
   step: number;
@@ -15,34 +16,13 @@ interface TrainerCardProps {
   onDone: () => void;
 }
 
-const STEPS = [
-  {
-    question: "Începem simplu. Care este rolul tău în companie?",
-    placeholder: "ex: fondator, HR manager, sales, operations...",
-    field: "role" as const,
-  },
-  {
-    question: "Care este un task repetitiv pe care îl faci săptămânal și care îți consumă timp?",
-    placeholder: "ex: follow-up-uri, rapoarte, oferte, sumarizări, emailuri...",
-    field: "task" as const,
-  },
-  {
-    question: "Taskul implică date de client, informații financiare sau documente interne?",
-    placeholder: "",
-    field: "safety" as const,
-  },
-  {
-    question: "Scrie cum ai cere unui AI să te ajute cu acel task.",
-    placeholder: "Scrie promptul tău aici...",
-    field: "prompt" as const,
-  },
-];
-
-const SAFETY_OPTIONS: SafetyAnswer[] = ["Da", "Nu", "Nu sunt sigur"];
+const FIELDS = ["role", "task", "safety", "prompt"] as const;
+const SAFETY_VALUES: SafetyAnswer[] = ["yes", "no", "unsure"];
 
 const TrainerCard = ({
   step, answers, result, done, onAnswer, onNext, onSkipToDemo, onDone,
 }: TrainerCardProps) => {
+  const t = useCopy();
   const [submitting, setSubmitting] = useState(false);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -53,40 +33,43 @@ const TrainerCard = ({
   if (done) {
     return (
       <div className="border-2 border-ink/15 bg-paper">
-        <Header step={5} live />
+        <Header step={5} live label={t.headerLabel} stepText={t.stepLabel(5)} />
         <Confirmation />
       </div>
     );
   }
 
   const isFinal = step === 5;
-  const current = STEPS[step - 1];
+  const field = FIELDS[step - 1];
+  const current = t.steps[step - 1];
 
   const canContinue = (() => {
     if (isFinal) return false;
-    if (current.field === "safety") return answers.safety !== "";
-    return answers[current.field].toString().trim().length > 1;
+    if (field === "safety") return answers.safety !== "";
+    return (answers[field] as string).toString().trim().length > 1;
   })();
 
   return (
     <div className="border-2 border-ink/15 bg-paper">
-      <Header step={step} live />
+      <Header step={step} live label={t.headerLabel} stepText={t.stepLabel(step)} />
       <Progress step={step} />
 
       <div className="p-8 md:p-10">
-        {!isFinal && (
+        {!isFinal && current && (
           <>
             <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/40 mb-4">
-              Lecția {step} / 5
+              {t.lesson(step)}
             </p>
             <h3 className="font-display text-2xl md:text-3xl text-ink leading-snug mb-8">
               {current.question}
             </h3>
 
-            {current.field === "safety" ? (
+            {field === "safety" ? (
               <div className="flex flex-wrap gap-3 mb-8">
-                {SAFETY_OPTIONS.map((opt) => {
+                {SAFETY_VALUES.map((opt) => {
                   const active = answers.safety === opt;
+                  const label =
+                    opt === "yes" ? t.safety.yes : opt === "no" ? t.safety.no : t.safety.unsure;
                   return (
                     <button
                       key={opt}
@@ -98,7 +81,7 @@ const TrainerCard = ({
                           : "bg-transparent text-ink border-ink/25 hover:border-ink"
                       }`}
                     >
-                      {opt}
+                      {label}
                     </button>
                   );
                 })}
@@ -106,10 +89,10 @@ const TrainerCard = ({
             ) : (
               <textarea
                 ref={inputRef}
-                value={answers[current.field] as string}
-                onChange={(e) => onAnswer({ [current.field]: e.target.value } as Partial<Answers>)}
+                value={answers[field] as string}
+                onChange={(e) => onAnswer({ [field]: e.target.value } as Partial<Answers>)}
                 placeholder={current.placeholder}
-                rows={current.field === "prompt" ? 5 : 3}
+                rows={field === "prompt" ? 5 : 3}
                 className="w-full bg-transparent border border-ink/20 px-4 py-3 text-ink text-[15px] leading-relaxed placeholder:text-ink/35 focus:border-red focus:outline-none transition-colors mb-8 resize-none"
               />
             )}
@@ -121,7 +104,7 @@ const TrainerCard = ({
                 disabled={!canContinue}
                 className="inline-flex items-center px-7 py-4 bg-ink text-paper font-mono text-[11px] uppercase tracking-[0.2em] hover:bg-red transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                {step === 4 ? "Vezi scorul →" : "Continuă →"}
+                {step === 4 ? t.seeScore : t.continue}
               </button>
               {step === 1 && (
                 <button
@@ -129,16 +112,14 @@ const TrainerCard = ({
                   onClick={onSkipToDemo}
                   className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/55 hover:text-red transition-colors"
                 >
-                  Vreau doar să văd exemplul →
+                  {t.skipDemo}
                 </button>
               )}
             </div>
           </>
         )}
 
-        {isFinal && result && (
-          <ResultBlock result={result} />
-        )}
+        {isFinal && result && <ResultBlock result={result} />}
 
         {isFinal && result && (
           <LeadForm
@@ -156,7 +137,9 @@ const TrainerCard = ({
   );
 };
 
-const Header = ({ step, live }: { step: number; live: boolean }) => (
+const Header = ({
+  live, label, stepText,
+}: { step: number; live: boolean; label: string; stepText: string }) => (
   <div className="px-6 md:px-8 py-4 border-b border-ink/15 flex items-center justify-between gap-4">
     <div className="flex items-center gap-3 min-w-0">
       <span className="relative inline-flex h-2 w-2">
@@ -166,11 +149,11 @@ const Header = ({ step, live }: { step: number; live: boolean }) => (
         <span className="relative inline-flex h-2 w-2 rounded-full bg-red" />
       </span>
       <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink truncate">
-        TUS AI Trainer · live session
+        {label}
       </p>
     </div>
     <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/55 whitespace-nowrap">
-      Step {Math.min(step, 5)} / 5
+      {stepText}
     </p>
   </div>
 );
@@ -186,54 +169,57 @@ const Progress = ({ step }: { step: number }) => (
   </div>
 );
 
-const ResultBlock = ({ result }: { result: ScoreResult }) => (
-  <div className="space-y-8">
-    <div>
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
-        Scor AI Usage
-      </p>
-      <div className="flex items-baseline gap-4">
-        <p className="font-display text-7xl md:text-8xl text-ink leading-none">
-          {result.score}
+const ResultBlock = ({ result }: { result: ScoreResult }) => {
+  const t = useCopy();
+  return (
+    <div className="space-y-8">
+      <div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+          {t.scoreLabel}
         </p>
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50">/ 100</p>
+        <div className="flex items-baseline gap-4">
+          <p className="font-display text-7xl md:text-8xl text-ink leading-none">
+            {result.score}
+          </p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/50">{t.outOf}</p>
+        </div>
+        <p className="font-display text-2xl text-ink mt-3">{result.category}</p>
       </div>
-      <p className="font-display text-2xl text-ink mt-3">{result.category}</p>
-    </div>
 
-    <div>
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
-        Feedback
-      </p>
-      <ul className="space-y-3">
-        {result.bullets.map((b, i) => (
-          <li key={i} className="flex gap-3 text-ink/85 text-[15px] leading-relaxed">
-            <span className="font-mono text-red text-[11px] pt-1.5">0{i + 1}</span>
-            <span>{b}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+          {t.feedback}
+        </p>
+        <ul className="space-y-3">
+          {result.bullets.map((b, i) => (
+            <li key={i} className="flex gap-3 text-ink/85 text-[15px] leading-relaxed">
+              <span className="font-mono text-red text-[11px] pt-1.5">0{i + 1}</span>
+              <span>{b}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-    <div>
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
-        Promptul tău, rescris
-      </p>
-      <pre className="bg-ink text-paper p-5 md:p-6 font-mono text-[12px] leading-relaxed whitespace-pre-wrap">
+      <div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-3">
+          {t.rewritten}
+        </p>
+        <pre className="bg-ink text-paper p-5 md:p-6 font-mono text-[12px] leading-relaxed whitespace-pre-wrap">
 {result.betterPrompt}
-      </pre>
-    </div>
+        </pre>
+      </div>
 
-    <div>
-      <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">
-        Recomandare
-      </p>
-      <p className="font-display text-2xl text-ink">{result.recommendation}</p>
-      <p className="text-ink/65 text-[14px] leading-relaxed mt-2 max-w-lg">
-        Pentru context: măsuri de AI literacy și documentare internă pentru echipa ta.
-      </p>
+      <div>
+        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mb-2">
+          {t.recommendation}
+        </p>
+        <p className="font-display text-2xl text-ink">{result.recommendation}</p>
+        <p className="text-ink/65 text-[14px] leading-relaxed mt-2 max-w-lg">
+          {t.recoNote}
+        </p>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default TrainerCard;
