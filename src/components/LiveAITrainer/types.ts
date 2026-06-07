@@ -1,4 +1,4 @@
-export type SafetyAnswer = "Da" | "Nu" | "Nu sunt sigur";
+export type SafetyAnswer = "yes" | "no" | "unsure";
 
 export interface Answers {
   role: string;
