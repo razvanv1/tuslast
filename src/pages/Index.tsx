@@ -8,6 +8,7 @@ import Blockquote from "@/components/Blockquote";
 import CTASection from "@/components/CTASection";
 import AIScoreCTA from "@/components/AIScoreCTA";
 import AIScoreStrip from "@/components/AIScoreStrip";
+import TusLiveAITrainer from "@/components/LiveAITrainer/TusLiveAITrainer";
 import Affiliations from "@/components/Affiliations";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -95,6 +96,10 @@ const Index = () => {
 
       {/* Thin AI Score promo strip directly under hero */}
       <AIScoreStrip />
+
+      {/* Live AI Trainer — interactive 5-step mini-course */}
+      <TusLiveAITrainer />
+
 
       {/* STATS strip */}
       <section className="bg-background border-b-2 border-paper/10">
