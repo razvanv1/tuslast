@@ -1,28 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import TrainerCard from "./TrainerCard";
 import ScorePanel from "./ScorePanel";
 import type { Answers, ScoreResult } from "./types";
 import { generateScore, startSession, submitAnswer } from "./trainerApi";
-
-// RO-only section. Copy intentionally kept inline (not in i18n) — feature is RO-launch.
+import { useCopy, useLang } from "./copy";
 
 const EMPTY: Answers = { role: "", task: "", safety: "", prompt: "" };
 
-const DEMO: Answers = {
-  role: "Operations manager într-o firmă de distribuție",
-  task: "Pregătesc săptămânal un raport de stoc pentru 3 manageri, copiez date din 2 fișiere Excel și formatez un email cu observații.",
-  safety: "Da",
-  prompt:
-    "Ai un tabel Excel cu stocuri. Identifică produsele cu stoc sub 10 unități, grupează-le pe categorie și scrie un email scurt către managerii regionali, ton profesional, maxim 150 de cuvinte. Folosește date fictive în exemplu, output-ul final va trece prin review uman.",
-};
-
 const TusLiveAITrainer = () => {
+  const lang = useLang();
+  const t = useCopy();
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<Answers>(EMPTY);
   const [result, setResult] = useState<ScoreResult | null>(null);
   const [done, setDone] = useState(false);
   const [partialFit, setPartialFit] = useState<number | undefined>();
+
+  const demo: Answers = useMemo(
+    () => ({
+      role: t.demo.role,
+      task: t.demo.task,
+      safety: "yes",
+      prompt: t.demo.prompt,
+    }),
+    [t],
+  );
 
   useEffect(() => {
     startSession();
@@ -36,15 +39,15 @@ const TusLiveAITrainer = () => {
       setPartialFit(Math.min(85, 40 + answers.task.length));
     }
     if (step === 4) {
-      const r = await generateScore(answers);
+      const r = await generateScore(answers, lang);
       setResult(r);
     }
     setStep((s) => Math.min(5, s + 1));
   };
 
   const skipToDemo = async () => {
-    setAnswers(DEMO);
-    const r = await generateScore(DEMO);
+    setAnswers(demo);
+    const r = await generateScore(demo, lang);
     setResult(r);
     setStep(5);
   };
@@ -57,17 +60,14 @@ const TusLiveAITrainer = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-10 md:mb-14">
             <div className="md:col-span-7">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-red mb-4">
-                Live AI Trainer
+                {t.eyebrow}
               </p>
               <h2 className="font-display text-4xl md:text-6xl text-ink leading-[0.95] mb-6">
-                Începe un mini-curs AI <em className="text-red">de 5 minute.</em>
+                {t.headlinePart1} <em className="text-red">{t.headlineEm}</em>
               </h2>
             </div>
             <div className="md:col-span-5 flex items-end">
-              <p className="text-ink/75 text-[15px] md:text-[16px] leading-relaxed">
-                Răspunde la câteva întrebări despre munca ta, primește feedback instant și află cât
-                de pregătită este echipa ta să folosească AI în taskuri reale.
-              </p>
+              <p className="text-ink/75 text-[15px] md:text-[16px] leading-relaxed">{t.intro}</p>
             </div>
           </div>
         </ScrollReveal>

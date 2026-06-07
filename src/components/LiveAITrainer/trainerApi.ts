@@ -1,9 +1,6 @@
 import type { Answers, LeadData, ScoreResult } from "./types";
 import { generateScore as computeScore } from "./scoring";
-
-// TODO: replace these mocks with a Supabase Edge Function that calls a real LLM
-// (e.g. supabase.functions.invoke('trainer-score', { body: answers })).
-// Keep the same signatures so the UI doesn't change.
+import type { Lang } from "./copy";
 
 const log = (event: string, payload?: unknown) => {
   // eslint-disable-next-line no-console
@@ -20,14 +17,13 @@ export async function submitAnswer(stepId: number, answer: string): Promise<void
   log("trainer_step_completed", { stepId, answer });
 }
 
-export async function generateScore(answers: Answers): Promise<ScoreResult> {
-  const result = computeScore(answers);
+export async function generateScore(answers: Answers, lang: Lang = "ro"): Promise<ScoreResult> {
+  const result = computeScore(answers, lang);
   log("trainer_score_generated", { score: result.score, category: result.category });
   return result;
 }
 
 export async function submitLead(lead: LeadData, score: ScoreResult): Promise<{ ok: true }> {
   log("trainer_lead_submitted", { lead, score: score.score, category: score.category });
-  // TODO: POST to Supabase Edge Function (`trainer-lead`) → Brevo contact + internal table.
   return { ok: true };
 }

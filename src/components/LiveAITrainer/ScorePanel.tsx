@@ -1,38 +1,33 @@
 import type { ScoreResult } from "./types";
+import { useCopy } from "./copy";
 
 interface ScorePanelProps {
-  step: number; // 1..5
+  step: number;
   result: ScoreResult | null;
   partial: { workflowFit?: number };
 }
 
-interface Row {
-  key: keyof ScoreResult["metrics"];
-  label: string;
-  unlocksAt: number;
-  caption: string;
-}
-
-const ROWS: Row[] = [
-  { key: "workflowFit", label: "Workflow Fit", unlocksAt: 2, caption: "Cât de potrivit e taskul pentru AI" },
-  { key: "dataSafety", label: "Data Safety", unlocksAt: 3, caption: "Risc de expunere a datelor" },
-  { key: "promptQuality", label: "Prompt Quality", unlocksAt: 4, caption: "Cât de structurat e promptul" },
-  { key: "aiUsage", label: "AI Usage Score", unlocksAt: 5, caption: "Scor compozit final" },
-];
-
 const ScorePanel = ({ step, result, partial }: ScorePanelProps) => {
+  const t = useCopy();
+  const rows = [
+    { key: "workflowFit" as const, unlocksAt: 2, ...t.rows.workflowFit },
+    { key: "dataSafety" as const, unlocksAt: 3, ...t.rows.dataSafety },
+    { key: "promptQuality" as const, unlocksAt: 4, ...t.rows.promptQuality },
+    { key: "aiUsage" as const, unlocksAt: 5, ...t.rows.aiUsage },
+  ];
+
   return (
     <aside className="border-2 border-ink/15 bg-paper">
       <div className="px-6 py-4 border-b border-ink/15 flex items-center justify-between">
         <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/60">
-          Outcome preview
+          {t.outcomePreview}
         </p>
         <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-ink/40">
-          {result ? "Unlocked" : "Locked"}
+          {result ? t.unlocked : t.locked}
         </p>
       </div>
       <div className="divide-y divide-ink/10">
-        {ROWS.map((row) => {
+        {rows.map((row) => {
           const unlocked = step >= row.unlocksAt;
           let value: number | null = null;
           if (result) value = result.metrics[row.key];
@@ -66,11 +61,11 @@ const ScorePanel = ({ step, result, partial }: ScorePanelProps) => {
       {result && (
         <div className="px-6 py-5 border-t-2 border-ink/15 bg-ink text-paper">
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-paper/60 mb-2">
-            Categorie
+            {t.category}
           </p>
           <p className="font-display text-2xl leading-tight">{result.category}</p>
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red mt-4 mb-1">
-            Recomandare
+            {t.recommendation}
           </p>
           <p className="font-display text-xl leading-tight">{result.recommendation}</p>
         </div>
