@@ -167,6 +167,180 @@
         }
       ],
       "takeaway": "AI adoption is a change-management problem wearing a technology costume. Ship the tool in week one, refreeze the behaviour by week six, or accept that usage will decay to zero."
+    },
+    "euAiActArticle4": {
+      "docTitle": "EU AI Act Article 4 — what it actually requires — The Unlearning School",
+      "tag": "EU AI Act · Compliance",
+      "readTime": "7 min read",
+      "seo": {
+        "title": "EU AI Act Article 4: the AI literacy obligation, explained",
+        "description": "Article 4 of the EU AI Act is in force since February 2025. Here is what it actually requires from providers and deployers of AI systems — in plain operational terms.",
+        "keywords": "EU AI Act Article 4, AI literacy, AI compliance, EU AI Act deployers, AI training obligation"
+      },
+      "hero": {
+        "title": "Article 4 — the AI literacy obligation nobody read",
+        "subtitle": "Since 2 February 2025 every organisation deploying AI in the EU owes its staff a level of AI literacy 'appropriate to context'. Here is what that means in practice."
+      },
+      "lead": "Article 4 is one paragraph long. That paragraph quietly reshapes how European employers must train every person who touches an AI system — including the ones using ChatGPT on the side.",
+      "sections": [
+        {
+          "heading": "Who it applies to",
+          "body": "Any provider or deployer of an AI system operating in the EU — regardless of company size, sector, or risk classification of the system. If your finance team uses Copilot, your marketing team uses ChatGPT, or your ops team uses a scheduling model, you are a deployer. Article 4 applies. There is no SME exemption."
+        },
+        {
+          "heading": "What 'AI literacy' actually means",
+          "body": "The Act defines it as the skills, knowledge and understanding that allow staff to make informed use of AI systems and to be aware of the opportunities, risks and possible harm. In practice: people must understand what the system can and cannot do, how outputs are generated, what data is being processed, and what to do when something looks wrong."
+        },
+        {
+          "heading": "What 'appropriate to context' means",
+          "body": "The obligation scales with role and risk. A junior using an AI notetaker needs a 30-minute onboarding. A manager approving AI-drafted contracts needs materially more — including data handling, bias awareness, and escalation paths. The bar is proportionality, not a single mandatory curriculum."
+        },
+        {
+          "heading": "What compliance looks like",
+          "body": "A defensible programme has four parts: (1) an inventory of AI systems in use, including shadow AI; (2) role-based literacy training with proof of completion; (3) written acceptable-use guidance staff have acknowledged; (4) an escalation route for incidents. Everything else is theatre. Fines under the AI Act reach up to 3% of global turnover — but the practical risk today is reputational and contractual, not enforcement."
+        }
+      ],
+      "takeaway": "Article 4 is not a paperwork exercise. It is the legal wrapper around what good operators already do: teach the people using AI what it is, what it isn't, and when to stop trusting it."
+    },
+    "copilotRollout": {
+      "docTitle": "Why your Copilot rollout stalled — The Unlearning School",
+      "tag": "AI adoption · Field notes",
+      "readTime": "5 min read",
+      "seo": {
+        "title": "Why Copilot rollouts stall — and how to unblock them",
+        "description": "The pattern behind stalled Microsoft Copilot rollouts is the same everywhere: licenses shipped, behaviour didn't. Here is the fix.",
+        "keywords": "Microsoft Copilot rollout, Copilot adoption, AI adoption stalled, Copilot usage, enterprise AI adoption"
+      },
+      "hero": {
+        "title": "You bought Copilot. Nobody uses it. Here is why.",
+        "subtitle": "The most common Copilot post-mortem across every industry we audit. Same five reasons, every time."
+      },
+      "lead": "Microsoft is on record: over 70% of Copilot pilots inside SMEs show a flat usage curve within eight weeks. It is not the tool. It is the rollout.",
+      "sections": [
+        {
+          "heading": "Reason 1 — no workflow was actually replaced",
+          "body": "Copilot was added on top of the existing process. Nobody was told 'stop doing X, do Y instead.' So people default to X, which they already know how to do. AI as an optional extra never sticks."
+        },
+        {
+          "heading": "Reason 2 — training was broadcast, not supervised",
+          "body": "One 60-minute webinar for 200 people teaches nobody anything. Actual behaviour change requires 3-5 supervised sessions on the person's own work, with a coach present. Broadcast training is a compliance artefact, not a learning intervention."
+        },
+        {
+          "heading": "Reason 3 — no prompts library, no examples",
+          "body": "People do not know what to ask. Without a shared, role-specific prompt library — actual examples of good prompts for their actual work — usage collapses to 'summarise this email'. The tool looks trivial. The tool is not trivial. The onboarding was."
+        },
+        {
+          "heading": "Reason 4 — managers do not model it",
+          "body": "If the manager does not visibly use Copilot in front of the team — in meetings, in Teams, in reviews — the team reads it as optional. Behaviour cascades from the manager. Always."
+        },
+        {
+          "heading": "Reason 5 — success was never measured",
+          "body": "Nobody defined what 'working' looks like. Time saved per week? Reports produced? Emails drafted? Without a target metric, there is no feedback loop, no coaching signal, and no story to tell the CFO in month six."
+        }
+      ],
+      "takeaway": "Copilot is not a tool problem. It is a change-management problem with a Microsoft logo on it. Fix the rollout, not the software."
+    },
+    "procurementWorkflows": {
+      "docTitle": "AI in procurement — real workflows that ship — The Unlearning School",
+      "tag": "Operations · Procurement",
+      "readTime": "6 min read",
+      "seo": {
+        "title": "AI procurement workflows that actually save time",
+        "description": "Four concrete AI workflows for procurement teams — supplier scoring, RFP drafting, contract review, invoice reconciliation — with realistic time savings and failure modes.",
+        "keywords": "AI procurement, procurement automation, supplier scoring AI, RFP drafting AI, contract review AI"
+      },
+      "hero": {
+        "title": "Four AI workflows procurement teams actually keep using",
+        "subtitle": "Not the demos. The ones that survive month three, because someone measured them."
+      },
+      "lead": "Procurement is a workflow-heavy function drowning in unstructured documents. That is exactly where current-gen AI earns its licence fee — if you pick the right four workflows and ignore the other forty.",
+      "sections": [
+        {
+          "heading": "Workflow 1 — supplier scoring from public data",
+          "body": "Feed a model the supplier's website, financial filings, news mentions and prior contract performance. Output: a structured scorecard against your criteria. Time from 3-4 hours per supplier to 15 minutes of review. Failure mode: hallucinated financial data — always require the model to cite source URLs."
+        },
+        {
+          "heading": "Workflow 2 — first-draft RFPs from a brief",
+          "body": "A 2-page brief becomes a 20-page RFP structured on your template. Legal and technical sections auto-pulled from your library. Buyer edits, does not write. Time from 2 days to 3 hours. Failure mode: template drift — pin the version explicitly."
+        },
+        {
+          "heading": "Workflow 3 — contract redline against a playbook",
+          "body": "Model compares the counterparty draft against your position playbook, flags deviations, proposes redlines. Legal reviews the flag list, not the whole document. Time from 4 hours to 45 minutes. Failure mode: over-confidence on jurisdiction-specific clauses — always route those to counsel."
+        },
+        {
+          "heading": "Workflow 4 — invoice-to-PO reconciliation",
+          "body": "Model matches inbound invoices against POs and delivery notes, flags mismatches with reason codes. Finance approves the exceptions, not every line. Time from continuous manual reconciliation to a 30-minute daily review. Failure mode: OCR errors on scanned invoices — keep humans on anything below 95% confidence."
+        }
+      ],
+      "takeaway": "Procurement wins with AI are boring, structured, and measured. Pick four workflows, measure minutes saved per week, and ignore the demo circuit."
+    },
+    "vendorMdf": {
+      "docTitle": "Using vendor MDF to fund AI training — The Unlearning School",
+      "tag": "Funding · Vendor programmes",
+      "readTime": "5 min read",
+      "seo": {
+        "title": "Fund your AI training with vendor MDF budgets",
+        "description": "Microsoft, Google and AWS run market development funds that reimburse partner-led AI enablement. Here is how SMEs and their partners can access them.",
+        "keywords": "vendor MDF, market development funds, Microsoft MDF, AI training funding, partner enablement funding"
+      },
+      "hero": {
+        "title": "There is vendor money for your AI training. You have to ask for it.",
+        "subtitle": "Microsoft, Google and AWS all reimburse partner-led AI enablement. Most SMEs never see the cheque because nobody asked."
+      },
+      "lead": "Every major cloud vendor sets aside market development funds — MDF — to accelerate customer adoption. If your team is being trained on Copilot, Gemini or Bedrock, that training is almost always reimbursable. Through a partner.",
+      "sections": [
+        {
+          "heading": "What MDF actually is",
+          "body": "MDF is a co-marketing / co-enablement budget vendors give to certified partners. It funds workshops, pilots, proofs of concept, and structured training — anything that measurably drives consumption of the vendor's product. It is not a discount. It is a separate pool."
+        },
+        {
+          "heading": "How SMEs access it",
+          "body": "You do not apply directly. A certified partner (like us) submits a plan against your account, the vendor approves it, delivery happens, invoices are settled between partner and vendor. From your side, the training is free or heavily subsidised."
+        },
+        {
+          "heading": "What qualifies",
+          "body": "Role-based Copilot enablement, prompt libraries, workflow redesign workshops, Article 4 literacy programmes tied to Microsoft tenants, migration workshops for on-prem to cloud AI, Gemini for Workspace rollouts. Anything that ends with more product consumption tends to qualify."
+        },
+        {
+          "heading": "What does not qualify",
+          "body": "Generic 'AI awareness' talks with no measurable outcome, competitor tooling, and anything that does not have a named business sponsor on the customer side. Vendors fund adoption, not education."
+        }
+      ],
+      "takeaway": "If a vendor's logo is on your desktop, there is a fund with your name on it. Ask your partner. If they say no, change partner."
+    },
+    "hermesVsChatgpt": {
+      "docTitle": "Hermes vs ChatGPT for AI adoption questions — The Unlearning School",
+      "tag": "Domain agents · Product",
+      "readTime": "4 min read",
+      "seo": {
+        "title": "Why a domain agent beats ChatGPT for AI adoption questions",
+        "description": "Hermes is a domain agent tuned on real AI adoption engagements. Here is why that beats a general-purpose chatbot for operational questions about rollouts, compliance and funding.",
+        "keywords": "domain agent, Hermes agent, ChatGPT alternative, AI adoption agent, specialised AI assistant"
+      },
+      "hero": {
+        "title": "Hermes vs ChatGPT — why a domain agent wins on operational questions",
+        "subtitle": "General chatbots know a bit about everything. Domain agents know a lot about one thing. For AI adoption inside SMEs, that difference is the whole product."
+      },
+      "lead": "ChatGPT is remarkable. It is also, on any specific operational question — 'how do I stage a Copilot rollout for a 60-person team in Romania?' — a fluent generalist. That is not what an operator needs.",
+      "sections": [
+        {
+          "heading": "What a domain agent is",
+          "body": "A domain agent is a model plus a curated corpus plus a workflow scaffold, all pointed at one job. Hermes is pointed at 'AI adoption for SMEs in Europe'. It knows Article 4. It knows EU funding cycles. It knows which vendors will fund what. It does not know how to write a sonnet."
+        },
+        {
+          "heading": "Why the corpus matters",
+          "body": "General models are trained on the open web. Domain agents draw on operational playbooks — rollout templates, refusal patterns, real engagement notes. When you ask Hermes about MDF, it does not guess. It cites the pattern from ten prior engagements."
+        },
+        {
+          "heading": "Why the workflow scaffold matters",
+          "body": "Hermes does not just answer. It sequences: qualify the question, propose the next step, offer a call if the question is above its resolution. A general chatbot will answer everything, badly, forever. A domain agent knows when to escalate."
+        },
+        {
+          "heading": "When to use which",
+          "body": "Use ChatGPT for open-ended drafting, brainstorming, translation and code. Use Hermes for anything operational about AI adoption, compliance, or funding inside your organisation. The two are complementary — not competitors."
+        }
+      ],
+      "takeaway": "The next generation of business software is not one chatbot for everything. It is a small stack of domain agents, each one narrow, opinionated, and correct."
     }
   }
 }
