@@ -231,6 +231,180 @@
         }
       ],
       "takeaway": "Adopția AI e o problemă de management al schimbării deghizată în tehnologie. Lansează unealta în săptămâna unu, „refreeze” comportamentul până în săptămâna șase, sau acceptă că utilizarea va scădea la zero."
+    },
+    "euAiActArticle4": {
+      "docTitle": "Articolul 4 din EU AI Act — ce cere de fapt — The Unlearning School",
+      "tag": "EU AI Act · Conformitate",
+      "readTime": "7 min de citit",
+      "seo": {
+        "title": "Articolul 4 din EU AI Act: obligația de alfabetizare AI, explicată",
+        "description": "Articolul 4 din EU AI Act este în vigoare din februarie 2025. Iată ce cere de fapt de la furnizori și deployeri de sisteme AI — în termeni operaționali clari.",
+        "keywords": "EU AI Act Articolul 4, alfabetizare AI, conformitate AI, deployeri EU AI Act, obligație training AI"
+      },
+      "hero": {
+        "title": "Articolul 4 — obligația de alfabetizare AI pe care nimeni n-a citit-o",
+        "subtitle": "De la 2 februarie 2025, orice organizație care deployează AI în UE datorează personalului un nivel de alfabetizare AI „adecvat contextului”. Iată ce înseamnă în practică."
+      },
+      "lead": "Articolul 4 are un singur paragraf. Acel paragraf reașează, discret, modul în care angajatorii europeni trebuie să pregătească fiecare om care atinge un sistem AI — inclusiv pe cei care folosesc ChatGPT pe lângă.",
+      "sections": [
+        {
+          "heading": "Cui i se aplică",
+          "body": "Oricărui furnizor sau deployer de sistem AI care operează în UE — indiferent de mărimea companiei, sector sau clasificare de risc a sistemului. Dacă echipa de finance folosește Copilot, marketing-ul folosește ChatGPT sau ops-ul folosește un model de scheduling, ești deployer. Articolul 4 se aplică. Nu există exceptare pentru IMM-uri."
+        },
+        {
+          "heading": "Ce înseamnă „alfabetizare AI”",
+          "body": "Actul o definește ca abilitățile, cunoștințele și înțelegerea care permit personalului să folosească informat sistemele AI și să fie conștient de oportunități, riscuri și posibile prejudicii. În practică: oamenii trebuie să înțeleagă ce poate și ce nu poate sistemul, cum se generează output-ul, ce date se procesează și ce fac atunci când ceva pare greșit."
+        },
+        {
+          "heading": "Ce înseamnă „adecvat contextului”",
+          "body": "Obligația scalează cu rolul și riscul. Un junior care folosește un AI notetaker are nevoie de 30 de minute de onboarding. Un manager care aprobă contracte redactate cu AI are nevoie de substanțial mai mult — inclusiv data handling, awareness de bias și rute de escaladare. Standardul e proporționalitatea, nu o curriculă unică obligatorie."
+        },
+        {
+          "heading": "Cum arată conformitatea",
+          "body": "Un program apărabil are patru componente: (1) inventar al sistemelor AI folosite, inclusiv shadow AI; (2) training de alfabetizare bazat pe rol, cu dovadă de finalizare; (3) ghid scris de utilizare acceptabilă, asumat de personal; (4) rută de escaladare pentru incidente. Restul e teatru. Amenzile din AI Act ajung la 3% din cifra de afaceri globală — dar riscul practic astăzi e reputațional și contractual, nu de enforcement."
+        }
+      ],
+      "takeaway": "Articolul 4 nu e un exercițiu de hârtii. E învelișul legal al ceea ce operatorii buni fac deja: să învețe oamenii care folosesc AI ce e, ce nu e și când să nu mai aibă încredere în el."
+    },
+    "copilotRollout": {
+      "docTitle": "De ce ți-a stagnat rollout-ul de Copilot — The Unlearning School",
+      "tag": "Adopție AI · Note de teren",
+      "readTime": "5 min de citit",
+      "seo": {
+        "title": "De ce stagnează rollout-urile de Copilot — și cum le deblochezi",
+        "description": "Tiparul din spatele rollout-urilor de Microsoft Copilot blocate e același peste tot: licențele au fost livrate, comportamentul nu. Iată reparația.",
+        "keywords": "rollout Microsoft Copilot, adopție Copilot, adopție AI blocată, utilizare Copilot, adopție AI enterprise"
+      },
+      "hero": {
+        "title": "Ai cumpărat Copilot. Nu-l folosește nimeni. Iată de ce.",
+        "subtitle": "Post-mortem-ul cel mai comun de Copilot în orice industrie pe care o auditez. Aceleași cinci motive, de fiecare dată."
+      },
+      "lead": "Microsoft o spune oficial: peste 70% din piloții de Copilot din IMM-uri arată o curbă plată de utilizare în opt săptămâni. Nu e unealta. E rollout-ul.",
+      "sections": [
+        {
+          "heading": "Motiv 1 — niciun flux nu a fost înlocuit efectiv",
+          "body": "Copilot a fost adăugat peste procesul existent. Nimănui nu i s-a spus „nu mai face X, fă Y în loc”. Așa că oamenii revin la X, pe care deja știu să-l facă. AI ca extra opțional nu se lipește niciodată."
+        },
+        {
+          "heading": "Motiv 2 — training-ul a fost difuzat, nu supervizat",
+          "body": "Un webinar de 60 de minute pentru 200 de oameni nu învață pe nimeni nimic. Schimbarea reală de comportament cere 3-5 sesiuni supervizate pe munca proprie, cu un coach prezent. Training-ul difuzat e un artefact de conformitate, nu o intervenție de învățare."
+        },
+        {
+          "heading": "Motiv 3 — nicio bibliotecă de prompturi, niciun exemplu",
+          "body": "Oamenii nu știu ce să întrebe. Fără o bibliotecă de prompturi comună, specifică rolului — exemple reale pentru munca lor reală — utilizarea colapsează la „rezumă-mi email-ul ăsta”. Unealta pare trivială. Nu e trivială. Onboarding-ul a fost."
+        },
+        {
+          "heading": "Motiv 4 — managerii nu-l folosesc vizibil",
+          "body": "Dacă managerul nu folosește Copilot vizibil în fața echipei — în ședințe, în Teams, în review-uri — echipa citește totul ca opțional. Comportamentul cade în cascadă de la manager. Întotdeauna."
+        },
+        {
+          "heading": "Motiv 5 — succesul n-a fost măsurat niciodată",
+          "body": "Nimeni n-a definit cum arată „funcționează”. Timp economisit pe săptămână? Rapoarte produse? Email-uri redactate? Fără o metrică țintă, nu există buclă de feedback, nu există semnal de coaching și nu există poveste pe care s-o spui CFO-ului în luna șase."
+        }
+      ],
+      "takeaway": "Copilot nu e o problemă de unealtă. E o problemă de change management cu logo Microsoft pe ea. Repară rollout-ul, nu software-ul."
+    },
+    "procurementWorkflows": {
+      "docTitle": "AI în achiziții — fluxuri reale care rezistă — The Unlearning School",
+      "tag": "Operațional · Achiziții",
+      "readTime": "6 min de citit",
+      "seo": {
+        "title": "Fluxuri AI de achiziții care chiar economisesc timp",
+        "description": "Patru fluxuri AI concrete pentru echipele de achiziții — scoring furnizori, draft RFP, review contracte, reconciliere facturi — cu economii realiste de timp și moduri de eșec.",
+        "keywords": "AI achiziții, automatizare achiziții, scoring furnizori AI, draft RFP AI, review contracte AI"
+      },
+      "hero": {
+        "title": "Patru fluxuri AI pe care echipele de achiziții chiar le păstrează",
+        "subtitle": "Nu demo-urile. Cele care supraviețuiesc lunii trei, pentru că cineva le-a măsurat."
+      },
+      "lead": "Achizițiile sunt o funcție grea în workflow-uri, înecată în documente nestructurate. Exact acolo actualul val de AI își câștigă licența — dacă alegi cele patru fluxuri corecte și ignori celelalte patruzeci.",
+      "sections": [
+        {
+          "heading": "Flux 1 — scoring de furnizori din date publice",
+          "body": "Îi dai modelului site-ul furnizorului, raportări financiare, mențiuni în presă și performanța contractelor anterioare. Output: un scorecard structurat față de criteriile tale. Timp scade de la 3-4 ore per furnizor la 15 minute de review. Mod de eșec: date financiare halucinate — cere modelului să citeze URL-urile surselor."
+        },
+        {
+          "heading": "Flux 2 — RFP-uri în primă formă dintr-un brief",
+          "body": "Un brief de 2 pagini devine un RFP de 20 de pagini pe template-ul tău. Secțiunile legale și tehnice sunt trase automat din biblioteca ta. Buyer-ul editează, nu scrie. Timp scade de la 2 zile la 3 ore. Mod de eșec: drift de template — fixează versiunea explicit."
+        },
+        {
+          "heading": "Flux 3 — redline pe contract față de un playbook",
+          "body": "Modelul compară draft-ul contrapărții cu playbook-ul tău de poziții, semnalează abateri, propune redline-uri. Legal-ul revizuiește lista de semnale, nu tot documentul. Timp scade de la 4 ore la 45 de minute. Mod de eșec: încredere excesivă pe clauze specifice jurisdicției — rutează-le mereu la avocat."
+        },
+        {
+          "heading": "Flux 4 — reconciliere factură cu comandă",
+          "body": "Modelul potrivește facturile primite cu comenzile și avizele, semnalează neconcordanțele cu coduri de motiv. Finance-ul aprobă excepțiile, nu fiecare linie. Timp scade de la reconciliere manuală continuă la un review zilnic de 30 de minute. Mod de eșec: erori OCR pe facturi scanate — ține oamenii pe orice e sub 95% confidence."
+        }
+      ],
+      "takeaway": "Câștigurile de AI în achiziții sunt plictisitoare, structurate și măsurate. Alege patru fluxuri, măsoară minutele economisite pe săptămână și ignoră circuitul de demo-uri."
+    },
+    "vendorMdf": {
+      "docTitle": "Folosește MDF-ul vendor pentru training AI — The Unlearning School",
+      "tag": "Finanțare · Programe vendor",
+      "readTime": "5 min de citit",
+      "seo": {
+        "title": "Finanțează-ți training-ul AI din bugete MDF ale vendorilor",
+        "description": "Microsoft, Google și AWS au fonduri de dezvoltare a pieței care rambursează enablement-ul AI livrat prin parteneri. Iată cum accesează IMM-urile și partenerii lor aceste bugete.",
+        "keywords": "MDF vendor, market development funds, MDF Microsoft, finanțare training AI, finanțare enablement parteneri"
+      },
+      "hero": {
+        "title": "Există bani de la vendor pentru training-ul tău AI. Trebuie cerut.",
+        "subtitle": "Microsoft, Google și AWS rambursează cu toții enablement-ul AI livrat de parteneri. Majoritatea IMM-urilor nu văd niciodată cecul pentru că nu a cerut nimeni."
+      },
+      "lead": "Fiecare vendor major de cloud pune deoparte market development funds — MDF — pentru a accelera adopția clientului. Dacă echipa ta e pregătită pe Copilot, Gemini sau Bedrock, acel training e aproape întotdeauna rambursabil. Prin partener.",
+      "sections": [
+        {
+          "heading": "Ce e de fapt MDF-ul",
+          "body": "MDF e un buget de co-marketing / co-enablement pe care vendorii îl dau partenerilor certificați. Finanțează workshop-uri, piloți, proof-of-concept și training structurat — orice ce împinge măsurabil consumul produsului vendorului. Nu e o reducere. E un pool separat."
+        },
+        {
+          "heading": "Cum îl accesează un IMM",
+          "body": "Nu aplici direct. Un partener certificat (ca noi) depune un plan pe contul tău, vendorul aprobă, livrarea se face, facturile se decontează între partener și vendor. Din partea ta, training-ul e gratuit sau puternic subvenționat."
+        },
+        {
+          "heading": "Ce se califică",
+          "body": "Enablement Copilot bazat pe rol, biblioteci de prompturi, workshop-uri de redesign al fluxurilor, programe de alfabetizare Articol 4 legate de tenantul Microsoft, workshop-uri de migrare de la AI on-prem la cloud, rollout-uri Gemini for Workspace. Orice se termină cu mai mult consum de produs tinde să se califice."
+        },
+        {
+          "heading": "Ce nu se califică",
+          "body": "Discuții generice de „AI awareness” fără outcome măsurabil, tooling competitor și orice nu are un sponsor de business numit pe partea clientului. Vendorii finanțează adopție, nu educație."
+        }
+      ],
+      "takeaway": "Dacă logo-ul unui vendor e pe desktop-ul tău, există un fond cu numele tău. Întreabă-ți partenerul. Dacă spune nu, schimbă partenerul."
+    },
+    "hermesVsChatgpt": {
+      "docTitle": "Hermes vs ChatGPT pentru întrebări de adopție AI — The Unlearning School",
+      "tag": "Agenți de domeniu · Produs",
+      "readTime": "4 min de citit",
+      "seo": {
+        "title": "De ce un agent de domeniu bate ChatGPT pe întrebări de adopție AI",
+        "description": "Hermes e un agent de domeniu antrenat pe engagement-uri reale de adopție AI. Iată de ce bate un chatbot generalist pe întrebări operaționale despre rollout, conformitate și finanțare.",
+        "keywords": "agent de domeniu, agent Hermes, alternativă ChatGPT, agent adopție AI, asistent AI specializat"
+      },
+      "hero": {
+        "title": "Hermes vs ChatGPT — de ce câștigă agentul de domeniu pe întrebări operaționale",
+        "subtitle": "Chatbot-urile generaliste știu câte puțin din toate. Agenții de domeniu știu mult despre un singur lucru. Pentru adopție AI în IMM-uri, diferența asta e produsul întreg."
+      },
+      "lead": "ChatGPT e remarcabil. Pe orice întrebare operațională specifică — „cum stagez un rollout de Copilot pentru o echipă de 60 de oameni din România?” — e și un generalist fluent. Nu e ce-i trebuie unui operator.",
+      "sections": [
+        {
+          "heading": "Ce e un agent de domeniu",
+          "body": "Un agent de domeniu e un model plus un corpus curat plus un schelet de flux, toate îndreptate spre o singură treabă. Hermes e îndreptat spre „adopție AI în IMM-uri din Europa”. Cunoaște Articolul 4. Cunoaște ciclurile de finanțare UE. Știe ce vendor finanțează ce. Nu știe să scrie un sonet."
+        },
+        {
+          "heading": "De ce contează corpusul",
+          "body": "Modelele generale sunt antrenate pe web-ul deschis. Agenții de domeniu se bazează pe playbook-uri operaționale — template-uri de rollout, tipare de refuz, note reale de engagement. Când întrebi Hermes despre MDF, nu ghicește. Citează tiparul din zece engagement-uri anterioare."
+        },
+        {
+          "heading": "De ce contează scheletul de flux",
+          "body": "Hermes nu doar răspunde. Secvențiază: califică întrebarea, propune pasul următor, oferă un call dacă întrebarea depășește rezoluția lui. Un chatbot generalist răspunde la orice, prost, la nesfârșit. Un agent de domeniu știe când să escaladeze."
+        },
+        {
+          "heading": "Când folosești pe care",
+          "body": "Folosește ChatGPT pentru draft-uri deschise, brainstorming, traducere și cod. Folosește Hermes pentru orice e operațional despre adopția AI, conformitate sau finanțare în organizația ta. Cele două sunt complementare — nu concurente."
+        }
+      ],
+      "takeaway": "Următoarea generație de software de business nu e un chatbot pentru tot. E un stack mic de agenți de domeniu, fiecare îngust, cu opinie și corect."
     }
   }
 }
