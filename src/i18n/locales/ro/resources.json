@@ -187,5 +187,50 @@
     "subtitle": "Un apel gratuit de 30 de minute care îți scorează maturitatea adopției AI și îți dă o foaie de parcurs cu pași prioritizați. Sumar scris de 1 pagină în 24 de ore.",
     "ctaText": "Sesiune AI Adoption →",
     "note": "Gratuit · hello@unlearning.ro"
+  },
+  "article": {
+    "filedUnder": "La categoria",
+    "readTime": "Timp de citire",
+    "sectionLabel": "Secțiune",
+    "takeawayLabel": "Concluzia",
+    "ctaText": "Programează Sesiunea AI Adoption",
+    "backToResources": "Înapoi la resurse",
+    "fileLabel": "Notă de teren"
+  },
+  "articles": {
+    "lewinAdoption": {
+      "docTitle": "Modelul Lewin aplicat adopției AI — The Unlearning School",
+      "tag": "Managementul schimbării",
+      "readTime": "6 min de citit",
+      "seo": {
+        "title": "Modelul de schimbare Lewin aplicat adopției AI",
+        "description": "De ce majoritatea implementărilor AI se blochează la pasul „refreeze” — și cum cadrul unfreeze / change / refreeze îți dă o secvență funcțională pentru adopția AI în organizație.",
+        "keywords": "modelul Lewin, adopție AI, managementul schimbării, schimbare organizațională, unfreeze change refreeze"
+      },
+      "hero": {
+        "title": "Unfreeze, change, refreeze — de ce se blochează adopția AI la pasul trei",
+        "subtitle": "Modelul lui Kurt Lewin din 1947 este cadrul care lipsește din majoritatea programelor de adopție AI. Uneltele se lansează. Comportamentul nu se lipește. Iată de ce."
+      },
+      "lead": "Fiecare implementare AI pe care o auditez arată la fel: un email de lansare, o licență de Copilot, un webinar de training — apoi liniște. La șase săptămâni, utilizarea e o linie plată. Problema nu e unealta. Problema e că nimeni nu a „refrozen” noul comportament.",
+      "sections": [
+        {
+          "heading": "Unfreeze — pasul pe care toată lumea îl sare",
+          "body": "Prima mișcare a lui Lewin e să slăbești obiceiurile existente. În termeni de adopție AI: numește concret munca care urmează să se schimbe, arată de ce felul actual costă echipa și dă oamenilor permisiunea să-l lase în urmă. Majoritatea implementărilor sar direct la trainingul pe tool. Fluxul vechi rămâne intact, cel nou concurează cu el, și câștigă cel vechi pentru că nu are fricțiune."
+        },
+        {
+          "heading": "Change — mic, supervizat, repetat",
+          "body": "Faza de „change” nu e un webinar. Sunt repetiții supervizate pe munca reală — inbox-ul lor, rapoartele lor, deciziile lor — cu un coach lângă la primele 3-5 încercări. Aici se alocă greșit majoritatea bugetelor de L&D: 90% pe training difuzat, 10% pe practică supervizată. Inversează raportul."
+        },
+        {
+          "heading": "Refreeze — fă din noua metodă opțiunea default",
+          "body": "„Refreeze” înseamnă că noul comportament devine calea cu cea mai mică rezistență. Asta cere schimbări structurale: template-uri actualizate, SOP-uri rescrise, agende de ședință schimbate, cadență de raportare ajustată, manageri care modelează public comportamentul. Fără refreeze, oamenii revin în 4-8 săptămâni. De fiecare dată."
+        },
+        {
+          "heading": "Cum arată asta în practică",
+          "body": "Pentru o echipă de 40 de oameni care adoptă AI în raportarea săptămânală: unfreeze = 1 workshop care numește costul procesului actual; change = 3 sesiuni supervizate per persoană pe 3 săptămâni; refreeze = noul template devine singurul format acceptat, review-urile managerului îl citează, formatul vechi e arhivat. Timp total: 6 săptămâni. Utilizare stabilă la luna 3: 80%+ în loc de media de industrie de ~20%."
+        }
+      ],
+      "takeaway": "Adopția AI e o problemă de management al schimbării deghizată în tehnologie. Lansează unealta în săptămâna unu, „refreeze” comportamentul până în săptămâna șase, sau acceptă că utilizarea va scădea la zero."
+    }
   }
 }

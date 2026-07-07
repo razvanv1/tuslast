@@ -123,5 +123,50 @@
     "subtitle": "A free 30-minute call that scores your AI adoption maturity and gives you a ranked next-step roadmap. 1-page written summary within 24 hours.",
     "ctaText": "AI Adoption Call →",
     "note": "Free · hello@unlearning.ro"
+  },
+  "article": {
+    "filedUnder": "Filed under",
+    "readTime": "Read time",
+    "sectionLabel": "Section",
+    "takeawayLabel": "The takeaway",
+    "ctaText": "Book the AI Adoption Call",
+    "backToResources": "Back to resources",
+    "fileLabel": "Field note"
+  },
+  "articles": {
+    "lewinAdoption": {
+      "docTitle": "Lewin's model applied to AI adoption — The Unlearning School",
+      "tag": "Change management",
+      "readTime": "6 min read",
+      "seo": {
+        "title": "Lewin's change model applied to AI adoption",
+        "description": "Why most AI rollouts stall at the 'refreeze' stage — and how Lewin's unfreeze / change / refreeze frame gives you a working sequence for organisational AI adoption.",
+        "keywords": "Lewin change model, AI adoption, change management, organisational change, unfreeze change refreeze"
+      },
+      "hero": {
+        "title": "Unfreeze, change, refreeze — why AI rollouts stall at step three",
+        "subtitle": "Kurt Lewin's 1947 model is the missing frame for most AI adoption programmes. Tools ship. Behaviour doesn't stick. Here's why."
+      },
+      "lead": "Every AI rollout we audit has the same shape: a launch email, a Copilot license, a training webinar — then silence. Six weeks later, usage is a flat line. The problem isn't the tool. It's that nobody refroze the new behaviour.",
+      "sections": [
+        {
+          "heading": "Unfreeze — the step everyone skips",
+          "body": "Lewin's first move is to loosen existing habits. In AI adoption terms: name the specific work that's about to change, show why the current way costs the team, and give people permission to stop doing it. Most rollouts skip straight to tool training. The old workflow stays intact, the new one competes with it, and the old one wins because it's frictionless."
+        },
+        {
+          "heading": "Change — small, supervised, repeated",
+          "body": "The 'change' phase isn't a webinar. It's supervised reps on real work — the person's actual inbox, actual reports, actual decisions — with a coach nearby for the first 3-5 attempts. This is where most L&D budgets are misallocated: 90% goes to broadcast training, 10% to supervised practice. Flip the ratio."
+        },
+        {
+          "heading": "Refreeze — make the new way the default",
+          "body": "Refreezing means the new behaviour becomes the path of least resistance. That requires structural changes: templates updated, SOPs rewritten, meeting agendas changed, reporting cadences adjusted, managers modelling the behaviour publicly. Without refreeze, people revert within 4-8 weeks. Every time."
+        },
+        {
+          "heading": "What this looks like in practice",
+          "body": "For a 40-person team adopting AI in weekly reporting: unfreeze = 1 workshop naming the cost of the current process; change = 3 supervised sessions per person over 3 weeks; refreeze = new template becomes the only accepted format, manager reviews cite it, old format is archived. Total elapsed time: 6 weeks. Usage stickiness at month 3: 80%+ instead of the industry average of ~20%."
+        }
+      ],
+      "takeaway": "AI adoption is a change-management problem wearing a technology costume. Ship the tool in week one, refreeze the behaviour by week six, or accept that usage will decay to zero."
+    }
   }
 }
